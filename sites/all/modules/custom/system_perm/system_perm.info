@@ -1,0 +1,4 @@
+; $Id$
+name = System Perms
+description = Subdivides Several Core permissions
+core = 7.x

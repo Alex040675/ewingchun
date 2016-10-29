@@ -1,0 +1,38 @@
+@import "compass";
+@import "breakpoint";
+@import "susy";
+@import "main-menu";
+
+#block-system-main-menu {
+  ul {
+    display: flex;
+	  flex-direction: row;
+	  li {
+        display: flex;
+	    flex: 1 1 auto;
+		height: 44px;
+	    a {
+		  display: flex;
+		  flex-direction: column;
+		  flex: 1;
+		  justify-content: center;
+	      max-height: 44px;
+	    }
+	 }
+  }
+}
+
+$tab: 44em;
+
+@media screen and (max-width: $tab) {
+  #block-system-main-menu ul {
+     flex-direction: column;
+  }
+  .l-branding {
+    text-align: center;
+	height: inherit;
+  }
+}
+
+@media screen and (min-width: $tab) {
+}

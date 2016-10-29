@@ -1,0 +1,67 @@
+/*******************************************************************************
+ * golden.layout.scss
+ *
+ * Styling of the "Golden" layout demonstrating the golden rule and asymmetric
+ * grids with Singularity.
+ ******************************************************************************/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000326}}
+.panel-display--golden {
+  *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/gnuisance\/\.gem\/ruby\/2\.2\.0\/gems\/compass-core-1\.0\.1\/stylesheets\/compass\/utilities\/general\/_clearfix\.scss}line{font-family:\0000338}}
+  .panel-display--golden:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000330}}
+.golden-region {
+  margin-bottom: 20px; }
+
+@media (min-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000335}}
+  .golden-region--first {
+    width: 15.25424%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000338}}
+  .golden-region--second {
+    width: 6.77966%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000341}}
+  .golden-region--third {
+    width: 6.77966%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 8.47458%;
+    clear: none; } }
+@media (min-width: 1250px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000347}}
+  .golden-region--first {
+    width: 6.77966%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000350}}
+  .golden-region--second {
+    width: 6.77966%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 8.47458%;
+    clear: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/omega\/omega\/sass\/layouts\/golden\/golden\.layout\.scss}line{font-family:\0000353}}
+  .golden-region--third {
+    width: 6.77966%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 16.94915%;
+    clear: none; } }

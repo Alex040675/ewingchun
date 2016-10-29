@@ -1,0 +1,5 @@
+name = WC Link Validation Module
+description = Provide the link validation functionality for Link fields
+package = Link Validation
+version = 1.0
+core = 7.x

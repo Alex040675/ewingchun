@@ -1,0 +1,10 @@
+@import "ewingchun-frontpage";
+
+#content-columns {
+  display: flex;
+}
+.l-region--content-columns > div {
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
+}

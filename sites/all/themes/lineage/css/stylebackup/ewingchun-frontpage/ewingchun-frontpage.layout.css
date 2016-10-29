@@ -1,0 +1,9 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/layouts\/ewingchun-frontpage\/ewingchun-frontpage\.layout\.scss}line{font-family:\000033}}
+#content-columns {
+  display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/layouts\/ewingchun-frontpage\/ewingchun-frontpage\.layout\.scss}line{font-family:\000036}}
+.l-region--content-columns > div {
+  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em; }

@@ -1,0 +1,175 @@
+<?php
+/**
+ * @file Provides custom blocks
+ */
+
+/**
+ * Implementation of hook_block
+ */
+function wc_blocks_block($op = 'list', $delta = 0, $edit = array()) {
+  if ($op == 'list') {
+    $blocks['products'] = array(
+      'info' => t('Related Products'),
+      'weight' => 0,
+      'status' => 1,
+      'region' => 'left',
+      'cache' => BLOCK_CACHE_PER_PAGE,
+    );
+    $blocks['article_products'] = array(
+      'info' => t('Related article products'),
+      'weight' => 0,
+      'status' => 1,
+      'region' => 'left',
+      'cache' => BLOCK_CACHE_PER_PAGE,
+    );
+    $blocks['feed_listing'] = array(
+      'info' => t('Feed Listing'),
+      'weight' => 0,
+      'status' => 1,
+      'region' => 'right',
+      'cache' => BLOCK_CACHE_PER_PAGE,
+    );
+    $blocks['friend_images'] = array(
+      'info' => t('Friend images'),
+      'weight' => 0,
+      'status' => 1,
+      'region' => 'right',
+      'cache' => BLOCK_CACHE_PER_PAGE,
+    );
+
+    return $blocks;
+  }
+  else if ($op == 'view') {
+    switch ($delta) {
+      case 'products':
+        $block = array(
+          'subject' => t('Related Products'),
+          'content' => wc_blocks_related_products(),
+        );
+        break;
+      case 'article_products':
+        $block = array(
+          'subject' => t('Related Products'),
+          'content' => wc_blocks_article_products(),
+        );
+        break;
+      case 'feed_listing':
+        $block = array(
+          'subject' => t('Feed listing'),
+          'content' => wc_blocks_feed_listing(),
+        );
+        break;
+      case 'friend_images':
+        $block = array(
+          'subject' => t('My Friends'),
+          'content' => wc_blocks_friend_listing(),
+        );
+        break;
+    }
+    return $block;
+  }
+
+}
+
+/**
+ * Content for feed listing product block
+ *
+ * @return string HTML to output
+ */
+function wc_blocks_feed_listing() {
+  // Create list of links for Feed Aggregator Categories
+  $links =  array(
+              'aggregator/categories/1' => 'News Feed',
+              'aggregator/categories/2' => 'Wing Chun Planet feed',
+              'aggregator/categories/3' => 'Blog Community',
+              'aggregator/categories/4' => 'Product reviews',
+            );
+  foreach ($links AS $key => $link) {
+    $lis .= '<li>' . l(t($link), $key) . '</li>';
+    $output = '<ul>' . $lis . '</ul>';
+  }
+
+  return $output;
+}
+
+/**
+ * Content for friend images
+ *
+ * @return string HTML to output
+ */
+function wc_blocks_friend_listing() {
+  $default_picture = variable_get('user_picture_default',  '');
+
+  $user = menu_get_object('user_uid_optional');
+
+  // user_relationship_blocks module is stupid, we'll build the block ourselves
+  $relationships = user_relationships_load(array('rtid'=>'1', 'user'=>$user->uid, 'approved'=>'1'), array('include_user_info'=>true));
+  $relatee = array();
+
+  foreach ($relationships as $relationship) {
+    // Get information about the other user
+    $relatee[] = ($relationship->requester_id == $user->uid) ? $relationship->requestee : $relationship->requester;
+  }
+
+  foreach ($relatee as $account) {
+    $friend_imgs .= '<li>' . l(theme("imagecache", 'sifu-listing', (($account->picture) ? $account->picture : $default_picture), $account->name, $account->name), "user/".$account->uid, array('title' => $account->name, 'absolute' => FALSE, 'html' => TRUE)) . '</li>';
+  }
+
+  $output = '<ul class="userpicture links">' . $friend_imgs . '</ul>';
+  return $output;
+}
+
+/**
+ * Content for Instructors product block
+ *
+ * @return string HTML to output
+ */
+function wc_blocks_related_products() {
+  $node = menu_get_object('node');
+  $links = $node->field_link_resource_url;
+  $images = $node->field_product_images;
+
+  //Early return
+  if (!is_array($links) || !is_array($images)) return NULL;
+  $output = '';
+  foreach ($links AS $delta => $link) {
+    $alt = $images[$delta]['data']['alt'];
+    $text = $link['title'] ? check_plain($link['title']) : check_plain($alt);
+    //$text = $text ? $text : check_plain($link['url']);
+    if ($path = $images[$delta]['filepath']) {
+      $alt = $alt ? $alt : $text;
+      $output .= l(theme('imagecache', 'product-images', $path, $alt), $link['url'], array('html' => TRUE));
+    }
+    $output .= l($text, $link['url']);
+  }
+
+  return $output;
+}
+
+/**
+ * Content for Articles products block
+ *
+ * @return string HTML to output
+ */
+function wc_blocks_article_products() {
+  $node = menu_get_object('node');
+  //$node = node_load($vars['node']->field_sifu[0]['nid']);
+  $links = $node->field_link_resource_url;
+  $images = $node->field_product_images;
+
+  //Early return
+  if (!is_array($links) || !is_array($images)) return NULL;
+  $output = '';
+  foreach ($links AS $delta => $link) {
+    $alt = $images[$delta]['data']['alt'];
+    $text = $link['title'] ? check_plain($link['title']) : check_plain($alt);
+    //$text = $text ? $text : check_plain($link['url']);
+    if ($path = $images[$delta]['filepath']) {
+      $alt = $alt ? $alt : $text;
+      $output .= l(theme('imagecache', 'product-images', $path, $alt), $link['url'], array('html' => TRUE));
+    }
+    $output .= l($text, $link['url']);
+  }
+
+  return $output;
+}

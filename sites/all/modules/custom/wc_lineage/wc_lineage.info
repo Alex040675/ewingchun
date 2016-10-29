@@ -1,0 +1,4 @@
+; $Id$
+name = Sifu Lineage Page
+description = Displays Sifus by Lineage
+core = 7.x

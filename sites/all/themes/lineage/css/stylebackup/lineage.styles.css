@@ -1,0 +1,255 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000033}}
+#block-system-main-menu ul li + li {
+  border-left: 1px solid #444444; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000036}}
+#block-system-main-menu ul li {
+  box-sizing: border-box;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000039}}
+  #block-system-main-menu ul li a {
+    background: url("../images/bg-nav.gif") repeat-x scroll 0% 0%;
+    color: #FFFFFF;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\0000314}}
+  #block-system-main-menu ul li a:hover {
+    color: #000000;
+    background: transparent url("../images/bg-nav.gif") repeat-x scroll 0% 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\000037}}
+#block-system-main-menu ul {
+  display: flex;
+  flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000310}}
+  #block-system-main-menu ul li {
+    display: flex;
+    flex: 1 1 auto;
+    height: 44px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000314}}
+    #block-system-main-menu ul li a {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      max-height: 44px; }
+
+@media screen and (max-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000328}}
+  #block-system-main-menu ul {
+    flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000331}}
+  .l-branding {
+    text-align: center;
+    height: inherit; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000033}}
+#block-system-main-menu ul li + li {
+  border-left: 1px solid #444444; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000036}}
+#block-system-main-menu ul li {
+  box-sizing: border-box;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000039}}
+  #block-system-main-menu ul li a {
+    background: url("../images/bg-nav.gif") repeat-x scroll 0% 0%;
+    color: #FFFFFF;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\0000314}}
+  #block-system-main-menu ul li a:hover {
+    color: #000000;
+    background: transparent url("../images/bg-nav.gif") repeat-x scroll 0% 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/block-banner\.scss}line{font-family:\000032}}
+#block-banner .block__title {
+  background: #F4F1EE none repeat scroll 0% 0%;
+  font-family: "Lucida Sans Unicode",Helvetica,Arial,sans-serif;
+  padding: 1em;
+  font-size: 1.3em;
+  letter-spacing: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/block-banner\.scss}line{font-family:\000039}}
+#block-banner .block__content {
+  padding: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/block-search-form\.layout\.scss}line{font-family:\000031}}
+#block-search-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000033}}
+#block-system-main-menu ul li + li {
+  border-left: 1px solid #444444; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000036}}
+#block-system-main-menu ul li {
+  box-sizing: border-box;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000039}}
+  #block-system-main-menu ul li a {
+    background: url("../images/bg-nav.gif") repeat-x scroll 0% 0%;
+    color: #FFFFFF;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\0000314}}
+  #block-system-main-menu ul li a:hover {
+    color: #000000;
+    background: transparent url("../images/bg-nav.gif") repeat-x scroll 0% 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\000037}}
+#block-system-main-menu ul {
+  display: flex;
+  flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000310}}
+  #block-system-main-menu ul li {
+    display: flex;
+    flex: 1 1 auto;
+    height: 44px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000314}}
+    #block-system-main-menu ul li a {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      max-height: 44px; }
+
+@media screen and (max-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000328}}
+  #block-system-main-menu ul {
+    flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000331}}
+  .l-branding {
+    text-align: center;
+    height: inherit; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000311}}
+html * {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000316}}
+body {
+  background: #EEE9DF url("../images/bg-body.jpg") repeat-x scroll center top; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000323}}
+header,
+.l-main,
+.l-region--footer {
+  max-width: 980px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000330}}
+#search-block-form #edit-submit {
+  height: 30px;
+  width: 35px;
+  background: transparent url("/sites/all/themes/lineage/images/search.jpg") no-repeat scroll 0px 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000337}}
+.l-main {
+  box-sizing: border-box;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  border-left: 1px solid #DBD6CD;
+  border-right: 1px solid #DBD6CD; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000345}}
+footer {
+  background: #FFFFFF;
+  padding-top: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000351}}
+#block-menu-menu-footer-links ul {
+  display: flex;
+  flex-wrap: wrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000354}}
+  #block-menu-menu-footer-links ul li {
+    display: flex;
+    flex: 0 1 auto;
+    padding: .5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000358}}
+    #block-menu-menu-footer-links ul li a {
+      font-size: 1em;
+      display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000365}}
+h3 {
+  border-bottom: 1px solid #DDDBD9;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000372}}
+.site-name,
+#block-system-main-menu .block__title {
+  visibility: hidden;
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000377}}
+.l-branding {
+  height: 100px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000381}}
+#search-block-form .form-item {
+  margin-bottom: 0;
+  height: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000384}}
+  #search-block-form .form-item .form-text {
+    height: inherit;
+    box-sizing: border-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000392}}
+.block__title {
+  border-bottom: 1px solid #DDDBD9;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\0000399}}
+.block {
+  margin-bottom: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003103}}
+#links {
+  display: flex;
+  justify-content: flex-end; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003106}}
+  #links .user-links {
+    display: flex;
+    padding: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003109}}
+    #links .user-links li {
+      padding-right: 0.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003112}}
+    #links .user-links li + li {
+      padding-left: 0.5em;
+      border-left: 1px solid #000000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003119}}
+h1, h2 {
+  font-family: "Lucida Sans Unicode",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0px;
+  padding: 5px 0px 0px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003126}}
+.breadcrumb {
+  border-bottom: 1px solid #DDDBD9;
+  border-top: 1px solid #DDDBD9;
+  font-size: 11px;
+  padding: 2px 0px; }
+
+@media screen and (max-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003134}}
+  .l-region--content-columns {
+    flex: 1 1 auto; } }
+@media screen and (min-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003139}}
+  .l-region--content-columns {
+    display: flex;
+    flex-wrap: wrap; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/lineage\.styles\.scss}line{font-family:\00003142}}
+    .l-region--content-columns div {
+      flex: 1 1 0%; } }
+.block__content li {
+    background: transparent url(http://www.ewingchun.com/upgrade/sites/all/themes/lineage/images/check.gif) no-repeat scroll left center;
+    list-style: none;
+    padding: .5em 0 0 20px;
+}

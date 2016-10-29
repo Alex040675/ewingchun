@@ -1,0 +1,4 @@
+; $Id$
+name = WingChun Blocks
+description = Custom Blocks
+core = 7.x

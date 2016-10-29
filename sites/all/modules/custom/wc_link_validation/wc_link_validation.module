@@ -1,0 +1,60 @@
+<?php
+
+function wc_link_validation_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
+  switch ($op) {
+    case 'validate':
+      if($node->type == 'profile') {
+        $personal_profile_url = $node->field_personal_website;
+        foreach($personal_profile_url as $url_id => $url_info) {
+          if (!empty($url_info['url'])) {
+            $personal_profile_url_value = NULL;
+            $personal_profile_url_value  = $node->field_personal_website[$url_id]['url'];
+            $personal_profile_url_validate = NULL;
+            $personal_profile_url_validate = valid_url($url_info['url'], $absolute = TRUE);
+            if($personal_profile_url_validate == FALSE){
+              $name = NULL;
+              $name = 'field_personal_website]' . '[' . $url_id . '][url';
+              form_set_error($name, t('Please enter a valid url.'));
+            }
+          }
+        }
+      }
+
+      if($node->type == 'resource' || $node->type == 'product') {
+        $school_profile_url = $node->field_link_resource_url;
+        foreach($school_profile_url as $school_url_id => $school_url_info) {
+          if (!empty($school_url_info['url'])) {
+            $school_url_value = NULL;
+            $school_url_value  = $node->field_link_resource_url[$school_url_id]['url'];
+            $school_url_validate = NULL;
+            $school_url_validate = valid_url($school_url_info['url'], $absolute = TRUE);
+            if($school_url_validate == FALSE){
+              $school_url_name = NULL;
+              $school_url_name = 'field_link_resource_url]' . '[' . $school_url_id . '][url';
+              form_set_error($school_url_name, t('Please enter a valid url.'));
+            }
+          }
+        }
+
+      }
+
+      if($node->type == 'sifu') {
+        $sifu_profile_url = $node->field_homepage_link;
+          foreach($sifu_profile_url as $sifu_url_id => $sifu_url_info) {
+            if (!empty($sifu_url_info['url'])) {
+              $sifu_profile_url_value = NULL;
+              $sifu_profile_url_value  = $node->field_homepage_link[$sifu_url_id]['url'];
+              $sifu_profile_url_validate = NULL;
+              $sifu_profile_url_validate = valid_url($sifu_url_info['url'], $absolute = TRUE);
+              if($sifu_profile_url_validate == FALSE){
+                $sifu_url_name = NULL;
+                $sifu_url_name = 'field_homepage_link]' . '[' . $sifu_url_id . '][url';
+                form_set_error($name, t('Please enter a valid url.'));
+              }
+          }
+        }
+      }
+
+      break;
+  }
+  }

@@ -1,0 +1,290 @@
+<?php
+/**
+ * @file
+ * Provides page callback for viewing sifu's by lineage.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function wc_lineage_menu() {
+  $items['sifus-by-lineage/full'] = array(
+    'title' => 'Sifus by Lineage',
+    'page callback' => '_wc_lineage_page',
+    'page arguments' => array(FALSE),
+    'access arguments' => array('access content'),
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+  $items['sifus-by-lineage/collapsed'] = array(
+    'title' => 'Collapsed View',
+    'page callback' => '_wc_lineage_page',
+    'page arguments' => array(TRUE),
+    'access arguments' => array('access content'),
+    'weight' => 1,
+    'type' => MENU_LOCAL_TASK,
+  );
+  $items['sifus-by-lineage'] = array(
+    'title' => 'Sifus by Lineage',
+    'page callback' => '_wc_lineage_page',
+    'page arguments' => array(FALSE),
+    'access arguments' => array('access content'),
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback.
+ *
+ * @TODO support multiple instructors, if possible?
+ * @TODO add caching
+ * @TODO add pager
+ */
+function _wc_lineage_page($collapsed) {
+  if ($collapsed) {
+    $collapsed  = '-collapsed';
+  }
+  $lineages = cache_get('wc-lineage-sifus' . $collapsed)->data;
+
+  if (!$lineages) {
+    $q = db_query("SELECT n.nid FROM {node} n
+            LEFT JOIN {content_field_noderef_instructor} i ON n.vid = i.vid
+            LEFT JOIN {content_field_primary_lineage} p
+	    ON n.vid = p.vid AND p.delta = i.delta
+            LEFT JOIN {content_field_int_stillaffiliated} a
+	    ON n.vid = a.vid AND a.delta = i.delta
+            WHERE n.type = 'sifu' AND (p.field_primary_lineage_value = 1
+	    OR a.field_int_stillaffiliated_value = 1)
+            ORDER BY n.title ASC, i.delta ASC");
+
+    // Get an array of all the sifus.
+    $lineages = array();
+    while ($nid = db_result($q)) {
+      $lineages += _wc_lineage_get_single(node_load($nid));
+    }
+
+    // Expand to long form.
+    if (!$collapsed) {
+      foreach ($lineages as $line) {
+        while (is_array($line) && !empty($line)) {
+          $first = array_shift($line);
+          // This prevents duplicate single names
+          // when a sifu has multiple instructors.
+          $lineages['nid' . $first->nid] = array($first);
+          if (count($line) === 1) {
+            $single = current($line);
+          }
+          else {
+            $lineages[] = $line;
+          }
+
+        }
+      }
+    }
+    usort($lineages, '_wc_lineage_sort');
+
+    cache_set('wc-lineage-sifus' . $collapsed, $lineages);
+  }
+
+  // Set Breadcrumbs.
+  $breadcrumb = array();
+  $breadcrumb[] = l(t('Home'), t('<front>'));
+  $breadcrumb[] = l(t('Sifus'), t('sifus'));
+  if ($collapsed) {
+    $breadcrumb[] = l(t('Full View'), t('sifus-by-lineage'));
+  }
+  drupal_set_breadcrumb($breadcrumb);
+
+  return theme_wc_lineage($lineages, '', FALSE);
+
+}
+
+/**
+ * Returns the lineage for a single sifu.
+ *
+ * @param object $node
+ *   Node object for a sifu profile.
+ */
+function _wc_lineage_get_single($node) {
+  // If (!is_array($node->field_noderef_instructor)) return;.
+  $lineages = cache_get('wc-lineage-get-single/' . $node->nid)->data;
+
+  if (!$lineages) {
+    $lineages = array();
+    $q = "SELECT n.nid, n.title as name, i.field_noderef_instructor_nid
+            as instructor
+            FROM {node} n
+            LEFT JOIN {content_field_noderef_instructor} i ON n.vid = i.vid
+            WHERE i.nid = %d AND i.delta = %d";
+    foreach ($node->field_noderef_instructor as $key => $instructor) {
+      $superkey = $node->nid . '-' . $key;
+      $nid = $node->nid;
+      $delta = $key;
+      // Keep querying as long as we find referenced instructors.
+      while ($sifu = db_fetch_object(db_query($q, $nid, $delta))) {
+        $lineages[$superkey][$sifu->nid . '-' . $sifu->instructor] = $sifu;
+        $nid = $sifu->instructor;
+        $delta = 0;
+      }
+      $lineages[$superkey] = array_reverse($lineages[$superkey]);
+    }
+    cache_set('wc-lineage-get-single/' . $node->nid, $lineages);
+  }
+
+  return $lineages;
+}
+
+/**
+ * Returns the PRIMARY lineage for a single sifu.
+ *
+ *  $node node object for a sifu profile.
+ */
+function _wc_lineage_get_primary($node) {
+  if (!is_array($node->field_noderef_instructor)) {
+    return;
+  }
+
+  $lineages = cache_get('wc-lineage-get-primary/' . $node->nid)->data;
+
+  if (!$lineages) {
+    $q = "SELECT n.nid, n.title as name,
+                 i.field_noderef_instructor_nid AS instructor, i.delta,
+                 p.field_primary_lineage_value AS pri,
+		 a.field_int_stillaffiliated_value AS affiliated
+            FROM {node} n
+              LEFT JOIN {content_field_noderef_instructor} i
+	      ON n.vid = i.vid
+              LEFT JOIN {content_field_primary_lineage} p
+	      ON n.vid = p.vid AND p.delta = i.delta
+              LEFT JOIN {content_field_int_stillaffiliated} a
+	      ON n.vid = a.vid AND a.delta = i.delta
+            WHERE i.nid = %d
+            ORDER BY pri DESC, affiliated DESC";
+
+    $delta = array_search(array('value' => '1'), $node->field_primary_lineage);
+    $nid = $node->field_noderef_instructor[$delta]['nid'];
+
+    // Start with this node.
+    $self->nid = $node->nid;
+    $self->name = $node->title;
+    $self->instructor = $nid;
+    $self->pri = $node->field_primary_lineage[$delta]['value'];
+    $self->affiliated = $node->field_int_stillaffiliated[$delta]['value'];
+    $lineages = array(0 => array($self));
+
+    // Keep querying as long as we find referenced instructors.
+    $nids = array();
+    while ($sifu = db_fetch_object(db_query($q, $nid, $delta))) {
+      if (in_array($sifu->nid, $nids)) {
+        // Prevent getting stuck in an unclosed loop.
+        // @TODO can this happen with fuill lineages?
+        break;
+      }
+      else {
+        $lineages[0][] = $sifu;
+      }
+      $nids[] = $sifu->nid;
+
+      $nid = $sifu->instructor;
+      if (!$sifu->pri && !$sifu->affiliated) {
+        break;
+      }
+    }
+    // We want to Display the oldest ancestors first, so we reverse here.
+    $lineages[0] = array_reverse($lineages[0]);
+    cache_set('wc-lineage-get-primary/' . $node->nid, $lineages);
+  }
+
+  return $lineages;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function theme_wc_lineage($lineages, $label = '', $inline = TRUE, $skip_self = FALSE) {
+  $tag = $inline ? 'span' : 'div';
+  $output = $label ? '<label>' . $label . ': </label>' : '';
+  foreach ($lineages as $line) {
+    $row = array();
+    if ($skip_self) {
+      array_pop($line[0]);
+    }
+    foreach ($line as $sifu) {
+      $row[] = l($sifu->name, 'node/' . $sifu->nid);
+    }
+    $row = implode(' > ', $row);
+    if ($row) {
+      $output .= "<$tag class='lineage'>" . $row . "</$tag>\n";
+    }
+  }
+
+  return $output;
+}
+
+/**
+ * Implements hook_nodeapi().
+ *
+ * @TODO cache for performance
+ */
+function wc_lineage_nodeapi(&$node, $op) {
+  if ($node->type == 'sifu' && $op == 'load') {
+    $node->sifu_lineage = theme_wc_lineage(_wc_lineage_get_primary($node),
+                                           'Primary Lineage', TRUE);
+  }
+}
+
+/**
+ * Usort callback.
+ *
+ * @TODO alphabetize the nested levels
+ */
+function _wc_lineage_sort($a, $b) {
+  $a_first = current($a);
+  $b_first = current($b);
+
+  if ($a_first->name == $b_first->name) {
+    return count($a) > count($b);
+  }
+  return $a_first->name > $b_first->name;
+}
+/**
+ * Implements hook_form_alter().
+ *
+ * Check that a primary teacher is checked and has a lineage.
+ */
+function wc_lineage_form_alter(&$form, &$form_state, $form_id) {
+
+  if ($form_id == 'sifu_node_form') {
+
+    $form['#validate'][] = '_wc_confirm_primary_instructor_selected';
+    // $form['#validate'][] = '_wc_confirm_primary_has_lineage';.
+  }
+}
+/**
+ * Implements hook_form_alter().
+ */
+function _wc_confirm_primary_instructor_selected($form, &$form_state) {
+  // Init.
+  $valid = FALSE;
+  $instructor_ar = $form_state['values']['field_noderef_instructor'];
+  foreach ($instructor_ar as $key => $value) {
+    // Key is numeric let's check to see if we have
+    // a primary field_primary_lineage.
+    if ($key == 'nid') {
+      if ($value != '1803') {
+        // -Unknown ==1803.
+        if (!empty($form_state['values']['field_primary_lineage'][$key]['value'])) {
+          // Int 1 if checked
+          // were all good we have a valid instructor marked as lineage.
+          $valid = TRUE;
+        }
+      }
+    }
+  }
+  if (!$valid) {
+    form_set_error(
+        'group_instructors',
+        t('You must select a Primary lineage with a Known Instructor.')
+    );
+  }
+}

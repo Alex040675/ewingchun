@@ -1,0 +1,82 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Implement customizations for the
+ * admin/content/node/revisions callback.
+ */
+
+/**
+ * Implementation of hook_menu_alter().
+ */
+function wc_revision_menu_alter(&$items) {
+  // Overwrite the page callback for 'Pending revisions'
+  $items['admin/content/node/revisions']['page callback'] = 'wc_revision_revision_moderation_pending_revisions_admin';
+  $items['admin/content/node/revisions']['module'] = 'wc_revision';
+}
+
+/**
+ * Implementation of hook_theme().
+ */
+function wc_revision_theme() {
+  return array(
+    'wc_revision_revision_moderation_pending_revisions_admin' => array(
+      'arguments' => array(),
+    ),
+  );
+}
+
+/**
+ * Callback function for 'admin/content/node/revisions'
+ */
+function wc_revision_revision_moderation_pending_revisions_admin() {
+  return theme('wc_revision_revision_moderation_pending_revisions_admin');
+}
+
+/**
+ * Displays list of nodes with pending revisions.
+ */
+function theme_wc_revision_revision_moderation_pending_revisions_admin() {
+  $nodes = revision_moderation_get_all_pending_revisions(50);
+  if (count($nodes)) {
+    $header = array(
+      t('Title'),
+      t('Type'),
+      t('Updated by'),
+      t('Last updated'),
+    );
+    $rows = array();
+    foreach ($nodes as $node) {
+      $revisions = node_revision_list($node);
+      $current_vid = _wc_revision_current_revision_vid($revisions);
+      $new = array_shift($revisions);
+      $old = array_shift($revisions);
+      // if current_vid is not set use the previous revision.
+      $previous_vid = ($current_vid) ? $current_vid : $old->vid;
+      $rows[] = array(
+        l($node->title, "node/{$node->nid}/revisions/view/$previous_vid/{$new->vid}"),
+        check_plain(node_get_types('name', $node)),
+        theme('username', user_load(array('uid' => $node->uid))),
+        format_date($node->timestamp),
+      );
+    }
+    return theme('table', $header, $rows);
+  }
+  else {
+    return '<p>'. t('No pending revisions found.') .'</p>';
+  }
+}
+
+/**
+ * Helper function to get the current published vid
+ * from the revisions of a node
+ */
+function _wc_revision_current_revision_vid($revisions = array()) {
+  foreach ($revisions as $revision) {
+    if ($revision->current_vid) {
+      return $revision->current_vid;
+    }
+  }
+  return null;
+}

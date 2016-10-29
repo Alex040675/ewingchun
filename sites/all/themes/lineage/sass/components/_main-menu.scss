@@ -1,0 +1,20 @@
+#block-system-main-menu {
+  ul {
+    li + li {
+	  border-left: 1px solid #444444;
+	}
+	li {
+	  box-sizing: border-box;
+	  text-align: center;
+	  a {
+	    background: url('../images/bg-nav.gif') repeat-x scroll 0% 0%;
+	    color: #FFFFFF;
+		text-decoration: none;
+	  }
+	  a:hover {
+	    color: #000000;
+	    background: transparent url("../images/bg-nav.gif") repeat-x scroll 0% 50%;
+	  }
+	}
+  }
+}

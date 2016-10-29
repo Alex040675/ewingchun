@@ -1,0 +1,527 @@
+<?php
+// $Id: avatar_blocks.module,v 1.1.2.2 2008/08/04 21:59:34 roopletheme Exp $
+
+/**
+ * @file
+ * This module provides who's online, who's new, and user role blocks that display user pictures.
+ */
+
+define('AVATAR_BLOCKS_WHOS_ONLINE', 0);
+define('AVATAR_BLOCKS_WHOS_NEW', 1);
+define('AVATAR_BLOCKS_USER_ROLES', 2);
+
+function avatar_blocks_admin() {
+  $instructions = 'To configure the invididual blocks, visit the '. l('Blocks Page', 'admin/build/block'). '.';
+  $form['avatar_blocks_instruct'] = array(
+    '#value' => $instructions,
+  );
+  if (module_exists('imagecache') && imagecache_presets()) {
+    $preset_options = array('None');
+    foreach (imagecache_presets() as $preset) {
+      $preset_options[] = $preset['presetname'];
+    }
+    $preset_index = array_search(variable_get('avatar_blocks_default_icpreset',  ''), $preset_options);
+    $form['avatar_blocks_default_icpreset'] = array(
+      '#type' => 'select',
+      '#title' => 'Default Imagecache Preset',
+      '#description' => "Select the default Imagecache preset to apply to the avatars. You can override this on a per-block basis.",
+      '#options' => $preset_options,
+      '#default_value' => $preset_index,
+    );
+  }
+
+  $form['avatar_blocks_role_block'] = array(
+    '#type' => 'checkbox',
+    '#title' => 'Enable Avatars by Role block',
+    '#default_value' => variable_get('avatar_blocks_role_block', 1),
+  );
+  $form['#submit'][] = 'avatar_blocks_admin_submit';
+  return system_settings_form($form);
+}
+
+function avatar_blocks_admin_submit($form, &$form_state) {
+  if (module_exists('imagecache') && imagecache_presets()) {
+    if ($form_state['values']['avatar_blocks_default_icpreset']) {
+      $preset_options = array('None');
+      foreach (imagecache_presets() as $preset) {
+        $preset_options[] = $preset['presetname'];
+      }
+      $form_state['values']['avatar_blocks_default_icpreset'] = $preset_options[$form_state['values']['avatar_blocks_default_icpreset']];
+    }
+  }
+}
+
+
+function avatar_blocks_init() {
+  drupal_add_css('./'. drupal_get_path('module', 'avatar_blocks') .'/avatar_blocks.css');
+}
+
+/**
+ * Implementation of hook_menu().
+ */
+function avatar_blocks_menu() {
+  $items = array();
+  $items['admin/settings/avatarblocks'] = array(
+    'title' => 'Avatar Blocks',
+    'description' => 'This page provides settings for the Avatar Blocks module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('avatar_blocks_admin'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+  return $items;
+}
+/**
+ * Implementation of hook_block().
+ */
+function avatar_blocks_block($op = 'list', $delta = 0, $edit = array()) {
+  switch ($op) {
+    case 'list':
+      $blocks[AVATAR_BLOCKS_WHOS_ONLINE]['info'] = t("AvatarBlocks Who's Online");
+      $blocks[AVATAR_BLOCKS_WHOS_NEW]['info'] = t("AvatarBlocks Who's New");
+      if (variable_get('avatar_blocks_role_block', 1)) {
+        $blocks[AVATAR_BLOCKS_USER_ROLES]['info'] = t("AvatarBlocks User Role");
+      }
+      return $blocks;
+    case 'configure':
+      $form = array();
+      if ($delta == AVATAR_BLOCKS_WHOS_ONLINE) {
+        $period = drupal_map_assoc(array(30, 60, 120, 180, 300, 600, 900, 1800, 2700, 3600, 5400, 7200, 10800, 21600, 43200, 86400), 'format_interval');
+        $form['avatar_blocks_ol_seconds_online'] = array(
+          '#type' => 'select', 
+          '#title' => 'User activity', 
+          '#default_value' => variable_get('avatar_blocks_ol_seconds_online', 900), 
+          '#options' => $period, 
+          '#description' => 'A user is considered online for this long after they have last viewed a page.',
+        );
+        $form['avatar_blocks_ol_count'] = array(
+          '#type' => 'textfield', 
+          '#title' => 'Number of users to display',
+          '#default_value' => variable_get('avatar_blocks_ol_count', 10), 
+          '#description' => 'Maximum number of currently online users to display.',
+          '#size' => 5,
+          '#element_validate' => array('avatar_blocks_validate_olcount'),
+        );
+        if (module_exists('imagecache') && imagecache_presets()) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          $preset_index = array_search(variable_get('avatar_blocks_ol_icpreset',  ''), $preset_options);
+          $form['avatar_blocks_ol_icpreset'] = array(
+            '#type' => 'select',
+            '#title' => 'Imagecache Preset',
+            '#description' => "Select an Imagecache preset to apply to the avatars.",
+            '#options' => $preset_options,
+            '#default_value' => $preset_index,
+          );
+        }
+        $form['avatar_blocks_ol_include_text'] = array(
+          '#type' => 'checkbox',
+          '#title' => 'Include text summary',
+          '#default_value' => variable_get('avatar_blocks_ol_include_text', 0),
+          '#description' => "Enable this option to display a text summary of online users.",
+        );
+        $form['avatar_blocks_ol_display_noavatar'] = array(
+          '#type' => 'checkbox',
+          '#title' => 'Display users without avatars',
+          '#default_value' => variable_get('avatar_blocks_ol_display_noavatar', 1),
+          '#description' => "Enable this option to display the default avatar for users without pictures. You must configure a default picture.",
+        );
+      }
+      elseif ($delta == AVATAR_BLOCKS_WHOS_NEW) {
+        $form['avatar_blocks_nu_count'] = array(
+          '#type' => 'textfield', 
+          '#title' => 'Number of users to display',
+          '#default_value' => variable_get('avatar_blocks_nu_count', 10),
+          '#description' => 'Maximum number of new users to display.',
+          '#size' => 5,
+          '#element_validate' => array('avatar_blocks_validate_nucount'),
+        );
+        if (module_exists('imagecache') && imagecache_presets()) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          $preset_index = array_search(variable_get('avatar_blocks_nu_icpreset',  ''), $preset_options);
+          $form['avatar_blocks_nu_icpreset'] = array(
+            '#type' => 'select',
+            '#title' => 'Imagecache Preset',
+            '#description' => "Select an Imagecache preset to apply to the avatars.",
+            '#options' => $preset_options,
+            '#default_value' => $preset_index,
+          );
+        }
+        $form['avatar_blocks_nu_display_noavatar'] = array(
+          '#type' => 'checkbox',
+          '#title' => 'Display users without avatars',
+          '#default_value' => variable_get('avatar_blocks_nu_display_noavatar', 1),
+          '#description' => "Enable this option to display the default avatar for users without pictures. You must configure a default picture.",
+        );
+      }
+      elseif ($delta == AVATAR_BLOCKS_USER_ROLES) {
+        $form['avatar_blocks_ur_count'] = array(
+          '#type' => 'textfield', 
+          '#title' => 'Number of users to display',
+          '#default_value' => variable_get('avatar_blocks_ur_count', 10),
+          '#description' => 'Maximum number of users to display.',
+          '#size' => 5,
+          '#element_validate' => array('avatar_blocks_validate_urcount'),
+        );
+        $role_options = array('None');
+        foreach (user_roles(TRUE) as $rid => $name) {
+          $role_options[] = $name;
+        }
+        $role_index = array_search(variable_get('avatar_blocks_ur_role',  ''), $role_options);
+        $form['avatar_blocks_ur_role'] = array(
+          '#type' => 'select',
+          '#title' => 'Role',
+          '#description' => "This block will display the Avatars of Users who have the selected role.",
+          '#options' => $role_options,
+          '#default_value' => $role_index,
+        );
+        if (module_exists('imagecache') && imagecache_presets()) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          $preset_index = array_search(variable_get('avatar_blocks_ur_icpreset',  ''), $preset_options);
+          $form['avatar_blocks_ur_icpreset'] = array(
+            '#type' => 'select',
+            '#title' => 'Imagecache Preset',
+            '#description' => "Select an Imagecache preset to apply to the avatars.",
+            '#options' => $preset_options,
+            '#default_value' => $preset_index,
+          );
+        }
+        $form['avatar_blocks_ur_display_noavatar'] = array(
+          '#type' => 'checkbox',
+          '#title' => 'Display users without avatars',
+          '#default_value' => variable_get('avatar_blocks_ur_display_noavatar', 1),
+          '#description' => "Enable this option to display the default avatar for users without pictures. You must configure a default picture.",
+        );
+      }
+      return $form;
+    case 'save':
+      if ($delta == AVATAR_BLOCKS_WHOS_ONLINE) {
+        // save our block-specific settings.
+        if ($edit['avatar_blocks_ol_icpreset']) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          variable_set('avatar_blocks_ol_icpreset', $preset_options[$edit['avatar_blocks_ol_icpreset']]);
+        }
+        else {
+          variable_del('avatar_blocks_ol_icpreset');
+        }
+        variable_set('avatar_blocks_ol_seconds_online', $edit['avatar_blocks_ol_seconds_online']);
+        variable_set('avatar_blocks_ol_count', $edit['avatar_blocks_ol_count']);
+        variable_set('avatar_blocks_ol_include_text', $edit['avatar_blocks_ol_include_text']);
+        variable_set('avatar_blocks_ol_display_noavatar', $edit['avatar_blocks_ol_display_noavatar']);
+      }
+      elseif ($delta == AVATAR_BLOCKS_WHOS_NEW) {
+        // save our block-specific settings.
+        if ($edit['avatar_blocks_nu_icpreset']) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          variable_set('avatar_blocks_nu_icpreset', $preset_options[$edit['avatar_blocks_nu_icpreset']]);
+        }
+        else {
+          variable_del('avatar_blocks_nu_icpreset');
+        }
+        variable_set('avatar_blocks_nu_count', $edit['avatar_blocks_nu_count']);
+        variable_set('avatar_blocks_nu_display_noavatar', $edit['avatar_blocks_nu_display_noavatar']);
+      }
+      elseif ($delta == AVATAR_BLOCKS_USER_ROLES) {
+        // save our block-specific settings.
+        if ($edit['avatar_blocks_ur_role']) {
+          $role_options = array('None');
+          foreach (user_roles(TRUE) as $rid => $name) {
+            $role_options[] = $name;
+          }
+          variable_set('avatar_blocks_ur_role', $role_options[$edit['avatar_blocks_ur_role']]);
+        }
+        else {
+          variable_del('avatar_blocks_ur_role');
+        }
+
+        if ($edit['avatar_blocks_ur_icpreset']) {
+          $preset_options = array('Default');
+          foreach (imagecache_presets() as $preset) {
+            $preset_options[] = $preset['presetname'];
+          }
+          variable_set('avatar_blocks_ur_icpreset', $preset_options[$edit['avatar_blocks_ur_icpreset']]);
+        }
+        else {
+          variable_del('avatar_blocks_ur_icpreset');
+        }
+        variable_set('avatar_blocks_ur_count', $edit['avatar_blocks_ur_count']);
+        variable_set('avatar_blocks_ur_display_noavatar', $edit['avatar_blocks_ur_display_noavatar']);
+      }
+      return;
+    case 'view': default:
+      switch ($delta) {
+        case AVATAR_BLOCKS_WHOS_ONLINE:
+          if (user_access('access content')) {
+            $block['subject'] = "Who's Online";
+            $block['content'] = avatar_blocks_whos_online();
+          }
+          break;
+        case AVATAR_BLOCKS_WHOS_NEW:
+          if (user_access('access content')) {
+            $block['subject'] = "Who's New";
+            $block['content'] = avatar_blocks_newest_members();
+          }
+          break;
+        case AVATAR_BLOCKS_USER_ROLES:
+          if (variable_get('avatar_blocks_role_block', 1)) {
+            if (user_access('access content')) {
+              $block['subject'] = "Users by role";
+              $block['content'] = avatar_blocks_by_role();
+            }
+          }
+          break;
+      }
+      return $block;
+  }
+}
+
+/**
+* validate the who's online config block form.
+*/
+function avatar_blocks_validate_olcount($element) {
+  if (($element['#value'] != '') && (!is_numeric($element['#value']))) {
+    form_set_error('avatar_blocks_ol_count', t('Number of users must be a number'));
+  }
+}
+
+/**
+* validate the who's new config block form.
+*/
+function avatar_blocks_validate_nucount($element) {
+  if (($element['#value'] != '') && (!is_numeric($element['#value']))) {
+    form_set_error('avatar_blocks_nu_count', t('Number of users must be a number'));
+  }
+}
+
+/**
+* validate the user role config block form.
+*/
+function avatar_blocks_validate_urcount($element) {
+  if (($element['#value'] != '') && (!is_numeric($element['#value']))) {
+    form_set_error('avatar_blocks_ur_count', t('Number of users must be a number'));
+  }
+}
+
+/**
+* returns a user name.
+*/
+function avatar_blocks_getname($online_member) {
+  return $online_member->name;
+}
+
+
+/**
+* returns a user name.
+*/
+function avatar_blocks_getuserlink($online_member) {
+  return theme_username($online_member);
+}
+
+/**
+* returns a formated avatar link.
+*/
+function avatar_blocks_getavatar($online_member, $imagecache_preset = '') {
+  // are we using an imagecache preset?
+  $default_picture = variable_get('user_picture_default',  '');
+  if (module_exists('imagecache') && ($imagecache_preset != '')) {
+    $preset_options = array();
+    foreach (imagecache_presets() as $preset) {
+      $preset_options[] = $preset['presetname'];
+    }
+    // does the specified preset exist?
+    if (!(array_search($imagecache_preset, $preset_options) === FALSE)) {
+      if ($online_member->picture) {
+        // process the user's picture with imagecache
+        $output .= l(theme("imagecache", $imagecache_preset, $online_member->picture, $online_member->name, $online_member->name), "user/".$online_member->uid, array('title' => $online_member->name, 'absolute' => FALSE, 'html' => TRUE));
+      }
+      else {
+        // process the default picture with imagecache
+        $output .= l(theme("imagecache", $imagecache_preset, $default_picture, $online_member->name, $online_member->name), "user/".$online_member->uid, array('title' => $online_member->name, 'absolute' => FALSE, 'html' => TRUE));
+      }
+    }
+    // no such preset, just call theme_user_picture
+    else {
+      $output .= theme('user_picture', $online_member);
+    }
+  }
+  // not using imagecache, just call theme_user_picture
+  else {
+    $output .= theme('user_picture', $online_member);
+  }
+  return $output;
+}
+
+/**
+* who's online display.
+*
+* Displays the pictures of online users.
+*/
+function avatar_blocks_whos_online() {
+  $interval = time() - variable_get('avatar_blocks_ol_seconds_online', 900);
+  $imagecache_preset = variable_get('avatar_blocks_ol_icpreset',  '');
+  if ($imagecache_preset == '') {
+    $imagecache_preset = variable_get('avatar_blocks_default_icpreset',  '');
+  }
+  $anonymous_count = sess_count($interval);
+  $authenticated_users = db_query('SELECT DISTINCT u.uid, u.name, u.picture, s.timestamp FROM {users} u INNER JOIN {sessions} s ON u.uid = s.uid WHERE s.timestamp >= %d AND s.uid > 0 ORDER BY s.timestamp DESC', $interval);
+  $authenticated_count = 0;
+  $max_users = variable_get('avatar_blocks_ol_count', 10);
+  $items = array();
+  while ($account = db_fetch_object($authenticated_users)) {
+    if ($max_users > 0) {
+      if (variable_get('avatar_blocks_ol_display_noavatar', 1) == 0) {
+			  if ($account->picture != '') {
+          $items[] = $account;
+          $max_users--;
+				}
+			}
+			else {
+        $items[] = $account;
+        $max_users--;
+			}
+    }
+    $authenticated_count++;
+  }
+
+  $output = theme_avatar_blocks_block($items, $imagecache_preset);
+  if (variable_get('avatar_blocks_ol_include_text', 0)) {
+    // Format the output with proper grammar.
+    if ($anonymous_count == 1 && $authenticated_count == 1) {
+      $output .= t('There is currently %members and %visitors online.', array('%members' => format_plural($authenticated_count, '1 user', '@count users'), '%visitors' => format_plural($anonymous_count, '1 guest', '@count guests')));
+    }
+    else {
+      $output .= t('There are currently %members and %visitors online.', array('%members' => format_plural($authenticated_count, '1 user', '@count users'), '%visitors' => format_plural($anonymous_count, '1 guest', '@count guests')));
+    }
+  }
+  return $output;
+}
+
+
+/**
+* who's new display.
+*
+* Displays the pictures of new users.
+*/
+function avatar_blocks_newest_members() {
+  $imagecache_preset = variable_get('avatar_blocks_nu_icpreset',  '');
+  if ($imagecache_preset == '') {
+    $imagecache_preset = variable_get('avatar_blocks_default_icpreset',  '');
+  }
+  $display_count = variable_get('avatar_blocks_nu_count',  10);
+  if (!is_numeric($display_count)) {
+    $display_count = 10;
+  }
+  if (variable_get('avatar_blocks_nu_display_noavatar', 1)) {
+    $sql = 'SELECT uid,name,picture FROM {users} WHERE uid > 0 AND access > 0 ORDER BY created DESC';
+  }
+  else {
+    $sql = 'SELECT uid,name,picture FROM {users} WHERE uid > 0 AND access > 0 AND picture <> "" ORDER BY created DESC';
+  }
+  $new_member_list = db_query_range($sql, 0, $display_count);
+
+  $new_members = array();
+  while ($next_member = db_fetch_object($new_member_list)) {
+    $new_members[] = $next_member;
+  }
+  $output = theme_avatar_blocks_block($new_members, $imagecache_preset);
+  return $output;
+}
+
+/**
+* role display.
+*
+* Displays the pictures users who are a member of a specific role.
+*/
+function avatar_blocks_by_role() {
+  $imagecache_preset = variable_get('avatar_blocks_ur_icpreset',  '');
+  if ($imagecache_preset == '') {
+    $imagecache_preset = variable_get('avatar_blocks_default_icpreset',  '');
+  }
+  $display_count = variable_get('avatar_blocks_ur_count',  10);
+  if (!is_numeric($display_count)) {
+    $display_count = 10;
+  }
+  // retrieve list of roles
+  $roles = user_roles(TRUE);
+  $rid = array_search(variable_get('avatar_blocks_ur_role',  ''), $roles);
+  // does specified role exist ?
+  if (!($rid === FALSE)) {
+    if (variable_get('avatar_blocks_ur_display_noavatar', 1)) {
+      $sql = 'SELECT u.uid,u.name,u.picture FROM {users} u INNER JOIN {users_roles} r ON r.rid = %d AND u.uid = r.uid WHERE u.uid > 0 AND u.access > 0 ORDER BY u.created DESC';
+    }
+    else {
+      $sql = 'SELECT u.uid,u.name,u.picture FROM {users} u INNER JOIN {users_roles} r ON r.rid = %d AND u.uid = r.uid WHERE u.uid > 0 AND u.access > 0 AND u.picture <> "" ORDER BY u.created DESC';
+    }
+    $role_member_list = db_query_range($sql, $rid, 0, $display_count);
+    $role_members = array();
+    while ($next_member = db_fetch_object($role_member_list)) {
+      $role_members[] = $next_member;
+    }
+    $output = theme_avatar_blocks_block($role_members, $imagecache_preset);
+  }
+  else {
+    // specificed role not found
+  }
+  return $output;
+}
+
+function avatar_blocks_theme() {
+  return array(
+    'avatar_blocks_block' => array(
+      'arguments' => array('content' => NULL),
+    ),
+    'avatar_blocks_avatar' => array(
+      'arguments' => array('content' => NULL),
+    ),
+  );
+}
+
+/**
+* 
+*/
+function theme_avatar_blocks_block($online_members, $imagecache_preset) {
+  if (count($online_members)) {
+    foreach ($online_members as $online_member) {
+      $output .= theme('avatar_blocks_avatar', avatar_blocks_getavatar($online_member, $imagecache_preset), avatar_blocks_getname($online_member), avatar_blocks_getuserlink($online_member));
+    }
+    if ($output) { 
+      $output .= '<div style="clear:both"></div>'; 
+    }
+  }
+  return $output;
+}
+
+/**
+* 
+*/
+function theme_avatar_blocks_avatar($avatar_link, $name, $userlink) {
+  if ($avatar_link) {
+    $output = '<div class="userpicture">';
+    $output .= $avatar_link;
+    $output .= '</div>';
+  }
+  return $output;
+}
+
+/**
+* Check for new or deleted uploads and clear the imagecache if necessary.
+*/
+function avatar_blocks_profiles_user_edit_submit($form, &$form_state) {
+  if ($form_state['values']['picture_upload'] || $form_state['values']['picture_delete']) {
+    imagecache_image_flush($form_state['values']['picture']);
+  }
+}

@@ -1,0 +1,5 @@
+; $Id$
+name = WingChun Revision
+description = Custom changes for revision_moderation module
+dependencies[] = revision_moderation
+core = 7.x

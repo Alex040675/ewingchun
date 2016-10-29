@@ -1,0 +1,4 @@
+; $Id$
+name = WC User
+description = Customizations to User profile
+core = 7.x

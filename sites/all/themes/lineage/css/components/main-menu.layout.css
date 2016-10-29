@@ -1,0 +1,43 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000033}}
+#block-system-main-menu ul li + li {
+  border-left: 1px solid #444444; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000036}}
+#block-system-main-menu ul li {
+  box-sizing: border-box;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\000039}}
+  #block-system-main-menu ul li a {
+    background: url("../images/bg-nav.gif") repeat-x scroll 0% 0%;
+    color: #FFFFFF;
+    text-decoration: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/_main-menu\.scss}line{font-family:\0000314}}
+  #block-system-main-menu ul li a:hover {
+    color: #000000;
+    background: transparent url("../images/bg-nav.gif") repeat-x scroll 0% 50%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\000037}}
+#block-system-main-menu ul {
+  display: flex;
+  flex-direction: row; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000310}}
+  #block-system-main-menu ul li {
+    display: flex;
+    flex: 1 1 auto;
+    height: 44px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000314}}
+    #block-system-main-menu ul li a {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: center;
+      max-height: 44px; }
+
+@media screen and (max-width: 44em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000328}}
+  #block-system-main-menu ul {
+    flex-direction: column; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sifu\/sites\/all\/themes\/lineage\/sass\/components\/main-menu\.layout\.scss}line{font-family:\0000331}}
+  .l-branding {
+    text-align: center;
+    height: inherit; } }
