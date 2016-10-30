@@ -54,6 +54,9 @@
         // The anchor is then appended to the current element.
         $anchor.appendTo(this);
       });
+        $('#block-block-11 button').click(function() {
+            $('.l-region--navigation').toggleClass('active_menu');
+        });
     }
   };
 

@@ -1,5 +1,216 @@
+/* No files to import found in abstractions/**\/* */
+/* line 1, ../sass/base/_media.scss */
 img, media {
-  max-width: 100%;
-}
+  max-width: 100%; }
 
-/* No files to import found in partials/components/**\/* */
+/* line 1, ../sass/components/_main.scss */
+body {
+  background: #ebe9e1 none repeat scroll 0 0;
+  color: #666;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+  /* line 8, ../sass/components/_main.scss */
+  body .l-page {
+    width: 77%; }
+
+/* line 13, ../sass/components/_main.scss */
+header .l-branding {
+  float: left;
+  width: 23%;
+  margin-left: 2%; }
+/* line 18, ../sass/components/_main.scss */
+header .l-region--header {
+  float: right;
+  width: 75%; }
+/* line 22, ../sass/components/_main.scss */
+header #links {
+  display: none; }
+/* line 25, ../sass/components/_main.scss */
+header #leaderboard {
+  background: #dedede none repeat scroll 0 0;
+  color: #666;
+  float: left;
+  font-family: TrajanProBold;
+  font-size: 11px;
+  height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%; }
+/* line 36, ../sass/components/_main.scss */
+header #block-block-8 {
+  float: left; }
+/* line 39, ../sass/components/_main.scss */
+header #block-block-11 {
+  display: none; }
+/* line 42, ../sass/components/_main.scss */
+header #block-search-form {
+  height: 28px;
+  padding: 5px 10px 0 10px;
+  background: #d2d2d2; }
+  /* line 47, ../sass/components/_main.scss */
+  header #block-search-form #search-block-form .container-inline {
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    padding: 0; }
+  /* line 53, ../sass/components/_main.scss */
+  header #block-search-form #search-block-form .form-text {
+    background: #fff;
+    border: medium none;
+    font-size: 11px;
+    height: 20px;
+    padding: 0 6px;
+    width: 161px;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset; }
+  /* line 63, ../sass/components/_main.scss */
+  header #block-search-form #search-block-form #edit-submit {
+    background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
+    border: medium none;
+    cursor: pointer;
+    float: right;
+    margin-left: 10px;
+    height: 23px;
+    width: 18px;
+    font-size: 0; }
+  /* line 73, ../sass/components/_main.scss */
+  header #block-search-form #search-block-form .form-item-search-block-form:before {
+    content: "Search:";
+    color: #666; }
+
+/* line 80, ../sass/components/_main.scss */
+#block-system-main-menu {
+  background: #17335b;
+  clear: both;
+  overflow: hidden; }
+  /* line 84, ../sass/components/_main.scss */
+  #block-system-main-menu ul {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+    /* line 88, ../sass/components/_main.scss */
+    #block-system-main-menu ul li {
+      list-style: none;
+      float: left; }
+      /* line 91, ../sass/components/_main.scss */
+      #block-system-main-menu ul li a {
+        color: #fff;
+        display: block;
+        line-height: 44px;
+        padding: 0 15px;
+        text-decoration: none; }
+      /* line 98, ../sass/components/_main.scss */
+      #block-system-main-menu ul li a.active {
+        background: #1c57a7; }
+
+/* line 104, ../sass/components/_main.scss */
+#block-views-sifu-block-2, #block-views-local-resources-block-1 {
+  clear: both;
+  padding-bottom: 30px;
+  position: relative; }
+  /* line 108, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 .block__title, #block-views-local-resources-block-1 .block__title {
+    background: transparent url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
+    background-size: 100% 100%;
+    color: #1c57a7;
+    font-family: TrajanProBold;
+    font-size: 17px;
+    font-weight: normal;
+    height: 44px;
+    letter-spacing: -1px;
+    padding: 5px 0 0 14px;
+    text-transform: uppercase; }
+  /* line 120, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 table, #block-views-local-resources-block-1 table {
+    width: 90%;
+    margin: 0 auto; }
+  /* line 124, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 thead, #block-views-local-resources-block-1 thead {
+    background: #f8f8f8 none repeat scroll 0 0;
+    line-height: 40px; }
+    /* line 127, ../sass/components/_main.scss */
+    #block-views-sifu-block-2 thead th, #block-views-local-resources-block-1 thead th {
+      padding: 0 10px; }
+  /* line 132, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 tr td, #block-views-local-resources-block-1 tr td {
+    padding-left: 10px; }
+    /* line 134, ../sass/components/_main.scss */
+    #block-views-sifu-block-2 tr td a, #block-views-local-resources-block-1 tr td a {
+      color: #1c57a7;
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px !important;
+      text-decoration: underline; }
+  /* line 144, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 .odd, #block-views-local-resources-block-1 .odd {
+    background: #ededed none repeat scroll 0 0;
+    height: 44px; }
+  /* line 148, ../sass/components/_main.scss */
+  #block-views-sifu-block-2 .even, #block-views-local-resources-block-1 .even {
+    background: #f8f8f8 none repeat scroll 0 0;
+    height: 44px; }
+
+/* line 154, ../sass/components/_main.scss */
+footer {
+  clear: both; }
+
+@media screen and (max-width: 703px) {
+  /* line 2, ../sass/components/_mobile.scss */
+  body {
+    background: none !important; }
+    /* line 4, ../sass/components/_mobile.scss */
+    body .l-page {
+      width: 100%; }
+
+  /* line 10, ../sass/components/_mobile.scss */
+  header .l-branding img {
+    width: 100%;
+    height: auto; }
+  /* line 16, ../sass/components/_mobile.scss */
+  header .l-region--header {
+    float: none;
+    width: 100%; }
+  /* line 20, ../sass/components/_mobile.scss */
+  header #block-block-11 {
+    float: right;
+    margin-right: 20px;
+    display: block; }
+    /* line 24, ../sass/components/_mobile.scss */
+    header #block-block-11 button {
+      background: #17335b;
+      border: none;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 10px; }
+  /* line 32, ../sass/components/_mobile.scss */
+  header #block-block-8 {
+    text-align: center;
+    clear: both;
+    float: none; }
+  /* line 37, ../sass/components/_mobile.scss */
+  header #block-search-form {
+    width: 90%;
+    margin: 0 auto;
+    clear: both; }
+
+  /* line 43, ../sass/components/_mobile.scss */
+  #block-system-main-menu {
+    width: 100%;
+    display: none; }
+
+  /* line 48, ../sass/components/_mobile.scss */
+  .active_menu #block-system-main-menu {
+    display: block; }
+    /* line 51, ../sass/components/_mobile.scss */
+    .active_menu #block-system-main-menu ul li {
+      display: block;
+      float: none;
+      width: 100%; } }
+/* line 24, ../sass/ewingchun.styles.scss */
+body {
+  background: url(../images/leftleave.jpg) left top no-repeat, url(../images/rightleave.jpg) right top no-repeat; }
+
+/*# sourceMappingURL=ewingchun.no-query.css.map */

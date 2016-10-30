@@ -1,8 +1,8 @@
 // Import external libraries.
 @import "compass";
-@import "breakpoint";
-@import "singularitygs";
-@import "toolkit";
+//@import "breakpoint";
+//@import "singularitygs";
+//@import "toolkit";
 
 // Import variables, abstractions, base styles and components using globbing.
 //
@@ -20,3 +20,9 @@
 @import "abstractions/**/*";
 @import "base/**/*";
 @import "components/**/*";
+
+body{
+  background:
+  url( ../images/leftleave.jpg) left top no-repeat,
+  url(../images/rightleave.jpg) right top no-repeat;
+}
