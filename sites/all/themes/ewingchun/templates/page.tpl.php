@@ -71,6 +71,9 @@
  */
 ?>
 <div class="l-page">
+    <div class="top_header">
+        <?php print render($page['top_header']); ?>
+    </div>
   <header class="l-header" role="banner">
     <div class="l-branding">
       <?php if ($logo): ?>

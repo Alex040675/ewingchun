@@ -21,6 +21,7 @@ scripts[] = js/ewingchun.behaviors.js
 ; ========================================
 ; Regions
 ; ========================================
+regions[top_header] = Top Header
 regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation

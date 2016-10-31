@@ -5,6 +5,7 @@ engine = phptemplate
 core = 7.x
 
 ; Regions
+regions[top_header]     = Top Header
 regions[branding]       = Branding
 regions[header]         = Header
 regions[navigation]     = Navigation

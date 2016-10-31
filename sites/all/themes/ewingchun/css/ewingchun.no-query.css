@@ -5,7 +5,7 @@ img, media {
 
 /* line 1, ../sass/components/_main.scss */
 body {
-  background: #ebe9e1 none repeat scroll 0 0;
+  background: #ebe9e1;
   color: #666;
   font-family: Arial,Helvetica,sans-serif;
   font-size: 14px;
@@ -14,20 +14,101 @@ body {
   /* line 8, ../sass/components/_main.scss */
   body .l-page {
     width: 77%; }
+  /* line 11, ../sass/components/_main.scss */
+  body .has-sidebar-second .l-content {
+    float: left;
+    margin-right: 2%;
+    width: 58%; }
+  /* line 17, ../sass/components/_main.scss */
+  body .has-sidebar-second .l-region--sidebar-second {
+    width: 40%; }
 
-/* line 13, ../sass/components/_main.scss */
+/* line 21, ../sass/components/_main.scss */
+#wrapper {
+  padding: 20px 2%;
+  overflow: hidden; }
+
+/* line 26, ../sass/components/_main.scss */
 header .l-branding {
-  float: left;
-  width: 23%;
-  margin-left: 2%; }
-/* line 18, ../sass/components/_main.scss */
+  width: 100%;
+  float: none;
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  /* line 32, ../sass/components/_main.scss */
+  header .l-branding .site-logo {
+    margin-left: 2%; }
+  /* line 35, ../sass/components/_main.scss */
+  header .l-branding .l-region--branding {
+    width: 100%;
+    position: relative;
+    margin: 0; }
+    /* line 39, ../sass/components/_main.scss */
+    header .l-branding .l-region--branding #block-block-13 {
+      width: 60%;
+      margin: 0 auto; }
+      /* line 42, ../sass/components/_main.scss */
+      header .l-branding .l-region--branding #block-block-13 ul {
+        padding: 0;
+        margin: 0; }
+        /* line 45, ../sass/components/_main.scss */
+        header .l-branding .l-region--branding #block-block-13 ul li {
+          float: left;
+          margin: 0 -1px 0 0;
+          list-style: none;
+          width: 24%;
+          text-align: center;
+          border: solid 1px #e6e6e6;
+          border-radius: 0 0 5px 5px; }
+          /* line 53, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-13 ul li a {
+            background: #f8f8f8;
+            font-size: 12px;
+            color: #666;
+            display: block;
+            text-decoration: none;
+            padding: 10px 2%; }
+          /* line 61, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-13 ul li a:hover {
+            font-weight: 700;
+            background: #d2d2d2; }
+    /* line 68, ../sass/components/_main.scss */
+    header .l-branding .l-region--branding #block-block-12 {
+      float: right;
+      margin: 10px 20px 0 0; }
+      /* line 71, ../sass/components/_main.scss */
+      header .l-branding .l-region--branding #block-block-12 ul {
+        padding: 0;
+        margin: 0; }
+        /* line 74, ../sass/components/_main.scss */
+        header .l-branding .l-region--branding #block-block-12 ul li {
+          float: left;
+          list-style: none;
+          margin-right: 5px; }
+          /* line 78, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-12 ul li a {
+            display: block;
+            background-repeat: no-repeat;
+            width: 35px;
+            height: 33px;
+            font-size: 0; }
+          /* line 85, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-12 ul li .facebook {
+            background: url("../images/fb-icon.jpg"); }
+          /* line 88, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-12 ul li .twitter {
+            background: url("../images/tw-icon.jpg"); }
+          /* line 91, ../sass/components/_main.scss */
+          header .l-branding .l-region--branding #block-block-12 ul li .email {
+            background: url("../images/email-icon.jpg"); }
+/* line 99, ../sass/components/_main.scss */
 header .l-region--header {
   float: right;
   width: 75%; }
-/* line 22, ../sass/components/_main.scss */
+/* line 103, ../sass/components/_main.scss */
 header #links {
   display: none; }
-/* line 25, ../sass/components/_main.scss */
+/* line 106, ../sass/components/_main.scss */
 header #leaderboard {
   background: #dedede none repeat scroll 0 0;
   color: #666;
@@ -38,24 +119,24 @@ header #leaderboard {
   text-align: center;
   text-transform: uppercase;
   width: 100%; }
-/* line 36, ../sass/components/_main.scss */
+/* line 117, ../sass/components/_main.scss */
 header #block-block-8 {
   float: left; }
-/* line 39, ../sass/components/_main.scss */
+/* line 120, ../sass/components/_main.scss */
 header #block-block-11 {
   display: none; }
-/* line 42, ../sass/components/_main.scss */
+/* line 123, ../sass/components/_main.scss */
 header #block-search-form {
   height: 28px;
   padding: 5px 10px 0 10px;
   background: #d2d2d2; }
-  /* line 47, ../sass/components/_main.scss */
+  /* line 128, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .container-inline {
     border-radius: 0;
     background: none;
     box-shadow: none;
     padding: 0; }
-  /* line 53, ../sass/components/_main.scss */
+  /* line 134, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .form-text {
     background: #fff;
     border: medium none;
@@ -65,7 +146,7 @@ header #block-search-form {
     width: 161px;
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset; }
-  /* line 63, ../sass/components/_main.scss */
+  /* line 144, ../sass/components/_main.scss */
   header #block-search-form #search-block-form #edit-submit {
     background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
     border: medium none;
@@ -75,42 +156,132 @@ header #block-search-form {
     height: 23px;
     width: 18px;
     font-size: 0; }
-  /* line 73, ../sass/components/_main.scss */
+  /* line 154, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .form-item-search-block-form:before {
     content: "Search:";
     color: #666; }
 
-/* line 80, ../sass/components/_main.scss */
+/* line 161, ../sass/components/_main.scss */
 #block-system-main-menu {
   background: #17335b;
   clear: both;
   overflow: hidden; }
-  /* line 84, ../sass/components/_main.scss */
+  /* line 165, ../sass/components/_main.scss */
   #block-system-main-menu ul {
     padding: 0;
     margin: 0;
     width: 100%; }
-    /* line 88, ../sass/components/_main.scss */
+    /* line 169, ../sass/components/_main.scss */
     #block-system-main-menu ul li {
       list-style: none;
       float: left; }
-      /* line 91, ../sass/components/_main.scss */
+      /* line 172, ../sass/components/_main.scss */
       #block-system-main-menu ul li a {
         color: #fff;
         display: block;
         line-height: 44px;
         padding: 0 15px;
         text-decoration: none; }
-      /* line 98, ../sass/components/_main.scss */
+      /* line 179, ../sass/components/_main.scss */
       #block-system-main-menu ul li a.active {
         background: #1c57a7; }
 
-/* line 104, ../sass/components/_main.scss */
+/* line 186, ../sass/components/_main.scss */
+#block-block-10 h1 {
+  color: #1c57a7;
+  font-family: "Trajan Pro Bold";
+  font-size: 23px;
+  font-weight: normal;
+  text-transform: uppercase; }
+  /* line 192, ../sass/components/_main.scss */
+  #block-block-10 h1 span {
+    color: #116201; }
+/* line 196, ../sass/components/_main.scss */
+#block-block-10 .banner-top {
+  margin-bottom: 20px; }
+/* line 200, ../sass/components/_main.scss */
+#block-block-10 .banner-top > div {
+  box-sizing: border-box;
+  width: 50%; }
+/* line 204, ../sass/components/_main.scss */
+#block-block-10 .banner-top-left {
+  color: #8d8d8d;
+  float: left;
+  font-size: 15px;
+  font-weight: 700;
+  height: auto;
+  line-height: 25px;
+  padding: 15px 0 0;
+  text-align: left; }
+/* line 214, ../sass/components/_main.scss */
+#block-block-10 .banner-top-right {
+  background: transparent url("../images/bg01.jpg") repeat-x scroll left center;
+  color: #052756;
+  float: right;
+  height: 68px;
+  margin: 10px 0 0;
+  padding: 15px 20px; }
+  /* line 221, ../sass/components/_main.scss */
+  #block-block-10 .banner-top-right .usrname {
+    float: left; }
+/* line 225, ../sass/components/_main.scss */
+#block-block-10 .loginbtn {
+  background: #aeaeae none repeat scroll 0 0;
+  border-radius: 3px;
+  color: white;
+  float: right;
+  line-height: 37px;
+  margin: 0 8px;
+  padding: 0 25px;
+  text-decoration: none; }
+/* line 237, ../sass/components/_main.scss */
+#block-block-10 .browse-table h2 {
+  color: #116201;
+  font-family: "Trajan Pro Bold";
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase; }
+/* line 245, ../sass/components/_main.scss */
+#block-block-10 .browse-table p {
+  color: #1c57a7;
+  font-size: 16px;
+  font-weight: 700; }
+/* line 250, ../sass/components/_main.scss */
+#block-block-10 .browse-table .browsetable-box {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  float: left;
+  width: 25%;
+  padding: 10px;
+  text-align: center; }
+  /* line 258, ../sass/components/_main.scss */
+  #block-block-10 .browse-table .browsetable-box p.browse-heading {
+    color: #434242;
+    font-family: "Trajan Pro";
+    font-size: 20px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    margin: 0;
+    padding-bottom: 7px;
+    text-align: center;
+    text-transform: uppercase; }
+  /* line 269, ../sass/components/_main.scss */
+  #block-block-10 .browse-table .browsetable-box div {
+    display: inline;
+    margin: 16px;
+    text-align: center; }
+    /* line 273, ../sass/components/_main.scss */
+    #block-block-10 .browse-table .browsetable-box div a {
+      text-decoration: underline; }
+
+/* line 280, ../sass/components/_main.scss */
 #block-views-sifu-block-2, #block-views-local-resources-block-1 {
   clear: both;
   padding-bottom: 30px;
   position: relative; }
-  /* line 108, ../sass/components/_main.scss */
+  /* line 284, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .block__title, #block-views-local-resources-block-1 .block__title {
     background: transparent url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
     background-size: 100% 100%;
@@ -122,21 +293,21 @@ header #block-search-form {
     letter-spacing: -1px;
     padding: 5px 0 0 14px;
     text-transform: uppercase; }
-  /* line 120, ../sass/components/_main.scss */
+  /* line 296, ../sass/components/_main.scss */
   #block-views-sifu-block-2 table, #block-views-local-resources-block-1 table {
-    width: 90%;
+    width: 100%;
     margin: 0 auto; }
-  /* line 124, ../sass/components/_main.scss */
+  /* line 300, ../sass/components/_main.scss */
   #block-views-sifu-block-2 thead, #block-views-local-resources-block-1 thead {
     background: #f8f8f8 none repeat scroll 0 0;
     line-height: 40px; }
-    /* line 127, ../sass/components/_main.scss */
+    /* line 303, ../sass/components/_main.scss */
     #block-views-sifu-block-2 thead th, #block-views-local-resources-block-1 thead th {
       padding: 0 10px; }
-  /* line 132, ../sass/components/_main.scss */
+  /* line 308, ../sass/components/_main.scss */
   #block-views-sifu-block-2 tr td, #block-views-local-resources-block-1 tr td {
     padding-left: 10px; }
-    /* line 134, ../sass/components/_main.scss */
+    /* line 310, ../sass/components/_main.scss */
     #block-views-sifu-block-2 tr td a, #block-views-local-resources-block-1 tr td a {
       color: #1c57a7;
       font-family: Arial;
@@ -144,18 +315,147 @@ header #block-search-form {
       font-weight: 400;
       line-height: 17px !important;
       text-decoration: underline; }
-  /* line 144, ../sass/components/_main.scss */
+  /* line 320, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .odd, #block-views-local-resources-block-1 .odd {
     background: #ededed none repeat scroll 0 0;
     height: 44px; }
-  /* line 148, ../sass/components/_main.scss */
+  /* line 324, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .even, #block-views-local-resources-block-1 .even {
     background: #f8f8f8 none repeat scroll 0 0;
     height: 44px; }
 
-/* line 154, ../sass/components/_main.scss */
+/* line 331, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest h2 {
+  color: #1c57a7;
+  font-family: TrajanProBold;
+  font-size: 17px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  margin-bottom: 8px;
+  text-transform: uppercase; }
+  /* line 339, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest h2 span {
+    color: #116201 !important;
+    font-family: TrajanProBold;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: -1px; }
+/* line 347, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest li {
+  border: medium none !important;
+  color: #666;
+  float: left;
+  font-family: Arial !important;
+  font-size: 12px !important;
+  height: 50px !important;
+  line-height: 19px;
+  margin: 0 1% 0 0 !important;
+  padding: 0 !important;
+  text-align: center;
+  white-space: normal;
+  width: 24%; }
+  /* line 360, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest li a {
+    background: transparent url("../images/tab-bg.png") repeat-x left top;
+    color: #666;
+    display: block;
+    border: none;
+    font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    line-height: 50px !important;
+    overflow-wrap: normal;
+    text-align: center;
+    height: 50px !important;
+    line-height: 50px !important;
+    width: 100%;
+    padding: 0;
+    text-decoration: none; }
+  /* line 377, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest li a:hover {
+    background: #f8f8f8; }
+/* line 381, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest li:last-child {
+  margin: 0 !important;
+  width: 25%; }
+/* line 385, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest li.active a {
+  background: #F8F8F8;
+  color: #116201 !important; }
+/* line 389, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest #quicktabs-container-the_latest {
+  background: #F8F8F8;
+  padding: 20px 0 2% 15px; }
+/* line 393, ../sass/components/_main.scss */
+.l-region--sidebar-second #block-quicktabs-the-latest .view-content {
+  color: #666;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 19px; }
+  /* line 398, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu {
+    float: left; }
+    /* line 400, ../sass/components/_main.scss */
+    .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .views-label {
+      float: left;
+      margin-right: 5px; }
+    /* line 404, ../sass/components/_main.scss */
+    .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .field-content {
+      float: left; }
+  /* line 408, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-created {
+    float: left;
+    margin-left: 5px; }
+  /* line 412, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest .view-content a {
+    color: #1c57a7;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: underline; }
+  /* line 418, ../sass/components/_main.scss */
+  .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-row {
+    padding-bottom: 12px;
+    overflow: hidden; }
+
+/* line 425, ../sass/components/_main.scss */
 footer {
-  clear: both; }
+  clear: both;
+  width: 100%;
+  background: #414348 none repeat scroll 0 0;
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  height: 155px;
+  padding: 20px 0 0; }
+  /* line 434, ../sass/components/_main.scss */
+  footer #block-menu-menu-footer-links {
+    overflow: hidden;
+    width: 630px;
+    margin: 0 auto; }
+  /* line 439, ../sass/components/_main.scss */
+  footer ul {
+    margin: 0;
+    padding: 0; }
+    /* line 442, ../sass/components/_main.scss */
+    footer ul li {
+      list-style: none;
+      list-style-image: none;
+      float: left; }
+      /* line 446, ../sass/components/_main.scss */
+      footer ul li a {
+        border-left: 1px solid #fff;
+        color: #fff;
+        display: inline;
+        font-size: 13px;
+        letter-spacing: -1px;
+        padding: 0 6px;
+        text-decoration: none; }
+      /* line 455, ../sass/components/_main.scss */
+      footer ul li .active {
+        color: #fff; }
+    /* line 460, ../sass/components/_main.scss */
+    footer ul li.first a {
+      border: none; }
 
 @media screen and (max-width: 703px) {
   /* line 2, ../sass/components/_mobile.scss */
@@ -164,53 +464,116 @@ footer {
     /* line 4, ../sass/components/_mobile.scss */
     body .l-page {
       width: 100%; }
+    /* line 8, ../sass/components/_mobile.scss */
+    body .has-sidebar-second .l-content, body .has-sidebar-second .l-region--sidebar-second {
+      margin: 0;
+      width: 100%;
+      float: none; }
 
-  /* line 10, ../sass/components/_mobile.scss */
-  header .l-branding img {
-    width: 100%;
-    height: auto; }
-  /* line 16, ../sass/components/_mobile.scss */
+  /* line 17, ../sass/components/_mobile.scss */
+  header .l-branding .site-logo {
+    width: 205px;
+    margin: 10px auto;
+    display: block; }
+    /* line 21, ../sass/components/_mobile.scss */
+    header .l-branding .site-logo img {
+      width: 100%;
+      height: auto; }
+  /* line 27, ../sass/components/_mobile.scss */
+  header .l-branding .l-region--branding #block-block-13 {
+    margin: 0 auto;
+    width: 95%; }
+    /* line 31, ../sass/components/_mobile.scss */
+    header .l-branding .l-region--branding #block-block-13 ul li {
+      width: 49%;
+      margin-bottom: 10px; }
+  /* line 37, ../sass/components/_mobile.scss */
+  header .l-branding .l-region--branding #block-block-12 {
+    float: none;
+    width: 125px;
+    margin: 0 auto; }
+  /* line 45, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-  /* line 20, ../sass/components/_mobile.scss */
+  /* line 49, ../sass/components/_mobile.scss */
   header #block-block-11 {
     float: right;
     margin-right: 20px;
     display: block; }
-    /* line 24, ../sass/components/_mobile.scss */
+    /* line 53, ../sass/components/_mobile.scss */
     header #block-block-11 button {
       background: #17335b;
       border: none;
       color: #ffffff;
       text-transform: uppercase;
       padding: 10px; }
-  /* line 32, ../sass/components/_mobile.scss */
+  /* line 61, ../sass/components/_mobile.scss */
   header #block-block-8 {
     text-align: center;
     clear: both;
     float: none; }
-  /* line 37, ../sass/components/_mobile.scss */
+  /* line 66, ../sass/components/_mobile.scss */
   header #block-search-form {
     width: 90%;
     margin: 0 auto;
     clear: both; }
 
-  /* line 43, ../sass/components/_mobile.scss */
+  /* line 72, ../sass/components/_mobile.scss */
   #block-system-main-menu {
     width: 100%;
     display: none; }
 
-  /* line 48, ../sass/components/_mobile.scss */
+  /* line 77, ../sass/components/_mobile.scss */
   .active_menu #block-system-main-menu {
     display: block; }
-    /* line 51, ../sass/components/_mobile.scss */
+    /* line 80, ../sass/components/_mobile.scss */
     .active_menu #block-system-main-menu ul li {
       display: block;
       float: none;
-      width: 100%; } }
+      width: 100%; }
+
+  /* line 89, ../sass/components/_mobile.scss */
+  #block-block-10 .banner-top-left, #block-block-10 .banner-top-right {
+    float: none;
+    width: 100%;
+    clear: both;
+    overflow: hidden; }
+  /* line 96, ../sass/components/_mobile.scss */
+  #block-block-10 .browse-table .browsetable-box {
+    width: 50%; }
+    /* line 98, ../sass/components/_mobile.scss */
+    #block-block-10 .browse-table .browsetable-box p.browse-heading {
+      font-size: 18px; }
+  /* line 103, ../sass/components/_mobile.scss */
+  #block-block-10 .banner-top > div {
+    width: 100%; }
+  /* line 109, ../sass/components/_mobile.scss */
+  #block-block-10 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
+    text-align: center; }
+  /* line 113, ../sass/components/_mobile.scss */
+  #block-block-10 .l-region--sidebar-second #block-quicktabs-the-latest li a {
+    font-size: 11px; }
+
+  /* line 120, ../sass/components/_mobile.scss */
+  .l-footer {
+    overflow: hidden;
+    height: auto;
+    padding: 10px 0; }
+    /* line 124, ../sass/components/_mobile.scss */
+    .l-footer #block-menu-menu-footer-links {
+      width: 90%; }
+      /* line 127, ../sass/components/_mobile.scss */
+      .l-footer #block-menu-menu-footer-links ul li {
+        float: none;
+        text-align: center;
+        list-style-image: none;
+        list-style-type: none; }
+        /* line 132, ../sass/components/_mobile.scss */
+        .l-footer #block-menu-menu-footer-links ul li a {
+          border: none; } }
 /* line 24, ../sass/ewingchun.styles.scss */
 body {
-  background: url(../images/leftleave.jpg) left top no-repeat, url(../images/rightleave.jpg) right top no-repeat; }
+  background: #ebe9e1 url(../images/leftleave.jpg) left top no-repeat, url(../images/rightleave.jpg) right top no-repeat; }
 
 /*# sourceMappingURL=ewingchun.no-query.css.map */
