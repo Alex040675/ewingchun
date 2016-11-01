@@ -348,14 +348,18 @@ header #block-search-form {
     text-align: center; }
     /* line 348, ../sass/components/_main.scss */
     #block-block-10 .browse-table .browsetable-box div a {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #1c57a7;
+      font-family: Arial;
+      font-size: 12px;
+      font-weight: 400; }
 
-/* line 355, ../sass/components/_main.scss */
+/* line 359, ../sass/components/_main.scss */
 #block-views-sifu-block-2, #block-views-local-resources-block-1 {
   clear: both;
   padding-bottom: 30px;
   position: relative; }
-  /* line 359, ../sass/components/_main.scss */
+  /* line 363, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .block__title, #block-views-local-resources-block-1 .block__title {
     background: transparent url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
     background-size: 100% 100%;
@@ -367,21 +371,21 @@ header #block-search-form {
     letter-spacing: -1px;
     padding: 5px 0 0 14px;
     text-transform: uppercase; }
-  /* line 371, ../sass/components/_main.scss */
+  /* line 375, ../sass/components/_main.scss */
   #block-views-sifu-block-2 table, #block-views-local-resources-block-1 table {
     width: 100%;
     margin: 0 auto; }
-  /* line 375, ../sass/components/_main.scss */
+  /* line 379, ../sass/components/_main.scss */
   #block-views-sifu-block-2 thead, #block-views-local-resources-block-1 thead {
     background: #f8f8f8 none repeat scroll 0 0;
     line-height: 40px; }
-    /* line 378, ../sass/components/_main.scss */
+    /* line 382, ../sass/components/_main.scss */
     #block-views-sifu-block-2 thead th, #block-views-local-resources-block-1 thead th {
       padding: 0 10px; }
-  /* line 383, ../sass/components/_main.scss */
+  /* line 387, ../sass/components/_main.scss */
   #block-views-sifu-block-2 tr td, #block-views-local-resources-block-1 tr td {
     padding-left: 10px; }
-    /* line 385, ../sass/components/_main.scss */
+    /* line 389, ../sass/components/_main.scss */
     #block-views-sifu-block-2 tr td a, #block-views-local-resources-block-1 tr td a {
       color: #1c57a7;
       font-family: Arial;
@@ -389,16 +393,16 @@ header #block-search-form {
       font-weight: 400;
       line-height: 17px !important;
       text-decoration: underline; }
-  /* line 395, ../sass/components/_main.scss */
+  /* line 399, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .odd, #block-views-local-resources-block-1 .odd {
     background: #ededed none repeat scroll 0 0;
     height: 44px; }
-  /* line 399, ../sass/components/_main.scss */
+  /* line 403, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .even, #block-views-local-resources-block-1 .even {
     background: #f8f8f8 none repeat scroll 0 0;
     height: 44px; }
 
-/* line 406, ../sass/components/_main.scss */
+/* line 410, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
   color: #1c57a7;
   font-family: TrajanProBold;
@@ -407,14 +411,14 @@ header #block-search-form {
   letter-spacing: -1px;
   margin-bottom: 8px;
   text-transform: uppercase; }
-  /* line 414, ../sass/components/_main.scss */
+  /* line 418, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest h2 span {
     color: #116201 !important;
     font-family: TrajanProBold;
     font-size: 17px;
     font-weight: normal;
     letter-spacing: -1px; }
-/* line 422, ../sass/components/_main.scss */
+/* line 426, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li {
   border: medium none !important;
   color: #666;
@@ -428,7 +432,7 @@ header #block-search-form {
   text-align: center;
   white-space: normal;
   width: 24%; }
-  /* line 435, ../sass/components/_main.scss */
+  /* line 439, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a {
     background: transparent url("../images/tab-bg.png") repeat-x left top;
     color: #666;
@@ -445,77 +449,81 @@ header #block-search-form {
     width: 100%;
     padding: 0;
     text-decoration: none; }
-  /* line 452, ../sass/components/_main.scss */
+  /* line 456, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a:hover {
     background: #f8f8f8; }
-/* line 456, ../sass/components/_main.scss */
+/* line 460, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li:last-child {
   margin: 0 !important;
   width: 25%; }
-/* line 460, ../sass/components/_main.scss */
+/* line 464, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li.active a {
   background: #F8F8F8;
   color: #116201 !important; }
-/* line 464, ../sass/components/_main.scss */
+/* line 468, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest #quicktabs-container-the_latest {
   background: #F8F8F8;
   padding: 20px 0 2% 15px; }
-/* line 468, ../sass/components/_main.scss */
+/* line 472, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest .view-content {
   color: #666;
   font-family: Arial;
   font-size: 12px;
   line-height: 19px; }
-  /* line 473, ../sass/components/_main.scss */
+  /* line 477, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu {
     float: left; }
-    /* line 475, ../sass/components/_main.scss */
+    /* line 479, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .views-label {
       float: left;
       margin-right: 5px; }
-    /* line 479, ../sass/components/_main.scss */
+    /* line 483, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .field-content {
       float: left; }
-  /* line 483, ../sass/components/_main.scss */
+  /* line 487, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-created {
     float: left;
     margin-left: 5px; }
-  /* line 487, ../sass/components/_main.scss */
+  /* line 491, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content a {
     color: #1c57a7;
     font-family: Arial;
     font-size: 12px;
     text-decoration: underline; }
-  /* line 493, ../sass/components/_main.scss */
+  /* line 497, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-row {
     padding-bottom: 12px;
     overflow: hidden; }
 
-/* line 500, ../sass/components/_main.scss */
+/* line 504, ../sass/components/_main.scss */
 .under_content {
   clear: both;
   padding: 20px 2%; }
-  /* line 503, ../sass/components/_main.scss */
+  /* line 507, ../sass/components/_main.scss */
   .under_content #block-views-videos-block-2 {
     background: url("../images/videobg.jpg") repeat-y center center;
-    background-size: cover; }
-    /* line 506, ../sass/components/_main.scss */
+    background-size: cover;
+    padding: 20px 2%; }
+    /* line 511, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .views-row {
       float: left;
       width: 23%;
       margin-right: 2%;
       text-align: center; }
-      /* line 511, ../sass/components/_main.scss */
+      /* line 516, ../sass/components/_main.scss */
       .under_content #block-views-videos-block-2 .views-row .views-field-title {
         text-align: center; }
-        /* line 513, ../sass/components/_main.scss */
+        /* line 518, ../sass/components/_main.scss */
         .under_content #block-views-videos-block-2 .views-row .views-field-title a {
           color: #1c57a7;
           font-family: Arial;
           font-size: 12px;
           font-weight: 400; }
+    /* line 526, ../sass/components/_main.scss */
+    .under_content #block-views-videos-block-2 .views-row:nth-child(4n) {
+      margin-right: 0; }
 
-/* line 523, ../sass/components/_main.scss */
+/* line 531, ../sass/components/_main.scss */
 footer {
   clear: both;
   width: 100%;
@@ -525,21 +533,21 @@ footer {
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0; }
-  /* line 532, ../sass/components/_main.scss */
+  /* line 540, ../sass/components/_main.scss */
   footer #block-menu-menu-footer-links {
     overflow: hidden;
     width: 630px;
     margin: 0 auto; }
-  /* line 537, ../sass/components/_main.scss */
+  /* line 545, ../sass/components/_main.scss */
   footer ul {
     margin: 0;
     padding: 0; }
-    /* line 540, ../sass/components/_main.scss */
+    /* line 548, ../sass/components/_main.scss */
     footer ul li {
       list-style: none;
       list-style-image: none;
       float: left; }
-      /* line 544, ../sass/components/_main.scss */
+      /* line 552, ../sass/components/_main.scss */
       footer ul li a {
         border-left: 1px solid #fff;
         color: #fff;
@@ -548,13 +556,13 @@ footer {
         letter-spacing: -1px;
         padding: 0 6px;
         text-decoration: none; }
-      /* line 553, ../sass/components/_main.scss */
+      /* line 561, ../sass/components/_main.scss */
       footer ul li .active {
         color: #fff; }
-    /* line 558, ../sass/components/_main.scss */
+    /* line 566, ../sass/components/_main.scss */
     footer ul li.first a {
       border: none; }
-  /* line 563, ../sass/components/_main.scss */
+  /* line 571, ../sass/components/_main.scss */
   footer #block-block-14 {
     text-align: center; }
 

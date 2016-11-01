@@ -347,6 +347,10 @@ header {
         text-align: center;
         a{
           text-decoration: underline;
+          color: #1c57a7;
+          font-family: Arial;
+          font-size: 12px;
+          font-weight: 400;
         }
       }
     }
@@ -503,6 +507,7 @@ header {
   #block-views-videos-block-2{
     background: url("../images/videobg.jpg") repeat-y center center;
     background-size: cover;
+    padding: 20px 2%;
     .views-row{
       float: left;
       width: 23%;
@@ -517,6 +522,9 @@ header {
           font-weight: 400;
         }
       }
+    }
+    .views-row:nth-child(4n){
+      margin-right: 0;
     }
   }
 }
