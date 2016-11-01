@@ -226,23 +226,27 @@ header #block-search-form {
         background: #1c57a7; }
 
 /* line 227, ../sass/components/_main.scss */
+.above_content {
+  overflow: hidden; }
+
+/* line 231, ../sass/components/_main.scss */
 #block-block-10 h1 {
   color: #1c57a7;
   font-family: "Trajan Pro Bold";
   font-size: 23px;
   font-weight: normal;
   text-transform: uppercase; }
-  /* line 233, ../sass/components/_main.scss */
+  /* line 237, ../sass/components/_main.scss */
   #block-block-10 h1 span {
     color: #116201; }
-/* line 237, ../sass/components/_main.scss */
+/* line 241, ../sass/components/_main.scss */
 #block-block-10 .banner-top {
   margin-bottom: 20px; }
-/* line 241, ../sass/components/_main.scss */
+/* line 245, ../sass/components/_main.scss */
 #block-block-10 .banner-top > div {
   box-sizing: border-box;
   width: 50%; }
-/* line 245, ../sass/components/_main.scss */
+/* line 249, ../sass/components/_main.scss */
 #block-block-10 .banner-top-left {
   color: #8d8d8d;
   float: left;
@@ -252,7 +256,7 @@ header #block-search-form {
   line-height: 25px;
   padding: 15px 0 0;
   text-align: left; }
-/* line 255, ../sass/components/_main.scss */
+/* line 259, ../sass/components/_main.scss */
 #block-block-10 .banner-top-right {
   background: transparent url("../images/bg01.jpg") repeat-x scroll left center;
   color: #052756;
@@ -260,10 +264,10 @@ header #block-search-form {
   height: 68px;
   margin: 10px 0 0;
   padding: 15px 20px; }
-  /* line 262, ../sass/components/_main.scss */
+  /* line 266, ../sass/components/_main.scss */
   #block-block-10 .banner-top-right .usrname {
     float: left; }
-/* line 266, ../sass/components/_main.scss */
+/* line 270, ../sass/components/_main.scss */
 #block-block-10 .loginbtn {
   background: #aeaeae none repeat scroll 0 0;
   border-radius: 3px;
@@ -273,7 +277,7 @@ header #block-search-form {
   margin: 0 8px;
   padding: 0 25px;
   text-decoration: none; }
-/* line 278, ../sass/components/_main.scss */
+/* line 282, ../sass/components/_main.scss */
 #block-block-10 .browse-table h2 {
   color: #116201;
   font-family: "Trajan Pro Bold";
@@ -281,12 +285,12 @@ header #block-search-form {
   font-weight: normal;
   margin: 0;
   text-transform: uppercase; }
-/* line 286, ../sass/components/_main.scss */
+/* line 290, ../sass/components/_main.scss */
 #block-block-10 .browse-table p {
   color: #1c57a7;
   font-size: 16px;
   font-weight: 700; }
-/* line 291, ../sass/components/_main.scss */
+/* line 295, ../sass/components/_main.scss */
 #block-block-10 .browse-table .browsetable-box {
   background-color: #f2f2f2;
   border: 1px solid #ddd;
@@ -295,7 +299,7 @@ header #block-search-form {
   width: 25%;
   padding: 10px;
   text-align: center; }
-  /* line 299, ../sass/components/_main.scss */
+  /* line 303, ../sass/components/_main.scss */
   #block-block-10 .browse-table .browsetable-box p.browse-heading {
     color: #434242;
     font-family: "Trajan Pro";
@@ -306,21 +310,21 @@ header #block-search-form {
     padding-bottom: 7px;
     text-align: center;
     text-transform: uppercase; }
-  /* line 310, ../sass/components/_main.scss */
+  /* line 314, ../sass/components/_main.scss */
   #block-block-10 .browse-table .browsetable-box div {
     display: inline;
     margin: 16px;
     text-align: center; }
-    /* line 314, ../sass/components/_main.scss */
+    /* line 318, ../sass/components/_main.scss */
     #block-block-10 .browse-table .browsetable-box div a {
       text-decoration: underline; }
 
-/* line 321, ../sass/components/_main.scss */
+/* line 325, ../sass/components/_main.scss */
 #block-views-sifu-block-2, #block-views-local-resources-block-1 {
   clear: both;
   padding-bottom: 30px;
   position: relative; }
-  /* line 325, ../sass/components/_main.scss */
+  /* line 329, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .block__title, #block-views-local-resources-block-1 .block__title {
     background: transparent url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
     background-size: 100% 100%;
@@ -332,21 +336,21 @@ header #block-search-form {
     letter-spacing: -1px;
     padding: 5px 0 0 14px;
     text-transform: uppercase; }
-  /* line 337, ../sass/components/_main.scss */
+  /* line 341, ../sass/components/_main.scss */
   #block-views-sifu-block-2 table, #block-views-local-resources-block-1 table {
     width: 100%;
     margin: 0 auto; }
-  /* line 341, ../sass/components/_main.scss */
+  /* line 345, ../sass/components/_main.scss */
   #block-views-sifu-block-2 thead, #block-views-local-resources-block-1 thead {
     background: #f8f8f8 none repeat scroll 0 0;
     line-height: 40px; }
-    /* line 344, ../sass/components/_main.scss */
+    /* line 348, ../sass/components/_main.scss */
     #block-views-sifu-block-2 thead th, #block-views-local-resources-block-1 thead th {
       padding: 0 10px; }
-  /* line 349, ../sass/components/_main.scss */
+  /* line 353, ../sass/components/_main.scss */
   #block-views-sifu-block-2 tr td, #block-views-local-resources-block-1 tr td {
     padding-left: 10px; }
-    /* line 351, ../sass/components/_main.scss */
+    /* line 355, ../sass/components/_main.scss */
     #block-views-sifu-block-2 tr td a, #block-views-local-resources-block-1 tr td a {
       color: #1c57a7;
       font-family: Arial;
@@ -354,16 +358,16 @@ header #block-search-form {
       font-weight: 400;
       line-height: 17px !important;
       text-decoration: underline; }
-  /* line 361, ../sass/components/_main.scss */
+  /* line 365, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .odd, #block-views-local-resources-block-1 .odd {
     background: #ededed none repeat scroll 0 0;
     height: 44px; }
-  /* line 365, ../sass/components/_main.scss */
+  /* line 369, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .even, #block-views-local-resources-block-1 .even {
     background: #f8f8f8 none repeat scroll 0 0;
     height: 44px; }
 
-/* line 372, ../sass/components/_main.scss */
+/* line 376, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
   color: #1c57a7;
   font-family: TrajanProBold;
@@ -372,14 +376,14 @@ header #block-search-form {
   letter-spacing: -1px;
   margin-bottom: 8px;
   text-transform: uppercase; }
-  /* line 380, ../sass/components/_main.scss */
+  /* line 384, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest h2 span {
     color: #116201 !important;
     font-family: TrajanProBold;
     font-size: 17px;
     font-weight: normal;
     letter-spacing: -1px; }
-/* line 388, ../sass/components/_main.scss */
+/* line 392, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li {
   border: medium none !important;
   color: #666;
@@ -393,7 +397,7 @@ header #block-search-form {
   text-align: center;
   white-space: normal;
   width: 24%; }
-  /* line 401, ../sass/components/_main.scss */
+  /* line 405, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a {
     background: transparent url("../images/tab-bg.png") repeat-x left top;
     color: #666;
@@ -410,77 +414,77 @@ header #block-search-form {
     width: 100%;
     padding: 0;
     text-decoration: none; }
-  /* line 418, ../sass/components/_main.scss */
+  /* line 422, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a:hover {
     background: #f8f8f8; }
-/* line 422, ../sass/components/_main.scss */
+/* line 426, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li:last-child {
   margin: 0 !important;
   width: 25%; }
-/* line 426, ../sass/components/_main.scss */
+/* line 430, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li.active a {
   background: #F8F8F8;
   color: #116201 !important; }
-/* line 430, ../sass/components/_main.scss */
+/* line 434, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest #quicktabs-container-the_latest {
   background: #F8F8F8;
   padding: 20px 0 2% 15px; }
-/* line 434, ../sass/components/_main.scss */
+/* line 438, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest .view-content {
   color: #666;
   font-family: Arial;
   font-size: 12px;
   line-height: 19px; }
-  /* line 439, ../sass/components/_main.scss */
+  /* line 443, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu {
     float: left; }
-    /* line 441, ../sass/components/_main.scss */
+    /* line 445, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .views-label {
       float: left;
       margin-right: 5px; }
-    /* line 445, ../sass/components/_main.scss */
+    /* line 449, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .field-content {
       float: left; }
-  /* line 449, ../sass/components/_main.scss */
+  /* line 453, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-created {
     float: left;
     margin-left: 5px; }
-  /* line 453, ../sass/components/_main.scss */
+  /* line 457, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content a {
     color: #1c57a7;
     font-family: Arial;
     font-size: 12px;
     text-decoration: underline; }
-  /* line 459, ../sass/components/_main.scss */
+  /* line 463, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-row {
     padding-bottom: 12px;
     overflow: hidden; }
 
-/* line 466, ../sass/components/_main.scss */
+/* line 470, ../sass/components/_main.scss */
 .under_content {
   clear: both;
   padding: 20px 2%; }
-  /* line 469, ../sass/components/_main.scss */
+  /* line 473, ../sass/components/_main.scss */
   .under_content #block-views-videos-block-2 {
     background: url("../images/videobg.jpg") repeat-y center center;
     background-size: cover; }
-    /* line 472, ../sass/components/_main.scss */
+    /* line 476, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .views-row {
       float: left;
       width: 23%;
       margin-right: 2%;
       text-align: center; }
-      /* line 477, ../sass/components/_main.scss */
+      /* line 481, ../sass/components/_main.scss */
       .under_content #block-views-videos-block-2 .views-row .views-field-title {
         text-align: center; }
-        /* line 479, ../sass/components/_main.scss */
+        /* line 483, ../sass/components/_main.scss */
         .under_content #block-views-videos-block-2 .views-row .views-field-title a {
           color: #1c57a7;
           font-family: Arial;
           font-size: 12px;
           font-weight: 400; }
 
-/* line 489, ../sass/components/_main.scss */
+/* line 493, ../sass/components/_main.scss */
 footer {
   clear: both;
   width: 100%;
@@ -490,21 +494,21 @@ footer {
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0; }
-  /* line 498, ../sass/components/_main.scss */
+  /* line 502, ../sass/components/_main.scss */
   footer #block-menu-menu-footer-links {
     overflow: hidden;
     width: 630px;
     margin: 0 auto; }
-  /* line 503, ../sass/components/_main.scss */
+  /* line 507, ../sass/components/_main.scss */
   footer ul {
     margin: 0;
     padding: 0; }
-    /* line 506, ../sass/components/_main.scss */
+    /* line 510, ../sass/components/_main.scss */
     footer ul li {
       list-style: none;
       list-style-image: none;
       float: left; }
-      /* line 510, ../sass/components/_main.scss */
+      /* line 514, ../sass/components/_main.scss */
       footer ul li a {
         border-left: 1px solid #fff;
         color: #fff;
@@ -513,13 +517,13 @@ footer {
         letter-spacing: -1px;
         padding: 0 6px;
         text-decoration: none; }
-      /* line 519, ../sass/components/_main.scss */
+      /* line 523, ../sass/components/_main.scss */
       footer ul li .active {
         color: #fff; }
-    /* line 524, ../sass/components/_main.scss */
+    /* line 528, ../sass/components/_main.scss */
     footer ul li.first a {
       border: none; }
-  /* line 529, ../sass/components/_main.scss */
+  /* line 533, ../sass/components/_main.scss */
   footer #block-block-14 {
     text-align: center; }
 
@@ -618,7 +622,7 @@ footer {
       font-size: 18px; }
   /* line 106, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
-    width: 100%; }
+    width: 100% !important; }
   /* line 112, ../sass/components/_mobile.scss */
   #block-block-10 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
     text-align: center; }

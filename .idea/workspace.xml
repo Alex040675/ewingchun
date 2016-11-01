@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e708d0b3-fd69-4fbb-9610-d1ce45c3d618" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/ewingchun.info" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/ewingchun.info" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/layouts/live/live-layout.tpl.php" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/layouts/live/live-layout.tpl.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/layouts/live/live.layout.inc" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/layouts/live/live.layout.inc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ewingchun.iws" />
@@ -36,21 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.846153" vertical-offset="1666" max-vertical-offset="9129">
-              <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.68456376" vertical-offset="3349" max-vertical-offset="9197">
+              <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7147651" vertical-offset="1792" max-vertical-offset="3791">
-              <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
+            <state vertical-scroll-proportion="-55.576923" vertical-offset="357" max-vertical-offset="3791">
+              <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -59,30 +55,30 @@
       <file leaf-file-name="ewingchun.styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="12070">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="12070">
+              <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
-                <marker date="1478018268480" expanded="true" signature="15587:15609" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="16092:16137" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="17691:17759" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="17818:17899" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="17948:18037" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18180:18276" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18342:18420" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18471:18540" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18583:18673" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18732:18876" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="18934:19027" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="19122:19177" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="19596:19711" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="19781:19787" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="19913:20026" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="20189:20314" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="20562:20576" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="20621:20630" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="20564:20634" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="20784:20811" placeholder="{...}" />
-                <marker date="1478018268480" expanded="true" signature="21099:21254" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="15587:15609" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="16092:16137" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="17691:17759" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="17818:17899" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="17948:18037" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18180:18276" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18342:18420" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18471:18540" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18583:18673" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18732:18876" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="18934:19027" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="19122:19177" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="19596:19711" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="19781:19787" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="19913:20026" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="20200:20325" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="20573:20587" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="20632:20641" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="20575:20645" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="20795:20822" placeholder="{...}" />
+                <marker date="1478019636535" expanded="true" signature="21110:21265" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,8 +113,8 @@
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/layouts/live/live.layout.inc" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/ewingchun.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css" />
-        <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss" />
       </list>
     </option>
   </component>
@@ -456,7 +452,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -522,27 +518,27 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="9843" max-vertical-offset="9945">
           <caret line="579" column="0" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
           <folding>
-            <marker date="1478018268480" expanded="true" signature="15587:15609" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="16092:16137" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17691:17759" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17818:17899" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17948:18037" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18180:18276" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18342:18420" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18471:18540" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18583:18673" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18732:18876" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18934:19027" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19122:19177" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19596:19711" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19781:19787" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19913:20026" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20189:20314" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20562:20576" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20621:20630" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20564:20634" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20784:20811" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="21099:21254" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="15587:15609" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="16092:16137" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17691:17759" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17818:17899" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17948:18037" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18180:18276" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18342:18420" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18471:18540" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18583:18673" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18732:18876" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18934:19027" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19122:19177" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19596:19711" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19781:19787" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19913:20026" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20200:20325" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20573:20587" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20632:20641" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20575:20645" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20795:20822" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="21110:21265" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -645,46 +641,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1904" max-vertical-offset="12070">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1921" max-vertical-offset="12070">
+          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
-            <marker date="1478018268480" expanded="true" signature="15587:15609" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="16092:16137" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17691:17759" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17818:17899" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="17948:18037" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18180:18276" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18342:18420" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18471:18540" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18583:18673" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18732:18876" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="18934:19027" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19122:19177" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19596:19711" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19781:19787" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="19913:20026" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20189:20314" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20562:20576" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20621:20630" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20564:20634" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="20784:20811" placeholder="{...}" />
-            <marker date="1478018268480" expanded="true" signature="21099:21254" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="15587:15609" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="16092:16137" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17691:17759" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17818:17899" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="17948:18037" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18180:18276" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18342:18420" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18471:18540" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18583:18673" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18732:18876" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="18934:19027" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19122:19177" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19596:19711" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19781:19787" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="19913:20026" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20200:20325" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20573:20587" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20632:20641" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20575:20645" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="20795:20822" placeholder="{...}" />
+            <marker date="1478019636535" expanded="true" signature="21110:21265" placeholder="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.846153" vertical-offset="1666" max-vertical-offset="9129">
-          <caret line="136" column="24" selection-start-line="136" selection-start-column="24" selection-end-line="136" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7147651" vertical-offset="1792" max-vertical-offset="3791">
-          <caret line="143" column="32" selection-start-line="143" selection-start-column="32" selection-end-line="143" selection-end-column="32" />
+        <state vertical-scroll-proportion="-55.576923" vertical-offset="357" max-vertical-offset="3791">
+          <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68456376" vertical-offset="3349" max-vertical-offset="9197">
+          <caret line="233" column="20" selection-start-line="233" selection-start-column="20" selection-end-line="233" selection-end-column="20" />
           <folding />
         </state>
       </provider>
