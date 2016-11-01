@@ -519,11 +519,8 @@ header #block-search-form {
           font-family: Arial;
           font-size: 12px;
           font-weight: 400; }
-    /* line 526, ../sass/components/_main.scss */
-    .under_content #block-views-videos-block-2 .views-row:nth-child(4n) {
-      margin-right: 0; }
 
-/* line 531, ../sass/components/_main.scss */
+/* line 528, ../sass/components/_main.scss */
 footer {
   clear: both;
   width: 100%;
@@ -533,21 +530,21 @@ footer {
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0; }
-  /* line 540, ../sass/components/_main.scss */
+  /* line 537, ../sass/components/_main.scss */
   footer #block-menu-menu-footer-links {
     overflow: hidden;
     width: 630px;
     margin: 0 auto; }
-  /* line 545, ../sass/components/_main.scss */
+  /* line 542, ../sass/components/_main.scss */
   footer ul {
     margin: 0;
     padding: 0; }
-    /* line 548, ../sass/components/_main.scss */
+    /* line 545, ../sass/components/_main.scss */
     footer ul li {
       list-style: none;
       list-style-image: none;
       float: left; }
-      /* line 552, ../sass/components/_main.scss */
+      /* line 549, ../sass/components/_main.scss */
       footer ul li a {
         border-left: 1px solid #fff;
         color: #fff;
@@ -556,13 +553,13 @@ footer {
         letter-spacing: -1px;
         padding: 0 6px;
         text-decoration: none; }
-      /* line 561, ../sass/components/_main.scss */
+      /* line 558, ../sass/components/_main.scss */
       footer ul li .active {
         color: #fff; }
-    /* line 566, ../sass/components/_main.scss */
+    /* line 563, ../sass/components/_main.scss */
     footer ul li.first a {
       border: none; }
-  /* line 571, ../sass/components/_main.scss */
+  /* line 568, ../sass/components/_main.scss */
   footer #block-block-14 {
     text-align: center; }
 
