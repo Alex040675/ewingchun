@@ -541,7 +541,7 @@ footer {
     padding: 0; }
     /* line 545, ../sass/components/_main.scss */
     footer ul li {
-      list-style: none;
+      list-style: none !important;
       list-style-image: none;
       float: left; }
       /* line 549, ../sass/components/_main.scss */
