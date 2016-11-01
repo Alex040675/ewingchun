@@ -519,8 +519,11 @@ header #block-search-form {
           font-family: Arial;
           font-size: 12px;
           font-weight: 400; }
+    /* line 526, ../sass/components/_main.scss */
+    .under_content #block-views-videos-block-2 .more-link {
+      display: none; }
 
-/* line 528, ../sass/components/_main.scss */
+/* line 531, ../sass/components/_main.scss */
 footer {
   clear: both;
   width: 100%;
@@ -530,21 +533,21 @@ footer {
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0; }
-  /* line 537, ../sass/components/_main.scss */
+  /* line 540, ../sass/components/_main.scss */
   footer #block-menu-menu-footer-links {
     overflow: hidden;
     width: 630px;
     margin: 0 auto; }
-  /* line 542, ../sass/components/_main.scss */
+  /* line 545, ../sass/components/_main.scss */
   footer ul {
     margin: 0;
     padding: 0; }
-    /* line 545, ../sass/components/_main.scss */
+    /* line 548, ../sass/components/_main.scss */
     footer ul li {
       list-style: none !important;
       list-style-image: none;
       float: left; }
-      /* line 549, ../sass/components/_main.scss */
+      /* line 552, ../sass/components/_main.scss */
       footer ul li a {
         border-left: 1px solid #fff;
         color: #fff;
@@ -553,13 +556,13 @@ footer {
         letter-spacing: -1px;
         padding: 0 6px;
         text-decoration: none; }
-      /* line 558, ../sass/components/_main.scss */
+      /* line 561, ../sass/components/_main.scss */
       footer ul li .active {
         color: #fff; }
-    /* line 563, ../sass/components/_main.scss */
+    /* line 566, ../sass/components/_main.scss */
     footer ul li.first a {
       border: none; }
-  /* line 568, ../sass/components/_main.scss */
+  /* line 571, ../sass/components/_main.scss */
   footer #block-block-14 {
     text-align: center; }
 
@@ -600,159 +603,163 @@ footer {
   /* line 42, ../sass/components/_mobile.scss */
   .top_header #block-block-12 {
     float: none;
-    width: 125px;
+    width: 120px;
     margin: 0 auto; }
+    /* line 46, ../sass/components/_mobile.scss */
+    .top_header #block-block-12 #links {
+      width: 110px;
+      margin: 0 auto; }
 
-  /* line 49, ../sass/components/_mobile.scss */
+  /* line 53, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none; }
-    /* line 51, ../sass/components/_mobile.scss */
+    /* line 55, ../sass/components/_mobile.scss */
     header .l-branding .site-logo {
       width: 205px;
       margin: 10px auto;
       display: block; }
-      /* line 55, ../sass/components/_mobile.scss */
+      /* line 59, ../sass/components/_mobile.scss */
       header .l-branding .site-logo img {
         width: 100%;
         height: auto; }
-  /* line 65, ../sass/components/_mobile.scss */
+  /* line 69, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-  /* line 69, ../sass/components/_mobile.scss */
+  /* line 73, ../sass/components/_mobile.scss */
   header #block-block-11 {
     float: right;
     margin-right: 20px;
     display: block; }
-    /* line 73, ../sass/components/_mobile.scss */
+    /* line 77, ../sass/components/_mobile.scss */
     header #block-block-11 button {
       background: #17335b;
       border: none;
       color: #ffffff;
       text-transform: uppercase;
       padding: 10px; }
-  /* line 81, ../sass/components/_mobile.scss */
+  /* line 85, ../sass/components/_mobile.scss */
   header #block-block-8 {
     text-align: center;
     clear: both;
     float: none; }
-  /* line 86, ../sass/components/_mobile.scss */
+  /* line 90, ../sass/components/_mobile.scss */
   header #block-search-form {
     width: 260px;
     float: none;
     margin: 0 auto 20px;
     clear: both; }
 
-  /* line 93, ../sass/components/_mobile.scss */
+  /* line 97, ../sass/components/_mobile.scss */
   #block-system-main-menu {
     display: none; }
 
-  /* line 97, ../sass/components/_mobile.scss */
+  /* line 101, ../sass/components/_mobile.scss */
   .active_menu #block-system-main-menu {
     display: block;
     width: 100%; }
-    /* line 100, ../sass/components/_mobile.scss */
+    /* line 104, ../sass/components/_mobile.scss */
     .active_menu #block-system-main-menu li {
       float: none;
       width: 100%; }
 
-  /* line 107, ../sass/components/_mobile.scss */
+  /* line 111, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-left, #block-block-10 .banner-top-right {
     float: none;
     width: 100%;
     clear: both;
     overflow: hidden; }
-  /* line 114, ../sass/components/_mobile.scss */
+  /* line 118, ../sass/components/_mobile.scss */
   #block-block-10 .browse-table .browsetable-box {
     width: 50%; }
-    /* line 116, ../sass/components/_mobile.scss */
+    /* line 120, ../sass/components/_mobile.scss */
     #block-block-10 .browse-table .browsetable-box p.browse-heading {
       font-size: 18px; }
-  /* line 121, ../sass/components/_mobile.scss */
+  /* line 125, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     width: 100% !important; }
-  /* line 127, ../sass/components/_mobile.scss */
+  /* line 131, ../sass/components/_mobile.scss */
   #block-block-10 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
     text-align: center; }
-  /* line 131, ../sass/components/_mobile.scss */
+  /* line 135, ../sass/components/_mobile.scss */
   #block-block-10 .l-region--sidebar-second #block-quicktabs-the-latest li a {
     font-size: 11px; }
 
-  /* line 141, ../sass/components/_mobile.scss */
+  /* line 145, ../sass/components/_mobile.scss */
   .under_content #block-views-videos-block-2 .views-row {
     float: none;
     width: 90%;
     margin: 0 auto 20px; }
 
-  /* line 148, ../sass/components/_mobile.scss */
+  /* line 152, ../sass/components/_mobile.scss */
   .l-footer {
     overflow: hidden;
     height: auto;
     padding: 10px 0; }
-    /* line 152, ../sass/components/_mobile.scss */
+    /* line 156, ../sass/components/_mobile.scss */
     .l-footer #block-menu-menu-footer-links {
       width: 90%; }
-      /* line 155, ../sass/components/_mobile.scss */
+      /* line 159, ../sass/components/_mobile.scss */
       .l-footer #block-menu-menu-footer-links ul li {
         float: none;
         text-align: center;
         list-style-image: none;
         list-style-type: none;
         margin-bottom: 5px; }
-        /* line 161, ../sass/components/_mobile.scss */
+        /* line 165, ../sass/components/_mobile.scss */
         .l-footer #block-menu-menu-footer-links ul li a {
           border: none; } }
 @media screen and (max-width: 960px) {
-  /* line 172, ../sass/components/_mobile.scss */
+  /* line 176, ../sass/components/_mobile.scss */
   body .l-page {
     width: 100% !important;
     border: none; }
-    /* line 175, ../sass/components/_mobile.scss */
+    /* line 179, ../sass/components/_mobile.scss */
     body .l-page .l-main {
       width: 96%;
       background: #ebe9e1; }
-    /* line 180, ../sass/components/_mobile.scss */
+    /* line 184, ../sass/components/_mobile.scss */
     body .l-page .l-region--sidebar-second #block-quicktabs-the-latest li a {
       font-size: 11px !important; }
 
-  /* line 188, ../sass/components/_mobile.scss */
+  /* line 192, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     box-sizing: border-box;
     width: 49%; }
-  /* line 192, ../sass/components/_mobile.scss */
+  /* line 196, ../sass/components/_mobile.scss */
   #block-block-10 .register-link {
     margin: 15px 0 0 10px; }
-  /* line 195, ../sass/components/_mobile.scss */
+  /* line 199, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-right {
     padding: 15px 10px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 202, ../sass/components/_mobile.scss */
+  /* line 206, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 206, ../sass/components/_mobile.scss */
+  /* line 210, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 212, ../sass/components/_mobile.scss */
+  /* line 216, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 219, ../sass/components/_mobile.scss */
+  /* line 223, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
 
-  /* line 227, ../sass/components/_mobile.scss */
+  /* line 231, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     padding: 0 10px;
     font-size: 12px; } }
 @media screen and (max-width: 1180px) {
-  /* line 236, ../sass/components/_mobile.scss */
+  /* line 240, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; } }
 /* line 24, ../sass/ewingchun.styles.scss */
