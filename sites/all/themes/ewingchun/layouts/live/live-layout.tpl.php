@@ -26,6 +26,7 @@
   </header>
 
   <div class="l-main">
+      <div class="above_content"><?php print render($page['above_content']); ?></div>
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
