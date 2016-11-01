@@ -229,7 +229,32 @@ header {
 }
 #block-block-10{
   .tocontribute {
+    border-right: 1px solid #c4c4c4;
+    color: #17335b;
     float: left;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0;
+    width: 40%
+  }
+  .register-link {
+    background: #1C57A7;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    font-size: 14px !important;
+    height: 37px;
+    line-height: 37px;
+    margin: 15px 0 0 25px;
+    text-align: center;
+    width: 87px;
+  }
+  .register-link:hover{
+    background: #1266D6;
   }
   h1{
     color: #1c57a7;
@@ -263,11 +288,11 @@ header {
     background: rgba(0, 0, 0, 0) url("../images/bg01.jpg") repeat-x scroll left center;
     color: #052756;
     float: right;
-    height: 68px;
     margin: 10px 0 0;
     padding: 15px 20px;
      .usrname {
       float: left;
+       margin-top: 20px;
     }
   }
   .loginbtn {
@@ -276,11 +301,13 @@ header {
     color: white;
     float: right;
     line-height: 37px;
-    margin: 0 8px;
+    margin: 15px 8px;
     padding: 0 25px;
     text-decoration: none;
   }
-
+  .loginbtn:hover{
+    background:#404040 ;
+  }
   .browse-table {
     h2 {
       color: #116201;

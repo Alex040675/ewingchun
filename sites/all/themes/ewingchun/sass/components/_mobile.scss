@@ -1,3 +1,18 @@
+@media screen and (max-width: 480px){
+  #block-block-10{
+    .register-link,.loginbtn{
+      font-size: 12px !important;
+      width: 65px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0;
+      text-align: center;
+    }
+    .tocontribute{
+      font-size: 12px;
+    }
+  }
+}
 @media screen and (max-width: 768px){
   body{
     background: #ebe9e1 !important;
@@ -173,6 +188,12 @@
     .banner-top > div {
       box-sizing: border-box;
       width: 49%;
+    }
+    .register-link{
+      margin: 15px 0 0 10px;
+    }
+    .banner-top-right{
+      padding: 15px 10px;
     }
   }
 }
