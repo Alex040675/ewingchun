@@ -30,4 +30,5 @@ regions[help] = Help
 regions[content] = Content
 regions[sidebar_first] = First Sidebar
 regions[sidebar_second] = Second Sidebar
+regions[under_content] = Under Content
 regions[footer] = Footer

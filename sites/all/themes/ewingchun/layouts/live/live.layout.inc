@@ -1,7 +1,7 @@
-name = Simple
+name = Live
 description = A simple 3 column layout demonstrating mobile first and Susy.
 preview = preview.png
-template = simple-layout
+template = live-layout
 
 ; Regions
 regions[top_header]     = Top Header
@@ -13,6 +13,7 @@ regions[help]           = Help
 regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[under_content]  = Under Content
 regions[footer]         = Footer
 
 ; Stylesheets
