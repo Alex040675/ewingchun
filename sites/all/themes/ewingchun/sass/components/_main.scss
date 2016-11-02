@@ -99,7 +99,6 @@ body {
     }
     #links{
       clear: both;
-      padding-top: 10px;
       a{
         padding: 0 5px;
         color: #052756;
@@ -134,7 +133,10 @@ header {
   .l-branding {
     float: left;
     overflow: hidden;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    margin-left: 3%;
+    width: 22%;
+    max-width: 205px;
     .site-logo{
       margin-left: 2%;
     }
@@ -153,15 +155,19 @@ header {
   }
   #block-block-8{
     float: left;
+    margin-left: 3%;
+    width: 55%;
   }
   #block-block-11 {
     display: none;
+    margin-left: 3%;
   }
   #block-search-form {
     height: 28px;
     padding: 5px 10px 0 10px;
     background: #d2d2d2;
     float: right;
+    width: 35%;
     margin-top: 55px;
     #search-block-form {
       .container-inline {
@@ -176,7 +182,7 @@ header {
         font-size: 11px;
         height: 20px;
         padding: 0 6px;
-        width: 161px;
+        width: 150px;
         border-radius: 2px;
         box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset;
       }
@@ -218,6 +224,9 @@ header {
         text-decoration: none;
       }
       a.active{
+        background: #1c57a7;
+      }
+      a:hover{
         background: #1c57a7;
       }
     }
@@ -272,7 +281,7 @@ header {
 
   .banner-top > div {
     box-sizing: border-box;
-    width: 50%;
+    width: 48%;
   }
   .banner-top-left {
     color: #8d8d8d;
@@ -381,11 +390,16 @@ header {
     line-height: 40px;
     th{
       padding: 0 10px;
+      color: #17335b;
+      font-family: Arial;
+      font-size: 14px;
+      font-weight: 700;
     }
   }
   tr {
     td {
       padding-left: 10px;
+      font-size: 12px;
       a{
         color: #1c57a7;
         font-family: Arial;
@@ -488,6 +502,13 @@ header {
         float: left;
         margin-left: 5px;
       }
+      .views-field-title{
+        float: left;
+        width: 100%;
+      }
+      .views-field-name{
+        float: left;
+      }
       a{
         color: #1c57a7;
         font-family: Arial;
@@ -504,10 +525,12 @@ header {
 .under_content{
   clear: both;
   padding: 20px 2%;
+  margin-bottom: 30px;
   #block-views-videos-block-2{
     background: url("../images/videobg.jpg") repeat-y center center;
     background-size: cover;
     padding: 20px 2%;
+    overflow: hidden;
     .views-row{
       float: left;
       width: 23%;
@@ -523,8 +546,26 @@ header {
         }
       }
     }
+    .views-row:last-child{
+      margin-right: 0;
+    }
+    .views-row:first-child{
+      margin-left: 1%;
+    }
     .more-link{
       display: none;
+    }
+    h2{
+      text-align: center;
+      border-bottom: 1px solid #dcdcdc;
+      color: #1c57a7;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 50px;
+      text-transform: uppercase;
+      width: 80%;
+      margin: 0 auto 20px;
     }
   }
 }
@@ -537,6 +578,10 @@ footer{
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0;
+  .l-region--footer{
+    width: 90%;
+    margin: 0 auto;
+  }
   #block-menu-menu-footer-links{
     overflow: hidden;
     width: 630px;
