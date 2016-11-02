@@ -28,9 +28,6 @@
       font-size: 12px;
     }
   }
-  .page-sifus table td.views-field-body-1{
-    display: none;
-  }
 }
 @media screen and (max-width: 768px){
   body{
@@ -196,6 +193,12 @@
     .l-page {
       .views-field-taxonomy-vocabulary-9 {
         display: none;
+      }
+       table td.views-field-body-1{
+        display: none;
+      }
+      .views-field-changed {
+        width: 30%;
       }
       .view-sifu {
         .view-header {
