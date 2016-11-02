@@ -39,6 +39,9 @@
           text-transform: uppercase;
           margin-top: 0;
         }
+        a{
+
+        }
         .addvideobtn{
           a.gobtn-submit{
             border: medium none;
@@ -46,6 +49,7 @@
             cursor: pointer;
             background: #1D58A8;
             padding: 10px 20px;
+            border-radius: 4px;
             display: inline-block;
             font-size: 14px !important;
             margin-right: 5px;
@@ -131,7 +135,8 @@
         float: left;
         cursor: pointer;
         background: #1D58A8;
-        padding: 10px 30px;
+        padding: 10px 40px;
+        border-radius: 4px;
         display: inline-block;
         font-size: 14px !important;
         margin-right: 5px;

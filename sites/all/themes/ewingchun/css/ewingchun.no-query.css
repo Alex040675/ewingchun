@@ -892,21 +892,22 @@ footer {
       letter-spacing: -1px;
       text-transform: uppercase;
       margin-top: 0; }
-    /* line 43, ../sass/components/_sifus.scss */
+    /* line 46, ../sass/components/_sifus.scss */
     .page-sifus .view-sifu .view-header .sifuheaderright .addvideobtn a.gobtn-submit {
       border: medium none;
       color: #fff !important;
       cursor: pointer;
       background: #1D58A8;
       padding: 10px 20px;
+      border-radius: 4px;
       display: inline-block;
       font-size: 14px !important;
       margin-right: 5px;
       text-decoration: none !important; }
-    /* line 54, ../sass/components/_sifus.scss */
+    /* line 58, ../sass/components/_sifus.scss */
     .page-sifus .view-sifu .view-header .sifuheaderright .addvideobtn a.gobtn-submit:hover {
       background: #1266D6; }
-    /* line 57, ../sass/components/_sifus.scss */
+    /* line 61, ../sass/components/_sifus.scss */
     .page-sifus .view-sifu .view-header .sifuheaderright .addvideobtn a {
       color: #1c57a7;
       font-family: Arial;
@@ -914,10 +915,10 @@ footer {
       font-weight: 400;
       overflow-wrap: break-word;
       text-decoration: underline; }
-/* line 68, ../sass/components/_sifus.scss */
+/* line 72, ../sass/components/_sifus.scss */
 .page-sifus .view-sifu .view-filters {
   margin-top: -90px; }
-  /* line 70, ../sass/components/_sifus.scss */
+  /* line 74, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .form-select {
     -moz-appearance: none;
     background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
@@ -933,10 +934,10 @@ footer {
     text-indent: 0.01px;
     text-overflow: "";
     width: 293px !important; }
-  /* line 86, ../sass/components/_sifus.scss */
+  /* line 90, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .description {
     display: none; }
-  /* line 90, ../sass/components/_sifus.scss */
+  /* line 94, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .views-exposed-widget .form-text {
     box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
     border: solid 1px #BFBFBF;
@@ -946,23 +947,23 @@ footer {
     border-radius: 2px;
     padding: 5px;
     width: 280px; }
-  /* line 102, ../sass/components/_sifus.scss */
+  /* line 106, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters #edit-taxonomy-vocabulary-9-tid-wrapper {
     width: 100%; }
-  /* line 105, ../sass/components/_sifus.scss */
+  /* line 109, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters #edit-keys-wrapper {
     float: left; }
-    /* line 107, ../sass/components/_sifus.scss */
+    /* line 111, ../sass/components/_sifus.scss */
     .page-sifus .view-sifu .view-filters #edit-keys-wrapper .views-widget {
       float: left; }
-  /* line 111, ../sass/components/_sifus.scss */
+  /* line 115, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .views-submit-button {
     float: left;
     margin-top: 2px; }
-  /* line 116, ../sass/components/_sifus.scss */
+  /* line 120, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .views-exposed-widget .form-text {
     max-width: 280px; }
-  /* line 120, ../sass/components/_sifus.scss */
+  /* line 124, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters label {
     display: block;
     font-size: 14px;
@@ -970,26 +971,27 @@ footer {
     float: left;
     min-width: 120px;
     margin: 0 10px 10px 0; }
-  /* line 128, ../sass/components/_sifus.scss */
+  /* line 132, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .form-submit {
     border: medium none;
     color: #fff !important;
     float: left;
     cursor: pointer;
     background: #1D58A8;
-    padding: 10px 30px;
+    padding: 10px 40px;
+    border-radius: 4px;
     display: inline-block;
     font-size: 14px !important;
     margin-right: 5px;
     margin-top: 0;
     text-decoration: none !important; }
-  /* line 141, ../sass/components/_sifus.scss */
+  /* line 146, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .view-filters .form-submit:hover {
     background: #1266D6; }
-/* line 145, ../sass/components/_sifus.scss */
+/* line 150, ../sass/components/_sifus.scss */
 .page-sifus .view-sifu .attachment {
   margin-bottom: 10px; }
-  /* line 147, ../sass/components/_sifus.scss */
+  /* line 152, ../sass/components/_sifus.scss */
   .page-sifus .view-sifu .attachment a {
     color: #1c57a7;
     font-family: Arial;
@@ -997,34 +999,34 @@ footer {
     font-weight: 400;
     overflow-wrap: break-word;
     text-decoration: underline; }
-/* line 157, ../sass/components/_sifus.scss */
+/* line 162, ../sass/components/_sifus.scss */
 .page-sifus table {
   background: #F8F8F8; }
-  /* line 159, ../sass/components/_sifus.scss */
+  /* line 164, ../sass/components/_sifus.scss */
   .page-sifus table th.views-field-title {
     display: block;
     margin-left: -95%; }
-  /* line 163, ../sass/components/_sifus.scss */
+  /* line 168, ../sass/components/_sifus.scss */
   .page-sifus table td {
     font-size: 12px;
     padding: 5px 10px 10px 10px; }
-  /* line 167, ../sass/components/_sifus.scss */
+  /* line 172, ../sass/components/_sifus.scss */
   .page-sifus table .views-field-field-profile-img {
     min-width: 100px; }
-    /* line 169, ../sass/components/_sifus.scss */
+    /* line 174, ../sass/components/_sifus.scss */
     .page-sifus table .views-field-field-profile-img img {
       width: 90%;
       height: auto; }
-  /* line 174, ../sass/components/_sifus.scss */
+  /* line 179, ../sass/components/_sifus.scss */
   .page-sifus table td.active {
     background: none; }
-  /* line 177, ../sass/components/_sifus.scss */
+  /* line 182, ../sass/components/_sifus.scss */
   .page-sifus table .views-field-changed {
     width: 15%; }
-  /* line 180, ../sass/components/_sifus.scss */
+  /* line 185, ../sass/components/_sifus.scss */
   .page-sifus table th {
     background: #F8F8F8; }
-    /* line 182, ../sass/components/_sifus.scss */
+    /* line 187, ../sass/components/_sifus.scss */
     .page-sifus table th a {
       background: #f8f8f8 none repeat scroll 0 0;
       color: #17335b;
@@ -1033,19 +1035,19 @@ footer {
       height: 31px;
       line-height: 31px;
       text-decoration: none; }
-    /* line 191, ../sass/components/_sifus.scss */
+    /* line 196, ../sass/components/_sifus.scss */
     .page-sifus table th a.active {
       text-decoration: underline; }
-  /* line 195, ../sass/components/_sifus.scss */
+  /* line 200, ../sass/components/_sifus.scss */
   .page-sifus table tr.even {
     background: #F8F8F8; }
-    /* line 197, ../sass/components/_sifus.scss */
+    /* line 202, ../sass/components/_sifus.scss */
     .page-sifus table tr.even td {
       border: solid 1px #fff; }
-  /* line 201, ../sass/components/_sifus.scss */
+  /* line 206, ../sass/components/_sifus.scss */
   .page-sifus table tr.odd {
     background: #ededed; }
-  /* line 204, ../sass/components/_sifus.scss */
+  /* line 209, ../sass/components/_sifus.scss */
   .page-sifus table a {
     color: #1c57a7;
     font-family: Arial;
@@ -1057,15 +1059,21 @@ footer {
 /* line 24, ../sass/ewingchun.styles.scss */
 body {
   background: #ebe9e1 url(../images/leftleave.jpg) left top no-repeat, url(../images/rightleave.jpg) right top no-repeat; }
+  /* line 28, ../sass/ewingchun.styles.scss */
+  body a {
+    color: #1c57a7;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400; }
 
-/* line 29, ../sass/ewingchun.styles.scss */
+/* line 35, ../sass/ewingchun.styles.scss */
 h1 {
   color: #1c57a7;
   font-family: TrajanProBold;
   font-size: 23px;
   font-weight: normal; }
 
-/* line 35, ../sass/ewingchun.styles.scss */
+/* line 41, ../sass/ewingchun.styles.scss */
 h2 {
   color: #1c57a7;
   font-family: TrajanProBold;
