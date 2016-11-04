@@ -1,0 +1,161 @@
+.page-articles{
+  .view-article{
+    label{
+      float: none !important;
+    }
+    .views-exposed-widget{
+      clear: both;
+    }
+
+    .view-filters {
+      margin-top: 0;
+    }
+    .view-header {
+      overflow: hidden;
+      .sifuheaderleft {
+        float: left;
+        width: 70%;
+        border-top: 5px solid #f8f8f8;
+        h2{
+          float: left;
+          text-transform: uppercase;
+          margin-right: 5px;
+          margin-bottom: 0;
+        }
+        p{
+          margin-top: 17px;
+          a{
+            color: #1c57a7;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            text-decoration: underline;
+            display: inline;
+            padding-left: 5px;
+          }
+        }
+      }
+      .sifuheaderright {
+        float: right;
+        background:url("../images/youcanalso-bg.png") no-repeat;
+        background-size: cover;
+        padding: 0 10px 10px 10px;
+        width: 20%;
+        h2{
+          color: #116201;
+          font-family: TrajanProBold;
+          font-size: 15px;
+          letter-spacing: -1px;
+          text-transform: uppercase;
+          margin-top: 0;
+        }
+        a{
+
+        }
+        .addvideobtn{
+          a.gobtn-submit{
+            border: medium none;
+            color: #fff !important;
+            cursor: pointer;
+            background: #1D58A8;
+            padding: 10px 20px;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 14px !important;
+            margin-right: 5px;
+            text-decoration: none !important;
+          }
+          a.gobtn-submit:hover{
+            background: #1266D6;
+          }
+          a{
+            color: #1c57a7;
+            font-family: Arial;
+            font-size: 12px;
+            font-weight: 400;
+            overflow-wrap: break-word;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .view-filters{
+      .form-select {
+        -moz-appearance: none;
+        background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
+        border: medium none;
+        font-size: 11px;
+        height: 21px !important;
+        line-height: 11px;
+        margin-left: -2px;
+        opacity: 1 !important;
+        padding-left: 2px;
+        padding-top: 2px;
+        position: relative;
+        text-indent: 0.01px;
+        text-overflow: "";
+        width: 293px !important;
+      }
+      .description{
+        display: none;
+      }
+      .views-exposed-widget{
+      .form-text {
+        box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
+        border: solid 1px #BFBFBF;
+        float: left;
+        height: 26px;
+        margin: 0 0 10px;
+        border-radius: 2px;
+        padding: 5px;
+        width: 280px;
+      }
+      }
+
+      #edit-taxonomy-vocabulary-9-tid-wrapper{
+        width: 100%;
+      }
+      #edit-keys-wrapper{
+        float: left;
+        .views-widget{
+          float: left;
+        }
+      }
+      .views-submit-button{
+        float: left;
+        margin-top: 2px;
+        clear: both;
+      }
+      .views-exposed-widget{
+        .form-text{
+          max-width: 280px;
+        }
+      }
+      label{
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        float: left;
+        min-width: 120px;
+        margin: 0 10px 10px 0;
+      }
+      .form-submit{
+        border: medium none;
+        color: #fff !important;
+        float: left;
+        cursor: pointer;
+        background: #1D58A8;
+        padding: 10px 40px;
+        border-radius: 4px;
+        display: inline-block;
+        font-size: 14px !important;
+        margin-right: 5px;
+        margin-top: 0;
+        text-decoration: none !important;
+      }
+      .form-submit:hover{
+        background: #1266D6;
+      }
+    }
+  }
+}

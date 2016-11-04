@@ -1,0 +1,41 @@
+#forum{
+  .forum-collapsible{
+    display: none;
+  }
+  .forum-icon{
+    float: none;
+  }
+  .forum-table-superheader{
+    display: none;
+  }
+  table{
+    border: none;
+    position: relative;
+    width: 100%;
+    tr{
+      background: #f8f8f8;
+    }
+    td{
+      border-right: solid 1px #FFFFFF;
+    }
+  }
+  .forum-table-wrap:first-child{
+    thead{
+      font-size: 12px;
+      th{
+        background: #91cdf5;
+      }
+    }
+  }
+  thead{
+     font-size: 0;
+    background: none;
+    tr{
+      border: none;
+    }
+    th{
+      background: none;
+      border-right: solid 1px #FFFFFF;
+    }
+  }
+}

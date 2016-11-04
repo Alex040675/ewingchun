@@ -49,6 +49,12 @@
     .l-page {
       width: 100%;
       border: none;
+      .breadcrumb{
+        padding-left: 2%;
+        clear: both;
+        float: left;
+        width: 98%;
+      }
     }
     .has-sidebar-second{
       .l-content,.l-region--sidebar-second{
@@ -243,20 +249,23 @@
           display: none;
         }
       }
-      .view-sifu {
-        .view-header {
-          .sifuheaderleft {
-            float: none;
-            width: 90%;
-            margin-bottom: 20px;
-          }
-          .sifuheaderright {
-            float: none;
-            width: 40%;
-            max-width: 210px;
-          }
-        }
+    }
+  }
+  .l-page {
+    .view-header {
+      .sifuheaderleft {
+        float: none !important;
+        width: 90% !important;
+        margin-bottom: 30px;
       }
+      .sifuheaderright {
+        float: none !important;
+        width: 40% !important;
+        max-width: 210px;
+      }
+    }
+    .view-local-resources .view-filters {
+      margin-top: 20px !important;
     }
   }
 }
@@ -266,6 +275,9 @@
     .l-page{
       width: 100% !important;
       border: none;
+      .form-text{
+        background: #fff !important;
+      }
       .l-main {
         width: 96%;
         background: #ebe9e1;
