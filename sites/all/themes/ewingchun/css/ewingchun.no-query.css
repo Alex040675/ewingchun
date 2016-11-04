@@ -816,77 +816,80 @@ footer {
     padding-left: 2%; }
   /* line 237, ../sass/components/_mobile.scss */
   .page-sifus .l-page th.views-field-changed {
-    width: 40%; }
-    /* line 239, ../sass/components/_mobile.scss */
+    width: 40%;
+    float: right;
+    position: relative;
+    right: 3%; }
+    /* line 242, ../sass/components/_mobile.scss */
     .page-sifus .l-page th.views-field-changed img {
       display: none; }
-  /* line 245, ../sass/components/_mobile.scss */
+  /* line 248, ../sass/components/_mobile.scss */
   .page-sifus .l-page .view-sifu .view-header .sifuheaderleft {
     float: none;
     width: 90%;
     margin-bottom: 20px; }
-  /* line 250, ../sass/components/_mobile.scss */
+  /* line 253, ../sass/components/_mobile.scss */
   .page-sifus .l-page .view-sifu .view-header .sifuheaderright {
     float: none;
     width: 40%;
     max-width: 210px; } }
 @media screen and (max-width: 960px) {
-  /* line 263, ../sass/components/_mobile.scss */
+  /* line 266, ../sass/components/_mobile.scss */
   body .l-page {
     width: 100% !important;
     border: none; }
-    /* line 266, ../sass/components/_mobile.scss */
+    /* line 269, ../sass/components/_mobile.scss */
     body .l-page .l-main {
       width: 96%;
       background: #ebe9e1; }
-    /* line 271, ../sass/components/_mobile.scss */
+    /* line 274, ../sass/components/_mobile.scss */
     body .l-page .l-region--sidebar-second #block-quicktabs-the-latest li a {
       font-size: 11px !important; }
 
-  /* line 279, ../sass/components/_mobile.scss */
+  /* line 282, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     box-sizing: border-box;
     width: 49%; }
-  /* line 283, ../sass/components/_mobile.scss */
+  /* line 286, ../sass/components/_mobile.scss */
   #block-block-10 .register-link {
     margin: 15px 0 0 10px; }
-  /* line 286, ../sass/components/_mobile.scss */
+  /* line 289, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-right {
     padding: 15px 10px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 293, ../sass/components/_mobile.scss */
+  /* line 296, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 297, ../sass/components/_mobile.scss */
+  /* line 300, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 303, ../sass/components/_mobile.scss */
+  /* line 306, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 310, ../sass/components/_mobile.scss */
+  /* line 313, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 313, ../sass/components/_mobile.scss */
+    /* line 316, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 324, ../sass/components/_mobile.scss */
+  /* line 327, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     padding: 0 10px;
     font-size: 12px; } }
 @media screen and (max-width: 1180px) {
-  /* line 333, ../sass/components/_mobile.scss */
+  /* line 336, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; } }
 /* line 3, ../sass/components/_sifus.scss */
