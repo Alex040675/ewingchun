@@ -28,6 +28,17 @@
       font-size: 12px;
     }
   }
+  .page-sifus{
+    table{
+      .views-field-changed {
+        display: none !important;
+      }
+      td{
+        width: 42% !important;
+        font-size: 11px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 768px){
   body{
@@ -194,17 +205,44 @@
       .views-field-taxonomy-vocabulary-9 {
         display: none;
       }
-       table td.views-field-body-1{
-        display: none;
+      table tr.even td {
+        border: none;
       }
-      .views-field-changed {
-        width: 30%;
+      .view-sifu .view-filters {
+        margin-top:20px;
+      }
+       table{
+         width: 100%;
+         td.views-field-body-1,th.views-field-body-1{
+           display: none;
+         }
+       }
+      td {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+      th{
+        display: block;
+        float: left;
+      }
+      th.views-field-title{
+        width: 58%;
+        margin-left: 0;
+        padding-left: 2%;
+      }
+      th.views-field-changed{
+        width: 40%;
+        img{
+          display: none;
+        }
       }
       .view-sifu {
         .view-header {
           .sifuheaderleft {
             float: none;
             width: 90%;
+            margin-bottom: 20px;
           }
           .sifuheaderright {
             float: none;
