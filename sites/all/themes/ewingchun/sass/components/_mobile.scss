@@ -161,6 +161,9 @@
     #block-system-main-menu{
       display: block;
       width: 100%;
+      ul{
+        width: 100%;
+      }
       li{
         float: none;
         width: 100%;
@@ -239,6 +242,7 @@
       }
       .view-sifu .view-filters {
         margin-top:20px;
+        top: 0 !important;
       }
        table{
          width: 100%;
@@ -376,6 +380,7 @@ body{
   }
   #block-system-main-menu{
     ul{
+      width: 735px;
       li{
         a{
           padding: 0 10px;

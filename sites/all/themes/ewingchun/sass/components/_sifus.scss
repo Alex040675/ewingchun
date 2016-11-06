@@ -1,7 +1,7 @@
 .page-sifus{
   .view-sifu{
     .view-header {
-      overflow: hidden;
+      height: 100%;
       .sifuheaderleft {
         float: left;
         width: 70%;
@@ -70,7 +70,8 @@
       }
     }
     .view-filters{
-      margin-top: -90px;
+      position: relative;
+      top: -90px;
       .form-select {
         -moz-appearance: none;
         background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
@@ -161,6 +162,9 @@
   }
   table{
     background: #F8F8F8;
+    thead{
+      position: relative;
+    }
     th.views-field-title{
       display: block;
       margin-left:2%;

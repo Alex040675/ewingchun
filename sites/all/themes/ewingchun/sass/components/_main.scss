@@ -42,7 +42,6 @@ body {
     line-height: 25px;
     text-align: left;
     text-decoration: none;
-    padding: 0 5px;
     a{
       color: #1c57a7;
       font-size: 11px;
@@ -199,6 +198,7 @@ header {
     background: #d2d2d2;
     float: right;
     width: 35%;
+    border-radius: 3px 0 0 0;
     margin-top: 55px;
     #search-block-form {
       .container-inline {
@@ -243,7 +243,8 @@ header {
   ul{
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 850px;
+    margin: 0 auto;
     li{
       list-style: none;
       float: left;
@@ -253,12 +254,18 @@ header {
         line-height: 44px;
         padding: 0 15px;
         text-decoration: none;
+        border-right: solid 1px #0E2143;
       }
       a.active{
         background: #1c57a7;
       }
       a:hover{
         background: #1c57a7;
+      }
+    }
+    li:last-child{
+      a{
+        border: none;
       }
     }
   }
