@@ -1,11 +1,11 @@
 <?php
 
     function wc_user_preprocess_user_profile (&$variables) {
-    dpm($variables);
+    //dpm($variables);
 }
 
 function wc_user_preprocess_user_picture(&$variables) {
-    dpm($variables);
+    //dpm($variables);
 }
 
 function wc_user_user_view($account) {
@@ -14,5 +14,6 @@ function wc_user_user_view($account) {
     '#weight' => '2',
     '#title' => t('Joined'),
     '#markup' => format_date($account->created, 'short'),
-  );dpm($account);
+  );
+  //dpm($account);
 }
