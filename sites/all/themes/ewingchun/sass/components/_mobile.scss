@@ -315,6 +315,7 @@
           width: 100%;
           background: #EDEDED;
           overflow: hidden;
+          padding-bottom: 20px;
         }
       }
     }
@@ -411,6 +412,7 @@
     }
   }
 }
+/*
 @media screen  and (max-width: 980px) {
   .l-header{
   .l-region--navigation {
@@ -455,7 +457,7 @@
     }
   }
 }
-}
+}*/
 @media screen and (min-width:769px) and (max-width: 1180px){
 body{
   background-size: 50% auto;
@@ -498,7 +500,7 @@ body{
 @media screen and (max-width:1180px) {
   body .l-page {
     width: 90%;
-  }
+  }/*
   .l-header{
   .l-region--navigation {
     #block-system-main-menu {
@@ -511,8 +513,9 @@ body{
       }
     }
   }
+}*/
 }
-}
+/*
 @media screen and (max-width:1183px){
   .l-region--navigation {
     #block-system-main-menu {
@@ -536,4 +539,4 @@ body{
       }
     }
   }
-}
+}*/

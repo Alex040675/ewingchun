@@ -243,17 +243,22 @@ header {
   ul{
     padding: 0;
     margin: 0;
-    margin: 0 auto;
+    margin: 0;
+    width: 100%;
     li{
       list-style: none;
       float: left;
+      width: 10%;
+      height: 44px;
       a{
         color: #fff;
         display: block;
         line-height: 44px;
-        padding: 0 20px;
+        /*padding: 0 20px;*/
         text-decoration: none;
+        width: 100%;
         border-right: solid 1px #0E2143;
+        text-align: center;
       }
       a.active{
         background: #1c57a7;
