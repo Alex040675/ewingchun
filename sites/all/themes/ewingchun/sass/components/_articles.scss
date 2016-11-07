@@ -47,7 +47,7 @@
           font-size: 15px;
           letter-spacing: -1px;
           text-transform: uppercase;
-          margin-top: 0;
+          margin-top: -5px;
         }
         a{
 
@@ -158,15 +158,16 @@
       }
     }
     .main-history {
-      background: #F8F8F8;
       border-radius: 5px;
       overflow: hidden;
       margin: 20px 0 0;
       padding-bottom: 10px;
       width: 100%;
+      background: rgba(0, 0, 0, 0) url("../images/article-teaser-bg.jpg") repeat-y scroll left top;
+      background-size: 100%;
       .history-left {
         float: left;
-        width: 70%;
+        width: 75%;
         h3{
           a{
             color: #17335b ;
@@ -179,16 +180,23 @@
         }
         .history-mid {
           float: left;
-          padding: 0 0 0 2%;
-          width: 98%;
+          padding: 0 0 20px 3%;
+          width: 97%;
           .history-left1 {
             float: left;
             width: 60%;
+            span {
+              color: #000;
+              font-family: Arial;
+              font-size: 12px;
+              font-weight: 400;
+            }
             .font-16 {
               color: #17335b;
               font-family: Arial;
               font-size: 16px;
               font-weight: 700;
+              margin: 0;
             }
           }
           .history-right1 {
@@ -205,16 +213,17 @@
           .article-teaser {
             margin-right: 20px;
             padding-top: 10px;
+            clear: both;
           }
         }
       }
       .history-right {
         float: left;
-        width: 30%;
+        width: 24%;
         .posted-mid {
           float: right;
-          padding: 3px 0 0 2%;
-          width: 98%;
+          padding: 3px 0 0 4%;
+          width: 96%;
         }
         .ar-font12 {
           color: #000;

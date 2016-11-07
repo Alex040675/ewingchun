@@ -298,6 +298,28 @@
       margin-top: 20px !important;
     }
   }
+
+  .page-articles {
+    .l-page{
+    .view-article {
+      .main-history {
+        background: none;
+        .history-left {
+          float: none;
+          width: 100%;
+          background: #F8F8F8;
+          overflow: hidden;
+        }
+        .history-right {
+          float: none;
+          width: 100%;
+          background: #EDEDED;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  }
 }
 @media screen and (max-width:960px) {
   #block-system-main-menu {
