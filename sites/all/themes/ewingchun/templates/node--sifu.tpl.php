@@ -1,4 +1,4 @@
-<?php print_r($field_profile_img); ?>1111
+<?php print render($field_profile_img); ?>
 <?php if ($status == 0) : ?>
   <p class="node-moderatation"><?php print t('Post is awaiting moderation.'); ?></p>
 <?php endif; ?>
