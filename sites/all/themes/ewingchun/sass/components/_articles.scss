@@ -233,6 +233,11 @@
           line-height: 19px;
         }
         .post-images{
+          img {
+            float: left;
+            max-height: 38px;
+            max-width: 38px;
+          }
           ul{
             padding: 0;
             margin: 0;

@@ -223,10 +223,15 @@ img, media {
       font-weight: 700;
       line-height: 19px; }
     /* line 236, ../sass/components/_articles.scss */
+    .page-articles .view-article .main-history .history-right .post-images img {
+      float: left;
+      max-height: 38px;
+      max-width: 38px; }
+    /* line 241, ../sass/components/_articles.scss */
     .page-articles .view-article .main-history .history-right .post-images ul {
       padding: 0;
       margin: 0; }
-      /* line 239, ../sass/components/_articles.scss */
+      /* line 244, ../sass/components/_articles.scss */
       .page-articles .view-article .main-history .history-right .post-images ul li {
         list-style: none; }
 
