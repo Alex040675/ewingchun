@@ -9,14 +9,14 @@ function ewingchun_preprocess_node(&$variables) {
   if ($variables['node']->type == 'sifu') {
     foreach ($variables['node']->field_profile_img['und'] AS $key => $img) {
       // Check for an image before outputting
-      if ($img['filepath'] != NULL) {
+      if ($img['uri'] != NULL) {
         if ($key == 0) {
           // Print out main image
           $full_size = image_style_url('full-size', $img['uri']);
           $thumbnail = image_style_url('article-main-img', $img['uri']);
 
           // Output main sifu profile image with lightbox overlay
-          $vars['sifu_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
+          $variables['sifu_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
           continue;
         }
 
@@ -25,7 +25,7 @@ function ewingchun_preprocess_node(&$variables) {
         $thumbnail = image_style_url('sifu-listing', $img['uri']);
 
         // Output a list of images with lightbox overlays
-        $vars['sifu_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+        $variables['sifu_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
       }
     }
   }
