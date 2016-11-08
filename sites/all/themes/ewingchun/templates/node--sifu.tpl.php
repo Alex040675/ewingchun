@@ -1,7 +1,8 @@
 <?php print render($content['field_profile_img']);
 print render($field_profile_img);
-echo "12241";
-print $content['field_profile_img'];
+echo 689;
+print render($content['field_profile_img']);
+echo "777";
 ?>
 
 <?php if ($status == 0) : ?>
