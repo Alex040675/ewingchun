@@ -1,7 +1,7 @@
 <?php print render($content['field_profile_img']);
 print render($field_profile_img);
-echo 123;
-print render($content['field_profile_img']);
+echo 124;
+print render($content['field_homepage_link']);
 echo "777";
 ?>
 
