@@ -8,7 +8,6 @@
 function ewingchun_preprocess_node(&$variables) {
   if ($variables['node']->type == 'sifu') {
     foreach ($variables['node']->field_profile_img['und'] AS $key => $img) {
-      print_r($img);die();
       // Check for an image before outputting
       if ($img['filepath'] != NULL) {
         if ($key == 0) {
