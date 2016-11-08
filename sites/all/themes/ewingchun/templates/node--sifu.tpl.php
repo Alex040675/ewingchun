@@ -28,22 +28,22 @@
       <?php endif; ?>
     </ul>
   </div>
-  <?php if($node->field_primary_lineage[0]['value'] = 1) : ?>
+  <?php if($node->field_primary_lineage['und'][0]['value'] = 1) : ?>
     <div class="common-right">
       <div class="common-right-lft">Primary Lineage: </div>
-      <div class="common-right-2"> <?php print $node->field_lineage[0]['view'] ?></div>
+      <div class="common-right-2"> <?php print $node->field_lineage['und'][0]['view'] ?></div>
     </div>
   <?php endif; ?>
   <div class="comon-btom">
-    <?php if ($node->field_homepage_link[0]['view']): ?>
-      <p class="comom-btm-text"><strong>Websites/Social Pages:</strong> <?php print $sifu_urls; ?> </p>
+    <?php if ($node->field_homepage_link['und'][0]['view']): ?>
+      <p class="comom-btm-text"><strong>Websites/Social Pages:</strong> <?php print_r($node->field_bdate); ?> </p>
     <?php endif; ?>
     <div class="dob">
-      <?php if ($bday): ?>
-        <div class="dob-left"><span>Date of Birth:</span> <?php print $bday; ?> </div>
+      <?php if ($node->field_bdate['und'][0]['value']): ?>
+        <div class="dob-left"><span>Date of Birth:</span> <?php print $node->field_bdate['und'][0]['value']; ?> </div>
       <?php endif; ?>
-      <?php if ($dday): ?>
-        <div class="dob-right"><span>Date of Death:</span> <?php print $dday; ?></div>
+      <?php if ($node->field_death_date['und'][0]['value']): ?>
+        <div class="dob-right"><span>Date of Death:</span> <?php print $node->field_death_date['und'][0]['value']; ?></div>
       <?php endif; ?>
     </div>
   </div>
