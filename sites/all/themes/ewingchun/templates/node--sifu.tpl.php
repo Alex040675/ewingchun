@@ -1,5 +1,5 @@
 <?php
-print_r($node);
+
 ?>
 
 <?php if ($status == 0) : ?>
@@ -52,20 +52,19 @@ print_r($node);
 <div class="common-namelist">
   <?php if ($sifu_images): ?>
     <ul>
-      <?php print_r($sifu_images); ?>
+      <?php print $sifu_images; ?>
     </ul>
   <?php endif; ?>
 </div>
 <div class="clear" style="padding:20px 0 0 0;"></div>
 <?php
-  $body = field_get_items('node', $node, 'body');
-  $teaser = $body[0]['safe_summary'];
+
 
 ?>
-<?php if ($teaser): ?>
+<?php if (isset($node->body['und'][0]['summary'])): ?>
 <h3>bio (teaser)</h3>
-<div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($teaser,"<p>,<br>"); ?>
-  <?php if ($content['body']): ?>
+<div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($node->body['und'][0]['summary'],"<p>,<br>"); ?>
+  <?php if (isset($node->body['und'][0]['value'])): ?>
     <a href="/<?php print $node->path?>#more" class="more-link">Read more</a>
   <?php endif; ?>
   <?php endif; ?>
@@ -128,7 +127,7 @@ print_r($node);
     <div class="student-right"> <?php print $sifu_videos; ?> </div>
   </div>
   <div class="bottom-border"></div>
-  <?php if (isset($node->body)): ?>
+  <?php if (isset($node->body['und'][0]['value'])): ?>
     <div id="more">
       <div class="bottom-biography">
         <h3>biography (con't)</h3>
