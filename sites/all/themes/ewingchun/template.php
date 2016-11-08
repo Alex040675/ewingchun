@@ -115,7 +115,7 @@ function ewingchun_preprocess_node(&$variables) {
   $variables['sifu_wiki'] = $wiki;
 
   // Output Sifu student block
-  $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_noderef_instructor][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
+  /*$students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_noderef_instructor][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
   $students .= views_embed_view('sifu', 'block_1', array($arg));
   $variables['sifu_students'] = $students;
 
@@ -133,16 +133,16 @@ function ewingchun_preprocess_node(&$variables) {
 
   // Output Sifu school block
   $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_instructors][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $schools .= views_embed_view('related_schools', 'block_1', array($arg));
+  $schools .= views_embed_view('related_schools', 'block_1', array($arg));*/
   $variables['sifu_schools'] = $schools;
-  foreach ($variables['node']->field_img_certification AS $key => $img) {
+  foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
     // Check for an image before outputting
     if ($img['filepath'] != NULL) {
-      $full_size = imagecache_create_url('full-size', $img['filepath']);
-      $thumbnail = imagecache_create_url('sifu-listing', $img['filepath']);
+      $full_size = image_style_url('full-size', $img['uri']);
+      $thumbnail = image_style_url('sifu-listing', $img['uri']);
 
 
-      $variables['cert_imgs'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      $variables['cert_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
 
 
     }
