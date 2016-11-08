@@ -1,4 +1,4 @@
-<?php print_r(render($content['group_sifu_names']));
+<?php print_r(render($content['group_sifu_names']['field_txt_firstname']));
 
 ?>
 
