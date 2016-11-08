@@ -52,7 +52,7 @@
 <div class="common-namelist">
   <?php if ($content['group_images']['field_profile_img']): ?>
     <ul>
-      <?php print $sifu_images; ?>
+      <?php print_r($sifu_images); ?>
     </ul>
   <?php endif; ?>
 </div>
