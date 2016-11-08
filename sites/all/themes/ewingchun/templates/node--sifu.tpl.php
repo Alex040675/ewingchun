@@ -1,4 +1,4 @@
-<?php print_r(render($content['field_homepage_link']));
+<?php print_r(render($content['group_sifu_names']));
 
 ?>
 
