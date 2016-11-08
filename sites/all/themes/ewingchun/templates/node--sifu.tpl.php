@@ -16,15 +16,15 @@
   </div>
   <div class="common-midle">
     <ul>
-      <?php if ($content['group_sifu_names']['field_txt_firstname']): ?>
-        <li><span>First (Given):</span> <?php print render($content['group_sifu_names']['field_txt_firstname']); ?></li>
+      <?php if ($node->field_txt_firstname['und'][0]['value']): ?>
+        <li><span>First (Given):</span> <?php print ($node->field_txt_firstname['und'][0]['value']); ?></li>
       <?php endif; ?>
-      <?php if ($node->field_txt_lastname[0]['value']): ?>
-        <li><span>Last (Family): </span> <?php print render($content['group_sifu_names']['field_txt_lastname']); ?></li>
+      <?php if ($node->field_txt_lastname['und'][0]['value']): ?>
+        <li><span>Last (Family): </span> <?php print ($node->field_txt_lastname['und'][0]['value']); ?></li>
       <?php endif; ?>
       <li><span>Commenly Know As:</span> <?php print $node->title; ?></li>
-      <?php if ($content['group_sifu_names']['field_txt_altname']): ?>
-        <li><span>Nicknames/Alt Spellings:</span> <?php print ($content['group_sifu_names']['field_txt_altname']); ?></li>
+      <?php if ($node->field_txt_altname['und'][0]['value']): ?>
+        <li><span>Nicknames/Alt Spellings:</span> <?php print ($node->field_txt_altname['und'][0]['value']); ?></li>
       <?php endif; ?>
     </ul>
   </div>
