@@ -1,5 +1,5 @@
 <?php
-
+print_r($node);
 ?>
 
 <?php if ($status == 0) : ?>
@@ -10,8 +10,8 @@
 </div>
 <div class="commonname">
   <div class="common-left">
-    <?php if ($field_profile_img): ?>
-      <?php print $field_profile_img; ?>
+    <?php if ($sifu_image): ?>
+      <?php print $sifu_image; ?>
     <?php endif; ?>
   </div>
   <div class="common-midle">
@@ -50,17 +50,22 @@
 </div>
 </div>
 <div class="common-namelist">
-  <?php if ($content['group_images']['field_profile_img']): ?>
+  <?php if ($sifu_images): ?>
     <ul>
       <?php print_r($sifu_images); ?>
     </ul>
   <?php endif; ?>
 </div>
 <div class="clear" style="padding:20px 0 0 0;"></div>
-<?php if ($precontent): ?>
+<?php
+  $body = field_get_items('node', $node, 'body');
+  $teaser = $body[0]['safe_summary'];
+
+?>
+<?php if ($teaser): ?>
 <h3>bio (teaser)</h3>
-<div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($precontent,"<p>,<br>"); ?>
-  <?php if ($body): ?>
+<div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($teaser,"<p>,<br>"); ?>
+  <?php if ($content['body']): ?>
     <a href="/<?php print $node->path?>#more" class="more-link">Read more</a>
   <?php endif; ?>
   <?php endif; ?>
@@ -73,12 +78,12 @@
       <div class="primary01">
         <div class="mprimary ">
           <div class="primary01-left">Teacher Name</div>
-          <div class="primary01-midle">Rank Sifu <?php print $node->field_txt_lastname[0]['value']; ?> Obtained</div>
+          <div class="primary01-midle">Rank Sifu <?php print $node->field_txt_lastname['und'][0]['value']; ?> Obtained</div>
           <div class="primary01-rgt">Still Affiliated?</div>
         </div>
         <div class="primary02"> <?php print $output_primary_teacher; ?> </div>
         <?php endif; ?>
-        <?php if ($node->sifu_lineage) : ?>
+        <?php if (isset($node->taxonomy_vocabulary_9)) : ?>
           <div class="primary01">
             <p class="lineage-text"><strong>Full Lineage:</strong><br/>
               <?php print $node->sifu_lineage ?> </p>
@@ -87,7 +92,7 @@
       </div>
       <div class="primary-bottom"></div>
     </div>
-    <?php if($node->field_img_certification[0]['view']) : ?>
+    <?php if (isset($node->field_img_certification[0]['uri'])) : ?>
       <div class="certification">
         <div class="certification-left">
           <h3>certification pictures:</h3>
@@ -104,11 +109,11 @@
       <?php print $output_secondary_bottom; ?>
     <?php endif; ?>
   </div>
-  <?php if ($node->field_txt_certnotes[0]['value']) : ?>
+  <?php if ($node->field_txt_certnotes['und'][0]['value']) : ?>
     <div class="primary-partright">
       <p class="contr-title">lineage notes</p>
       <div class="lineage1">
-        <div class="flexcroll"> <?php print $node->field_txt_certnotes[0]['value']; ?></div>
+        <div class="flexcroll"> <?php print $node->field_txt_certnotes['und'][0]['value']; ?></div>
       </div>
     </div>
   <?php endif; ?>
@@ -123,7 +128,7 @@
     <div class="student-right"> <?php print $sifu_videos; ?> </div>
   </div>
   <div class="bottom-border"></div>
-  <?php if ($body): ?>
+  <?php if (isset($node->body)): ?>
     <div id="more">
       <div class="bottom-biography">
         <h3>biography (con't)</h3>

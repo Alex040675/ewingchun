@@ -28,5 +28,82 @@ function ewingchun_preprocess_node(&$variables) {
         $variables['sifu_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
       }
     }
+
+    $max = max(count($variables['node']->field_noderef_instructor['und']), count($variables['node']->field_img_certification['und']), count($variables['node']->field_taxo_rank['und']), count($variables['node']->field_txt_certnotes['und']), count($variables['node']->field_int_stillaffiliated['und']));
+
+    $output = array();
+    // Group Rank, cert image, and cert notes
+    for ($i = 0; $i < $max; $i++) {
+      unset($instructor, $instructor_name, $tid, $term, $rank);
+      if ($i == 0){
+        // Build Instructor link
+        if (isset($variables['node']->field_noderef_instructor[$i]['nid'])){
+          $instructor = node_load($variables['node']->field_noderef_instructor[$i]['nid']);
+
+          // Output the name as link
+          $instructor_name = l($instructor->title, $instructor->path);
+          $variables['sifu_primary_instructor_name'] = $instructor_name;
+        }
+        // Build Rank vocabulary link
+        if (isset($variables['node']->field_taxo_rank[$i]['value'])){
+          // Find taxomomy ID and get term name
+          $tid = $variables['node']->field_taxo_rank[$i]['value'];
+          $term = taxonomy_term_load($tid);
+          $variables['teach_primary_rank'] = $term->name;
+
+          // Output the term name as link
+          $rank = ' - ' . l($term->name, 'taxonomy/term/' . $tid);
+
+        }
+        //Output still affiliated or onot...
+        if($variables['node']->field_int_stillaffiliated['und'][$i]['value'] == 0)
+        {
+          $primary_affiliated = 'No';
+        }
+        else
+        {
+          $primary_affiliated = 'Yes';
+        }
+
+        $variables['output_primary_teacher'] .= '<div class="primary01"> <div class="primary02-left">' . $instructor_name . '</div>
+        <div class="primary02-midle">' . $term->name . '</div>
+        <div class="primary02-rgt">' . $primary_affiliated . '</div>
+        </div>';
+        continue;
+      }
+      //Output still affiliated or onot...
+      if($variables['node']->field_int_stillaffiliated['und'][$i]['value'] == 0) {
+        $secondary_affiliated = 'No';
+      }
+      else {
+        $secondary_affiliated = 'Yes';
+      }
+      if ($i%2 == 0) {
+        $variables['output_secondary_teacher'] .= '<div class="primary01"> <div class="primary02-left">' . $instructor_name . '</div>
+          <div class="primary02-midle">' . $term->name . '</div>
+          <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
+      }
+      else {
+        $variables['output_secondary_teacher'] .= '<div class="primary02"> <div class="primary02-left">' . $instructor_name . '</div>
+          <div class="primary02-midle">' . $term->name . '</div>
+          <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
+      }
+    }
+    foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
+      // Check for an image before outputting
+      if ($img['uri'] != NULL) {
+        $full_size = image_style_url('full-size', $img['uri']);
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
+        $variables['cert_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      }
+    }
+    $variables['output_block'] = '<div class="primary-top">secondary/previous teachers</div>
+      <div class="primary-center">
+      <div class="primary01">
+      <div class="mprimary ">
+      <div class="primary01-left">Teacher Name</div>
+      <div class="primary01-midle">Rank Sifu ' . $variables['node']->field_txt_lastname['und'][0]['value'] . ' Obtained</div>
+      <div class="primary01-rgt">Still Affiliated?</div>
+      </div>';
   }
 }
