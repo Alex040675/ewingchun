@@ -16,7 +16,7 @@
   </div>
   <div class="common-midle">
     <ul>
-      <?php if ($node->field_txt_firstname[0]['value']): ?>
+      <?php if ($content['group_sifu_names']['field_txt_firstname']): ?>
         <li><span>First (Given):</span> <?php print render($content['group_sifu_names']['field_txt_firstname']); ?></li>
       <?php endif; ?>
       <?php if ($node->field_txt_lastname[0]['value']): ?>
