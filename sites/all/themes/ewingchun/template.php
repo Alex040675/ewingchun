@@ -108,7 +108,7 @@ function ewingchun_preprocess_node(&$variables) {
   }
 
   // Output Sifu Encyclopedia block
-  $arg = arg(1);
+  /*$arg = arg(1);
   $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
   $wiki .=  views_embed_view('wiki', 'block_1', $arg);
 
@@ -133,7 +133,7 @@ function ewingchun_preprocess_node(&$variables) {
 
   // Output Sifu school block
   $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_instructors][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $schools .= views_embed_view('related_schools', 'block_1', $arg);
+  $schools .= views_embed_view('related_schools', 'block_1', $arg);*/
   $variables['sifu_schools'] = $schools;
   foreach ($variables['node']->field_img_certification AS $key => $img) {
     // Check for an image before outputting
@@ -142,7 +142,7 @@ function ewingchun_preprocess_node(&$variables) {
       $thumbnail = imagecache_create_url('sifu-listing', $img['filepath']);
 
 
-      $variables[cert_imgs] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['data']['alt'] . '" /></a></li>';
+      $variables['cert_imgs'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
 
 
     }
