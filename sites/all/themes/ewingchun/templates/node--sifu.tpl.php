@@ -1,4 +1,4 @@
-<?php print render($content);
+<?php print render($content['field_homepage_link']);
 
 ?>
 
