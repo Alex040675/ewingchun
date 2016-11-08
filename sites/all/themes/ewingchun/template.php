@@ -108,32 +108,32 @@ function ewingchun_preprocess_node(&$variables) {
   }
 
   // Output Sifu Encyclopedia block
-  //$arg = arg(1);
+  $arg = arg(1);
   $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $wiki .=  views_embed_view('wiki', 'block_1', $arg);
+  $wiki .=  views_embed_view('wiki', 'block_1', array($arg));
 
   $variables['sifu_wiki'] = $wiki;
 
   // Output Sifu student block
   $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_noderef_instructor][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $students .= views_embed_view('sifu', 'block_1', $arg);
+  $students .= views_embed_view('sifu', 'block_1', array($arg));
   $variables['sifu_students'] = $students;
 
   // Output Sifu video block
   $videos = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Videos') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/video', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_sifu][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $videos .= views_embed_view('videos', 'block_1', $arg);
+  $videos .= views_embed_view('videos', 'block_1', array($arg));
 //    $videos .= l('Add Video', 'node/add/video', array('attributes' => array('class' => 'add')));
   $videos .=  '<br />' ;
   $variables['sifu_videos'] = $videos;
 
   // Output Sifu products view
   $products = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Products') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/product', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_sifu][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>' ;
-  $products .= views_embed_view('products', 'block_1', $arg);
+  $products .= views_embed_view('products', 'block_1', array($arg));
   $variables['sifu_products'] = $products;
 
   // Output Sifu school block
   $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_instructors][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
-  $schools .= views_embed_view('related_schools', 'block_1', $arg);
+  $schools .= views_embed_view('related_schools', 'block_1', array($arg));
   $variables['sifu_schools'] = $schools;
   foreach ($variables['node']->field_img_certification AS $key => $img) {
     // Check for an image before outputting
