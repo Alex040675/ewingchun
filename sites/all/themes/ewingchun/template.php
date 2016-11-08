@@ -112,11 +112,10 @@ function ewingchun_preprocess_node(&$variables) {
 
 
 
-  $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
+  $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => array('param' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid))) . '</div> </div>';
   $wiki .=  views_embed_view('wiki', 'block_1', array($arg));
 
   $variables['sifu_wiki'] = $wiki;
-  echo 555; die();
   // Output Sifu student block
   /*$students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_noderef_instructor][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
   $students .= views_embed_view('sifu', 'block_1', array($arg));
