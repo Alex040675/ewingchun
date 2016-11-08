@@ -50,7 +50,7 @@
 </div>
 </div>
 <div class="common-namelist">
-  <?php if ($sifu_images): ?>
+  <?php if ($content['group_images']['field_profile_img']): ?>
     <ul>
       <?php print $sifu_images; ?>
     </ul>
