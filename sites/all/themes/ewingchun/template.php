@@ -112,7 +112,7 @@ function ewingchun_preprocess_node(&$variables) {
 
 
 
-  $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => array('param' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid))) . '</div> </div>';
+  $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
   $wiki .=  views_embed_view('wiki', 'block_1', array($arg));
 
   $variables['sifu_wiki'] = $wiki;
