@@ -40,10 +40,10 @@
     <?php endif; ?>
     <div class="dob">
       <?php if ($node->field_bdate['und'][0]['value']): ?>
-        <div class="dob-left"><span>Date of Birth:</span> <?php print $node->field_bdate['und'][0]['value']; ?> </div>
+        <div class="dob-left"><span>Date of Birth:</span> <?php print date("M d, Y", strtotime($node->field_bdate['und'][0]['value'])) ; ?> </div>
       <?php endif; ?>
       <?php if ($node->field_death_date['und'][0]['value']): ?>
-        <div class="dob-right"><span>Date of Death:</span> <?php print $node->field_death_date['und'][0]['value']; ?></div>
+        <div class="dob-right"><span>Date of Death:</span> <?php print date("M d, Y", strtotime($node->field_death_date['und'][0]['value'])); ?></div>
       <?php endif; ?>
     </div>
   </div>

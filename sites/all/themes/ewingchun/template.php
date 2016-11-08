@@ -108,7 +108,7 @@ function ewingchun_preprocess_node(&$variables) {
   }
 
   // Output Sifu Encyclopedia block
-  /*$arg = arg(1);
+  //$arg = arg(1);
   $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query' => 'edit[field_related_sifus][nid][nid]=' . $sifu_profile_node->nid)) . '</div> </div>';
   $wiki .=  views_embed_view('wiki', 'block_1', $arg);
 
