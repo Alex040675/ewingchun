@@ -153,23 +153,7 @@
       margin: 15px 0 0 20px;
       clear: none;
     }
-  }/*
-  #block-system-main-menu{
-    display: none;
   }
-  .active_menu{
-    #block-system-main-menu{
-      display: block;
-      width: 100%;
-      ul{
-        width: 100%;
-      }
-      li{
-        float: none;
-        width: 100%;
-      }
-    }
-  }*/
   #block-block-10{
     .banner-top-left,.banner-top-right{
       float: none;
@@ -321,6 +305,27 @@
     }
   }
   }
+  .page-blog .view-Blogs .wingchunblogs-bleft {
+    float: left;
+    height: auto;
+    margin-right: 0;
+    width: 50%;
+  }
+  .page-blog .view-Blogs .wingchunblogs-bright{
+    width: 50%;
+  }
+  .page-blog .view-Blogs .wingchunblogs-bcenter {
+    float: left;
+    height: auto;
+    padding: 15px 13px 0 10px;
+    width: 90%;
+  }
+
+  .page-blog .view-Blogs .blog-coment {
+    clear: both;
+    float: left;
+    margin: 20px 0 7px;
+  }
 }
 @media screen and (max-width:960px) {
   #block-system-main-menu {
@@ -412,52 +417,6 @@
     }
   }
 }
-/*
-@media screen  and (max-width: 980px) {
-  .l-header{
-  .l-region--navigation {
-    #block-system-main-menu {
-      ul {
-        li {
-          a {
-            padding: 0 15px !important;
-          }
-        }
-      }
-    }
-  }
-}
-}
-@media screen and (max-width: 1020px){
-  .l-region--navigation {
-    #block-system-main-menu {
-      ul {
-        li {
-          a {
-            padding: 0 16px !important;
-          }
-        }
-      }
-    }
-  }
-}
-@media screen and (max-width: 1043px) {
-  .l-page{
-  .l-header {
-    .l-region--navigation {
-      #block-system-main-menu {
-        ul {
-          li {
-            a {
-              padding: 0 18px;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-}*/
 @media screen and (min-width:769px) and (max-width: 1180px){
 body{
   background-size: 50% auto;
@@ -500,43 +459,5 @@ body{
 @media screen and (max-width:1180px) {
   body .l-page {
     width: 90%;
-  }/*
-  .l-header{
-  .l-region--navigation {
-    #block-system-main-menu {
-      ul {
-        li {
-          a {
-            padding: 0 19px;
-          }
-        }
-      }
-    }
-  }
-}*/
-}
-/*
-@media screen and (max-width:1183px){
-  .l-region--navigation {
-    #block-system-main-menu {
-      ul {
-        li {
-          a {
-            padding: 0 16px;
-          }
-        }
-      }
-    }
   }
 }
-@media screen and (max-width:1254px) {
-  #block-system-main-menu {
-    ul {
-      li {
-        a {
-          padding: 0 18px;
-        }
-      }
-    }
-  }
-}*/
