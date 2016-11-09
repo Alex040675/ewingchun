@@ -29,11 +29,11 @@
     </ul>
   </div>
   <?php
-   print_r($node->taxonomy_vocabulary_9['und'][0]['[taxonomy_term']->name);
+   print_r($node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name);
   if($node->field_primary_lineage['und'][0]['value'] = 1) : ?>
     <div class="common-right">
       <div class="common-right-lft">Primary Lineage: </div>
-      <div class="common-right-2"> <?php print $node->taxonomy_vocabulary_9['und'][0]['[taxonomy_term']->name; ?></div>
+      <div class="common-right-2"> <?php print $node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name; ?></div>
     </div>
   <?php endif; ?>
   <div class="comon-btom">
