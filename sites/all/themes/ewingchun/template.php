@@ -30,7 +30,7 @@ function ewingchun_preprocess_node(&$variables) {
     }
 
     $max = max(count($variables['node']->field_noderef_instructor['und']), count($variables['node']->field_img_certification['und']), count($variables['node']->field_taxo_rank['und']), count($variables['node']->field_txt_certnotes['und']), count($variables['node']->field_int_stillaffiliated['und']));
-
+    print_r($max);
     $output = array();
     // Group Rank, cert image, and cert notes
     for ($i = 0; $i < $max; $i++) {

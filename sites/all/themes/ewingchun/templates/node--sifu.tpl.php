@@ -29,7 +29,7 @@
     </ul>
   </div>
   <?php
-   print_r($node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name);
+
   if($node->field_primary_lineage['und'][0]['value'] = 1) : ?>
     <div class="common-right">
       <div class="common-right-lft">Primary Lineage: </div>
@@ -61,7 +61,7 @@
 <div class="clear" style="padding:20px 0 0 0;"></div>
 <?php
 
-
+print_r($node->body['und']);
 ?>
 <?php if (isset($node->body['und'][0]['summary'])): ?>
 <h3>bio (teaser)</h3>
