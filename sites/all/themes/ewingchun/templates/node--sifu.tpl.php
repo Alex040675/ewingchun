@@ -28,10 +28,12 @@
       <?php endif; ?>
     </ul>
   </div>
-  <?php if($node->field_primary_lineage['und'][0]['value'] = 1) : ?>
+  <?php
+   print_r($node->taxonomy_vocabulary_9);
+  if($node->field_primary_lineage['und'][0]['value'] = 1) : ?>
     <div class="common-right">
       <div class="common-right-lft">Primary Lineage: </div>
-      <div class="common-right-2"> <?php print $node->field_lineage['und'][0]['view'] ?></div>
+      <div class="common-right-2"> <?php print $node->taxonomy_vocabulary_9['und'][0]['value'] ?></div>
     </div>
   <?php endif; ?>
   <div class="comon-btom">
