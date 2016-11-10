@@ -36,7 +36,6 @@ function ewingchun_preprocess_node(&$variables) {
         $field_collection = entity_load('field_collection_item', array($value['value']));
         $idx = $value['value'];
 
-        print_r($field_collection);
         foreach ($field_collection[$idx]->field_noderef_instructor as $activity) {
           if (isset($activity[0]['nid'])){
             $instructor = node_load($activity[0]['nid']);
@@ -76,6 +75,7 @@ function ewingchun_preprocess_node(&$variables) {
         $jcnt++;
       }
     }
+    print_r($lineage);
     $vars['output_primary_teacher'] = '';
     if (!empty($lineage)) {
       foreach($lineage as $key => $val) {
