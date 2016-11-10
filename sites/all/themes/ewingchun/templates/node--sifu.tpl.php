@@ -149,4 +149,6 @@
   <?php endif; ?>
 <?php print render($content['comments']); ?>
 
-  <?php print render($node->comments); ?>
+  <?php
+$comment_form = drupal_get_form('comment_node_sifu_form', (object) array('nid' => $node->nid));
+print drupal_render($comment_form);?>
