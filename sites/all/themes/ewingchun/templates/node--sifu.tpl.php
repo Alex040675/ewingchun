@@ -79,7 +79,9 @@
 </div>
 <div class="primary-part">
   <div class="primary-partleft">
-    <?php if ($output_primary_teacher) : ?>
+    <?php
+    print_r($output_primary_teacher);
+    if ($output_primary_teacher) : ?>
     <div class="primary-top"> primary teacher/lineage </div>
     <div class="primary-center">
       <div class="primary01">
