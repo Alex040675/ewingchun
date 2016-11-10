@@ -73,6 +73,7 @@ function ewingchun_preprocess_node(&$variables) {
           $lineage[$jcnt]['field_taxo_rank'] = $term->name;
         }
         if ($lineage[$jcnt]['stillaffiliated'] == 0) {
+          echo $lineage[$jcnt]['stillaffiliated'];
           if ($jcnt%2 == 0) {
             $variables['output_secondary_teacher'] .= '<div class="primary01">
           <div class="primary02-left">' . $lineage[$jcnt]['noderef_instructor'] . '</div>
