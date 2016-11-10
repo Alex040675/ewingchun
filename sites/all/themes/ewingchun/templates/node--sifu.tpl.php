@@ -61,15 +61,21 @@
 <div class="clear" style="padding:20px 0 0 0;"></div>
 <?php
 
-print_r($node->body['und']);
 ?>
-<?php if (isset($node->body['und'][0]['summary'])): ?>
+<?php if (isset($node->body['und'][0]['summary']) && $node->body['und'][0]['summary'] != ''): ?>
 <h3>bio (teaser)</h3>
 <div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($node->body['und'][0]['summary'],"<p>,<br>"); ?>
   <?php if (isset($node->body['und'][0]['value'])): ?>
     <a href="/<?php print $node->path?>#more" class="more-link">Read more</a>
   <?php endif; ?>
+  <?php else: ?>
+  <h3>bio (teaser)</h3>
+  <div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($node->body['und'][0]['summary'],"<p>,<br>"); ?>
+    <?php if (isset($node->body['und'][0]['value'])): ?>
+      <a href="/<?php print $node->path?>#more" class="more-link">Read more</a>
+    <?php endif; ?>
   <?php endif; ?>
+
 </div>
 <div class="primary-part">
   <div class="primary-partleft">
@@ -84,10 +90,10 @@ print_r($node->body['und']);
         </div>
         <div class="primary02"> <?php print $output_primary_teacher; ?> </div>
         <?php endif; ?>
-        <?php if (isset($node->taxonomy_vocabulary_9)) : ?>
+        <?php if (isset($node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name)) : ?>
           <div class="primary01">
             <p class="lineage-text"><strong>Full Lineage:</strong><br/>
-              <?php print $node->sifu_lineage ?> </p>
+              <?php print $node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name ?> </p>
           </div>
         <?php endif; ?>
       </div>
@@ -140,3 +146,5 @@ print_r($node->body['und']);
   <?php if ($links): ?>
     <div class="drupal-links"><?php print $links; ?></div>
   <?php endif; ?>
+
+  <?php

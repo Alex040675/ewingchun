@@ -29,65 +29,63 @@ function ewingchun_preprocess_node(&$variables) {
       }
     }
 
-    $max = max(count($variables['node']->field_noderef_instructor['und']), count($variables['node']->field_img_certification['und']), count($variables['node']->field_taxo_rank['und']), count($variables['node']->field_txt_certnotes['und']), count($variables['node']->field_int_stillaffiliated['und']));
-    print_r($max);
-    $output = array();
-    // Group Rank, cert image, and cert notes
-    for ($i = 0; $i < $max; $i++) {
-      unset($instructor, $instructor_name, $tid, $term, $rank);
-      if ($i == 0){
-        // Build Instructor link
-        if (isset($variables['node']->field_noderef_instructor[$i]['nid'])){
-          $instructor = node_load($variables['node']->field_noderef_instructor[$i]['nid']);
+    $jcnt = 0;
+    // Building a lineage table information from the field collection
+    if (!empty($variables['node']->field_lineage_information)) {
+      foreach ($variables['node']->field_lineage_information['und'] as $key => $value) {
+        $field_collection = entity_load('field_collection_item', array($value['value']));
+        $idx = $value['value'];
 
-          // Output the name as link
-          $instructor_name = l($instructor->title, $instructor->path);
-          $variables['sifu_primary_instructor_name'] = $instructor_name;
+        print_r($field_collection);
+        foreach ($field_collection[$idx]->field_noderef_instructor as $activity) {
+          if (isset($activity[0]['nid'])){
+            $instructor = node_load($activity[0]['nid']);
+            // Output the name as link
+            $instructor_name = l($instructor->title, 'node/' . $instructor->nid);
+
+          }
+          $lineage[$jcnt]['noderef_instructor'] = $instructor_name;
         }
-        // Build Rank vocabulary link
-        if (isset($variables['node']->field_taxo_rank[$i]['value'])){
-          // Find taxomomy ID and get term name
-          $tid = $variables['node']->field_taxo_rank[$i]['value'];
+        foreach ($field_collection[$idx]->field_primary_lineage as $activity) {
+          if($activity[0]['value'] == 0) {
+            $primary_affiliated = 'No';
+          }
+          else {
+            $primary_affiliated = 'Yes';
+          }
+          $lineage[$jcnt]['primary_lineage'] = $primary_affiliated;
+        }
+        foreach ($field_collection[$idx]->field_int_stillaffiliated as $activity) {
+          if($activity[0]['value'] == 0) {
+            $secondary_affiliated = 'No';
+          }
+          else {
+            $secondary_affiliated = 'Yes';
+          }
+          $lineage[$jcnt]['stillaffiliated'] = $secondary_affiliated;
+        }
+        foreach ($field_collection[$idx]->field_taxo_rank as $activity) {
+          $tid = $activity[0]['tid'];
           $term = taxonomy_term_load($tid);
-          $variables['teach_primary_rank'] = $term->name;
+          $vars['teach_primary_rank'] = $term->name;
 
           // Output the term name as link
           $rank = ' - ' . l($term->name, 'taxonomy/term/' . $tid);
+          $lineage[$jcnt]['field_taxo_rank'] = $term->name;
+        }
+        $jcnt++;
+      }
+    }
+    $vars['output_primary_teacher'] = '';
+    if (!empty($lineage)) {
+      foreach($lineage as $key => $val) {
+        $vars['output_primary_teacher'] .= '<div class="primary01">
+         <div class="primary02-left">' . $val . '</div>
+         <div class="primary02-midle">' . $term->name . '</div>
+         <div class="primary02-rgt">' . $primary_affiliated . '</div>
+         </div>';
+      }
 
-        }
-        //Output still affiliated or onot...
-        if($variables['node']->field_int_stillaffiliated['und'][$i]['value'] == 0)
-        {
-          $primary_affiliated = 'No';
-        }
-        else
-        {
-          $primary_affiliated = 'Yes';
-        }
-
-        $variables['output_primary_teacher'] .= '<div class="primary01"> <div class="primary02-left">' . $instructor_name . '</div>
-        <div class="primary02-midle">' . $term->name . '</div>
-        <div class="primary02-rgt">' . $primary_affiliated . '</div>
-        </div>';
-        continue;
-      }
-      //Output still affiliated or onot...
-      if($variables['node']->field_int_stillaffiliated['und'][$i]['value'] == 0) {
-        $secondary_affiliated = 'No';
-      }
-      else {
-        $secondary_affiliated = 'Yes';
-      }
-      if ($i%2 == 0) {
-        $variables['output_secondary_teacher'] .= '<div class="primary01"> <div class="primary02-left">' . $instructor_name . '</div>
-          <div class="primary02-midle">' . $term->name . '</div>
-          <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
-      }
-      else {
-        $variables['output_secondary_teacher'] .= '<div class="primary02"> <div class="primary02-left">' . $instructor_name . '</div>
-          <div class="primary02-midle">' . $term->name . '</div>
-          <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
-      }
     }
     foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
       // Check for an image before outputting

@@ -1,0 +1,99 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+
+#page {width: 77%;}
+
+#branding {margin-top: 42px}
+
+#logo {float: left;}
+
+.front.sidebar-second .content-inner {margin-right: 50%;}
+
+.front.sidebar-second .region-sidebar-second {width: 50%; margin-left: -50%;}
+
+#block-block-8 {
+    float: left;
+    width: 40%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+}
+
+#block-block-8 p {margin: 0;}
+
+#block-search-form {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#primary-menu-bar ul {
+    display: table;
+    width: 100%;
+}
+
+#primary-menu-bar ul li {
+    display: table-cell;
+    float: none !important;
+}
+
+/*
+ * Secondary content
+ */
+.region-secondary-content, #columns, .region-tertiary-content {
+    padding: 0 35px;
+}
+
+.banner-top>div {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.browsetable-box {
+    width: 25%;
+}
+
+#block-views-videos-block-2 .views-row {
+    float: left;
+    width: 23%;
+    margin: 0 1%;
+}
+
+.front #content-column {
+
+}
+
+.view-sifu .view-filters {
+    width: 70%;
+}
+
+.view-sifu .item-list-pager {
+    float: right;
+}
+
+.views-field-field-profile-img {
+    width: 15%;
+}
+
+#block-menu-menu-footer-links ul li {
+    padding: 0 10px;
+    border-left: solid 1px #fff;
+}  
+
+#block-menu-menu-footer-links ul li.first {
+    border-left: none;
+}
+
+#footer>p {
+   max-width: 90%;
+   margin: 2% 5%;
+}
