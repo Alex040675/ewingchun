@@ -72,7 +72,7 @@ function ewingchun_preprocess_node(&$variables) {
           $rank = ' - ' . l($term->name, 'taxonomy/term/' . $tid);
           $lineage[$jcnt]['field_taxo_rank'] = $term->name;
         }
-        if ($lineage[$jcnt]['stillaffiliated'] == 'No') {
+        if ($lineage[$jcnt]['stillaffiliated'] == 0) {
           if ($jcnt%2 == 0) {
             $variables['output_secondary_teacher'] .= '<div class="primary01">
           <div class="primary02-left">' . $lineage[$jcnt]['noderef_instructor'] . '</div>
