@@ -148,4 +148,5 @@
     <div class="drupal-links"><?php print render($content['links']);  ?></div>
   <?php endif; ?>
 <?php print render($content['comments']); ?>
-  <?php
+
+  <?php   print comment_render($node); ?>
