@@ -140,12 +140,12 @@
     <div id="more">
       <div class="bottom-biography">
         <h3>biography (con't)</h3>
-        <div class="content" style="padding:15px 0 0 0;"><?php print strip_tags($body,"<p>,<br>"); ?></div>
+        <div class="content" style="padding:15px 0 0 0;"><?php print strip_tags($node->body['und'][0]['value'],"<p>,<br>"); ?></div>
       </div>
     </div>
   <?php endif; ?>
-  <?php if ($links): ?>
-    <div class="drupal-links"><?php print $links; ?></div>
+  <?php if (isset($content['links'])): ?>
+    <div class="drupal-links"><?php print render($content['links']);  ?></div>
   <?php endif; ?>
 
   <?php
