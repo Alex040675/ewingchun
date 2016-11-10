@@ -149,4 +149,4 @@
   <?php endif; ?>
 <?php print render($content['comments']); ?>
 
-  <?php print render($node['comments']); ?>
+  <?php print render($node->comments); ?>
