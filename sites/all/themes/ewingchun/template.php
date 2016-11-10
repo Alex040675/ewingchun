@@ -75,14 +75,13 @@ function ewingchun_preprocess_node(&$variables) {
         $jcnt++;
       }
     }
-    print_r($lineage);
     $vars['output_primary_teacher'] = '';
     if (!empty($lineage)) {
       foreach($lineage as $key => $val) {
         $vars['output_primary_teacher'] .= '<div class="primary01">
-         <div class="primary02-left">' . $val . '</div>
-         <div class="primary02-midle">' . $term->name . '</div>
-         <div class="primary02-rgt">' . $primary_affiliated . '</div>
+         <div class="primary02-left">' . $val['noderef_instructor']. '</div>
+         <div class="primary02-midle">' . $val['field_taxo_rank'] . '</div>
+         <div class="primary02-rgt">' . $val['primary_lineage'] . '</div>
          </div>';
       }
 
