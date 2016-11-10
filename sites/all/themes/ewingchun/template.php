@@ -74,18 +74,18 @@ function ewingchun_preprocess_node(&$variables) {
         }
         if ($primary_affiliated == 'No') {
           if ($jcnt%2 == 0) {
-            $vars['output_secondary_teacher'] .= '<div class="primary01">
+            $variables['output_secondary_teacher'] .= '<div class="primary01">
           <div class="primary02-left">' . $instructor_name . '</div>
           <div class="primary02-midle">' . $term->name . '</div>
           <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
           }
           else {
-            $vars['output_secondary_teacher'] .= '<div class="primary02">
+            $variables['output_secondary_teacher'] .= '<div class="primary02">
           <div class="primary02-left">' . $instructor_name . '</div>
           <div class="primary02-midle">' . $term->name . '</div>
           <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
           }
-          $vars['output_secondary_bottom'] = '</div><div class="primary-bottom"></div></div>';
+          $variables['output_secondary_bottom'] = '</div><div class="primary-bottom"></div></div>';
         }
 
         $jcnt++;
