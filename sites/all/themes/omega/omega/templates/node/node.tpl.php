@@ -104,7 +104,5 @@
       print render($content);
     ?>
   </div>
-
-  <?php print render($content['links']); ?>
   <?php print render($content['comments']); ?>
 </article>
