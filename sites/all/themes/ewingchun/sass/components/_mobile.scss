@@ -62,6 +62,29 @@
       }
     }
   }
+  .node-type-sifu {
+    .l-page{
+    .primary-part {
+      .primary-top {
+        font-size: 12px;
+        background-size: 100% 100%;
+        height: 20px;
+      }
+      .primary-center {
+        .primary01 {
+          .mprimary {
+            .primary01-left, .primary01-midle, .primary01-rgt {
+              font-size: 12px;
+            }
+          }
+          .lineage-text {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  }
 }
 @media screen and (max-width: 768px){
   body{
@@ -325,6 +348,38 @@
     clear: both;
     float: left;
     margin: 20px 0 7px;
+  }
+  .page-schools-list{
+    .views-field-country,.views-field-province,.views-field-city,.views-field-field-profile-img,.views-field-changed{
+      display: none;
+    }
+  }
+  .node-type-sifu {
+    .l-page{
+    .commonname {
+      .common-left, .common-midle, .common-right {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0
+      }
+      .common-right .common-right-lft,.common-right .common-right-2{
+        width: auto;
+      }
+    }
+    .primary-part {
+      .primary-partleft {
+        width: 100%;
+      }
+    }
+    .student-sifus {
+      .student-left, .student-midle, .student-right {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+        max-width: 280px;
+      }
+    }
+  }
   }
 }
 @media screen and (max-width:960px) {

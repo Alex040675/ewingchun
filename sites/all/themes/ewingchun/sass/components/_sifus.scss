@@ -109,6 +109,9 @@
       }
       #edit-keys-wrapper{
         float: left;
+        label{
+          margin-top: 10px;
+        }
         .views-widget{
           float: left;
         }
@@ -226,5 +229,274 @@
       overflow-wrap: break-word;
       text-decoration: underline;
     }
+  }
+}
+.node-type-sifu{
+  .clear{
+    clear: both;
+  }
+  .bottom-border{
+    border: 5px solid #f8f8f8;
+    float: left;
+    margin: 29px 0 17px;
+    width: 100%;
+  }
+  .commonname {
+    float: left;
+    padding: 10px 0;
+    width: 100%;
+    .common-left{
+      float: left;
+      width: 28%;
+      margin-right: 2%;
+    }
+    .common-midle {
+      float: left;
+      width: 35%;
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          color: #666;
+          font-family: Arial;
+          font-size: 14px;
+          font-weight: 400;
+          padding: 0 0 15px;
+          list-style: none;
+          span{
+            color: #000;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0 0 15px;
+          }
+        }
+      }
+    }
+    .common-right{
+      float: left;
+      width: 35%;
+      .common-right-lft{
+        color: #000;
+        float: left;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        width: 40%;
+      }
+      .common-right-2 {
+        color: #666;
+        float: right;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        width: 60%;
+      }
+    }
+  }
+  h3{
+    text-transform: uppercase;
+  }
+  .content{
+    text-align: left;
+    .more-link{
+      font-size: 14px;
+      text-align: left;
+    }
+  }
+  .primary-part {
+    float: left;
+    padding: 15px 0 0;
+    width: 100%;
+    .primary-partleft{
+      width: 70%;
+    }
+    .primary-top {
+      background: rgba(0, 0, 0, 0) url("../images/primary-top.jpg") no-repeat scroll left top;
+      background-size: 100%;
+      color: #1c57a7;
+      text-transform: uppercase;
+      float: left;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      height: 44px;
+      padding: 5px 0 0 2%;
+      width: 98%;
+    }
+    .primary-center {
+      background: #ededed none repeat scroll 0 0;
+      float: left;
+      height: auto;
+      padding: 0;
+      width: 100%;
+      .primary01 {
+        background: #f8f8f8 none repeat scroll 0 0;
+        float: left;
+        height: auto;
+        padding: 0;
+        width:100%;
+        .lineage-text {
+          color: #666;
+          font-family: Arial;
+          font-size: 14px;
+          margin-top: 10px;
+          padding: 15px 10px;
+        }
+        .mprimary {
+          float: left;
+          line-height: 20px;
+          padding-top: 10px;
+          width: 100%;
+          .primary01-left {
+            color: #17335b;
+            float: left;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0 0 0 2%;
+            width: 28%;
+          }
+          .primary01-midle {
+            color: #17335b;
+            float: left;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0;
+            width: 50%;
+          }
+          .primary01-rgt {
+            color: #17335b;
+            float: right;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 0;
+            width: 20%;
+          }
+        }
+      }
+      .primary02 {
+        background: #ededed none repeat scroll 0 0;
+        float: left;
+        height: auto;
+        width: 100%;
+        .primary02-left {
+          color: #1c57a7;
+          float: left;
+          font-family: Arial;
+          font-size: 12px;
+          font-weight: 400;
+          padding: 7px 0 0 2%;
+          width: 28%;
+        }
+        .primary02-midle {
+          color: #666;
+          float: left;
+          font-family: Arial;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+          padding: 7px 0 0;
+          width: 50%;
+        }
+        .primary02-rgt {
+          color: #666;
+          float: right;
+          font-family: Arial;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: normal;
+          padding: 7px 0 0;
+          width: 20%;
+        }
+      }
+      .primary-bottom{
+        background: #F8F8F8;
+        float: left;
+        height: 7px;
+        width: 100%;
+      }
+    }
+    #more{
+      clear: both;
+    }
+    .student-titleleft {
+      float: left;
+    }
+    .student-titleright {
+      float: right;
+    }
+  }
+  .student-sifus {
+    float: left;
+    padding: 45px 0 0;
+    width: 100%;
+    h3{
+      margin: 0;
+    }
+    .views-row{
+      clear: both;
+    }
+    .student-left {
+      float: left;
+      width: 31%;
+      margin-right: 2%;
+      .student-title {
+        border-bottom: 1px solid #ededed;
+        float: left;
+        margin-right: 2%;
+        width: 98%;
+      }
+    }
+    .student-midle {
+      float: left;
+      width: 31%;
+      margin-right: 2%;
+      .student-midle-title {
+        border-bottom: 1px solid #ededed;
+        overflow: hidden;
+      }
+      .student-midle-titleleft{
+        float: left;
+      }
+      .student-midle-titleright {
+        float: right;
+      }
+    }
+    .student-right {
+      float: left;
+      width: 33%;
+      .student-right-title {
+        border-bottom: 1px solid #ededed;
+        overflow: hidden;
+        .student-right-titleleft {
+          float: left;
+        }
+      }
+      .student-midle-titleright {
+        float: right;
+      }
+    }
+  }
+  .add {
+    background: #AFAFAF;
+    border: 0 none;
+    color: #fff !important;
+    cursor: pointer;
+    display: block !important;
+    font-family: Arial;
+    font-size: 12px !important;
+    height: 19px;
+    line-height: 19px;
+    text-align: center !important;
+    text-decoration: none !important;
+    width: 62px;
+    border-radius: 4px;
+  }
+  .add:hover{
+    background: #404040;
   }
 }

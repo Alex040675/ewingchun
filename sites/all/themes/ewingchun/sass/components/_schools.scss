@@ -172,10 +172,11 @@ html.js .form-autocomplete{
       color: #17335b;
       font-size: 14px;
       font-weight: 700;
-      padding-right:10px;
+      padding:5px 10px 10px 10px;
+      border-right: solid 1px #fff;
     }
     tr{
-      position: relative;
+
     }
     td{
       font-size: 12px;
@@ -217,7 +218,6 @@ html.js .form-autocomplete{
     tr.even{
       background: #F8F8F8;
       td{
-        border:solid 1px #fff;
       }
     }
     tr.odd{
