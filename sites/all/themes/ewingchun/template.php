@@ -66,7 +66,7 @@ function ewingchun_preprocess_node(&$variables) {
         foreach ($field_collection[$idx]->field_taxo_rank as $activity) {
           $tid = $activity[0]['tid'];
           $term = taxonomy_term_load($tid);
-          $vars['teach_primary_rank'] = $term->name;
+          $variables['teach_primary_rank'] = $term->name;
 
           // Output the term name as link
           $rank = ' - ' . l($term->name, 'taxonomy/term/' . $tid);
@@ -92,7 +92,7 @@ function ewingchun_preprocess_node(&$variables) {
         $jcnt++;
       }
     }
-    $vars['output_primary_teacher'] = '';
+    $variables['output_primary_teacher'] = '';
     if (!empty($lineage)) {
       foreach($lineage as $key => $val) {
         if ($val['primary_lineage'] == 'Yes') {
@@ -102,9 +102,7 @@ function ewingchun_preprocess_node(&$variables) {
             <div class="primary02-rgt">' . $val['primary_lineage'] . '</div>
             </div>';
         }
-
       }
-
     }
     foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
       // Check for an image before outputting
@@ -122,52 +120,87 @@ function ewingchun_preprocess_node(&$variables) {
       <div class="primary01-midle">Rank Sifu ' . $variables['node']->field_txt_lastname['und'][0]['value'] . ' Obtained</div>
       <div class="primary01-rgt">Still Affiliated?</div>
       </div>';
-  }
-
-  // Output Sifu Encyclopedia block
-  $arg = arg(1);
 
 
-  // Output Sifu article block
-  $sifu_profile_node = node_load($arg);
-  $articles =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Articles') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/article', array('attributes' => array('class' => 'add'),)) . '</div> </div>';
-  $articles .=  views_embed_view('article', 'block_2', $arg);
-  //$articles .=  '<br />' . l('Add Article', 'node/add/article', array('attributes' => array('class' => 'add')));
+    // Output Sifu Encyclopedia block
+    $arg = arg(1);
 
-  $vars['sifu_articles'] = $articles;
+    // Output Sifu article block
+    $articles =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Articles') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/article', array('attributes' => array('class' => 'add'),)) . '</div> </div>';
+    $articles .=  views_embed_view('article', 'block_2', $arg);
+    $variables['sifu_articles'] = $articles;
 
-  $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
-  $wiki .=  views_embed_view('wiki', 'block_1', $arg);
+    // Output Sifu Encyclopedia block
+    $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $wiki .=  views_embed_view('wiki', 'block_1', $arg);
 
-  $variables['sifu_wiki'] = $wiki;
-  // Output Sifu student block
-  $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
-  $students .= views_embed_view('sifu', 'block_1', $arg);
-  $variables['sifu_students'] = $students;
+    // Output Sifu student block
+    $variables['sifu_wiki'] = $wiki;
+    $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $students .= views_embed_view('sifu', 'block_1', $arg);
+    $variables['sifu_students'] = $students;
 
-  // Output Sifu video block
-  $videos = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Videos') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/video', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
-  $videos .= views_embed_view('videos', 'block_1', $arg);
-//    $videos .= l('Add Video', 'node/add/video', array('attributes' => array('class' => 'add')));
-  $videos .=  '<br />' ;
-  $variables['sifu_videos'] = $videos;
+    // Output Sifu video block
+    $videos = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Videos') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/video', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $videos .= views_embed_view('videos', 'block_1', $arg);
+    $videos .=  '<br />' ;
+    $variables['sifu_videos'] = $videos;
 
-  // Output Sifu products view
-  $products = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Products') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/product', array('attributes' => array('class' => 'add'),)) . '</div> </div>' ;
-  $products .= views_embed_view('products', 'block_1', $arg);
-  $variables['sifu_products'] = $products;
+    // Output Sifu products view
+    $products = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Products') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/product', array('attributes' => array('class' => 'add'),)) . '</div> </div>' ;
+    $products .= views_embed_view('products', 'block_1', $arg);
+    $variables['sifu_products'] = $products;
 
-  // Output Sifu school block
-  $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
-  $schools .= views_embed_view('related_schools', 'block_1', $arg);
-  $variables['sifu_schools'] = $schools;
-  foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
-    // Check for an image before outputting
-    if ($img['filepath'] != NULL) {
-      $full_size = image_style_url('full-size', $img['uri']);
-      $thumbnail = image_style_url('sifu-listing', $img['uri']);
-      $variables['cert_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
-
+    // Output Sifu school block
+    $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $schools .= views_embed_view('related_schools', 'block_1', $arg);
+    $variables['sifu_schools'] = $schools;
+    foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
+      // Check for an image before outputting.
+      if ($img['filepath'] != NULL) {
+        $full_size = image_style_url('full-size', $img['uri']);
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
+        $variables['cert_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      }
     }
+  }
+  // Add variables for schools content type.
+  if ($variables['node']->type == 'resource') {
+    if (!empty($variables['node']->field_instructors['und'][0]['nid'])) {
+      $sifu_node = node_load($variables['node']->field_instructors[0]['nid']);
+      print_r($sifu_node);
+
+      // Pull in linked name
+      $sifu_name = l($sifu_node->title, $sifu_node->path);
+      $variables['head_instructor'] = $sifu_name;
+    }
+
+    foreach ($variables['node']->field_profile_img['und'] AS $key => $img) {
+      // Make sure there is actually an image before outputting
+      if ($img['uri'] != NULL) {
+        if ($key == 0) {
+          // Print out main image
+          $full_size = image_style_url('full-size', $img['uri']);
+          $thumbnail = image_style_url('article-main-img', $img['uri']);
+
+          // Output main sifu profile image with lightbox overlay
+          $variables['school_main_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img class="sifu-image" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
+          continue;
+        }
+
+        // Render additional images with lightbox
+        $full_size = image_style_url('full-size', $img['uri']);
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
+
+        // Output a list of images with lightbox overlays
+        $variables['school_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['data']['alt'] . '" /></a></li>';
+
+        //output users who attended block
+        $attended = '<p class="yca">' . t('users who attend') . '</p>';
+        $attended .= views_embed_view('wcusers', 'block_1', $variables['node']->nid);
+        $variables['school_attended'] = $attended;
+      }
+    }
+
   }
 }
