@@ -102,7 +102,7 @@
 <div class="school-moreinfo">
 <h5>more info:</h5><br />
 <div class="content">
-  <?php print $node; ?>
+  <?php print_r($node); ?>
 <?php print strip_tags($node->body['und'][0]['value'],"<p>,<br>"); ?>
 </div>
 </div>
