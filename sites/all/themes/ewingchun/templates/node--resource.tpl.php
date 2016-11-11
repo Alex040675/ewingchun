@@ -95,7 +95,10 @@
 <?php endif; ?>
 <p>Directions: <span>Try to</span> <?php print l('Map it', 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . $node->location['latitude'] . '+' . $node->location['longitude']); ?></p>
 <span><p>Average Rating:
-    <?php print  render($content['field_vote']); ?></p></span>
+    <?php
+    $fivestar = field_view_field('node', $node, 'field_fivestar_awesomeness');
+    print render($fivestar);
+    ?></p></span>
 </div>
 <div class="school-moreinfo">
 <h5>more info:</h5><br />
