@@ -128,6 +128,13 @@ function ewingchun_preprocess_node(&$variables) {
   $arg = arg(1);
 
 
+  // Output Sifu article block
+  $sifu_profile_node = node_load($arg);
+  $articles =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Articles') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/article', array('attributes' => array('class' => 'add'),)) . '</div> </div>';
+  $articles .=  views_embed_view('article', 'block_2', $arg);
+  //$articles .=  '<br />' . l('Add Article', 'node/add/article', array('attributes' => array('class' => 'add')));
+
+  $vars['sifu_articles'] = $articles;
 
   $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
   $wiki .=  views_embed_view('wiki', 'block_1', $arg);
