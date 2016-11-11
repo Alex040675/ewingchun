@@ -113,7 +113,7 @@
     // Assume that 0, 0 is invalid.
     if ($node->location['latitude'] != 0 || $node->location['longitude'] != 0) {
       $marker = $node->title;
-      print gmap_simple_map($node->location['latitude'], $node->location['longitude'], '', $marker, 'default');
+   //   print gmap_simple_map($node->location['latitude'], $node->location['longitude'], '', $marker, 'default');
     }
   }
 ?>
