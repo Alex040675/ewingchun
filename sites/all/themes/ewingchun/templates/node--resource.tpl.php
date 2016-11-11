@@ -96,8 +96,7 @@
 <p>Directions: <span>Try to</span> <?php print l('Map it', 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . $node->location['latitude'] . '+' . $node->location['longitude']); ?></p>
 <span><p>Average Rating:
     <?php
-    $fivestar = field_view_field('node', $node, 'field_fivestar_awesomeness');
-    print render($fivestar);
+   print render($content['field_rating']);
     ?></p></span>
 </div>
 <div class="school-moreinfo">
