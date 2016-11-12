@@ -204,7 +204,7 @@ function ewingchun_preprocess_node(&$variables) {
 
   if ($variables['node']->type == "article") {
 
-    print_r($variables['node']->field_embeded_video);
+    print_r($variables['node']);
     $relvideo = $variables['node']->field_embeded_video[0]['embed'];
     $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
     $vars['articlevideos'] = $relatedvideo;
@@ -213,11 +213,10 @@ function ewingchun_preprocess_node(&$variables) {
       $full_size = image_style_url('full-size', $img['filepath']);
       $thumbnail = image_style_url('article-images', $img['filepath']);
       // Output a list of images with lightbox overlays
-      $vars['article_images'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['data']['alt'] . '" /></a></li>';
+      $vars['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
 
     }
-    // Output main img with lightbox
-    $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
+
 
     $variables['related_sifu'] = $variables['node']->field_sifu['und'][0]['nid'];
   }
