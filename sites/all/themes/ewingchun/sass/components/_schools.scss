@@ -233,3 +233,52 @@ html.js .form-autocomplete{
     }
   }
 }
+.section-school{
+  .schoolname-left{
+    float: left;
+    width: 70%;
+  }
+  .productname-left {
+    float: left;
+    height: auto;
+    margin: 0 2% 0 0;
+    padding: 20px 0 0;
+    width: 40%;
+    .blogfpo {
+      float: left;
+      height: auto;
+      margin: 20px 0 0;
+      width: 100%;
+    }
+  }
+  .schoolname-r {
+    float: right;
+    height: auto;
+    width: 58%;
+    p {
+      color: #000;
+      font-size: 14px;
+      line-height: 31px;
+      span {
+        color: #666;
+        font-size: 14px;
+      }
+    }
+  }
+  .reviews-rightp {
+    float: right;
+    height: auto;
+    margin: 25px 2% 0 0;
+    overflow: hidden;
+    width: 28%;
+  }
+  .school-moreinfo{
+    clear: both;
+    h5{
+      color: #1c57a7;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+  }
+}
