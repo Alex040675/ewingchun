@@ -87,7 +87,7 @@ if ($page == 1): //if node is being displayed as a node
 				</div><!-- .middleleftimg -->
 				<?php endif; ?>
 				<?php if ($node->field_embeded_video['und'][0]['video_url']) : ?>
-				<div class="middleleftimg1"> <a href="<?php echo $$node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:400px; height:300px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="http://img.youtube.com/vi/<?php echo file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
+				<div class="middleleftimg1"> <a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:400px; height:300px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="http://img.youtube.com/vi/<?php echo file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
 					<?php 
             $videoid = $node->field_embeded_video['und'][0]['video_url'];
             $content = file_get_contents($node->field_embeded_video['und'][0]['video_url']);
