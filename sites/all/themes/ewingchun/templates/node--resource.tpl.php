@@ -132,6 +132,7 @@
   </div>
   <?php endif; ?>
 </div>
-<?php if ($links): ?>
-    <div class="drupal-links"><?php print $links; ?></div>
-  <?php endif; ?>
+<?php
+$comment_form = drupal_get_form('comment_node_sifu_form', (object) array('nid' => $node->nid));
+print drupal_render($comment_form);
+?>
