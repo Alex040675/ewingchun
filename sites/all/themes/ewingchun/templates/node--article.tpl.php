@@ -78,7 +78,7 @@ if ($page == 1): //if node is being displayed as a node
 		<div class="center"><?php print t('Posted By : ') . l ($name,  'user/' . $uid); ?></div>
 		<div class="right">Date: <span><?php print format_date($node->changed, 'small'); ?></span></div>
 		<div class="middle">
-			<?php if( $node->field_sifu['und'][0]['nid'] || $node->field_embeded_video['und'][0]['view'] || $article_images ) : ?>
+			<?php if( $node->field_sifu['und'][0]['nid'] || $node->field_embeded_video['und'][0]['video_url'] || $article_images ) : ?>
 			<div class="middleleft">
 				<?php if ($sifu_img) : ?>
 				<div class="middleleftimg">
@@ -86,14 +86,14 @@ if ($page == 1): //if node is being displayed as a node
 					<p class="img-caption"><?php print $sifu_name; ?></p>
 				</div><!-- .middleleftimg -->
 				<?php endif; ?>
-				<?php if ($node->field_emvideo[0]['view']) : ?>
-				<div class="middleleftimg1"> <a href="<?php echo $node->field_emvideo[0]['embed']?>" rel="lightvideo[|width:400px; height:300px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="http://img.youtube.com/vi/<?php echo $node->field_emvideo[0][value] ?>/0.jpg" /></a>
+				<?php if ($node->field_embeded_video['und'][0]['video_url']) : ?>
+				<div class="middleleftimg1"> <a href="<?php echo $$node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:400px; height:300px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="http://img.youtube.com/vi/<?php echo file_create_url($node->field_emvideo[0]['thumbnail_path']) ?>" /></a>
 					<?php 
-$videoid = $node->field_emvideo[0][value];
-$content = file_get_contents("http://youtube.com/get_video_info?video_id=".$videoid);
-parse_str($content, $ytarr);
-?>
-					<p><a href="<?php echo $node->field_emvideo[0]['embed']?>"><?php echo $ytarr['title']; ?></a></p>
+            $videoid = $node->field_embeded_video['und'][0]['video_url'];
+            $content = file_get_contents($node->field_embeded_video['und'][0]['video_url']);
+            parse_str($content, $ytarr);
+            ?>
+					<p><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
 				</div>
 				<?php endif; ?>
 				<?php if ($article_images) : ?>
@@ -105,7 +105,7 @@ parse_str($content, $ytarr);
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<div class="middle-center"> <?php print strip_tags($node->content['body']['#value']); ?> </div>
+			<div class="middle-center"> <?php print strip_tags($node->body['und'][0]['value']); ?> </div>
 			<div class="artical-sn"> <?php print $sharethis; ?> </div>
 		</div>
 	</div>
@@ -114,7 +114,7 @@ parse_str($content, $ytarr);
 	<div class="relatedproducts">
 		<p class="yca">related products</p>
 		<?php
-			if($relatedproducts!=NULL) {
+			if ($relatedproducts != NULL) {
 				print $relatedproducts;
 			} else {
 			?>
@@ -128,9 +128,9 @@ parse_str($content, $ytarr);
 		<!--<div class="videoaddbanner"></div>-->
 	</div>
 	<div class="recentarticles">
-		<p class="yca">other articles by sifu</p>
+		<p class="yca">Other articles by sifu</p>
 		<?php
-			if($otherarticles!=NULL) {
+			if ($otherarticles != NULL) {
 				print $otherarticles;
 			} else {
 				echo "<br/><p>No Articles</p>";

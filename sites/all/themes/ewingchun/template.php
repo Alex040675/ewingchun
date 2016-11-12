@@ -203,21 +203,53 @@ function ewingchun_preprocess_node(&$variables) {
   }
 
   if ($variables['node']->type == "article") {
-
-    print_r($variables['node']);
-    $relvideo = $variables['node']->field_embeded_video[0]['embed'];
+    $arg = arg(1);
+    $relvideo = $variables['node']->field_embeded_video[0]['video_url'];
     $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
-    $vars['articlevideos'] = $relatedvideo;
+    $variables['articlevideos'] = $relatedvideo;
 
     foreach ($sifu_node->field_related_images['und'] as $key => $val) {
       $full_size = image_style_url('full-size', $img['filepath']);
       $thumbnail = image_style_url('article-images', $img['filepath']);
       // Output a list of images with lightbox overlays
-      $vars['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      $variables['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
 
     }
-
-
     $variables['related_sifu'] = $variables['node']->field_sifu['und'][0]['nid'];
+    if (isset($variables['node']->field_sifu['und'][0]['nid'])) {
+      // Pull in Sifu profile image
+      $sifu_node = $variables['node']->field_sifu['und'][0]['node'];
+      $sifu_img =  $sifu_node->field_profile_img['und'][0]['uri'];
+
+      // Pull in linked name
+      $full_size = image_style_url('full-size', $sifu_img);
+      $thumbnail = image_style_url('article-images', $sifu_img);
+
+      // Output imagecache with lightbox
+      $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
+
+
+
+
+
+    }
+    $otherbysifu = views_embed_view('article', 'block_1', $arg);
+    $variables['otherarticles'] = $otherbysifu;
+
+    $relatedpro = views_embed_view('products', 'block_2', $arg);
+    $variables['relatedproducts'] = $relatedpro;
+
+    $recentarticles = views_embed_view('article', 'block_6', $arg);
+    $variables['recent_articles'] = $recentarticles;
+
+    $recentwiki = views_embed_view('wiki', 'block_4', $arg);
+    $variables['recent_wiki'] = $recentwiki;
+
+
+    if ($variables['node']->field_emvideo['0']['embed'] != NULL) {
+      foreach ($variables['node']->field_emvideo AS $key => $video) {
+        $variables['article_videos'] .= $video['view'];
+      }
+    }
   }
 }
