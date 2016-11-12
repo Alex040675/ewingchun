@@ -86,43 +86,43 @@
   }
   }
 }
-@media screen and (max-width: 768px){
-  body{
+@media screen and (max-width: 768px) {
+  body {
     background: #ebe9e1 !important;
     .l-page {
       width: 100%;
       border: none;
-      .breadcrumb{
+      .breadcrumb {
         padding-left: 2%;
         clear: both;
         float: left;
         width: 98%;
       }
     }
-    .has-sidebar-second{
-      .l-content,.l-region--sidebar-second{
+    .has-sidebar-second {
+      .l-content, .l-region--sidebar-second {
         margin: 0;
         width: 100%;
         float: none;
       }
     }
   }
-  .top_header{
+  .top_header {
     #block-block-13 {
       margin: 0 auto;
       width: 95%;
-      ul{
-        li{
+      ul {
+        li {
           width: 49%;
           margin-bottom: 10px;
         }
       }
     }
-    #block-block-12{
+    #block-block-12 {
       float: none;
       width: 120px;
       margin: 0 auto;
-      #links{
+      #links {
         width: 110px;
         margin: 0 auto;
       }
@@ -133,7 +133,7 @@
       float: none;
       margin: 0 auto;
       width: 100%;
-      .site-logo{
+      .site-logo {
         width: 205px;
         margin: 10px auto;
         display: block;
@@ -142,7 +142,7 @@
           height: auto;
         }
       }
-      .l-region--branding{
+      .l-region--branding {
 
       }
     }
@@ -151,11 +151,11 @@
       float: none;
       width: 100%;
     }
-    #block-block-11{
+    #block-block-11 {
       float: right;
       margin-right: 20px;
       display: block;
-      button{
+      button {
         background: #17335b;
         border: none;
         color: #ffffff;
@@ -163,46 +163,46 @@
         padding: 10px;
       }
     }
-    #block-block-8{
+    #block-block-8 {
       text-align: center;
       clear: both;
       float: none;
       width: 100%;
       margin-left: 0;
     }
-    #block-search-form{
+    #block-search-form {
       width: 260px;
       float: left;
       margin: 15px 0 0 20px;
       clear: none;
     }
   }
-  #block-block-10{
-    .banner-top-left,.banner-top-right{
+  #block-block-10 {
+    .banner-top-left, .banner-top-right {
       float: none;
       width: 100%;
       clear: both;
       overflow: hidden;
     }
-    .browse-table{
-      .browsetable-box{
+    .browse-table {
+      .browsetable-box {
         width: 50%;
-        p.browse-heading{
+        p.browse-heading {
           font-size: 18px;
         }
       }
     }
-    .banner-top > div{
+    .banner-top > div {
       width: 100% !important;
     }
 
-    .l-region--sidebar-second{
-      #block-quicktabs-the-latest{
-        h2{
+    .l-region--sidebar-second {
+      #block-quicktabs-the-latest {
+        h2 {
           text-align: center;
         }
-        li{
-          a{
+        li {
+          a {
             font-size: 11px;
           }
         }
@@ -210,36 +210,36 @@
     }
   }
 
-  .under_content{
-    #block-views-videos-block-2{
-      .views-row{
+  .under_content {
+    #block-views-videos-block-2 {
+      .views-row {
         float: none;
         width: 90%;
         margin: 0 auto 20px !important;
       }
     }
   }
-  .l-footer{
+  .l-footer {
     overflow: hidden;
     height: auto;
     padding: 10px 0;
-    #block-menu-menu-footer-links{
+    #block-menu-menu-footer-links {
       width: 90%;
-      ul{
-        li{
+      ul {
+        li {
           float: none;
           text-align: center;
           list-style-image: none;
           list-style-type: none;
           margin-bottom: 5px;
-          a{
+          a {
             border: none;
           }
         }
       }
     }
   }
-  .page-sifus{
+  .page-sifus {
     .l-page {
       .views-field-taxonomy-vocabulary-9 {
         display: none;
@@ -248,35 +248,35 @@
         border: none;
       }
       .view-sifu .view-filters {
-        margin-top:20px;
+        margin-top: 20px;
         top: 0 !important;
       }
-       table{
-         width: 100%;
-         td.views-field-body-1,th.views-field-body-1{
-           display: none;
-         }
-       }
+      table {
+        width: 100%;
+        td.views-field-body-1, th.views-field-body-1 {
+          display: none;
+        }
+      }
       td {
         width: 25%;
         display: block;
         float: left;
       }
-      th{
+      th {
         display: block;
         float: left;
       }
-      th.views-field-title{
+      th.views-field-title {
         width: 58%;
         margin-left: 0;
         padding-left: 2%;
       }
-      th.views-field-changed{
+      th.views-field-changed {
         width: 40%;
         float: right;
         position: relative;
         right: 3%;
-        img{
+        img {
           display: none;
         }
       }
@@ -288,7 +288,7 @@
         float: none !important;
         width: 90% !important;
         margin-bottom: 30px;
-        h2{
+        h2 {
           float: none !important;
         }
       }
@@ -307,26 +307,26 @@
   }
 
   .page-articles {
-    .l-page{
-    .view-article {
-      .main-history {
-        background: none;
-        .history-left {
-          float: none;
-          width: 100%;
-          background: #F8F8F8;
-          overflow: hidden;
-        }
-        .history-right {
-          float: none;
-          width: 100%;
-          background: #EDEDED;
-          overflow: hidden;
-          padding-bottom: 20px;
+    .l-page {
+      .view-article {
+        .main-history {
+          background: none;
+          .history-left {
+            float: none;
+            width: 100%;
+            background: #F8F8F8;
+            overflow: hidden;
+          }
+          .history-right {
+            float: none;
+            width: 100%;
+            background: #EDEDED;
+            overflow: hidden;
+            padding-bottom: 20px;
+          }
         }
       }
     }
-  }
   }
   .page-blog .view-Blogs .wingchunblogs-bleft {
     float: left;
@@ -334,7 +334,7 @@
     margin-right: 0;
     width: 50%;
   }
-  .page-blog .view-Blogs .wingchunblogs-bright{
+  .page-blog .view-Blogs .wingchunblogs-bright {
     width: 50%;
   }
   .page-blog .view-Blogs .wingchunblogs-bcenter {
@@ -349,38 +349,58 @@
     float: left;
     margin: 20px 0 7px;
   }
-  .page-schools-list{
-    .views-field-country,.views-field-province,.views-field-city,.views-field-field-profile-img,.views-field-changed{
+  .page-schools-list {
+    .views-field-country, .views-field-province, .views-field-city, .views-field-field-profile-img, .views-field-changed {
       display: none;
     }
   }
   .node-type-sifu {
+    .l-page {
+      .commonname {
+        .common-left, .common-midle, .common-right {
+          width: 100%;
+          float: none;
+          margin: 0 0 20px 0
+        }
+        .common-right .common-right-lft, .common-right .common-right-2 {
+          width: auto;
+        }
+      }
+      .primary-part {
+        .primary-partleft {
+          width: 100%;
+        }
+      }
+      .student-sifus {
+        .student-left, .student-midle, .student-right {
+          float: none;
+          width: 100%;
+          margin: 0 0 20px 0;
+          max-width: 280px;
+        }
+      }
+    }
+  }
+  .section-school {
     .l-page{
-    .commonname {
-      .common-left, .common-midle, .common-right {
-        width: 100%;
-        float: none;
-        margin: 0 0 20px 0
-      }
-      .common-right .common-right-lft,.common-right .common-right-2{
-        width: auto;
-      }
+    .schoolname-left {
+      width: 100%;
+      float: none;
     }
-    .primary-part {
-      .primary-partleft {
-        width: 100%;
-      }
+    .productname-left {
+      float: none;
+      width: 100%;
     }
-    .student-sifus {
-      .student-left, .student-midle, .student-right {
-        float: none;
-        width: 100%;
-        margin: 0 0 20px 0;
-        max-width: 280px;
-      }
+    .schoolname-r {
+      float: left;
+      width: 100%;
+    }
+    .reviews-rightp {
+      float: left;
+      width: 100%;
     }
   }
-  }
+}
 }
 @media screen and (max-width:960px) {
   #block-system-main-menu {
