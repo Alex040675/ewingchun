@@ -204,8 +204,8 @@ function ewingchun_preprocess_node(&$variables) {
 
   if ($variables['node']->type == "article") {
 
-    print_r($variables['node']->field_emvideo);
-    $relvideo = $variables['node']->field_emvideo[0]['embed'];
+    print_r($variables['node']->field_embeded_video);
+    $relvideo = $variables['node']->field_embeded_video[0]['embed'];
     $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
     $vars['articlevideos'] = $relatedvideo;
 
