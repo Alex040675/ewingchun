@@ -168,8 +168,6 @@ function ewingchun_preprocess_node(&$variables) {
   if ($variables['node']->type == 'resource') {
     if (!empty($variables['node']->field_instructors['und'][0]['nid'])) {
       $sifu_node = node_load($variables['node']->field_instructors[0]['nid']);
-      print_r($sifu_node);
-
       // Pull in linked name
       $sifu_name = l($sifu_node->title, $sifu_node->path);
       $variables['head_instructor'] = $sifu_name;
@@ -202,5 +200,28 @@ function ewingchun_preprocess_node(&$variables) {
       }
     }
 
+  }
+
+  if ($variables['node']->type == "article") {
+
+    $relvideo = $node->field_emvideo[0]['embed'];
+    $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
+    $vars['articlevideos'] = $relatedvideo;
+
+    foreach ($sifu_node->field_related_images['und'] as $key => $val) {
+      if ($key == 0) {
+        $sifu_img =  $sifu_node->field_related_images['und'][0]['uri'];
+        $full_size = image_style_url('full-size', $sifu_img);
+      }
+      else {
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
+        $variables['sifu_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      }
+
+    }
+    // Output main img with lightbox
+    $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
+
+    $variables['related_sifu'] = $variables['node']->field_sifu['und'][0]['nid'];
   }
 }
