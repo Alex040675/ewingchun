@@ -48,7 +48,7 @@ if ($page == 0): //if node is being displayed as a teaser
 	<div class="history-right">
 		<div class="posted-top"></div>
 		<div class="posted-mid">
-			<p class="ar-font12"><?php print t('Posted By : ') . l ($name,  'user/' . $uid); ?><br />
+			<p class="ar-font12"><?php print t('Posted By : ') . l ($name,  'user/' . $uid, array('html' => true)); ?><br />
 				<?php print format_date($node->changed, 'small'); ?><br />
 				<?php print $comment_count; ?> Comments<br />
 				<a href="<?php print "comment/reply/$node->nid"; ?>" class="blue-link" > Add Comment </a>
