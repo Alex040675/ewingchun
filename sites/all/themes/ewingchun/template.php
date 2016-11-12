@@ -210,14 +210,10 @@ function ewingchun_preprocess_node(&$variables) {
     $vars['articlevideos'] = $relatedvideo;
 
     foreach ($sifu_node->field_related_images['und'] as $key => $val) {
-      if ($key == 0) {
-        $sifu_img =  $sifu_node->field_related_images['und'][0]['uri'];
-        $full_size = image_style_url('full-size', $sifu_img);
-      }
-      else {
-        $thumbnail = image_style_url('sifu-listing', $img['uri']);
-        $variables['sifu_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
-      }
+      $full_size = image_style_url('full-size', $img['filepath']);
+      $thumbnail = image_style_url('article-images', $img['filepath']);
+      // Output a list of images with lightbox overlays
+      $vars['article_images'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['data']['alt'] . '" /></a></li>';
 
     }
     // Output main img with lightbox

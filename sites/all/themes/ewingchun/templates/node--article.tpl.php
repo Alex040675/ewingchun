@@ -72,13 +72,13 @@ if ($page == 1): //if node is being displayed as a node
 ?>
 <div class="articletitle-leftp">
 	<div class="articalmain">
-		<?php if($sifu_name) : ?>
-		<div class="left">Sifu/Author: <a href="#" class="youtublink"><?php print $sifu_name; ?></a></div>
+		<?php if (!empty($content['field_sifu'])): ?>
+		<div class="left">Sifu/Author: <a href="#" class="youtublink"><?php print render($content['field_sifu']); ?></a></div>
 		<?php endif; ?>
-		<div class="center"><?php print t('Posted By : ') . l ($node->name,  'user/' . $node->name); ?></div>
+		<div class="center"><?php print t('Posted By : ') . l ($name,  'user/' . $uid); ?></div>
 		<div class="right">Date: <span><?php print format_date($node->changed, 'small'); ?></span></div>
 		<div class="middle">
-			<?php if( $node->field_sifu[0][nid] || $node->field_emvideo[0]['view'] || $article_images ) : ?>
+			<?php if( $node->field_sifu['und'][0]['nid'] || $node->field_embeded_video['und'][0]['view'] || $article_images ) : ?>
 			<div class="middleleft">
 				<?php if ($sifu_img) : ?>
 				<div class="middleleftimg">
