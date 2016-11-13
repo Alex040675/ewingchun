@@ -250,7 +250,7 @@ function ewingchun_preprocess_node(&$variables) {
   // Add variables for blogs.
   if ($variables['node']->type == 'blog') {
     $arg = arg(1);
-    print_r($variables['node']);
+    print_r($variables['node']);die();
     foreach ($variables['node']->field_image['und'] AS $key => $img) {
       // Check for an image before outputting
       if (isset($img['uri']) && $img['uri'] != NULL) {
