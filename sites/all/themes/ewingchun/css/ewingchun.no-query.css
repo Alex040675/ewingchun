@@ -637,29 +637,35 @@ img, media {
       padding: 15px 20px 0 0;
       width: 30%; }
       /* line 325, ../sass/components/_blogs.scss */
+      .node-type-blog .articletitle-leftp .articalmain .middleleft ul {
+        padding: 0; }
+        /* line 327, ../sass/components/_blogs.scss */
+        .node-type-blog .articletitle-leftp .articalmain .middleleft ul li {
+          list-style: none; }
+      /* line 331, ../sass/components/_blogs.scss */
       .node-type-blog .articletitle-leftp .articalmain .middleleft .middleleftimg {
         float: left;
         height: auto;
         padding: 0; }
-        /* line 329, ../sass/components/_blogs.scss */
+        /* line 335, ../sass/components/_blogs.scss */
         .node-type-blog .articletitle-leftp .articalmain .middleleft .middleleftimg .img-caption {
           text-align: center; }
-    /* line 334, ../sass/components/_blogs.scss */
+    /* line 340, ../sass/components/_blogs.scss */
     .node-type-blog .articletitle-leftp .articalmain .middle-center {
       height: auto;
       line-height: 25px;
       padding: 15px 0 0; }
-    /* line 339, ../sass/components/_blogs.scss */
+    /* line 345, ../sass/components/_blogs.scss */
     .node-type-blog .articletitle-leftp .articalmain .middle {
       clear: both; }
-/* line 344, ../sass/components/_blogs.scss */
+/* line 350, ../sass/components/_blogs.scss */
 .node-type-blog .artical-rightmain {
   border-left: 1px solid #ededed;
   float: right;
   height: auto;
   margin: 0;
   width: 30%; }
-  /* line 350, ../sass/components/_blogs.scss */
+  /* line 356, ../sass/components/_blogs.scss */
   .node-type-blog .artical-rightmain .recentvideos, .node-type-blog .artical-rightmain .relatedproducts, .node-type-blog .artical-rightmain .recentarticles {
     background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 10px;
     float: right;
@@ -668,24 +674,24 @@ img, media {
     padding: 0 0 0 4%;
     width: 96%;
     background-size: 100% auto; }
-    /* line 358, ../sass/components/_blogs.scss */
+    /* line 364, ../sass/components/_blogs.scss */
     .node-type-blog .artical-rightmain .recentvideos h3, .node-type-blog .artical-rightmain .recentvideos .views-field-created, .node-type-blog .artical-rightmain .relatedproducts h3, .node-type-blog .artical-rightmain .relatedproducts .views-field-created, .node-type-blog .artical-rightmain .recentarticles h3, .node-type-blog .artical-rightmain .recentarticles .views-field-created {
       display: none; }
-    /* line 361, ../sass/components/_blogs.scss */
+    /* line 367, ../sass/components/_blogs.scss */
     .node-type-blog .artical-rightmain .recentvideos ol, .node-type-blog .artical-rightmain .recentvideos ul, .node-type-blog .artical-rightmain .recentvideos li, .node-type-blog .artical-rightmain .relatedproducts ol, .node-type-blog .artical-rightmain .relatedproducts ul, .node-type-blog .artical-rightmain .relatedproducts li, .node-type-blog .artical-rightmain .recentarticles ol, .node-type-blog .artical-rightmain .recentarticles ul, .node-type-blog .artical-rightmain .recentarticles li {
       padding: 0;
       list-style: none; }
-    /* line 365, ../sass/components/_blogs.scss */
+    /* line 371, ../sass/components/_blogs.scss */
     .node-type-blog .artical-rightmain .recentvideos .yca, .node-type-blog .artical-rightmain .relatedproducts .yca, .node-type-blog .artical-rightmain .recentarticles .yca {
       color: #116201;
       font-family: TrajanProBold;
       font-size: 15px;
       letter-spacing: -1px;
       text-transform: uppercase; }
-    /* line 372, ../sass/components/_blogs.scss */
+    /* line 378, ../sass/components/_blogs.scss */
     .node-type-blog .artical-rightmain .recentvideos .view-products, .node-type-blog .artical-rightmain .relatedproducts .view-products, .node-type-blog .artical-rightmain .recentarticles .view-products {
       padding: 25px 0 0; }
-  /* line 377, ../sass/components/_blogs.scss */
+  /* line 383, ../sass/components/_blogs.scss */
   .node-type-blog .artical-rightmain .view-content a {
     color: #1c57a7;
     font-size: 14px;
