@@ -145,5 +145,5 @@ if ($page == 1): //if node is being displayed as a node
 		<?php print $recent_wiki; ?> </div>
 </div>
 <?php
-endif;
+  endif;
 ?>

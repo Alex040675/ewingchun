@@ -227,11 +227,6 @@ function ewingchun_preprocess_node(&$variables) {
 
       // Output imagecache with lightbox
       $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
-
-
-
-
-
     }
     $otherbysifu = views_embed_view('article', 'block_1', $arg);
     $variables['otherarticles'] = $otherbysifu;
@@ -245,11 +240,57 @@ function ewingchun_preprocess_node(&$variables) {
     $recentwiki = views_embed_view('wiki', 'block_4', $arg);
     $variables['recent_wiki'] = $recentwiki;
 
-
     if ($variables['node']->field_emvideo['0']['embed'] != NULL) {
       foreach ($variables['node']->field_emvideo AS $key => $video) {
         $variables['article_videos'] .= $video['view'];
       }
     }
   }
+
+  // Add variables for blogs.
+  if ($variables['node']->type == 'blog') {
+    $arg = arg(1);
+    foreach ($variables['node']->field_image['und'] AS $key => $img) {
+      // Check for an image before outputting
+      if (isset($img['uri']) && $img['uri'] != NULL) {
+        if ($key == 0) {
+          // Print out main image
+          $full_size = image_style_url('full-size', $img['uri']);
+          $thumbnail = image_style_url('article-main-img', $img['uri']);
+
+          // Output main sifu profile image with lightbox overlay
+          $variables['article_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
+          continue;
+        }
+
+        // Render additional images with lightbox
+        $full_size = image_style_url('full-size', $img['uri']);
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
+
+        // Output a list of images with lightbox overlays
+        $variables['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+      }
+    }
+
+    // Check to see if the current UID belongs to Sifu role
+    $sifu_users = db_query("SELECT uid from {users_roles} WHERE rid='6' AND uid='%s'", $variables['node']->uid);
+    $is_sifu = $sifu_users->fetchField();
+
+    if (!empty($is_sifu)) {
+      // Creating variable for sifu label
+      $variables['sifu_label'] = '<span class=sifu>(' . t('Sifu') . ')</span>';
+    }
+    $relatedpro = views_embed_view('products', 'block_3', $arg);
+    $variables['relatedproducts'] = $relatedpro;
+
+    $recentarticles = views_embed_view('article', 'block_6', $arg);
+    $variables['recent_articles'] = $recentarticles;
+
+    $recentwiki = views_embed_view('wiki', 'block_4', $arg);
+    $variables['recent_wiki'] = $recentwiki;
+
+    $otherblogs = views_embed_view('Blogs', 'block_4', $arg);
+    $variables['otherblogsbyuser'] = $otherblogs;
+  }
+  
 }
