@@ -219,6 +219,7 @@ function ewingchun_preprocess_node(&$variables) {
     if (isset($variables['node']->field_sifu['und'][0]['nid'])) {
       // Pull in Sifu profile image
       $sifu_node = $variables['node']->field_sifu['und'][0]['node'];
+      print_r($sifu_node); 
       $sifu_img =  $sifu_node->field_profile_img['und'][0]['uri'];
 
       // Pull in linked name
