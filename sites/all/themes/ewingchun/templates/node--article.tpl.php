@@ -76,7 +76,7 @@ if ($page == 1): //if node is being displayed as a node
 		<div class="left">Sifu/Author: <a href="#" class="youtublink"><?php print render($content['field_sifu']); ?></a></div>
 		<?php endif; ?>
 		<div class="center"><?php print t('Posted By : ') . l ($name,  'user/' . $uid, array('html' => true)); ?></div>
-		<div class="right">Date: <span><?php print format_date($node->changed, 'small'); ?></span></div>
+		<div class="right">Date: <span><?php print format_date($node->changed, 'short'); ?></span></div>
 		<div class="middle">
 			<?php if( $node->field_sifu['und'][0]['nid'] || $node->field_embeded_video['und'][0]['video_url'] || $article_images ) : ?>
 			<div class="middleleft">
