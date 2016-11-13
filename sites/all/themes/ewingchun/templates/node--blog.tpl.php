@@ -17,7 +17,7 @@
 					</ul>
 				</div>
 				<?php endif; ?>
-				<?php print_r($node->field_embeded_video['und'][0]['video_url']); if($node->field_embeded_video['und'][0]['video_url']) : ?>
+				<?php if($node->field_embeded_video['und'][0]['video_url']) : ?>
 				<div class="clear-left"></div>
 				<!-- clear the floating elements -->
 				<div class="middleleftimg1"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>

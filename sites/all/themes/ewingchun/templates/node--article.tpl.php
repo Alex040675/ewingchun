@@ -150,7 +150,7 @@ if ($page == 1): //if node is being displayed as a node
     print render($comments);
     ?>
   </div>
-  
+
 <?php
   endif;
 ?>
