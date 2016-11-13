@@ -144,6 +144,16 @@ if ($page == 1): //if node is being displayed as a node
 		<p class="yca">recent wiki posts</p>
 		<?php print $recent_wiki; ?> </div>
 </div>
+  <div id="comments">
+    <?php
+    $comments = comment_node_page_additions($node);
+    print render($comments);
+    ?>
+  </div>
+  <?php
+  $comment_form = drupal_get_form('comment_node_article_form', (object) array('nid' => $node->nid));
+  print drupal_render($comment_form);
+  ?>
 <?php
   endif;
 ?>
