@@ -273,7 +273,7 @@ function ewingchun_preprocess_node(&$variables) {
     }
 
     // Check to see if the current UID belongs to Sifu role
-    $sifu_users = db_query("SELECT uid from {users_roles} WHERE rid='6' AND uid='%s'", $variables['node']->uid);
+    $sifu_users = db_query("SELECT uid from {users_roles} WHERE rid='6' AND uid=:uid", array(':uid' => $variables['node']->uid));
     $is_sifu = $sifu_users->fetchField();
 
     if (!empty($is_sifu)) {
