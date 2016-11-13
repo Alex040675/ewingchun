@@ -335,7 +335,7 @@
     width: 50%;
   }
   .page-blog .view-Blogs .wingchunblogs-bright {
-    width: 50%;
+    width: 48%;
   }
   .page-blog .view-Blogs .wingchunblogs-bcenter {
     float: left;
@@ -401,7 +401,7 @@
     }
   }
 }
-  .node-type-article{
+  .node-type-article,.node-type-blog{
     .l-page{
       .articletitle-leftp {
         float: none;
@@ -416,6 +416,13 @@
         height: auto;
         margin: 0;
         width: 100%;
+        .recentvideos, .relatedproducts,.recentarticles{
+          background-size: auto;
+          background-position: center 10px;
+        }
+        .yca{
+          text-align: center;
+        }
       }
     }
   }
@@ -547,6 +554,18 @@ body{
         }
       }
     }
+  }
+  .node-type-article {
+    .l-page{
+    .articletitle-leftp {
+      .articalmain {
+        .left,.center,.right{
+          float: none;
+          width: 200px;
+        }
+      }
+    }
+  }
   }
 }
 @media screen and (max-width:1180px) {

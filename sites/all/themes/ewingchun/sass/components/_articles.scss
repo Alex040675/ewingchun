@@ -250,7 +250,7 @@
     }
   }
 }
-.node-type-article{
+.node-type-article,.node-type-blog{
   .articletitle-leftp {
     float: left;
     margin: 20px 0 0;
@@ -322,7 +322,7 @@
       h3,.views-field-created{
         display: none;
       }
-      ol{
+      ol,ul{
         padding: 0;
         list-style: none;
       }
