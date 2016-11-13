@@ -87,12 +87,13 @@
   }
   .node-type-blog {
     .l-page {
-      .l-main{}
-      .articletitle-leftp {
-        .articalmain {
-          .middleleft {
-            float: none;
-            width: 90%;
+      .l-main {
+        .articletitle-leftp {
+          .articalmain {
+            .middleleft {
+              float: none;
+              width: 90%;
+            }
           }
         }
       }
