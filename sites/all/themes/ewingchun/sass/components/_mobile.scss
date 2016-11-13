@@ -85,6 +85,19 @@
     }
   }
   }
+  .node-type-blog {
+    .l-page {
+      .l-main{}
+      .articletitle-leftp {
+        .articalmain {
+          .middleleft {
+            float: none;
+            width: 90%;
+          }
+        }
+      }
+    }
+    }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -425,6 +438,18 @@
         }
       }
     }
+  }
+  .node-type-blog {
+    .l-page{
+    .articletitle-leftp {
+      .articalmain {
+        .middleleft {
+          float: none;
+          width: 50%;
+        }
+      }
+    }
+  }
   }
 }
 @media screen and (max-width:960px) {
