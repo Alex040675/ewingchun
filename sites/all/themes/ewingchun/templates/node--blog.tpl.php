@@ -1,7 +1,7 @@
-1111111<div class="articletitle-leftp">
+<div class="articletitle-leftp">
 	<div class="articalmain">
-		<div class="left"><?php print t('Posted By : ') . l ($name,  'user/' . $uid); ?></div>
-		<div class="right">Date: <span><?php print format_date($node->changed, 'Short'); ?></span></div>
+		<div class="left"><?php print t('Posted By : ') . l ($name,  'user/' . $uid, array('html' => true)); ?></div>
+		<div class="right">Date: <span><?php print format_date($node->changed, 'short'); ?></span></div>
 		<div class="middle">
 			<?php if($article_image || $article_images || $node->field_emvideo[0]['view']) : ?>
 			<div class="middleleft">
