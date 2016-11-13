@@ -17,16 +17,16 @@
 					</ul>
 				</div>
 				<?php endif; ?>
-				<?php print_r($node->field_emvideo['und'][0]['video_url']); if($node->field_emvideo['und'][0]['video_url']) : ?>
+				<?php print_r($node->field_embeded_video['und'][0]['video_url']); if($node->field_embeded_video['und'][0]['video_url']) : ?>
 				<div class="clear-left"></div>
 				<!-- clear the floating elements -->
-				1111<div class="middleleftimg1"><a href="<?php echo $node->field_emvideo['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_emvideo['und'][0]['thumbnail_path']) ?>" /></a>
+				<div class="middleleftimg1"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
 					<?php 
-						$videoid = $node->field_emvideo['und'][0]['video_url'];
+						$videoid = $node->field_embeded_video['und'][0]['video_url'];
 						$content = file_get_contents($videoid);
 						parse_str($content, $ytarr);
 					?>
-					<p style="padding:5px 0 0 0;"><a href="<?php echo $node->field_emvideo['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
+					<p style="padding:5px 0 0 0;"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
 				</div>
 				<?php endif; ?>
 			</div>
