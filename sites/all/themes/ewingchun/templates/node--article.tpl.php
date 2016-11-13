@@ -150,10 +150,7 @@ if ($page == 1): //if node is being displayed as a node
     print render($comments);
     ?>
   </div>
-  <?php
-  $comment_form = drupal_get_form('comment_node_article_form', (object) array('nid' => $node->nid));
-  print drupal_render($comment_form);
-  ?>
+  
 <?php
   endif;
 ?>
