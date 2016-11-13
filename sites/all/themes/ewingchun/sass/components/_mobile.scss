@@ -401,6 +401,24 @@
     }
   }
 }
+  .node-type-article{
+    .l-page{
+      .articletitle-leftp {
+        float: none;
+        margin: 20px 0 0;
+        padding: 0;
+        width: 100%;
+      }
+      .artical-rightmain {
+        border-left: none;
+        border-top: 1px solid #ededed;
+        float: none;
+        height: auto;
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
 }
 @media screen and (max-width:960px) {
   #block-system-main-menu {
