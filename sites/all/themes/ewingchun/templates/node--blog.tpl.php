@@ -17,10 +17,10 @@
 					</ul>
 				</div>
 				<?php endif; ?>
-				<?php if($node->field_emvideo['und'][0]['video_url']) : ?>
+				<?php echo $node->field_emvideo['und'][0]['video_url']; if($node->field_emvideo['und'][0]['video_url']) : ?>
 				<div class="clear-left"></div>
 				<!-- clear the floating elements -->
-				<div class="middleleftimg1"><a href="<?php echo $node->field_emvideo['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_emvideo['und'][0]['thumbnail_path']) ?>" /></a>
+				1111<div class="middleleftimg1"><a href="<?php echo $node->field_emvideo['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_emvideo['und'][0]['thumbnail_path']) ?>" /></a>
 					<?php 
 						$videoid = $node->field_emvideo['und'][0]['video_url'];
 						$content = file_get_contents($videoid);
