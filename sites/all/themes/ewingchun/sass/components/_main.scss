@@ -29,12 +29,13 @@ body {
   .has-sidebar-second .l-content {
     float: left;
     margin-right: 2%;
-    width: 58%;
+    width: 68%;
   }
 
   .has-sidebar-second .l-region--sidebar-second {
-    width: 40%;
+    width: 30%;
     float: left;
+    border-left: 1px solid #ededed;
   }
 }
 .breadcrumb{
