@@ -26,7 +26,7 @@
 						$content = file_get_contents($videoid);
 						parse_str($content, $ytarr);
 					?>
-					<p style="padding:5px 0 0 0;"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
+					<p style="padding:5px 0 0 0;"><a rel="lightvideo[|width:640px; height:480px;]"  href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
 				</div>
 				<?php endif; ?>
 			</div>
