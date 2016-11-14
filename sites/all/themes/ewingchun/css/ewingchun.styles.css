@@ -581,7 +581,7 @@ img, media {
   height: auto;
   float: left;
   padding: 15px 2% 10px 2%;
-  width: 55%; }
+  width: 65%; }
   /* line 222, ../sass/components/_blogs.scss */
   .page-blog .view-Blogs .wingchunblogs-bcenter p {
     margin-top: 0; }
@@ -836,10 +836,10 @@ body {
   body .has-sidebar-second .l-content {
     float: left;
     margin-right: 2%;
-    width: 68%; }
+    width: 71%; }
   /* line 35, ../sass/components/_main.scss */
   body .has-sidebar-second .l-region--sidebar-second {
-    width: 27%;
+    width: 23%;
     padding-left: 2%;
     float: left;
     border-left: 1px solid #ededed; }
