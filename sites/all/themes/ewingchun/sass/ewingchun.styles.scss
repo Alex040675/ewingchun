@@ -20,11 +20,12 @@
 @import "abstractions/**/*";
 @import "base/**/*";
 @import "components/**/*";
-
+.html{
+  background: url("../images/leftleave.jpg") no-repeat scroll left top,url("../images/rightleave.jpg") no-repeat right top;
+  background-color: #EBE9E1;
+}
 body{
-  background:#ebe9e1
-  url( ../images/leftleave.jpg) left top no-repeat,
-  url(../images/rightleave.jpg) right top no-repeat;
+
   a{
     color: #1c57a7;
     font-family: Arial;
@@ -34,22 +35,26 @@ body{
 }
 h1 {
   color: #1c57a7;
-  font-family: TrajanProBold;
+  font-family: Trajan Pro Bold;
   font-size: 23px;
   margin-bottom: 0;
   font-weight: normal;
 }
 h2{
   color: #1c57a7;
-  font-family: TrajanProBold;
+  font-family: Trajan Pro Bold;
   font-size: 17px;
   font-weight: normal;
   line-height: 22px;
 }
 h3 {
   color: #1c57a7;
-  font-family: TrajanProBold;
+  font-family: Trajan Pro Bold;
   font-size: 17px;
   font-weight: normal;
   line-height: 22px;
+}
+@font-face {
+  font-family:Trajan Pro Bold;
+  src: url("../fonts/Trajan Bold.ttf");
 }

@@ -33,7 +33,7 @@
         width: 20%;
         h2{
           color: #116201;
-          font-family: TrajanProBold;
+          font-family: Trajan Pro Bold;
           font-size: 15px;
           letter-spacing: -1px;
           text-transform: uppercase;
@@ -235,6 +235,17 @@
   .clear{
     clear: both;
   }
+  .common-namelist{
+    clear: both;
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        display: inline;
+        margin-right: 20px;
+      }
+    }
+  }
   .bottom-border{
     border: 5px solid #f8f8f8;
     float: left;
@@ -310,74 +321,86 @@
     float: left;
     padding: 15px 0 0;
     width: 100%;
-    .primary-partleft{
-      width: 70%;
+    #more{
+      clear: both;
     }
-    .primary-top {
-      background: rgba(0, 0, 0, 0) url("../images/primary-top.jpg") no-repeat scroll left top;
-      background-size: 100%;
-      color: #1c57a7;
-      text-transform: uppercase;
+  }
+  .primary-center >.primary01{
+    width: 70%;
+  }
+  .primary-part .primary-center .primary01{
+    width: 100%;
+  }
+  .primary01 {
+    background: #f8f8f8 none repeat scroll 0 0;
+    overflow: hidden;
+    height: auto;
+    clear: both;
+    padding: 0;
+    .lineage-text {
+      color: #666;
+      font-family: Arial;
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 15px 10px;
+    }
+    .mprimary {
       float: left;
-      font-family: TrajanProBold;
-      font-size: 17px;
-      height: 44px;
-      padding: 5px 0 0 2%;
-      width: 98%;
+      line-height: 20px;
+      padding-top: 10px;
+      width: 100%;
+      .primary01-left {
+        color: #17335b;
+        float: left;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 0 0 2%;
+        width: 28%;
+      }
+      .primary01-midle {
+        color: #17335b;
+        float: left;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        width: 50%;
+      }
+      .primary01-rgt {
+        color: #17335b;
+        float: right;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0;
+        width: 20%;
+      }
     }
+  }
+  .primary-center {
+    clear: both;
+  }
+  .primary-top {
+    background: rgba(0, 0, 0, 0) url("../images/primary-top.jpg") no-repeat scroll left top;
+    background-size: 100%;
+    color: #1c57a7;
+    text-transform: uppercase;
+    float: left;
+    font-family: Trajan Pro Bold;
+    font-size: 17px;
+    height: 44px;
+    padding: 5px 0 0 2%;
+    width: 68%;
+  }
+  .primary-partleft{
+    width: 70%;
     .primary-center {
       background: #ededed none repeat scroll 0 0;
       float: left;
       height: auto;
       padding: 0;
       width: 100%;
-      .primary01 {
-        background: #f8f8f8 none repeat scroll 0 0;
-        float: left;
-        height: auto;
-        padding: 0;
-        width:100%;
-        .lineage-text {
-          color: #666;
-          font-family: Arial;
-          font-size: 14px;
-          margin-top: 10px;
-          padding: 15px 10px;
-        }
-        .mprimary {
-          float: left;
-          line-height: 20px;
-          padding-top: 10px;
-          width: 100%;
-          .primary01-left {
-            color: #17335b;
-            float: left;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 0 0 0 2%;
-            width: 28%;
-          }
-          .primary01-midle {
-            color: #17335b;
-            float: left;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 0;
-            width: 50%;
-          }
-          .primary01-rgt {
-            color: #17335b;
-            float: right;
-            font-family: Arial;
-            font-size: 14px;
-            font-weight: 700;
-            padding: 0;
-            width: 20%;
-          }
-        }
-      }
       .primary02 {
         background: #ededed none repeat scroll 0 0;
         float: left;
@@ -420,14 +443,8 @@
         width: 100%;
       }
     }
-    #more{
-      clear: both;
-    }
-    .student-titleleft {
-      float: left;
-    }
-    .student-titleright {
-      float: right;
+    .primary-top{
+      width: 98%;
     }
   }
   .student-sifus {
@@ -439,6 +456,12 @@
     }
     .views-row{
       clear: both;
+    }
+    .student-titleleft {
+      float: left;
+    }
+    .student-titleright {
+      float: right;
     }
     .student-left {
       float: left;
