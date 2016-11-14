@@ -265,7 +265,6 @@
       .left{
         color: #000;
         float: left;
-        margin-right: 20px;
         min-width: 180px;
         .field--name-field-sifu{
           float: right;
@@ -358,7 +357,7 @@
       height: 112px;
       left: 65px;
       position: absolute;
-      top: 25px;
+      top: 0;
       width: 85px;
     }
     span:hover{
