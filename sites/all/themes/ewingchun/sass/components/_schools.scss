@@ -249,6 +249,14 @@ html.js .form-autocomplete{
       height: auto;
       margin: 20px 0 0;
       width: 100%;
+      ul{
+        padding: 0;
+        li{
+          list-style: none;
+          float: left;
+          margin-right: 20px;
+        }
+      }
     }
   }
   .schoolname-r {
@@ -274,11 +282,23 @@ html.js .form-autocomplete{
   }
   .school-moreinfo{
     clear: both;
+    margin-bottom: 30px;
     h5{
       color: #1c57a7;
       font-family: Trajan Pro Bold;
       font-size: 17px;
       text-transform: uppercase;
+    }
+  }
+  .comment-form{
+    clear: both;
+    padding-top: 20px;
+    border-top: 5px solid #f8f8f8;
+    .form-type-item{
+      label{
+        float: left;
+        margin-right: 10px;
+      }
     }
   }
 }

@@ -3,6 +3,11 @@
     label{
       float: none !important;
     }
+    .views-row{
+      .views-field-view-node{
+        display: none;
+      }
+    }
     .views-exposed-widget{
       clear: both;
     }
@@ -316,6 +321,9 @@
         color: #000;
         float: left;
         min-width: 180px;
+        span{
+          color: #666;
+        }
       }
       .middleleft {
         float: left;
@@ -332,8 +340,28 @@
           float: left;
           height: auto;
           padding: 0;
+          width: 211px;
           .img-caption {
             text-align: center;
+          }
+        }
+        .middleleftimg1{
+          a{
+            display: block;
+            position: relative;
+          }
+          span {
+            background: transparent url("../images/emvideo-play.png") no-repeat scroll 0 0;
+            display: block;
+            height: 112px;
+            left: 65px;
+            position: absolute;
+            top: 25px;
+            width: 85px;
+          }
+          span:hover{
+            background-position: -86px 0;
+            opacity: 1;
           }
         }
       }
