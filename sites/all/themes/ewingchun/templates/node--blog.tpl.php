@@ -6,21 +6,21 @@
 			<?php if($article_image || $article_images || $node->field_emvideo[0]['view']) : ?>
 			<div class="middleleft">
 				<?php if ($article_image) : ?>
-				<div class="middleleftimg"> <?php print $article_image; ?> </div>
+				<div class="middleleftimg"> <?php //print $article_image; ?> </div>
 				<?php endif; ?>
 				<div class="clear-left"></div>
 				<!-- clear the floating elements -->
 				<?php if ($article_images) : ?>
 				<div class="blogfpo">
 					<ul>
-						<?php print $article_images; ?>
+						<?php // print $article_images; ?>
 					</ul>
 				</div>
 				<?php endif; ?>
 				<?php if($node->field_embeded_video['und'][0]['video_url']) : ?>
 				<div class="clear-left"></div>
 				<!-- clear the floating elements -->
-				<div class="middleleftimg1"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo" class="lightvideo emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
+				<div class="middleleftimg1"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:640px; height:480px;]" class="lightvideo emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
 					<?php 
 						$videoid = $node->field_embeded_video['und'][0]['video_url'];
 						$content = file_get_contents($videoid);
