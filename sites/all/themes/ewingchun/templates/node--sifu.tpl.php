@@ -66,7 +66,7 @@
 <h3>bio (teaser)</h3>
 <div class="content" style="padding:15px 0 0 0;"> <?php print strip_tags($node->body['und'][0]['summary'],"<p>,<br>"); ?>
   <?php if (isset($node->body['und'][0]['value'])): ?>
-    <a href="/<?php print $node->path?>#more" class="more-link">Read more</a>
+    <a href="/<?php print drupal_get_path_alias('node/' .  $node->nid); ?>#more" class="more-link">Read more</a>
   <?php endif; ?>
   <?php else: ?>
   <h3>bio (teaser)</h3>
