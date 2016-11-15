@@ -7,6 +7,9 @@
     }
   }
 }
+.sharethis-buttons{
+  display: none;
+}
 body {
   color: #666;
   font-family: Arial,Helvetica,sans-serif;
@@ -219,7 +222,7 @@ header {
     float: right;
     width: 35%;
     border-radius: 3px 0 0 0;
-    margin-top: 55px;
+    margin-top: 100px;
     #search-block-form {
       .container-inline {
         border-radius: 0;

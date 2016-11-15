@@ -116,8 +116,8 @@
     .has-sidebar-second {
       .l-content, .l-region--sidebar-second {
         margin: 0;
-        width: 100%;
-        float: none;
+        width: 100% !important;
+        float: none !important;
       }
     }
   }
