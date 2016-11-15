@@ -152,3 +152,33 @@
     $comment_form = drupal_get_form('comment_node_sifu_form', (object) array('nid' => $node->nid));
     print drupal_render($comment_form);
 ?>
+  <div class="wingchunblogs-box01">
+    <div class="wingchunblogs-boxcbg">
+      [edit_node]
+      <div class="wingchunblogs-bleft">
+        <div class="blogfpo-img"><div class="picture">
+            [picture]</div>
+        </div>
+        <div class="blogusername">
+
+          <p style="padding-top:5px;">[created]</p>
+        </div>
+      </div>
+      <div class="wingchunblogs-bright">
+        <div class="blogfpo-imgright"> [field_image]</div>
+      </div>
+      <div class="wingchunblogs-bcenter">
+        <p class="bolotitle-h">[title]</p>
+        <div class="blogtxt">
+          [body] [view_node]
+        </div>
+      </div>
+      <div class="wingchunblogs-boxcfooter">
+        <div class="userblo">[name]</div>
+        <div class="blog-catagory">[name_2]</div>
+        <div class="blog-coment">
+          [comments_link]
+          <p>[comment_count]</p>
+        </div>
+      </div>
+    </div>
