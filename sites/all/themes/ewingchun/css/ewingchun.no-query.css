@@ -832,24 +832,37 @@ body {
     body .l-page .l-main {
       overflow: hidden;
       padding: 0 2%; }
-  /* line 29, ../sass/components/_main.scss */
-  body .has-sidebar-second .l-content {
-    float: left;
-    margin-right: 2%;
-    width: 71%; }
-  /* line 35, ../sass/components/_main.scss */
-  body .has-sidebar-second .l-region--sidebar-second {
-    width: 23%;
-    padding-left: 2%;
-    float: left;
-    border-left: 1px solid #ededed; }
 
-/* line 42, ../sass/components/_main.scss */
+/* line 30, ../sass/components/_main.scss */
+.front .has-sidebar-second .l-content {
+  float: left;
+  margin-right: 2%;
+  width: 58%; }
+
+/* line 36, ../sass/components/_main.scss */
+.front .has-sidebar-second .l-region--sidebar-second {
+  width: 40%;
+  float: left; }
+
+/* line 41, ../sass/components/_main.scss */
+.not-front .has-sidebar-second .l-content {
+  float: left;
+  margin-right: 2%;
+  width: 71%; }
+
+/* line 47, ../sass/components/_main.scss */
+.not-front .has-sidebar-second .l-region--sidebar-second {
+  width: 23%;
+  padding-left: 2%;
+  float: left;
+  border-left: 1px solid #ededed; }
+
+/* line 53, ../sass/components/_main.scss */
 .breadcrumb {
   margin: 0;
   background: #F8F8F8;
   overflow: hidden; }
-  /* line 46, ../sass/components/_main.scss */
+  /* line 57, ../sass/components/_main.scss */
   .breadcrumb li {
     float: left;
     list-style: none;
@@ -858,7 +871,7 @@ body {
     line-height: 25px;
     text-align: left;
     text-decoration: none; }
-    /* line 54, ../sass/components/_main.scss */
+    /* line 65, ../sass/components/_main.scss */
     .breadcrumb li a {
       color: #1c57a7;
       font-size: 11px;
@@ -866,33 +879,33 @@ body {
       text-align: left;
       text-decoration: none;
       padding: 0 5px; }
-  /* line 63, ../sass/components/_main.scss */
+  /* line 74, ../sass/components/_main.scss */
   .breadcrumb li:after {
     content: ">>";
     color: #1c57a7;
     font-size: 11px; }
-  /* line 68, ../sass/components/_main.scss */
+  /* line 79, ../sass/components/_main.scss */
   .breadcrumb li:last-child:after {
     content: none; }
 
-/* line 73, ../sass/components/_main.scss */
+/* line 84, ../sass/components/_main.scss */
 .admin-sw .l-page {
   padding-top: 25px; }
 
-/* line 77, ../sass/components/_main.scss */
+/* line 88, ../sass/components/_main.scss */
 #wrapper {
   padding: 20px 2%;
   overflow: hidden; }
 
-/* line 82, ../sass/components/_main.scss */
+/* line 93, ../sass/components/_main.scss */
 .top_header #block-block-13 {
   width: 60%;
   margin: 0 auto; }
-  /* line 85, ../sass/components/_main.scss */
+  /* line 96, ../sass/components/_main.scss */
   .top_header #block-block-13 ul {
     padding: 0;
     margin: 0; }
-    /* line 88, ../sass/components/_main.scss */
+    /* line 99, ../sass/components/_main.scss */
     .top_header #block-block-13 ul li {
       float: left;
       margin: 0 -1px 0 0;
@@ -901,7 +914,7 @@ body {
       text-align: center;
       border: solid 1px #e6e6e6;
       border-radius: 0 0 5px 5px; }
-      /* line 96, ../sass/components/_main.scss */
+      /* line 107, ../sass/components/_main.scss */
       .top_header #block-block-13 ul li a {
         background: #f8f8f8;
         font-size: 12px;
@@ -909,59 +922,59 @@ body {
         display: block;
         text-decoration: none;
         padding: 10px 2%; }
-      /* line 104, ../sass/components/_main.scss */
+      /* line 115, ../sass/components/_main.scss */
       .top_header #block-block-13 ul li a:hover {
         font-weight: 700;
         background: #d2d2d2; }
-/* line 111, ../sass/components/_main.scss */
+/* line 122, ../sass/components/_main.scss */
 .top_header #block-block-12 {
   float: right;
   margin: 10px 20px 0 0; }
-  /* line 114, ../sass/components/_main.scss */
+  /* line 125, ../sass/components/_main.scss */
   .top_header #block-block-12 ul {
     padding: 0;
     margin: 0; }
-    /* line 117, ../sass/components/_main.scss */
+    /* line 128, ../sass/components/_main.scss */
     .top_header #block-block-12 ul li {
       float: left;
       list-style: none;
       margin-right: 5px; }
-      /* line 121, ../sass/components/_main.scss */
+      /* line 132, ../sass/components/_main.scss */
       .top_header #block-block-12 ul li a {
         display: block;
         background-repeat: no-repeat;
         width: 35px;
         height: 33px;
         font-size: 0; }
-      /* line 128, ../sass/components/_main.scss */
+      /* line 139, ../sass/components/_main.scss */
       .top_header #block-block-12 ul li .facebook {
         background: url("../images/fb-icon.jpg"); }
-      /* line 131, ../sass/components/_main.scss */
+      /* line 142, ../sass/components/_main.scss */
       .top_header #block-block-12 ul li .twitter {
         background: url("../images/tw-icon.jpg"); }
-      /* line 134, ../sass/components/_main.scss */
+      /* line 145, ../sass/components/_main.scss */
       .top_header #block-block-12 ul li .email {
         background: url("../images/email-icon.jpg"); }
-  /* line 139, ../sass/components/_main.scss */
+  /* line 150, ../sass/components/_main.scss */
   .top_header #block-block-12 #links {
     clear: both; }
-    /* line 141, ../sass/components/_main.scss */
+    /* line 152, ../sass/components/_main.scss */
     .top_header #block-block-12 #links a {
       padding: 0 5px;
       color: #052756;
       font-size: 12px;
       text-decoration: none; }
-    /* line 147, ../sass/components/_main.scss */
+    /* line 158, ../sass/components/_main.scss */
     .top_header #block-block-12 #links a:hover {
       text-decoration: underline; }
-/* line 152, ../sass/components/_main.scss */
+/* line 163, ../sass/components/_main.scss */
 .top_header #block-block-15 {
   width: 100%; }
-  /* line 154, ../sass/components/_main.scss */
+  /* line 165, ../sass/components/_main.scss */
   .top_header #block-block-15 p {
     margin: 0;
     line-height: 30px; }
-  /* line 158, ../sass/components/_main.scss */
+  /* line 169, ../sass/components/_main.scss */
   .top_header #block-block-15 #leaderboard {
     background: #dedede none repeat scroll 0 0;
     color: #666;
@@ -973,7 +986,7 @@ body {
     text-transform: uppercase;
     width: 100%; }
 
-/* line 172, ../sass/components/_main.scss */
+/* line 183, ../sass/components/_main.scss */
 header .l-branding {
   float: left;
   overflow: hidden;
@@ -981,31 +994,31 @@ header .l-branding {
   margin-left: 3%;
   width: 22%;
   max-width: 205px; }
-  /* line 179, ../sass/components/_main.scss */
+  /* line 190, ../sass/components/_main.scss */
   header .l-branding .site-logo {
     margin-left: 2%; }
-  /* line 182, ../sass/components/_main.scss */
+  /* line 193, ../sass/components/_main.scss */
   header .l-branding .l-region--branding {
     width: 100%;
     position: relative;
     margin: 0; }
-/* line 188, ../sass/components/_main.scss */
+/* line 199, ../sass/components/_main.scss */
 header .l-region--header {
   float: right;
   width: 75%; }
-/* line 192, ../sass/components/_main.scss */
+/* line 203, ../sass/components/_main.scss */
 header #links {
   display: none; }
-/* line 195, ../sass/components/_main.scss */
+/* line 206, ../sass/components/_main.scss */
 header #block-block-8 {
   float: left;
   margin-left: 3%;
   width: 55%; }
-/* line 200, ../sass/components/_main.scss */
+/* line 211, ../sass/components/_main.scss */
 header #block-block-11 {
   display: none;
   margin-left: 3%; }
-/* line 204, ../sass/components/_main.scss */
+/* line 215, ../sass/components/_main.scss */
 header #block-search-form {
   height: 28px;
   padding: 5px 10px 0 10px;
@@ -1014,13 +1027,13 @@ header #block-search-form {
   width: 35%;
   border-radius: 3px 0 0 0;
   margin-top: 55px; }
-  /* line 213, ../sass/components/_main.scss */
+  /* line 224, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .container-inline {
     border-radius: 0;
     background: none;
     box-shadow: none;
     padding: 0; }
-  /* line 219, ../sass/components/_main.scss */
+  /* line 230, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .form-text {
     background: #fff;
     border: medium none;
@@ -1030,7 +1043,7 @@ header #block-search-form {
     width: 150px;
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset; }
-  /* line 229, ../sass/components/_main.scss */
+  /* line 240, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .form-submit {
     background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
     border: medium none;
@@ -1040,31 +1053,31 @@ header #block-search-form {
     height: 23px;
     width: 18px;
     font-size: 0; }
-  /* line 239, ../sass/components/_main.scss */
+  /* line 250, ../sass/components/_main.scss */
   header #block-search-form #search-block-form .form-item-search-block-form:before {
     content: "Search:";
     color: #666;
     font-size: 12px;
     font-weight: 700; }
 
-/* line 248, ../sass/components/_main.scss */
+/* line 259, ../sass/components/_main.scss */
 #block-system-main-menu {
   background: #17335b;
   clear: both;
   overflow: hidden; }
-  /* line 252, ../sass/components/_main.scss */
+  /* line 263, ../sass/components/_main.scss */
   #block-system-main-menu ul {
     padding: 0;
     margin: 0;
     margin: 0;
     width: 100%; }
-    /* line 257, ../sass/components/_main.scss */
+    /* line 268, ../sass/components/_main.scss */
     #block-system-main-menu ul li {
       list-style: none;
       float: left;
       width: 10%;
       height: 44px; }
-      /* line 262, ../sass/components/_main.scss */
+      /* line 273, ../sass/components/_main.scss */
       #block-system-main-menu ul li a {
         color: #fff;
         display: block;
@@ -1074,21 +1087,21 @@ header #block-search-form {
         width: 100%;
         border-right: solid 1px #0E2143;
         text-align: center; }
-      /* line 272, ../sass/components/_main.scss */
+      /* line 283, ../sass/components/_main.scss */
       #block-system-main-menu ul li a.active {
         background: #1c57a7; }
-      /* line 275, ../sass/components/_main.scss */
+      /* line 286, ../sass/components/_main.scss */
       #block-system-main-menu ul li a:hover {
         background: #1c57a7; }
-    /* line 280, ../sass/components/_main.scss */
+    /* line 291, ../sass/components/_main.scss */
     #block-system-main-menu ul li:last-child a {
       border: none; }
 
-/* line 287, ../sass/components/_main.scss */
+/* line 298, ../sass/components/_main.scss */
 .above_content {
   overflow: hidden; }
 
-/* line 291, ../sass/components/_main.scss */
+/* line 302, ../sass/components/_main.scss */
 #block-block-10 .tocontribute {
   border-right: 1px solid #c4c4c4;
   color: #17335b;
@@ -1097,7 +1110,7 @@ header #block-search-form {
   line-height: 20px;
   padding: 12px 0;
   width: 40%; }
-/* line 300, ../sass/components/_main.scss */
+/* line 311, ../sass/components/_main.scss */
 #block-block-10 .register-link {
   background: #1C57A7;
   border: medium none;
@@ -1113,27 +1126,27 @@ header #block-search-form {
   margin: 15px 0 0 25px;
   text-align: center;
   width: 87px; }
-/* line 316, ../sass/components/_main.scss */
+/* line 327, ../sass/components/_main.scss */
 #block-block-10 .register-link:hover {
   background: #1266D6; }
-/* line 319, ../sass/components/_main.scss */
+/* line 330, ../sass/components/_main.scss */
 #block-block-10 h1 {
   color: #1c57a7;
   font-family: "Trajan Pro Bold";
   font-size: 23px;
   font-weight: normal;
   text-transform: uppercase; }
-  /* line 325, ../sass/components/_main.scss */
+  /* line 336, ../sass/components/_main.scss */
   #block-block-10 h1 span {
     color: #116201; }
-/* line 329, ../sass/components/_main.scss */
+/* line 340, ../sass/components/_main.scss */
 #block-block-10 .banner-top {
   margin-bottom: 20px; }
-/* line 333, ../sass/components/_main.scss */
+/* line 344, ../sass/components/_main.scss */
 #block-block-10 .banner-top > div {
   box-sizing: border-box;
   width: 48%; }
-/* line 337, ../sass/components/_main.scss */
+/* line 348, ../sass/components/_main.scss */
 #block-block-10 .banner-top-left {
   color: #8d8d8d;
   float: left;
@@ -1143,18 +1156,18 @@ header #block-search-form {
   line-height: 25px;
   padding: 15px 0 0;
   text-align: left; }
-/* line 347, ../sass/components/_main.scss */
+/* line 358, ../sass/components/_main.scss */
 #block-block-10 .banner-top-right {
   background: transparent url("../images/bg01.jpg") repeat-x scroll left center;
   color: #052756;
   float: right;
   margin: 10px 0 0;
   padding: 15px 20px; }
-  /* line 353, ../sass/components/_main.scss */
+  /* line 364, ../sass/components/_main.scss */
   #block-block-10 .banner-top-right .usrname {
     float: left;
     margin-top: 20px; }
-/* line 358, ../sass/components/_main.scss */
+/* line 369, ../sass/components/_main.scss */
 #block-block-10 .loginbtn {
   background: #aeaeae none repeat scroll 0 0;
   border-radius: 3px;
@@ -1164,10 +1177,10 @@ header #block-search-form {
   margin: 15px 8px;
   padding: 0 25px;
   text-decoration: none; }
-/* line 368, ../sass/components/_main.scss */
+/* line 379, ../sass/components/_main.scss */
 #block-block-10 .loginbtn:hover {
   background: #404040; }
-/* line 372, ../sass/components/_main.scss */
+/* line 383, ../sass/components/_main.scss */
 #block-block-10 .browse-table h2 {
   color: #116201;
   font-family: "Trajan Pro Bold";
@@ -1175,12 +1188,12 @@ header #block-search-form {
   font-weight: normal;
   margin: 0;
   text-transform: uppercase; }
-/* line 380, ../sass/components/_main.scss */
+/* line 391, ../sass/components/_main.scss */
 #block-block-10 .browse-table p {
   color: #1c57a7;
   font-size: 16px;
   font-weight: 700; }
-/* line 385, ../sass/components/_main.scss */
+/* line 396, ../sass/components/_main.scss */
 #block-block-10 .browse-table .browsetable-box {
   background-color: #f2f2f2;
   border: 1px solid #ddd;
@@ -1189,7 +1202,7 @@ header #block-search-form {
   width: 25%;
   padding: 10px;
   text-align: center; }
-  /* line 393, ../sass/components/_main.scss */
+  /* line 404, ../sass/components/_main.scss */
   #block-block-10 .browse-table .browsetable-box p.browse-heading {
     color: #434242;
     font-family: "Trajan Pro Bold";
@@ -1200,12 +1213,12 @@ header #block-search-form {
     padding-bottom: 7px;
     text-align: center;
     text-transform: uppercase; }
-  /* line 404, ../sass/components/_main.scss */
+  /* line 415, ../sass/components/_main.scss */
   #block-block-10 .browse-table .browsetable-box div {
     display: inline;
     margin: 16px;
     text-align: center; }
-    /* line 408, ../sass/components/_main.scss */
+    /* line 419, ../sass/components/_main.scss */
     #block-block-10 .browse-table .browsetable-box div a {
       text-decoration: underline;
       color: #1c57a7;
@@ -1213,12 +1226,12 @@ header #block-search-form {
       font-size: 12px;
       font-weight: 400; }
 
-/* line 419, ../sass/components/_main.scss */
+/* line 430, ../sass/components/_main.scss */
 #block-views-sifu-block-2, #block-views-local-resources-block-1 {
   clear: both;
   padding-bottom: 30px;
   position: relative; }
-  /* line 423, ../sass/components/_main.scss */
+  /* line 434, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .block__title, #block-views-local-resources-block-1 .block__title {
     background: transparent url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
     background-size: 100% 100%;
@@ -1230,26 +1243,26 @@ header #block-search-form {
     letter-spacing: -1px;
     padding: 5px 0 0 14px;
     text-transform: uppercase; }
-  /* line 435, ../sass/components/_main.scss */
+  /* line 446, ../sass/components/_main.scss */
   #block-views-sifu-block-2 table, #block-views-local-resources-block-1 table {
     width: 100%;
     margin: 0 auto; }
-  /* line 439, ../sass/components/_main.scss */
+  /* line 450, ../sass/components/_main.scss */
   #block-views-sifu-block-2 thead, #block-views-local-resources-block-1 thead {
     background: #f8f8f8 none repeat scroll 0 0;
     line-height: 40px; }
-    /* line 442, ../sass/components/_main.scss */
+    /* line 453, ../sass/components/_main.scss */
     #block-views-sifu-block-2 thead th, #block-views-local-resources-block-1 thead th {
       padding: 0 10px;
       color: #17335b;
       font-family: Arial;
       font-size: 14px;
       font-weight: 700; }
-  /* line 451, ../sass/components/_main.scss */
+  /* line 462, ../sass/components/_main.scss */
   #block-views-sifu-block-2 tr td, #block-views-local-resources-block-1 tr td {
     padding-left: 10px;
     font-size: 12px; }
-    /* line 454, ../sass/components/_main.scss */
+    /* line 465, ../sass/components/_main.scss */
     #block-views-sifu-block-2 tr td a, #block-views-local-resources-block-1 tr td a {
       color: #1c57a7;
       font-family: Arial;
@@ -1257,16 +1270,16 @@ header #block-search-form {
       font-weight: 400;
       line-height: 17px !important;
       text-decoration: underline; }
-  /* line 464, ../sass/components/_main.scss */
+  /* line 475, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .odd, #block-views-local-resources-block-1 .odd {
     background: #ededed none repeat scroll 0 0;
     height: 44px; }
-  /* line 468, ../sass/components/_main.scss */
+  /* line 479, ../sass/components/_main.scss */
   #block-views-sifu-block-2 .even, #block-views-local-resources-block-1 .even {
     background: #f8f8f8 none repeat scroll 0 0;
     height: 44px; }
 
-/* line 475, ../sass/components/_main.scss */
+/* line 486, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest h2 {
   color: #1c57a7;
   font-family: Trajan Pro Bold;
@@ -1275,14 +1288,14 @@ header #block-search-form {
   letter-spacing: -1px;
   margin-bottom: 8px;
   text-transform: uppercase; }
-  /* line 483, ../sass/components/_main.scss */
+  /* line 494, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest h2 span {
     color: #116201 !important;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     font-weight: normal;
     letter-spacing: -1px; }
-/* line 491, ../sass/components/_main.scss */
+/* line 502, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li {
   border: medium none !important;
   color: #666;
@@ -1296,7 +1309,7 @@ header #block-search-form {
   text-align: center;
   white-space: normal;
   width: 24%; }
-  /* line 504, ../sass/components/_main.scss */
+  /* line 515, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a {
     background: transparent url("../images/tab-bg.png") repeat-x left top;
     color: #666;
@@ -1313,95 +1326,95 @@ header #block-search-form {
     width: 100%;
     padding: 0;
     text-decoration: none; }
-  /* line 521, ../sass/components/_main.scss */
+  /* line 532, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest li a:hover {
     background: #f8f8f8; }
-/* line 525, ../sass/components/_main.scss */
+/* line 536, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li:last-child {
   margin: 0 !important;
   width: 25%; }
-/* line 529, ../sass/components/_main.scss */
+/* line 540, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest li.active a {
   background: #F8F8F8;
   color: #116201 !important; }
-/* line 533, ../sass/components/_main.scss */
+/* line 544, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest #quicktabs-container-the_latest {
   background: #F8F8F8;
   padding: 20px 0 2% 15px; }
-/* line 537, ../sass/components/_main.scss */
+/* line 548, ../sass/components/_main.scss */
 .l-region--sidebar-second #block-quicktabs-the-latest .view-content {
   color: #666;
   font-family: Arial;
   font-size: 12px;
   line-height: 19px; }
-  /* line 542, ../sass/components/_main.scss */
+  /* line 553, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu {
     float: left; }
-    /* line 544, ../sass/components/_main.scss */
+    /* line 555, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .views-label {
       float: left;
       margin-right: 5px; }
-    /* line 548, ../sass/components/_main.scss */
+    /* line 559, ../sass/components/_main.scss */
     .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-field-sifu .field-content {
       float: left; }
-  /* line 552, ../sass/components/_main.scss */
+  /* line 563, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-created {
     float: left;
     margin-left: 5px; }
-  /* line 556, ../sass/components/_main.scss */
+  /* line 567, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-title {
     float: left;
     width: 100%; }
-  /* line 560, ../sass/components/_main.scss */
+  /* line 571, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-field-name {
     float: left; }
-  /* line 563, ../sass/components/_main.scss */
+  /* line 574, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content a {
     color: #1c57a7;
     font-family: Arial;
     font-size: 12px;
     text-decoration: underline; }
-  /* line 569, ../sass/components/_main.scss */
+  /* line 580, ../sass/components/_main.scss */
   .l-region--sidebar-second #block-quicktabs-the-latest .view-content .views-row {
     padding-bottom: 12px;
     overflow: hidden; }
 
-/* line 576, ../sass/components/_main.scss */
+/* line 587, ../sass/components/_main.scss */
 .under_content {
   clear: both;
   padding: 20px 2%;
   margin-bottom: 30px; }
-  /* line 580, ../sass/components/_main.scss */
+  /* line 591, ../sass/components/_main.scss */
   .under_content #block-views-videos-block-2 {
     background: url("../images/videobg.jpg") repeat-y center center;
     background-size: cover;
     padding: 20px 2%;
     overflow: hidden; }
-    /* line 585, ../sass/components/_main.scss */
+    /* line 596, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .views-row {
       float: left;
       width: 23%;
       margin-right: 2%;
       text-align: center; }
-      /* line 590, ../sass/components/_main.scss */
+      /* line 601, ../sass/components/_main.scss */
       .under_content #block-views-videos-block-2 .views-row .views-field-title {
         text-align: center; }
-        /* line 592, ../sass/components/_main.scss */
+        /* line 603, ../sass/components/_main.scss */
         .under_content #block-views-videos-block-2 .views-row .views-field-title a {
           color: #1c57a7;
           font-family: Arial;
           font-size: 12px;
           font-weight: 400; }
-    /* line 600, ../sass/components/_main.scss */
+    /* line 611, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .views-row:last-child {
       margin-right: 0; }
-    /* line 603, ../sass/components/_main.scss */
+    /* line 614, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .views-row:first-child {
       margin-left: 1%; }
-    /* line 606, ../sass/components/_main.scss */
+    /* line 617, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 .more-link {
       display: none; }
-    /* line 609, ../sass/components/_main.scss */
+    /* line 620, ../sass/components/_main.scss */
     .under_content #block-views-videos-block-2 h2 {
       text-align: center;
       border-bottom: 1px solid #dcdcdc;
@@ -1414,7 +1427,7 @@ header #block-search-form {
       width: 80%;
       margin: 0 auto 20px; }
 
-/* line 623, ../sass/components/_main.scss */
+/* line 634, ../sass/components/_main.scss */
 footer {
   clear: both;
   width: 100%;
@@ -1424,25 +1437,25 @@ footer {
   font-size: 13px;
   height: 155px;
   padding: 20px 0 0; }
-  /* line 632, ../sass/components/_main.scss */
+  /* line 643, ../sass/components/_main.scss */
   footer .l-region--footer {
     width: 90%;
     margin: 0 auto; }
-  /* line 636, ../sass/components/_main.scss */
+  /* line 647, ../sass/components/_main.scss */
   footer #block-menu-menu-footer-links {
     overflow: hidden;
     width: 630px;
     margin: 0 auto; }
-  /* line 641, ../sass/components/_main.scss */
+  /* line 652, ../sass/components/_main.scss */
   footer ul {
     margin: 0;
     padding: 0; }
-    /* line 644, ../sass/components/_main.scss */
+    /* line 655, ../sass/components/_main.scss */
     footer ul li {
       list-style: none !important;
       list-style-image: none;
       float: left; }
-      /* line 648, ../sass/components/_main.scss */
+      /* line 659, ../sass/components/_main.scss */
       footer ul li a {
         border-left: 1px solid #fff;
         color: #fff;
@@ -1451,32 +1464,32 @@ footer {
         letter-spacing: -1px;
         padding: 0 6px;
         text-decoration: none; }
-      /* line 657, ../sass/components/_main.scss */
+      /* line 668, ../sass/components/_main.scss */
       footer ul li .active {
         color: #fff; }
-    /* line 662, ../sass/components/_main.scss */
+    /* line 673, ../sass/components/_main.scss */
     footer ul li.first a {
       border: none; }
-  /* line 667, ../sass/components/_main.scss */
+  /* line 678, ../sass/components/_main.scss */
   footer #block-block-14 {
     text-align: center;
     clear: both;
     margin-top: 50px; }
-  /* line 672, ../sass/components/_main.scss */
+  /* line 683, ../sass/components/_main.scss */
   footer #block-block-16 {
     clear: both;
     margin: 20px auto 0;
     width: 430px;
     overflow: hidden; }
-    /* line 677, ../sass/components/_main.scss */
+    /* line 688, ../sass/components/_main.scss */
     footer #block-block-16 ul {
       padding: 0;
       margin: 0; }
-      /* line 681, ../sass/components/_main.scss */
+      /* line 692, ../sass/components/_main.scss */
       footer #block-block-16 ul li:first-child a {
         border: none; }
 
-/* line 690, ../sass/components/_main.scss */
+/* line 701, ../sass/components/_main.scss */
 .view-filters .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
@@ -1492,10 +1505,10 @@ footer {
   text-indent: 0.01px;
   text-overflow: "";
   width: 293px !important; }
-/* line 706, ../sass/components/_main.scss */
+/* line 717, ../sass/components/_main.scss */
 .view-filters .description {
   display: none; }
-/* line 710, ../sass/components/_main.scss */
+/* line 721, ../sass/components/_main.scss */
 .view-filters .views-exposed-widget .form-text {
   box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
   border: solid 1px #BFBFBF;
@@ -1505,23 +1518,23 @@ footer {
   border-radius: 2px;
   padding: 5px;
   width: 280px; }
-/* line 722, ../sass/components/_main.scss */
+/* line 733, ../sass/components/_main.scss */
 .view-filters #edit-taxonomy-vocabulary-9-tid-wrapper {
   width: 100%; }
-/* line 725, ../sass/components/_main.scss */
+/* line 736, ../sass/components/_main.scss */
 .view-filters #edit-keys-wrapper {
   float: left; }
-  /* line 727, ../sass/components/_main.scss */
+  /* line 738, ../sass/components/_main.scss */
   .view-filters #edit-keys-wrapper .views-widget {
     float: left; }
-/* line 731, ../sass/components/_main.scss */
+/* line 742, ../sass/components/_main.scss */
 .view-filters .views-submit-button {
   float: left;
   margin-top: 2px; }
-/* line 736, ../sass/components/_main.scss */
+/* line 747, ../sass/components/_main.scss */
 .view-filters .views-exposed-widget .form-text {
   max-width: 280px; }
-/* line 740, ../sass/components/_main.scss */
+/* line 751, ../sass/components/_main.scss */
 .view-filters label {
   display: block;
   font-size: 14px;
@@ -1529,7 +1542,7 @@ footer {
   float: left;
   min-width: 120px;
   margin: 0 10px 10px 0; }
-/* line 748, ../sass/components/_main.scss */
+/* line 759, ../sass/components/_main.scss */
 .view-filters .form-submit {
   border: medium none;
   color: #fff !important;
@@ -1543,7 +1556,7 @@ footer {
   margin-right: 5px;
   margin-top: 0;
   text-decoration: none !important; }
-/* line 762, ../sass/components/_main.scss */
+/* line 773, ../sass/components/_main.scss */
 .view-filters .form-submit:hover {
   background: #1266D6; }
 

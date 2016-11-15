@@ -26,18 +26,29 @@ body {
       padding: 0 2%;
     }
   }
-  .has-sidebar-second .l-content {
-    float: left;
-    margin-right: 2%;
-    width: 71%;
-  }
+}
+.front .has-sidebar-second .l-content {
+  float: left;
+  margin-right: 2%;
+  width: 58%;
+}
 
-  .has-sidebar-second .l-region--sidebar-second {
-    width: 23%;
-    padding-left: 2%;
-    float: left;
-    border-left: 1px solid #ededed;
-  }
+.front .has-sidebar-second .l-region--sidebar-second {
+  width: 40%;
+  float: left;
+}
+
+.not-front .has-sidebar-second .l-content {
+  float: left;
+  margin-right: 2%;
+  width: 71%;
+}
+
+.not-front .has-sidebar-second .l-region--sidebar-second {
+  width: 23%;
+  padding-left: 2%;
+  float: left;
+  border-left: 1px solid #ededed;
 }
 .breadcrumb{
   margin: 0;
