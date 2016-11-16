@@ -92,7 +92,6 @@
           .articalmain {
             .middleleft {
               float: none;
-              width: 90%;
             }
           }
         }
@@ -474,7 +473,6 @@
       .articalmain {
         .middleleft {
           float: none;
-          width: 50%;
         }
       }
     }
@@ -637,6 +635,7 @@ body{
     }
     .middleleftimg,.middleleftimg1{
       min-width: 200px;
+      clear: both;
     }
   }
 }
