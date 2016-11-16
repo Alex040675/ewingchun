@@ -868,7 +868,7 @@ body {
   /* line 55, ../sass/components/_main.scss */
   .not-front .has-sidebar-second .l-region--sidebar-second #block-views-exp-blogs-page-1 {
     margin-top: 20px;
-    max-height: 200px; }
+    max-width: 200px; }
     /* line 58, ../sass/components/_main.scss */
     .not-front .has-sidebar-second .l-region--sidebar-second #block-views-exp-blogs-page-1 .views-widget-filter-keys {
       padding: 5px;
