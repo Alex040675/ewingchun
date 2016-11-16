@@ -467,6 +467,7 @@
       }
     }
   }
+
   .node-type-blog {
     .l-page{
     .articletitle-leftp {
@@ -627,6 +628,13 @@ body{
   }
 
   .node-type-article{
+    .articletitle-leftp{
+      .articalmain{
+        .middle-center{
+          float: left;
+        }
+      }
+    }
     .middleleftimg,.middleleftimg1{
       min-width: 200px;
     }
