@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e708d0b3-fd69-4fbb-9610-d1ce45c3d618" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.no-query.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css.map" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css" afterPath="$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ewingchun.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,8 +36,18 @@
       <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8644647" vertical-offset="10138" max-vertical-offset="11016">
-              <caret line="641" column="1" selection-start-line="641" selection-start-column="1" selection-end-line="641" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.88382685" vertical-offset="10138" max-vertical-offset="11016">
+              <caret line="642" column="0" selection-start-line="642" selection-start-column="0" selection-end-line="642" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_blogs.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.269231" vertical-offset="5446" max-vertical-offset="7225">
+              <caret line="333" column="25" selection-start-line="333" selection-start-column="25" selection-end-line="333" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -64,8 +76,8 @@
       <file leaf-file-name="ewingchun.styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="52666" max-vertical-offset="52768">
-              <caret line="3098" column="0" selection-start-line="3098" selection-start-column="0" selection-end-line="3098" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="52700" max-vertical-offset="52802">
+              <caret line="3100" column="0" selection-start-line="3100" selection-start-column="0" selection-end-line="3100" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -123,11 +135,11 @@
         <option value="$PROJECT_DIR$/sites/default/settings.php" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_videos.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/ewingchun.styles.scss" />
-        <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_sifus.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_schools.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_articles.scss" />
+        <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss" />
         <option value="$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss" />
       </list>
     </option>
@@ -769,8 +781,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="52666" max-vertical-offset="52768">
-          <caret line="3098" column="0" selection-start-line="3098" selection-start-column="0" selection-end-line="3098" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="52700" max-vertical-offset="52802">
+          <caret line="3100" column="0" selection-start-line="3100" selection-start-column="0" selection-end-line="3100" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -839,14 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3457" max-vertical-offset="7191">
-          <caret line="219" column="31" selection-start-line="219" selection-start-column="31" selection-end-line="219" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.576923" vertical-offset="1428" max-vertical-offset="13328">
@@ -879,10 +883,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_blogs.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.269231" vertical-offset="5446" max-vertical-offset="7225">
+          <caret line="333" column="25" selection-start-line="333" selection-start-column="25" selection-end-line="333" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8644647" vertical-offset="10138" max-vertical-offset="11016">
-          <caret line="641" column="1" selection-start-line="641" selection-start-column="1" selection-end-line="641" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.88382685" vertical-offset="10138" max-vertical-offset="11016">
+          <caret line="642" column="0" selection-start-line="642" selection-start-column="0" selection-end-line="642" selection-end-column="0" />
           <folding />
         </state>
       </provider>
