@@ -454,6 +454,9 @@
         height: auto;
         margin: 0;
         width: 100%;
+        .middle-center{
+          float: left;
+        }
         .recentvideos, .relatedproducts,.recentarticles{
           background-size: auto;
           background-position: center 10px;
@@ -624,12 +627,8 @@ body{
   }
 
   .node-type-article{
-    .articletitle-leftp{
-      .articalmain{
-        .middle-center{
-          float: left;
-        }
-      }
+    .middleleftimg,.middleleftimg1{
+      min-width: 200px;
     }
   }
 }
