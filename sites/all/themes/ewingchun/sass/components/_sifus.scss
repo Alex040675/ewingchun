@@ -2,6 +2,7 @@
   .view-sifu{
     .view-header {
       overflow: hidden;
+      margin-bottom: -90px;
       .sifuheaderleft {
         float: left;
         width: 70%;
@@ -70,7 +71,6 @@
       }
     }
     .view-filters{
-      margin-top: -90px;
       .form-select {
         -moz-appearance: none;
         background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;

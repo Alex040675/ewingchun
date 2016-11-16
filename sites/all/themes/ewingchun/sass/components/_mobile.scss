@@ -312,6 +312,7 @@
   }
   .l-page {
     .view-header {
+      margin-bottom: 0!important;
       .sifuheaderleft {
         float: none !important;
         width: 90% !important;
@@ -344,6 +345,14 @@
             width: 100%;
             background: #F8F8F8;
             overflow: hidden;
+            .history-mid{
+              .history-right1{
+                margin-top: 20px;
+                float: left;
+                width: 100%;
+                text-align: left;
+              }
+            }
           }
           .history-right {
             float: none;
@@ -611,5 +620,15 @@ body{
 @media screen and (max-width:1180px) {
   body .l-page {
     width: 90%;
+  }
+
+  .node-type-article{
+    .articletitle-leftp{
+      .articalmain{
+        .middle-center{
+          float: left;
+        }
+      }
+    }
   }
 }
