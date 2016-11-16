@@ -52,6 +52,49 @@ body {
   padding-left: 2%;
   float: left;
   border-left: 1px solid #ededed;
+  #block-views-exp-blogs-page-1 {
+    margin-top: 20px;
+    .views-widget-filter-keys{
+      padding: 5px;
+      background: #d2d2d2;
+      width: 100%;
+      border-radius: 3px 0 0 0;
+      float: none;
+    }
+    .views-widget-filter-tid{
+      float: none;
+      width: 100%;
+      padding-right: 0;
+    }
+    .description{
+      display: none;
+    }
+      .form-text {
+        background: #fff;
+        border: medium none;
+        font-size: 11px;
+        height: 20px;
+        padding: 0 6px;
+        width: 95%;
+        border-radius: 2px;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset;
+      }
+    .form-select {
+      -moz-appearance: none;
+      background: transparent url("../images/select-left.png") no-repeat scroll left center;
+      background-size: 100% auto;
+      border: medium none;
+      font-size: 11px;
+      height: 21px !important;
+      line-height: 11px;
+      opacity: 1 !important;
+      padding-left: 2px;
+      padding-top: 2px;
+      position: relative;
+      text-indent: 0.01px;
+      width: 100% !important;
+    }
+  }
 }
 .breadcrumb{
   margin: 0;
