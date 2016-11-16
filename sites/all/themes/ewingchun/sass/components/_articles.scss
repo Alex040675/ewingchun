@@ -347,6 +347,7 @@
     }
   }
   .middleleftimg1{
+    clear: both;
     a{
       display: block;
       position: relative;
@@ -357,7 +358,7 @@
       height: 112px;
       left: 65px;
       position: absolute;
-      top: 0;
+      bottom: 25px;
       width: 85px;
     }
     span:hover{
