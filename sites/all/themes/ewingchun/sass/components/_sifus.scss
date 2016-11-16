@@ -167,9 +167,12 @@
     thead{
       position: relative;
     }
+    th.views-field-field-profile-img{
+      display: block;
+    }
     th.views-field-title{
       display: block;
-      margin-left: -90%;
+      margin-left: 10px;
       width: 120px;
     }
     tr{
@@ -205,6 +208,9 @@
       }
       a.active{
         text-decoration: underline;
+        img{
+          display: none;
+        }
       }
     }
     tr.even{
@@ -516,5 +522,33 @@
   }
   .add:hover{
     background: #404040;
+  }
+}
+.page-sifu-ranks{
+  .view-Rank{
+    margin: 20px auto;
+    width: 95%;
+    .view-header{
+      margin-bottom: 10px;
+    }
+    table{
+      th{
+        background-color: #fff;
+      }
+      td{
+        padding: 10px 5px;
+        font-size: 12px;
+      }
+      tr.even{
+        td {
+          background-color: #eee;
+        }
+      }
+      tr.odd{
+        td{
+          background-color: #f8f8f8;
+        }
+      }
+    }
   }
 }
