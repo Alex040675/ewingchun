@@ -111,22 +111,7 @@ if ($page == 1): //if node is being displayed as a node
 	</div>
 </div>
 <div class="artical-rightmain">
-	<div class="relatedproducts">
-		<p class="yca">related products</p>
-		<?php
-			if ($relatedproducts != NULL) {
-				print $relatedproducts;
-			} else {
-			?>
-				<div class="view view-products view-id-products view-display-id-block_2 view-dom-id-2">
-					<div class="view-empty"> <p>No Related Products</p></div>
-				</div>
-			<?php	
-			}
-		?>
-		<?php //print $relatedproducts; ?>
-		<!--<div class="videoaddbanner"></div>-->
-	</div>
+
 	<div class="recentarticles">
 		<p class="yca">Other articles by sifu</p>
 		<?php
