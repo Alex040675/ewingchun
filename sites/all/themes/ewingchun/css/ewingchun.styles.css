@@ -1622,9 +1622,9 @@ footer {
 #comment-form textarea {
   width: 90%;
   max-width: 315px; }
-  /* line 832, ../sass/components/_main.scss */
-  #comment-form textarea .grippie {
-    display: none; }
+/* line 833, ../sass/components/_main.scss */
+#comment-form .grippie {
+  display: none; }
 
 @media screen and (max-width: 480px) {
   /* line 3, ../sass/components/_mobile.scss */
