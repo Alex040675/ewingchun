@@ -821,3 +821,9 @@ footer{
     background: #1266D6;
   }
 }
+#comment-form{
+  .form-text,textarea{
+    width: 90%;
+    max-width: 300px;
+  }
+}

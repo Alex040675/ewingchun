@@ -4,11 +4,14 @@
       float: none !important;
     }
     .views-exposed-widget{
-      clear: both;
+
     }
 
     .view-filters {
       margin-top: 0;
+      .views-exposed-form {
+        width: 70%;
+      }
     }
     .view-header {
       overflow: hidden;

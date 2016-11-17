@@ -5,10 +5,10 @@ html.js .form-autocomplete{
   .view-local-resources{
     .views-widget-filter-country{
       float: left;
-      clear: both;
+      /*clear: both;*/
     }
     .views-widget-filter-province {
-      clear: both;
+      /*clear: both;*/
       float: left;
     }
     label{
@@ -84,7 +84,7 @@ html.js .form-autocomplete{
       }
     }
     .view-filters{
-      margin-top: -135px;
+      /*margin-top: -135px;*/
       .form-select {
         -moz-appearance: none;
         background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
@@ -170,10 +170,11 @@ html.js .form-autocomplete{
     }
     th{
       color: #17335b;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       padding:5px 10px 10px 10px;
       color: #666;
+      border-right: solid 1px #fff;
     }
     th.active{
       a{
@@ -212,7 +213,7 @@ html.js .form-autocomplete{
       a{
         background: #f8f8f8 none repeat scroll 0 0;
         color: #17335b;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 700;
         height: 31px;
         line-height: 31px;
@@ -225,6 +226,7 @@ html.js .form-autocomplete{
     tr.even{
       background: #F8F8F8;
       td{
+        border-right: solid 1px #fff;
       }
     }
     tr.odd{
@@ -274,6 +276,7 @@ html.js .form-autocomplete{
       color: #000;
       font-size: 14px;
       line-height: 31px;
+      margin: 0;
       span {
         color: #666;
         font-size: 14px;
