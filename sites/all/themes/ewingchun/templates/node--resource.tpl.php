@@ -69,9 +69,8 @@
 <?php if ($head_instructor) : ?>
 <p style="line-height:normal;">Head Instructor: <span><?php print $head_instructor ?></span></p>
 <?php endif; ?>
-  <?php print_r($node->field_link_resource_url)?>
-<?php if ($node->field_link_resource_url[0]['display_title']) : ?>
-<p>Website: <?php print l($node->field_link_resource_url[0]['display_title'], $node->field_link_resource_url[0]['url']); ?></p>
+<?php if ($node->field_link_resource_url['und'][0]['url']) : ?>
+<p>Website: <?php print l($node->field_link_resource_url['und'][0]['title'], $node->field_link_resource_url['und'][0]['url']); ?></p>
 <?php endif; ?>
 <?php if ($node->field_text_resource_email[0]['value']) : ?>
 <p>Contact email: <a href="#" class="review-link"><?php print l($node->field_text_resource_email[0]['value'], 'mailto:' . $node->field_text_resource_email[0]['value']); ?></a></p>
