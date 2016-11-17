@@ -228,7 +228,7 @@ function ewingchun_preprocess_node(&$variables) {
       // Output imagecache with lightbox
       $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
     }
-    $otherbysifu = views_embed_view('article', 'block_1', $arg);
+    $otherbysifu = views_embed_view('article', 'block_1', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['otherarticles'] = $otherbysifu;
 
     $relatedpro = views_embed_view('products', 'block_2', $arg);
