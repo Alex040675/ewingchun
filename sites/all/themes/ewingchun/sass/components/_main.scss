@@ -822,8 +822,15 @@ footer{
   }
 }
 #comment-form{
-  .form-text,textarea{
+  .form-text{
     width: 90%;
     max-width: 300px;
+  }
+  textarea{
+    width: 90%;
+    max-width: 315px;
+    .grippie{
+      display: none;
+    }
   }
 }

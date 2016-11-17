@@ -1615,9 +1615,16 @@ footer {
   background: #1266D6; }
 
 /* line 825, ../sass/components/_main.scss */
-#comment-form .form-text, #comment-form textarea {
+#comment-form .form-text {
   width: 90%;
   max-width: 300px; }
+/* line 829, ../sass/components/_main.scss */
+#comment-form textarea {
+  width: 90%;
+  max-width: 315px; }
+  /* line 832, ../sass/components/_main.scss */
+  #comment-form textarea .grippie {
+    display: none; }
 
 @media screen and (max-width: 480px) {
   /* line 3, ../sass/components/_mobile.scss */
