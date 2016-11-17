@@ -231,13 +231,13 @@ function ewingchun_preprocess_node(&$variables) {
     $otherbysifu = views_embed_view('article', 'block_1', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['otherarticles'] = $otherbysifu;
 
-    $relatedpro = views_embed_view('products', 'block_2', $arg);
+    $relatedpro = views_embed_view('products', 'block_2', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['relatedproducts'] = $relatedpro;
 
-    $recentarticles = views_embed_view('article', 'block_6', $arg);
+    $recentarticles = views_embed_view('article', 'block_6', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['recent_articles'] = $recentarticles;
 
-    $recentwiki = views_embed_view('wiki', 'block_4', $arg);
+    $recentwiki = views_embed_view('wiki', 'block_4', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['recent_wiki'] = $recentwiki;
 
     if ($variables['node']->field_emvideo['0']['embed'] != NULL) {
