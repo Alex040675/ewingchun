@@ -37,27 +37,18 @@
  * @see template_preprocess_comment_wrapper()
  * @see theme_comment_wrapper()
  */
-print_r($node);
-?>1111
-
-
+?>
 <section<?php print $attributes; ?>>
-<div id="comments">
-  <?php if ($content) : ?>
-    <?php if ($node->comment_count == 0) : ?>
-      <h2 class="title">No Comments yet...</h2>
-    <?php endif; ?>
-    <?php if($node->comment_count != 0) : ?>
-      <h2 class="title"><?php print $node->comment_count; ?> Comments</h2>
-    <?php endif; ?>
+  <?php if ($content['comments'] && $node->type != 'forum'): ?>
+    <?php print render($title_prefix); ?>
+    <h2<?php print $title_attributes ?>><?php print t('Comments'); ?></h2>
+    <?php print render($title_suffix); ?>
   <?php endif; ?>
-  <?php print render($content['comments']); ?>
-  <div class="comment_form">
-    <?php if ($content['comment_form']): ?>
-      <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
-      <?php print render($content['comment_form']); ?>
-    <?php endif; ?>
-  </div>
 
-</div>
+  <?php print render($content['comments']); ?>
+
+  <?php if ($content['comment_form']): ?>
+    <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
+    <?php print render($content['comment_form']); ?>
+  <?php endif; ?>
 </section>
