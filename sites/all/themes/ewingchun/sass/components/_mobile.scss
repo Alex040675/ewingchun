@@ -637,6 +637,14 @@ body{
         .middle-center{
           float: left;
         }
+        .center{
+          margin: 10px 0;
+          float: none;
+        }
+        .left,.right{
+          float: none;
+          width: 200px;
+        }
       }
     }
     .middleleftimg,.middleleftimg1{

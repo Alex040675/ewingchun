@@ -262,43 +262,44 @@ img, media {
       color: #000;
       float: left;
       min-width: 180px;
-      margin-right: 20px; }
-    /* line 283, ../sass/components/_articles.scss */
+      margin-right: 20px;
+      margin-left: 20px; }
+    /* line 284, ../sass/components/_articles.scss */
     .node-type-article .articletitle-leftp .articalmain .right {
       color: #000;
       float: left;
       min-width: 180px; }
-    /* line 288, ../sass/components/_articles.scss */
+    /* line 289, ../sass/components/_articles.scss */
     .node-type-article .articletitle-leftp .articalmain .middleleft {
       float: left;
       height: auto;
       padding: 15px 20px 0 0;
       width: 30%;
       margin-right: 1%; }
-      /* line 294, ../sass/components/_articles.scss */
+      /* line 295, ../sass/components/_articles.scss */
       .node-type-article .articletitle-leftp .articalmain .middleleft .middleleftimg {
         float: left;
         height: auto;
         padding: 0; }
-        /* line 298, ../sass/components/_articles.scss */
+        /* line 299, ../sass/components/_articles.scss */
         .node-type-article .articletitle-leftp .articalmain .middleleft .middleleftimg .img-caption {
           text-align: center; }
-    /* line 303, ../sass/components/_articles.scss */
+    /* line 304, ../sass/components/_articles.scss */
     .node-type-article .articletitle-leftp .articalmain .middle-center {
       height: auto;
       line-height: 25px;
       padding: 15px 0 0; }
-    /* line 308, ../sass/components/_articles.scss */
+    /* line 309, ../sass/components/_articles.scss */
     .node-type-article .articletitle-leftp .articalmain .middle {
       clear: both; }
-/* line 313, ../sass/components/_articles.scss */
+/* line 314, ../sass/components/_articles.scss */
 .node-type-article .artical-rightmain {
   border-left: 1px solid #ededed;
   float: right;
   height: auto;
   margin: 0;
   width: 30%; }
-  /* line 319, ../sass/components/_articles.scss */
+  /* line 320, ../sass/components/_articles.scss */
   .node-type-article .artical-rightmain .recentvideos, .node-type-article .artical-rightmain .relatedproducts, .node-type-article .artical-rightmain .recentarticles {
     background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 10px;
     float: right;
@@ -307,36 +308,36 @@ img, media {
     padding: 0 0 0 4%;
     width: 96%;
     background-size: 100% auto; }
-    /* line 327, ../sass/components/_articles.scss */
+    /* line 328, ../sass/components/_articles.scss */
     .node-type-article .artical-rightmain .recentvideos h3, .node-type-article .artical-rightmain .recentvideos .views-field-created, .node-type-article .artical-rightmain .relatedproducts h3, .node-type-article .artical-rightmain .relatedproducts .views-field-created, .node-type-article .artical-rightmain .recentarticles h3, .node-type-article .artical-rightmain .recentarticles .views-field-created {
       display: none; }
-    /* line 330, ../sass/components/_articles.scss */
+    /* line 331, ../sass/components/_articles.scss */
     .node-type-article .artical-rightmain .recentvideos ol, .node-type-article .artical-rightmain .recentvideos ul, .node-type-article .artical-rightmain .recentvideos li, .node-type-article .artical-rightmain .relatedproducts ol, .node-type-article .artical-rightmain .relatedproducts ul, .node-type-article .artical-rightmain .relatedproducts li, .node-type-article .artical-rightmain .recentarticles ol, .node-type-article .artical-rightmain .recentarticles ul, .node-type-article .artical-rightmain .recentarticles li {
       padding: 0;
       list-style: none; }
-    /* line 334, ../sass/components/_articles.scss */
+    /* line 335, ../sass/components/_articles.scss */
     .node-type-article .artical-rightmain .recentvideos .yca, .node-type-article .artical-rightmain .relatedproducts .yca, .node-type-article .artical-rightmain .recentarticles .yca {
       color: #116201;
       font-family: Trajan Pro Bold;
       font-size: 15px;
       letter-spacing: -1px;
       text-transform: uppercase; }
-    /* line 341, ../sass/components/_articles.scss */
+    /* line 342, ../sass/components/_articles.scss */
     .node-type-article .artical-rightmain .recentvideos .view-products, .node-type-article .artical-rightmain .relatedproducts .view-products, .node-type-article .artical-rightmain .recentarticles .view-products {
       padding: 25px 0 0; }
-  /* line 346, ../sass/components/_articles.scss */
+  /* line 347, ../sass/components/_articles.scss */
   .node-type-article .artical-rightmain .view-content a {
     color: #1c57a7;
     font-size: 14px;
     line-height: 25px; }
-/* line 353, ../sass/components/_articles.scss */
+/* line 354, ../sass/components/_articles.scss */
 .node-type-article .middleleftimg1 {
   clear: both; }
-  /* line 355, ../sass/components/_articles.scss */
+  /* line 356, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 a {
     display: block;
     position: relative; }
-  /* line 359, ../sass/components/_articles.scss */
+  /* line 360, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 span {
     background: transparent url("../images/emvideo-play.png") no-repeat scroll 0 0;
     display: block;
@@ -345,30 +346,30 @@ img, media {
     position: absolute;
     bottom: 25px;
     width: 85px; }
-  /* line 368, ../sass/components/_articles.scss */
+  /* line 369, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 span:hover {
     background-position: -86px 0;
     opacity: 1; }
 
-/* line 374, ../sass/components/_articles.scss */
+/* line 375, ../sass/components/_articles.scss */
 #comments {
   clear: both; }
-  /* line 376, ../sass/components/_articles.scss */
+  /* line 377, ../sass/components/_articles.scss */
   #comments h2 {
     color: #116201;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: normal; }
-  /* line 382, ../sass/components/_articles.scss */
+  /* line 383, ../sass/components/_articles.scss */
   #comments .comment {
     margin-bottom: 30px; }
-    /* line 384, ../sass/components/_articles.scss */
+    /* line 385, ../sass/components/_articles.scss */
     #comments .comment h3 {
       background: #f2f2f2 none repeat scroll 0 0;
       height: 31px;
       max-width: 612px;
       width: 100%; }
-      /* line 389, ../sass/components/_articles.scss */
+      /* line 390, ../sass/components/_articles.scss */
       #comments .comment h3 a {
         color: #1c57a7;
         font-family: TrajanProBold;
@@ -376,7 +377,7 @@ img, media {
         line-height: 31px;
         text-transform: uppercase;
         text-decoration: none; }
-    /* line 398, ../sass/components/_articles.scss */
+    /* line 399, ../sass/components/_articles.scss */
     #comments .comment .comment__info {
       background: none;
       color: #666; }
@@ -2138,7 +2139,15 @@ footer {
   /* line 637, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .middle-center, .node-type-blog .articletitle-leftp .articalmain .middle-center {
     float: left; }
-  /* line 642, ../sass/components/_mobile.scss */
+  /* line 640, ../sass/components/_mobile.scss */
+  .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
+    margin: 10px 0;
+    float: none; }
+  /* line 644, ../sass/components/_mobile.scss */
+  .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
+    float: none;
+    width: 200px; }
+  /* line 650, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }
