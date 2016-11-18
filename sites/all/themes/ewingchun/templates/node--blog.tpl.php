@@ -1,4 +1,4 @@
-<div class="articletitle-leftp">
+33333333333<div class="articletitle-leftp">
 	<div class="articalmain">
 		<div class="left"><?php print t('Posted By : ') . l ($name,  'user/' . $uid, array('html' => true)); ?></div>
 		<div class="right">Date: <span><?php print format_date($node->changed, 'short'); ?></span></div>
@@ -57,7 +57,7 @@
 			<?php print $recent_wiki; ?>
 		</ul>
 	</div>
-</div>1112222222222
+</div>
 <?php
 $comments = comment_node_page_additions($node);
 print render($comments);
