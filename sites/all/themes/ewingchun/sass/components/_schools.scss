@@ -5,11 +5,14 @@ html.js .form-autocomplete{
   .view-local-resources{
     .views-widget-filter-country{
       float: left;
-      /*clear: both;*/
+      width: 31%;
+      padding: 0;
+      margin-right: 2%;
     }
     .views-widget-filter-province {
-      /*clear: both;*/
+      width: 31%;
       float: left;
+      padding: 0;
     }
     label{
       float: none !important;
@@ -84,11 +87,11 @@ html.js .form-autocomplete{
       }
     }
     .view-filters{
-      /*margin-top: -135px;*/
       .form-select {
         -moz-appearance: none;
         background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
         border: medium none;
+        background-size: 100% auto;
         font-size: 11px;
         height: 21px !important;
         line-height: 11px;
@@ -99,7 +102,8 @@ html.js .form-autocomplete{
         position: relative;
         text-indent: 0.01px;
         text-overflow: "";
-        width: 293px !important;
+        width: 100% !important;
+        max-width: 293px;
       }
       .description{
         display: none;
@@ -113,7 +117,8 @@ html.js .form-autocomplete{
         margin: 0 0 10px;
         border-radius: 2px;
         padding: 5px;
-        width: 280px;
+        width: 98%;
+        max-width: 280px;
       }
       }
 
@@ -122,8 +127,11 @@ html.js .form-autocomplete{
       }
       #edit-keys-wrapper{
         float: left;
+        width: 31%;
+        margin-right: 2%;
+        padding: 0;
         .views-widget{
-          float: left;
+
         }
       }
       .views-submit-button{

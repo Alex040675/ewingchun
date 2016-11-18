@@ -97,12 +97,15 @@
         position: relative;
         text-indent: 0.01px;
         text-overflow: "";
-        width: 293px !important;
+        width:100% !important;
+        max-width: 293px;
+        background-size: 100% auto;
       }
       .description{
         display: none;
       }
       .views-exposed-widget{
+        padding: 0;
       .form-text {
         box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
         border: solid 1px #BFBFBF;
@@ -111,10 +114,24 @@
         margin: 0 0 10px;
         border-radius: 2px;
         padding: 5px;
-        width: 280px;
+        width: 96%;
+        max-width: 280px;
       }
       }
-
+     #edit-field-sifu-nid-wrapper{
+        width: 48%;
+        margin-right: 2%;
+     }
+      #edit-title-wrapper{
+        width: 50%;
+      }
+      #edit-body-value-wrapper{
+        width: 48%;
+        margin-right: 2%;
+      }
+      #edit-field-sifu-nid-1-wrapper{
+        width: 50%;
+      }
       #edit-taxonomy-vocabulary-9-tid-wrapper{
         width: 100%;
       }
@@ -361,7 +378,7 @@
       background: transparent url("../images/emvideo-play.png") no-repeat scroll 0 0;
       display: block;
       height: 112px;
-      left: 65px;
+      left: 35%;
       position: absolute;
       bottom: 25px;
       width: 85px;

@@ -98,6 +98,10 @@
       }
     }
     }
+
+  .page-articles .view-article .view-filters .views-exposed-form {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -579,6 +583,23 @@
           font-size: 11px;
         }
       }
+      .view-local-resources .views-widget-filter-country {
+        clear: both;
+      }
+      .view-local-resources .views-widget-filter-province{
+        clear: both;
+      }
+      .view-local-resources .view-filters #edit-keys-wrapper,
+      .view-local-resources .views-widget-filter-country,
+      .view-local-resources .views-widget-filter-province{
+        width: 100%;
+      }
+    }
+  }
+  .page-articles {
+    .view-article .view-filters .views-exposed-widget {
+     clear: both;
+      width: 100% !important;
     }
   }
 }
@@ -636,13 +657,6 @@ body{
 @media screen and (max-width:1180px) {
   body .l-page {
     width: 90%;
-  }
-
-  .page-schools-list .view-local-resources .views-widget-filter-country {
-    clear: both;
-  }
-  .page-schools-list .view-local-resources .views-widget-filter-province{
-    clear: both;
   }
   .node-type-article,.node-type-blog{
     .articletitle-leftp{
