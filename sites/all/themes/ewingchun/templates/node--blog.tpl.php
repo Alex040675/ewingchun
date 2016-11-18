@@ -57,7 +57,7 @@
 			<?php print $recent_wiki; ?>
 		</ul>
 	</div>
-</div>
+</div>1112222222222
 <?php
 $comments = comment_node_page_additions($node);
 print render($comments);
