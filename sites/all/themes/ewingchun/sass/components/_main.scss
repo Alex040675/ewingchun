@@ -46,56 +46,80 @@ body {
   margin-right: 2%;
   width: 71%;
 }
+#block-views-exp-blogs-page-1 {
+  .views-widget-filter-keys{
+    width: 48%;
+    margin-right: 2%;
+    padding: 0;
+    max-width: 280px;
+  }
+  label{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .views-widget-filter-tid{
+    float: left;
+    width: 50%;
+    max-width: 293px;
+    padding-right: 0;
+  }
+  .description{
+    display: none;
+  }
+  .form-text {
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
+    float: left;
+    height: 26px;
+    margin: 0 0 10px;
+    max-width: 280px;
+    padding: 5px;
+    width: 96%;
+    background: #fff;
+  }
+  .form-select {
+    -moz-appearance: none;
+    background: transparent url("../images/select-left.png") no-repeat scroll left center;
+    background-size: 100% 100%;
+    border: medium none;
+    font-size: 11px;
+    height: 21px !important;
+    line-height: 11px;
+    opacity: 1 !important;
+    padding-left: 2px;
+    padding-top: 2px;
+    position: relative;
+    text-indent: 0.01px;
+    width: 100% !important;
+  }
+  .views-submit-button{
+    clear: both;
+    .form-submit{
+      background: #1d58a8 none repeat scroll 0 0;
+      border: medium none;
+      border-radius: 4px;
+      color: #fff !important;
+      cursor: pointer;
+      display: inline-block;
+      float: left;
+      font-size: 14px !important;
+      margin-right: 5px;
+      margin-top: 0;
+      padding: 10px 40px;
+      text-decoration: none !important;
+    }
+    .form-submit:hover{
+      background: #1266d6;
+    }
+  }
+}
 
 .not-front .has-sidebar-second .l-region--sidebar-second {
   width: 23%;
   padding-left: 2%;
   float: left;
   border-left: 1px solid #ededed;
-  #block-views-exp-blogs-page-1 {
-    margin-top: 20px;
-    max-width: 200px;
-    .views-widget-filter-keys{
-      padding: 5px;
-      background: #d2d2d2;
-      width: 100%;
-      border-radius: 3px 0 0 0;
-      float: none;
-    }
-    .views-widget-filter-tid{
-      float: none;
-      width: 100%;
-      padding-right: 0;
-    }
-    .description{
-      display: none;
-    }
-      .form-text {
-        background: #fff;
-        border: medium none;
-        font-size: 11px;
-        height: 20px;
-        padding: 0 6px;
-        width: 95%;
-        border-radius: 2px;
-        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset;
-      }
-    .form-select {
-      -moz-appearance: none;
-      background: transparent url("../images/select-left.png") no-repeat scroll left center;
-      background-size: 100% 100%;
-      border: medium none;
-      font-size: 11px;
-      height: 21px !important;
-      line-height: 11px;
-      opacity: 1 !important;
-      padding-left: 2px;
-      padding-top: 2px;
-      position: relative;
-      text-indent: 0.01px;
-      width: 100% !important;
-    }
-  }
 }
 .breadcrumb{
   margin: 0;
@@ -829,6 +853,23 @@ footer{
   }
   .grippie{
     display: none;
+  }
+}
+.comment-form{
+  label{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form-text {
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
+    float: left;
+    height: 26px;
+    margin: 0 0 10px;
+    max-width: 280px;
+    padding: 5px;
+    width: 98%;
   }
 }
 

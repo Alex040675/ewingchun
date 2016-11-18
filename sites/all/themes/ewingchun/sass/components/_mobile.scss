@@ -114,6 +114,14 @@
         float: left;
         width: 98%;
       }
+
+      #block-views-exp-blogs-page-1{
+        .views-widget-filter-keys,.views-widget-filter-tid{
+          float: none;
+          width: 100%;
+        }
+      }
+
     }
     .has-sidebar-second {
       .l-content, .l-region--sidebar-second {
