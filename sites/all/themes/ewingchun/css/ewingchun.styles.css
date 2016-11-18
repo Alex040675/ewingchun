@@ -353,23 +353,27 @@ img, media {
 
 /* line 375, ../sass/components/_articles.scss */
 #comments {
-  clear: both; }
-  /* line 377, ../sass/components/_articles.scss */
+  clear: both;
+  border-top: 5px solid #f8f8f8;
+  clear: both;
+  margin: 30px 0 0;
+  padding: 15px 0 0; }
+  /* line 381, ../sass/components/_articles.scss */
   #comments h2 {
     color: #116201;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: normal; }
-  /* line 383, ../sass/components/_articles.scss */
+  /* line 387, ../sass/components/_articles.scss */
   #comments .comment {
     margin-bottom: 30px; }
-    /* line 385, ../sass/components/_articles.scss */
+    /* line 389, ../sass/components/_articles.scss */
     #comments .comment h3 {
       background: #f2f2f2 none repeat scroll 0 0;
       height: 31px;
       max-width: 612px;
       width: 100%; }
-      /* line 390, ../sass/components/_articles.scss */
+      /* line 394, ../sass/components/_articles.scss */
       #comments .comment h3 a {
         color: #1c57a7;
         font-family: TrajanProBold;
@@ -377,7 +381,7 @@ img, media {
         line-height: 31px;
         text-transform: uppercase;
         text-decoration: none; }
-    /* line 399, ../sass/components/_articles.scss */
+    /* line 403, ../sass/components/_articles.scss */
     #comments .comment .comment__info {
       background: none;
       color: #666; }
@@ -1626,6 +1630,10 @@ footer {
 /* line 833, ../sass/components/_main.scss */
 #comment-form .grippie {
   display: none; }
+
+/* line 838, ../sass/components/_main.scss */
+.comment-form body {
+  background: #fff !important; }
 
 @media screen and (max-width: 480px) {
   /* line 3, ../sass/components/_mobile.scss */
