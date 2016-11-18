@@ -58,4 +58,7 @@
 		</ul>
 	</div>
 </div>
-
+<?php
+$comments = comment_node_page_additions($node);
+print render($comments);
+?>
