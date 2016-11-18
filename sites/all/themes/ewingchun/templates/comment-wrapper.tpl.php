@@ -32,7 +32,7 @@
  */
 print_r($node);
 ?>
-
+111111111
 
 <section<?php print $attributes; ?>>
   <div id="comments">
