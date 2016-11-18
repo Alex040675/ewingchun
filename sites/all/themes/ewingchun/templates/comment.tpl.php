@@ -24,7 +24,6 @@
  * @see theme_comment()
  */
 ?>
-111111111122222277777777777777
 <div class="review-headingbg">
 	<div class="review-hcenterbg">
 		<div class="centerleft"><?php print $author; ?></div>

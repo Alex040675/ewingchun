@@ -1,4 +1,4 @@
-33333333333<div class="articletitle-leftp">
+<div class="articletitle-leftp">
 	<div class="articalmain">
 		<div class="left"><?php print t('Posted By : ') . l ($name,  'user/' . $uid, array('html' => true)); ?></div>
 		<div class="right">Date: <span><?php print format_date($node->changed, 'short'); ?></span></div>
