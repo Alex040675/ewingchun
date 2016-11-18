@@ -59,7 +59,7 @@
 	</div>
 </div>
 <?php
-print render($content['comments']);
+print_r($content['comments']);
 $comments = comment_node_page_additions($node);
 print render($comments);
 ?>
