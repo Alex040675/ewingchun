@@ -37,7 +37,8 @@
  * @see template_preprocess_comment_wrapper()
  * @see theme_comment_wrapper()
  */
-?>
+print_r($node);
+?>1111
 
 
 <section<?php print $attributes; ?>>
