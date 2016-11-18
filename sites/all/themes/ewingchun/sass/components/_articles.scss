@@ -257,7 +257,7 @@
 .node-type-article{
   .articletitle-leftp {
     float: left;
-    margin: 20px 0 0;
+    margin: 20px 0 30px 0;
     padding: 0;
     width: 69%;
     .articalmain {
@@ -290,8 +290,8 @@
         float: left;
         height: auto;
         padding: 15px 20px 0 0;
-        width: 30%;
-        margin-right: 1%;
+        width: 35%;
+        margin-right: 2%;
         .middleleftimg {
           float: left;
           height: auto;
@@ -374,10 +374,12 @@
 }
 #comments{
   clear: both;
+section{
   border-top: 5px solid #f8f8f8;
   clear: both;
   margin: 30px 0 0;
   padding: 15px 0 0;
+}
   h2{
     color: #116201;
     text-transform: uppercase;

@@ -101,7 +101,6 @@
 }
 @media screen and (max-width: 768px) {
   body {
-    background: #ebe9e1 !important;
     .l-page {
       width: 100%;
       border: none;
@@ -473,6 +472,7 @@
       .articalmain {
         .middleleft {
           float: none;
+          overflow: visible;
         }
       }
     }
@@ -500,22 +500,25 @@
       }
     }
   }
-  body{
-  .l-page {
-    .l-header .active_menu {
-      #block-system-main-menu {
-        display: block;
-        width: 100%;
-        ul {
+  html{
+  body {
+    background: #fff !important;
+    .l-page {
+      .l-header .active_menu {
+        #block-system-main-menu {
+          display: block;
           width: 100%;
-        }
-        li {
-          float: none;
-          width: 100%;
-          margin: 0 !important;
-          a {
-            padding: 0 !important;
-            text-indent: 20px;
+          ul {
+            width: 100%;
+          }
+          li {
+            float: none;
+            width: 100%;
+            margin: 0 !important;
+            a {
+              padding: 0 !important;
+              text-indent: 20px;
+            }
           }
         }
       }
@@ -634,9 +637,6 @@ body{
   .node-type-article,.node-type-blog{
     .articletitle-leftp{
       .articalmain{
-        .middle-center{
-          float: left;
-        }
         .center{
           margin: 10px 0;
           float: none;
