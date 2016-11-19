@@ -92,6 +92,13 @@
           .articalmain {
             .middleleft {
               float: none;
+              .middleleftimg{
+                width: 100%;
+              }
+              .middleleftimg1{
+                position: relative;
+                width: 100%;
+              }
             }
           }
         }
@@ -488,12 +495,13 @@
           margin-right: 0;
           padding-right: 0;
           width: 100%;
+          position: relative;
           .blogfpo{
             float: left;
             clear: both;
           }
           .middleleftimg{
-            width: 50%;
+            width: 48%;
             img{
               width: 100%;
               height: auto;
@@ -503,7 +511,11 @@
             width: 48%;
             position: absolute;
             right: 2%;
-            top:20px;
+            top:15px;
+            span{
+              left: 40%;
+              top: 26%;
+            }
           }
         }
         .middle-center{
