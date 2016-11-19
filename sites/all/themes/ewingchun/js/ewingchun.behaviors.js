@@ -57,6 +57,15 @@
         $('#block-block-11 button').click(function() {
             $('.l-region--navigation').toggleClass('active_menu');
         });
+
+
+        if ($(window).width() > 768) {
+            $('.front .view-videos .views-row').each(function (i) {
+                if (i % 4 == 0) {
+                    $(this).nextAll().andSelf().slice(0, 4).wrapAll('<div class="wrap"></div>');
+                }
+            });
+        }
     }
   };
 

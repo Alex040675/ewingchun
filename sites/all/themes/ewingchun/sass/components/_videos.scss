@@ -76,7 +76,6 @@ html.js .form-autocomplete{
       }
     }
     .view-filters{
-      margin-top: -90px;
       .form-select {
         -moz-appearance: none;
         background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
@@ -91,13 +90,23 @@ html.js .form-autocomplete{
         position: relative;
         text-indent: 0.01px;
         text-overflow: "";
-        width: 293px !important;
+        max-width: 293px !important;
+        width: 100%;
       }
       .description{
         display: none;
       }
+      #edit-title-wrapper{
+        padding-right: 0;
+        width: 48%;
+        margin-right: 2%;
+        max-width: 280px;
+      }
+      #edit-tid-wrapper{
+        width: 48%;
+        max-width: 280px;
+      }
       .views-exposed-widget{
-        clear: both;
       .form-text {
         box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
         border: solid 1px #BFBFBF;
@@ -106,7 +115,8 @@ html.js .form-autocomplete{
         margin: 0 0 10px;
         border-radius: 2px;
         padding: 5px;
-        width: 280px;
+        width: 100%;
+        padding-right: 0;
       }
       }
       #edit-keys-wrapper{
