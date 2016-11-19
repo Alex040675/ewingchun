@@ -58,15 +58,20 @@
  * @see template_process()
  * @see theme_comment()
  */
-print_r(file_load($comment->picture));
-print_r($comment);
+
 ?>
-333
+
 <article<?php print $attributes; ?>>
 <div class="review-headingbg">
   <div class="review-hleftbg"><img width="18" height="31" alt="" src="/sites/all/themes/ewingchun/images/coment-leftbg.jpg"></div>
   <div class="review-hcenterbg">
-    <div class="centerleft"><?php print $author; ?></div>
+    <div class="centerleft">
+      <?php
+
+        $user = user_load($comment->uid);
+        print theme('image_style', array('style_name' => 'User Profile', 'path' => $user->picture->uri));
+
+      ?></div>
     <div class="centerright">
       <div class="centerright01"><span><?php print $created; ?><?php print render($content['links']) ?></span></div>
     </div>
