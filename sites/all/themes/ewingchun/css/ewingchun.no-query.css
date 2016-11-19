@@ -467,11 +467,11 @@ img, media {
   /* line 483, ../sass/components/_articles.scss */
   .review-content .review-left {
     float: left;
-    width: 10; }
-  /* line 487, ../sass/components/_articles.scss */
+    width: 10%;
+    margin-right: 2%; }
+  /* line 488, ../sass/components/_articles.scss */
   .review-content .review-right {
     width: 88%;
-    margin-left: 2%;
     float: left; }
     /* line 491, ../sass/components/_articles.scss */
     .review-content .review-right p {
