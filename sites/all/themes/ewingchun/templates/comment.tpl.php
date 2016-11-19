@@ -83,9 +83,17 @@ $user = user_load($comment->uid);
 <div class="review-content">
   <div class="review-left"> <?php
     if (isset($user->picture->uri)) {
-      $url = image_style_url('user_comment', $user->picture->uri);
-      print_r($user->picture->uri);
-      print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
+
+
+      if (stripos($user->picture->uri, 'public') !== FALSE) {
+        $url = image_style_url('user_comment', $user->picture->uri);
+        print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
+      }
+      else {
+        print '<img class="cert" src="'. $user->picture->uri . '" alt="' . $user->name . '" />';
+      }
+
+
     }
     else {
       echo  print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
