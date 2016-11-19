@@ -234,7 +234,7 @@ function ewingchun_preprocess_node(&$variables) {
     $relatedpro = views_embed_view('products', 'block_2', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['relatedproducts'] = $relatedpro;
 
-    $recentarticles = views_embed_view('article', 'block_6', $variables['node']->field_sifu['und'][0]['nid']);
+    $recentarticles = views_embed_view('article', 'block_5');
     $variables['recent_articles'] = $recentarticles;
 
     $recentwiki = views_embed_view('wiki', 'block_4', $variables['node']->field_sifu['und'][0]['nid']);
