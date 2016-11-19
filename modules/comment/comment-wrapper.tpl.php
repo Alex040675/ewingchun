@@ -42,7 +42,9 @@
     <h2 class="title"><?php print t('Comments'); ?></h2>
     <?php print render($title_suffix); ?>
   <?php endif; ?>
-
+  <?php if($node->comment_count != 0) : ?>
+    <h2 class="title"><?php print $node->comment_count; ?> Comments</h2>
+  <?php endif; ?>
   <?php print render($content['comments']); ?>
 
   <?php if ($content['comment_form']): ?>
