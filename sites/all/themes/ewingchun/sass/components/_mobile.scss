@@ -589,6 +589,10 @@
 
     .review-headingbg,.review-content{
       width: 100%;
+      .review-right{
+        float: left;
+        width: 100%;
+      }
     }
   }
 }
