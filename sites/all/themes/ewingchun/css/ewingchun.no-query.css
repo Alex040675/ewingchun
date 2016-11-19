@@ -466,15 +466,20 @@ img, media {
   width: 80%; }
   /* line 483, ../sass/components/_articles.scss */
   .review-content .review-left {
-    float: left; }
-  /* line 486, ../sass/components/_articles.scss */
+    float: left;
+    width: 10; }
+  /* line 487, ../sass/components/_articles.scss */
   .review-content .review-right {
-    clear: both;
+    width: 88%;
+    margin-left: 2%;
     float: left; }
-  /* line 490, ../sass/components/_articles.scss */
+    /* line 491, ../sass/components/_articles.scss */
+    .review-content .review-right p {
+      margin-top: 0; }
+  /* line 495, ../sass/components/_articles.scss */
   .review-content .usearname-title {
     font-size: 16px; }
-    /* line 492, ../sass/components/_articles.scss */
+    /* line 497, ../sass/components/_articles.scss */
     .review-content .usearname-title a {
       font-size: 12px; }
 
