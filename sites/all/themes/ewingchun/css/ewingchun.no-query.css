@@ -425,52 +425,52 @@ img, media {
     height: 31px;
     width: 96%;
     float: left; }
-    /* line 445, ../sass/components/_articles.scss */
-    .review-headingbg .review-hcenterbg .centerleft a {
+    /* line 444, ../sass/components/_articles.scss */
+    .review-headingbg .review-hcenterbg .centerleft {
       color: #1c57a7;
       float: left;
       font-family: Trajan Pro Bold;
       font-size: 17px;
       line-height: 31px;
       text-transform: uppercase; }
-    /* line 454, ../sass/components/_articles.scss */
+    /* line 452, ../sass/components/_articles.scss */
     .review-headingbg .review-hcenterbg .centerright {
       color: #666;
       float: right;
       margin-right: 10px;
       font-size: 12px;
       padding: 6px 0; }
-      /* line 460, ../sass/components/_articles.scss */
+      /* line 458, ../sass/components/_articles.scss */
       .review-headingbg .review-hcenterbg .centerright .centerright01 {
         height: auto;
         text-align: left; }
-        /* line 463, ../sass/components/_articles.scss */
+        /* line 461, ../sass/components/_articles.scss */
         .review-headingbg .review-hcenterbg .centerright .centerright01 span {
           float: left; }
-          /* line 465, ../sass/components/_articles.scss */
+          /* line 463, ../sass/components/_articles.scss */
           .review-headingbg .review-hcenterbg .centerright .centerright01 span ul {
             float: left; }
-  /* line 472, ../sass/components/_articles.scss */
+  /* line 470, ../sass/components/_articles.scss */
   .review-headingbg .review-hrightbg {
     height: 31px;
     width: auto; }
 
-/* line 477, ../sass/components/_articles.scss */
+/* line 475, ../sass/components/_articles.scss */
 .review-content {
   margin: 0 0 15px;
   clear: both;
   width: 80%; }
-  /* line 481, ../sass/components/_articles.scss */
+  /* line 479, ../sass/components/_articles.scss */
   .review-content .review-left {
     float: left; }
-  /* line 484, ../sass/components/_articles.scss */
+  /* line 482, ../sass/components/_articles.scss */
   .review-content .review-right {
     clear: both;
     float: left; }
-  /* line 488, ../sass/components/_articles.scss */
+  /* line 486, ../sass/components/_articles.scss */
   .review-content .usearname-title {
     font-size: 16px; }
-    /* line 490, ../sass/components/_articles.scss */
+    /* line 488, ../sass/components/_articles.scss */
     .review-content .usearname-title a {
       font-size: 12px; }
 
