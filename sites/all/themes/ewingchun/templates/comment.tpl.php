@@ -70,8 +70,14 @@
 
 
         $user = user_load($comment->uid);
-        $url = image_style_url('related_articles', $user->picture->uri);
-        print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />'
+        if (isset($user->picture->uri)) {
+          $url = image_style_url('user_comment', $user->picture->uri);
+          print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />'
+        }
+        else {
+          echo variable_get('user_picture_default');
+        }
+
 
       ?></div>
     <div class="centerright">
