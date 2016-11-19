@@ -465,6 +465,12 @@ img, media {
     clear: both;
     float: right;
     width: 40%; }
+  /* line 486, ../sass/components/_articles.scss */
+  .review-content .usearname-title {
+    font-size: 16px; }
+    /* line 488, ../sass/components/_articles.scss */
+    .review-content .usearname-title a {
+      font-size: 12px; }
 
 /* line 3, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs label {
