@@ -69,7 +69,7 @@
       <?php
 
         $user = user_load($comment->uid);
-        $url = image_style_url('User Profile', $img['uri']);
+        $url = image_style_url('sifu-listing', $img['uri']);
         print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />'
 
       ?></div>
