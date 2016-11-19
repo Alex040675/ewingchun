@@ -527,25 +527,27 @@
   }
   }
   .node-type-article  {
-    .articletitle-leftp{
-      .articalmain{
-        .middle-center{
+    .articletitle-leftp {
+      .middle{
+      .articalmain {
+        .middle-center {
           float: left;
         }
       }
-      .middleleft{
+      .middleleft {
         margin-right: 0;
         padding-right: 0;
         width: 100%;
-        .middleleftimg{
+        .middleleftimg {
           width: 48%;
         }
-        .middleleftimg1{
+        .middleleftimg1 {
           float: left;
           clear: none;
           width: 48%;
         }
       }
+    }
     }
   }
 }
