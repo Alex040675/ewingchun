@@ -58,10 +58,10 @@
  * @see template_process()
  * @see theme_comment()
  */
-print_r(image_load($comment->picture));
+print_r(file_load($comment->picture));
 print_r($comment);
 ?>
-222
+333
 <article<?php print $attributes; ?>>
 <div class="review-headingbg">
   <div class="review-hleftbg"><img width="18" height="31" alt="" src="/sites/all/themes/ewingchun/images/coment-leftbg.jpg"></div>
