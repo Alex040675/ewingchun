@@ -69,6 +69,7 @@
       <?php
 
         $user = user_load($comment->uid);
+        print_r($user);
         print theme('image_style', array('style_name' => 'User Profile', 'path' => $user->picture->uri));
 
       ?></div>
