@@ -439,7 +439,6 @@ section{
     background: #f2f2f2 none repeat scroll 0 0;
     height: 31px;
     width: 96%;
-    clear: both;
     float: left;
     .centerleft {
       a{
@@ -453,19 +452,23 @@ section{
     }
     .centerright {
       color: #666;
-      float: right;
+      float: left;
       font-size: 12px;
       padding: 6px 0;
-      width: 265px;
       .centerright01 {
         height: auto;
         text-align: left;
-        width: 260px;
+        span{
+          float: left;
+          ul{
+            float: left;
+          }
+        }
       }
     }
   }
   .review-hrightbg {
-    float: right;
+    margin: -30px 0 0 -10px;
     height: 31px;
     width: auto;
   }
@@ -480,8 +483,7 @@ section{
   }
   .review-right {
     clear: both;
-    float: right;
-    width: 40%;
+    float: left;
   }
   .usearname-title{
     font-size: 16px;
