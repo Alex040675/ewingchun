@@ -485,6 +485,29 @@
         .middleleft {
           float: none;
           overflow: visible;
+          margin-right: 0;
+          padding-right: 0;
+          width: 100%;
+          .blogfpo{
+            float: left;
+            clear: both;
+          }
+          .middleleftimg{
+            width: 50%;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .middleleftimg1{
+            width: 48%;
+            position: absolute;
+            right: 2%;
+            top:20px;
+          }
+        }
+        .middle-center{
+          clear: both;
         }
       }
     }
