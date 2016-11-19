@@ -1753,6 +1753,10 @@ footer {
   padding: 5px;
   width: 98%; }
 
+/* line 871, ../sass/components/_main.scss */
+.wrap {
+  overflow: hidden; }
+
 @media screen and (max-width: 480px) {
   /* line 3, ../sass/components/_mobile.scss */
   header #block-block-11 {
