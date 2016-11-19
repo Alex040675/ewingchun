@@ -58,7 +58,7 @@
  * @see template_process()
  * @see theme_comment()
  */
-
+$user = user_load($comment->uid);
 ?>
 
 <article<?php print $attributes; ?>>
@@ -69,14 +69,8 @@
       <?php
 
 
-        $user = user_load($comment->uid);
-        if (isset($user->picture->uri)) {
-          $url = image_style_url('user_comment', $user->picture->uri);
-          print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
-        }
-        else {
-          echo  print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
-        }
+       print $user->name;
+
 
 
       ?></div>
@@ -87,7 +81,15 @@
   <div class="review-hrightbg"> <img width="10" height="31" src="/sites/all/themes/ewingchun/images/coment-rightbg.jpg"> </div>
 </div>
 <div class="review-content">
-  <div class="review-left"> <?php print $user_picture; ?> </div>
+  <div class="review-left"> <?php
+    if (isset($user->picture->uri)) {
+      $url = image_style_url('user_comment', $user->picture->uri);
+      print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
+    }
+    else {
+      echo  print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
+    }
+    ?> </div>
   <div class="review-right">
     <p class="usearname-title">Title: <span><?php print $title; ?></span></p>
     <div class="usearcontent"> <?php  print render($content); ?></div>
