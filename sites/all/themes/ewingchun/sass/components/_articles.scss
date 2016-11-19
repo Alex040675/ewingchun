@@ -442,12 +442,14 @@ section{
     width: 96%;
     float: left;
     .centerleft {
-      color: #1c57a7;
       float: left;
-      font-family: Trajan Pro Bold;
-      font-size: 17px;
-      line-height: 31px;
-      text-transform: uppercase;
+      a{
+        color: #1c57a7;
+        font-family: Trajan Pro Bold;
+        font-size: 17px;
+        line-height: 31px;
+        text-transform: uppercase;
+      }
     }
     .centerright {
       color: #666;
