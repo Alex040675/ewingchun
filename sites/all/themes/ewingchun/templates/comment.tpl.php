@@ -85,7 +85,7 @@ $user = user_load($comment->uid);
         print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
       }
       else {
-        print '<img class="cert" src="'. $user->picture->uri . '" alt="' . $user->name . '" />';
+        print '<img class="cert" src="/'. $user->picture->uri . '" alt="' . $user->name . '" />';
       }
 
 
