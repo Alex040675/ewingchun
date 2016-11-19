@@ -429,6 +429,7 @@ section{
   height: 31px;
   margin: 20px 0 0;
   width: 80%;
+  padding: 10px 0;
   .review-hleftbg {
     height: 31px;
     width: auto;
@@ -452,7 +453,8 @@ section{
     }
     .centerright {
       color: #666;
-      float: left;
+      float: right;
+      margin-right: 10px;
       font-size: 12px;
       padding: 6px 0;
       .centerright01 {
@@ -475,7 +477,6 @@ section{
 }
 .review-content {
   margin: 0 0 15px;
-  padding: 30px 0 0;
   clear: both;
   width: 80%;
   .review-left{
