@@ -1,0 +1,3 @@
+name = fields update
+description = This module is needed to update fields
+core = 7.x
