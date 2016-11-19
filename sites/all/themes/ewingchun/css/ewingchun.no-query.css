@@ -452,26 +452,25 @@ img, media {
             float: left; }
   /* line 472, ../sass/components/_articles.scss */
   .review-headingbg .review-hrightbg {
-    margin: -30px 0 0 -10px;
     height: 31px;
     width: auto; }
 
-/* line 478, ../sass/components/_articles.scss */
+/* line 477, ../sass/components/_articles.scss */
 .review-content {
   margin: 0 0 15px;
   clear: both;
   width: 80%; }
-  /* line 482, ../sass/components/_articles.scss */
+  /* line 481, ../sass/components/_articles.scss */
   .review-content .review-left {
     float: left; }
-  /* line 485, ../sass/components/_articles.scss */
+  /* line 484, ../sass/components/_articles.scss */
   .review-content .review-right {
     clear: both;
     float: left; }
-  /* line 489, ../sass/components/_articles.scss */
+  /* line 488, ../sass/components/_articles.scss */
   .review-content .usearname-title {
     font-size: 16px; }
-    /* line 491, ../sass/components/_articles.scss */
+    /* line 490, ../sass/components/_articles.scss */
     .review-content .usearname-title a {
       font-size: 12px; }
 
