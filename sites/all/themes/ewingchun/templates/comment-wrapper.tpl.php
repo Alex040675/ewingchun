@@ -30,9 +30,8 @@
  * @see template_preprocess_comment_wrapper()
  * @see theme_comment_wrapper()
  */
-print_r($node);
 ?>
-111111111
+
 
 <section<?php print $attributes; ?>>
   <div id="comments">
@@ -46,10 +45,8 @@ print_r($node);
     <?php endif; ?>
     <?php print render($content['comments']); ?>
     <div class="comment_form">
-      <?php if ($content['comment_form']): ?>
-        <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
-        <?php print render($content['comment_form']); ?>
-      <?php endif; ?>
+      <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
+      <?php print render($content['comment_form']); ?>
     </div>
 
   </div>
