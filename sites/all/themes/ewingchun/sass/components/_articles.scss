@@ -428,7 +428,7 @@ section{
   float: left;
   height: 31px;
   margin: 20px 0 0;
-  width: 70%;
+  width: 100%;
   .review-hleftbg {
     float: left;
     height: 31px;
@@ -441,12 +441,14 @@ section{
     height: 31px;
     width: 100%;
     .centerleft {
+      a{
       color: #1c57a7;
       float: left;
       font-family: TrajanProBold;
       font-size: 17px;
       line-height: 31px;
       text-transform: uppercase;
+    }
     }
     .centerright {
       color: #666;
@@ -470,5 +472,11 @@ section{
     float: right;
     height: 31px;
     width: auto;
+  }
+  .review-content {
+    float: left;
+    margin: 0 0 15px;
+    padding: 30px 0 0;
+    width: 640px;
   }
 }
