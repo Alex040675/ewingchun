@@ -68,8 +68,9 @@
     <div class="centerleft">
       <?php
 
+
         $user = user_load($comment->uid);
-        $url = image_style_url('sifu-listing', $user->picture->uri);
+        $url = image_style_url('related_articles', $user->picture->uri);
         print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />'
 
       ?></div>
