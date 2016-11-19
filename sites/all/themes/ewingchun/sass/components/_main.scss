@@ -502,6 +502,9 @@ header {
   clear: both;
   padding-bottom: 30px;
   position: relative;
+  .views-field-field-profile-img{
+    text-align: center;
+  }
   .block__title{
     background: rgba(0, 0, 0, 0) url("../images/thelatest-left-topbg.jpg") no-repeat scroll left top;
     background-size: 100% 100%;
@@ -667,7 +670,7 @@ header {
     .views-row{
       float: left;
       width: 23%;
-      margin-right: 2%;
+      margin: 0 1% 20px 1%;
       text-align: center;
       .views-field-title{
         text-align: center;
@@ -678,12 +681,6 @@ header {
           font-weight: 400;
         }
       }
-    }
-    .views-row:last-child{
-      margin-right: 0;
-    }
-    .views-row:first-child{
-      margin-left: 1%;
     }
     .more-link{
       display: none;
