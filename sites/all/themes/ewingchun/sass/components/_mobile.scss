@@ -110,6 +110,32 @@
   .page-articles .view-article .view-filters .views-exposed-form {
     width: 100%;
   }
+  .node-type-article  {
+    .articletitle-leftp {
+      .articalmain{
+      .middle {
+        .middleleft {
+          margin-right: 0;
+          padding-right: 0;
+          width: 100%;
+          float: none;
+          .middleleftimg {
+            width: 100%;
+          }
+          .middleleftimg1 {
+            float: none;
+            clear: both;
+            width: 100%;
+            span {
+              left: 40%;
+              bottom: 30%;
+            }
+          }
+        }
+      }
+    }
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -540,11 +566,22 @@
         width: 100%;
         .middleleftimg {
           width: 48%;
+          .left{
+            width: 100%;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
         }
         .middleleftimg1 {
-          float: left;
+          float: right;
           clear: none;
           width: 48%;
+          span{
+            left: 40%;
+            bottom: 30%;
+          }
         }
       }
     }

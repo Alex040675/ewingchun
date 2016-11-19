@@ -35,8 +35,8 @@
       <file leaf-file-name="_mobile.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.83668905" vertical-offset="8551" max-vertical-offset="12648">
-              <caret line="547" column="9" selection-start-line="547" selection-start-column="9" selection-end-line="547" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.63870245" vertical-offset="1571" max-vertical-offset="13277">
+              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -75,8 +75,8 @@
       <file leaf-file-name="ewingchun.styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="55029" max-vertical-offset="56542">
-              <caret line="3320" column="0" selection-start-line="3320" selection-start-column="0" selection-end-line="3320" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="55539" max-vertical-offset="57052">
+              <caret line="3350" column="0" selection-start-line="3350" selection-start-column="0" selection-end-line="3350" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -853,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/css/ewingchun.styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="55029" max-vertical-offset="56542">
-          <caret line="3320" column="0" selection-start-line="3320" selection-start-column="0" selection-end-line="3320" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="55539" max-vertical-offset="57052">
+          <caret line="3350" column="0" selection-start-line="3350" selection-start-column="0" selection-end-line="3350" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -893,8 +893,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/themes/ewingchun/sass/components/_mobile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83668905" vertical-offset="8551" max-vertical-offset="12648">
-          <caret line="547" column="9" selection-start-line="547" selection-start-column="9" selection-end-line="547" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.63870245" vertical-offset="1571" max-vertical-offset="13277">
+          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
           <folding />
         </state>
       </provider>
