@@ -66,6 +66,14 @@
                 }
             });
         }
+
+        if ($(window).width() <= 768) {
+            $('.front .view-videos .views-row').each(function (i) {
+                if (i % 3 == 0) {
+                    $(this).nextAll().andSelf().slice(0, 3).wrapAll('<div class="wrap"></div>');
+                }
+            });
+        }
     }
   };
 

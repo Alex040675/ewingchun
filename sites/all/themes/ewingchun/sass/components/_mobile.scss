@@ -136,6 +136,12 @@
     }
     }
   }
+  #block-views-videos-block-2 {
+    .views-row {
+      width: 90% !important;
+      margin: 0 auto 20px !important;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   body {
@@ -271,9 +277,7 @@
   .under_content {
     #block-views-videos-block-2 {
       .views-row {
-        float: none;
-        width: 90%;
-        margin: 0 auto 20px !important;
+        width: 31%;
       }
     }
   }
