@@ -533,6 +533,19 @@
           float: left;
         }
       }
+      .middleleft{
+        margin-right: 0;
+        padding-right: 0;
+        width: 100%;
+        .middleleftimg{
+          width: 48%;
+        }
+        .middleleftimg1{
+          float: left;
+          clear: none;
+          width: 48%;
+        }
+      }
     }
   }
 }
