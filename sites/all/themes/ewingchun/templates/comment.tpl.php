@@ -69,7 +69,7 @@ $user = user_load($comment->uid);
       <?php
 
 
-       print $user->name;
+       print l($user->name, 'user/' . $user->uid);
 
 
 
