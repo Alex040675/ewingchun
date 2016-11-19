@@ -407,6 +407,54 @@ img, media {
       background: none;
       color: #666; }
 
+/* line 427, ../sass/components/_articles.scss */
+.review-headingbg {
+  float: left;
+  height: 31px;
+  margin: 20px 0 0;
+  width: 70%; }
+  /* line 432, ../sass/components/_articles.scss */
+  .review-headingbg .review-hleftbg {
+    float: left;
+    height: 31px;
+    width: auto; }
+  /* line 438, ../sass/components/_articles.scss */
+  .review-headingbg .review-hcenterbg {
+    background: #f2f2f2 none repeat scroll 0 0;
+    float: left;
+    height: 31px;
+    width: 100%; }
+    /* line 443, ../sass/components/_articles.scss */
+    .review-headingbg .review-hcenterbg .centerleft {
+      color: #1c57a7;
+      float: left;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      line-height: 31px;
+      text-transform: uppercase; }
+    /* line 451, ../sass/components/_articles.scss */
+    .review-headingbg .review-hcenterbg .centerright {
+      color: #666;
+      float: right;
+      font-size: 12px;
+      padding: 6px 0;
+      width: 265px; }
+      /* line 457, ../sass/components/_articles.scss */
+      .review-headingbg .review-hcenterbg .centerright .centerright01 {
+        float: left;
+        height: auto;
+        text-align: left;
+        width: 260px; }
+        /* line 462, ../sass/components/_articles.scss */
+        .review-headingbg .review-hcenterbg .centerright .centerright01 ul {
+          float: right;
+          width: 150px; }
+  /* line 469, ../sass/components/_articles.scss */
+  .review-headingbg .review-hrightbg {
+    float: right;
+    height: 31px;
+    width: auto; }
+
 /* line 3, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs label {
   float: none !important; }

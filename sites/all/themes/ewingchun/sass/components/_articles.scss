@@ -424,3 +424,51 @@ section{
     }
   }
 }
+.review-headingbg{
+  float: left;
+  height: 31px;
+  margin: 20px 0 0;
+  width: 70%;
+  .review-hleftbg {
+    float: left;
+    height: 31px;
+    width: auto;
+  }
+
+  .review-hcenterbg {
+    background: #f2f2f2 none repeat scroll 0 0;
+    float: left;
+    height: 31px;
+    width: 100%;
+    .centerleft {
+      color: #1c57a7;
+      float: left;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      line-height: 31px;
+      text-transform: uppercase;
+    }
+    .centerright {
+      color: #666;
+      float: right;
+      font-size: 12px;
+      padding: 6px 0;
+      width: 265px;
+      .centerright01 {
+        float: left;
+        height: auto;
+        text-align: left;
+        width: 260px;
+        ul{
+          float: right;
+          width: 150px;
+        }
+      }
+    }
+  }
+  .review-hrightbg {
+    float: right;
+    height: 31px;
+    width: auto;
+  }
+}
