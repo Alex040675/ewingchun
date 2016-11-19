@@ -67,12 +67,7 @@ $user = user_load($comment->uid);
   <div class="review-hcenterbg">
     <div class="centerleft">
       <?php
-
-
        print l($user->name, 'user/' . $user->uid);
-
-
-
       ?></div>
     <div class="centerright">
       <div class="centerright01"><span><?php print $created; ?><?php print render($content['links']) ?></span></div>
