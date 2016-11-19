@@ -46,7 +46,7 @@
     <?php print render($content['comments']); ?>
     <div class="comment_form">
       <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
-      <?php  print_r($content); print render($content['comment_form']); ?>
+      <?php  print render($content['comment_form']); ?>
     </div>
 
   </div>
