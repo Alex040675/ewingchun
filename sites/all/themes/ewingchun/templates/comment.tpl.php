@@ -75,7 +75,7 @@
           print '<img class="cert" src="'. $url . '" alt="' . $user->name . '" />';
         }
         else {
-          echo variable_get('user_picture_default');
+          echo  print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
         }
 
 
