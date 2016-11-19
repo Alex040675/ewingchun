@@ -387,14 +387,15 @@ img, media {
     font-weight: normal; }
   /* line 405, ../sass/components/_articles.scss */
   #comments .comment {
-    margin-bottom: 30px; }
-    /* line 407, ../sass/components/_articles.scss */
+    margin-bottom: 30px;
+    overflow: hidden; }
+    /* line 408, ../sass/components/_articles.scss */
     #comments .comment h3 {
       background: #f2f2f2 none repeat scroll 0 0;
       height: 31px;
       max-width: 612px;
       width: 100%; }
-      /* line 412, ../sass/components/_articles.scss */
+      /* line 413, ../sass/components/_articles.scss */
       #comments .comment h3 a {
         color: #1c57a7;
         font-family: TrajanProBold;
@@ -402,33 +403,32 @@ img, media {
         line-height: 31px;
         text-transform: uppercase;
         text-decoration: none; }
-    /* line 421, ../sass/components/_articles.scss */
+    /* line 422, ../sass/components/_articles.scss */
     #comments .comment .comment__info {
       background: none;
       color: #666; }
 
-/* line 427, ../sass/components/_articles.scss */
+/* line 428, ../sass/components/_articles.scss */
 .review-headingbg {
-  float: left;
   height: 31px;
   margin: 20px 0 0;
-  width: 100%; }
+  width: 70%; }
   /* line 432, ../sass/components/_articles.scss */
   .review-headingbg .review-hleftbg {
-    float: left;
     height: 31px;
-    width: auto; }
+    width: auto;
+    float: left; }
   /* line 438, ../sass/components/_articles.scss */
   .review-headingbg .review-hcenterbg {
     background: #f2f2f2 none repeat scroll 0 0;
-    float: left;
     height: 31px;
-    width: 100%; }
+    width: 96%;
+    clear: both; }
     /* line 444, ../sass/components/_articles.scss */
     .review-headingbg .review-hcenterbg .centerleft a {
       color: #1c57a7;
       float: left;
-      font-family: TrajanProBold;
+      font-family: Trajan Pro Bold;
       font-size: 17px;
       line-height: 31px;
       text-transform: uppercase; }
@@ -441,25 +441,29 @@ img, media {
       width: 265px; }
       /* line 459, ../sass/components/_articles.scss */
       .review-headingbg .review-hcenterbg .centerright .centerright01 {
-        float: left;
         height: auto;
         text-align: left;
         width: 260px; }
-        /* line 464, ../sass/components/_articles.scss */
-        .review-headingbg .review-hcenterbg .centerright .centerright01 ul {
-          float: right;
-          width: 150px; }
-  /* line 471, ../sass/components/_articles.scss */
+  /* line 466, ../sass/components/_articles.scss */
   .review-headingbg .review-hrightbg {
     float: right;
     height: 31px;
     width: auto; }
-  /* line 476, ../sass/components/_articles.scss */
-  .review-headingbg .review-content {
-    float: left;
-    margin: 0 0 15px;
-    padding: 30px 0 0;
-    width: 640px; }
+
+/* line 472, ../sass/components/_articles.scss */
+.review-content {
+  margin: 0 0 15px;
+  padding: 30px 0 0;
+  clear: both;
+  width: 86%; }
+  /* line 477, ../sass/components/_articles.scss */
+  .review-content .review-left {
+    float: left; }
+  /* line 480, ../sass/components/_articles.scss */
+  .review-content .review-right {
+    clear: both;
+    float: right;
+    width: 40%; }
 
 /* line 3, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs label {
