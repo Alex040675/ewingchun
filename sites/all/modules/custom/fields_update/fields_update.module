@@ -91,7 +91,7 @@ function fields_update_process_prods($data, &$context) {
     }
     else {
 
-      watchdog('Else', 'started else');
+      watchdog('Else', 'started else' . $k);
       $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
       watchdog('Else', $data[$k] . ' else');
       $node = node_load($data[$k]);
