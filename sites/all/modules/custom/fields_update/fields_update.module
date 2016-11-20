@@ -24,7 +24,20 @@ function fields_update_fix_prods() {
   $sql->condition('n.type', 'sifu');
   $res = $sql->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
   $data = array_keys($res);
+  $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
 
+  $node = node_load(69);
+  $fc_item->setHostEntity('node', $node);
+  watchdog('Else', 'middle else');
+  $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
+  $fc_wrapper->field_noderef_instructor->set(array($node->field_noderef_instructor['und'][0]['nid']));
+  $fc_wrapper->field_primary_lineage->set(array($node->field_primary_lineage['und'][0]['value']));
+  $fc_wrapper->field_int_stillaffiliated->set($node->field_int_stillaffiliated['und'][0]['value']);
+  $fc_wrapper->field_taxo_rank->set(array($node->$node->field_taxo_rank['und'][0]['tid']));
+  watchdog('Else', 'else save');
+  $fc_wrapper->save(TRUE);
+  node_save($node);
+  echo 1; die();
   $batch = array(
     'operations' => array(
       array('fields_update_process_prods', array($data)),
