@@ -66,8 +66,10 @@ function fields_update_process_prods($data, &$context) {
           $fc_wrapper->field_taxo_rank->set($node->$node->field_taxo_rank['und'][0]['tid']);
           $fc_wrapper->save(TRUE);
           node_save($node);
+          watchdog('1st', 'saved successfully');
         }
         else {
+          watchdog('2st', 'second started');
           $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
 
           $fc_item->setHostEntity('node', $node);
@@ -77,6 +79,7 @@ function fields_update_process_prods($data, &$context) {
 
           $fc_wrapper->save(TRUE);
           node_save($node);
+          watchdog('2st', 'second ended');
         }
       }
 
