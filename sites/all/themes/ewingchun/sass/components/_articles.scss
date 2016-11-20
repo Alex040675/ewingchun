@@ -434,6 +434,7 @@ section{
     height: 31px;
     width: auto;
     float: left;
+    display: none;
   }
 
   .review-hcenterbg {
@@ -442,12 +443,14 @@ section{
     width: 96%;
     float: left;
     .centerleft {
-      color: #1c57a7;
       float: left;
-      font-family: Trajan Pro Bold;
-      font-size: 17px;
-      line-height: 31px;
-      text-transform: uppercase;
+      a{
+        color: #1c57a7;
+        font-family: Trajan Pro Bold;
+        font-size: 17px;
+        line-height: 31px;
+        text-transform: uppercase;
+      }
     }
     .centerright {
       color: #666;
@@ -470,6 +473,7 @@ section{
   .review-hrightbg {
     height: 31px;
     width: auto;
+    display: none;
   }
 }
 .review-content {
@@ -478,10 +482,15 @@ section{
   width: 80%;
   .review-left{
     float: left;
+    width: 10%;
+    margin-right: 2%;
   }
   .review-right {
-    clear: both;
+    width: 88%;
     float: left;
+    p{
+      margin-top: 0;
+    }
   }
   .usearname-title{
     font-size: 16px;
