@@ -60,9 +60,13 @@ function fields_update_process_prods($data, &$context) {
           $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
           $fc_item->setHostEntity('node', $node);
           $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
+          watchdog('1st', 'st started 1');
           $fc_wrapper->field_noderef_instructor->set($node->field_noderef_instructor['und'][0]['nid']);
+          watchdog('1st', 'st started 2');
           $fc_wrapper->field_primary_lineage->set($node->field_primary_lineage['und'][0]['value']);
+          watchdog('1st', 'st started 3');
           $fc_wrapper->field_taxo_rank->set($node->field_taxo_rank['und'][0]['value']);
+          watchdog('1st', 'st started 4');
           $fc_wrapper->field_taxo_rank->set($node->$node->field_taxo_rank['und'][0]['tid']);
           $fc_wrapper->save(TRUE);
           node_save($node);
