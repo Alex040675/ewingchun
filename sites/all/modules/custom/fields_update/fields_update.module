@@ -8,7 +8,7 @@ function fields_update_menu() {
   $items['admin/fix-variants'] = array(
     'title' => 'Order Report',
     'page callback' => 'fields_update_fix_prods',
-    'access arguments' => array('administer content'),
+    'access arguments' => array('administer nodes'),
     'type' => MENU_CALLBACK,
   );
   return $items;
