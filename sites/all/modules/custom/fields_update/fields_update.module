@@ -1,0 +1,92 @@
+<?php
+
+/**
+ * Implements hook_menu.
+ */
+function fields_update_menu() {
+  $items = array();
+  $items['admin/fix-variants'] = array(
+    'title' => 'Order Report',
+    'page callback' => 'fields_update_fix_prods',
+    'access arguments' => array('edit any commerce_order entity'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Set up batch to process to process nodes all nodes
+ * @param null $date
+ */
+function fields_update_fix_prods() {
+  $sql = db_select('node', 'n');
+  $sql->addField('n', 'nid');
+  $sql->condition('n.type', 'sifu');
+  $res = $sql->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
+  print_r($res); die();
+
+  $batch = array(
+    'operations' => array(
+      array('fields_update_process_prods', array($data)),
+    ),
+    'finished' => 'fields_update_batch_finished',
+    'title' => t('updating displays'),
+    'init_message' => t('CSV process ') ,
+    'progress_message' => t('Processed @current out of @total. ') .l("Back to orders", 'admin/commerce/orders') ,
+    'error_message' => t('Report has encountered an error.'),
+  );
+  batch_set($batch);
+  batch_process('admin/commerce/orders');
+}
+function fields_update_process_prods($data, &$context) {
+
+
+  if (!isset($context['sandbox']['progress'])) {
+    $context['sandbox']['progress'] = 0;
+    $context['sandbox']['current_node'] = 0;
+    $context['sandbox']['max'] = count($data);
+
+  }
+
+  $limit = 5;
+  $output = $context['results'];
+  $current_itr = $context['sandbox']['progress'] + $limit;
+  for($k = $context['sandbox']['progress']; $k < $current_itr; $k++) {
+    $node = node_load($data[$k][0]);
+    $product = fields_update_product_load_by_title($node->title);
+    if($product > 0) {
+      $node->field_product['und'][0]['product_id'] = $product;
+      node_save($node);
+    }
+    $context['sandbox']['progress']++;
+    $context['message'] = t('Now processing %oid', array('%oid' => $node->nid));
+  }
+
+  // Inform the batch engine that we are not finished,
+  // and provide an estimation of the completion level we reached.
+  if ($context['sandbox']['progress'] != $context['sandbox']['max']) {
+    $context['finished'] = $context['sandbox']['progress'] / $context['sandbox']['max'];
+  }
+}
+function fields_update_batch_finished($success, $operations) {
+  if ($success) {
+    $message = t('Updates were successfully finished');
+    drupal_set_message($message, 'status');
+  }
+  else {
+    // An error occurred.
+    // $operations contains the operations that remained unprocessed.
+    $error_operation = reset($operations);
+    $message = t('An error occurred while processing %error_operation with arguments: @arguments', array('%error_operation' => $error_operation[0], '@arguments' => print_r($error_operation[1], TRUE)));
+    drupal_set_message($message, 'error');
+  }
+
+}
+
+function fields_update_product_load_by_title($title) {
+  $query = db_select('commerce_product', 'cp');
+  $query->addField('cp', 'product_id');
+  $query->condition('title', $title);
+  $result = $query->execute()->fetchField();
+  return $result;
+}
