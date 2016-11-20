@@ -89,7 +89,7 @@ function fields_update_process_prods($data, &$context) {
       }
 
     }
-    else {
+    elseif(count($node->field_noderef_instructor['und']) == 1) {
       if (isset($node) && $node->nid > 0 ) {
         $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
         watchdog('Else', $data[$k] . ' else');
@@ -105,8 +105,6 @@ function fields_update_process_prods($data, &$context) {
         $fc_wrapper->save(TRUE);
         node_save($node);
       }
-
-
     }
 
     $context['sandbox']['progress']++;
