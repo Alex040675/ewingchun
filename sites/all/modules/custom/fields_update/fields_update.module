@@ -43,7 +43,7 @@ function fields_update_process_prods($data, &$context) {
     $context['sandbox']['current_node'] = 0;
     $context['sandbox']['max'] = count($data);
   }
-
+  echo 'aaaa';
   print_r($context['sandbox']['max']); die();
   $limit = 5;
   $output = $context['results'];
