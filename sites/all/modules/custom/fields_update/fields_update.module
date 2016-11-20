@@ -42,9 +42,9 @@ function fields_update_process_prods($data, &$context) {
     $context['sandbox']['progress'] = 0;
     $context['sandbox']['current_node'] = 0;
     $context['sandbox']['max'] = count($data);
-
   }
 
+  print_r($context['sandbox']['max']); die();
   $limit = 5;
   $output = $context['results'];
   $current_itr = $context['sandbox']['progress'] + $limit;
