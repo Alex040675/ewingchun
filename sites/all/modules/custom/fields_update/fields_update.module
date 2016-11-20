@@ -23,7 +23,8 @@ function fields_update_fix_prods() {
   $sql->addField('n', 'nid');
   $sql->condition('n.type', 'sifu');
   $res = $sql->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
-  print_r($res); die();
+  $data = array_keys($res);
+  print_r($data); die();
 
   $batch = array(
     'operations' => array(
