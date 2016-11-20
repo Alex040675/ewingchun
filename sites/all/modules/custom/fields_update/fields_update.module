@@ -39,8 +39,8 @@ function fields_update_fix_prods() {
   batch_process('admin/commerce/orders');
 }
 function fields_update_process_prods($data, &$context) {
-
-
+  $data = array(67);
+  print_r($data); die();
   if (!isset($context['sandbox']['progress'])) {
     $context['sandbox']['progress'] = 0;
     $context['sandbox']['current_node'] = 0;
@@ -52,24 +52,58 @@ function fields_update_process_prods($data, &$context) {
   $output = $context['results'];
   $current_itr = $context['sandbox']['progress'] + $limit;
   for($k = $context['sandbox']['progress']; $k < $current_itr; $k++) {
-    print_r($data[$k]);
     $node = node_load($data[$k]);
-    print_r($node);
-    die();
-    $product = fields_update_product_load_by_title($node->title);
-    if($product > 0) {
+
+    if (count($node->field_noderef_instructor['und']) > 1 ) {
+      foreach ($node->field_noderef_instructor['und'] as $key => $val) {
+        if ($key == 0) {
+          $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
+
+          $fc_item->setHostEntity('node', $node);
+
+          $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
+          $fc_wrapper->field_noderef_instructor->set($node->field_noderef_instructor['und'][0]['nid']);
+          $fc_wrapper->field_primary_lineage->set($node->field_primary_lineage['und'][0]['value']);
+          $fc_wrapper->field_taxo_rank->set($node->field_taxo_rank['und'][0]['value']);
+          $fc_wrapper->field_taxo_rank->set($node->$node->field_taxo_rank['und'][0]['tid']);
+
+          $fc_wrapper->save(TRUE);
+          node_save($node);
+        }
+        else {
+          $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
+
+          $fc_item->setHostEntity('node', $node);
+
+          $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
+          $fc_wrapper->field_noderef_instructor->set($node->field_noderef_instructor['und'][0]['nid']);
+
+          $fc_wrapper->save(TRUE);
+          node_save($node);
+        }
+      }
+
+    }
+    else {
       $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
 
       $fc_item->setHostEntity('node', $node);
 
       $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
-      $fc_wrapper->field_source_txt_filename->set('my_text_file.txt');
-      $txt_file_content = "A whole bunch of content.";
-      $fc_wrapper->field_source_txt_content->set($txt_file_content);
+      $fc_wrapper->field_noderef_instructor->set($node->field_noderef_instructor['und'][0]['nid']);
+      $fc_wrapper->field_primary_lineage->set($node->field_primary_lineage['und'][0]['value']);
+      $fc_wrapper->field_taxo_rank->set($node->field_taxo_rank['und'][0]['value']);
+      $fc_wrapper->field_taxo_rank->set($node->$node->field_taxo_rank['und'][0]['tid']);
 
       $fc_wrapper->save(TRUE);
       node_save($node);
+
     }
+
+
+    die();
+
+
     $context['sandbox']['progress']++;
     $context['message'] = t('Now processing %oid', array('%oid' => $node->nid));
   }
