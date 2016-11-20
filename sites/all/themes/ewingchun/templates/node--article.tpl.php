@@ -105,7 +105,7 @@ if ($page == 1): //if node is being displayed as a node
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<div class="middle-center"> <?php print strip_tags($node->body['und'][0]['value'], "<p> <a>, <br> <b> <strong> <img> <i> "); ?> </div>
+			<div class="middle-center"> <?php print strip_tags($node->body['und'][0]['value'], "<p> <a>, <br> <b> <strong> <img> <i>"); ?> </div>
 			<div class="artical-sn"> <?php print $sharethis; ?> </div>
 		</div>
 	</div>
