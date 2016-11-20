@@ -73,7 +73,7 @@ function fields_update_process_prods($data, &$context) {
           watchdog('1st', 'saved successfully');
         }
         else {
-          $node = node_load($data[$k]);
+
           watchdog('2st', 'second started');
           $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
 
@@ -90,6 +90,7 @@ function fields_update_process_prods($data, &$context) {
 
     }
     else {
+      $node = node_load($data[$k]);
       watchdog('Else', 'started else');
       $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
       watchdog('Else', '2 else');
