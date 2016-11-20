@@ -55,7 +55,7 @@ function fields_update_process_prods($data, &$context) {
 
     if (count($node->field_noderef_instructor['und']) > 1 ) {
       foreach ($node->field_noderef_instructor['und'] as $key => $val) {
-
+        // In new version of the site have only multiple instruction value therefore if 0 we try to save all.
         if ($key == 0) {
           $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
           $fc_item->setHostEntity('node', $node);
