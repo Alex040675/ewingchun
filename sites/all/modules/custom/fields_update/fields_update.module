@@ -40,7 +40,6 @@ function fields_update_fix_prods() {
 }
 function fields_update_process_prods($data, &$context) {
   $data = array(67);
-  print_r($data); die();
   if (!isset($context['sandbox']['progress'])) {
     $context['sandbox']['progress'] = 0;
     $context['sandbox']['current_node'] = 0;
@@ -101,7 +100,6 @@ function fields_update_process_prods($data, &$context) {
     }
 
 
-    die();
 
 
     $context['sandbox']['progress']++;
