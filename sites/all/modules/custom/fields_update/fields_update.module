@@ -1,5 +1,5 @@
 <?php
-echo 111;
+
 /**
  * Implements hook_menu.
  */
@@ -24,16 +24,15 @@ function fields_update_fix_prods() {
   $sql->condition('n.type', 'sifu');
   $res = $sql->execute()->fetchAllAssoc('nid', PDO::FETCH_ASSOC);
   $data = array_keys($res);
-  print_r($data); die();
 
   $batch = array(
     'operations' => array(
       array('fields_update_process_prods', array($data)),
     ),
     'finished' => 'fields_update_batch_finished',
-    'title' => t('updating displays'),
-    'init_message' => t('CSV process ') ,
-    'progress_message' => t('Processed @current out of @total. ') .l("Back to orders", 'admin/commerce/orders') ,
+    'title' => t('updating nodes'),
+    'init_message' => t('nodes process ') ,
+    'progress_message' => t('Processed @current out of @total. ') .l("Back to admins", 'admin') ,
     'error_message' => t('Report has encountered an error.'),
   );
   batch_set($batch);
@@ -53,10 +52,22 @@ function fields_update_process_prods($data, &$context) {
   $output = $context['results'];
   $current_itr = $context['sandbox']['progress'] + $limit;
   for($k = $context['sandbox']['progress']; $k < $current_itr; $k++) {
-    $node = node_load($data[$k][0]);
+    print_r($data[$k]);
+    $node = node_load($data[$k]);
+    print_r($node);
+    die();
     $product = fields_update_product_load_by_title($node->title);
     if($product > 0) {
-      $node->field_product['und'][0]['product_id'] = $product;
+      $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
+
+      $fc_item->setHostEntity('node', $node);
+
+      $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
+      $fc_wrapper->field_source_txt_filename->set('my_text_file.txt');
+      $txt_file_content = "A whole bunch of content.";
+      $fc_wrapper->field_source_txt_content->set($txt_file_content);
+
+      $fc_wrapper->save(TRUE);
       node_save($node);
     }
     $context['sandbox']['progress']++;
