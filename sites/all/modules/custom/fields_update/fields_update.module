@@ -33,7 +33,7 @@ function fields_update_fix_prods() {
   $fc_wrapper->field_noderef_instructor->set(array($node->field_noderef_instructor['und'][0]['nid']));
   $fc_wrapper->field_primary_lineage->set(array($node->field_primary_lineage['und'][0]['value']));
   $fc_wrapper->field_int_stillaffiliated->set(array($node->field_int_stillaffiliated['und'][0]['value']));
-  print_r($node->$node->field_taxo_rank['und'][0]['tid']); 
+  print_r($node->$node->field_taxo_rank);
   $fc_wrapper->field_taxo_rank->set(array($node->$node->field_taxo_rank['und'][0]['tid']));
   watchdog('Else', 'else save');
   $fc_wrapper->save(TRUE);
