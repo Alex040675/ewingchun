@@ -89,16 +89,17 @@ function fields_update_process_prods($data, &$context) {
 
     }
     else {
+      watchdog('Else', 'started else');
       $fc_item = entity_create('field_collection_item', array('field_name' => 'field_lineage_information'));
 
       $fc_item->setHostEntity('node', $node);
-
+      watchdog('Else', 'middle else');
       $fc_wrapper = entity_metadata_wrapper('field_collection_item', $fc_item);
-      $fc_wrapper->field_noderef_instructor->set($node->field_noderef_instructor['und'][0]['nid']);
-      $fc_wrapper->field_primary_lineage->set($node->field_primary_lineage['und'][0]['value']);
-      $fc_wrapper->field_taxo_rank->set($node->field_taxo_rank['und'][0]['value']);
-      $fc_wrapper->field_taxo_rank->set($node->$node->field_taxo_rank['und'][0]['tid']);
-
+      $fc_wrapper->field_noderef_instructor->set(array($node->field_noderef_instructor['und'][0]['nid']));
+      $fc_wrapper->field_primary_lineage->set(arra($node->field_primary_lineage['und'][0]['value']));
+      $fc_wrapper->field_taxo_rank->set(array($node->field_taxo_rank['und'][0]['value']));
+      $fc_wrapper->field_taxo_rank->set(array($node->$node->field_taxo_rank['und'][0]['tid']));
+      watchdog('Else', 'else save');
       $fc_wrapper->save(TRUE);
       node_save($node);
 
