@@ -50,8 +50,9 @@ function fields_update_process_prods($data, &$context) {
   $current_itr = $context['sandbox']['progress'] + $limit;
   for($k = $context['sandbox']['progress']; $k < $current_itr; $k++) {
     $node = node_load($data[$k]);
+    watchdog('node', $node->nid);
 
-    if (count($node->field_noderef_instructor['und']) > 1 ) {
+   /* if (count($node->field_noderef_instructor['und']) > 1 ) {
       foreach ($node->field_noderef_instructor['und'] as $key => $val) {
         // In new version of the site have only multiple instruction value therefore if 0 we try to save all.
         if ($key == 0) {
@@ -103,7 +104,7 @@ function fields_update_process_prods($data, &$context) {
         $fc_wrapper->save(TRUE);
         node_save($node);
       }
-    }
+    }*/
 
     $context['sandbox']['progress']++;
     $context['message'] = t('Now processing %oid', array('%oid' => $node->nid));
