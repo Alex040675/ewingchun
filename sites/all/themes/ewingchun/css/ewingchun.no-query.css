@@ -2223,80 +2223,94 @@ footer {
   /* line 568, ../sass/components/_mobile.scss */
   .node-type-blog .l-page .articletitle-leftp .articalmain .middle-center {
     clear: both; }
+  /* line 574, ../sass/components/_mobile.scss */
+  .node-type-blog .review-headingbg, .node-type-blog .review-content {
+    width: 100%; }
+    /* line 576, ../sass/components/_mobile.scss */
+    .node-type-blog .review-headingbg .review-right, .node-type-blog .review-content .review-right {
+      float: left;
+      width: 100%; }
+  /* line 581, ../sass/components/_mobile.scss */
+  .node-type-blog .review-headingbg .review-hcenterbg .centerright {
+    float: left;
+    clear: both; }
+  /* line 585, ../sass/components/_mobile.scss */
+  .node-type-blog .review-content .review-left {
+    margin-top: 30px; }
 
-  /* line 579, ../sass/components/_mobile.scss */
+  /* line 593, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .middle .articalmain .middle-center {
     float: left; }
-  /* line 583, ../sass/components/_mobile.scss */
+  /* line 597, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .middle .middleleft {
     margin-right: 0;
     padding-right: 0;
     width: 100%; }
-    /* line 587, ../sass/components/_mobile.scss */
+    /* line 601, ../sass/components/_mobile.scss */
     .node-type-article .articletitle-leftp .middle .middleleft .middleleftimg {
       width: 48%; }
-      /* line 589, ../sass/components/_mobile.scss */
+      /* line 603, ../sass/components/_mobile.scss */
       .node-type-article .articletitle-leftp .middle .middleleft .middleleftimg .left {
         width: 100%; }
-        /* line 591, ../sass/components/_mobile.scss */
+        /* line 605, ../sass/components/_mobile.scss */
         .node-type-article .articletitle-leftp .middle .middleleft .middleleftimg .left img {
           width: 100%;
           height: auto; }
-    /* line 597, ../sass/components/_mobile.scss */
+    /* line 611, ../sass/components/_mobile.scss */
     .node-type-article .articletitle-leftp .middle .middleleft .middleleftimg1 {
       float: right;
       clear: none;
       width: 48%; }
-      /* line 601, ../sass/components/_mobile.scss */
+      /* line 615, ../sass/components/_mobile.scss */
       .node-type-article .articletitle-leftp .middle .middleleft .middleleftimg1 span {
         left: 40%;
         bottom: 30%; }
-  /* line 610, ../sass/components/_mobile.scss */
+  /* line 624, ../sass/components/_mobile.scss */
   .node-type-article .review-headingbg, .node-type-article .review-content {
     width: 100%; }
-    /* line 612, ../sass/components/_mobile.scss */
+    /* line 626, ../sass/components/_mobile.scss */
     .node-type-article .review-headingbg .review-right, .node-type-article .review-content .review-right {
       float: left;
       width: 100%; }
-  /* line 617, ../sass/components/_mobile.scss */
+  /* line 631, ../sass/components/_mobile.scss */
   .node-type-article .review-headingbg .review-hcenterbg .centerright {
     float: left;
     clear: both; }
-  /* line 621, ../sass/components/_mobile.scss */
+  /* line 635, ../sass/components/_mobile.scss */
   .node-type-article .review-content .review-left {
     margin-top: 30px; }
 
-  /* line 626, ../sass/components/_mobile.scss */
+  /* line 640, ../sass/components/_mobile.scss */
   .page-articles .view-article .view-filters .views-exposed-widget {
     clear: both;
     width: 100% !important; }
 
-  /* line 632, ../sass/components/_mobile.scss */
+  /* line 646, ../sass/components/_mobile.scss */
   .page-schools-list .l-main .view-local-resources .views-widget-filter-country {
     clear: both; }
-  /* line 635, ../sass/components/_mobile.scss */
+  /* line 649, ../sass/components/_mobile.scss */
   .page-schools-list .l-main .view-local-resources .views-widget-filter-province {
     clear: both; }
-  /* line 638, ../sass/components/_mobile.scss */
+  /* line 652, ../sass/components/_mobile.scss */
   .page-schools-list .l-main .view-local-resources .view-filters #edit-keys-wrapper,
   .page-schools-list .l-main .view-local-resources .views-widget-filter-country,
   .page-schools-list .l-main .view-local-resources .views-widget-filter-province {
     width: 100%; } }
 @media screen and (max-width: 960px) {
-  /* line 648, ../sass/components/_mobile.scss */
+  /* line 662, ../sass/components/_mobile.scss */
   #block-system-main-menu {
     display: none; }
 
-  /* line 651, ../sass/components/_mobile.scss */
+  /* line 665, ../sass/components/_mobile.scss */
   .breadcrumb {
     clear: both; }
 
-  /* line 655, ../sass/components/_mobile.scss */
+  /* line 669, ../sass/components/_mobile.scss */
   header #block-block-11 {
     float: right;
     margin-right: 20px;
     display: block; }
-    /* line 659, ../sass/components/_mobile.scss */
+    /* line 673, ../sass/components/_mobile.scss */
     header #block-block-11 button {
       background: #17335b;
       border: none;
@@ -2304,113 +2318,113 @@ footer {
       text-transform: uppercase;
       padding: 10px; }
 
-  /* line 669, ../sass/components/_mobile.scss */
+  /* line 683, ../sass/components/_mobile.scss */
   html body {
     background: #fff !important; }
-    /* line 673, ../sass/components/_mobile.scss */
+    /* line 687, ../sass/components/_mobile.scss */
     html body .l-page .l-header .active_menu #block-system-main-menu {
       display: block;
       width: 100%; }
-      /* line 676, ../sass/components/_mobile.scss */
+      /* line 690, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu ul {
         width: 100%; }
-      /* line 679, ../sass/components/_mobile.scss */
+      /* line 693, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu li {
         float: none;
         width: 100%;
         margin: 0 !important; }
-        /* line 683, ../sass/components/_mobile.scss */
+        /* line 697, ../sass/components/_mobile.scss */
         html body .l-page .l-header .active_menu #block-system-main-menu li a {
           padding: 0 !important;
           text-indent: 20px; }
 
-  /* line 694, ../sass/components/_mobile.scss */
+  /* line 708, ../sass/components/_mobile.scss */
   body .l-page {
     width: 100% !important;
     border: none; }
-    /* line 697, ../sass/components/_mobile.scss */
+    /* line 711, ../sass/components/_mobile.scss */
     body .l-page .form-text {
       background: #fff !important;
       max-width: 100%; }
-    /* line 701, ../sass/components/_mobile.scss */
+    /* line 715, ../sass/components/_mobile.scss */
     body .l-page .l-main {
       width: 96%;
       background: #ebe9e1; }
-    /* line 706, ../sass/components/_mobile.scss */
+    /* line 720, ../sass/components/_mobile.scss */
     body .l-page .l-region--sidebar-second #block-quicktabs-the-latest li a {
       font-size: 11px !important; }
 
-  /* line 713, ../sass/components/_mobile.scss */
+  /* line 727, ../sass/components/_mobile.scss */
   body.not-front .l-page .l-main {
     background: #FFFFFF; }
 
-  /* line 717, ../sass/components/_mobile.scss */
+  /* line 731, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     box-sizing: border-box;
     width: 49%; }
-  /* line 721, ../sass/components/_mobile.scss */
+  /* line 735, ../sass/components/_mobile.scss */
   #block-block-10 .register-link {
     margin: 15px 0 0 10px; }
-  /* line 724, ../sass/components/_mobile.scss */
+  /* line 738, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-right {
     padding: 15px 10px; }
 
-  /* line 731, ../sass/components/_mobile.scss */
+  /* line 745, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table th, .page-schools-list .l-main table th a {
     font-size: 12px; }
-  /* line 734, ../sass/components/_mobile.scss */
+  /* line 748, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table td, .page-schools-list .l-main table td a {
     font-size: 11px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 742, ../sass/components/_mobile.scss */
+  /* line 756, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 746, ../sass/components/_mobile.scss */
+  /* line 760, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 752, ../sass/components/_mobile.scss */
+  /* line 766, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 759, ../sass/components/_mobile.scss */
+  /* line 773, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 762, ../sass/components/_mobile.scss */
+    /* line 776, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 773, ../sass/components/_mobile.scss */
+  /* line 787, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 783, ../sass/components/_mobile.scss */
+  /* line 797, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 793, ../sass/components/_mobile.scss */
+  /* line 807, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 799, ../sass/components/_mobile.scss */
+  /* line 813, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 803, ../sass/components/_mobile.scss */
+  /* line 817, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 809, ../sass/components/_mobile.scss */
+  /* line 823, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }

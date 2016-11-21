@@ -571,6 +571,20 @@
         }
       }
     }
+    .review-headingbg, .review-content {
+      width: 100%;
+      .review-right {
+        float: left;
+        width: 100%;
+      }
+    }
+    .review-headingbg .review-hcenterbg .centerright {
+      float: left;
+      clear: both;
+    }
+    .review-content .review-left{
+      margin-top: 30px;
+    }
   }
   .node-type-article {
     .articletitle-leftp {
