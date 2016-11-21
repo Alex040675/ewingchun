@@ -2413,7 +2413,7 @@ footer {
     display: none; }
   /* line 693, ../sass/components/_mobile.scss */
   .page-node-add .form-select {
-    max-width: 95%;
+    max-width: 70%;
     overflow: hidden; }
   /* line 698, ../sass/components/_mobile.scss */
   .page-node-add .link-field-column {
@@ -2421,7 +2421,7 @@ footer {
     width: 100%; }
   /* line 702, ../sass/components/_mobile.scss */
   .page-node-add .description {
-    max-width: 90%; } }
+    max-width: 70%; } }
 @media screen and (max-width: 960px) {
   /* line 710, ../sass/components/_mobile.scss */
   #block-system-main-menu {
