@@ -670,6 +670,25 @@
     width: 100%;
   }
 }
+  .page-node-add {
+    .vertical-tabs{
+    ul.vertical-tabs-list {
+      float: none;
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+   }
+    #edit-actions{
+      margin-top: 10px;
+    }
+    .field-multiple-drag{
+      display: none;
+    }
+    .form-select{
+      max-width: 100%;
+    }
+  }
 }
 
 
