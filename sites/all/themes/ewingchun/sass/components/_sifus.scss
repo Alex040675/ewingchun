@@ -321,6 +321,7 @@
     width: 100%;
     #more{
       clear: both;
+      padding: 0 2%;
     }
   }
   .primary-center >.primary01{
@@ -381,7 +382,7 @@
   }
   .primary-top {
     background: rgba(0, 0, 0, 0) url("../images/primary-top.jpg") no-repeat scroll left top;
-    background-size: 100%;
+    background-size: 100% 100%;
     color: #1c57a7;
     text-transform: uppercase;
     float: left;
@@ -392,12 +393,13 @@
     width: 68%;
   }
   .primary-partleft{
-    width: 70%;
+    width: 100%;
     .primary-center {
       background: #ededed none repeat scroll 0 0;
       float: left;
       height: auto;
       padding: 0;
+      overflow: hidden;
       width: 100%;
       .primary02 {
         background: #ededed none repeat scroll 0 0;
@@ -440,6 +442,12 @@
         height: 7px;
         width: 100%;
       }
+      .drupal-links {
+        margin: 20px 0 0 2%;
+      }
+      .comment-form {
+        padding: 2%;
+      }
     }
     .primary-top{
       width: 98%;
@@ -447,8 +455,8 @@
   }
   .student-sifus {
     float: left;
-    padding: 45px 0 0;
-    width: 100%;
+    padding: 45px 0 0 2%;
+    width: 98%;
     h3{
       margin: 0;
     }
