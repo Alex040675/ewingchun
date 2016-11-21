@@ -330,6 +330,12 @@
       .view-sifu .view-filters {
         margin-top: 20px;
         top: 0 !important;
+        .views-submit-button{
+          clear: both;
+        }
+        label{
+          float: none;
+        }
       }
       table {
         width: 100%;
