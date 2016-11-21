@@ -155,6 +155,12 @@
     }
   }
   }
+  .node-type-video{
+    iframe{
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   body {
