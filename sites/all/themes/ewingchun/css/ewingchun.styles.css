@@ -2848,6 +2848,23 @@ html.js .form-autocomplete {
     float: left;
     margin-right: 10px; }
 
+/* line 324, ../sass/components/_schools.scss */
+.page-node-add-resource .form-select {
+  -moz-appearance: none;
+  background: transparent url("../images/select-left.png") no-repeat scroll left center;
+  background-size: 100% 100%;
+  border: medium none;
+  font-size: 11px;
+  height: 21px !important;
+  line-height: 11px;
+  opacity: 1 !important;
+  padding-left: 2px;
+  padding-top: 2px;
+  position: relative;
+  text-indent: 0.01px;
+  max-width: 293px;
+  width: 100% !important; }
+
 /* line 3, ../sass/components/_sifus.scss */
 .page-sifus .view-sifu .view-header {
   overflow: hidden;
