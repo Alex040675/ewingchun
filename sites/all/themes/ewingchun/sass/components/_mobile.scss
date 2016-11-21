@@ -1,12 +1,13 @@
 @media screen and (max-width: 480px){
   header{
     #block-block-11{
-      margin: 0 2px 0 0 !important;
+      margin: 0 0 0 2px !important;
     }
     #block-search-form{
       padding: 5px 3px 0;
       width: 235px !important;
-      margin-left: 3px !important;
+      margin-left: 0 !important;
+      margin-right: 3px !important;
       .form-text{
         width: 150px !important;
       }
@@ -179,7 +180,10 @@
       ul {
         li {
           width: 49%;
-          margin-bottom: 10px;
+        }
+        li.first,li.second{
+          border-bottom: none !important;
+          border-radius: 0 !important;
         }
       }
     }
@@ -187,6 +191,8 @@
       float: none;
       width: 120px;
       margin: 0 auto;
+      clear: both;
+      padding-top: 10px;
       #links {
         width: 110px;
         margin: 0 auto;
@@ -207,9 +213,6 @@
           height: auto;
         }
       }
-      .l-region--branding {
-
-      }
     }
 
     .l-region--header {
@@ -217,8 +220,8 @@
       width: 100%;
     }
     #block-block-11 {
-      float: right;
-      margin-right: 20px;
+      float: left !important;
+      margin-right: 0 !important;
       display: block;
       button {
         background: #17335b;
@@ -237,8 +240,8 @@
     }
     #block-search-form {
       width: 260px;
-      float: left;
-      margin: 15px 0 0 20px;
+      float: right;
+      margin: 15px 20px 0 0;
       clear: none;
     }
   }
@@ -714,7 +717,6 @@
       }
       .l-main {
         width: 96%;
-        background: #ebe9e1;
       }
       .l-region--sidebar-second{
         #block-quicktabs-the-latest li a{
