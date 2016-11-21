@@ -903,7 +903,11 @@ footer{
     margin-right: 10px;
   }
 }
+  .grippie{
+    display: none;
+  }
 }
+
 .page-node-add-article {
   .form-select {
     -moz-appearance: none;
@@ -920,5 +924,33 @@ footer{
     text-indent: 0.01px;
     max-width: 293px;
     width: 100% !important;
+  }
+}
+.page-node-add-sifu{
+  #field-lineage-information-values{
+    th,tr{
+      background-color: #fff;
+    }
+    .form-submit{
+      margin-top: 10px;
+    }
+  }
+  #edit-field-system,#edit-taxonomy-vocabulary-9,#edit-taxonomy-vocabulary-11{
+    .form-select {
+      -moz-appearance: none;
+      background: transparent url("../images/select-left.png") no-repeat scroll left center;
+      background-size: 100% 100%;
+      border: medium none;
+      font-size: 11px;
+      height: 21px !important;
+      line-height: 11px;
+      opacity: 1 !important;
+      padding-left: 2px;
+      padding-top: 2px;
+      position: relative;
+      text-indent: 0.01px;
+      max-width: 293px;
+      width: 100% !important;
+    }
   }
 }

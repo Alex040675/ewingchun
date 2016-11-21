@@ -1798,9 +1798,35 @@ footer {
   font-size: 14px !important;
   padding: 10px 20px;
   margin-right: 10px; }
+/* line 906, ../sass/components/_main.scss */
+.page-node-add .grippie {
+  display: none; }
 
-/* line 908, ../sass/components/_main.scss */
+/* line 912, ../sass/components/_main.scss */
 .page-node-add-article .form-select {
+  -moz-appearance: none;
+  background: transparent url("../images/select-left.png") no-repeat scroll left center;
+  background-size: 100% 100%;
+  border: medium none;
+  font-size: 11px;
+  height: 21px !important;
+  line-height: 11px;
+  opacity: 1 !important;
+  padding-left: 2px;
+  padding-top: 2px;
+  position: relative;
+  text-indent: 0.01px;
+  max-width: 293px;
+  width: 100% !important; }
+
+/* line 931, ../sass/components/_main.scss */
+.page-node-add-sifu #field-lineage-information-values th, .page-node-add-sifu #field-lineage-information-values tr {
+  background-color: #fff; }
+/* line 934, ../sass/components/_main.scss */
+.page-node-add-sifu #field-lineage-information-values .form-submit {
+  margin-top: 10px; }
+/* line 939, ../sass/components/_main.scss */
+.page-node-add-sifu #edit-field-system .form-select, .page-node-add-sifu #edit-taxonomy-vocabulary-9 .form-select, .page-node-add-sifu #edit-taxonomy-vocabulary-11 .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
   background-size: 100% 100%;
