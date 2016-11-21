@@ -906,6 +906,11 @@ footer{
   .grippie{
     display: none;
   }
+  table{
+    th,tr{
+      background-color: #fff;
+    }
+  }
 }
 
 .page-node-add-article {
@@ -928,9 +933,6 @@ footer{
 }
 .page-node-add-sifu{
   #field-lineage-information-values{
-    th,tr{
-      background-color: #fff;
-    }
     .form-submit{
       margin-top: 10px;
     }
