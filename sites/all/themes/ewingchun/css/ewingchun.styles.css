@@ -1971,7 +1971,7 @@ footer {
   /* line 159, ../sass/components/_mobile.scss */
   .node-type-video iframe {
     width: 100% !important;
-    height: auto !important; } }
+    height: 270px !important; } }
 @media screen and (max-width: 768px) {
   /* line 167, ../sass/components/_mobile.scss */
   body .l-page {
