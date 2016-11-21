@@ -692,11 +692,15 @@
     }
     .form-select{
       max-width: 95%;
+      overflow: hidden;
     }
 
     .link-field-column {
       float:none;
       width: 100%;
+    }
+    .description{
+      max-width: 90%;
     }
   }
 }
