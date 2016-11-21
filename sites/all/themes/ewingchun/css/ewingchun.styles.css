@@ -1776,17 +1776,16 @@ footer {
   height: 28px;
   padding: 5px 10px 0 10px;
   background: #d2d2d2;
-  float: right;
   width: 35%;
   border-radius: 3px 0 0 0;
   margin-top: 117px; }
-  /* line 886, ../sass/components/_main.scss */
+  /* line 885, ../sass/components/_main.scss */
   .page-node-add-article #block-search-form #search-block-form .container-inline {
     border-radius: 0;
     background: none;
     box-shadow: none;
     padding: 0; }
-  /* line 892, ../sass/components/_main.scss */
+  /* line 891, ../sass/components/_main.scss */
   .page-node-add-article #block-search-form #search-block-form .form-text {
     background: #fff;
     border: medium none;
@@ -1796,41 +1795,39 @@ footer {
     width: 150px;
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset; }
-  /* line 902, ../sass/components/_main.scss */
+  /* line 901, ../sass/components/_main.scss */
   .page-node-add-article #block-search-form #search-block-form .form-submit {
     background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
     border: medium none;
     cursor: pointer;
-    float: right;
     margin-left: 10px;
     height: 23px;
     width: 18px;
     font-size: 0; }
-  /* line 912, ../sass/components/_main.scss */
+  /* line 910, ../sass/components/_main.scss */
   .page-node-add-article #block-search-form #search-block-form .form-item-search-block-form:before {
     content: "Search:";
     color: #666;
     font-size: 12px;
     font-weight: 700; }
-/* line 920, ../sass/components/_main.scss */
+/* line 918, ../sass/components/_main.scss */
 .page-node-add-article .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-  float: left;
   height: 26px;
   margin: 0 0 10px;
   max-width: 280px;
   padding: 5px;
   width: 96%;
   background: #fff; }
-/* line 932, ../sass/components/_main.scss */
+/* line 929, ../sass/components/_main.scss */
 .page-node-add-article textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff; }
-/* line 938, ../sass/components/_main.scss */
+/* line 935, ../sass/components/_main.scss */
 .page-node-add-article .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
@@ -1844,6 +1841,7 @@ footer {
   padding-top: 2px;
   position: relative;
   text-indent: 0.01px;
+  max-width: 293px;
   width: 100% !important; }
 
 @media screen and (max-width: 480px) {

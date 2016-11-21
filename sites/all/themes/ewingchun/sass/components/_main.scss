@@ -878,7 +878,6 @@ footer{
     height: 28px;
     padding: 5px 10px 0 10px;
     background: #d2d2d2;
-    float: right;
     width: 35%;
     border-radius: 3px 0 0 0;
     margin-top: 117px;
@@ -903,7 +902,6 @@ footer{
         background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
         border: medium none;
         cursor: pointer;
-        float: right;
         margin-left: 10px;
         height: 23px;
         width: 18px;
@@ -921,7 +919,6 @@ footer{
     border: 1px solid #bfbfbf;
     border-radius: 2px;
     box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-    float: left;
     height: 26px;
     margin: 0 0 10px;
     max-width: 280px;
@@ -948,6 +945,7 @@ footer{
     padding-top: 2px;
     position: relative;
     text-indent: 0.01px;
+    max-width: 293px;
     width: 100% !important;
   }
 }
