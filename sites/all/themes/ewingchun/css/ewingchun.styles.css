@@ -2164,7 +2164,7 @@ footer {
 
   /* line 391, ../sass/components/_mobile.scss */
   .page-videos .view-videos .view-filters {
-    width: 100%; }
+    width: 100% !important; }
     /* line 393, ../sass/components/_mobile.scss */
     .page-videos .view-videos .view-filters #edit-title-wrapper, .page-videos .view-videos .view-filters #edit-tid-wrapper {
       float: none;
