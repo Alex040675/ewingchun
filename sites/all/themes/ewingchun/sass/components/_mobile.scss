@@ -1,3 +1,17 @@
+@media screen and (max-width: 320px) {
+  .node-type-video {
+    .l-main{
+    .field--name-field-emvideo {
+      width: 95%;
+      margin: 0 auto;
+      iframe {
+        width: 100% !important;
+        height: 220px !important;
+      }
+    }
+  }
+  }
+}
 @media screen and (max-width: 480px){
   header{
     #block-block-11{
