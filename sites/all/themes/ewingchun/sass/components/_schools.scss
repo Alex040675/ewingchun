@@ -4,14 +4,16 @@ html.js .form-autocomplete{
 .page-schools-list{
   .view-local-resources{
     .views-widget-filter-country{
-      float: left;
-      width: 31%;
+      float: none;
+      width: 100%;
+      clear: both;
       padding: 0;
-      margin-right: 2%;
+      margin-bottom: 10px;
     }
     .views-widget-filter-province {
-      width: 31%;
-      float: left;
+      width: 100%;
+      float: none;
+      clear: both;
       padding: 0;
     }
     label{
@@ -19,6 +21,7 @@ html.js .form-autocomplete{
     }
     .view-header {
       overflow: hidden;
+      margin-bottom: -100px;
       .sifuheaderleft {
         float: left;
         width: 70%;
@@ -126,9 +129,9 @@ html.js .form-autocomplete{
         width: 100%;
       }
       #edit-keys-wrapper{
-        float: left;
-        width: 31%;
-        margin-right: 2%;
+        float: none;
+        width: 100%;
+        margin-right: 0;
         padding: 0;
         .views-widget{
 

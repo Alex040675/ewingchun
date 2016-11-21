@@ -15,6 +15,7 @@
     }
     .view-header {
       overflow: hidden;
+      margin-bottom: -50px;
       .sifuheaderleft {
         float: left;
         width: 70%;
@@ -224,7 +225,6 @@
             font-size: 12px;
             height: 83px;
             margin-bottom: 0;
-            margin-top: -15px;
             padding: 0 0 10px 10px;
             text-align: center;
             width: 17%;
@@ -244,6 +244,7 @@
           float: right;
           padding: 3px 0 0 4%;
           width: 96%;
+          text-align: center;
         }
         .ar-font12 {
           color: #000;
@@ -285,6 +286,10 @@
         color: #000;
         float: left;
         min-width: 180px;
+        img{
+          width: 100%;
+          height: auto;
+        }
         .field--name-field-sifu{
           float: right;
           margin-left: 10px;
@@ -309,7 +314,7 @@
         width: 35%;
         margin-right: 2%;
         .middleleftimg {
-          float: left;
+          /*float: left;*/
           height: auto;
           padding: 0;
           .img-caption {
@@ -324,6 +329,9 @@
       }
       .middle{
         clear: both;
+        .left{
+          float: none;
+        }
       }
     }
   }
@@ -364,6 +372,10 @@
         color: #1c57a7;
         font-size: 14px;
         line-height: 25px;
+      }
+      a:before{
+        content: "-";
+        color: #1c57a7;
       }
     }
   }
