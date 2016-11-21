@@ -1772,7 +1772,7 @@ footer {
   display: none; }
 
 /* line 877, ../sass/components/_main.scss */
-.page-node-add-article #block-search-form {
+.page-node-add #block-search-form {
   height: 28px;
   padding: 5px 10px 0 10px;
   background: #d2d2d2;
@@ -1780,13 +1780,13 @@ footer {
   border-radius: 3px 0 0 0;
   margin-top: 117px; }
   /* line 885, ../sass/components/_main.scss */
-  .page-node-add-article #block-search-form #search-block-form .container-inline {
+  .page-node-add #block-search-form #search-block-form .container-inline {
     border-radius: 0;
     background: none;
     box-shadow: none;
     padding: 0; }
   /* line 891, ../sass/components/_main.scss */
-  .page-node-add-article #block-search-form #search-block-form .form-text {
+  .page-node-add #block-search-form #search-block-form .form-text {
     background: #fff;
     border: medium none;
     font-size: 11px;
@@ -1796,7 +1796,7 @@ footer {
     border-radius: 2px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5) inset; }
   /* line 901, ../sass/components/_main.scss */
-  .page-node-add-article #block-search-form #search-block-form .form-submit {
+  .page-node-add #block-search-form #search-block-form .form-submit {
     background: transparent url("../images/searchicon.jpg") no-repeat scroll 0 0;
     border: medium none;
     cursor: pointer;
@@ -1805,13 +1805,13 @@ footer {
     width: 18px;
     font-size: 0; }
   /* line 910, ../sass/components/_main.scss */
-  .page-node-add-article #block-search-form #search-block-form .form-item-search-block-form:before {
+  .page-node-add #block-search-form #search-block-form .form-item-search-block-form:before {
     content: "Search:";
     color: #666;
     font-size: 12px;
     font-weight: 700; }
 /* line 918, ../sass/components/_main.scss */
-.page-node-add-article .form-text {
+.page-node-add .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
@@ -1822,13 +1822,13 @@ footer {
   width: 96%;
   background: #fff; }
 /* line 929, ../sass/components/_main.scss */
-.page-node-add-article textarea {
+.page-node-add textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff; }
 /* line 935, ../sass/components/_main.scss */
-.page-node-add-article .form-select {
+.page-node-add .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
   background-size: 100% 100%;
@@ -1843,6 +1843,17 @@ footer {
   text-indent: 0.01px;
   max-width: 293px;
   width: 100% !important; }
+/* line 951, ../sass/components/_main.scss */
+.page-node-add .form-submit {
+  background: #1d58a8 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 4px;
+  color: #fff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px !important;
+  padding: 10px 40px;
+  text-decoration: none !important; }
 
 @media screen and (max-width: 480px) {
   /* line 3, ../sass/components/_mobile.scss */
