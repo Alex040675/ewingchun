@@ -281,10 +281,10 @@ function ewingchun_preprocess_node(&$variables) {
       // Creating variable for sifu label
       $variables['sifu_label'] = '<span class=sifu>(' . t('Sifu') . ')</span>';
     }
-    $relatedpro = views_embed_view('products', 'block_3', $arg);
-    $variables['relatedproducts'] = $relatedpro;
+   /* $relatedpro = views_embed_view('products', 'block_3', $arg);
+    $variables['relatedproducts'] = $relatedpro;*/
 
-    $recentarticles = views_embed_view('article', 'block_6', $arg);
+    $recentarticles = views_embed_view('Blogs', 'block_3', $arg);
     $variables['recent_articles'] = $recentarticles;
 
     $recentwiki = views_embed_view('wiki', 'block_4', $arg);
