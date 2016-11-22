@@ -3341,12 +3341,31 @@ html.js .form-autocomplete {
     overflow-y: scroll;
     padding-right: 12%;
     width: 70%;
-    background: url("../images/lineage-scroller-base.jpg") no-repeat scroll right top; }
+    background: url("../images/lineage-scroller-base.jpg") no-repeat scroll 102% top; }
 /* line 425, ../sass/components/_sifus.scss */
+.node-type-sifu .certification {
+  clear: both; }
+  /* line 427, ../sass/components/_sifus.scss */
+  .node-type-sifu .certification .certification-left {
+    float: left;
+    width: 40%; }
+  /* line 431, ../sass/components/_sifus.scss */
+  .node-type-sifu .certification .certification-right {
+    float: left;
+    width: 60%; }
+    /* line 434, ../sass/components/_sifus.scss */
+    .node-type-sifu .certification .certification-right ul {
+      padding: 0; }
+      /* line 436, ../sass/components/_sifus.scss */
+      .node-type-sifu .certification .certification-right ul li {
+        float: left;
+        margin-left: 2%;
+        list-style: none; }
+/* line 444, ../sass/components/_sifus.scss */
 .node-type-sifu .primary-partleft {
   width: 70%;
   float: left; }
-  /* line 428, ../sass/components/_sifus.scss */
+  /* line 447, ../sass/components/_sifus.scss */
   .node-type-sifu .primary-partleft .primary-center {
     background: #ededed none repeat scroll 0 0;
     float: left;
@@ -3354,13 +3373,13 @@ html.js .form-autocomplete {
     padding: 0;
     overflow: hidden;
     width: 100%; }
-    /* line 435, ../sass/components/_sifus.scss */
+    /* line 454, ../sass/components/_sifus.scss */
     .node-type-sifu .primary-partleft .primary-center .primary02 {
       background: #ededed none repeat scroll 0 0;
       float: left;
       height: auto;
       width: 100%; }
-      /* line 440, ../sass/components/_sifus.scss */
+      /* line 459, ../sass/components/_sifus.scss */
       .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-left {
         color: #1c57a7;
         float: left;
@@ -3369,7 +3388,7 @@ html.js .form-autocomplete {
         font-weight: 400;
         padding: 7px 0 0 2%;
         width: 28%; }
-      /* line 449, ../sass/components/_sifus.scss */
+      /* line 468, ../sass/components/_sifus.scss */
       .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-midle {
         color: #666;
         float: left;
@@ -3379,7 +3398,7 @@ html.js .form-autocomplete {
         line-height: normal;
         padding: 7px 0 0;
         width: 50%; }
-      /* line 459, ../sass/components/_sifus.scss */
+      /* line 478, ../sass/components/_sifus.scss */
       .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-rgt {
         color: #666;
         float: right;
@@ -3389,79 +3408,79 @@ html.js .form-autocomplete {
         line-height: normal;
         padding: 7px 0 0;
         width: 20%; }
-    /* line 470, ../sass/components/_sifus.scss */
+    /* line 489, ../sass/components/_sifus.scss */
     .node-type-sifu .primary-partleft .primary-center .primary-bottom {
       background: #F8F8F8;
       float: left;
       height: 7px;
       width: 100%; }
-    /* line 476, ../sass/components/_sifus.scss */
+    /* line 495, ../sass/components/_sifus.scss */
     .node-type-sifu .primary-partleft .primary-center .drupal-links {
       margin: 20px 0 0 2%; }
-    /* line 479, ../sass/components/_sifus.scss */
+    /* line 498, ../sass/components/_sifus.scss */
     .node-type-sifu .primary-partleft .primary-center .comment-form {
       padding: 2%; }
-  /* line 483, ../sass/components/_sifus.scss */
+  /* line 502, ../sass/components/_sifus.scss */
   .node-type-sifu .primary-partleft .primary-top {
     width: 98%; }
-/* line 487, ../sass/components/_sifus.scss */
+/* line 506, ../sass/components/_sifus.scss */
 .node-type-sifu .student-sifus {
   float: left;
   padding: 45px 0 0 2%;
   width: 98%; }
-  /* line 491, ../sass/components/_sifus.scss */
+  /* line 510, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus h3 {
     margin: 0; }
-  /* line 494, ../sass/components/_sifus.scss */
+  /* line 513, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .views-row {
     clear: both; }
-  /* line 497, ../sass/components/_sifus.scss */
+  /* line 516, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .student-titleleft {
     float: left; }
-  /* line 500, ../sass/components/_sifus.scss */
+  /* line 519, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .student-titleright {
     float: right; }
-  /* line 503, ../sass/components/_sifus.scss */
+  /* line 522, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .student-left {
     float: left;
     width: 31%;
     margin-right: 2%; }
-    /* line 507, ../sass/components/_sifus.scss */
+    /* line 526, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-left .student-title {
       border-bottom: 1px solid #ededed;
       float: left;
       margin-right: 2%;
       width: 98%; }
-  /* line 514, ../sass/components/_sifus.scss */
+  /* line 533, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .student-midle {
     float: left;
     width: 31%;
     margin-right: 2%; }
-    /* line 518, ../sass/components/_sifus.scss */
+    /* line 537, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-midle .student-midle-title {
       border-bottom: 1px solid #ededed;
       overflow: hidden; }
-    /* line 522, ../sass/components/_sifus.scss */
+    /* line 541, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-midle .student-midle-titleleft {
       float: left; }
-    /* line 525, ../sass/components/_sifus.scss */
+    /* line 544, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-midle .student-midle-titleright {
       float: right; }
-  /* line 529, ../sass/components/_sifus.scss */
+  /* line 548, ../sass/components/_sifus.scss */
   .node-type-sifu .student-sifus .student-right {
     float: left;
     width: 33%; }
-    /* line 532, ../sass/components/_sifus.scss */
+    /* line 551, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-right .student-right-title {
       border-bottom: 1px solid #ededed;
       overflow: hidden; }
-      /* line 535, ../sass/components/_sifus.scss */
+      /* line 554, ../sass/components/_sifus.scss */
       .node-type-sifu .student-sifus .student-right .student-right-title .student-right-titleleft {
         float: left; }
-    /* line 539, ../sass/components/_sifus.scss */
+    /* line 558, ../sass/components/_sifus.scss */
     .node-type-sifu .student-sifus .student-right .student-midle-titleright {
       float: right; }
-/* line 544, ../sass/components/_sifus.scss */
+/* line 563, ../sass/components/_sifus.scss */
 .node-type-sifu .add {
   background: #AFAFAF;
   border: 0 none;
@@ -3476,10 +3495,10 @@ html.js .form-autocomplete {
   text-decoration: none !important;
   width: 62px;
   border-radius: 4px; }
-/* line 559, ../sass/components/_sifus.scss */
+/* line 578, ../sass/components/_sifus.scss */
 .node-type-sifu .add:hover {
   background: #404040; }
-/* line 562, ../sass/components/_sifus.scss */
+/* line 581, ../sass/components/_sifus.scss */
 .node-type-sifu .primary02-left {
   color: #1c57a7;
   float: left;
@@ -3488,7 +3507,7 @@ html.js .form-autocomplete {
   font-weight: 400;
   padding: 7px 0 0 2%;
   width: 28%; }
-/* line 571, ../sass/components/_sifus.scss */
+/* line 590, ../sass/components/_sifus.scss */
 .node-type-sifu .primary02-midle {
   color: #666;
   float: left;
@@ -3498,7 +3517,7 @@ html.js .form-autocomplete {
   line-height: normal;
   padding: 7px 0 0;
   width: 50%; }
-/* line 581, ../sass/components/_sifus.scss */
+/* line 600, ../sass/components/_sifus.scss */
 .node-type-sifu .primary02-rgt {
   color: #666;
   float: right;
@@ -3509,32 +3528,32 @@ html.js .form-autocomplete {
   padding: 7px 0 0;
   width: 20%; }
 
-/* line 593, ../sass/components/_sifus.scss */
+/* line 612, ../sass/components/_sifus.scss */
 .page-sifu-ranks .view-Rank, .page-sifu-ranks .view-sifu, .page-sifus-by-name .view-Rank, .page-sifus-by-name .view-sifu {
   margin: 20px auto;
   width: 95%; }
-  /* line 596, ../sass/components/_sifus.scss */
+  /* line 615, ../sass/components/_sifus.scss */
   .page-sifu-ranks .view-Rank .view-header, .page-sifu-ranks .view-sifu .view-header, .page-sifus-by-name .view-Rank .view-header, .page-sifus-by-name .view-sifu .view-header {
     margin-bottom: 10px; }
-  /* line 600, ../sass/components/_sifus.scss */
+  /* line 619, ../sass/components/_sifus.scss */
   .page-sifu-ranks .view-Rank table th, .page-sifu-ranks .view-sifu table th, .page-sifus-by-name .view-Rank table th, .page-sifus-by-name .view-sifu table th {
     background-color: #f8f8f8;
     padding-left: 5px; }
-    /* line 603, ../sass/components/_sifus.scss */
+    /* line 622, ../sass/components/_sifus.scss */
     .page-sifu-ranks .view-Rank table th a, .page-sifu-ranks .view-sifu table th a, .page-sifus-by-name .view-Rank table th a, .page-sifus-by-name .view-sifu table th a {
       color: #17335b;
       font-size: 14px;
       font-weight: 700;
       height: 31px;
       line-height: 31px; }
-  /* line 611, ../sass/components/_sifus.scss */
+  /* line 630, ../sass/components/_sifus.scss */
   .page-sifu-ranks .view-Rank table td, .page-sifu-ranks .view-sifu table td, .page-sifus-by-name .view-Rank table td, .page-sifus-by-name .view-sifu table td {
     padding: 10px 5px;
     font-size: 12px; }
-  /* line 616, ../sass/components/_sifus.scss */
+  /* line 635, ../sass/components/_sifus.scss */
   .page-sifu-ranks .view-Rank table tr.even td, .page-sifu-ranks .view-sifu table tr.even td, .page-sifus-by-name .view-Rank table tr.even td, .page-sifus-by-name .view-sifu table tr.even td {
     background-color: #eee; }
-  /* line 621, ../sass/components/_sifus.scss */
+  /* line 640, ../sass/components/_sifus.scss */
   .page-sifu-ranks .view-Rank table tr.odd td, .page-sifu-ranks .view-sifu table tr.odd td, .page-sifus-by-name .view-Rank table tr.odd td, .page-sifus-by-name .view-sifu table tr.odd td {
     background-color: #f8f8f8; }
 
