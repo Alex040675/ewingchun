@@ -399,7 +399,7 @@
     float: left;
     width: 26%;
     margin-left: 2%;
-    background: rgba(0, 0, 0, 0) url("../images/lineage-bg.jpg") no-repeat scroll left top;
+    background: rgba(0, 0, 0, 0) url("../images/lineage-bg.jpg") no-repeat scroll left 15px;
     float: right;
     height: 309px;
     .contr-title {
@@ -413,8 +413,12 @@
     .lineage1 {
       font-family: Arial;
       font-size: 12px;
-      height: auto;
+      height: 230px;
       line-height: 21px;
+      margin-left: 10%;
+      overflow-y: scroll;
+      padding-right: 12%;
+      width: 70%;
     }
   }
   .primary-partleft{
