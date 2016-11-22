@@ -395,8 +395,31 @@
     padding: 5px 0 0 2%;
     width: 68%;
   }
+  .primary-partright{
+    float: left;
+    width: 26%;
+    margin-left: 2%;
+    background: rgba(0, 0, 0, 0) url("../images/lineage-bg.jpg") no-repeat scroll left top;
+    float: right;
+    height: 309px;
+    .contr-title {
+      color: #116201;
+      font-family: TrajanProBold;
+      font-size: 16px;
+      letter-spacing: -1px;
+      padding: 0 0 5px 21px;
+      text-transform: uppercase;
+    }
+    .lineage1 {
+      font-family: Arial;
+      font-size: 12px;
+      height: auto;
+      line-height: 21px;
+    }
+  }
   .primary-partleft{
-    width: 100%;
+    width: 70%;
+    float: left;
     .primary-center {
       background: #ededed none repeat scroll 0 0;
       float: left;
