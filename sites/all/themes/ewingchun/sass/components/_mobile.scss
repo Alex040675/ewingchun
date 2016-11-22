@@ -162,8 +162,16 @@
     .l-main{
     .view-Blogs .wingchunblogs-bcenter {
       margin-top: 0;
+      margin-bottom: 20px;
       width: 96%;
     }
+      .wingchunblogs-bright{
+        display: none;
+      }
+      .blog_mobile_image{
+        display: block;
+        clear: both;
+      }
     .view-Blogs .wingchunblogs-bleft {
       display: none;
     }

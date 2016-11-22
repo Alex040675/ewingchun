@@ -373,9 +373,11 @@
         color: #1c57a7;
         font-size: 14px;
         line-height: 25px;
+        text-decoration: none;
+        border-bottom: solid 1px #1c57a7;
       }
       a:before{
-        content: "-";
+        content: "- ";
         color: #1c57a7;
       }
     }
