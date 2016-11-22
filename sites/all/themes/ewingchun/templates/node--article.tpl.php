@@ -139,25 +139,3 @@ if ($page == 1): //if node is being displayed as a node
 <?php
   endif;
 ?>
-<div class="main-history">
-  <div class="history-left">
-    <div class="history-mid">
-      <div class="history-left1">
-        <p class="font-16">[title]</p>
-        <span class="author_sifu">Sifu/Author:</span> [field_sifu]
-      </div>
-      <div class="clear-left"></div>
-      <div class="article-teaser">
-        [body]
-      </div>
-      <!-- .article-teaser -->
-    </div>
-    <div class="history-btm"></div>
-  </div>
-  <div class="history-right">
-    <div class="posted-mid">
-      [field_profile_img]
-    </div>
-    <div class="posted-btm"></div>
-  </div>
-</div>

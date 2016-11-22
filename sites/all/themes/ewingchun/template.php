@@ -81,10 +81,18 @@ function ewingchun_preprocess_node(&$variables) {
           <div class="primary02-rgt">' . $secondary_affiliated . '</div></div>';
           }
           else {
+            $variables['output_block'] = '<div class="primary-top">secondary/previous teachers</div>
+              <div class="primary-center">
+              <div class="primary01">
+              <div class="mprimary ">
+              <div class="primary01-left">Teacher Name</div>
+              <div class="primary01-midle">Rank Sifu ' . $variables['node']->field_txt_lastname['und'][0]['value'] . ' Obtained</div>
+              <div class="primary01-rgt">Still Affiliated?</div>
+              </div>';
             $variables['output_secondary_teacher'] .= '<div class="primary02">
-          <div class="primary02-left">' . $lineage[$jcnt]['noderef_instructor'] . '</div>
-          <div class="primary02-midle">' .  $lineage[$jcnt]['field_taxo_rank'] . '</div>
-          <div class="primary02-rgt">' . $lineage[$jcnt]['stillaffiliated'] . '</div></div>';
+              <div class="primary02-left">' . $lineage[$jcnt]['noderef_instructor'] . '</div>
+              <div class="primary02-midle">' .  $lineage[$jcnt]['field_taxo_rank'] . '</div>
+              <div class="primary02-rgt">' . $lineage[$jcnt]['stillaffiliated'] . '</div></div>';
           }
           $variables['output_secondary_bottom'] = '</div><div class="primary-bottom"></div></div>';
         }
@@ -112,14 +120,7 @@ function ewingchun_preprocess_node(&$variables) {
         $variables['cert_imgs'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[cert]"><img class="cert" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
       }
     }
-    $variables['output_block'] = '<div class="primary-top">secondary/previous teachers</div>
-      <div class="primary-center">
-      <div class="primary01">
-      <div class="mprimary ">
-      <div class="primary01-left">Teacher Name</div>
-      <div class="primary01-midle">Rank Sifu ' . $variables['node']->field_txt_lastname['und'][0]['value'] . ' Obtained</div>
-      <div class="primary01-rgt">Still Affiliated?</div>
-      </div>';
+
 
 
     // Output Sifu Encyclopedia block
