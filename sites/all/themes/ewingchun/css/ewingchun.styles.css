@@ -1992,7 +1992,7 @@ footer {
   /* line 181, ../sass/components/_mobile.scss */
   .node-type-video .field--name-field-emvideo {
     width: 95%;
-    margin: 0 auto; }
+    margin: 20px auto 0; }
     /* line 184, ../sass/components/_mobile.scss */
     .node-type-video .field--name-field-emvideo iframe {
       width: 100% !important;
@@ -3644,6 +3644,10 @@ html.js .form-autocomplete {
     .page-videos .view-videos table td img {
       width: 100%;
       height: auto; }
+
+/* line 182, ../sass/components/_videos.scss */
+.node-type-video .field--name-field-emvideo {
+  margin-top: 20px; }
 
 /* line 2, ../sass/components/_wiki.scss */
 .section-encyclopedia h1 {
