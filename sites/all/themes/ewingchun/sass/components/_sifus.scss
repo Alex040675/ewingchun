@@ -531,6 +531,35 @@
   .add:hover{
     background: #404040;
   }
+  .primary02-left {
+    color: #1c57a7;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 7px 0 0 2%;
+    width: 28%;
+  }
+  .primary02-midle {
+    color: #666;
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 0 0;
+    width: 50%;
+  }
+  .primary02-rgt {
+    color: #666;
+    float: right;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 7px 0 0;
+    width: 20%;
+  }
 }
 .page-sifu-ranks,.page-sifus-by-name{
   .view-Rank,.view-sifu{
