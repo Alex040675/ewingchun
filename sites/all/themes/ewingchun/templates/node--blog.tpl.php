@@ -42,11 +42,9 @@
 		<?php //print $relatedproducts; ?>
 		<!--<div class="videoaddbanner"></div>-->
   </div>
-	<div class="otherarticlessifu">
+	<div class="recentarticles">
 		<p class="yca">other blogs by user</p>
-		<ul>
 			<?php print $otherblogsbyuser; ?>
-		</ul>
 	</div>
 	<div class="recentarticles">
 		<p class="yca">recent blogs</p>
