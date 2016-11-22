@@ -418,6 +418,10 @@
         font-size: 14px;
         line-height: 25px;
       }
+      a:before{
+        color: #1c57a7;
+        content: "- ";
+      }
     }
   }
   .comment-form{
