@@ -290,7 +290,7 @@ function ewingchun_preprocess_node(&$variables) {
     $recentwiki = views_embed_view('wiki', 'block_4', $arg);
     $variables['recent_wiki'] = $recentwiki;
 
-    $otherblogs = views_embed_view('Blogs', 'block_4', $arg);
+    $otherblogs = views_embed_view('Blogs', 'block_2', $arg);
     $variables['otherblogsbyuser'] = $otherblogs;
   }
   
