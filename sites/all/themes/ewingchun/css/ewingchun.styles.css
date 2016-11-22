@@ -1865,11 +1865,11 @@ footer {
   /* line 4, ../sass/components/_mobile.scss */
   .node-type-video .l-main .field--name-field-emvideo {
     width: 95%;
-    margin: 0 auto; }
+    margin: 20px auto; }
     /* line 7, ../sass/components/_mobile.scss */
     .node-type-video .l-main .field--name-field-emvideo iframe {
       width: 100% !important;
-      height: 220px !important; } }
+      height: 200px !important; } }
 @media screen and (max-width: 480px) {
   /* line 17, ../sass/components/_mobile.scss */
   header #block-block-11 {
