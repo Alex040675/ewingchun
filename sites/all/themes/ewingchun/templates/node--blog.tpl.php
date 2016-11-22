@@ -37,11 +37,11 @@
 	</div>
 </div>
 <div class="artical-rightmain">
-	<div class="relatedproducts">
+	<!--<div class="relatedproducts">
 		<p class="yca">related products</p>
 		<?php //print $relatedproducts; ?>
-		<!--<div class="videoaddbanner"></div>-->
-  </div>
+		<div class="videoaddbanner"></div>
+  </div>-->
 	<div class="recentarticles">
 		<p class="yca">other blogs by user</p>
 			<?php print $otherblogsbyuser; ?>
