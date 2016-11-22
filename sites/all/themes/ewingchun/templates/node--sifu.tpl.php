@@ -102,7 +102,7 @@
       </div>
       <div class="primary-bottom"></div>
     </div>
-    <?php if (isset($node->field_img_certification[0]['uri'])) : ?>
+    <?php if (isset($node->field_img_certification['und'][0]['uri'])) : ?>
       <div class="certification">
         <div class="certification-left">
           <h3>certification pictures:</h3>
