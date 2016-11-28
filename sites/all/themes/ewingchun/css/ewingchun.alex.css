@@ -1,5 +1,4 @@
 .section-encyclopedia .l-main {
-  padding: 20px 43px 30px !important;
   text-align: left; }
   .section-encyclopedia .l-main .l-content {
     width: 70%;
@@ -12,21 +11,26 @@
     .section-encyclopedia .l-main .l-content .node--page--full .field__item p {
       line-height: 22px; }
     .section-encyclopedia .l-main .l-content .block--views {
-      list-style: none; }
-      .section-encyclopedia .l-main .l-content .block--views .view-content ol li {
-        list-style: none;
-        line-height: 25px; }
+      margin-top: 40px; }
+      .section-encyclopedia .l-main .l-content .block--views .view-content ol {
+        padding-left: 20px; }
+        .section-encyclopedia .l-main .l-content .block--views .view-content ol li {
+          list-style: none;
+          line-height: 25px; }
   .section-encyclopedia .l-main .l-region--sidebar-first {
     width: 25%;
     float: left;
     border-right: solid 1px #ededed; }
     .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
     .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
-      margin: 10px 0 0;
-      background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top; }
+      margin: 25px 0 0;
+      background: url(../images/encyclopediacategories-headingbg.png) no-repeat;
+      background-size: 100% 10%; }
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row {
+        overflow: hidden; }
       .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
       .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2 {
-        font-size: 15px;
         color: #116201;
         font-family: Trajan Pro Bold;
         text-transform: uppercase;
@@ -37,7 +41,7 @@
         padding-top: 25px; }
         .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
         .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content {
-          padding-left: 20px; }
+          padding-left: 5%; }
           .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-row,
           .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-row {
             font-size: 12px;
@@ -52,7 +56,10 @@
               color: #1C57A7; }
       .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
       .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu {
-        padding-left: 15px; }
+        padding: 4% 0 0 13%; }
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu {
+          padding: 3% 0 3% 1%; }
         .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
         .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li {
           list-style-image: url(../images/arrow01.jpg) !important;
@@ -62,5 +69,52 @@
           .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
           .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a {
             font-size: 15px; }
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded {
+          list-style-image: url(../images/menu-arrow.png) !important; }
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded a,
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
+            font-size: 14px; }
+
+@media screen and (max-width: 480px) {
+  .section-encyclopedia .l-main {
+    padding: 20px 2% !important; }
+  .section-encyclopedia .l-content,
+  .section-encyclopedia .l-region--sidebar-first {
+    float: none !important;
+    width: 98% !important;
+    margin: 0 auto !important; }
+    .section-encyclopedia .l-content h1,
+    .section-encyclopedia .l-region--sidebar-first h1 {
+      font-size: 16px !important; }
+      .section-encyclopedia .l-content h1 a,
+      .section-encyclopedia .l-region--sidebar-first h1 a {
+        font-size: 10px; }
+    .section-encyclopedia .l-content h3,
+    .section-encyclopedia .l-region--sidebar-first h3 {
+      font-size: 14px !important; }
+    .section-encyclopedia .l-content .block--views-wiki-categories-block a,
+    .section-encyclopedia .l-content .block--menu-menu-encyclopedia-categories a,
+    .section-encyclopedia .l-region--sidebar-first .block--views-wiki-categories-block a,
+    .section-encyclopedia .l-region--sidebar-first .block--menu-menu-encyclopedia-categories a {
+      font-size: 14px !important; } }
+@media screen and (max-width: 768px) {
+  .section-encyclopedia .block--views-wiki-categories-block h2,
+  .section-encyclopedia .block--menu-menu-encyclopedia-categories h2 {
+    font-size: 13px !important; }
+  .section-encyclopedia .block--views-wiki-categories-block .views-row,
+  .section-encyclopedia .block--views-wiki-categories-block .menu li,
+  .section-encyclopedia .block--views-wiki-categories-block .expanded li,
+  .section-encyclopedia .block--menu-menu-encyclopedia-categories .views-row,
+  .section-encyclopedia .block--menu-menu-encyclopedia-categories .menu li,
+  .section-encyclopedia .block--menu-menu-encyclopedia-categories .expanded li {
+    line-height: 22px !important; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-encyclopedia .l-content {
+    width: 69% !important; }
+  .section-encyclopedia .l-region--sidebar-first {
+    width: 29% !important; }
+  .section-encyclopedia a {
+    font-size: 11px !important; } }
 
 /*# sourceMappingURL=ewingchun.alex.css.map */

@@ -1,6 +1,5 @@
 .section-encyclopedia {
   .l-main {
-    padding: 20px 43px 30px!important;
     text-align: left;
     .l-content {
       width: 70%;
@@ -20,9 +19,10 @@
         }
       }
       .block--views {
-        list-style: none;
+        margin-top: 40px;
         .view-content {
           ol {
+            padding-left: 20px;
             li {
               list-style: none;
               line-height: 25px;
@@ -37,10 +37,13 @@
       border-right: solid 1px #ededed;
       .block--views-wiki-categories-block,
       .block--menu-menu-encyclopedia-categories {
-        margin: 10px 0 0;
-        background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top;
+        .views-row {
+          overflow: hidden;
+        }
+        margin: 25px 0 0;
+        background: url(../images/encyclopediacategories-headingbg.png) no-repeat;
+        background-size: 100% 10%;
         h2 {
-          font-size: 15px;
           color: #116201;
           font-family: Trajan Pro Bold;
           text-transform: uppercase;
@@ -50,7 +53,7 @@
         .view-wiki-categories {
           padding-top: 25px;
           .view-content {
-            padding-left: 20px;
+            padding-left: 5%;
             .views-row {
               font-size: 12px;
               line-height: 26px;
@@ -66,7 +69,12 @@
           }
         }
         ul.menu {
-          padding-left: 15px;
+          padding: 4% 0 0 13%;
+          .expanded {
+            .menu {
+              padding: 3% 0 3% 1%;
+            }
+          }
           li {
             list-style-image: url(../images/arrow01.jpg)!important;
             padding-left: 10px;
@@ -76,8 +84,76 @@
               font-size: 15px;
             }
           }
+          .expanded {
+            list-style-image:  url(../images/menu-arrow.png)!important;
+            a{
+              font-size: 14px;
+            }
+          }
         }
       }
     }
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-encyclopedia {
+    .l-main {
+      padding: 20px 2% !important;
+    }
+    .l-content,
+    .l-region--sidebar-first {
+      float: none!important;
+      width: 98% !important;
+      margin: 0 auto!important;
+      h1 {
+        font-size: 16px!important;
+        a {
+          font-size: 10px;
+        }
+      }
+      h3 {
+        font-size: 14px!important;
+      }
+      .block--views-wiki-categories-block,
+      .block--menu-menu-encyclopedia-categories {
+        a {
+          font-size: 14px!important;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-encyclopedia {
+    .block--views-wiki-categories-block,
+    .block--menu-menu-encyclopedia-categories {
+      h2 {
+        font-size: 13px!important;
+      }
+      .views-row,
+      .menu li,
+      .expanded li {
+        line-height: 22px!important;
+
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .section-encyclopedia {
+    .l-content {
+      width: 69%!important;
+    }
+    .l-region--sidebar-first {
+      width: 29%!important;
+    }
+    a {
+      font-size: 11px!important;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .section-encyclopedia {
+
   }
 }
