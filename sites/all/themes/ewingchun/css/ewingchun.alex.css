@@ -1,0 +1,66 @@
+.section-encyclopedia .l-main {
+  padding: 20px 43px 30px !important;
+  text-align: left; }
+  .section-encyclopedia .l-main .l-content {
+    width: 70%;
+    float: right; }
+    .section-encyclopedia .l-main .l-content .element-invisible,
+    .section-encyclopedia .l-main .l-content .tabs--primary, .section-encyclopedia .l-main .l-content h1 {
+      display: none; }
+    .section-encyclopedia .l-main .l-content .node--page--full h1 {
+      display: inherit; }
+    .section-encyclopedia .l-main .l-content .node--page--full .field__item p {
+      line-height: 22px; }
+    .section-encyclopedia .l-main .l-content .block--views {
+      list-style: none; }
+      .section-encyclopedia .l-main .l-content .block--views .view-content ol li {
+        list-style: none;
+        line-height: 25px; }
+  .section-encyclopedia .l-main .l-region--sidebar-first {
+    width: 25%;
+    float: left;
+    border-right: solid 1px #ededed; }
+    .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
+    .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
+      margin: 10px 0 0;
+      background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top; }
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2 {
+        font-size: 15px;
+        color: #116201;
+        font-family: Trajan Pro Bold;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        padding-left: 18px; }
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories {
+        padding-top: 25px; }
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content {
+          padding-left: 20px; }
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-row,
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-row {
+            font-size: 12px;
+            line-height: 26px;
+            list-style: none; }
+            .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-row .views-field-name,
+            .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-row .views-field-name {
+              float: left;
+              margin-right: 10px; }
+            .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-row .views-field-nid,
+            .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-row .views-field-nid {
+              color: #1C57A7; }
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
+      .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu {
+        padding-left: 15px; }
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
+        .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li {
+          list-style-image: url(../images/arrow01.jpg) !important;
+          padding-left: 10px;
+          line-height: 25px;
+          margin: 0; }
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
+          .section-encyclopedia .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a {
+            font-size: 15px; }
+
+/*# sourceMappingURL=ewingchun.alex.css.map */

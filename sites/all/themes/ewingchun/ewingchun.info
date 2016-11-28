@@ -12,6 +12,7 @@ stylesheets[all][] = css/ewingchun.normalize.css
 stylesheets[all][] = css/ewingchun.hacks.css
 stylesheets[all][] = css/ewingchun.styles.css
 stylesheets[all][] = css/ewingchun.no-query.css
+stylesheets[all][] = css/ewingchun.alex.css
 
 ; ========================================
 ; Scripts

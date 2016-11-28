@@ -7,13 +7,11 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
-
 /* Increase the default font size on small touch devices */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programs\/OpenServer\/domains\/ewingchun\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000316}}
 body {
   font-size: 100%;
 }
-
-#branding { width: 100%;}
 
 /* =============================================================================
  *   Mobile Menu Toggle
@@ -21,51 +19,23 @@ body {
  *   These are example styles for the menu toggle menu, you can use these in the
  *   relevant responsive stylesheets as required. Modify to suit your design.
  * ========================================================================== */
-/* The toggle link */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programs\/OpenServer\/domains\/ewingchun\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000326}}
+.at-mt .at-menu-toggle {
+  /* The toggle link */
+  /* Menu items */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programs\/OpenServer\/domains\/ewingchun\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000328}}
 .at-mt .at-menu-toggle h2 {
   margin-bottom: 5px;
 }
-
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programs\/OpenServer\/domains\/ewingchun\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000331}}
 .at-mt .at-menu-toggle h2 a {
-  background: url('images/mobile-menu.png') left center no-repeat;
-  font-size: 0;
+  background: #eee;
+  border: 2px solid #ccc;
   padding: 2px 10px;
 }
-
-/* Menu items */
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/Programs\/OpenServer\/domains\/ewingchun\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000339}}
 .at-mt .at-menu-toggle ul.menu li a {
   background: #eee;
   border-bottom: 1px solid #fff;
-}
-
-.banner-top>div {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.banner-top-right {padding: 15px;}
-
-#block-block-10 .tocontribute {
-    float: left;
-    font-size: small;
-}
-
-#block-block-10 .loginbtn {
-    font-size: small;
-    padding: 0 15px;
-}
-
-#block-block-10 .register-link {
-    font-size: small;
-    padding: 0 6px;
-}
-
-.browsetable-box {
-    width: 50%;
-}
-
-.views-field-body-1, 
-.views-field-changed, 
-.views-field-taxonomy-vocabulary-9 {
-    display: none;
 }
