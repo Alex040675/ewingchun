@@ -65,7 +65,7 @@
                     $(this).nextAll().andSelf().slice(0, 4).wrapAll('<div class="wrap"></div>');
                 }
             });
-
+        $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
     }
   };
