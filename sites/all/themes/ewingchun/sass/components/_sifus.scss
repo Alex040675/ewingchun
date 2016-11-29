@@ -307,6 +307,17 @@
         width: 60%;
       }
     }
+    .comon-btom{
+      float: left;
+      width: 70%;
+      span{
+        color: #000;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 0 15px;
+      }
+    }
   }
   h3{
     text-transform: uppercase;
@@ -325,6 +336,29 @@
     #more{
       clear: both;
       padding: 0 2%;
+    }
+    .drupal-links {
+      padding: 0 2%;
+      a{
+        color: #1c57a7;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    #comment-form{
+      padding: 50px 2% 0 2%;
+      #edit-author--2{
+        clear: both;
+        overflow: hidden;
+        label{
+          float: left;
+          margin-right: 5px;
+        }
+        .username{
+          float: left;
+        }
+      }
     }
   }
   .primary-center >.primary01{
@@ -424,8 +458,11 @@
   }
   .certification{
     clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
     .certification-left{
       float: left;
+      padding-top: 14px;
       width: 40%;
     }
     .certification-right {

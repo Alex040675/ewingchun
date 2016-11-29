@@ -866,6 +866,21 @@ footer{
     padding: 5px;
     width: 98%;
   }
+  .form-submit{
+    margin-right: 10px;
+    background: #1c57a7 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 14px !important;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  .form-actions{
+    margin-top: 20px;
+  }
 }
 .wrap{
   overflow: hidden;
