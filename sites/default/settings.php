@@ -215,9 +215,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'eWingChun',
+      'database' => 'ewingchun',
       'username' => 'root',
-      'password' => '',
+      'password' => 'root',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -225,7 +225,9 @@ $databases = array (
     ),
   ),
 );
-
+error_reporting(E_ALL);
+ini_set('display_errors', TRUE);
+ini_set('display_startup_errors', TRUE);
 /**
  * Access control for update.php script.
  *

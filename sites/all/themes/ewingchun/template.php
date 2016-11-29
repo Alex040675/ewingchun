@@ -30,6 +30,7 @@ function ewingchun_preprocess_node(&$variables) {
     }
 
     $jcnt = 0;
+
     // Building a lineage table information from the field collection
     if (!empty($variables['node']->field_lineage_information)) {
       foreach ($variables['node']->field_lineage_information['und'] as $key => $value) {
@@ -41,9 +42,9 @@ function ewingchun_preprocess_node(&$variables) {
             $instructor = node_load($activity[0]['nid']);
             // Output the name as link
             $instructor_name = l($instructor->title, 'node/' . $instructor->nid);
-
           }
           $lineage[$jcnt]['noderef_instructor'] = $instructor_name;
+          $lineage[$jcnt]['nid'] = $instructor->nid;
         }
         foreach ($field_collection[$idx]->field_primary_lineage as $activity) {
           if($activity[0]['value'] == 0) {
@@ -52,6 +53,7 @@ function ewingchun_preprocess_node(&$variables) {
           else {
             $primary_affiliated = 'Yes';
           }
+          $data[$variables['node']->nid]['primary_affiliated'][$jcnt] = $primary_affiliated;
           $lineage[$jcnt]['primary_lineage'] = $primary_affiliated;
         }
         foreach ($field_collection[$idx]->field_int_stillaffiliated as $activity) {
@@ -71,8 +73,10 @@ function ewingchun_preprocess_node(&$variables) {
           // Output the term name as link
           $rank = ' - ' . l($term->name, 'taxonomy/term/' . $tid);
           $lineage[$jcnt]['field_taxo_rank'] = $term->name;
+
         }
-        if ($lineage[$jcnt]['primary_lineage'] == 'No') {
+
+        if ( count($lineage) > 1 && $lineage[$jcnt]['primary_lineage'] == 'No') {
 
           if ($jcnt%2 == 0) {
             $variables['output_secondary_teacher'] .= '<div class="primary01">
@@ -100,15 +104,33 @@ function ewingchun_preprocess_node(&$variables) {
         $jcnt++;
       }
     }
+    // If there is no primary flag, but there is teacher flag.
+    $flag = FALSE;
     $variables['output_primary_teacher'] = '';
     if (!empty($lineage)) {
       foreach($lineage as $key => $val) {
         if ($val['primary_lineage'] == 'Yes') {
+          $flag = TRUE;
+          $main_instructor = $val['nid'];
+          $affilated = $val['primary_lineage'];
           $variables['output_primary_teacher'] .= '<div class="primary01">
             <div class="primary02-left">' . $val['noderef_instructor']. '</div>
             <div class="primary02-midle">' . $val['field_taxo_rank'] . '</div>
             <div class="primary02-rgt">' . $val['primary_lineage'] . '</div>
             </div>';
+        }
+      }
+      if ($flag == FALSE) {
+        foreach($lineage as $key => $val) {
+          if ($key == 0) {
+            $main_instructor = $val['nid'];
+            $affilated = 0;
+            $variables['output_primary_teacher'] .= '<div class="primary01">
+            <div class="primary02-left">' . $val['noderef_instructor']. '</div>
+            <div class="primary02-midle">' . $val['field_taxo_rank'] . '</div>
+            <div class="primary02-rgt">' . $val['primary_lineage'] . '</div>
+            </div>';
+          }
         }
       }
     }
@@ -121,39 +143,40 @@ function ewingchun_preprocess_node(&$variables) {
       }
     }
 
+    $variables['full_lineage'] = _wc_lineage_get_primary($variables['node'], $main_instructor, $affilated);
 
 
     // Output Sifu Encyclopedia block
     $arg = arg(1);
 
     // Output Sifu article block
-    $articles =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Articles') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/article', array('attributes' => array('class' => 'add'),)) . '</div> </div>';
+    $articles =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Articles') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/article', array('attributes' => array('class' => 'add'), 'query'=>array('edit[field_sifu][und]'=>$variables['node']->nid,) )) . '</div> </div>';
     $articles .=  views_embed_view('article', 'block_2', $arg);
     $variables['sifu_articles'] = $articles;
 
     // Output Sifu Encyclopedia block
-    $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $wiki =  '<div class="student-midle-title"> <div class="student-midle-titleleft"> <h3>' . t('Encyclopedia') . '</h3> </div> <div class="student-midle-titleright"> ' . l('Add', 'node/add/wiki', array('attributes' => array('class' => 'add'), 'query'=>array('edit[field_related_sifus][und]'=>$variables['node']->nid,) )) . '</div> </div>';
     $wiki .=  views_embed_view('wiki', 'block_16', $arg);
 
     // Output Sifu student block
     $variables['sifu_wiki'] = $wiki;
-    $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $students = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Student Sifus') . '</h3> </div> <div class="student-titleright"> ' . l('Add', 'node/add/sifu', array('attributes' => array('class' => 'add'), 'query'=>array('edit[field_lineage_information][und][0][field_noderef_instructor][und]'=>$variables['node']->nid,))) . '</div> </div>';
     $students .= views_embed_view('sifu', 'block_1', $arg);
     $variables['sifu_students'] = $students;
 
     // Output Sifu video block
-    $videos = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Videos') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/video', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $videos = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Videos') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/video', array('attributes' => array('class' => 'add'), 'query'=>array('edit[field_sifu][und]'=>$variables['node']->nid,))) . '</div> </div>';
     $videos .= views_embed_view('videos', 'block_1', $arg);
     $videos .=  '<br />' ;
     $variables['sifu_videos'] = $videos;
 
     // Output Sifu products view
-    $products = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Products') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/product', array('attributes' => array('class' => 'add'),)) . '</div> </div>' ;
+    $products = '<div class="student-right-title"> <div class="student-right-titleleft"> <h3>' . t('Products') . '</h3> </div> <div class="student-midle-titleright">' . l('Add', 'node/add/product', array('attributes' => array('class' => 'add'),'query'=>array('edit[field_sifu][und]'=>$variables['node']->nid,))) . '</div> </div>' ;
     $products .= views_embed_view('products', 'block_1', $arg);
     $variables['sifu_products'] = $products;
 
     // Output Sifu school block
-    $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), )) . '</div> </div>';
+    $schools = '<div class="student-title"> <div class="student-titleleft"> <h3>' . t('Schools') . '</h3> </div> <div class="student-titleright">' . l('Add', 'node/add/resource', array('attributes' => array('class' => 'add'), 'query'=>array('edit[field_instructors][und]'=>$variables['node']->nid,))) . '</div> </div>';
     $schools .= views_embed_view('related_schools', 'block_1', $arg);
     $variables['sifu_schools'] = $schools;
     foreach ($variables['node']->field_img_certification['und'] AS $key => $img) {
@@ -294,4 +317,77 @@ function ewingchun_preprocess_node(&$variables) {
     $variables['otherblogsbyuser'] = $otherblogs;
   }
   
+}
+
+/**
+ * Returns the PRIMARY lineage for a single sifu.
+ *
+ */
+function _wc_lineage_get_primary($node, $nid, $affilated) {
+  if (empty($node)) {
+    return;
+  }
+
+  //$output = cache_get('wc-lineage-get-primary/' . $node->nid)->data;
+
+  if (!$output) {
+
+    $nids = array();
+    $q = "SELECT n.nid, n.title AS name, i.field_noderef_instructor_nid AS instructor, i.delta, p.field_primary_lineage_value AS pri, a.field_int_stillaffiliated_value AS affiliated
+          FROM node n
+          LEFT JOIN field_data_field_lineage_information li ON li.entity_id = n.nid
+          LEFT JOIN field_data_field_noderef_instructor i ON li.field_lineage_information_value = i.entity_id
+          LEFT JOIN field_data_field_primary_lineage p ON i.entity_id = p.entity_id
+          AND p.delta = i.delta
+          LEFT JOIN field_data_field_int_stillaffiliated a ON p.entity_id = a.entity_id
+          AND a.delta = i.delta
+          WHERE li.entity_id = :nid
+          AND a.bundle = 'field_lineage_information'
+          AND i.bundle = 'field_lineage_information'
+          AND p.bundle = 'field_lineage_information'
+          ORDER BY pri DESC , affiliated DESC";
+    $delta = array_search(array('value' => '1'), $node->field_primary_lineage);
+
+
+    // Start with this node.
+    $self = (object) array();
+    $self->nid = $node->nid;
+    $self->name = $node->title;
+    $self->instructor = $nid;
+    $self->pri = 1;
+    $self->affiliated = $affilated;
+    $lineages = array(0 => array($self));
+    // Keep querying as long as we find referenced instructors.
+    $nids = array();
+    while ($sifu = db_query($q, array(':nid' => $nid))->fetchObject()) {
+      if (in_array($sifu->nid, $nids)) {
+        // Prevent getting stuck in an unclosed loop.
+        // @TODO can this happen with fuill lineages?
+        break;
+      }
+      else {
+        $lineages[0][] = $sifu;
+      }
+      $nids[] = $sifu->nid;
+
+      $nid = $sifu->instructor;
+      if (!$sifu->pri && !$sifu->affiliated) {
+        break;
+      }
+    }
+    // We want to Display the oldest ancestors first, so we reverse here.
+    $lineages[0] = array_reverse($lineages[0]);
+    $output = '';
+    foreach ($lineages AS $line) {
+      $row = array();
+      foreach ($line AS $sifu) {
+        $row[] = l($sifu->name, 'node/' . $sifu->nid);
+      }
+      $row = implode(' > ', $row);
+      if ($row) $output .= "<span class='lineage'>" . $row . "</span>\n";
+    }
+    cache_set('wc-lineage-get-primary/' . $node->nid, $output);
+  }
+
+  return $output;
 }

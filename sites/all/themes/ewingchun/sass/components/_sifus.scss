@@ -307,6 +307,24 @@
         width: 60%;
       }
     }
+    .comon-btom{
+      float: left;
+      width: 70%;
+      span{
+        color: #000;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 0 15px;
+      }
+      .dob-left{
+        float: left;
+        margin-right: 30px;
+      }
+      .dob-right{
+        float: left;
+      }
+    }
   }
   h3{
     text-transform: uppercase;
@@ -325,6 +343,29 @@
     #more{
       clear: both;
       padding: 0 2%;
+    }
+    .drupal-links {
+      padding: 0 2%;
+      a{
+        color: #1c57a7;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    #comment-form{
+      padding: 50px 2% 0 2%;
+      #edit-author--2{
+        clear: both;
+        overflow: hidden;
+        label{
+          float: left;
+          margin-right: 5px;
+        }
+        .username{
+          float: left;
+        }
+      }
     }
   }
   .primary-center >.primary01{
@@ -345,6 +386,12 @@
       font-size: 14px;
       margin-top: 10px;
       padding: 15px 10px;
+      a{
+        color: #666;
+        font-family: Arial;
+        font-size: 13px;
+        text-decoration: none;
+      }
     }
     .mprimary {
       float: left;
@@ -389,6 +436,7 @@
     color: #1c57a7;
     text-transform: uppercase;
     float: left;
+    margin-top: 20px;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     height: 44px;
@@ -424,13 +472,16 @@
   }
   .certification{
     clear: both;
+    overflow: hidden;
+    margin-bottom: 10px;
     .certification-left{
       float: left;
-      width: 40%;
+      padding-top: 14px;
+      width: 45%;
     }
     .certification-right {
       float: left;
-      width: 60%;
+      width: 55%;
       ul{
         padding: 0;
         li{

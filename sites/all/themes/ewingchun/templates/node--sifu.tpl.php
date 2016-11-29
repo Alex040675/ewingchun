@@ -96,12 +96,17 @@
         <?php if (isset($node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name)) : ?>
           <div class="primary01">
             <p class="lineage-text"><strong>Full Lineage:</strong><br/>
-              <?php print $node->taxonomy_vocabulary_9['und'][0]['taxonomy_term']->name ?> </p>
+              <?php print $full_lineage ?> </p>
           </div>
         <?php endif; ?>
       </div>
       <div class="primary-bottom"></div>
     </div>
+
+    <?php print $output_block; ?> <?php print $output_secondary_teacher; ?>
+    <?php if ($output_block) : ?>
+      <?php print $output_secondary_bottom; ?>
+    <?php endif; ?>
     <?php if (isset($node->field_img_certification['und'][0]['uri'])) : ?>
       <div class="certification">
         <div class="certification-left">
@@ -113,10 +118,6 @@
           </ul>
         </div>
       </div>
-    <?php endif; ?>
-    <?php print $output_block; ?> <?php print $output_secondary_teacher; ?>
-    <?php if ($output_block) : ?>
-      <?php print $output_secondary_bottom; ?>
     <?php endif; ?>
   </div>
   <?php if ($node->field_txt_certnotes['und'][0]['value']) : ?>
