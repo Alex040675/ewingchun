@@ -379,6 +379,12 @@
       font-size: 14px;
       margin-top: 10px;
       padding: 15px 10px;
+      a{
+        color: #666;
+        font-family: Arial;
+        font-size: 13px;
+        text-decoration: none;
+      }
     }
     .mprimary {
       float: left;
@@ -423,6 +429,7 @@
     color: #1c57a7;
     text-transform: uppercase;
     float: left;
+    margin-top: 20px;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     height: 44px;
@@ -463,11 +470,11 @@
     .certification-left{
       float: left;
       padding-top: 14px;
-      width: 40%;
+      width: 45%;
     }
     .certification-right {
       float: left;
-      width: 60%;
+      width: 55%;
       ul{
         padding: 0;
         li{
