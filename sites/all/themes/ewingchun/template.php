@@ -316,6 +316,33 @@ function ewingchun_preprocess_node(&$variables) {
     $otherblogs = views_embed_view('Blogs', 'block_2', $arg);
     $variables['otherblogsbyuser'] = $otherblogs;
   }
+
+  //Add variables for wiki
+  if ($variables['node']->type == 'wiki') {
+    // Iterate over product image
+    foreach ($variables['node']->field_wiki_images['und'] AS $key => $img) {
+      // Check for an image before outputting
+      if ($img['uri'] != NULL) {
+        if ($key == 0) {
+          // Print out main image
+          $full_size = image_style_url('full-size', $img['uri']);
+          $thumbnail = image_style_url('article-main-img', $img['uri']);
+
+          // Output main wiki image with lightbox overlay
+          $variables['wiki_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[product]"><img class="sifu-image" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
+          continue;
+        }
+        // Render additional images with lightbox
+        $full_size = imagecache_create_url('full-size', $img['filepath']);
+        $thumbnail = imagecache_create_url('sifu-listing', $img['filepath']);
+
+        // Output a list of images with lightbox overlays
+        $variables['wiki_images'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[product]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+
+
+      }
+    }
+  }
   
 }
 
