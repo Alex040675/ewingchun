@@ -5,8 +5,10 @@
   <div class="ecr1">
     <p class="ecr1-txt"><?php print t('Posted By : ') . $name; ?></p>
     <p class="ecr1-txt1">Last Update: <?php print format_date($node->changed, 'short'); ?></p>
-    <p class="ecr1-txt1">Category: <?php print $terms; ?></p>
+    <p class="ecr1-txt1">Category: <?php print render($content['field_category']); ?></p>
+    <?php if (isset($content['field_related_sifus'])): ?>
     <p class="ecr1-txt1">Sifus Referenced: <?php print render($content['field_related_sifus']) ?></p>
+    <?php endif; ?>
     <?php if (isset($content['field_related_wiki'])): ?>
     <p class="ecr1-txt1">Sifus Referenced Wiki: <?php print render($content['field_related_wiki']); ?></p>
     <?php endif; ?>
