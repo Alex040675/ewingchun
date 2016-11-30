@@ -26,4 +26,4 @@
     </div><!-- .blogfpo -->
     <div class="middleleftimg1"><?php print $node->field_emvideo[0]['view'] ?></div>
   </div><!-- .productname-left -->
-</div><!-- .encyclopediacatego
+</div>
