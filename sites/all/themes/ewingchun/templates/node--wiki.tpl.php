@@ -17,7 +17,7 @@
     <div class="middleleftimg"><?php print $wiki_image; ?></div>
     <div class="blogfpo">
       <ul>
-        <?php print $wiki_images; ?>
+        <?php print render($content['field_category']); ?>
       </ul>
     </div><!-- .blogfpo -->
     <div class="middleleftimg1"><?php print $node->field_emvideo[0]['view'] ?></div>
