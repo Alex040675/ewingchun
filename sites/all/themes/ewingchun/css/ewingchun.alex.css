@@ -20,15 +20,16 @@
     .page-wiki .l-main .l-content .view-wiki .view-header {
       line-height: 22px; }
     .page-wiki .l-main .l-content .view-wiki .view-filters {
-      margin: 20px 0; }
+      margin: 30px 0; }
       .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys {
-        float: none !important; }
+        width: 50%;
+        padding: 0; }
         .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label {
           float: none; }
         .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget {
-          margin: 1% 1% 1% 4%; }
+          margin: 1% 1% 1% 0; }
           .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item {
-            width: 49%;
+            width: 91%;
             background: url(../images/keyword-txtbox.jpg) no-repeat left;
             padding: 5px;
             background-size: 100% 100%; }
@@ -43,8 +44,10 @@
         .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield {
           display: table;
           width: auto; }
-      .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit {
-        margin: 0; }
+      .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button {
+        padding-top: 23px; }
+        .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit {
+          margin: 0; }
     .page-wiki .l-main .l-content .view-wiki .view-content {
       margin-top: 20px; }
       .page-wiki .l-main .l-content .view-wiki .view-content h3 {
@@ -126,14 +129,27 @@
           .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
             font-size: 14px; }
 
+@media screen and (max-width: 320px) {
+  .page-wiki .form-type-textfield {
+    width: 90% !important; }
+  .page-wiki .views-widget-filter-keys {
+    width: 100% !important; }
+    .page-wiki .views-widget-filter-keys .form-type-textfield {
+      width: 90% !important; }
+  .page-wiki .views-submit-button {
+    padding-top: 5px !important; }
+    .page-wiki .views-submit-button .form-submit {
+      height: 36px !important; } }
 @media screen and (max-width: 480px) {
   .page-wiki .l-main {
     padding: 20px 2% !important; }
-    .page-wiki .l-main .view-filters .form-type-textfield {
+    .page-wiki .l-main .view-filters .form-type-textfield input {
+      font-size: 11px !important;
+      height: 20px !important; }
+    .page-wiki .l-main .view-filters .views-widget-filter-keys {
       width: 70% !important; }
-      .page-wiki .l-main .view-filters .form-type-textfield input {
-        font-size: 11px !important;
-        height: 20px !important; }
+    .page-wiki .l-main .view-filters .form-submit {
+      height: 33px !important; }
   .page-wiki .l-content,
   .page-wiki .l-region--sidebar-first {
     float: none !important;
@@ -175,6 +191,8 @@
   .page-wiki .l-region--sidebar-first {
     width: 29% !important; }
   .page-wiki a {
-    font-size: 11px !important; } }
+    font-size: 11px !important; }
+  .page-wiki .views-widget-filter-keys {
+    width: 64% !important; } }
 
 /*# sourceMappingURL=ewingchun.alex.css.map */

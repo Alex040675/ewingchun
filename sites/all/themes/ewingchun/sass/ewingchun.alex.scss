@@ -26,16 +26,17 @@
           line-height: 22px;
         }
         .view-filters {
-          margin: 20px 0;
+          margin: 30px 0;
           .views-widget-filter-keys {
-            float: none!important;
+            width: 50%;
+            padding: 0;
             label {
               float: none;
             }
             .views-widget {
-              margin: 1% 1% 1% 4%;
+              margin: 1% 1% 1% 0;
               .form-item {
-                width: 49%;
+                width: 91%;
                 background: url(../images/keyword-txtbox.jpg) no-repeat left;
                 padding: 5px;
                 background-size: 100% 100%;
@@ -56,6 +57,7 @@
             }
           }
           .views-submit-button {
+            padding-top: 23px;
             .form-submit {
               margin: 0;
             }
@@ -154,17 +156,43 @@
     }
   }
 }
+@media screen and (max-width: 320px) {
+  .page-wiki {
+    .form-type-textfield {
+      width: 90% !important;
+    }
+    .views-widget-filter-keys {
+      width: 100% !important;
+      .form-type-textfield {
+        width: 90% !important;
+      }
+    }
+    .views-submit-button {
+      padding-top: 5px!important;
+      .form-submit {
+        height: 36px!important;
+      }
+    }
+  }
+}
+
+
 @media screen and (max-width: 480px) {
   .page-wiki {
     .l-main {
       padding: 20px 2% !important;
       .view-filters {
         .form-type-textfield {
-          width: 70%!important;
           input {
             font-size: 11px!important;
             height: 20px!important;
           }
+        }
+        .views-widget-filter-keys {
+          width: 70% !important;
+        }
+        .form-submit {
+          height: 33px!important;
         }
       }
     }
@@ -218,6 +246,9 @@
     }
     a {
       font-size: 11px!important;
+    }
+    .views-widget-filter-keys {
+      width: 64% !important;
     }
   }
 }
