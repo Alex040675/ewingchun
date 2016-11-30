@@ -7,7 +7,9 @@
     <p class="ecr1-txt1">Last Update: <?php print format_date($node->changed, 'short'); ?></p>
     <p class="ecr1-txt1">Category: <?php print $terms; ?></p>
     <p class="ecr1-txt1">Sifus Referenced: <?php print render($content['field_related_sifus']) ?></p>
+    <?php if (isset($content['field_related_wiki'])): ?>
     <p class="ecr1-txt1">Sifus Referenced Wiki: <?php print render($content['field_related_wiki']); ?></p>
+    <?php endif; ?>
     <div class="ecrl-sources">
       <p class="ecr1s-txt">Sources</p>
       <p class="ecr1s-txt1"><?php print $node->field_sources['und'][0]['value'] ?></p>
