@@ -1,28 +1,82 @@
-.section-encyclopedia {
+.page-wiki {
   .l-main {
+    padding: 0 3% !important;
     text-align: left;
     .l-content {
       width: 70%;
       float: right;
-      .element-invisible,
-      .tabs--primary, h1 {
-        display: none;
+      h1 {
+        margin: 30px 0;
+        background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
+        background-size: 100% 10%;
+        padding-bottom: 35px;
       }
-      .node--page--full {
-        h1 {
-          display: inherit;
+      h1:first-letter {
+        font-size: 28px;
+      }
+      .encyclopedia-text {
+        font-size: 15px;
+        font-family: Arial;
+        color: #8d8d8d;
+        font-weight: 700;
+        line-height: 28px;
+      }
+      .view-wiki {
+        .view-header {
+          line-height: 22px;
         }
-        .field__item {
-          p {
-            line-height: 22px;
+        .view-filters {
+          margin: 20px 0;
+          .views-widget-filter-keys {
+            float: none!important;
+            label {
+              float: none;
+            }
+            .views-widget {
+              margin: 1% 1% 1% 4%;
+              .form-item {
+                width: 49%;
+                background: url(../images/keyword-txtbox.jpg) no-repeat left;
+                padding: 5px;
+                background-size: 100% 100%;
+                input {
+                  background: none repeat scroll 0 0 transparent;
+                  border: medium none;
+                  color: #666;
+                  height: 26px;
+                  width: 96%;
+                  padding: 0;
+                  margin: 0;
+                }
+              }
+            }
+            .form-type-textfield {
+              display: table;
+              width: auto;
+            }
+          }
+          .views-submit-button {
+            .form-submit {
+              margin: 0;
+            }
           }
         }
-      }
-      .block--views {
-        margin-top: 40px;
         .view-content {
-          ol {
-            padding-left: 20px;
+          margin-top: 20px;
+          h3 {
+            margin-bottom: 10px;
+            color: #1c57a7;
+            font-family: Trajan Pro Bold;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: 22px;
+          }
+          h3:first-letter {
+            font-size: 20px;
+          }
+          ul {
+            margin: 0;
+            padding-left: 3%;
             li {
               list-style: none;
               line-height: 25px;
@@ -37,27 +91,32 @@
       border-right: solid 1px #ededed;
       .block--views-wiki-categories-block,
       .block--menu-menu-encyclopedia-categories {
+        li {
+          color: #1c57a7;
+        }
         .views-row {
           overflow: hidden;
         }
         margin: 25px 0 0;
-        background: url(../images/encyclopediacategories-headingbg.png) no-repeat;
-        background-size: 100% 10%;
+        background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top;
+        background-size: 95% 10%;
         h2 {
           color: #116201;
           font-family: Trajan Pro Bold;
           text-transform: uppercase;
           letter-spacing: -1px;
-          padding-left: 18px;
+          padding-left: 14%;
+          font-size: 15px;
         }
         .view-wiki-categories {
-          padding-top: 25px;
+          padding-top: 2px;
           .view-content {
             padding-left: 5%;
-            .views-row {
+            .views-summary {
               font-size: 12px;
               line-height: 26px;
               list-style: none;
+              padding-left: 10%;
               .views-field-name {
                 float: left;
                 margin-right: 10px;
@@ -96,9 +155,18 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .section-encyclopedia {
+  .page-wiki {
     .l-main {
       padding: 20px 2% !important;
+      .view-filters {
+        .form-type-textfield {
+          width: 70%!important;
+          input {
+            font-size: 11px!important;
+            height: 20px!important;
+          }
+        }
+      }
     }
     .l-content,
     .l-region--sidebar-first {
@@ -116,6 +184,7 @@
       }
       .block--views-wiki-categories-block,
       .block--menu-menu-encyclopedia-categories {
+        background-size: 100% 10% !important;
         a {
           font-size: 14px!important;
         }
@@ -124,7 +193,7 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .section-encyclopedia {
+  .page-wiki {
     .block--views-wiki-categories-block,
     .block--menu-menu-encyclopedia-categories {
       h2 {
@@ -140,7 +209,7 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .section-encyclopedia {
+  .page-wiki {
     .l-content {
       width: 69%!important;
     }
@@ -150,10 +219,5 @@
     a {
       font-size: 11px!important;
     }
-  }
-}
-@media (min-width: 320px) and (max-width: 768px) {
-  .section-encyclopedia {
-
   }
 }
