@@ -1,39 +1,112 @@
-.page-wiki .l-main {
+.element-invisible,
+.tabs--primary {
+  display: none; }
+
+.page-wiki .l-content h1 {
+  margin: 30px 0;
+  background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
+  background-size: 100% 10%;
+  padding-bottom: 35px; }
+
+.page-wiki .l-main,
+.node-type-wiki .l-main {
   padding: 0 3% !important;
   text-align: left; }
-  .page-wiki .l-main .l-content {
-    width: 70%;
+  .page-wiki .l-main .l-content,
+  .node-type-wiki .l-main .l-content {
+    width: 72%;
     float: right; }
-    .page-wiki .l-main .l-content h1 {
-      margin: 30px 0;
-      background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
-      background-size: 100% 10%;
-      padding-bottom: 35px; }
-    .page-wiki .l-main .l-content h1:first-letter {
+    .page-wiki .l-main .l-content p,
+    .node-type-wiki .l-main .l-content p {
+      line-height: 22px; }
+    .page-wiki .l-main .l-content h1:first-letter,
+    .node-type-wiki .l-main .l-content h1:first-letter {
       font-size: 28px; }
-    .page-wiki .l-main .l-content .encyclopedia-text {
+    .page-wiki .l-main .l-content .encyclopedia-text,
+    .node-type-wiki .l-main .l-content .encyclopedia-text {
       font-size: 15px;
       font-family: Arial;
       color: #8d8d8d;
       font-weight: 700;
       line-height: 28px; }
-    .page-wiki .l-main .l-content .view-wiki .view-header {
-      line-height: 22px; }
-    .page-wiki .l-main .l-content .view-wiki .view-filters {
+    .page-wiki .l-main .l-content .encyclopediacategories-center,
+    .node-type-wiki .l-main .l-content .encyclopediacategories-center {
+      width: 70%;
+      float: left; }
+    .page-wiki .l-main .l-content .encyclopediacategories-right,
+    .node-type-wiki .l-main .l-content .encyclopediacategories-right {
+      width: 29%;
+      float: right; }
+      .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1,
+      .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources,
+      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left {
+        background: #ededed;
+        font-size: 12px;
+        color: #000;
+        margin: 20px 0 0;
+        padding: 5px 0 0;
+        border-top: solid 1px #FFF; }
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 p,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 .field,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources p,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources .field,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left p,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left .field,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 p,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 .field,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources p,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources .field,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left p,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left .field {
+          font-size: 12px;
+          padding: 0 3% 7px;
+          margin: 0; }
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources ul,
+        .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources ul,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul {
+          margin: 10px 0;
+          list-style: disc;
+          padding: 0 5px 0 12%; }
+          .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
+          .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources ul li,
+          .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul li,
+          .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
+          .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources ul li,
+          .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul li {
+            padding-bottom: 5px; }
+      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left {
+        margin-top: 0 !important; }
+        .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul {
+          padding-left: 3%; }
+    .page-wiki .l-main .l-content .view-wiki .view-filters,
+    .node-type-wiki .l-main .l-content .view-wiki .view-filters {
       margin: 30px 0; }
-      .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys {
+      .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys,
+      .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys {
         width: 50%;
         padding: 0; }
-        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label {
+        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label,
+        .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label {
           float: none; }
-        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget {
+        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget,
+        .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget {
           margin: 1% 1% 1% 0; }
-          .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item {
+          .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item,
+          .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item {
             width: 91%;
             background: url(../images/keyword-txtbox.jpg) no-repeat left;
             padding: 5px;
             background-size: 100% 100%; }
-            .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input {
+            .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input,
+            .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input {
               background: none repeat scroll 0 0 transparent;
               border: medium none;
               color: #666;
@@ -41,158 +114,244 @@
               width: 96%;
               padding: 0;
               margin: 0; }
-        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield {
+        .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield,
+        .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield {
           display: table;
           width: auto; }
-      .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button {
+      .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button,
+      .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button {
         padding-top: 23px; }
-        .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit {
+        .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit,
+        .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit {
           margin: 0; }
-    .page-wiki .l-main .l-content .view-wiki .view-content {
+    .page-wiki .l-main .l-content .view-wiki .view-content,
+    .node-type-wiki .l-main .l-content .view-wiki .view-content {
       margin-top: 20px; }
-      .page-wiki .l-main .l-content .view-wiki .view-content h3 {
+      .page-wiki .l-main .l-content .view-wiki .view-content h3,
+      .node-type-wiki .l-main .l-content .view-wiki .view-content h3 {
         margin-bottom: 10px;
         color: #1c57a7;
         font-family: Trajan Pro Bold;
         font-size: 17px;
         font-weight: normal;
         line-height: 22px; }
-      .page-wiki .l-main .l-content .view-wiki .view-content h3:first-letter {
+      .page-wiki .l-main .l-content .view-wiki .view-content h3:first-letter,
+      .node-type-wiki .l-main .l-content .view-wiki .view-content h3:first-letter {
         font-size: 20px; }
-      .page-wiki .l-main .l-content .view-wiki .view-content ul {
+      .page-wiki .l-main .l-content .view-wiki .view-content ul,
+      .node-type-wiki .l-main .l-content .view-wiki .view-content ul {
         margin: 0;
         padding-left: 3%; }
-        .page-wiki .l-main .l-content .view-wiki .view-content ul li {
+        .page-wiki .l-main .l-content .view-wiki .view-content ul li,
+        .node-type-wiki .l-main .l-content .view-wiki .view-content ul li {
           list-style: none;
           line-height: 25px; }
-  .page-wiki .l-main .l-region--sidebar-first {
+  .page-wiki .l-main .l-region--sidebar-first,
+  .node-type-wiki .l-main .l-region--sidebar-first {
     width: 25%;
     float: left;
     border-right: solid 1px #ededed; }
     .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
-    .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
+    .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories,
+    .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
+    .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
       margin: 25px 0 0;
       background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top;
-      background-size: 95% 10%; }
+      background-size: 100% 10%; }
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block li,
-      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories li {
+      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories li,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block li,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories li {
         color: #1c57a7; }
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
-      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row {
+      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row {
         overflow: hidden; }
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
-      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2 {
+      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2 {
         color: #116201;
         font-family: Trajan Pro Bold;
         text-transform: uppercase;
         letter-spacing: -1px;
-        padding-left: 14%;
+        padding-left: 10%;
         font-size: 15px; }
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
-      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories {
+      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories {
         padding-top: 2px; }
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
-        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content {
+        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content {
           padding-left: 5%; }
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary,
-          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary {
+          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary {
             font-size: 12px;
             line-height: 26px;
             list-style: none;
-            padding-left: 10%; }
+            padding-left: 5%; }
             .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-name,
-            .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-name {
+            .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-name,
+            .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-name,
+            .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-name {
               float: left;
               margin-right: 10px; }
             .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-nid,
-            .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-nid {
+            .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-nid,
+            .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-nid,
+            .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-nid {
               color: #1C57A7; }
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
-      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu {
-        padding: 4% 0 0 13%; }
+      .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
+      .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu {
+        padding: 4% 0 0 7%; }
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
-        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu {
+        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu {
           padding: 3% 0 3% 1%; }
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
-        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li {
+        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li {
           list-style-image: url(../images/arrow01.jpg) !important;
           padding-left: 10px;
           line-height: 25px;
           margin: 0; }
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
-          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a {
+          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a {
             font-size: 15px; }
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
-        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded {
+        .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
+        .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded {
           list-style-image: url(../images/menu-arrow.png) !important; }
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded a,
-          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
+          .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded a,
+          .node-type-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
             font-size: 14px; }
 
 @media screen and (max-width: 320px) {
-  .page-wiki .form-type-textfield {
+  .page-wiki .form-type-textfield,
+  .node-type-wiki .form-type-textfield {
     width: 90% !important; }
-  .page-wiki .views-widget-filter-keys {
+  .page-wiki .views-widget-filter-keys,
+  .node-type-wiki .views-widget-filter-keys {
     width: 100% !important; }
-    .page-wiki .views-widget-filter-keys .form-type-textfield {
+    .page-wiki .views-widget-filter-keys .form-type-textfield,
+    .node-type-wiki .views-widget-filter-keys .form-type-textfield {
       width: 90% !important; }
-  .page-wiki .views-submit-button {
+  .page-wiki .views-submit-button,
+  .node-type-wiki .views-submit-button {
     padding-top: 5px !important; }
-    .page-wiki .views-submit-button .form-submit {
+    .page-wiki .views-submit-button .form-submit,
+    .node-type-wiki .views-submit-button .form-submit {
       height: 36px !important; } }
 @media screen and (max-width: 480px) {
-  .page-wiki .l-main {
+  .page-wiki .l-main,
+  .node-type-wiki .l-main {
     padding: 20px 2% !important; }
-    .page-wiki .l-main .view-filters .form-type-textfield input {
+    .page-wiki .l-main .view-filters .form-type-textfield input,
+    .node-type-wiki .l-main .view-filters .form-type-textfield input {
       font-size: 11px !important;
       height: 20px !important; }
-    .page-wiki .l-main .view-filters .views-widget-filter-keys {
+    .page-wiki .l-main .view-filters .views-widget-filter-keys,
+    .node-type-wiki .l-main .view-filters .views-widget-filter-keys {
       width: 70% !important; }
-    .page-wiki .l-main .view-filters .form-submit {
+    .page-wiki .l-main .view-filters .form-submit,
+    .node-type-wiki .l-main .view-filters .form-submit {
       height: 33px !important; }
   .page-wiki .l-content,
-  .page-wiki .l-region--sidebar-first {
+  .page-wiki .l-region--sidebar-first,
+  .node-type-wiki .l-content,
+  .node-type-wiki .l-region--sidebar-first {
     float: none !important;
     width: 98% !important;
     margin: 0 auto !important; }
     .page-wiki .l-content h1,
-    .page-wiki .l-region--sidebar-first h1 {
+    .page-wiki .l-region--sidebar-first h1,
+    .node-type-wiki .l-content h1,
+    .node-type-wiki .l-region--sidebar-first h1 {
       font-size: 16px !important; }
       .page-wiki .l-content h1 a,
-      .page-wiki .l-region--sidebar-first h1 a {
+      .page-wiki .l-region--sidebar-first h1 a,
+      .node-type-wiki .l-content h1 a,
+      .node-type-wiki .l-region--sidebar-first h1 a {
         font-size: 10px; }
     .page-wiki .l-content h3,
-    .page-wiki .l-region--sidebar-first h3 {
+    .page-wiki .l-region--sidebar-first h3,
+    .node-type-wiki .l-content h3,
+    .node-type-wiki .l-region--sidebar-first h3 {
       font-size: 14px !important; }
     .page-wiki .l-content .block--views-wiki-categories-block,
     .page-wiki .l-content .block--menu-menu-encyclopedia-categories,
     .page-wiki .l-region--sidebar-first .block--views-wiki-categories-block,
-    .page-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
+    .page-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories,
+    .node-type-wiki .l-content .block--views-wiki-categories-block,
+    .node-type-wiki .l-content .block--menu-menu-encyclopedia-categories,
+    .node-type-wiki .l-region--sidebar-first .block--views-wiki-categories-block,
+    .node-type-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
       background-size: 100% 10% !important; }
       .page-wiki .l-content .block--views-wiki-categories-block a,
       .page-wiki .l-content .block--menu-menu-encyclopedia-categories a,
       .page-wiki .l-region--sidebar-first .block--views-wiki-categories-block a,
-      .page-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories a {
-        font-size: 14px !important; } }
+      .page-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories a,
+      .node-type-wiki .l-content .block--views-wiki-categories-block a,
+      .node-type-wiki .l-content .block--menu-menu-encyclopedia-categories a,
+      .node-type-wiki .l-region--sidebar-first .block--views-wiki-categories-block a,
+      .node-type-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories a {
+        font-size: 14px !important; }
+    .page-wiki .l-content .encyclopediacategories-center,
+    .page-wiki .l-content .encyclopediacategories-right,
+    .page-wiki .l-region--sidebar-first .encyclopediacategories-center,
+    .page-wiki .l-region--sidebar-first .encyclopediacategories-right,
+    .node-type-wiki .l-content .encyclopediacategories-center,
+    .node-type-wiki .l-content .encyclopediacategories-right,
+    .node-type-wiki .l-region--sidebar-first .encyclopediacategories-center,
+    .node-type-wiki .l-region--sidebar-first .encyclopediacategories-right {
+      float: none !important;
+      width: 98% !important; } }
 @media screen and (max-width: 768px) {
   .page-wiki .block--views-wiki-categories-block h2,
-  .page-wiki .block--menu-menu-encyclopedia-categories h2 {
+  .page-wiki .block--menu-menu-encyclopedia-categories h2,
+  .node-type-wiki .block--views-wiki-categories-block h2,
+  .node-type-wiki .block--menu-menu-encyclopedia-categories h2 {
     font-size: 13px !important; }
   .page-wiki .block--views-wiki-categories-block .views-row,
   .page-wiki .block--views-wiki-categories-block .menu li,
   .page-wiki .block--views-wiki-categories-block .expanded li,
   .page-wiki .block--menu-menu-encyclopedia-categories .views-row,
   .page-wiki .block--menu-menu-encyclopedia-categories .menu li,
-  .page-wiki .block--menu-menu-encyclopedia-categories .expanded li {
+  .page-wiki .block--menu-menu-encyclopedia-categories .expanded li,
+  .node-type-wiki .block--views-wiki-categories-block .views-row,
+  .node-type-wiki .block--views-wiki-categories-block .menu li,
+  .node-type-wiki .block--views-wiki-categories-block .expanded li,
+  .node-type-wiki .block--menu-menu-encyclopedia-categories .views-row,
+  .node-type-wiki .block--menu-menu-encyclopedia-categories .menu li,
+  .node-type-wiki .block--menu-menu-encyclopedia-categories .expanded li {
     line-height: 22px !important; } }
 @media (min-width: 481px) and (max-width: 768px) {
-  .page-wiki .l-content {
+  .page-wiki .l-content,
+  .node-type-wiki .l-content {
     width: 69% !important; }
-  .page-wiki .l-region--sidebar-first {
+  .page-wiki .l-region--sidebar-first,
+  .node-type-wiki .l-region--sidebar-first {
     width: 29% !important; }
-  .page-wiki a {
+  .page-wiki a,
+  .node-type-wiki a {
     font-size: 11px !important; }
-  .page-wiki .views-widget-filter-keys {
+  .page-wiki .views-widget-filter-keys,
+  .node-type-wiki .views-widget-filter-keys {
     width: 64% !important; } }
 
 /*# sourceMappingURL=ewingchun.alex.css.map */

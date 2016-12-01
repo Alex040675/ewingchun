@@ -1,16 +1,28 @@
+.element-invisible,
+.tabs--primary {
+  display: none;
+}
 .page-wiki {
+  .l-content {
+    h1 {
+      margin: 30px 0;
+      background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
+      background-size: 100% 10%;
+      padding-bottom: 35px;
+    }
+  }
+}
+.page-wiki,
+.node-type-wiki {
   .l-main {
     padding: 0 3% !important;
     text-align: left;
     .l-content {
-      width: 70%;
-      float: right;
-      h1 {
-        margin: 30px 0;
-        background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
-        background-size: 100% 10%;
-        padding-bottom: 35px;
+      p {
+        line-height: 22px;
       }
+      width: 72%;
+      float: right;
       h1:first-letter {
         font-size: 28px;
       }
@@ -21,10 +33,45 @@
         font-weight: 700;
         line-height: 28px;
       }
-      .view-wiki {
-        .view-header {
-          line-height: 22px;
+      .encyclopediacategories-center {
+        width: 70%;
+        float: left;
+      }
+      .encyclopediacategories-right {
+        width: 29%;
+        float: right;
+        .ecr1,
+        .ecrl-sources,
+        .productname-left {
+          background: #ededed;
+          font-size: 12px;
+          color: #000;
+          margin: 20px 0 0;
+          padding: 5px 0 0;
+          border-top: solid 1px #FFF;
+          p,
+          .field {
+            font-size: 12px;
+            padding: 0 3% 7px;
+            margin: 0;
+          }
+          ul {
+            margin: 10px 0;
+            list-style: disc;
+            padding: 0 5px 0 12%;
+            li {
+              padding-bottom: 5px;
+            }
+          }
         }
+        .productname-left {
+          margin-top: 0!important;
+          ul {
+            padding-left: 3%;
+          }
+        }
+      }
+      .view-wiki {
         .view-filters {
           margin: 30px 0;
           .views-widget-filter-keys {
@@ -101,13 +148,13 @@
         }
         margin: 25px 0 0;
         background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top;
-        background-size: 95% 10%;
+        background-size: 100% 10%;
         h2 {
           color: #116201;
           font-family: Trajan Pro Bold;
           text-transform: uppercase;
           letter-spacing: -1px;
-          padding-left: 14%;
+          padding-left: 10%;
           font-size: 15px;
         }
         .view-wiki-categories {
@@ -118,7 +165,7 @@
               font-size: 12px;
               line-height: 26px;
               list-style: none;
-              padding-left: 10%;
+              padding-left: 5%;
               .views-field-name {
                 float: left;
                 margin-right: 10px;
@@ -130,7 +177,7 @@
           }
         }
         ul.menu {
-          padding: 4% 0 0 13%;
+          padding: 4% 0 0 7%;
           .expanded {
             .menu {
               padding: 3% 0 3% 1%;
@@ -157,7 +204,8 @@
   }
 }
 @media screen and (max-width: 320px) {
-  .page-wiki {
+  .page-wiki,
+  .node-type-wiki {
     .form-type-textfield {
       width: 90% !important;
     }
@@ -175,10 +223,9 @@
     }
   }
 }
-
-
 @media screen and (max-width: 480px) {
-  .page-wiki {
+  .page-wiki,
+  .node-type-wiki {
     .l-main {
       padding: 20px 2% !important;
       .view-filters {
@@ -217,11 +264,17 @@
           font-size: 14px!important;
         }
       }
+      .encyclopediacategories-center,
+      .encyclopediacategories-right {
+        float: none!important;
+        width: 98% !important;
+      }
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .page-wiki {
+  .page-wiki,
+  .node-type-wiki {
     .block--views-wiki-categories-block,
     .block--menu-menu-encyclopedia-categories {
       h2 {
@@ -237,7 +290,8 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .page-wiki {
+  .page-wiki,
+  .node-type-wiki {
     .l-content {
       width: 69%!important;
     }
