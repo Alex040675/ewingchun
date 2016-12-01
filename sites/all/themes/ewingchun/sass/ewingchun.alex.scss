@@ -264,11 +264,6 @@
           font-size: 14px!important;
         }
       }
-      .encyclopediacategories-center,
-      .encyclopediacategories-right {
-        float: none!important;
-        width: 98% !important;
-      }
     }
   }
 }
@@ -286,6 +281,11 @@
         line-height: 22px!important;
 
       }
+    }
+    .encyclopediacategories-center,
+    .encyclopediacategories-right {
+      float: none!important;
+      width: 98% !important;
     }
   }
 }
