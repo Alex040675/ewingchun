@@ -37,8 +37,8 @@
     </div>
   <?php endif; ?>
   <div class="comon-btom">
-    <?php if ($node->field_homepage_link['und'][0]['view']): ?>
-      <p class="comom-btm-text"><strong>Websites/Social Pages:</strong> <?php print_r($node->field_bdate); ?> </p>
+    <?php if ($node->field_homepage_link['und'][0]['title']): ?>
+      <p class="comom-btm-text"><strong>Websites/Social Pages:</strong> <?php print l($node->field_homepage_link['und'][0]['title'], $node->field_homepage_link['und'][0]['url']); ?> </p>
     <?php endif; ?>
     <div class="dob">
       <?php if ($node->field_bdate['und'][0]['value']): ?>
