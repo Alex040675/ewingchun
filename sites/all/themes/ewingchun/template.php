@@ -192,6 +192,7 @@ function ewingchun_preprocess_node(&$variables) {
   if ($variables['node']->type == 'resource') {
     if (!empty($variables['node']->field_instructors['und'][0]['nid'])) {
       $sifu_node = node_load($variables['node']->field_instructors[0]['nid']);
+      print_r()
       // Pull in linked name
       $sifu_name = l($sifu_node->title, 'node/' . $sifu_node->nid);
       $variables['head_instructor'] = $sifu_name;
