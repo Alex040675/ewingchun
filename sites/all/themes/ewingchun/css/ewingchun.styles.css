@@ -2529,10 +2529,10 @@ footer {
     max-width: 70%; }
 
   /* line 776, ../sass/components/_mobile.scss */
-  .l-page .view-sifu .view-header .sifuheaderleft {
+  .l-page .view-header .sifuheaderleft {
     margin-top: 200px; }
   /* line 779, ../sass/components/_mobile.scss */
-  .l-page .view-sifu .view-header .sifuheaderright {
+  .l-page .view-header .sifuheaderright {
     margin-top: -300px; } }
 @media screen and (max-width: 960px) {
   /* line 787, ../sass/components/_mobile.scss */
