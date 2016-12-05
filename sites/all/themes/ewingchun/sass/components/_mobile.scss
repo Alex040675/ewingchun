@@ -57,6 +57,11 @@
       }
     }
   }
+  .page-schools-list{
+    .views-field-province,.views-field-city{
+      display: none;
+    }
+  }
   .page-videos{
     .l-page{
       .view-videos table td {
@@ -414,15 +419,16 @@
           display: none;
         }
       }
-      .view-sifu .view-header .sifuheaderleft{
-        margin-top: 200px;
-      }
-      .view-sifu .view-header .sifuheaderright{
-        margin-top: -300px;
-      }
     }
   }
-
+.l-page{
+  .view-sifu .view-header .sifuheaderleft{
+    margin-top: 200px;
+  }
+  .view-sifu .view-header .sifuheaderright{
+    margin-top: -300px;
+  }
+}
   .page-videos {
     .view-videos {
       .view-filters {
@@ -521,7 +527,7 @@
     padding-bottom: 20px;
   }
   .page-schools-list {
-    .views-field-country, .views-field-province, .views-field-city, .views-field-field-profile-img, .views-field-changed {
+     .views-field-field-profile-img, .views-field-changed {
       display: none;
     }
   }
