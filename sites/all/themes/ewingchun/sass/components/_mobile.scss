@@ -58,7 +58,7 @@
     }
   }
   .page-schools-list{
-    .views-field-province,.views-field-city{
+    .views-field-province,.views-field-city,.views-field-field-link-resource-url{
       display: none;
     }
   }
@@ -421,14 +421,6 @@
       }
     }
   }
-.l-page{
-  .view-sifu .view-header .sifuheaderleft{
-    margin-top: 200px;
-  }
-  .view-sifu .view-header .sifuheaderright{
-    margin-top: -300px;
-  }
-}
   .page-videos {
     .view-videos {
       .view-filters {
@@ -778,6 +770,14 @@
     }
     .description{
       max-width: 70%;
+    }
+  }
+  .l-page{
+    .view-sifu .view-header .sifuheaderleft{
+      margin-top: 200px;
+    }
+    .view-sifu .view-header .sifuheaderright{
+      margin-top: -300px;
     }
   }
 }
