@@ -22,13 +22,13 @@ generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
 
 # Require any additional compass plugins installed on your system.
-#require 'compass-normalize'
-#require 'rgbapng'
+require 'compass-normalize'
+require 'rgbapng'
 #require 'toolkit'
-#require 'breakpoint'
-#require 'singularitygs'
-#require 'susy'
-#require 'sass-globbing'
+require 'breakpoint'
+require 'singularitygs'
+require 'susy'
+require 'sass-globbing'
 
 ##
 ## You probably don't need to edit anything below this.

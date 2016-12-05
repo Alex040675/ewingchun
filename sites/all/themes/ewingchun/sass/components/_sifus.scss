@@ -273,7 +273,6 @@
           font-family: Arial;
           font-size: 14px;
           font-weight: 400;
-          padding: 0 0 15px;
           list-style: none;
           span{
             color: #000;
@@ -310,6 +309,14 @@
     .comon-btom{
       float: left;
       width: 70%;
+      p{
+        color: #000000;
+        margin-top: 0;
+      }
+      a{
+        color: #666;
+        font-size: 14px;
+      }
       span{
         color: #000;
         font-family: Arial;

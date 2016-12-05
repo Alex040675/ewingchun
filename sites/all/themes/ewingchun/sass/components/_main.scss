@@ -7,6 +7,9 @@
     }
   }
 }
+.not-logged-in .tabs--primary {
+  display: none;
+}
 .sharethis-buttons{
   display: none;
 }
@@ -290,7 +293,7 @@ header {
     float: right;
     width: 35%;
     border-radius: 3px 0 0 0;
-    margin-top: 117px;
+    margin-top: 121px;
     #search-block-form {
       .container-inline {
         border-radius: 0;
@@ -515,6 +518,7 @@ header {
     letter-spacing: -1px;
     padding: 5px 0 0 14px;
     text-transform: uppercase;
+    margin-bottom: 0;
   }
   table{
     width: 100%;

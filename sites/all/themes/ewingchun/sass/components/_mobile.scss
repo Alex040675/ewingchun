@@ -527,17 +527,26 @@
   }
   .node-type-sifu {
     .l-page {
+      .bottom-border{
+        margin-top: 0;
+      }
       .commonname {
         .common-left, .common-midle, .common-right {
           width: 100%;
           float: none;
-          margin: 0 0 20px 0
+          margin: 0 0 20px 0;
+        }
+        .common-midle{
+          margin-bottom: 0 !important;
         }
         .common-right .common-right-2{
           float: left;
         }
         .common-right .common-right-lft, .common-right .common-right-2 {
           width: auto;
+        }
+        ul li span{
+          margin-right: 5px;
         }
       }
       .primary-part {
@@ -807,6 +816,7 @@
             a {
               padding: 0 !important;
               text-indent: 20px;
+              font-size: 20px;
             }
           }
         }
