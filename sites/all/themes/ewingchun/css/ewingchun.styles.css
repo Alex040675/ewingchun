@@ -1902,7 +1902,7 @@ footer {
   /* line 18, ../sass/components/_mobile.scss */
   .node-type-sifu .review-headingbg .review-hcenterbg {
     height: auto;
-    padding: 5px;
+    padding: 5px 0;
     margin-bottom: 10px; }
     /* line 22, ../sass/components/_mobile.scss */
     .node-type-sifu .review-headingbg .review-hcenterbg .centerright {
@@ -3679,6 +3679,13 @@ html.js .form-autocomplete {
 /* line 708, ../sass/components/_sifus.scss */
 .page-sifu-ranks .comments, .page-sifus-by-name .comments {
   padding: 0 2%; }
+  /* line 710, ../sass/components/_sifus.scss */
+  .page-sifu-ranks .comments .centerleft, .page-sifus-by-name .comments .centerleft {
+    margin-left: 1%; }
+  /* line 713, ../sass/components/_sifus.scss */
+  .page-sifu-ranks .comments .review-left, .page-sifus-by-name .comments .review-left {
+    width: 9%;
+    margin-left: 1%; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
