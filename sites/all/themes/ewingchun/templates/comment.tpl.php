@@ -70,7 +70,7 @@ $user = user_load($comment->uid);
        print l($user->name, 'user/' . $user->uid);
       ?></div>
     <div class="centerright">
-      <div class="centerright01"><span><?php print format_date($created, 'short');?><?php print render($content['links']) ?></span></div>
+      <div class="centerright01"><span><?php print format_date($comment->created, 'short');?><?php print render($content['links']) ?></span></div>
     </div>
   </div>
   <div class="review-hrightbg"> <img width="10" height="31" src="/sites/all/themes/ewingchun/images/coment-rightbg.jpg"> </div>
