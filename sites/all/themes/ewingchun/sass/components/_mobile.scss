@@ -12,6 +12,22 @@
   }
   }
 }
+@media screen and (max-width: 440px){
+  .node-type-sifu{
+    .review-headingbg{
+      .review-hcenterbg{
+        height: auto;
+        padding: 5px;
+        margin-bottom: 10px;
+        .centerright{
+          float: left;
+          clear: both;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 480px){
   header{
     #block-block-11{
