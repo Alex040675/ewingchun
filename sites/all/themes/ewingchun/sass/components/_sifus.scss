@@ -669,6 +669,16 @@
     padding: 7px 0 0;
     width: 20%;
   }
+  .comments{
+    padding: 0 2%;
+    .centerleft{
+      margin-left: 1%;
+    }
+    .review-left{
+      width: 9%;
+      margin-left: 1%;
+    }
+  }
 }
 .page-sifu-ranks,.page-sifus-by-name{
   .view-Rank,.view-sifu{
@@ -703,16 +713,6 @@
           background-color: #f8f8f8;
         }
       }
-    }
-  }
-  .comments{
-    padding: 0 2%;
-    .centerleft{
-      margin-left: 1%;
-    }
-    .review-left{
-      width: 9%;
-      margin-left: 1%;
     }
   }
 }
