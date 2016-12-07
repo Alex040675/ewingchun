@@ -259,6 +259,10 @@ html.js .form-autocomplete{
     margin: 0 2% 0 0;
     padding: 20px 0 0;
     width: 40%;
+    img{
+      width: 100%;
+      height: auto;
+    }
     .blogfpo {
       float: left;
       height: auto;
@@ -311,10 +315,13 @@ html.js .form-autocomplete{
       margin: 0;
     }
   }
-  .comment-form{
+  .comment-form,.comment-wrapper{
     clear: both;
     padding-top: 20px;
     border-top: 5px solid #f8f8f8;
+    h2{
+      font-size: 17px;
+    }
     .form-type-item{
       label{
         float: left;
