@@ -850,8 +850,12 @@ footer{
   textarea{
     width: 90%;
     max-width: 315px;
+    display: block !important;
   }
   .grippie{
+    display: none;
+  }
+  .cke_skin_kama,.filter-wrapper{
     display: none;
   }
 }

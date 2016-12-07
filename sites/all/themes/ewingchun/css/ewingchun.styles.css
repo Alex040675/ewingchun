@@ -1772,16 +1772,20 @@ footer {
 /* line 850, ../sass/components/_main.scss */
 .comment-form textarea {
   width: 90%;
-  max-width: 315px; }
-/* line 854, ../sass/components/_main.scss */
+  max-width: 315px;
+  display: block !important; }
+/* line 855, ../sass/components/_main.scss */
 .comment-form .grippie {
   display: none; }
+/* line 858, ../sass/components/_main.scss */
+.comment-form .cke_skin_kama, .comment-form .filter-wrapper {
+  display: none; }
 
-/* line 859, ../sass/components/_main.scss */
+/* line 863, ../sass/components/_main.scss */
 .comment-form label {
   font-size: 14px;
   font-weight: 400; }
-/* line 863, ../sass/components/_main.scss */
+/* line 867, ../sass/components/_main.scss */
 .comment-form .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -1791,7 +1795,7 @@ footer {
   max-width: 280px;
   padding: 5px;
   width: 98%; }
-/* line 873, ../sass/components/_main.scss */
+/* line 877, ../sass/components/_main.scss */
 .comment-form .form-submit {
   margin-right: 10px;
   background: #1c57a7 none repeat scroll 0 0;
@@ -1803,19 +1807,19 @@ footer {
   text-align: center;
   text-decoration: none;
   padding: 5px 10px; }
-/* line 885, ../sass/components/_main.scss */
+/* line 889, ../sass/components/_main.scss */
 .comment-form .form-actions {
   margin-top: 20px; }
 
-/* line 889, ../sass/components/_main.scss */
+/* line 893, ../sass/components/_main.scss */
 .wrap {
   overflow: hidden; }
 
-/* line 892, ../sass/components/_main.scss */
+/* line 896, ../sass/components/_main.scss */
 .feed-icon {
   display: none; }
 
-/* line 897, ../sass/components/_main.scss */
+/* line 901, ../sass/components/_main.scss */
 .page-node-add .l-main .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -1825,13 +1829,13 @@ footer {
   padding: 5px;
   width: 90%;
   background: #fff; }
-/* line 907, ../sass/components/_main.scss */
+/* line 911, ../sass/components/_main.scss */
 .page-node-add .l-main textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff; }
-/* line 913, ../sass/components/_main.scss */
+/* line 917, ../sass/components/_main.scss */
 .page-node-add .l-main .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
@@ -1842,14 +1846,14 @@ footer {
   font-size: 14px !important;
   padding: 10px 20px;
   margin-right: 10px; }
-/* line 925, ../sass/components/_main.scss */
+/* line 929, ../sass/components/_main.scss */
 .page-node-add .grippie {
   display: none; }
-/* line 929, ../sass/components/_main.scss */
+/* line 933, ../sass/components/_main.scss */
 .page-node-add table th, .page-node-add table tr {
   background-color: #fff; }
 
-/* line 936, ../sass/components/_main.scss */
+/* line 940, ../sass/components/_main.scss */
 .page-node-add-article .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
@@ -1866,13 +1870,13 @@ footer {
   max-width: 293px;
   width: 100% !important; }
 
-/* line 955, ../sass/components/_main.scss */
+/* line 959, ../sass/components/_main.scss */
 .page-node-add-sifu #field-lineage-information-values .form-submit {
   margin-top: 10px; }
-/* line 959, ../sass/components/_main.scss */
+/* line 963, ../sass/components/_main.scss */
 .page-node-add-sifu #edit-field-lineage-information-und-add-more {
   margin-top: 10px; }
-/* line 963, ../sass/components/_main.scss */
+/* line 967, ../sass/components/_main.scss */
 .page-node-add-sifu #edit-field-system .form-select, .page-node-add-sifu #edit-taxonomy-vocabulary-9 .form-select, .page-node-add-sifu #edit-taxonomy-vocabulary-11 .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
@@ -2977,7 +2981,7 @@ html.js .form-autocomplete {
   border-top: 5px solid #f8f8f8; }
   /* line 322, ../sass/components/_schools.scss */
   .section-school .comment-form h2, .section-school .comment-wrapper h2 {
-    font-size: 17px; }
+    font-size: 17px !important; }
   /* line 326, ../sass/components/_schools.scss */
   .section-school .comment-form .form-type-item label, .section-school .comment-wrapper .form-type-item label {
     float: left;
