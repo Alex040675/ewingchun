@@ -3279,9 +3279,8 @@ html.js .form-autocomplete {
   /* line 288, ../sass/components/_sifus.scss */
   .node-type-sifu .commonname .common-right {
     float: left;
-    width: 70%;
-    margin-bottom: 8px; }
-    /* line 292, ../sass/components/_sifus.scss */
+    width: 70%; }
+    /* line 291, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .common-right .common-right-lft {
       color: #000;
       float: left;
@@ -3289,17 +3288,18 @@ html.js .form-autocomplete {
       font-size: 14px;
       font-weight: 700;
       text-decoration: none; }
-    /* line 300, ../sass/components/_sifus.scss */
+    /* line 299, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .common-right .common-right-2 {
       color: #666;
       font-family: Arial;
       font-size: 14px;
       font-weight: 400;
       text-decoration: none; }
-  /* line 308, ../sass/components/_sifus.scss */
+  /* line 307, ../sass/components/_sifus.scss */
   .node-type-sifu .commonname .comon-btom {
     float: left;
-    width: 70%; }
+    width: 70%;
+    margin-top: 8px; }
     /* line 311, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .comon-btom p {
       color: #000000;
