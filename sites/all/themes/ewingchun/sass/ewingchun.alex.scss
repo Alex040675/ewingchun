@@ -156,7 +156,7 @@
         ul {
           padding-left: 0;
         }
-        li.views-row {
+        .views-row {
           list-style-type: none;
           overflow: hidden;
           margin-bottom: 20px;
@@ -263,10 +263,20 @@
     }
   }
   .page-taxonomy-term {
-    .encyclopediacategories-center,
-    .encyclopediacategories-right {
-      width: 100%!important;
-      float: none!important;
+    .view-taxonomy-term {
+      .encyclopediacategories-center,
+      .encyclopediacategories-right {
+        width: 100%!important;
+        float: none!important;
+      }
+    }
+    .pager {
+      overflow: hidden;
+      float: none;
+      .pager__item {
+        display: table;
+        float: left;
+      }
     }
   }
 }

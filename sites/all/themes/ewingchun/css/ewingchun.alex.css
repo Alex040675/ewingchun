@@ -209,9 +209,9 @@
     .node-type-wiki .l-main .l-content .view-taxonomy-term ul,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term ul {
       padding-left: 0; }
-    .page-wiki .l-main .l-content .view-taxonomy-term li.views-row,
-    .node-type-wiki .l-main .l-content .view-taxonomy-term li.views-row,
-    .page-taxonomy-term .l-main .l-content .view-taxonomy-term li.views-row {
+    .page-wiki .l-main .l-content .view-taxonomy-term .views-row,
+    .node-type-wiki .l-main .l-content .view-taxonomy-term .views-row,
+    .page-taxonomy-term .l-main .l-content .view-taxonomy-term .views-row {
       list-style-type: none;
       overflow: hidden;
       margin-bottom: 20px; }
@@ -369,10 +369,16 @@
     .node-type-wiki .views-submit-button .form-submit {
       height: 36px !important; }
 
-  .page-taxonomy-term .encyclopediacategories-center,
-  .page-taxonomy-term .encyclopediacategories-right {
+  .page-taxonomy-term .view-taxonomy-term .encyclopediacategories-center,
+  .page-taxonomy-term .view-taxonomy-term .encyclopediacategories-right {
     width: 100% !important;
-    float: none !important; } }
+    float: none !important; }
+  .page-taxonomy-term .pager {
+    overflow: hidden;
+    float: none; }
+    .page-taxonomy-term .pager .pager__item {
+      display: table;
+      float: left; } }
 @media screen and (max-width: 480px) {
   .page-wiki .l-main,
   .node-type-wiki .l-main {
