@@ -69,6 +69,9 @@
 <?php if ($head_instructor) : ?>
 <p style="line-height:normal;">Head Instructor: <span><?php print $head_instructor ?></span></p>
 <?php endif; ?>
+  <?php if ($school_lineage) : ?>
+    <p style="line-height:normal;">School Lineage: <span><?php print $school_lineage ?></span></p>
+  <?php endif; ?>
 <?php if ($node->field_link_resource_url['und'][0]['url']) : ?>
 <p>Website: <?php print l($node->field_link_resource_url['und'][0]['title'], $node->field_link_resource_url['und'][0]['url']); ?></p>
 <?php endif; ?>

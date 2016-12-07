@@ -196,7 +196,12 @@ function ewingchun_preprocess_node(&$variables) {
       $sifu_name = l($sifu_node->title, 'node/' . $sifu_node->nid);
       $variables['head_instructor'] = $sifu_name;
     }
-
+    if (!empty($variables['node']->field_school_lineage['und'][0]['tid'])) {
+      $term_obj = taxonomy_term_load($variables['node']->field_school_lineage['und'][0]['tid']);
+      // Pull in linked name
+      $term_name = l($term_obj->name, 'taxonomy/term/' . $term_obj->tid);
+      $variables['school_lineage'] = $term_name;
+    }
     foreach ($variables['node']->field_profile_img['und'] AS $key => $img) {
       // Make sure there is actually an image before outputting
       if ($img['uri'] != NULL) {
@@ -333,8 +338,8 @@ function ewingchun_preprocess_node(&$variables) {
           continue;
         }
         // Render additional images with lightbox
-        $full_size = imagecache_create_url('full-size', $img['filepath']);
-        $thumbnail = imagecache_create_url('sifu-listing', $img['filepath']);
+        $full_size = image_style_url('full-size', $img['filepath']);
+        $thumbnail = image_style_url('sifu-listing', $img['filepath']);
 
         // Output a list of images with lightbox overlays
         $variables['wiki_images'] .= '<li><a title="' . $img['data']['alt'] . '" href="' . $full_size . '" rel="lightbox[product]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
