@@ -264,7 +264,7 @@
     }
     .common-midle {
       float: left;
-      width: 35%;
+      width: 70%;
       ul{
         margin: 0;
         padding: 0;
@@ -274,6 +274,7 @@
           font-size: 14px;
           font-weight: 400;
           list-style: none;
+          margin-bottom: 8px;
           span{
             color: #000;
             font-family: Arial;
@@ -286,7 +287,7 @@
     }
     .common-right{
       float: left;
-      width: 35%;
+      width: 70%;
       .common-right-lft{
         color: #000;
         float: left;
@@ -294,25 +295,23 @@
         font-size: 14px;
         font-weight: 700;
         text-decoration: none;
-        width: 40%;
       }
       .common-right-2 {
         color: #666;
-        float: right;
         font-family: Arial;
         font-size: 14px;
         font-weight: 400;
         text-decoration: none;
-        width: 60%;
       }
     }
     .comon-btom{
       float: left;
       width: 70%;
+      margin-top: 8px;
       p{
         color: #000000;
         margin-top: 0;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
       }
       a{
         color: #666;
