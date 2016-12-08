@@ -710,6 +710,20 @@
       }
     }
   }
+  #field-lineage-information-values{
+    width: 100%;
+    .field-type-node-reference{
+      float: left;
+    }
+    .field-type-list-boolean{
+      float: left;
+      clear: both;
+    }
+    .form-submit{
+      float: left;
+      clear: both;
+    }
+  }
 }
 .page-sifu-ranks,.page-sifus-by-name{
   .view-Rank,.view-sifu{
