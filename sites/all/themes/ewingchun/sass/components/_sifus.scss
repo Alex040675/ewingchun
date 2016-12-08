@@ -688,11 +688,23 @@
     .image-widget-data {
       float: left;
       width: 70%;
-      margin-left: 2%;
-      border-right: 1px solid #666;
+      padding-left: 2%;
+      border-left: 1px solid #666;
       margin-top: 10px;
       .form-text{
         width: 95%;
+      }
+    }
+    tr{
+      position: relative;
+      height: 170px;
+      .form-submit{
+        position: absolute;
+        left: 25%;
+        background: #1D58A8;
+        color: #fff;
+        border: none;
+        bottom: 10px;
       }
     }
   }
