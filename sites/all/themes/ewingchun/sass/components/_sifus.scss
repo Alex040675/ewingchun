@@ -678,6 +678,59 @@
       margin-left: 1%;
     }
   }
+  #edit-field-profile-img-und-table{
+    .image-preview {
+      float: left;
+      padding: 10px 10px 10px 0;
+      text-align: center;
+      width: 20%;
+    }
+    .image-widget-data {
+      float: left;
+      width: 70%;
+      padding-left: 2%;
+      border-left: 1px solid #666;
+      margin-top: 10px;
+      .form-text{
+        width: 95%;
+      }
+    }
+    tr{
+      position: relative;
+      height: 170px;
+      .form-submit{
+        position: absolute;
+        left: 25%;
+        background: #1D58A8;
+        color: #fff;
+        border: none;
+        bottom: 10px;
+        padding: 3px 7px;
+        border-radius: 4px;
+      }
+    }
+  }
+  #field-lineage-information-values{
+    width: 100%;
+    .field-type-node-reference{
+      float: left;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+    .field-type-taxonomy-term-reference{
+      margin-top: 10px;
+    }
+    .field-type-list-boolean{
+      float: left;
+      clear: both;
+      margin-top: 10px;
+    }
+    .form-submit{
+      float: left;
+      clear: both;
+      margin: 10px 0;
+    }
+  }
 }
 .page-sifu-ranks,.page-sifus-by-name{
   .view-Rank,.view-sifu{
