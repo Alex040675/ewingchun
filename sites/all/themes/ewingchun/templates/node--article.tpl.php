@@ -125,9 +125,6 @@ if ($page == 1): //if node is being displayed as a node
 	<div class="recentarticles">
 		<p class="yca">recent articles</p>
 		<?php print $recent_articles; ?> </div>
-	<div class="recentarticles">
-		<p class="yca">recent wiki posts</p>
-		<?php print $recent_wiki; ?> </div>
 </div>
   <div id="comments">
     <?php
