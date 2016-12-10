@@ -11,6 +11,8 @@
 .page-wiki .l-main,
 .node-type-wiki .l-main,
 .page-taxonomy-term .l-main {
+  width: 94%;
+  margin: 0 auto;
   text-align: left; }
   .page-wiki .l-main .l-content h1,
   .node-type-wiki .l-main .l-content h1,
