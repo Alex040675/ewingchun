@@ -500,21 +500,21 @@ img, media {
     .review-content .usearname-title a {
       font-size: 12px; }
 
-/* line 3, ../sass/components/_blogs.scss */
+/* line 2, ../sass/components/_blogs.scss */
+.page-blog #block-views-exp-blogs-page-1 {
+  margin-top: 200px; }
+/* line 6, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs label {
   float: none !important; }
-/* line 7, ../sass/components/_blogs.scss */
+/* line 10, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs .views-row .views-field-view-node {
   display: none; }
-/* line 11, ../sass/components/_blogs.scss */
+/* line 14, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs .views-exposed-widget {
   clear: both; }
-/* line 15, ../sass/components/_blogs.scss */
+/* line 18, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs .view-filters {
   margin-top: 0; }
-/* line 18, ../sass/components/_blogs.scss */
-.page-blog .view-Blogs #block-views-exp-blogs-page-1 {
-  margin-top: 200px; }
 /* line 21, ../sass/components/_blogs.scss */
 .page-blog .view-Blogs .view-header {
   overflow: hidden;
