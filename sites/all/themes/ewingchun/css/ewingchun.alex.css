@@ -354,6 +354,12 @@
           .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
             font-size: 14px; }
 
+.node-type-article .articletitle-leftp .articalfpo ul {
+  overflow: hidden; }
+  .node-type-article .articletitle-leftp .articalfpo ul li {
+    list-style-type: none;
+    float: left; }
+
 @media screen and (max-width: 320px) {
   .page-wiki .form-type-textfield,
   .node-type-wiki .form-type-textfield {

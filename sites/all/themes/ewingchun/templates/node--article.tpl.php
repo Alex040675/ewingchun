@@ -80,9 +80,11 @@ if ($page == 1): //if node is being displayed as a node
 		<div class="middle">
 			<?php if( $node->field_sifu['und'][0]['nid'] || $node->field_embeded_video['und'][0]['video_url'] || $article_images ) : ?>
 			<div class="middleleft">
-				<?php if ($sifu_img) : ?>
+				<?php if ($article_main_image) : ?>
 				<div class="middleleftimg">
-					<?php print $sifu_img; ?>
+          <div class="left">
+					  <?php print $article_main_image; ?>
+          </div>
 					<p class="img-caption"><?php print $sifu_name; ?></p>
 				</div><!-- .middleleftimg -->
 				<?php endif; ?>

@@ -245,6 +245,19 @@
     }
   }
 }
+.node-type-article {
+  .articletitle-leftp {
+    .articalfpo {
+      ul {
+        overflow: hidden;
+        li {
+          list-style-type: none;
+          float: left;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 320px) {
   .page-wiki,
   .node-type-wiki {

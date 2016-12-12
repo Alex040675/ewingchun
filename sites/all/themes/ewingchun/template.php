@@ -6,6 +6,7 @@
  * ewingchun theme.
  */
 function ewingchun_preprocess_node(&$variables) {
+  // Add variables for sifu content type.
   if ($variables['node']->type == 'sifu') {
     foreach ($variables['node']->field_profile_img['und'] AS $key => $img) {
       // Check for an image before outputting
@@ -228,35 +229,54 @@ function ewingchun_preprocess_node(&$variables) {
         $variables['school_attended'] = $attended;
       }
     }
-
   }
-
+  // Add variables for article content type.
   if ($variables['node']->type == "article") {
-    $arg = arg(1);
-    $relvideo = $variables['node']->field_embeded_video[0]['video_url'];
-    $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
-    $variables['articlevideos'] = $relatedvideo;
+    foreach ($variables['node']->field_related_images['und'] as $key => $img) {
+      // Make sure there is actually an image before outputting
+      if ($img['uri'] != NULL) {
+        if ($key == 0) {
+          // Print out main image
+          $full_size = image_style_url('full-size', $img['uri']);
+          $thumbnail = image_style_url('article-main-img', $img['uri']);
+          // Output main sifu profile image with lightbox overlay
+          $variables['article_main_image'] = '<a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img class="sifu-image" src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a>';
+          continue;
+        }
 
-    foreach ($sifu_node->field_related_images['und'] as $key => $val) {
-      $full_size = image_style_url('full-size', $img['filepath']);
-      $thumbnail = image_style_url('article-images', $img['filepath']);
-      // Output a list of images with lightbox overlays
-      $variables['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+        // Render additional images with lightbox
+        $full_size = image_style_url('full-size', $img['uri']);
+        $thumbnail = image_style_url('sifu-listing', $img['uri']);
 
+        // Output a list of images with lightbox overlays
+        $variables['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[sifu]"><img src="'. $thumbnail . '" alt="' . $img['data']['alt'] . '" /></a></li>';
+      }
     }
-    $variables['related_sifu'] = $variables['node']->field_sifu['und'][0]['nid'];
-    if (isset($variables['node']->field_sifu['und'][0]['nid'])) {
-      // Pull in Sifu profile image
-      $sifu_node = $variables['node']->field_sifu['und'][0]['node'];
-      $sifu_img =  $sifu_node->field_profile_img['und'][0]['uri'];
+//    $arg = arg(1);
+//    $relvideo = $variables['node']->field_embeded_video[0]['video_url'];
+//    $relatedvideo = '<a rel="lightframe[video|width:656; height:401;]" class="emvideo-thumbnail-replacement emvideo-modal-lightbox2 lightbox2 lightbox-processed emvideo-thumbnail-replacement-processed" title="Bruce Lee" href="/lakhan/ewingchun/emvideo/modal/9265/640/385/field_emvideo/youtube/QG2M9yVJ_s8"><span></span><img width="120" height="90" title="See video" alt="See video" src="http://img.youtube.com/vi/QG2M9yVJ_s8/0.jpg"></a>';
+//    $variables['articlevideos'] = $relatedvideo;
 
-      // Pull in linked name
-      $full_size = image_style_url('full-size', $sifu_img);
-      $thumbnail = image_style_url('article-images', $sifu_img);
-
-      // Output imagecache with lightbox
-      $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
-    }
+//    foreach ($sifu_node->field_related_images['und'] as $key => $val) {
+//      $full_size = image_style_url('full-size', $img['filepath']);
+//      $thumbnail = image_style_url('article-images', $img['filepath']);
+//      // Output a list of images with lightbox overlays
+//      $variables['article_images'] .= '<li><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $thumbnail . '" alt="' . $img['alt'] . '" /></a></li>';
+//
+//    }
+//    $variables['related_sifu'] = $variables['node']->field_sifu['und'][0]['nid'];
+//    if (isset($variables['node']->field_sifu['und'][0]['nid'])) {
+//      // Pull in Sifu profile image
+//      $sifu_node = $variables['node']->field_sifu['und'][0]['node'];
+//      $sifu_img =  $sifu_node->field_profile_img['und'][0]['uri'];
+//
+//      // Pull in linked name
+//      $full_size = image_style_url('full-size', $sifu_img);
+//      $thumbnail = image_style_url('article-images', $sifu_img);
+//
+//      // Output imagecache with lightbox
+//      $variables['sifu_img'] = '<div class="left"><a title="' . $img['alt'] . '" href="' . $full_size . '" rel="lightbox[article]"><img src="'. $full_size . '" alt="' . $img['alt'] . '" /></a></div>';
+//    }
     $otherbysifu = views_embed_view('article', 'block_1', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['otherarticles'] = $otherbysifu;
 

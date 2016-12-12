@@ -1,7 +1,3 @@
-<?php
-
-?>
-
 <?php if ($status == 0) : ?>
   <p class="node-moderatation"><?php print t('Post is awaiting moderation.'); ?></p>
 <?php endif; ?>
