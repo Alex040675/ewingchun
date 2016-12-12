@@ -518,6 +518,7 @@
       .view-Blogs{
         .view-header{
           overflow: visible;
+          min-height: 130px;
           .sifuheaderleft {
             clear: both;
             margin-bottom: 0;
@@ -526,10 +527,6 @@
           .sifuheaderright {
             margin-top: -400px;
           }
-        }
-
-        .pager:first-child{
-          margin-top: 130px;
         }
       }
     }
