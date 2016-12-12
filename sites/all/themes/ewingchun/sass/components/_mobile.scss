@@ -510,6 +510,28 @@
       }
     }
   }
+  .page-blog{
+    .l-page{
+      #block-views-exp-blogs-page-1{
+        margin-top: 150px;
+      }
+      .view-Blogs{
+        .view-header{
+          overflow: visible;
+          min-height: 130px;
+          margin-top: 0;
+          .sifuheaderleft {
+            clear: both;
+            margin-bottom: 0;
+            margin-top: 0;
+          }
+          .sifuheaderright {
+            margin-top: -400px;
+          }
+        }
+      }
+    }
+  }
   .page-blog .view-Blogs .wingchunblogs-bleft {
     float: left;
     height: auto;
