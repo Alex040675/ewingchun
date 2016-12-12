@@ -259,9 +259,12 @@ html.js .form-autocomplete{
     margin: 0 2% 0 0;
     padding: 20px 0 0;
     width: 40%;
+    .middleleftimg{
+      height: 200px;
+    }
     img{
-      width: 100%;
-      height: auto;
+      width: auto;
+      height: 100%;
     }
     .blogfpo {
       float: left;
