@@ -2612,22 +2612,29 @@ footer {
     float: none;
     width: 100%;
     max-width: 235px;
-    clear: both; } }
+    clear: both; }
+  /* line 833, ../sass/components/_mobile.scss */
+  .node-type-video .l-page .tags .tagright {
+    width: 100%;
+    float: left; }
+  /* line 837, ../sass/components/_mobile.scss */
+  .node-type-video .l-page .tags .tagleft {
+    float: none; } }
 @media screen and (max-width: 960px) {
-  /* line 839, ../sass/components/_mobile.scss */
+  /* line 846, ../sass/components/_mobile.scss */
   #block-system-main-menu {
     display: none; }
 
-  /* line 842, ../sass/components/_mobile.scss */
+  /* line 849, ../sass/components/_mobile.scss */
   .breadcrumb {
     clear: both; }
 
-  /* line 846, ../sass/components/_mobile.scss */
+  /* line 853, ../sass/components/_mobile.scss */
   header #block-block-11 {
     float: right;
     margin-right: 20px;
     display: block; }
-    /* line 850, ../sass/components/_mobile.scss */
+    /* line 857, ../sass/components/_mobile.scss */
     header #block-block-11 button {
       background: #17335b;
       border: none;
@@ -2635,113 +2642,113 @@ footer {
       text-transform: uppercase;
       padding: 10px; }
 
-  /* line 860, ../sass/components/_mobile.scss */
+  /* line 867, ../sass/components/_mobile.scss */
   html body {
     background: #fff !important; }
-    /* line 864, ../sass/components/_mobile.scss */
+    /* line 871, ../sass/components/_mobile.scss */
     html body .l-page .l-header .active_menu #block-system-main-menu {
       display: block;
       width: 100%; }
-      /* line 867, ../sass/components/_mobile.scss */
+      /* line 874, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu ul {
         width: 100%; }
-      /* line 870, ../sass/components/_mobile.scss */
+      /* line 877, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu li {
         float: none;
         width: 100%;
         margin: 0 !important; }
-        /* line 874, ../sass/components/_mobile.scss */
+        /* line 881, ../sass/components/_mobile.scss */
         html body .l-page .l-header .active_menu #block-system-main-menu li a {
           padding: 0 !important;
           text-indent: 20px;
           font-size: 20px; }
 
-  /* line 886, ../sass/components/_mobile.scss */
+  /* line 893, ../sass/components/_mobile.scss */
   body .l-page {
     width: 100% !important;
     border: none; }
-    /* line 889, ../sass/components/_mobile.scss */
+    /* line 896, ../sass/components/_mobile.scss */
     body .l-page .form-text {
       background: #fff !important;
       max-width: 100%; }
-    /* line 893, ../sass/components/_mobile.scss */
+    /* line 900, ../sass/components/_mobile.scss */
     body .l-page .l-main {
       width: 96%; }
-    /* line 897, ../sass/components/_mobile.scss */
+    /* line 904, ../sass/components/_mobile.scss */
     body .l-page .l-region--sidebar-second #block-quicktabs-the-latest li a {
       font-size: 11px !important; }
 
-  /* line 904, ../sass/components/_mobile.scss */
+  /* line 911, ../sass/components/_mobile.scss */
   body.not-front .l-page .l-main {
     background: #FFFFFF; }
 
-  /* line 908, ../sass/components/_mobile.scss */
+  /* line 915, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     box-sizing: border-box;
     width: 49%; }
-  /* line 912, ../sass/components/_mobile.scss */
+  /* line 919, ../sass/components/_mobile.scss */
   #block-block-10 .register-link {
     margin: 15px 0 0 10px; }
-  /* line 915, ../sass/components/_mobile.scss */
+  /* line 922, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-right {
     padding: 15px 10px; }
 
-  /* line 922, ../sass/components/_mobile.scss */
+  /* line 929, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table th, .page-schools-list .l-main table th a {
     font-size: 12px; }
-  /* line 925, ../sass/components/_mobile.scss */
+  /* line 932, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table td, .page-schools-list .l-main table td a {
     font-size: 11px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 933, ../sass/components/_mobile.scss */
+  /* line 940, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 937, ../sass/components/_mobile.scss */
+  /* line 944, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 943, ../sass/components/_mobile.scss */
+  /* line 950, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 950, ../sass/components/_mobile.scss */
+  /* line 957, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 953, ../sass/components/_mobile.scss */
+    /* line 960, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 964, ../sass/components/_mobile.scss */
+  /* line 971, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 974, ../sass/components/_mobile.scss */
+  /* line 981, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 984, ../sass/components/_mobile.scss */
+  /* line 991, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 990, ../sass/components/_mobile.scss */
+  /* line 997, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 994, ../sass/components/_mobile.scss */
+  /* line 1001, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 1000, ../sass/components/_mobile.scss */
+  /* line 1007, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }
@@ -4064,6 +4071,9 @@ html.js .form-autocomplete {
     float: right;
     font-size: 12px;
     width: 317px; }
+    /* line 263, ../sass/components/_videos.scss */
+    .node-type-video .tags .tagright p {
+      margin: 0; }
 
 /* line 2, ../sass/components/_wiki.scss */
 .section-encyclopedia h1 {

@@ -830,6 +830,13 @@
       max-width: 235px;
       clear: both;
     }
+      .tags .tagright {
+        width: 100%;
+        float: left;
+      }
+      .tags .tagleft{
+        float: none;
+      }
   }
   }
 }
