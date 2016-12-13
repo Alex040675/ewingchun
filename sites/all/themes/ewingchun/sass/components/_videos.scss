@@ -203,6 +203,13 @@ html.js .form-autocomplete{
     margin: 25px 0 0;
     padding: 0;
     width: 72%;
+    .video01 {
+      clear: both;
+      overflow: hidden;
+      iframe{
+        width: 100%;
+      }
+    }
   }
   .recentvideos-right {
     border-left: 1px solid #ededed;
@@ -211,12 +218,19 @@ html.js .form-autocomplete{
     margin: 25px 0 0;
     width: 27%;
     .recentvideos{
-      background: rgba(0, 0, 0, 0) url("../images/recentvideosbg.jpg") no-repeat scroll left top;
+      background: rgba(0, 0, 0, 0) url("../images/recentvideosbg.jpg") no-repeat scroll center top;
       margin: 0;
-      padding: 0 0 0 2%;
+      padding: 0 0 0 5%;
       a{
         font-size: 14px;
         line-height: 25px;
+      }
+      .yca{
+        color: #116201;
+        font-family: TrajanProBold;
+        font-size: 15px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
       }
     }
   }
