@@ -818,16 +818,18 @@
       margin-top: -300px;
     }
   }
-  .node-type-video{
+  .node-type-video {
+    .l-page{
     .videotitleinner {
       float: none;
       width: 100%;
     }
-    .recentvideos-right{
+    .recentvideos-right {
       float: none;
       width: 100%;
       max-width: 235px;
     }
+  }
   }
 }
 
