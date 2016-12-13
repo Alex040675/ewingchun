@@ -3973,9 +3973,69 @@ html.js .form-autocomplete {
       width: 100%;
       height: auto; }
 
-/* line 182, ../sass/components/_videos.scss */
+/* line 183, ../sass/components/_videos.scss */
 .node-type-video .field--name-field-emvideo {
   margin-top: 20px; }
+/* line 186, ../sass/components/_videos.scss */
+.node-type-video .videosubtitle-left {
+  color: #000;
+  float: left;
+  font-size: 14px;
+  height: auto;
+  width: 113px; }
+/* line 193, ../sass/components/_videos.scss */
+.node-type-video .ondate, .node-type-video .rs {
+  color: #000;
+  float: left;
+  padding: 0 15px 0 0; }
+  /* line 197, ../sass/components/_videos.scss */
+  .node-type-video .ondate span, .node-type-video .rs span {
+    color: #666; }
+/* line 201, ../sass/components/_videos.scss */
+.node-type-video .videotitleinner {
+  float: left;
+  margin: 25px 0 0;
+  padding: 0;
+  width: 72%; }
+/* line 207, ../sass/components/_videos.scss */
+.node-type-video .recentvideos-right {
+  border-left: 1px solid #ededed;
+  float: right;
+  height: auto;
+  margin: 25px 0 0;
+  width: 27%; }
+  /* line 213, ../sass/components/_videos.scss */
+  .node-type-video .recentvideos-right .recentvideos {
+    background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left top;
+    margin: 0;
+    padding: 0 0 0 2%; }
+    /* line 217, ../sass/components/_videos.scss */
+    .node-type-video .recentvideos-right .recentvideos a {
+      font-size: 14px;
+      line-height: 25px; }
+/* line 224, ../sass/components/_videos.scss */
+.node-type-video .description .content {
+  color: #666;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 25px; }
+/* line 231, ../sass/components/_videos.scss */
+.node-type-video .tags {
+  margin: 15px 0 0; }
+  /* line 233, ../sass/components/_videos.scss */
+  .node-type-video .tags .tagleft {
+    color: #1c57a7;
+    float: left;
+    font-family: TrajanProBold;
+    font-size: 17px;
+    text-transform: uppercase;
+    width: 56px; }
+  /* line 241, ../sass/components/_videos.scss */
+  .node-type-video .tags .tagright {
+    color: #1c57a7;
+    float: right;
+    font-size: 12px;
+    width: 317px; }
 
 /* line 2, ../sass/components/_wiki.scss */
 .section-encyclopedia h1 {
