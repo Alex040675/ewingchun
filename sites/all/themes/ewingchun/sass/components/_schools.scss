@@ -260,8 +260,7 @@ html.js .form-autocomplete{
     padding: 20px 0 0;
     width: 40%;
     img{
-      width: 100%;
-      height: auto;
+
     }
     .blogfpo {
       float: left;
@@ -346,5 +345,10 @@ html.js .form-autocomplete{
     text-indent: 0.01px;
     max-width: 293px;
     width: 100% !important;
+  }
+}
+.page-node-edit{
+  #edit-field-instructors-und,#edit-field-instructors-und{
+    width: 300px;
   }
 }

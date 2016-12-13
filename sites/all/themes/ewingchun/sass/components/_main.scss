@@ -988,6 +988,11 @@ footer{
   th{
     padding: 10px;
   }
+  thead{
+    tr{
+      height: auto !important;
+    }
+  }
   .image-preview {
     float: left;
     padding: 10px 10px 10px 0;

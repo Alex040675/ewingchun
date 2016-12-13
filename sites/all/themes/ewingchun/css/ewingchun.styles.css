@@ -1896,27 +1896,30 @@ footer {
 /* line 988, ../sass/components/_main.scss */
 .page-node-edit .field-type-image th {
   padding: 10px; }
-/* line 991, ../sass/components/_main.scss */
+/* line 992, ../sass/components/_main.scss */
+.page-node-edit .field-type-image thead tr {
+  height: auto !important; }
+/* line 996, ../sass/components/_main.scss */
 .page-node-edit .field-type-image .image-preview {
   float: left;
   padding: 10px 10px 10px 0;
   text-align: center;
   width: 20%; }
-/* line 997, ../sass/components/_main.scss */
+/* line 1002, ../sass/components/_main.scss */
 .page-node-edit .field-type-image .image-widget-data {
   float: left;
   width: 70%;
   padding-left: 2%;
   border-left: 1px solid #666;
   margin-top: 10px; }
-  /* line 1003, ../sass/components/_main.scss */
+  /* line 1008, ../sass/components/_main.scss */
   .page-node-edit .field-type-image .image-widget-data .form-text {
     width: 95%; }
-/* line 1007, ../sass/components/_main.scss */
+/* line 1012, ../sass/components/_main.scss */
 .page-node-edit .field-type-image tr {
   position: relative;
   height: 170px; }
-  /* line 1010, ../sass/components/_main.scss */
+  /* line 1015, ../sass/components/_main.scss */
   .page-node-edit .field-type-image tr .form-submit {
     position: absolute;
     left: 25%;
@@ -2968,75 +2971,71 @@ html.js .form-autocomplete {
   margin: 0 2% 0 0;
   padding: 20px 0 0;
   width: 40%; }
-  /* line 262, ../sass/components/_schools.scss */
-  .section-school .productname-left img {
-    width: 100%;
-    height: auto; }
-  /* line 266, ../sass/components/_schools.scss */
+  /* line 265, ../sass/components/_schools.scss */
   .section-school .productname-left .blogfpo {
     float: left;
     height: auto;
     margin: 20px 0 0;
     width: 100%; }
-    /* line 271, ../sass/components/_schools.scss */
+    /* line 270, ../sass/components/_schools.scss */
     .section-school .productname-left .blogfpo ul {
       padding: 0; }
-      /* line 273, ../sass/components/_schools.scss */
+      /* line 272, ../sass/components/_schools.scss */
       .section-school .productname-left .blogfpo ul li {
         list-style: none;
         float: left;
         margin-right: 20px; }
-/* line 281, ../sass/components/_schools.scss */
+/* line 280, ../sass/components/_schools.scss */
 .section-school .schoolname-r {
   float: right;
   height: auto;
   width: 58%; }
-  /* line 285, ../sass/components/_schools.scss */
+  /* line 284, ../sass/components/_schools.scss */
   .section-school .schoolname-r p {
     color: #000;
     font-size: 14px;
     line-height: 20px;
     margin: 0; }
-    /* line 290, ../sass/components/_schools.scss */
+    /* line 289, ../sass/components/_schools.scss */
     .section-school .schoolname-r p span {
       color: #666;
       font-size: 14px; }
-/* line 296, ../sass/components/_schools.scss */
+/* line 295, ../sass/components/_schools.scss */
 .section-school .reviews-rightp {
   float: right;
   height: auto;
   margin: 25px 2% 20px 0;
   overflow: hidden;
   width: 28%; }
-/* line 303, ../sass/components/_schools.scss */
+/* line 302, ../sass/components/_schools.scss */
 .section-school .school-moreinfo {
   clear: both;
   margin-bottom: 30px;
   padding-top: 20px; }
-  /* line 307, ../sass/components/_schools.scss */
+  /* line 306, ../sass/components/_schools.scss */
   .section-school .school-moreinfo h5 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 0; }
-  /* line 314, ../sass/components/_schools.scss */
+  /* line 313, ../sass/components/_schools.scss */
   .section-school .school-moreinfo p {
     margin: 0; }
-/* line 318, ../sass/components/_schools.scss */
+/* line 317, ../sass/components/_schools.scss */
 .section-school .comment-form, .section-school .comment-wrapper {
   clear: both;
   padding-top: 20px;
   border-top: 5px solid #f8f8f8; }
-  /* line 322, ../sass/components/_schools.scss */
+  /* line 321, ../sass/components/_schools.scss */
   .section-school .comment-form h2, .section-school .comment-wrapper h2 {
     font-size: 17px !important; }
-  /* line 326, ../sass/components/_schools.scss */
+  /* line 325, ../sass/components/_schools.scss */
   .section-school .comment-form .form-type-item label, .section-school .comment-wrapper .form-type-item label {
     float: left;
     margin-right: 10px; }
 
-/* line 334, ../sass/components/_schools.scss */
+/* line 333, ../sass/components/_schools.scss */
 .page-node-add-resource .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
@@ -3052,6 +3051,10 @@ html.js .form-autocomplete {
   text-indent: 0.01px;
   max-width: 293px;
   width: 100% !important; }
+
+/* line 351, ../sass/components/_schools.scss */
+.page-node-edit #edit-field-instructors-und, .page-node-edit #edit-field-instructors-und {
+  width: 300px; }
 
 /* line 3, ../sass/components/_sifus.scss */
 .page-sifus .view-sifu .view-header {
