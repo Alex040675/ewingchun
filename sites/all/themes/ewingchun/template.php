@@ -368,7 +368,19 @@ function ewingchun_preprocess_node(&$variables) {
       }
     }
   }
-  
+
+    //Add Variables for videos page.
+    if ($variables['node']->type == 'video') {
+
+        $variables['video_inner_ad'] = theme('blocks', 'video_ad');
+        $recent_videos = '';
+        $recent_videos_block = views_embed_view('videos', 'block_3', $arg);
+        $recent_videos .= '<div class="recentvideos"> <p class="yca">recent videos</p> <div class="rcntvid">' . $recent_videos_block . '</div> <div class="videoaddbanner"> </div> </div>';
+        $variables['recent'] = $recent_videos;
+
+
+    }
+
 }
 
 /**
