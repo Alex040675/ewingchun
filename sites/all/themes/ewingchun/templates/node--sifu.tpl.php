@@ -143,9 +143,6 @@
       </div>
     </div>
   <?php endif; ?>
-  <?php if (isset($content['links'])): ?>
-    <div class="drupal-links"><?php print render($content['links']);  ?></div>
-  <?php endif; ?>
 
 <?php
 if ($user->uid > 0) {
@@ -155,3 +152,6 @@ if ($user->uid > 0) {
 //    print drupal_render($comment_form);
 }
 ?>
+  <?php if (isset($content['links'])): ?>
+    <div class="drupal-links"><?php print render($content['links']);  ?></div>
+  <?php endif; ?>
