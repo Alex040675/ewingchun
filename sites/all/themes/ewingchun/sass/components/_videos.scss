@@ -179,6 +179,90 @@ html.js .form-autocomplete{
   }
 }
 
-.node-type-video .field--name-field-emvideo{
-  margin-top: 20px;
+.node-type-video{
+  .field--name-field-emvideo{
+    margin-top: 20px;
+  }
+  .videosubtitle-left {
+    color: #000;
+    float: left;
+    font-size: 14px;
+    height: auto;
+    width: 113px;
+  }
+  .ondate,.rs{
+    color: #000;
+    float: left;
+    padding: 0 15px 0 0;
+    span{
+      color: #666;
+    }
+  }
+  .videotitleinner{
+    float: left;
+    margin: 25px 0 0;
+    padding: 0;
+    width: 72%;
+    .video01 {
+      clear: both;
+      overflow: hidden;
+      iframe{
+        width: 100%;
+      }
+    }
+  }
+  .recentvideos-right {
+    border-left: 1px solid #ededed;
+    float: right;
+    height: auto;
+    margin: 25px 0 0;
+    width: 27%;
+    .recentvideos{
+      background: rgba(0, 0, 0, 0) url("../images/recentvideosbg.jpg") no-repeat scroll center top;
+      margin: 0;
+      padding: 0 0 0 5%;
+      a{
+        font-size: 14px;
+        line-height: 25px;
+      }
+      .yca{
+        color: #116201;
+        font-family: TrajanProBold;
+        font-size: 15px;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+      }
+      .more-link {
+        display: none;
+      }
+    }
+  }
+  .description{
+    .content {
+      color: #666;
+      font-family: Arial;
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  .tags {
+    margin: 15px 0 0;
+    .tagleft {
+      color: #1c57a7;
+      float: left;
+      font-family: TrajanProBold;
+      font-size: 17px;
+      text-transform: uppercase;
+      width: 56px;
+    }
+    .tagright {
+      color: #1c57a7;
+      float: right;
+      font-size: 12px;
+      width: 317px;
+      p{
+        margin: 0;
+      }
+    }
+  }
 }

@@ -982,3 +982,46 @@ footer{
     }
   }
 }
+
+.page-node-edit{
+.field-type-image{
+  th{
+    padding: 10px;
+  }
+  thead{
+    tr{
+      height: auto !important;
+    }
+  }
+  .image-preview {
+    float: left;
+    padding: 10px 10px 10px 0;
+    text-align: center;
+    width: 20%;
+  }
+  .image-widget-data {
+    float: left;
+    width: 70%;
+    padding-left: 2%;
+    border-left: 1px solid #666;
+    margin-top: 10px;
+    .form-text{
+      width: 95%;
+    }
+  }
+  tr{
+    position: relative;
+    height: 170px;
+    .form-submit{
+      position: absolute;
+      left: 25%;
+      background: #1D58A8;
+      color: #fff;
+      border: none;
+      bottom: 10px;
+      padding: 3px 7px;
+      border-radius: 4px;
+    }
+  }
+}
+}
