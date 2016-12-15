@@ -58,7 +58,7 @@
 		<div class="videosubtitle-left"> <?php print t('By : ') . l ($node->name,  'user/' . $node->uid); ?></div>
 		<div class="ondate">On: <span><?php print format_date($node->changed, 'small'); ?></span></div>
 		<?php if($content['field_sifu']) : ?>
-		<div class="rs">Related Sifu: <?php print render($content['field_sifu']);  ?></div>
+		<div class="rs"><?php print render($content['field_sifu']);  ?></div>
 		<?php endif; ?>
 		<div class="video01">
 			<?php if($content['field_emvideo']) : ?>
