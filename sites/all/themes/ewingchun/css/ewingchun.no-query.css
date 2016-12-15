@@ -4005,7 +4005,7 @@ html.js .form-autocomplete {
 .node-type-video .ondate, .node-type-video .rs {
   color: #000;
   float: left;
-  padding: 0 15px 0 0; }
+  padding: 0 15px 10px 0; }
   /* line 197, ../sass/components/_videos.scss */
   .node-type-video .ondate span, .node-type-video .rs span {
     color: #666; }
