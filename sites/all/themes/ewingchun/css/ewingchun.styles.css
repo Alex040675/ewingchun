@@ -4009,55 +4009,58 @@ html.js .form-autocomplete {
   /* line 197, ../sass/components/_videos.scss */
   .node-type-video .ondate span, .node-type-video .rs span {
     color: #666; }
-/* line 201, ../sass/components/_videos.scss */
+  /* line 200, ../sass/components/_videos.scss */
+  .node-type-video .ondate .field__label, .node-type-video .rs .field__label {
+    font-weight: normal; }
+/* line 204, ../sass/components/_videos.scss */
 .node-type-video .videotitleinner {
   float: left;
   margin: 25px 0 0;
   padding: 0;
   width: 72%; }
-  /* line 206, ../sass/components/_videos.scss */
+  /* line 209, ../sass/components/_videos.scss */
   .node-type-video .videotitleinner .video01 {
     clear: both;
     overflow: hidden; }
-    /* line 209, ../sass/components/_videos.scss */
+    /* line 212, ../sass/components/_videos.scss */
     .node-type-video .videotitleinner .video01 iframe {
       width: 100%; }
-/* line 214, ../sass/components/_videos.scss */
+/* line 217, ../sass/components/_videos.scss */
 .node-type-video .recentvideos-right {
   border-left: 1px solid #ededed;
   float: right;
   height: auto;
   margin: 25px 0 0;
   width: 27%; }
-  /* line 220, ../sass/components/_videos.scss */
+  /* line 223, ../sass/components/_videos.scss */
   .node-type-video .recentvideos-right .recentvideos {
     background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll center top;
     margin: 0;
     padding: 0 0 0 5%; }
-    /* line 224, ../sass/components/_videos.scss */
+    /* line 227, ../sass/components/_videos.scss */
     .node-type-video .recentvideos-right .recentvideos a {
       font-size: 14px;
       line-height: 25px; }
-    /* line 228, ../sass/components/_videos.scss */
+    /* line 231, ../sass/components/_videos.scss */
     .node-type-video .recentvideos-right .recentvideos .yca {
       color: #116201;
       font-family: TrajanProBold;
       font-size: 15px;
       letter-spacing: -1px;
       text-transform: uppercase; }
-    /* line 235, ../sass/components/_videos.scss */
+    /* line 238, ../sass/components/_videos.scss */
     .node-type-video .recentvideos-right .recentvideos .more-link {
       display: none; }
-/* line 241, ../sass/components/_videos.scss */
+/* line 244, ../sass/components/_videos.scss */
 .node-type-video .description .content {
   color: #666;
   font-family: Arial;
   font-size: 14px;
   line-height: 25px; }
-/* line 248, ../sass/components/_videos.scss */
+/* line 251, ../sass/components/_videos.scss */
 .node-type-video .tags {
   margin: 15px 0 0; }
-  /* line 250, ../sass/components/_videos.scss */
+  /* line 253, ../sass/components/_videos.scss */
   .node-type-video .tags .tagleft {
     color: #1c57a7;
     float: left;
@@ -4065,13 +4068,13 @@ html.js .form-autocomplete {
     font-size: 17px;
     text-transform: uppercase;
     width: 56px; }
-  /* line 258, ../sass/components/_videos.scss */
+  /* line 261, ../sass/components/_videos.scss */
   .node-type-video .tags .tagright {
     color: #1c57a7;
     float: right;
     font-size: 12px;
     width: 317px; }
-    /* line 263, ../sass/components/_videos.scss */
+    /* line 266, ../sass/components/_videos.scss */
     .node-type-video .tags .tagright p {
       margin: 0; }
 
