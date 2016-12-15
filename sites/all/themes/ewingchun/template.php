@@ -394,7 +394,7 @@ function ewingchun_preprocess_node(&$variables) {
         // Videos block by sifu.
         $sifu_videos_block = views_embed_view('videos', 'block_4', $variables['node']->field_sifu['und'][0]['nid']);
         $sifu_videos = '<div class="recentvideos"> <p class="yca">Other videos by Sifu</p> <div class="rcntvid">' . $sifu_videos_block . '</div> <div class="videoaddbanner"> </div> </div>';
-        $variables['videos_sifu'] = $recent_videos;
+        $variables['videos_sifu'] =  $sifu_videos;
 
 
     }
