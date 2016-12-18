@@ -52,41 +52,44 @@
  *
  */
 ?>
+<?php dsm($variables)?>
 <div class="main-user">
 <div class="user-left">
 <h1></h1>
 <div class="user-detail">
 <div class="user-detail-left">
-<?php print theme('user_picture', $account); ?>
+<?php print theme('user_picture', array('account' => $variables['user_profile']['user_picture']['#markup'])); ?>
 </div>
 <div class="user-detail-midle">
-<h3><?php print $account->profile_fullname; ?></h3>
+<h3><?php
+  if ($variables['user_profile']['field_txt_firstname']['0']['#markup']) {
+    print $variables['user_profile']['field_txt_firstname']['0']['#markup'] . " ";
+  }
+  if ($variables['user_profile']['field_txt_lastname']['0']['#markup']) {
+    print $variables['user_profile']['field_txt_lastname']['0']['#markup'];
+  }
+  ?>
+</h3>
 <div class="user-detail-list">
 <ul>
-<li><span>Joined:</span> <?php print format_date($account->created, 'small'); ?></li>
+<li><span>Joined:</span> <?php print format_date($variables['elements']['#account']->created, 'small'); ?></li>
 <li><span>My Sifu:</span> 
-<?php 
-$account_id = arg(1);
-$account = user_load($account_id);
-$user_id = $account->uid;
-
-$var = content_profile_load('profile', $user_id);
-
-$sifu_node = node_load($var->field_my_sifu[0]['nid']);
+<?php
+if ($variables['user_profile']['field_my_sifu']['#items'][0]['nid']) {
+  $sifu_title = $variables['user_profile']['field_my_sifu'][0]['#title'];
+  $sifu_path = $variables['user_profile']['field_my_sifu'][0]['#href'];
+}
 ?>
-<a href = "../<?php print $sifu_node->path;?>"><?php print $sifu_node->title; ?></a>
+<a href = "../<?php print $sifu_path; ?>"><?php print $sifu_title; ?></a>
 </li>
 <li><span>My School:</span> 
 <?php 
-$account_id = arg(1);
-$account = user_load($account_id);
-$user_id = $account->uid;
-
-$var = content_profile_load('profile', $user_id);
-
-$school_node = node_load($var->field_attending_school[0]['nid']); ?>
-
-<a href="../<?php print $school_node->path; ?>"><?php print $school_node->title;?></a></li>
+if ($variables['field_my_school'][0]['value']) {
+  $school_title = $variables['user_profile']['field_my_school']['#items'][0]['value'];
+  print $school_title;
+}
+?>
+</li>
 </ul>
 </div>
 </div>
@@ -94,37 +97,33 @@ $school_node = node_load($var->field_attending_school[0]['nid']); ?>
 <div class="user-detail-list1">
 <ul>
 <li><span>Years in Wing Chun :</span> 
-<?php 
-$yearswc = $account->profile_startyear;
-		if ($yearswc != 0) {
-		$currenttime = time ();
-		$currentyear = date("Y",$currenttime);
-		$yearsinwc = $currentyear - $yearswc;
-		}
-		else
-		{
-		yearsinwc == "Unknown";
-		}
-print $yearsinwc;
+<?php
+if ($variables['user_profile']['summary']['member_for']['#markup']) {
+  print $variables['user_profile']['summary']['member_for']['#markup'];
+}
 ?>
-<?php    ?>
 </li>
-<li><span>Is a Sifu:</span> <?php print $account->profile_issifu; ?></li>
+<li><span>Is a Sifu:</span> <?php
+  if (variables['user_profile']['field_are_you_a_sifu_']['0']['#markup']) {
+    print $variables['user_profile']['field_are_you_a_sifu_']['0']['#markup'];
+  }
+ ?>
+</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="clear" style="padding:40px 0 0 0"></div>
-<h3>about me</h3>
-<div class="content" style="padding:15px 0 0 0">
-<?php 
-$account_id = arg(1);
-$account = user_load($account_id);
-$user_id = $account->uid;
-
-$var = content_profile_load('profile', $user_id);
-
-print $var->body; ?>
+<!--<h3>about me</h3>-->
+<!--<div class="content" style="padding:15px 0 0 0">-->
+<?php //
+//$account_id = arg(1);
+//$account = user_load($account_id);
+//$user_id = $account->uid;
+//
+//$var = content_profile_load('profile', $user_id);
+//
+//print $var->body; ?>
 
 </div>
 <div class="blog-part">
@@ -165,7 +164,11 @@ print $abc; ?>
 </div>
 </div>
 </div>
-<?php print $profile['user_relationships_ui']; ?>
+<div class="wc_blocks-friend_images">
+  <h3 class="block-title">my friends</h3>
+  <?php print render($variables['user_profile']['user_relationships_ui']); ?>
+</div>
+
 
 <?php
 /* Another Method to add user relationship links

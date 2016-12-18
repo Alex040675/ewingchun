@@ -1,4 +1,6 @@
 <?php
+// You can use preprocess hooks to modify the variables before they are passed
+// to the theme function or template file.
 //
 ///**
 // * Implements hook_preprocess_page().
@@ -52,6 +54,9 @@ function ewingchun_preprocess_page(&$variables) {
       $variables['page']['content']['system_main'][] = drupal_get_form('user_login');
 
     }
-  // You can use preprocess hooks to modify the variables before they are passed
-  // to the theme function or template file.
+//  Changes ../user/..
+  if ((arg(0) == 'user') and ($variables['page']['content']['system_main']['user_relationships_ui'])) {
+    $variables['page']['content']['system_main']['user_relationships_ui']['#title'] = '';
+    $variables['page']['content']['system_main']['user_relationships_ui']['actions']['#title'] = '';
+  }
 }

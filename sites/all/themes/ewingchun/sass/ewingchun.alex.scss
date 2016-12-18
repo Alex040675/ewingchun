@@ -1,3 +1,10 @@
+.page-user {
+  .wc_blocks-friend_images {
+    .user-profile-item__label {
+    display: none!important;
+    }
+  }
+}
 .page-wiki,
 .node-type-wiki {
   .l-content {

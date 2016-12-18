@@ -1,3 +1,6 @@
+.page-user .wc_blocks-friend_images .user-profile-item__label {
+  display: none !important; }
+
 .page-wiki .l-content,
 .node-type-wiki .l-content {
   width: 72%;
