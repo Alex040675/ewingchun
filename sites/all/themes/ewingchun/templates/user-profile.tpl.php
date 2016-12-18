@@ -52,7 +52,6 @@
  *
  */
 ?>
-<?php dsm($variables); ?>
 <div class="main-user">
 <div class="user-left">
 <h1></h1>
