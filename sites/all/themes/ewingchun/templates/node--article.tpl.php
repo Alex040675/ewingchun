@@ -107,7 +107,10 @@ if ($page == 1): //if node is being displayed as a node
 				<?php endif; ?>
 			</div>
 			<?php endif; ?>
-			<div class="middle-center"> <?php print $node->body['und'][0]['value']; ?> </div>
+			<div class="middle-center">
+				<p class="summary"><?php print $node->body['und'][0]['summary']; ?></p><br />
+				<?php print $node->body['und'][0]['value']; ?>
+			</div>
 			<div class="artical-sn"> <?php print $sharethis; ?> </div>
 		</div>
 	</div>

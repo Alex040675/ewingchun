@@ -5,16 +5,19 @@
  * Template overrides as well as (pre-)process and alter hooks for the
  * ewingchun theme.
  */
-function ewingchun_preprocess (&$variables) {
-  if (($variables['node']->type == 'sifu') and (arg(0) == 'node') and (arg(2) == 'edit')) {
-    $variables['theme_hook_suggestions'][] = 'page__edit__sifu';
-    $query = db_select('node_type', 'nt');
-    $query
-      ->condition('type', 'sifu')
-      ->fields('nt', array('help'));
-    $result = $query->execute();
-    foreach ($result as $row) {
-      $variables['sifu_help'] = $row;
+function ewingchun_preprocess(&$variables) {
+//  Added field 'help' to node 'sifu' edit
+  if (($variables['node']->type == 'sifu') and (arg(0) == 'node')) {
+    if ((arg(1) == 'add') or (arg(2) == 'edit')) {
+      $variables['theme_hook_suggestions'][] = 'page__edit__sifu';
+      $query = db_select('node_type', 'nt');
+      $query
+        ->condition('type', 'sifu')
+        ->fields('nt', array('help'));
+      $result = $query->execute();
+      foreach ($result as $row) {
+        $variables['sifu_help'] = $row;
+      }
     }
   }
 }

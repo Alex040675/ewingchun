@@ -1,15 +1,6 @@
 <div<?php print $attributes; ?>>
     <div class="top_header">
       <?php print render($page['top_header']); ?>
-<!--      render "log in" block on '../add/node/article'-->
-<!--      --><?php
-//        if (isset($variables['page']['content']['system_main']['form_id']['#id'])
-//          and ($variables['page']['content']['system_main']['form_id']['#id'] == 'edit-article-node-form')
-//          and ($variables['user']->uid) == '0') {
-//          $block = block_load('block', '12');
-//          print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
-//        }
-//      ?>
     </div>
   <header class="l-header" role="banner">
     <div class="l-branding">

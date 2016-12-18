@@ -104,6 +104,7 @@
 </div>
 <div class="school-moreinfo">
 <h5>more info:</h5><br />
+<p class="summary"><?php print $node->body['und'][0]['summary']; ?></p><br />
 <div class="content">
 <?php print strip_tags($node->body['und'][0]['value'],"<p>,<br>"); ?>
 </div>
