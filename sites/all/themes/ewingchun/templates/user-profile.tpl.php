@@ -52,7 +52,6 @@
  *
  */
 ?>
-<?php dsm($variables)?>
 <div class="main-user">
 <div class="user-left">
 <h1></h1>
@@ -104,7 +103,7 @@ if ($variables['user_profile']['summary']['member_for']['#markup']) {
 ?>
 </li>
 <li><span>Is a Sifu:</span> <?php
-  if (variables['user_profile']['field_are_you_a_sifu_']['0']['#markup']) {
+  if ($variables['user_profile']['field_are_you_a_sifu_']['0']['#markup']) {
     print $variables['user_profile']['field_are_you_a_sifu_']['0']['#markup'];
   }
  ?>
