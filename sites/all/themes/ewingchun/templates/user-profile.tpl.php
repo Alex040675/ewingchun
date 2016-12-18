@@ -52,6 +52,7 @@
  *
  */
 ?>
+<?php dsm($variables); ?>
 <div class="main-user">
 <div class="user-left">
 <h1></h1>
@@ -113,9 +114,13 @@ if ($variables['user_profile']['summary']['member_for']['#markup']) {
 </div>
 </div>
 <div class="clear" style="padding:40px 0 0 0"></div>
-<!--<h3>about me</h3>-->
-<!--<div class="content" style="padding:15px 0 0 0">-->
-<?php //
+<h3>about me</h3>
+<div class="content" style="padding:15px 0 0 0">
+<?php
+  if ($variables['user_profile']['field_about_me']) {
+    print ($variables['user_profile']['field_about_me'][0]['#markup']);
+  }
+//
 //$account_id = arg(1);
 //$account = user_load($account_id);
 //$user_id = $account->uid;
