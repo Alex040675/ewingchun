@@ -193,9 +193,12 @@ html.js .form-autocomplete{
   .ondate,.rs{
     color: #000;
     float: left;
-    padding: 0 15px 0 0;
+    padding: 0 15px 10px 0;
     span{
       color: #666;
+    }
+    .field__label{
+      font-weight: normal;
     }
   }
   .videotitleinner{

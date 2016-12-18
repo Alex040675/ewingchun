@@ -394,6 +394,11 @@ function ewingchun_preprocess_node(&$variables) {
         $recent_videos .= '<div class="recentvideos"> <p class="yca">recent videos</p> <div class="rcntvid">' . $recent_videos_block . '</div> <div class="videoaddbanner"> </div> </div>';
         $variables['recent'] = $recent_videos;
 
+        // Videos block by sifu.
+        $sifu_videos_block = views_embed_view('videos', 'block_4', $variables['node']->field_sifu['und'][0]['nid']);
+        $sifu_videos = '<div class="recentvideos"> <p class="yca">Other videos by Sifu</p> <div class="rcntvid">' . $sifu_videos_block . '</div> <div class="videoaddbanner"> </div> </div>';
+        $variables['videos_sifu'] =  $sifu_videos;
+
 
     }
 
@@ -408,7 +413,7 @@ function _wc_lineage_get_primary($node, $nid, $affilated) {
     return;
   }
 
-  //$output = cache_get('wc-lineage-get-primary/' . $node->nid)->data;
+  $output = cache_get('wc-lineage-get-primary/' . $node->nid)->data;
 
   if (!$output) {
 
