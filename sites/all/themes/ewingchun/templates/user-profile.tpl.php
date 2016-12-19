@@ -71,7 +71,7 @@
 </h3>
 <div class="user-detail-list">
 <ul>
-<li><span>Joined:</span> <?php print format_date($variables['elements']['#account']->created, 'small'); ?></li>
+<li><span>Joined:</span> <?php print format_date($variables['elements']['#account']->created, 'short'); ?></li>
 <li><span>My Sifu:</span> 
 <?php
 if ($variables['user_profile']['field_my_sifu']['#items'][0]['nid']) {
