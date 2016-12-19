@@ -59,4 +59,12 @@ function ewingchun_preprocess_page(&$variables) {
     $variables['page']['content']['system_main']['user_relationships_ui']['#title'] = '';
     $variables['page']['content']['system_main']['user_relationships_ui']['actions']['#title'] = '';
   }
+// Delete  modules/field/modules/text/text.js from summary field. The summary field is constantly disclosed
+  if (arg(0) == 'node') {
+    if (arg(1) == 'add' or (arg(2) == 'edit')) {
+      if ($variables['page']['content']['system_main']['body']['und'][0]['summary']) {
+        $variables['page']['content']['system_main']['body']['und'][0]['summary']['#attached'] = '';
+      }
+    }
+  }
 }

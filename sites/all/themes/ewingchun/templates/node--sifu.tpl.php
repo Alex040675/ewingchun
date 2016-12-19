@@ -139,7 +139,6 @@
     <div id="more">
       <div class="bottom-biography">
         <h3>biography (con't)</h3>
-        <p class="summary"><?php print $node->body['und'][0]['summary']; ?></p><br />
         <div class="content" style="padding:15px 0 0 0;"><?php print strip_tags($node->body['und'][0]['value'],"<p>,<br>"); ?></div>
       </div>
     </div>
