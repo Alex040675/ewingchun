@@ -49,12 +49,7 @@
 	<div class="recentarticles">
 		<p class="yca">recent blogs</p>
 		<?php print $recent_articles; ?> </div>
-	<div class="recentarticles">
-		<p class="yca">recent wiki posts</p>
-		<ul>
-			<?php print $recent_wiki; ?>
-		</ul>
-	</div>
+
 </div>
 <?php if ($user->uid > 0) {
 	$comments = comment_node_page_additions($node);
