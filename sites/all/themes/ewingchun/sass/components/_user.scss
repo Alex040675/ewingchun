@@ -1,0 +1,101 @@
+.page-user{
+  .user-left{
+    float: left;
+    width: 72%;
+    .user-detail {
+      overflow: hidden;
+    }
+    .user-detail-left {
+      float: left;
+      width: 20%;
+      max-width: 145px;
+    }
+    .user-detail-midle{
+      float: left;
+      width: 40%;
+      max-width: 240px;
+      ul{
+        padding: 0;
+        margin: 0;
+        li{
+          list-style: none;
+          color: #666;
+          font-family: Arial;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 33px;
+          span{
+            color: #000;
+            font-family: Arial;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 33px;
+          }
+        }
+      }
+    }
+    .user-detail-right{
+      float: left;
+      width: 40%;
+      max-width: 240px;
+    }
+    .blog-part{
+      border-bottom: 5px solid #f8f8f8;
+      border-top: 5px solid #f8f8f8;
+      float: left;
+      margin: 27px 0 19px;
+      padding: 17px 0 30px;
+      a{
+        font-size: 14px;
+      }
+      .blog-part-left {
+        float: left;
+        width: 50%;
+      }
+      .blog-part-right {
+        float: right;
+        width: 50%;
+        .blog-topleft {
+          float: left;
+          width: 60%;
+        }
+        .blog-topright {
+          float: right;
+          padding: 6px 0 0;
+          width: 30%;
+        }
+      }
+    }
+  }
+  .user-right{
+    background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll center top;
+    border-left: 1px solid #ededed;
+    float: right;
+    height: auto;
+    margin: 25px 0 0;
+    width: 27%;
+    .contr-title{
+      color: #116201;
+      font-family: TrajanProBold;
+      font-size: 16px;
+      letter-spacing: -1px;
+      padding: 0 0 5px 21px;
+      text-transform: uppercase;
+      span{
+        color: #1c57a7;
+        font-family: TrajanProBold;
+        font-size: 16px;
+        letter-spacing: -1px;
+        padding: 0 0 5px 5px;
+        text-transform: uppercase;
+      }
+    }
+    ul{
+      margin: 0;
+      padding: 20px 0 0 21px;
+      li{
+        list-style: none;
+      }
+    }
+  }
+}

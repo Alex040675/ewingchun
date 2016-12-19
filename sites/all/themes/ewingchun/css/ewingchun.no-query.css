@@ -3822,6 +3822,106 @@ html.js .form-autocomplete {
   .page-sifu-ranks .view-Rank table tr.odd td, .page-sifu-ranks .view-sifu table tr.odd td, .page-sifus-by-name .view-Rank table tr.odd td, .page-sifus-by-name .view-sifu table tr.odd td {
     background-color: #f8f8f8; }
 
+/* line 2, ../sass/components/_user.scss */
+.page-user .user-left {
+  float: left;
+  width: 72%; }
+  /* line 5, ../sass/components/_user.scss */
+  .page-user .user-left .user-detail {
+    overflow: hidden; }
+  /* line 8, ../sass/components/_user.scss */
+  .page-user .user-left .user-detail-left {
+    float: left;
+    width: 20%;
+    max-width: 145px; }
+  /* line 13, ../sass/components/_user.scss */
+  .page-user .user-left .user-detail-midle {
+    float: left;
+    width: 40%;
+    max-width: 240px; }
+    /* line 17, ../sass/components/_user.scss */
+    .page-user .user-left .user-detail-midle ul {
+      padding: 0;
+      margin: 0; }
+      /* line 20, ../sass/components/_user.scss */
+      .page-user .user-left .user-detail-midle ul li {
+        list-style: none;
+        color: #666;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px; }
+        /* line 27, ../sass/components/_user.scss */
+        .page-user .user-left .user-detail-midle ul li span {
+          color: #000;
+          font-family: Arial;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 33px; }
+  /* line 37, ../sass/components/_user.scss */
+  .page-user .user-left .user-detail-right {
+    float: left;
+    width: 40%;
+    max-width: 240px; }
+  /* line 42, ../sass/components/_user.scss */
+  .page-user .user-left .blog-part {
+    border-bottom: 5px solid #f8f8f8;
+    border-top: 5px solid #f8f8f8;
+    float: left;
+    margin: 27px 0 19px;
+    padding: 17px 0 30px; }
+    /* line 48, ../sass/components/_user.scss */
+    .page-user .user-left .blog-part a {
+      font-size: 14px; }
+    /* line 51, ../sass/components/_user.scss */
+    .page-user .user-left .blog-part .blog-part-left {
+      float: left;
+      width: 50%; }
+    /* line 55, ../sass/components/_user.scss */
+    .page-user .user-left .blog-part .blog-part-right {
+      float: right;
+      width: 50%; }
+      /* line 58, ../sass/components/_user.scss */
+      .page-user .user-left .blog-part .blog-part-right .blog-topleft {
+        float: left;
+        width: 60%; }
+      /* line 62, ../sass/components/_user.scss */
+      .page-user .user-left .blog-part .blog-part-right .blog-topright {
+        float: right;
+        padding: 6px 0 0;
+        width: 30%; }
+/* line 70, ../sass/components/_user.scss */
+.page-user .user-right {
+  background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll center top;
+  border-left: 1px solid #ededed;
+  float: right;
+  height: auto;
+  margin: 25px 0 0;
+  width: 27%; }
+  /* line 77, ../sass/components/_user.scss */
+  .page-user .user-right .contr-title {
+    color: #116201;
+    font-family: TrajanProBold;
+    font-size: 16px;
+    letter-spacing: -1px;
+    padding: 0 0 5px 21px;
+    text-transform: uppercase; }
+    /* line 84, ../sass/components/_user.scss */
+    .page-user .user-right .contr-title span {
+      color: #1c57a7;
+      font-family: TrajanProBold;
+      font-size: 16px;
+      letter-spacing: -1px;
+      padding: 0 0 5px 5px;
+      text-transform: uppercase; }
+  /* line 93, ../sass/components/_user.scss */
+  .page-user .user-right ul {
+    margin: 0;
+    padding: 20px 0 0 21px; }
+    /* line 96, ../sass/components/_user.scss */
+    .page-user .user-right ul li {
+      list-style: none; }
+
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
   background: none !important; }
