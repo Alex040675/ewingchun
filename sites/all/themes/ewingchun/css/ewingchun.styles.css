@@ -3840,10 +3840,13 @@ html.js .form-autocomplete {
     width: 40%;
     max-width: 240px; }
     /* line 17, ../sass/components/_user.scss */
+    .page-user .user-left .user-detail-midle h3 {
+      margin: 0; }
+    /* line 20, ../sass/components/_user.scss */
     .page-user .user-left .user-detail-midle ul {
       padding: 0;
       margin: 0; }
-      /* line 20, ../sass/components/_user.scss */
+      /* line 23, ../sass/components/_user.scss */
       .page-user .user-left .user-detail-midle ul li {
         list-style: none;
         color: #666;
@@ -3851,54 +3854,72 @@ html.js .form-autocomplete {
         font-size: 14px;
         font-weight: 400;
         line-height: 33px; }
-        /* line 27, ../sass/components/_user.scss */
+        /* line 30, ../sass/components/_user.scss */
         .page-user .user-left .user-detail-midle ul li span {
           color: #000;
           font-family: Arial;
           font-size: 14px;
           font-weight: 700;
           line-height: 33px; }
-  /* line 37, ../sass/components/_user.scss */
+  /* line 40, ../sass/components/_user.scss */
   .page-user .user-left .user-detail-right {
     float: left;
     width: 40%;
     max-width: 240px; }
-  /* line 42, ../sass/components/_user.scss */
+    /* line 44, ../sass/components/_user.scss */
+    .page-user .user-left .user-detail-right ul {
+      padding: 0; }
+      /* line 46, ../sass/components/_user.scss */
+      .page-user .user-left .user-detail-right ul li {
+        list-style: none;
+        color: #666;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px; }
+        /* line 53, ../sass/components/_user.scss */
+        .page-user .user-left .user-detail-right ul li span {
+          color: #000;
+          font-family: Arial;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 33px; }
+  /* line 63, ../sass/components/_user.scss */
   .page-user .user-left .blog-part {
     border-bottom: 5px solid #f8f8f8;
     border-top: 5px solid #f8f8f8;
     float: left;
     margin: 27px 0 19px;
-    padding: 17px 0 30px; }
-    /* line 48, ../sass/components/_user.scss */
+    padding: 0 0 30px; }
+    /* line 69, ../sass/components/_user.scss */
     .page-user .user-left .blog-part a {
       font-size: 14px; }
-    /* line 51, ../sass/components/_user.scss */
+    /* line 72, ../sass/components/_user.scss */
     .page-user .user-left .blog-part .blog-part-left {
       float: left;
       width: 50%; }
-    /* line 55, ../sass/components/_user.scss */
+    /* line 76, ../sass/components/_user.scss */
     .page-user .user-left .blog-part .blog-part-right {
       float: right;
-      width: 50%; }
-      /* line 58, ../sass/components/_user.scss */
+      width: 48%; }
+      /* line 79, ../sass/components/_user.scss */
       .page-user .user-left .blog-part .blog-part-right .blog-topleft {
         float: left;
         width: 60%; }
-      /* line 62, ../sass/components/_user.scss */
+      /* line 83, ../sass/components/_user.scss */
       .page-user .user-left .blog-part .blog-part-right .blog-topright {
         float: right;
-        padding: 6px 0 0;
+        padding: 20px 0 0;
         width: 30%; }
-/* line 70, ../sass/components/_user.scss */
+/* line 91, ../sass/components/_user.scss */
 .page-user .user-right {
-  background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll center top;
+  background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 20px;
   border-left: 1px solid #ededed;
   float: right;
   height: auto;
   margin: 25px 0 0;
   width: 27%; }
-  /* line 77, ../sass/components/_user.scss */
+  /* line 98, ../sass/components/_user.scss */
   .page-user .user-right .contr-title {
     color: #116201;
     font-family: TrajanProBold;
@@ -3906,7 +3927,7 @@ html.js .form-autocomplete {
     letter-spacing: -1px;
     padding: 0 0 5px 21px;
     text-transform: uppercase; }
-    /* line 84, ../sass/components/_user.scss */
+    /* line 105, ../sass/components/_user.scss */
     .page-user .user-right .contr-title span {
       color: #1c57a7;
       font-family: TrajanProBold;
@@ -3914,13 +3935,23 @@ html.js .form-autocomplete {
       letter-spacing: -1px;
       padding: 0 0 5px 5px;
       text-transform: uppercase; }
-  /* line 93, ../sass/components/_user.scss */
+  /* line 114, ../sass/components/_user.scss */
   .page-user .user-right ul {
     margin: 0;
     padding: 20px 0 0 21px; }
-    /* line 96, ../sass/components/_user.scss */
+    /* line 117, ../sass/components/_user.scss */
     .page-user .user-right ul li {
       list-style: none; }
+      /* line 119, ../sass/components/_user.scss */
+      .page-user .user-right ul li a {
+        color: #1c57a7;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px; }
+/* line 129, ../sass/components/_user.scss */
+.page-user .wc_blocks-friend_images {
+  clear: both; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
