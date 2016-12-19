@@ -1922,16 +1922,17 @@ footer {
   height: 170px; }
   /* line 1015, ../sass/components/_main.scss */
   .page-node-edit .field-type-image tr .form-submit {
-    position: absolute;
+    /*position: absolute;
     left: 25%;
+    bottom: 10px;*/
+    margin-top: 100px;
     background: #1D58A8;
     color: #fff;
     border: none;
-    bottom: 10px;
     padding: 3px 7px;
     border-radius: 4px; }
 
-/* line 1029, ../sass/components/_main.scss */
+/* line 1030, ../sass/components/_main.scss */
 #user-login .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -1942,11 +1943,11 @@ footer {
   padding: 5px;
   width: 98%;
   max-width: 280px; }
-/* line 1040, ../sass/components/_main.scss */
+/* line 1041, ../sass/components/_main.scss */
 #user-login label {
   font-size: 14px;
   font-weight: 400; }
-/* line 1044, ../sass/components/_main.scss */
+/* line 1045, ../sass/components/_main.scss */
 #user-login .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
@@ -1956,7 +1957,7 @@ footer {
   font-size: 14px !important;
   margin-top: 0;
   padding: 10px 40px; }
-/* line 1054, ../sass/components/_main.scss */
+/* line 1055, ../sass/components/_main.scss */
 #user-login .form-submit:hover {
   background: #1266D6; }
 
