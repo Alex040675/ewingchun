@@ -87,17 +87,19 @@
     }
   }
   .user-right{
-    background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 20px;
+    background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 5px;
     border-left: 1px solid #ededed;
     float: right;
     height: auto;
     margin: 25px 0 0;
     width: 27%;
+    max-width: 230px;
     .contr-title{
       color: #116201;
-      font-family: TrajanProBold;
+      font-family: Trajan Pro Bold;
       font-size: 16px;
       letter-spacing: -1px;
+      margin-top: 0;
       padding: 0 0 5px 21px;
       text-transform: uppercase;
       span{

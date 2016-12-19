@@ -217,7 +217,49 @@
     }
   }
   }
+  .page-user{
+    .l-page{
+      .user-left{
+        float: none;
+        width: 100%;
+        .user-detail-left{
+          float: none;
+          width: 100%;
+        }
+        .user-detail-midle{
+          float: none;
+          width: 100%;
+          margin-top: 20px;
+        }
+        .user-detail-right {
+          float: none;
+          width: 100%;
+        }
+        .blog-part{
+          .blog-part-left {
+            float: none;
+            width: 100%;
+          }
+          .blog-part-right {
+            float: none;
+            width: 100%;
+            .blog-topleft {
+              float: none;
+              width: 100%;
+            }
+            .blog-topright {
+              float: none;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+    }
+  }
 }
+
+
 @media screen and (max-width: 768px) {
   body {
     .l-page {
@@ -838,6 +880,19 @@
         float: none;
       }
   }
+  }
+  .page-user{
+    .l-page{
+      .user-left {
+        float: none;
+        width: 100%;
+      }
+      .user-right{
+        float: none;
+        width: 100%;
+        clear: both;
+      }
+    }
   }
 }
 
