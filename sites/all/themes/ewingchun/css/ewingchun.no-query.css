@@ -3951,7 +3951,10 @@ html.js .form-autocomplete {
         float: right;
         padding: 20px 0 0;
         width: 30%; }
-/* line 89, ../sass/components/_user.scss */
+      /* line 86, ../sass/components/_user.scss */
+      .page-user .user-left .blog-part .blog-part-right .view-Blogs {
+        clear: both; }
+/* line 92, ../sass/components/_user.scss */
 .page-user .user-right {
   background: transparent url("../images/recentvideosbg.jpg") no-repeat scroll left 5px;
   border-left: 1px solid #ededed;
@@ -3960,7 +3963,7 @@ html.js .form-autocomplete {
   margin: 25px 0 0;
   width: 27%;
   max-width: 230px; }
-  /* line 97, ../sass/components/_user.scss */
+  /* line 100, ../sass/components/_user.scss */
   .page-user .user-right .contr-title {
     color: #116201;
     font-family: Trajan Pro Bold;
@@ -3969,7 +3972,7 @@ html.js .form-autocomplete {
     margin-top: 0;
     padding: 0 0 5px 21px;
     text-transform: uppercase; }
-    /* line 105, ../sass/components/_user.scss */
+    /* line 108, ../sass/components/_user.scss */
     .page-user .user-right .contr-title span {
       color: #1c57a7;
       font-family: TrajanProBold;
@@ -3977,21 +3980,21 @@ html.js .form-autocomplete {
       letter-spacing: -1px;
       padding: 0 0 5px 5px;
       text-transform: uppercase; }
-  /* line 114, ../sass/components/_user.scss */
+  /* line 117, ../sass/components/_user.scss */
   .page-user .user-right ul {
     margin: 0;
     padding: 20px 0 0 21px; }
-    /* line 117, ../sass/components/_user.scss */
+    /* line 120, ../sass/components/_user.scss */
     .page-user .user-right ul li {
       list-style: none; }
-      /* line 119, ../sass/components/_user.scss */
+      /* line 122, ../sass/components/_user.scss */
       .page-user .user-right ul li a {
         color: #1c57a7;
         font-family: Arial;
         font-size: 14px;
         font-weight: 400;
         line-height: 24px; }
-/* line 129, ../sass/components/_user.scss */
+/* line 132, ../sass/components/_user.scss */
 .page-user .wc_blocks-friend_images {
   clear: both; }
 
