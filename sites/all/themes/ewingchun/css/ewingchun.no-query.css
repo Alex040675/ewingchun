@@ -3838,8 +3838,8 @@ html.js .form-autocomplete {
   height: 170px; }
   /* line 704, ../sass/components/_sifus.scss */
   .node-type-sifu #edit-field-profile-img-und-table tr .form-submit {
-    position: absolute;
-    left: 25%;
+    /*position: absolute;
+    left: 25%;*/
     background: #1D58A8;
     color: #fff;
     border: none;
