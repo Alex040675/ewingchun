@@ -41,20 +41,23 @@
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
+      <?php print $messages; ?>
+      <?php if ($variables['time_revision']): ?>
+        <p class="about-revision"><?php print t("You are currently editing a revision of this post created on ") . $variables['time_revision'] . t(" by ") . l($variables['revision_name']->name,  'user/' . $variables['node']->revision_uid, array('html' => true)); ?></p>
+      <?php endif; ?>
+      <?php print render($tabs); ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
       <?php if (isset($sifu_help->help)): ?>
-        <div class="sifu-edit-help"><?php print $sifu_help->help; ?></div>
+        <div class="sifu-edit-help"><p><?php print $sifu_help->help; ?></p></div>
       <?php endif; ?>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
       <?php print render($page['content']); ?>
       <?php print $feed_icons; ?>
     </div>

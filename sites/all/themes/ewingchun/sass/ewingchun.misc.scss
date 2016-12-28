@@ -252,6 +252,84 @@
     }
   }
 }
+.about-revision {
+  color: red;
+  font-size: 16px;
+  font-weight: 700;
+}
+p,
+.content {
+  padding-bottom: 7px;
+  line-height: 22px;
+}
+.tabs--primary,
+.tabs--secondary {
+  border: medium none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 10px;
+  li {
+    float: left;
+    width: 117px;
+    height: 37px;
+    text-align: center;
+    background: url(../images/user-botm-bg.png) repeat-x left bottom;
+    border: medium none;
+    padding: 8px 10px 14px 0;
+    margin: 0!important;
+    a {
+      font-size: 13px;
+      font-family: Arial;
+      color: #666;
+      background: url(../images/user-tab.png) no-repeat left top;
+      text-align: center;
+      border: medium none;
+      text-decoration: none;
+      height: 45px;
+      line-height: 45px;
+      width: 124px;
+      padding: 0;
+      display: block;
+    }
+    a:hover {
+      font-size: 13px;
+      font-family: Arial;
+      color: #116201;
+      background: url(../images/user-tabhover.png) no-repeat left top;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      height: 45px;
+      line-height: 45px;
+      width: 124px;
+      padding: 0;
+    }
+  }
+  li.active {
+    a {
+      font-size: 13px;
+      font-family: Arial;
+      color: #116201!important;
+      background: url(../images/user-tabhover.png) no-repeat left top!important;
+      text-align: center;
+      text-decoration: none;
+      border: medium none;
+      display: block;
+      padding: 0;
+      height: 45px;
+      line-height: 45px;
+      width: 124px;
+    }
+  }
+}
+.schoolname-r {
+  p {
+    font-size: 14px!important;
+    color: #000!important;
+    line-height: 31px!important;
+  }
+}
 .node-type-article {
   .articletitle-leftp {
     .articalfpo {
