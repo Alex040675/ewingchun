@@ -167,6 +167,7 @@
     .wingchunblogs-box01, .wingchunblogs-boxtopbg, .wingchunblogs-boxbottombg {
       float: left;
       margin: 10px 0;
+      width: 100%;
     }
     .blog_mobile_image{
       display: none;
@@ -201,6 +202,9 @@
     .wingchunblogsleft .view-content .blogfpo-img {
       max-height: 83px;
       max-width: 83px;
+      img{
+        height: auto;
+      }
     }
     .blogfpo-img {
       color: #805e5e;
