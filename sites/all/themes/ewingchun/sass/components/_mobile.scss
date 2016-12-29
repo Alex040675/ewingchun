@@ -206,6 +206,10 @@
       display: none;
     }
   }
+
+    .page-blog .l-page .l-main .view-Blogs .view-header .sifuheaderright {
+      margin-top: -440px;
+    }
   }
   .node-type-video {
     .field--name-field-emvideo{
@@ -558,6 +562,9 @@
     .l-page{
       #block-views-exp-blogs-page-1{
         margin-top: 150px;
+        .views-exposed-widget{
+          top:0 !important;
+        }
       }
       .view-Blogs{
         .view-header{
@@ -570,7 +577,7 @@
             margin-top: 0;
           }
           .sifuheaderright {
-            margin-top: -400px;
+            margin-top: -420px;
           }
         }
       }

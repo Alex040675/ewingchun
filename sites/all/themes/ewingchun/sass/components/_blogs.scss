@@ -133,6 +133,8 @@
         clear: both;
       }
       .views-exposed-widget{
+        position: relative;
+        top:-80px;
         .form-text{
           max-width: 280px;
         }
