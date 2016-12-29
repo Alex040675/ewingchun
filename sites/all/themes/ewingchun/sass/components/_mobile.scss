@@ -489,6 +489,12 @@
     }
   }
   .page-videos {
+    .l-page .view-header{
+      height: 320px;
+      .sifuheaderright {
+        margin-top: -320px;
+      }
+    }
     .view-videos {
       .view-filters {
         width: 100% !important;
