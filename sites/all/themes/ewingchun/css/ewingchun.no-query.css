@@ -1961,6 +1961,11 @@ footer {
 #user-login .form-submit:hover {
   background: #1266D6; }
 
+/* line 1059, ../sass/components/_main.scss */
+.form-select {
+  -webkit-appearance: none;
+  appearance: none; }
+
 @media screen and (max-width: 320px) {
   /* line 4, ../sass/components/_mobile.scss */
   .node-type-video .l-main .field--name-field-emvideo {
