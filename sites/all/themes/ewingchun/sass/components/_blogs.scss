@@ -1,6 +1,10 @@
 .page-blog{
   #block-views-exp-blogs-page-1{
     margin-top: 200px;
+    .views-exposed-widgets{
+      position: relative;
+      top:-80px;
+    }
   }
   .view-Blogs{
     label{
@@ -133,8 +137,6 @@
         clear: both;
       }
       .views-exposed-widget{
-        position: relative;
-        top:-80px;
         .form-text{
           max-width: 280px;
         }
