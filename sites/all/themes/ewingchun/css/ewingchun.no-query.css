@@ -477,39 +477,40 @@ img, media {
             /* line 489, ../sass/components/_articles.scss */
             .review-headingbg .review-hcenterbg .centerright .centerright01 span ul .comment-reply {
               background: #666;
-              padding: 3px 5px; }
-              /* line 492, ../sass/components/_articles.scss */
+              padding: 3px 10px;
+              border-radius: 4px; }
+              /* line 493, ../sass/components/_articles.scss */
               .review-headingbg .review-hcenterbg .centerright .centerright01 span ul .comment-reply a {
                 color: #fff;
                 text-decoration: none; }
-  /* line 502, ../sass/components/_articles.scss */
+  /* line 503, ../sass/components/_articles.scss */
   .review-headingbg .review-hrightbg {
     height: 31px;
     width: auto;
     display: none; }
 
-/* line 508, ../sass/components/_articles.scss */
+/* line 509, ../sass/components/_articles.scss */
 .review-content {
   margin: 0 0 15px;
   clear: both;
   width: 80%; }
-  /* line 512, ../sass/components/_articles.scss */
+  /* line 513, ../sass/components/_articles.scss */
   .review-content .review-left {
     float: left;
     width: 10%;
     margin-right: 2%; }
-  /* line 517, ../sass/components/_articles.scss */
+  /* line 518, ../sass/components/_articles.scss */
   .review-content .review-right {
     width: 88%;
     float: left; }
-    /* line 520, ../sass/components/_articles.scss */
+    /* line 521, ../sass/components/_articles.scss */
     .review-content .review-right p {
       margin-top: 0; }
-  /* line 524, ../sass/components/_articles.scss */
+  /* line 525, ../sass/components/_articles.scss */
   .review-content .usearname-title {
     font-size: 16px;
     margin-bottom: 0; }
-    /* line 527, ../sass/components/_articles.scss */
+    /* line 528, ../sass/components/_articles.scss */
     .review-content .usearname-title a {
       font-size: 16px;
       text-decoration: none; }
