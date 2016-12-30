@@ -466,6 +466,7 @@ section{
         font-size: 17px;
         line-height: 31px;
         text-transform: uppercase;
+        text-decoration: none;
       }
     }
     .centerright {
@@ -480,7 +481,19 @@ section{
         span{
           float: left;
           ul{
-            float: left;
+            float: right;
+            li{
+              margin-right: 0;
+              margin-left: 10px;
+            }
+            .comment-reply{
+              background: #666;
+              padding: 3px 5px;
+              a{
+                color: #fff;
+                text-decoration: none;
+              }
+            }
           }
         }
       }
@@ -510,8 +523,10 @@ section{
   }
   .usearname-title{
     font-size: 16px;
+    margin-bottom: 0;
     a{
-      font-size: 12px;
+      font-size: 16px;
+      text-decoration: none;
     }
   }
 }
