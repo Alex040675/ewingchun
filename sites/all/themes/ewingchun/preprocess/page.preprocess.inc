@@ -59,4 +59,29 @@ function ewingchun_preprocess_page(&$variables) {
     $variables['page']['content']['system_main']['user_relationships_ui']['#title'] = '';
     $variables['page']['content']['system_main']['user_relationships_ui']['actions']['#title'] = '';
   }
+// Delete  modules/field/modules/text/text.js from summary field. The summary field is constantly disclosed
+  if (arg(0) == 'node') {
+    if (arg(1) == 'add' or (arg(2) == 'edit')) {
+      if ($variables['page']['content']['system_main']['body']['und'][0]['summary']) {
+        $variables['page']['content']['system_main']['body']['und'][0]['summary']['#attached'] = '';
+      }
+    }
+  }
+//  Added text to "sifu" node
+  if ((arg(0) == 'node') and (arg(2) == 'edit')) {
+    if ($variables['node']->revision_timestamp) {
+      $variables['time_revision'] = format_date($variables['node']->revision_timestamp, $type = 'short');
+    }
+    if ($variables['node']->revision_uid) {
+      $rev_uid = $variables['node']->revision_uid;
+      $query = db_select('users', 'u');
+      $query
+        ->condition('uid', $rev_uid)
+        ->fields('u', array('name'));
+      $result = $query->execute();
+      foreach ($result as $row) {
+        $variables['revision_name'] = $row;
+      }
+    }
+  }
 }
