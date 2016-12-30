@@ -146,13 +146,10 @@
   <?php endif; ?>
 
 <?php
-if ($user->uid > 0) {
+if ($logged_in) {
   $comments = comment_node_page_additions($node);
   print render($comments);
 //    $comment_form = drupal_get_form('comment_node_blog_form', (object) array('nid' => $node->nid));
 //    print drupal_render($comment_form);
 }
 ?>
-  <?php if (isset($content['links'])): ?>
-    <div class="drupal-links"><?php print render($content['links']);  ?></div>
-  <?php endif; ?>
