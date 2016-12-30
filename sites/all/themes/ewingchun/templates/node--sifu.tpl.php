@@ -144,7 +144,6 @@
       </div>
     </div>
   <?php endif; ?>
-
 <?php
   $comments = comment_node_page_additions($node);
   print render($comments);
