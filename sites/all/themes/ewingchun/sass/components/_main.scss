@@ -1068,6 +1068,7 @@ footer{
         width: 16%;
         padding: 0;
         margin: 0 2px !important;
+        background-size: 100% 100%;
         a{
           background-size: 100% 100%;
           width: 100%;
@@ -1075,7 +1076,7 @@ footer{
         }
       }
       li.active a{
-        background-size: 100% 100%;
+        background-size: 100% 100% !important;
         width: 100%;
       }
     }

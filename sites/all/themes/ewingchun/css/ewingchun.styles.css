@@ -2000,15 +2000,16 @@ footer {
   .l-main .l-content .tabs--primary li {
     width: 16%;
     padding: 0;
-    margin: 0 2px !important; }
-    /* line 1071, ../sass/components/_main.scss */
+    margin: 0 2px !important;
+    background-size: 100% 100%; }
+    /* line 1072, ../sass/components/_main.scss */
     .l-main .l-content .tabs--primary li a {
       background-size: 100% 100%;
       width: 100%;
       padding: 0; }
-  /* line 1077, ../sass/components/_main.scss */
+  /* line 1078, ../sass/components/_main.scss */
   .l-main .l-content .tabs--primary li.active a {
-    background-size: 100% 100%;
+    background-size: 100% 100% !important;
     width: 100%; }
 
 @media screen and (max-width: 320px) {
@@ -2814,7 +2815,7 @@ footer {
 
   /* line 990, ../sass/components/_mobile.scss */
   .l-page .l-main .l-content .tabs--primary li {
-    margin: 0 2px 6px 2px !important;
+    margin: 0 2px 13px 2px !important;
     padding: 0;
     width: 32%; } }
 @media screen and (max-width: 960px) {
