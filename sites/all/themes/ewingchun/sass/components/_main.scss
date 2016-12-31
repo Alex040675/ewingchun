@@ -1060,3 +1060,24 @@ footer{
   -webkit-appearance: none;
   appearance: none;
 }
+.l-main{
+  .l-content {
+    .tabs--primary {
+      width: 100%;
+      li {
+        width: 16%;
+        padding: 0;
+        margin: 0 2px;
+        a{
+          background-size: 100% 100%;
+          width: 100%;
+          padding: 0;
+        }
+        a.active{
+          background-size: 100% 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

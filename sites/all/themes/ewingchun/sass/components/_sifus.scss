@@ -259,12 +259,16 @@
     width: 100%;
     .common-left{
       float: left;
-      width: 28%;
+      width: 35%;
       margin-right: 2%;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
     .common-midle {
       float: left;
-      width: 70%;
+      width: 63%;
       ul{
         margin: 0;
         padding: 0;
@@ -287,7 +291,7 @@
     }
     .common-right{
       float: left;
-      width: 70%;
+      width: 63%;
       .common-right-lft{
         color: #000;
         float: left;
@@ -306,7 +310,7 @@
     }
     .comon-btom{
       float: left;
-      width: 70%;
+      width: 63%;
       margin-top: 8px;
       p{
         color: #000000;
