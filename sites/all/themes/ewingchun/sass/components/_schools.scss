@@ -4,16 +4,14 @@ html.js .form-autocomplete{
 .page-schools-list{
   .view-local-resources{
     .views-widget-filter-country{
-      float: none;
-      width: 100%;
-      clear: both;
+      float: left;
+      width: 35%;
       padding: 0;
       margin-bottom: 10px;
     }
     .views-widget-filter-province {
-      width: 100%;
-      float: none;
-      clear: both;
+      width: 35%;
+      float: left;
       padding: 0;
     }
     label{
@@ -109,7 +107,9 @@ html.js .form-autocomplete{
         max-width: 293px;
       }
       #edit-field-school-lineage-tid-wrapper{
-        clear: both;
+        float: left;
+        width: 35%;
+        padding-right: 0;
       }
       .description{
         display: none;
@@ -132,10 +132,9 @@ html.js .form-autocomplete{
         width: 100%;
       }
       #edit-keys-wrapper{
-        width: 100%;
+        width: 35%;
         margin-right: 0;
         padding: 0;
-        clear: both;
         margin-top: 20px;
         .views-widget{
 
