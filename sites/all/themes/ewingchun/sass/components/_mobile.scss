@@ -912,8 +912,10 @@
     width: 100%;
   }
     #edit-field-school-lineage-tid-wrapper{
-      float: none;
-      width: 100%;
+      float: none !important;
+      width: 100% !important;
+    }
+    #edit-keys-wrapper{
       margin-top: 20px;
     }
 }
