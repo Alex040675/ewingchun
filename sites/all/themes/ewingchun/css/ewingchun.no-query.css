@@ -2814,7 +2814,7 @@ footer {
 
   /* line 990, ../sass/components/_mobile.scss */
   .l-page .l-main .l-content .tabs--primary li {
-    margin: 0 2px 6px 2px;
+    margin: 0 2px 6px 2px !important;
     padding: 0;
     width: 32%; } }
 @media screen and (max-width: 960px) {
