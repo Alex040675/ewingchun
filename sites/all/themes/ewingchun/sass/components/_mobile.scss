@@ -314,6 +314,9 @@
 
     }
   }
+  .l-page .l-main .l-content .tabs--primary li {
+    width: 48% !important;
+  }
 }
 
 
@@ -696,6 +699,9 @@
           width: 100%;
           float: none;
           margin: 0 0 20px 0;
+          img{
+            width: auto !important;
+          }
         }
         .common-midle{
           margin-bottom: 0 !important;
@@ -706,6 +712,10 @@
         .common-right .common-right-lft, .common-right .common-right-2 {
           width: auto;
           margin-right: 5px;
+        }
+        .comon-btom{
+          clear: both;
+          width: 100%;
         }
       }
       .primary-part {
@@ -976,6 +986,11 @@
         clear: both;
       }
     }
+  }
+  .l-page .l-main .l-content .tabs--primary li {
+    margin: 0 2px 6px 2px;
+    padding: 0;
+    width: 32%;
   }
 }
 
