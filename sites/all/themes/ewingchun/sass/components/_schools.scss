@@ -108,6 +108,7 @@ html.js .form-autocomplete{
         width: 100% !important;
         max-width: 293px;
       }
+      #edit-field-school-lineage-tid-wrapper
       .description{
         display: none;
       }
@@ -129,10 +130,11 @@ html.js .form-autocomplete{
         width: 100%;
       }
       #edit-keys-wrapper{
-        float: none;
         width: 100%;
         margin-right: 0;
         padding: 0;
+        clear: both;
+        margin-top: 20px;
         .views-widget{
 
         }
