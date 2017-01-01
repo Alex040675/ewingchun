@@ -111,7 +111,7 @@
 </div>
 <div class="reviews-rightp">
 
-<div class="reviews-rightpimg">
+<!--<div class="reviews-rightpimg">
 <?php
   // "Geo" microformat, see http://microformats.org/wiki/geo
   if ($node->location['latitude'] && $node->location['longitude']) {
@@ -124,15 +124,15 @@
 ?>
 
 
-</div>
+</div>-->
 <?php if ($school_attended) : ?>
-<div class="review-rightuser">
+<!--<div class="review-rightuser">
   <div class="reviewusear">
     <?php print $school_attended ?>
     
   </div>
   
-  </div>
+  </div>-->
   <?php endif; ?>
 </div>
 <?php
