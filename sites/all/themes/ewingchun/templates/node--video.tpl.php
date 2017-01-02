@@ -59,6 +59,7 @@
 		<div class="ondate">On: <span><?php print format_date($node->changed, 'small'); ?></span></div>
 		<?php if($content['field_sifu']) : ?>
 		<div class="rs"><?php print render($content['field_sifu']);  ?></div>
+		<div class="rs">	<?php print render($content['taxonomy_vocabulary_7']); ?></div>
 		<?php endif; ?>
 		<div class="video01">
 			<?php if($content['field_emvideo']) : ?>
@@ -70,12 +71,12 @@
 			<h3>description</h3>
 			<div class="content"><?php print $node->field_video_description['und'][0]['value']; ?></div>
 		</div><!-- .description -->
-		<div class="tags">
-			<div class="tagleft">tags: </div>
+		<!--<div class="tags">
+
 			<div class="tagright">
-				<p><?php print render($content['taxonomy_vocabulary_7']); ?></p>
+				<p></p>
 			</div>
-		</div><!-- .tags -->
+		</div>--><!-- .tags -->
 	</div><!-- .videosubtitle -->
 </div>
 <!-- .videotitleinner -->
@@ -85,11 +86,7 @@
 </div><!-- .recentvideos-right -->
 <div id="comments">
     <?php
-    if ($logged_in) {
-        $comments = comment_node_page_additions($node);
-        print render($comments);
-    $comment_form = drupal_get_form('comment_node_blog_form', (object) array('nid' => $node->nid));
-    print drupal_render($comment_form);
-    }
+		$comments = comment_node_page_additions($node);
+		print render($comments);
     ?>
 </div>
