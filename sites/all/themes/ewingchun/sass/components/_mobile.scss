@@ -45,6 +45,18 @@
     margin-top: -320px;
   }
 }
+  .l-page{
+     .l-main{
+       .review-left{
+         width: 25%;
+         float: none;
+       }
+       .review-right{
+         width: 100%;
+         float: none;
+       }
+    }
+  }
 }
 
 @media screen and (max-width: 440px){
@@ -326,6 +338,22 @@
         max-width: 100%;
       }
     }
+    }
+  }
+  .l-page{
+    .review-headingbg{
+      width: 100%;
+      .review-hcenterbg .centerleft a{
+        font-size: 13px;
+      }
+    }
+    .review-content{
+      width: 100%;
+      .usearname-title{
+        a{
+          font-size: 13px;
+        }
+      }
     }
   }
 }
