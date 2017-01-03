@@ -84,7 +84,7 @@
 	<?php print $recent; ?>
     <?php print $videos_sifu; ?>
 </div><!-- .recentvideos-right -->
-<div id="comments">
+<div id="comments" class="comment-border">
     <?php
 
 		$comments = comment_node_page_additions($node);

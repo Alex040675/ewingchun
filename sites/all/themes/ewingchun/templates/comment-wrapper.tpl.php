@@ -35,7 +35,7 @@ global $user;
 
 
 <section<?php print $attributes; ?>>
-  <div id="comments" class="comment-border">
+  <div id="comments">
     <?php if ($content) : ?>
       <?php if ($node->comment_count == 0) : ?>
         <h2 class="title">No Comments yet...</h2>

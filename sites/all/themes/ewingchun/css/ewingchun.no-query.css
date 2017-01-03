@@ -389,7 +389,7 @@ img, media {
 #comments {
   clear: both; }
   /* line 408, ../sass/components/_articles.scss */
-  #comments .comment-border {
+  #comments section {
     border-top: 5px solid #f8f8f8;
     clear: both;
     margin: 30px 0 0;
@@ -4487,6 +4487,13 @@ html.js .form-autocomplete {
 .node-type-video .recentvideos .views-field-title a::before {
   color: #1c57a7;
   content: "- "; }
+
+/* line 280, ../sass/components/_videos.scss */
+.comment-border {
+  border-top: 5px solid #f8f8f8;
+  clear: both;
+  margin: 30px 0 0;
+  padding: 15px 0 0; }
 
 /* line 2, ../sass/components/_wiki.scss */
 .section-encyclopedia h1 {
