@@ -51,11 +51,25 @@
          width: 25%;
          float: none;
        }
+       .review-content{
+         margin-top: 25px;
+       }
        .review-right{
          width: 100%;
          float: none;
        }
-    }
+       .review-headingbg{
+         .review-hcenterbg{
+           .centerleft{
+             float: none;
+           }
+           .centerright{
+             float: left;
+             clear: both;
+           }
+         }
+       }
+     }
   }
 }
 
@@ -353,6 +367,9 @@
         a{
           font-size: 13px;
         }
+      }
+      .usearcontent{
+        font-size: 11px;
       }
     }
   }
@@ -1034,6 +1051,11 @@
     margin: 0 2px 13px 2px !important;
     padding: 0;
     width: 32%;
+  }
+  .l-page {
+    .review-headingbg {
+      width: 100%;
+    }
   }
 }
 
