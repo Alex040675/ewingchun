@@ -30,6 +30,7 @@
  * @see template_preprocess_comment_wrapper()
  * @see theme_comment_wrapper()
  */
+global $user;
 ?>
 
 
@@ -45,8 +46,10 @@
     <?php endif; ?>
     <?php print render($content['comments']); ?>
     <div class="comment_form">
+      <?php if ($user->uid > 0): ?>
       <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
       <?php  print render($content['comment_form']); ?>
+      <?php endif; ?>
     </div>
 
   </div>

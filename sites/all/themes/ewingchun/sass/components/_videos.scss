@@ -188,7 +188,7 @@ html.js .form-autocomplete{
     float: left;
     font-size: 14px;
     height: auto;
-    width: 113px;
+    padding-right: 15px;
   }
   .ondate,.rs{
     color: #000;
@@ -268,4 +268,18 @@ html.js .form-autocomplete{
       }
     }
   }
+  .recentvideos{
+    .views-field-title{
+      a::before{
+        color: #1c57a7;
+        content: "- ";
+      }
+    }
+  }
+}
+.comment-border{
+  border-top: 5px solid #f8f8f8;
+  clear: both;
+  margin: 30px 0 0;
+  padding: 15px 0 0;
 }

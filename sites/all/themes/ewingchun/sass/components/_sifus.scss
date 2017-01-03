@@ -259,12 +259,16 @@
     width: 100%;
     .common-left{
       float: left;
-      width: 28%;
+      width: 35%;
       margin-right: 2%;
+      img{
+        width: 100%;
+        height: auto;
+      }
     }
     .common-midle {
       float: left;
-      width: 70%;
+      width: 63%;
       ul{
         margin: 0;
         padding: 0;
@@ -287,7 +291,7 @@
     }
     .common-right{
       float: left;
-      width: 70%;
+      width: 63%;
       .common-right-lft{
         color: #000;
         float: left;
@@ -306,7 +310,7 @@
     }
     .comon-btom{
       float: left;
-      width: 70%;
+      width: 63%;
       margin-top: 8px;
       p{
         color: #000000;
@@ -584,6 +588,12 @@
       float: left;
       width: 31%;
       margin-right: 2%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-title {
         border-bottom: 1px solid #ededed;
         float: left;
@@ -595,6 +605,12 @@
       float: left;
       width: 31%;
       margin-right: 2%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-midle-title {
         border-bottom: 1px solid #ededed;
         overflow: hidden;
@@ -609,6 +625,12 @@
     .student-right {
       float: left;
       width: 33%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-right-title {
         border-bottom: 1px solid #ededed;
         overflow: hidden;

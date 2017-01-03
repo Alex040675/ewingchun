@@ -1025,6 +1025,11 @@ footer{
     }
   }
 }
+  .form-wrapper{
+    label {
+      margin-top: 15px;
+    }
+  }
 }
 #user-login{
   .form-text{
@@ -1054,5 +1059,31 @@ footer{
   }
   .form-submit:hover{
     background: #1266D6;
+  }
+}
+.form-select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+.l-main{
+  .l-content {
+    .tabs--primary {
+      width: 100%;
+      li {
+        width: 16%;
+        padding: 0;
+        margin: 0 2px 10px 2px!important;
+        background-size: 100% 100%;
+        a{
+          background-size: 100% 100%;
+          width: 100%;
+          padding: 0;
+        }
+      }
+      li.active a{
+        background-size: 100% 100% !important;
+        width: 100%;
+      }
+    }
   }
 }

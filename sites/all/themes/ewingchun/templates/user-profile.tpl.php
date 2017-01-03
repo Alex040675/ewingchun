@@ -131,8 +131,8 @@ if ($variables['user_profile']['summary']['member_for']['#markup']) {
 </div>
 <div class="blog-part">
 <div class="blog-part-left">
-<h3>topics i'm participating in</h3>
-<?php $abc = views_embed_view('Blogs', 'block_3', $arg);
+<h3>my articles</h3>
+<?php $abc = views_embed_view('Blogs', 'block_3', $uid);
 print $abc; ?>
 </div>
 <div class="blog-part-right">
@@ -158,18 +158,16 @@ print $abc; ?>
 <li><a href="/node/add/wiki">Encyclopedia Entry</a></li>
 <li><a href="/node/add/video">Video</a></li>
 <li><a href="/node/add/blog">Blog Entry</a></li>
-<li><a href="/node/add/product">Product</a></li>
-<li><a href="/node/add/forum">Forum Topic</a></li>
-<li><a href="/node/add/product">Book or DVD</a><br />
-  <br />
-</li>
 </ul>
 </div>
 </div>
 </div>
 <div class="wc_blocks-friend_images">
   <h3 class="block-title">my friends</h3>
-  <?php print render($variables['user_profile']['user_relationships_ui']); ?>
+  <?php
+  $block = block_load("user_relationship_blocks", "my-1");
+  print render(_block_get_renderable_array( _block_render_blocks(array($block))));
+  ?>
 </div>
 
 

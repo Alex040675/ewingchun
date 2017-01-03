@@ -51,10 +51,21 @@
 		<?php print $recent_articles; ?> </div>
 
 </div>
-<?php if ($user->uid > 0) {
-	$comments = comment_node_page_additions($node);
-	print render($comments);
+
+<div id="comments" class="comment-border">
+<?php
+$comments = comment_node_page_additions($node);
+print render($comments);
+if ($logged_in) {
+	if ($node->comment_count < 1): ?>
+		<h2 class="title">No Comments yet...</h2>
+		<h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
+	<?php endif; ?>
+
+	<?php
 	$comment_form = drupal_get_form('comment_node_blog_form', (object) array('nid' => $node->nid));
 	print drupal_render($comment_form);
 }
+
 ?>
+	</div>

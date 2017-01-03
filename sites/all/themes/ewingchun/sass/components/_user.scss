@@ -61,7 +61,7 @@
     .blog-part{
       border-bottom: 5px solid #f8f8f8;
       border-top: 5px solid #f8f8f8;
-      float: left;
+      overflow: hidden;
       margin: 27px 0 19px;
       padding: 0 0 30px;
       a{
@@ -126,10 +126,37 @@
           font-weight: 400;
           line-height: 24px;
         }
+          a::before{
+            color: #1c57a7;
+            content: "- ";
+          }
+
       }
     }
+
   }
   .wc_blocks-friend_images{
     clear: both;
+  }
+  .views-field-title{
+    a::before{
+      color: #1c57a7;
+      content: "- ";
+    }
+  }
+  .wc_blocks-friend_images{
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        img{
+          float: left;
+          margin-right: 10px;
+        }
+        a{
+          float: left;
+        }
+      }
+    }
   }
 }

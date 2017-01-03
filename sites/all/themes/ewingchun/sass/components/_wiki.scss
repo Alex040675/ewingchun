@@ -3,3 +3,23 @@
     border-bottom: 5px solid #f8f8f8;
   }
 }
+.section-wiki{
+  .l-region--sidebar-first{
+    #block-views-wiki-categories-block{
+      li{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
+    }
+  }
+  .view-wiki{
+    .views-field-title{
+      a::before{
+        color: #1c57a7;
+        content: "- ";
+      }
+    }
+  }
+}

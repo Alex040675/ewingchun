@@ -1,10 +1,20 @@
 .page-blog{
+  .action-links{
+    display: none;
+  }
   #block-views-exp-blogs-page-1{
     margin-top: 200px;
+    .views-exposed-widgets{
+      position: relative;
+      top:-80px;
+    }
   }
   .view-Blogs{
     label{
       float: none !important;
+    }
+    .views-field-edit-node{
+      display: none;
     }
     .views-row{
       .views-field-view-node{
@@ -21,7 +31,7 @@
     .view-header {
       overflow: hidden;
       margin-top: -300px;
-      margin-bottom: 200px;
+      /*margin-bottom: 200px;*/
       .sifuheaderleft {
         float: left;
         width: 70%;
@@ -167,6 +177,7 @@
     .wingchunblogs-box01, .wingchunblogs-boxtopbg, .wingchunblogs-boxbottombg {
       float: left;
       margin: 10px 0;
+      width: 100%;
     }
     .blog_mobile_image{
       display: none;
@@ -201,6 +212,9 @@
     .wingchunblogsleft .view-content .blogfpo-img {
       max-height: 83px;
       max-width: 83px;
+      img{
+        height: auto;
+      }
     }
     .blogfpo-img {
       color: #805e5e;
@@ -209,6 +223,9 @@
       max-width: 83px;
       vertical-align: middle;
       width: 83px;
+      img{
+        height: auto;
+      }
     }
     .blogusername {
       color: #000;
@@ -376,6 +393,7 @@
         height: auto;
         line-height: 25px;
         padding: 15px 0 0;
+        white-space: pre-line;
       }
       .middle{
         clear: both;

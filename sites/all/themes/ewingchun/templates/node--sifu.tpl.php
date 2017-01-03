@@ -139,19 +139,15 @@
     <div id="more">
       <div class="bottom-biography">
         <h3>biography (con't)</h3>
+        <p class="summary"><?php print $node->body['und'][0]['summary']; ?></p><br />
         <div class="content" style="padding:15px 0 0 0;"><?php print strip_tags($node->body['und'][0]['value'],"<p>,<br>"); ?></div>
       </div>
     </div>
   <?php endif; ?>
-
 <?php
-if ($user->uid > 0) {
   $comments = comment_node_page_additions($node);
   print render($comments);
 //    $comment_form = drupal_get_form('comment_node_blog_form', (object) array('nid' => $node->nid));
 //    print drupal_render($comment_form);
-}
+
 ?>
-  <?php if (isset($content['links'])): ?>
-    <div class="drupal-links"><?php print render($content['links']);  ?></div>
-  <?php endif; ?>

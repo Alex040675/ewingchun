@@ -111,7 +111,7 @@
 </div>
 <div class="reviews-rightp">
 
-<div class="reviews-rightpimg">
+<!--<div class="reviews-rightpimg">
 <?php
   // "Geo" microformat, see http://microformats.org/wiki/geo
   if ($node->location['latitude'] && $node->location['longitude']) {
@@ -124,22 +124,18 @@
 ?>
 
 
-</div>
+</div>-->
 <?php if ($school_attended) : ?>
-<div class="review-rightuser">
+<!--<div class="review-rightuser">
   <div class="reviewusear">
     <?php print $school_attended ?>
     
   </div>
   
-  </div>
+  </div>-->
   <?php endif; ?>
 </div>
 <?php
-  if ($user->uid > 0) {
-    $comments = comment_node_page_additions($node);
-    print render($comments);
-//    $comment_form = drupal_get_form('comment_node_blog_form', (object) array('nid' => $node->nid));
-//    print drupal_render($comment_form);
-  }
+$comments = comment_node_page_additions($node);
+print render($comments);
 ?>

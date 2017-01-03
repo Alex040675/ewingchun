@@ -14,7 +14,7 @@
       }
     }
     .view-header {
-      overflow: hidden;
+      height: 120px;
       margin-bottom: -50px;
       .sifuheaderleft {
         float: left;
@@ -460,12 +460,14 @@ section{
     border-radius: 4px 4px 0 0;
     .centerleft {
       float: left;
+      padding-left: 5px;
       a{
         color: #1c57a7;
         font-family: Trajan Pro Bold;
         font-size: 17px;
         line-height: 31px;
         text-transform: uppercase;
+        text-decoration: none;
       }
     }
     .centerright {
@@ -480,7 +482,20 @@ section{
         span{
           float: left;
           ul{
-            float: left;
+            float: right;
+            li{
+              margin-right: 0;
+              margin-left: 10px;
+            }
+            .comment-reply{
+              background: #666;
+              padding: 3px 10px;
+              border-radius: 4px;
+              a{
+                color: #fff;
+                text-decoration: none;
+              }
+            }
           }
         }
       }
@@ -510,8 +525,10 @@ section{
   }
   .usearname-title{
     font-size: 16px;
+    margin-bottom: 0;
     a{
-      font-size: 12px;
+      font-size: 16px;
+      text-decoration: none;
     }
   }
 }
