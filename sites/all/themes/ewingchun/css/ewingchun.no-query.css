@@ -3291,17 +3291,16 @@ html.js .form-autocomplete {
 /* line 320, ../sass/components/_schools.scss */
 .section-school .comment-form, .section-school .comment-wrapper {
   clear: both;
-  padding-top: 20px;
-  border-top: 5px solid #f8f8f8; }
-  /* line 324, ../sass/components/_schools.scss */
+  padding-top: 20px; }
+  /* line 323, ../sass/components/_schools.scss */
   .section-school .comment-form h2, .section-school .comment-wrapper h2 {
     font-size: 17px !important; }
-  /* line 328, ../sass/components/_schools.scss */
+  /* line 327, ../sass/components/_schools.scss */
   .section-school .comment-form .form-type-item label, .section-school .comment-wrapper .form-type-item label {
     float: left;
     margin-right: 10px; }
 
-/* line 336, ../sass/components/_schools.scss */
+/* line 335, ../sass/components/_schools.scss */
 .page-node-add-resource .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center;
@@ -3318,7 +3317,7 @@ html.js .form-autocomplete {
   max-width: 293px;
   width: 100% !important; }
 
-/* line 354, ../sass/components/_schools.scss */
+/* line 353, ../sass/components/_schools.scss */
 .page-node-edit #edit-field-instructors-und, .page-node-edit #edit-field-instructors-und {
   width: 300px; }
 
