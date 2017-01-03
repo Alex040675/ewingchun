@@ -588,6 +588,12 @@
       float: left;
       width: 31%;
       margin-right: 2%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-title {
         border-bottom: 1px solid #ededed;
         float: left;
@@ -599,6 +605,12 @@
       float: left;
       width: 31%;
       margin-right: 2%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-midle-title {
         border-bottom: 1px solid #ededed;
         overflow: hidden;
@@ -613,6 +625,12 @@
     .student-right {
       float: left;
       width: 33%;
+      .views-field-title{
+        a::before{
+          color: #1c57a7;
+          content: "- ";
+        }
+      }
       .student-right-title {
         border-bottom: 1px solid #ededed;
         overflow: hidden;

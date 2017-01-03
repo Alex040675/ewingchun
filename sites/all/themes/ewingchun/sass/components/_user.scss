@@ -132,4 +132,10 @@
   .wc_blocks-friend_images{
     clear: both;
   }
+  .views-field-title{
+    a::before{
+      color: #1c57a7;
+      content: "- ";
+    }
+  }
 }
