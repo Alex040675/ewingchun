@@ -4216,10 +4216,14 @@ html.js .form-autocomplete {
         font-size: 14px;
         font-weight: 400;
         line-height: 24px; }
-/* line 132, ../sass/components/_user.scss */
+      /* line 129, ../sass/components/_user.scss */
+      .page-user .user-right ul li a::before {
+        color: #1c57a7;
+        content: "- "; }
+/* line 138, ../sass/components/_user.scss */
 .page-user .wc_blocks-friend_images {
   clear: both; }
-/* line 136, ../sass/components/_user.scss */
+/* line 142, ../sass/components/_user.scss */
 .page-user .views-field-title a::before {
   color: #1c57a7;
   content: "- "; }
