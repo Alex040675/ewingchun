@@ -169,7 +169,10 @@ print $abc; ?>
 </div>
 <div class="wc_blocks-friend_images">
   <h3 class="block-title">my friends</h3>
-  <?php print render($variables['user_profile']['user_relationships_ui']); ?>
+  <?php
+  $block = block_load("user_relationship_blocks", "my-1");
+  print render(_block_get_renderable_array( _block_render_blocks(array($block))));
+  ?>
 </div>
 
 
