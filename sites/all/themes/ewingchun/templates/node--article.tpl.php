@@ -115,20 +115,46 @@ if ($page == 1): //if node is being displayed as a node
 	</div>
 </div>
 <div class="artical-rightmain">
-
+<!--  <div class="recentarticles">-->
+<!--    <p class="yca">related products</p>-->
+<!--    --><?php
+//    if ($relatedproducts) {
+//      print render($relatedproducts);
+//    } else {
+//      echo "<p>No Related Products</p>";
+//    }
+//    ?>
+<!--  </div>-->
 	<div class="recentarticles">
 		<p class="yca">Other articles by sifu</p>
 		<?php
 			if ($otherarticles != NULL) {
 				print $otherarticles;
 			} else {
-				echo "<br/><p>No Articles</p>";
+				echo "<p>No Articles</p>";
 			}
 		?>	
 	</div>
 	<div class="recentarticles">
 		<p class="yca">recent articles</p>
-		<?php print $recent_articles; ?> </div>
+		<?php
+      if ($recent_articles != NULL) {
+        print $recent_articles;
+      } else {
+        echo "<br/><p>No Articles</p>";
+      }
+    ?>
+  </div>
+<!--  <div class="recentarticles">-->
+<!--    <p class="yca">resent wiki posts</p>-->
+<!--    --><?php
+//    if ($recent_wiki != NULL) {
+//      print $recent_wiki;
+//    } else {
+//      echo "<p>No Posts</p>";
+//    }
+//    ?>
+<!--  </div>-->
 </div>
   <div id="comments">
     <?php

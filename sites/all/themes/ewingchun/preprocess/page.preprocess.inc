@@ -84,4 +84,13 @@ function ewingchun_preprocess_page(&$variables) {
       }
     }
   }
+  if ((arg(0) == 'node') and ($variables['node']->type == 'article') and arg(2)== NULL and ($variables['node']->revision_timestamp)) {
+    $variables['article_node_messages'] = t('This post has one or more pending revisions: ') . l('view list of revisions', 'node/' . $variables['node']->nid . '/revisions', array('html' => true));
+  }
+  if ((arg(0) == 'node') and (arg(2) == 'revisions')) {
+    $variables['revision_node_messages'] = t('The revisions let you track differences between multiple versions of a post.');
+  }
+  if ((arg(0) == 'node') and arg(2) == 'outline') {
+    $variables['outline_node_messages'] = t('The outline feature allows you to include posts in the ') . l('book hierarchy', '/book') . t(', as well as move them within the hierarchy or to ') . l('reorder an entire book', '/admin/content/book');
+  }
 }

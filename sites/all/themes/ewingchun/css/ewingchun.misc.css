@@ -357,10 +357,16 @@
           .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
             font-size: 14px; }
 
-.about-revision {
+.about-revision,
+.article_messages {
   color: red;
   font-size: 16px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-top: 20px; }
+
+.outline_node_messages,
+.revision_node_messages {
+  margin-top: 20px; }
 
 p,
 .content {
