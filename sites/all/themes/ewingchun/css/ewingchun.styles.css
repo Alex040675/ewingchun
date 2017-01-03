@@ -2008,7 +2008,7 @@ footer {
   .l-main .l-content .tabs--primary li {
     width: 16%;
     padding: 0;
-    margin: 0 2px !important;
+    margin: 0 2px 10px 2px !important;
     background-size: 100% 100%; }
     /* line 1072, ../sass/components/_main.scss */
     .l-main .l-content .tabs--primary li a {
@@ -4151,7 +4151,7 @@ html.js .form-autocomplete {
   .page-user .user-left .blog-part {
     border-bottom: 5px solid #f8f8f8;
     border-top: 5px solid #f8f8f8;
-    float: left;
+    overflow: hidden;
     margin: 27px 0 19px;
     padding: 0 0 30px; }
     /* line 67, ../sass/components/_user.scss */
@@ -4228,6 +4228,19 @@ html.js .form-autocomplete {
 .page-user .views-field-title a::before {
   color: #1c57a7;
   content: "- "; }
+/* line 148, ../sass/components/_user.scss */
+.page-user .wc_blocks-friend_images ul {
+  padding: 0; }
+  /* line 150, ../sass/components/_user.scss */
+  .page-user .wc_blocks-friend_images ul li {
+    list-style: none; }
+    /* line 152, ../sass/components/_user.scss */
+    .page-user .wc_blocks-friend_images ul li img {
+      float: left;
+      margin-right: 10px; }
+    /* line 156, ../sass/components/_user.scss */
+    .page-user .wc_blocks-friend_images ul li a {
+      float: left; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
