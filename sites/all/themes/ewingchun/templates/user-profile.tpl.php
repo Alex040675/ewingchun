@@ -158,11 +158,6 @@ print $abc; ?>
 <li><a href="/node/add/wiki">Encyclopedia Entry</a></li>
 <li><a href="/node/add/video">Video</a></li>
 <li><a href="/node/add/blog">Blog Entry</a></li>
-<li><a href="/node/add/product">Product</a></li>
-<li><a href="/node/add/forum">Forum Topic</a></li>
-<li><a href="/node/add/product">Book or DVD</a><br />
-  <br />
-</li>
 </ul>
 </div>
 </div>
