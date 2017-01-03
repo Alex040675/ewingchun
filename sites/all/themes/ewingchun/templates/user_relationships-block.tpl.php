@@ -22,14 +22,14 @@ if ($relationships) {
     $title = $rtype_heading;
     $rows[$title][] = $relatee;
   }
-
+  
   $output = "<ul class='friends'>";
   foreach ($rows as $title => $users) {
     if ($users[0]->picture > 0) {
       $file = file_load($users[0]->picture);
       $output .=  "<li><img src='" . image_style_url('user_comment', $file->uri) . "' /> " . l($users[0]->name, 'user/' . $users[0]->uid) . "</li>";
     } else {
-      $output .=  "<li><img src='" . image_style_url('user_comment', file_build_uri(variable_get('user_picture_default'))) . "'/>" . l($users[0]->name, 'user/' . $users[0]->uid) . "</li>";
+      $output .=  "<li><img src='" .variable_get('user_picture_default') . "'/>" . l($users[0]->name, 'user/' . $users[0]->uid) . "</li>";
     }
   }
 
