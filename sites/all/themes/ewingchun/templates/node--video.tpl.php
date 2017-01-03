@@ -86,7 +86,17 @@
 </div><!-- .recentvideos-right -->
 <div id="comments">
     <?php
+
 		$comments = comment_node_page_additions($node);
 		print render($comments);
-    ?>
+		if ($node->comment_count < 1 && $logged_in):?>
+
+			<h2 class="title">No Comments yet...</h2>
+		  <h2<?php print $form_title_attributes ?>><?php print t('Add new comment'); ?></h2>
+	    <?php
+			$comment_form = drupal_get_form('comment_node_video_form', (object) array('nid' => $node->nid));
+			print drupal_render($comment_form);
+		  endif;
+
+      ?>
 </div>
