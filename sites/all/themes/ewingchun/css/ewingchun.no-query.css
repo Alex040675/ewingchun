@@ -4457,10 +4457,23 @@ html.js .form-autocomplete {
     /* line 266, ../sass/components/_videos.scss */
     .node-type-video .tags .tagright p {
       margin: 0; }
+/* line 273, ../sass/components/_videos.scss */
+.node-type-video .recentvideos .views-field-title a::before {
+  color: #1c57a7;
+  content: "- "; }
 
 /* line 2, ../sass/components/_wiki.scss */
 .section-encyclopedia h1 {
   border-bottom: 5px solid #f8f8f8; }
+
+/* line 10, ../sass/components/_wiki.scss */
+.section-wiki .l-region--sidebar-first #block-views-wiki-categories-block li a::before {
+  color: #1c57a7;
+  content: "- "; }
+/* line 19, ../sass/components/_wiki.scss */
+.section-wiki .view-wiki .views-field-title a::before {
+  color: #1c57a7;
+  content: "- "; }
 
 /* line 23, ../sass/ewingchun.styles.scss */
 .html {
