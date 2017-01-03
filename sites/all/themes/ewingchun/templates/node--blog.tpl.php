@@ -51,8 +51,9 @@
 		<?php print $recent_articles; ?> </div>
 
 </div>
-<?php
 
+<div id="comments" class="comment-border">
+<?php
 $comments = comment_node_page_additions($node);
 print render($comments);
 if ($logged_in) {
@@ -67,3 +68,4 @@ if ($logged_in) {
 }
 
 ?>
+	</div>
