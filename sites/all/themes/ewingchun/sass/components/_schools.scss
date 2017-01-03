@@ -262,7 +262,8 @@ html.js .form-autocomplete{
     height: auto;
     margin: 0 2% 0 0;
     padding: 20px 0 0;
-    width: 40%;
+    width: 300px;
+    max-width: 100%;
     img{
 
     }
@@ -282,9 +283,10 @@ html.js .form-autocomplete{
     }
   }
   .schoolname-r {
-    float: right;
+    float: left;
     height: auto;
-    width: 58%;
+    width: 250px;
+    max-width: 100%;
     p {
       color: #000;
       font-size: 14px;
