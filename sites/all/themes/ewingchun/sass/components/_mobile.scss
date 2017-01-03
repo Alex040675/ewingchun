@@ -317,6 +317,17 @@
   .l-page .l-main .l-content .tabs--primary li {
     width: 48% !important;
   }
+  .section-school{
+    .l-page {
+      .l-main{
+      .productname-left, .schoolname-r {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    }
+  }
 }
 
 
@@ -741,16 +752,14 @@
   .section-school {
     .l-page {
       .schoolname-left {
-        width: 100%;
-        float: none;
+
       }
       .productname-left {
         float: none;
         width: 100%;
       }
       .schoolname-r {
-        float: left;
-        width: 100%;
+
       }
       .reviews-rightp {
         float: left;

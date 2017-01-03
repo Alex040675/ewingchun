@@ -255,15 +255,13 @@ html.js .form-autocomplete{
 .section-school{
   .schoolname-left{
     float: left;
-    width: 70%;
   }
   .productname-left {
     float: left;
     height: auto;
     margin: 0 2% 0 0;
     padding: 20px 0 0;
-    width: 300px;
-    max-width: 100%;
+    max-width: 50%;
     img{
 
     }
@@ -285,8 +283,7 @@ html.js .form-autocomplete{
   .schoolname-r {
     float: left;
     height: auto;
-    width: 250px;
-    max-width: 100%;
+    max-width: 48%;
     p {
       color: #000;
       font-size: 14px;
