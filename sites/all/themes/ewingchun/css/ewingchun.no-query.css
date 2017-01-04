@@ -1981,23 +1981,23 @@ footer {
   margin-top: 20px; }
 
 /* line 1049, ../sass/components/_main.scss */
-.page-node-add-sifu #edit-field-profile-img .image-preview {
+.page-node-add-sifu #edit-field-profile-img .image-preview, .page-node-add-sifu #edit-field-img-certification .image-preview {
   float: left;
   width: 20%; }
 /* line 1053, ../sass/components/_main.scss */
-.page-node-add-sifu #edit-field-profile-img .image-widget-data {
+.page-node-add-sifu #edit-field-profile-img .image-widget-data, .page-node-add-sifu #edit-field-img-certification .image-widget-data {
   float: left;
   width: 70%; }
 /* line 1058, ../sass/components/_main.scss */
-.page-node-add-sifu #edit-field-profile-img .ajax-new-content td {
+.page-node-add-sifu #edit-field-profile-img .ajax-new-content td, .page-node-add-sifu #edit-field-img-certification .ajax-new-content td {
   display: block; }
 /* line 1061, ../sass/components/_main.scss */
-.page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child {
+.page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child, .page-node-add-sifu #edit-field-img-certification .ajax-new-content td:last-child {
   float: left;
   display: block;
   clear: both; }
   /* line 1065, ../sass/components/_main.scss */
-  .page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child .form-submit {
+  .page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child .form-submit, .page-node-add-sifu #edit-field-img-certification .ajax-new-content td:last-child .form-submit {
     margin-left: 160px; }
 /* line 1072, ../sass/components/_main.scss */
 .page-node-add-sifu #edit-field-homepage-link tr:nth-child(2) {
