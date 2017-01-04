@@ -1034,6 +1034,16 @@ footer{
     margin-top: 20px;
   }
 }
+.page-node-add{
+  .form-wrapper,.form-item{
+    label {
+      margin-top: 15px;
+    }
+  }
+  fieldset{
+    margin-top: 20px;
+  }
+}
 .page-node-add-sifu{
   #edit-field-profile-img{
     .image-preview{
@@ -1059,13 +1069,25 @@ footer{
     }
   }
   #edit-field-homepage-link{
-    tr.even:first-child{
+    .even:first-child{
       display: none;
     }
   }
   #field-lineage-information-values{
+    width: 100%;
     .form-wrapper{
       float:left;
+      margin-right: 10px;
+      .form-select {
+        width: 275px;
+      }
+    }
+    .field-type-list-boolean{
+      margin-top: 25px;
+    }
+    .form-submit{
+      float: left;
+      clear: both;
     }
   }
 }
