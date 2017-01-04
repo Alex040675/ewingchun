@@ -1154,6 +1154,37 @@
     }
   }
 }
+
+@media screen and (max-width:980px){
+  .page-node-add-sifu {
+    .l-page{
+    #edit-field-profile-img, #edit-field-img-certification {
+      .image-preview {
+        float: none;
+        width: auto;
+      }
+      .image-widget-data {
+        float: none;
+        width: auto;
+      }
+    }
+  }
+    #field-lineage-information-values{
+      .form-wrapper{
+        float:none;
+        margin-right: 0;
+      }
+      .field-type-list-boolean{
+        margin-top: 0;
+      }
+      .form-submit{
+        float: left;
+        clear: both;
+      }
+    }
+  }
+}
+
 @media screen and (min-width:769px) and (max-width: 1180px){
 body{
   background-size: 50% auto;
