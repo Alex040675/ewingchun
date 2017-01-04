@@ -2000,7 +2000,7 @@ footer {
   .page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child .form-submit {
     margin-left: 160px; }
 /* line 1072, ../sass/components/_main.scss */
-.page-node-add-sifu #edit-field-homepage-link .even:first-child {
+.page-node-add-sifu #edit-field-homepage-link tr:nth-child(2) {
   display: none; }
 /* line 1076, ../sass/components/_main.scss */
 .page-node-add-sifu #field-lineage-information-values {
@@ -2014,7 +2014,7 @@ footer {
       width: 275px; }
   /* line 1085, ../sass/components/_main.scss */
   .page-node-add-sifu #field-lineage-information-values .field-type-list-boolean {
-    margin-top: 25px; }
+    margin-top: 40px; }
   /* line 1088, ../sass/components/_main.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;

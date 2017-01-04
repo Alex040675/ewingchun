@@ -1069,7 +1069,7 @@ footer{
     }
   }
   #edit-field-homepage-link{
-    .even:first-child{
+    tr:nth-child(2){
       display: none;
     }
   }
@@ -1083,7 +1083,7 @@ footer{
       }
     }
     .field-type-list-boolean{
-      margin-top: 25px;
+      margin-top: 40px;
     }
     .form-submit{
       float: left;
