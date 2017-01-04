@@ -3009,7 +3009,7 @@ footer {
     width: auto; }
   /* line 1170, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .form-submit, .page-node-add-sifu .l-page #edit-field-img-certification .form-submit {
-    margin-left: 0; }
+    margin-left: 0 !important; }
   /* line 1176, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-wrapper {
     float: none;
