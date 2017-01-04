@@ -1045,6 +1045,9 @@ footer{
       width: 70%;
     }
     .ajax-new-content{
+      td{
+        display: block;
+      }
       td:last-child{
         float: left;
         display: block;
