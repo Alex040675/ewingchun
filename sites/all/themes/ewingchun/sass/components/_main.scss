@@ -1030,6 +1030,31 @@ footer{
       margin-top: 15px;
     }
   }
+  fieldset{
+    margin-top: 20px;
+  }
+}
+.page-node-add-sifu{
+  #edit-field-profile-img{
+    .image-preview{
+      float: left;
+      width: 20%;
+    }
+    .image-widget-data {
+      float: left;
+      width: 70%;
+    }
+    .ajax-new-content{
+      td:last-child{
+        float: left;
+        display: block;
+        clear: both;
+        .form-submit{
+          margin-left: 160px;
+        }
+      }
+    }
+  }
 }
 #user-login{
   .form-text{

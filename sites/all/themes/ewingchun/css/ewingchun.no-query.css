@@ -1969,8 +1969,28 @@ footer {
 /* line 1029, ../sass/components/_main.scss */
 .page-node-edit .form-wrapper label {
   margin-top: 15px; }
+/* line 1033, ../sass/components/_main.scss */
+.page-node-edit fieldset {
+  margin-top: 20px; }
 
-/* line 1035, ../sass/components/_main.scss */
+/* line 1039, ../sass/components/_main.scss */
+.page-node-add-sifu #edit-field-profile-img .image-preview {
+  float: left;
+  width: 20%; }
+/* line 1043, ../sass/components/_main.scss */
+.page-node-add-sifu #edit-field-profile-img .image-widget-data {
+  float: left;
+  width: 70%; }
+/* line 1048, ../sass/components/_main.scss */
+.page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child {
+  float: left;
+  display: block;
+  clear: both; }
+  /* line 1052, ../sass/components/_main.scss */
+  .page-node-add-sifu #edit-field-profile-img .ajax-new-content td:last-child .form-submit {
+    margin-left: 160px; }
+
+/* line 1060, ../sass/components/_main.scss */
 #user-login .form-text {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -1981,11 +2001,11 @@ footer {
   padding: 5px;
   width: 98%;
   max-width: 280px; }
-/* line 1046, ../sass/components/_main.scss */
+/* line 1071, ../sass/components/_main.scss */
 #user-login label {
   font-size: 14px;
   font-weight: 400; }
-/* line 1050, ../sass/components/_main.scss */
+/* line 1075, ../sass/components/_main.scss */
 #user-login .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
@@ -1995,30 +2015,30 @@ footer {
   font-size: 14px !important;
   margin-top: 0;
   padding: 10px 40px; }
-/* line 1060, ../sass/components/_main.scss */
+/* line 1085, ../sass/components/_main.scss */
 #user-login .form-submit:hover {
   background: #1266D6; }
 
-/* line 1064, ../sass/components/_main.scss */
+/* line 1089, ../sass/components/_main.scss */
 .form-select {
   -webkit-appearance: none;
   appearance: none; }
 
-/* line 1070, ../sass/components/_main.scss */
+/* line 1095, ../sass/components/_main.scss */
 .l-main .l-content .tabs--primary {
   width: 100%; }
-  /* line 1072, ../sass/components/_main.scss */
+  /* line 1097, ../sass/components/_main.scss */
   .l-main .l-content .tabs--primary li {
     width: 16%;
     padding: 0;
     margin: 0 2px 10px 2px !important;
     background-size: 100% 100%; }
-    /* line 1077, ../sass/components/_main.scss */
+    /* line 1102, ../sass/components/_main.scss */
     .l-main .l-content .tabs--primary li a {
       background-size: 100% 100%;
       width: 100%;
       padding: 0; }
-  /* line 1083, ../sass/components/_main.scss */
+  /* line 1108, ../sass/components/_main.scss */
   .l-main .l-content .tabs--primary li.active a {
     background-size: 100% 100% !important;
     width: 100%; }
