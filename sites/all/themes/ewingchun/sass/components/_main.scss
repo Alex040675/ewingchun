@@ -1025,7 +1025,7 @@ footer{
     }
   }
 }
-  .form-wrapper{
+  .form-wrapper,.form-item{
     label {
       margin-top: 15px;
     }
@@ -1056,6 +1056,16 @@ footer{
           margin-left: 160px;
         }
       }
+    }
+  }
+  #edit-field-homepage-link{
+    tr.even:first-child{
+      display: none;
+    }
+  }
+  #field-lineage-information-values{
+    .form-wrapper{
+      float:left;
     }
   }
 }
