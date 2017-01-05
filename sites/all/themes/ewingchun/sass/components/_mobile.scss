@@ -37,6 +37,21 @@
      }
    }
  }
+  .page-node-add-sifu {
+    .l-page{
+      #edit-field-profile-img, #edit-field-img-certification {
+        .form-submit{
+          margin-right: 100%;
+          margin-top: 10px;
+        }
+        .form-text{
+          width: 260px;
+        }
+      }
+    }
+    #field-lineage-information-values{
+    }
+  }
 }
 
 @media screen and (max-width: 385px) {
