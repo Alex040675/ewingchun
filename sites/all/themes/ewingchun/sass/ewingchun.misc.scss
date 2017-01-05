@@ -349,6 +349,21 @@ p,
     }
   }
 }
+.logout_block {
+  float: right;
+  width: 20%;
+  margin-top: -23px;
+  color: #052756;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: #052756;
+  }
+}
+.top_header,
+.l-region--top-header {
+  overflow: hidden;
+}
 @media screen and (max-width: 320px) {
   .page-wiki,
   .node-type-wiki {
@@ -461,7 +476,6 @@ p,
       .menu li,
       .expanded li {
         line-height: 22px!important;
-
       }
     }
     .encyclopediacategories-center,
@@ -469,6 +483,11 @@ p,
       float: none!important;
       width: 98% !important;
     }
+  }
+  .logout_block {
+    float: none!important;
+    margin: 10px auto!important;
+    width: 150px!important;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

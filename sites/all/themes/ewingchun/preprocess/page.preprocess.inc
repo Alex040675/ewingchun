@@ -5,7 +5,11 @@
 ///**
 // * Implements hook_preprocess_page().
 // */
+/**
+ * @param $variables
+ */
 function ewingchun_preprocess_page(&$variables) {
+    global $user;
     // Move some variables to the top level for themer convenience and template cleanliness.
     $variables['show_messages'] = $variables['page']['#show_messages'];
 
@@ -52,7 +56,6 @@ function ewingchun_preprocess_page(&$variables) {
     global $user;
     if (($variables['node']->nid) and ($variables['node']->nid == '166') and ($variables['user']->uid) == '0') {
       $variables['page']['content']['system_main'][] = drupal_get_form('user_login');
-
     }
 //  Changes ../user/..
   if ((arg(0) == 'user') and ($variables['page']['content']['system_main']['user_relationships_ui'])) {
@@ -67,7 +70,7 @@ function ewingchun_preprocess_page(&$variables) {
       }
     }
   }
-//  Added text to "sifu" node
+//  Added text to node
   if ((arg(0) == 'node') and (arg(2) == 'edit')) {
     if ($variables['node']->revision_timestamp) {
       $variables['time_revision'] = format_date($variables['node']->revision_timestamp, $type = 'short');
@@ -92,5 +95,9 @@ function ewingchun_preprocess_page(&$variables) {
   }
   if ((arg(0) == 'node') and arg(2) == 'outline') {
     $variables['outline_node_messages'] = t('The outline feature allows you to include posts in the ') . l('book hierarchy', '/book') . t(', as well as move them within the hierarchy or to ') . l('reorder an entire book', '/admin/content/book');
+  }
+  // Added logout block for registered user
+  if (($user->uid !== '0') and $variables['logged_in']) {
+    $variables['logout_block']['#markup'] = "<div class='logout_block'>" . t('Welcome, ') . "<a href=/user/" . $user->uid . ">" . $user->name . "</a>" . " | " . "<a href='/user/logout'>Logout</a></div>";
   }
 }

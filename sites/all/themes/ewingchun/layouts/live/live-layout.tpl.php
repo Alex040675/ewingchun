@@ -1,6 +1,9 @@
 <div<?php print $attributes; ?>>
     <div class="top_header">
       <?php print render($page['top_header']); ?>
+      <?php if ($variables['logout_block']): ?>
+        <?php print render($variables['logout_block']); ?>
+      <?php endif; ?>
     </div>
   <header class="l-header" role="banner">
     <div class="l-branding">
@@ -22,7 +25,6 @@
 
       <?php print render($page['branding']); ?>
     </div>
-
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
       <?php print $breadcrumb; ?>
