@@ -163,7 +163,7 @@ print $abc; ?>
 </div>
 </div>
 <div class="wc_blocks-friend_images">
-<!--  <h3 class="block-title">my friends</h3>-->
+  <h3 class="block-title">my friends</h3>
   <?php
   $block = block_load("user_relationship_blocks", "my-1");
   print render(_block_get_renderable_array( _block_render_blocks(array($block))));
