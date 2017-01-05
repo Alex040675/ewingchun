@@ -3024,7 +3024,7 @@ footer {
     margin-right: 0; }
   /* line 1195, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .field-type-list-boolean {
-    margin-top: 0; }
+    margin-top: 15px; }
   /* line 1198, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;
