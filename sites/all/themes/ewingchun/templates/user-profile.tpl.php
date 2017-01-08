@@ -158,6 +158,7 @@ print $abc; ?>
 <li><a href="/node/add/wiki">Encyclopedia Entry</a></li>
 <li><a href="/node/add/video">Video</a></li>
 <li><a href="/node/add/blog">Blog Entry</a></li>
+<li><a href="/add-your-stuff">Add your stuff</a></li>
 </ul>
 </div>
 </div>
