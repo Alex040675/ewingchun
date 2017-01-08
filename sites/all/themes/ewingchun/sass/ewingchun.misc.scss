@@ -252,10 +252,16 @@
     }
   }
 }
-.about-revision {
+.about-revision,
+.article_messages {
   color: red;
   font-size: 16px;
   font-weight: 700;
+  margin-top: 20px;
+}
+.outline_node_messages,
+.revision_node_messages {
+  margin-top: 20px;
 }
 p,
 .content {
@@ -339,6 +345,35 @@ p,
           list-style-type: none;
           float: left;
         }
+      }
+    }
+  }
+}
+.logout_block {
+  float: right;
+  width: 20%;
+  margin-top: -23px;
+  color: #052756;
+  font-size: 12px;
+  a {
+    text-decoration: none;
+    color: #052756;
+  }
+}
+.top_header,
+.l-region--top-header {
+  overflow: hidden;
+}
+.section-add-your-stuff {
+  h1 {
+    margin-bottom: 20px!important;
+  }
+  .node--page--full {
+    p {
+      margin: 0 30px;
+      padding: 0;
+      a {
+        margin-left: -30px;
       }
     }
   }
@@ -455,7 +490,6 @@ p,
       .menu li,
       .expanded li {
         line-height: 22px!important;
-
       }
     }
     .encyclopediacategories-center,
@@ -463,6 +497,11 @@ p,
       float: none!important;
       width: 98% !important;
     }
+  }
+  .logout_block {
+    float: none!important;
+    margin: 10px auto!important;
+    width: 150px!important;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

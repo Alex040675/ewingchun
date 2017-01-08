@@ -1,6 +1,9 @@
 <div<?php print $attributes; ?>>
     <div class="top_header">
       <?php print render($page['top_header']); ?>
+      <?php if ($variables['logout_block']): ?>
+        <?php print render($variables['logout_block']); ?>
+      <?php endif; ?>
     </div>
   <header class="l-header" role="banner">
     <div class="l-branding">
@@ -22,7 +25,6 @@
 
       <?php print render($page['branding']); ?>
     </div>
-
     <?php print render($page['header']); ?>
     <?php print render($page['navigation']); ?>
       <?php print $breadcrumb; ?>
@@ -37,7 +39,19 @@
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
       <?php print $messages; ?>
+      <?php if ($variables['article_node_messages']): ?>
+        <div class="article_messages"><?php print $variables['article_node_messages']; ?></div>
+      <?php endif; ?>
+      <?php if ($variables['time_revision']): ?>
+        <div class="about-revision"><?php print t("You are currently editing a revision of this post created on ") . $variables['time_revision'] . t(" by ") . l($variables['revision_name']->name,  'user/' . $variables['node']->revision_uid, array('html' => true)); ?></div>
+      <?php endif; ?>
       <?php print render($tabs); ?>
+      <?php if ($variables['outline_node_messages']): ?>
+        <div class="outline_node_messages"><?php print $variables['outline_node_messages']; ?></div>
+      <?php endif; ?>
+      <?php if ($variables['revision_node_messages']): ?>
+        <div class="revision_node_messages"><?php print $variables['revision_node_messages']; ?></div>
+      <?php endif; ?>
       <?php print render($page['help']); ?>
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>

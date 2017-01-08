@@ -131,7 +131,7 @@ if ($variables['user_profile']['summary']['member_for']['#markup']) {
 </div>
 <div class="blog-part">
 <div class="blog-part-left">
-<h3>my articles</h3>
+<h3>topics i'm participating in</h3>
 <?php $abc = views_embed_view('Blogs', 'block_3', $uid);
 print $abc; ?>
 </div>

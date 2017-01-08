@@ -1025,6 +1025,71 @@ footer{
     }
   }
 }
+  .form-wrapper,.form-item{
+    label {
+      margin-top: 15px;
+    }
+  }
+  fieldset{
+    margin-top: 20px;
+  }
+}
+.page-node-add{
+  .form-wrapper,.form-item{
+    label {
+      margin-top: 15px;
+    }
+  }
+  fieldset{
+    margin-top: 20px;
+  }
+}
+.page-node-add-sifu{
+  #edit-field-profile-img,#edit-field-img-certification{
+    .image-preview{
+      float: left;
+      width: 20%;
+    }
+    .image-widget-data {
+      float: left;
+      width: 70%;
+    }
+    .ajax-new-content{
+      td{
+        display: block;
+      }
+      td:last-child{
+        float: left;
+        display: block;
+        clear: both;
+        .form-submit{
+          margin-left: 160px;
+        }
+      }
+    }
+  }
+  #edit-field-homepage-link{
+    tr:nth-child(2){
+      display: none;
+    }
+  }
+  #field-lineage-information-values{
+    width: 100%;
+    .form-wrapper{
+      float:left;
+      margin-right: 10px;
+      .form-select {
+        width: 275px;
+      }
+    }
+    .field-type-list-boolean{
+      margin-top: 40px;
+    }
+    .form-submit{
+      float: left;
+      clear: both;
+    }
+  }
 }
 #user-login{
   .form-text{
@@ -1067,7 +1132,7 @@ footer{
       li {
         width: 16%;
         padding: 0;
-        margin: 0 2px !important;
+        margin: 0 2px 10px 2px!important;
         background-size: 100% 100%;
         a{
           background-size: 100% 100%;
