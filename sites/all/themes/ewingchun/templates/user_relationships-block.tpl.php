@@ -33,8 +33,23 @@ if ($relationships) {
     }
   }
 
+
   print $output;
+
 }
+$current_relationships = user_relationships_load(array('between' => array($user->uid, $account->uid)), array('sort' => 'rtid'));
+if (count($current_relationships) < 1) {
+  print l(
+    t("Become %name's friend", array('%name' => format_username($account))),
+    "relationship/{$account->uid}/request/{$rtype->rtid}",
+    array(
+      'query' => drupal_get_destination(),
+      'html'  => TRUE,
+      'attributes' => array('class' => array('user_relationships_popup_link')),
+    )
+  );
+}
+
 /* removing printing out empty placeholder so the block is hidden when no data
 // No relationships so figure out how we present that
 else {
