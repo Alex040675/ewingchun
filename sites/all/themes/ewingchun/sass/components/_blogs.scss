@@ -188,6 +188,9 @@
       overflow: hidden;
       height: auto;
       padding: 0 1px 0 0;
+      .edit_content{
+        display: none;
+      }
     }
     .wingchunblogs-bleft {
       float: left;
