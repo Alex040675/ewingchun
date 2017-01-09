@@ -4325,6 +4325,10 @@ html.js .form-autocomplete {
     /* line 156, ../sass/components/_user.scss */
     .page-user .wc_blocks-friend_images ul li a {
       float: left; }
+/* line 161, ../sass/components/_user.scss */
+.page-user .wc_blocks-friend_images .add_friend {
+  float: left;
+  clear: both; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
