@@ -58,7 +58,7 @@
             $('.l-region--navigation').toggleClass('active_menu');
         });
 
-        if($('.page-articles .posted-mid').html() == null){
+        if($('.posted-mid').html() == null){
             $('this').parent().parent().addClass('empty');
         };
 
