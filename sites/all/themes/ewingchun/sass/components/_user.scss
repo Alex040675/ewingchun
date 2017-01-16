@@ -165,48 +165,6 @@
   }
 }
 
-.page-user-edit{
-  label{
-    font-size: 14px;
-    font-weight: 400;
-  }
-  .form-text {
-    background: #fff none repeat scroll 0 0;
-    border: 1px solid #bfbfbf;
-    border-radius: 2px;
-    box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-    float: left;
-    height: 26px;
-    margin: 0 0 10px;
-    max-width: 280px;
-    padding: 5px;
-    width: 96%;
-  }
-  .form-select {
-    -moz-appearance: none;
-    background: transparent url("../images/select-left.png") no-repeat scroll left center / 100% 100%;
-    border: medium none;
-    font-size: 11px;
-    height: 21px !important;
-    line-height: 11px;
-    opacity: 1 !important;
-    padding-left: 2px;
-    padding-top: 2px;
-    position: relative;
-    text-indent: 0.01px;
-  }
-  textarea {
-    border: 1px solid #bfbfbf;
-    border-radius: 2px;
-    width: 96%;
-    background: #fff;
-    max-width: 500px;
-  }
-  .grippie{
-    display: none;
-  }
-}
-
 .page-user-ip-tracking,.page-user-track,.page-user-relationships {
   table {
     background: #F8F8F8;
@@ -249,5 +207,47 @@
       overflow-wrap: break-word;
       text-decoration: underline;
     }
+  }
+}
+
+.page-user-edit{
+  label{
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .form-text {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
+    float: left;
+    height: 26px;
+    margin: 0 0 10px;
+    max-width: 280px;
+    padding: 5px;
+    width: 96%;
+  }
+  .form-select {
+    -moz-appearance: none;
+    background: transparent url("../images/select-left.png") no-repeat scroll left center / 100% 100%;
+    border: medium none;
+    font-size: 11px;
+    height: 21px !important;
+    line-height: 11px;
+    opacity: 1 !important;
+    padding-left: 2px;
+    padding-top: 2px;
+    position: relative;
+    text-indent: 0.01px;
+  }
+  textarea {
+    border: 1px solid #bfbfbf;
+    border-radius: 2px;
+    width: 96%;
+    background: #fff;
+    max-width: 500px;
+  }
+  .grippie{
+    display: none;
   }
 }

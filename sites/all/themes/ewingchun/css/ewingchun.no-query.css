@@ -4348,10 +4348,53 @@ html.js .form-autocomplete {
   clear: both; }
 
 /* line 169, ../sass/components/_user.scss */
+.page-user-ip-tracking table, .page-user-track table, .page-user-relationships table {
+  background: #F8F8F8; }
+  /* line 171, ../sass/components/_user.scss */
+  .page-user-ip-tracking table thead, .page-user-track table thead, .page-user-relationships table thead {
+    position: relative; }
+  /* line 174, ../sass/components/_user.scss */
+  .page-user-ip-tracking table td, .page-user-track table td, .page-user-relationships table td {
+    font-size: 12px;
+    padding: 5px 10px 10px 10px; }
+  /* line 178, ../sass/components/_user.scss */
+  .page-user-ip-tracking table td.active, .page-user-track table td.active, .page-user-relationships table td.active {
+    background: none; }
+  /* line 181, ../sass/components/_user.scss */
+  .page-user-ip-tracking table th, .page-user-track table th, .page-user-relationships table th {
+    background: #F8F8F8; }
+    /* line 183, ../sass/components/_user.scss */
+    .page-user-ip-tracking table th a, .page-user-track table th a, .page-user-relationships table th a {
+      background: #f8f8f8 none repeat scroll 0 0;
+      color: #17335b;
+      font-size: 14px;
+      font-weight: 700;
+      height: 31px;
+      line-height: 31px;
+      text-decoration: none; }
+  /* line 193, ../sass/components/_user.scss */
+  .page-user-ip-tracking table tr.even, .page-user-track table tr.even, .page-user-relationships table tr.even {
+    background: #F8F8F8; }
+    /* line 195, ../sass/components/_user.scss */
+    .page-user-ip-tracking table tr.even td, .page-user-track table tr.even td, .page-user-relationships table tr.even td {
+      border: solid 1px #fff; }
+  /* line 199, ../sass/components/_user.scss */
+  .page-user-ip-tracking table tr.odd, .page-user-track table tr.odd, .page-user-relationships table tr.odd {
+    background: #ededed; }
+  /* line 202, ../sass/components/_user.scss */
+  .page-user-ip-tracking table a, .page-user-track table a, .page-user-relationships table a {
+    color: #1c57a7;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 400;
+    overflow-wrap: break-word;
+    text-decoration: underline; }
+
+/* line 214, ../sass/components/_user.scss */
 .page-user-edit label {
   font-size: 14px;
   font-weight: 400; }
-/* line 173, ../sass/components/_user.scss */
+/* line 218, ../sass/components/_user.scss */
 .page-user-edit .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
@@ -4363,7 +4406,7 @@ html.js .form-autocomplete {
   max-width: 280px;
   padding: 5px;
   width: 96%; }
-/* line 185, ../sass/components/_user.scss */
+/* line 230, ../sass/components/_user.scss */
 .page-user-edit .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
@@ -4376,59 +4419,16 @@ html.js .form-autocomplete {
   padding-top: 2px;
   position: relative;
   text-indent: 0.01px; }
-/* line 198, ../sass/components/_user.scss */
+/* line 243, ../sass/components/_user.scss */
 .page-user-edit textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff;
   max-width: 500px; }
-/* line 205, ../sass/components/_user.scss */
+/* line 250, ../sass/components/_user.scss */
 .page-user-edit .grippie {
   display: none; }
-
-/* line 211, ../sass/components/_user.scss */
-.page-user-ip-tracking table, .page-user-track table, .page-user-relationships table {
-  background: #F8F8F8; }
-  /* line 213, ../sass/components/_user.scss */
-  .page-user-ip-tracking table thead, .page-user-track table thead, .page-user-relationships table thead {
-    position: relative; }
-  /* line 216, ../sass/components/_user.scss */
-  .page-user-ip-tracking table td, .page-user-track table td, .page-user-relationships table td {
-    font-size: 12px;
-    padding: 5px 10px 10px 10px; }
-  /* line 220, ../sass/components/_user.scss */
-  .page-user-ip-tracking table td.active, .page-user-track table td.active, .page-user-relationships table td.active {
-    background: none; }
-  /* line 223, ../sass/components/_user.scss */
-  .page-user-ip-tracking table th, .page-user-track table th, .page-user-relationships table th {
-    background: #F8F8F8; }
-    /* line 225, ../sass/components/_user.scss */
-    .page-user-ip-tracking table th a, .page-user-track table th a, .page-user-relationships table th a {
-      background: #f8f8f8 none repeat scroll 0 0;
-      color: #17335b;
-      font-size: 14px;
-      font-weight: 700;
-      height: 31px;
-      line-height: 31px;
-      text-decoration: none; }
-  /* line 235, ../sass/components/_user.scss */
-  .page-user-ip-tracking table tr.even, .page-user-track table tr.even, .page-user-relationships table tr.even {
-    background: #F8F8F8; }
-    /* line 237, ../sass/components/_user.scss */
-    .page-user-ip-tracking table tr.even td, .page-user-track table tr.even td, .page-user-relationships table tr.even td {
-      border: solid 1px #fff; }
-  /* line 241, ../sass/components/_user.scss */
-  .page-user-ip-tracking table tr.odd, .page-user-track table tr.odd, .page-user-relationships table tr.odd {
-    background: #ededed; }
-  /* line 244, ../sass/components/_user.scss */
-  .page-user-ip-tracking table a, .page-user-track table a, .page-user-relationships table a {
-    color: #1c57a7;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: 400;
-    overflow-wrap: break-word;
-    text-decoration: underline; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
