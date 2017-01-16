@@ -58,7 +58,9 @@
             $('.l-region--navigation').toggleClass('active_menu');
         });
 
-
+        if($('.page-articles .posted-mid:empty')){
+            $('.page-articles .history-left').css({'width':'100%'});
+        };
 
             $('.front .view-videos .views-row').each(function (i) {
                 if (i % 4 == 0) {

@@ -193,6 +193,7 @@
         float: left;
         width: 75%;
         h3{
+          margin: 0;
           a{
             color: #17335b ;
             font-family: Arial;
@@ -204,7 +205,7 @@
         }
         .history-mid {
           float: left;
-          padding: 0 0 20px 3%;
+          padding: 10px 0 0 10px;
           width: 97%;
           .history-left1 {
             float: left;
@@ -221,6 +222,7 @@
               font-size: 16px;
               font-weight: 700;
               margin: 0;
+              display: none;
             }
           }
           .history-right1 {
