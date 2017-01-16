@@ -173,7 +173,6 @@
     border: 1px solid #bfbfbf;
     border-radius: 2px;
     box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-    float: left;
     height: 26px;
     margin: 0 0 10px;
     max-width: 280px;
@@ -203,13 +202,28 @@
   .grippie{
     display: none;
   }
-
+  .form-submit {
+    background: #1d58a8 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 4px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px !important;
+    margin-right: 5px;
+    margin-top: 0;
+    padding: 10px 40px;
+    text-decoration: none !important;
+  }
 
 }
 
 .page-user-ip-tracking,.page-user-track,.page-user-relationships {
   table {
     background: #F8F8F8;
+    img{
+      height: auto;
+    }
     thead {
       position: relative;
     }
@@ -262,7 +276,6 @@
     border: 1px solid #bfbfbf;
     border-radius: 2px;
     box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-    float: left;
     height: 26px;
     margin: 0 0 10px;
     max-width: 280px;
