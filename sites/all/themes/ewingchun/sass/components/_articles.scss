@@ -191,7 +191,7 @@
       background-size: 100%;
       .history-left {
         float: left;
-        width: 75%;
+        width: 100%;
         h3{
           margin: 0;
           a{
@@ -242,6 +242,9 @@
             clear: both;
           }
         }
+      }
+      .full{
+        width: 75% !important;
       }
       .history-right {
         float: left;
