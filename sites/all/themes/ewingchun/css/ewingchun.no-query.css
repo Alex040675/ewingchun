@@ -4346,24 +4346,63 @@ html.js .form-autocomplete {
 .page-user .wc_blocks-friend_images .add_friend {
   float: left;
   clear: both; }
+/* line 167, ../sass/components/_user.scss */
+.page-user label {
+  font-size: 14px;
+  font-weight: 400; }
+/* line 171, ../sass/components/_user.scss */
+.page-user .form-text {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
+  float: left;
+  height: 26px;
+  margin: 0 0 10px;
+  max-width: 280px;
+  padding: 5px;
+  width: 96%; }
+/* line 183, ../sass/components/_user.scss */
+.page-user .form-select {
+  -moz-appearance: none;
+  background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
+  border: medium none;
+  font-size: 11px;
+  height: 21px !important;
+  line-height: 11px;
+  opacity: 1 !important;
+  padding-left: 2px;
+  padding-top: 2px;
+  position: relative;
+  text-indent: 0.01px; }
+/* line 196, ../sass/components/_user.scss */
+.page-user textarea {
+  border: 1px solid #bfbfbf;
+  border-radius: 2px;
+  width: 96%;
+  background: #fff;
+  max-width: 500px; }
+/* line 203, ../sass/components/_user.scss */
+.page-user .grippie {
+  display: none; }
 
-/* line 169, ../sass/components/_user.scss */
+/* line 211, ../sass/components/_user.scss */
 .page-user-ip-tracking table, .page-user-track table, .page-user-relationships table {
   background: #F8F8F8; }
-  /* line 171, ../sass/components/_user.scss */
+  /* line 213, ../sass/components/_user.scss */
   .page-user-ip-tracking table thead, .page-user-track table thead, .page-user-relationships table thead {
     position: relative; }
-  /* line 174, ../sass/components/_user.scss */
+  /* line 216, ../sass/components/_user.scss */
   .page-user-ip-tracking table td, .page-user-track table td, .page-user-relationships table td {
     font-size: 12px;
     padding: 5px 10px 10px 10px; }
-  /* line 178, ../sass/components/_user.scss */
+  /* line 220, ../sass/components/_user.scss */
   .page-user-ip-tracking table td.active, .page-user-track table td.active, .page-user-relationships table td.active {
     background: none; }
-  /* line 181, ../sass/components/_user.scss */
+  /* line 223, ../sass/components/_user.scss */
   .page-user-ip-tracking table th, .page-user-track table th, .page-user-relationships table th {
     background: #F8F8F8; }
-    /* line 183, ../sass/components/_user.scss */
+    /* line 225, ../sass/components/_user.scss */
     .page-user-ip-tracking table th a, .page-user-track table th a, .page-user-relationships table th a {
       background: #f8f8f8 none repeat scroll 0 0;
       color: #17335b;
@@ -4372,16 +4411,16 @@ html.js .form-autocomplete {
       height: 31px;
       line-height: 31px;
       text-decoration: none; }
-  /* line 193, ../sass/components/_user.scss */
+  /* line 235, ../sass/components/_user.scss */
   .page-user-ip-tracking table tr.even, .page-user-track table tr.even, .page-user-relationships table tr.even {
     background: #F8F8F8; }
-    /* line 195, ../sass/components/_user.scss */
+    /* line 237, ../sass/components/_user.scss */
     .page-user-ip-tracking table tr.even td, .page-user-track table tr.even td, .page-user-relationships table tr.even td {
       border: solid 1px #fff; }
-  /* line 199, ../sass/components/_user.scss */
+  /* line 241, ../sass/components/_user.scss */
   .page-user-ip-tracking table tr.odd, .page-user-track table tr.odd, .page-user-relationships table tr.odd {
     background: #ededed; }
-  /* line 202, ../sass/components/_user.scss */
+  /* line 244, ../sass/components/_user.scss */
   .page-user-ip-tracking table a, .page-user-track table a, .page-user-relationships table a {
     color: #1c57a7;
     font-family: Arial;
@@ -4390,11 +4429,11 @@ html.js .form-autocomplete {
     overflow-wrap: break-word;
     text-decoration: underline; }
 
-/* line 214, ../sass/components/_user.scss */
+/* line 256, ../sass/components/_user.scss */
 .page-user-edit label {
   font-size: 14px;
   font-weight: 400; }
-/* line 218, ../sass/components/_user.scss */
+/* line 260, ../sass/components/_user.scss */
 .page-user-edit .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
@@ -4406,7 +4445,7 @@ html.js .form-autocomplete {
   max-width: 280px;
   padding: 5px;
   width: 96%; }
-/* line 230, ../sass/components/_user.scss */
+/* line 272, ../sass/components/_user.scss */
 .page-user-edit .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
@@ -4419,14 +4458,14 @@ html.js .form-autocomplete {
   padding-top: 2px;
   position: relative;
   text-indent: 0.01px; }
-/* line 243, ../sass/components/_user.scss */
+/* line 285, ../sass/components/_user.scss */
 .page-user-edit textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff;
   max-width: 500px; }
-/* line 250, ../sass/components/_user.scss */
+/* line 292, ../sass/components/_user.scss */
 .page-user-edit .grippie {
   display: none; }
 
