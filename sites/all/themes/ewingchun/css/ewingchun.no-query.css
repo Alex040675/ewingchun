@@ -3045,57 +3045,62 @@ footer {
   /* line 1201, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;
-    clear: both; } }
+    clear: both; }
+
+  /* line 1208, ../sass/components/_mobile.scss */
+  .page-user-edit .password-strength {
+    float: none;
+    margin-bottom: 20px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 1210, ../sass/components/_mobile.scss */
+  /* line 1215, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 1214, ../sass/components/_mobile.scss */
+  /* line 1219, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 1220, ../sass/components/_mobile.scss */
+  /* line 1225, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 1227, ../sass/components/_mobile.scss */
+  /* line 1232, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 1230, ../sass/components/_mobile.scss */
+    /* line 1235, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 1241, ../sass/components/_mobile.scss */
+  /* line 1246, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 1251, ../sass/components/_mobile.scss */
+  /* line 1256, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 1261, ../sass/components/_mobile.scss */
+  /* line 1266, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 1267, ../sass/components/_mobile.scss */
+  /* line 1272, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 1271, ../sass/components/_mobile.scss */
+  /* line 1276, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 1277, ../sass/components/_mobile.scss */
+  /* line 1282, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }
@@ -3362,7 +3367,7 @@ html.js .form-autocomplete {
   .section-school .schoolname-r p {
     color: #000;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 15px !important;
     margin: 0; }
     /* line 292, ../sass/components/_schools.scss */
     .section-school .schoolname-r p span {
@@ -4346,78 +4351,27 @@ html.js .form-autocomplete {
 .page-user .wc_blocks-friend_images .add_friend {
   float: left;
   clear: both; }
-/* line 167, ../sass/components/_user.scss */
-.page-user label {
-  font-size: 14px;
-  font-weight: 400; }
-/* line 171, ../sass/components/_user.scss */
-.page-user .form-text {
-  background: #fff none repeat scroll 0 0;
-  border: 1px solid #bfbfbf;
-  border-radius: 2px;
-  box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
-  height: 26px;
-  margin: 0 0 10px;
-  max-width: 280px;
-  padding: 5px;
-  width: 96%; }
-/* line 182, ../sass/components/_user.scss */
-.page-user .form-select {
-  -moz-appearance: none;
-  background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
-  border: medium none;
-  font-size: 11px;
-  height: 21px !important;
-  line-height: 11px;
-  opacity: 1 !important;
-  padding-left: 2px;
-  padding-top: 2px;
-  position: relative;
-  text-indent: 0.01px; }
-/* line 195, ../sass/components/_user.scss */
-.page-user textarea {
-  border: 1px solid #bfbfbf;
-  border-radius: 2px;
-  width: 96%;
-  background: #fff;
-  max-width: 500px; }
-/* line 202, ../sass/components/_user.scss */
-.page-user .grippie {
-  display: none; }
-/* line 205, ../sass/components/_user.scss */
-.page-user .form-submit {
-  background: #1d58a8 none repeat scroll 0 0;
-  border: medium none;
-  border-radius: 4px;
-  color: #fff !important;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 14px !important;
-  margin-right: 5px;
-  margin-top: 0;
-  padding: 10px 40px;
-  text-decoration: none !important; }
 
-/* line 222, ../sass/components/_user.scss */
+/* line 169, ../sass/components/_user.scss */
 .page-user-ip-tracking table, .page-user-track table, .page-user-relationships table {
   background: #F8F8F8; }
-  /* line 224, ../sass/components/_user.scss */
+  /* line 171, ../sass/components/_user.scss */
   .page-user-ip-tracking table img, .page-user-track table img, .page-user-relationships table img {
     height: auto; }
-  /* line 227, ../sass/components/_user.scss */
+  /* line 174, ../sass/components/_user.scss */
   .page-user-ip-tracking table thead, .page-user-track table thead, .page-user-relationships table thead {
     position: relative; }
-  /* line 230, ../sass/components/_user.scss */
+  /* line 177, ../sass/components/_user.scss */
   .page-user-ip-tracking table td, .page-user-track table td, .page-user-relationships table td {
     font-size: 12px;
     padding: 5px 10px 10px 10px; }
-  /* line 234, ../sass/components/_user.scss */
+  /* line 181, ../sass/components/_user.scss */
   .page-user-ip-tracking table td.active, .page-user-track table td.active, .page-user-relationships table td.active {
     background: none; }
-  /* line 237, ../sass/components/_user.scss */
+  /* line 184, ../sass/components/_user.scss */
   .page-user-ip-tracking table th, .page-user-track table th, .page-user-relationships table th {
     background: #F8F8F8; }
-    /* line 239, ../sass/components/_user.scss */
+    /* line 186, ../sass/components/_user.scss */
     .page-user-ip-tracking table th a, .page-user-track table th a, .page-user-relationships table th a {
       background: #f8f8f8 none repeat scroll 0 0;
       color: #17335b;
@@ -4426,16 +4380,16 @@ html.js .form-autocomplete {
       height: 31px;
       line-height: 31px;
       text-decoration: none; }
-  /* line 249, ../sass/components/_user.scss */
+  /* line 196, ../sass/components/_user.scss */
   .page-user-ip-tracking table tr.even, .page-user-track table tr.even, .page-user-relationships table tr.even {
     background: #F8F8F8; }
-    /* line 251, ../sass/components/_user.scss */
+    /* line 198, ../sass/components/_user.scss */
     .page-user-ip-tracking table tr.even td, .page-user-track table tr.even td, .page-user-relationships table tr.even td {
       border: solid 1px #fff; }
-  /* line 255, ../sass/components/_user.scss */
+  /* line 202, ../sass/components/_user.scss */
   .page-user-ip-tracking table tr.odd, .page-user-track table tr.odd, .page-user-relationships table tr.odd {
     background: #ededed; }
-  /* line 258, ../sass/components/_user.scss */
+  /* line 205, ../sass/components/_user.scss */
   .page-user-ip-tracking table a, .page-user-track table a, .page-user-relationships table a {
     color: #1c57a7;
     font-family: Arial;
@@ -4444,11 +4398,11 @@ html.js .form-autocomplete {
     overflow-wrap: break-word;
     text-decoration: underline; }
 
-/* line 270, ../sass/components/_user.scss */
+/* line 217, ../sass/components/_user.scss */
 .page-user-edit label {
   font-size: 14px;
   font-weight: 400; }
-/* line 274, ../sass/components/_user.scss */
+/* line 221, ../sass/components/_user.scss */
 .page-user-edit .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
@@ -4456,10 +4410,10 @@ html.js .form-autocomplete {
   box-shadow: 3px 3px 7px 0 #f9f9f9 inset;
   height: 26px;
   margin: 0 0 10px;
-  max-width: 280px;
+  max-width: 280px !important;
   padding: 5px;
-  width: 96%; }
-/* line 285, ../sass/components/_user.scss */
+  width: 90% !important; }
+/* line 232, ../sass/components/_user.scss */
 .page-user-edit .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
@@ -4471,17 +4425,29 @@ html.js .form-autocomplete {
   padding-left: 2px;
   padding-top: 2px;
   position: relative;
-  text-indent: 0.01px; }
-/* line 298, ../sass/components/_user.scss */
+  text-indent: 0.01px;
+  width: 90%;
+  max-width: 245px; }
+/* line 247, ../sass/components/_user.scss */
 .page-user-edit textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff;
   max-width: 500px; }
-/* line 305, ../sass/components/_user.scss */
+/* line 254, ../sass/components/_user.scss */
 .page-user-edit .grippie {
   display: none; }
+/* line 257, ../sass/components/_user.scss */
+.page-user-edit .form-type-password-confirm {
+  width: 90%;
+  max-width: 560px; }
+/* line 261, ../sass/components/_user.scss */
+.page-user-edit fieldset {
+  margin-bottom: 20px; }
+/* line 265, ../sass/components/_user.scss */
+.page-user-edit table th, .page-user-edit table tr, .page-user-edit table td {
+  background-color: #fff; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
