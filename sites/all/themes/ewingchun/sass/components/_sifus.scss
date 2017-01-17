@@ -578,6 +578,15 @@
     .views-row{
       clear: both;
     }
+    .views-row-odd{
+      background: #f9f9f9 none repeat scroll 0 0;
+      padding: 6px 5px;
+      border-bottom: 1px solid #e1e1e1;
+      border-top: 1px solid #e1e1e1;
+    }
+    .views-row-even {
+      padding: 6px 5px;
+    }
     .student-titleleft {
       float: left;
     }
@@ -589,10 +598,10 @@
       width: 31%;
       margin-right: 2%;
       .views-field-title{
-        a::before{
+        /*a::before{
           color: #1c57a7;
           content: "- ";
-        }
+        }*/
       }
       .student-title {
         border-bottom: 1px solid #ededed;
