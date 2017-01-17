@@ -97,10 +97,10 @@
 <p>Country: <span><?php print strtoupper ($node->location['country']); ?></span></p>
 <?php endif; ?>
 <p>Directions: <span>Try to</span> <?php print l('Map it', 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . $node->location['latitude'] . '+' . $node->location['longitude']); ?></p>
-<span><p>Average Rating:
+<!--<span><p>Average Rating:
     <?php
-   print render($content['field_rating']);
-    ?></p></span>
+  /* print render($content['field_rating']); */
+    ?></p></span>-->
 </div>
 <div class="school-moreinfo">
 <h5>more info:</h5><br />
