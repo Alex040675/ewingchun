@@ -4801,14 +4801,34 @@ html.js .form-autocomplete {
 .section-encyclopedia h1 {
   border-bottom: 5px solid #f8f8f8; }
 
-/* line 10, ../sass/components/_wiki.scss */
-.section-wiki .l-region--sidebar-first #block-views-wiki-categories-block li a::before {
-  color: #1c57a7;
-  content: "- "; }
+/* line 9, ../sass/components/_wiki.scss */
+.section-wiki .l-region--sidebar-first #block-views-wiki-categories-block li {
+  /*a::before{
+    color: #1c57a7;
+    content: "- ";
+  }*/
+  background: #f9f9f9 none repeat scroll 0 0;
+  padding: 6px 5px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1; }
 /* line 19, ../sass/components/_wiki.scss */
-.section-wiki .view-wiki .views-field-title a::before {
-  color: #1c57a7;
-  content: "- "; }
+.section-wiki .l-region--sidebar-first #block-views-wiki-categories-block li:nth-child(2n) {
+  background: none; }
+/* line 25, ../sass/components/_wiki.scss */
+.section-wiki .view-wiki .views-field-title {
+  /*a::before{
+    color: #1c57a7;
+    content: "- ";
+  }*/ }
+/* line 31, ../sass/components/_wiki.scss */
+.section-wiki .view-wiki .views-row-odd {
+  background: #f9f9f9 none repeat scroll 0 0;
+  padding: 6px 5px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1; }
+/* line 37, ../sass/components/_wiki.scss */
+.section-wiki .view-wiki .views-row-even {
+  padding: 6px 5px; }
 
 /* line 23, ../sass/ewingchun.styles.scss */
 .html {

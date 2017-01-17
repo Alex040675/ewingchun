@@ -7,19 +7,35 @@
   .l-region--sidebar-first{
     #block-views-wiki-categories-block{
       li{
-        a::before{
+        /*a::before{
           color: #1c57a7;
           content: "- ";
-        }
+        }*/
+          background: #f9f9f9 none repeat scroll 0 0;
+          padding: 6px 5px;
+          border-bottom: 1px solid #e1e1e1;
+          border-top: 1px solid #e1e1e1;
+      }
+      li:nth-child(2n){
+        background: none;
       }
     }
   }
   .view-wiki{
     .views-field-title{
-      a::before{
+      /*a::before{
         color: #1c57a7;
         content: "- ";
-      }
+      }*/
+    }
+    .views-row-odd{
+      background: #f9f9f9 none repeat scroll 0 0;
+      padding: 6px 5px;
+      border-bottom: 1px solid #e1e1e1;
+      border-top: 1px solid #e1e1e1;
+    }
+    .views-row-even {
+      padding: 6px 5px;
     }
   }
 }
