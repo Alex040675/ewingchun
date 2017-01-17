@@ -388,6 +388,11 @@
       }
     }
   }
+  .page-user-track {
+    tr td:last-child,tr th:last-child{
+      display: none;
+    }
+  }
 }
 
 
