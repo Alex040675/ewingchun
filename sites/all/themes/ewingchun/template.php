@@ -348,7 +348,7 @@ function ewingchun_preprocess_node(&$variables) {
    /* $relatedpro = views_embed_view('products', 'block_3', $arg);
     $variables['relatedproducts'] = $relatedpro;*/
 
-    $recentarticles = views_embed_view('Blogs', 'block_3', $arg);
+    $recentarticles = views_embed_view('Blogs', 'block_5', $arg);
     $variables['recent_articles'] = $recentarticles;
 
     $otherblogs = views_embed_view('Blogs', 'block_4', $variables['node']->uid);
