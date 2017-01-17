@@ -58,8 +58,8 @@
             $('.l-region--navigation').toggleClass('active_menu');
         });
 
-        $('.posted-mid').empty().addClass('empty');
-        $('.posted-mid').empty().parent().parent().addClass('full');
+        /*$('.posted-mid').empty().addClass('empty');
+        $('.posted-mid').empty().parent().parent().addClass('full');*/
 
             $('.front .view-videos .views-row').each(function (i) {
                 if (i % 4 == 0) {
