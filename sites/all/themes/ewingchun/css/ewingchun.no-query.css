@@ -368,23 +368,34 @@ img, media {
     /* line 382, ../sass/components/_articles.scss */
     .node-type-article .artical-rightmain .recentvideos .view-products, .node-type-article .artical-rightmain .relatedproducts .view-products, .node-type-article .artical-rightmain .recentarticles .view-products {
       padding: 25px 0 0; }
-  /* line 387, ../sass/components/_articles.scss */
-  .node-type-article .artical-rightmain .view-content a {
-    color: #1c57a7;
-    font-size: 14px;
-    line-height: 25px; }
-  /* line 392, ../sass/components/_articles.scss */
-  .node-type-article .artical-rightmain .view-content a:before {
-    content: "- ";
-    color: #1c57a7; }
-/* line 398, ../sass/components/_articles.scss */
+  /* line 386, ../sass/components/_articles.scss */
+  .node-type-article .artical-rightmain .view-content {
+    /*a:before{
+      content: "- ";
+      color: #1c57a7;
+    }*/ }
+    /* line 387, ../sass/components/_articles.scss */
+    .node-type-article .artical-rightmain .view-content a {
+      color: #1c57a7;
+      font-size: 14px;
+      line-height: 25px; }
+  /* line 397, ../sass/components/_articles.scss */
+  .node-type-article .artical-rightmain .views-row-odd {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 6px 5px;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1; }
+  /* line 403, ../sass/components/_articles.scss */
+  .node-type-article .artical-rightmain .views-row-even {
+    padding: 6px 5px; }
+/* line 407, ../sass/components/_articles.scss */
 .node-type-article .middleleftimg1 {
   clear: both; }
-  /* line 400, ../sass/components/_articles.scss */
+  /* line 409, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 a {
     display: block;
     position: relative; }
-  /* line 404, ../sass/components/_articles.scss */
+  /* line 413, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 span {
     background: transparent url("../images/emvideo-play.png") no-repeat scroll 0 0;
     display: block;
@@ -393,37 +404,37 @@ img, media {
     position: absolute;
     bottom: 25px;
     width: 85px; }
-  /* line 413, ../sass/components/_articles.scss */
+  /* line 422, ../sass/components/_articles.scss */
   .node-type-article .middleleftimg1 span:hover {
     background-position: -86px 0;
     opacity: 1; }
 
-/* line 419, ../sass/components/_articles.scss */
+/* line 428, ../sass/components/_articles.scss */
 #comments {
   clear: both; }
-  /* line 421, ../sass/components/_articles.scss */
+  /* line 430, ../sass/components/_articles.scss */
   #comments section {
     border-top: 5px solid #f8f8f8;
     clear: both;
     margin: 30px 0 0;
     padding: 15px 0 0; }
-  /* line 427, ../sass/components/_articles.scss */
+  /* line 436, ../sass/components/_articles.scss */
   #comments h2 {
     color: #116201;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: normal; }
-  /* line 433, ../sass/components/_articles.scss */
+  /* line 442, ../sass/components/_articles.scss */
   #comments .comment {
     margin-bottom: 30px;
     overflow: hidden; }
-    /* line 436, ../sass/components/_articles.scss */
+    /* line 445, ../sass/components/_articles.scss */
     #comments .comment h3 {
       background: #f2f2f2 none repeat scroll 0 0;
       height: 31px;
       max-width: 612px;
       width: 100%; }
-      /* line 441, ../sass/components/_articles.scss */
+      /* line 450, ../sass/components/_articles.scss */
       #comments .comment h3 a {
         color: #1c57a7;
         font-family: TrajanProBold;
@@ -431,35 +442,35 @@ img, media {
         line-height: 31px;
         text-transform: uppercase;
         text-decoration: none; }
-    /* line 450, ../sass/components/_articles.scss */
+    /* line 459, ../sass/components/_articles.scss */
     #comments .comment .comment__info {
       background: none;
       color: #666; }
 
-/* line 456, ../sass/components/_articles.scss */
+/* line 465, ../sass/components/_articles.scss */
 .review-headingbg {
   height: 31px;
   margin: 20px 0 0;
   width: 80%;
   padding: 10px 0; }
-  /* line 461, ../sass/components/_articles.scss */
+  /* line 470, ../sass/components/_articles.scss */
   .review-headingbg .review-hleftbg {
     height: 31px;
     width: auto;
     float: left;
     display: none; }
-  /* line 468, ../sass/components/_articles.scss */
+  /* line 477, ../sass/components/_articles.scss */
   .review-headingbg .review-hcenterbg {
     background: #f2f2f2 none repeat scroll 0 0;
     height: 31px;
     width: 96%;
     float: left;
     border-radius: 4px 4px 0 0; }
-    /* line 474, ../sass/components/_articles.scss */
+    /* line 483, ../sass/components/_articles.scss */
     .review-headingbg .review-hcenterbg .centerleft {
       float: left;
       padding-left: 5px; }
-      /* line 477, ../sass/components/_articles.scss */
+      /* line 486, ../sass/components/_articles.scss */
       .review-headingbg .review-hcenterbg .centerleft a {
         color: #1c57a7;
         font-family: Trajan Pro Bold;
@@ -467,64 +478,64 @@ img, media {
         line-height: 31px;
         text-transform: uppercase;
         text-decoration: none; }
-    /* line 486, ../sass/components/_articles.scss */
+    /* line 495, ../sass/components/_articles.scss */
     .review-headingbg .review-hcenterbg .centerright {
       color: #666;
       float: right;
       margin-right: 10px;
       font-size: 12px;
       padding: 6px 0; }
-      /* line 492, ../sass/components/_articles.scss */
+      /* line 501, ../sass/components/_articles.scss */
       .review-headingbg .review-hcenterbg .centerright .centerright01 {
         height: auto;
         text-align: left; }
-        /* line 495, ../sass/components/_articles.scss */
+        /* line 504, ../sass/components/_articles.scss */
         .review-headingbg .review-hcenterbg .centerright .centerright01 span {
           float: left; }
-          /* line 497, ../sass/components/_articles.scss */
+          /* line 506, ../sass/components/_articles.scss */
           .review-headingbg .review-hcenterbg .centerright .centerright01 span ul {
             float: right; }
-            /* line 499, ../sass/components/_articles.scss */
+            /* line 508, ../sass/components/_articles.scss */
             .review-headingbg .review-hcenterbg .centerright .centerright01 span ul li {
               margin-right: 0;
               margin-left: 10px; }
-            /* line 503, ../sass/components/_articles.scss */
+            /* line 512, ../sass/components/_articles.scss */
             .review-headingbg .review-hcenterbg .centerright .centerright01 span ul .comment-reply {
               background: #666;
               padding: 3px 10px;
               border-radius: 4px; }
-              /* line 507, ../sass/components/_articles.scss */
+              /* line 516, ../sass/components/_articles.scss */
               .review-headingbg .review-hcenterbg .centerright .centerright01 span ul .comment-reply a {
                 color: #fff;
                 text-decoration: none; }
-  /* line 517, ../sass/components/_articles.scss */
+  /* line 526, ../sass/components/_articles.scss */
   .review-headingbg .review-hrightbg {
     height: 31px;
     width: auto;
     display: none; }
 
-/* line 523, ../sass/components/_articles.scss */
+/* line 532, ../sass/components/_articles.scss */
 .review-content {
   margin: 0 0 15px;
   clear: both;
   width: 80%; }
-  /* line 527, ../sass/components/_articles.scss */
+  /* line 536, ../sass/components/_articles.scss */
   .review-content .review-left {
     float: left;
     width: 10%;
     margin-right: 2%; }
-  /* line 532, ../sass/components/_articles.scss */
+  /* line 541, ../sass/components/_articles.scss */
   .review-content .review-right {
     width: 88%;
     float: left; }
-    /* line 535, ../sass/components/_articles.scss */
+    /* line 544, ../sass/components/_articles.scss */
     .review-content .review-right p {
       margin-top: 0; }
-  /* line 539, ../sass/components/_articles.scss */
+  /* line 548, ../sass/components/_articles.scss */
   .review-content .usearname-title {
     font-size: 16px;
     margin-bottom: 0; }
-    /* line 542, ../sass/components/_articles.scss */
+    /* line 551, ../sass/components/_articles.scss */
     .review-content .usearname-title a {
       font-size: 16px;
       text-decoration: none; }
