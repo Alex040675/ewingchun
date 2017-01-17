@@ -959,16 +959,27 @@ img, media {
     /* line 438, ../sass/components/_blogs.scss */
     .node-type-blog .artical-rightmain .recentvideos .view-products, .node-type-blog .artical-rightmain .relatedproducts .view-products, .node-type-blog .artical-rightmain .recentarticles .view-products {
       padding: 25px 0 0; }
-  /* line 443, ../sass/components/_blogs.scss */
-  .node-type-blog .artical-rightmain .view-content a {
-    color: #1c57a7;
-    font-size: 14px;
-    line-height: 25px; }
-  /* line 448, ../sass/components/_blogs.scss */
-  .node-type-blog .artical-rightmain .view-content a:before {
-    color: #1c57a7;
-    content: "- "; }
-/* line 454, ../sass/components/_blogs.scss */
+  /* line 442, ../sass/components/_blogs.scss */
+  .node-type-blog .artical-rightmain .view-content {
+    /*a:before{
+      color: #1c57a7;
+      content: "- ";
+    }*/ }
+    /* line 443, ../sass/components/_blogs.scss */
+    .node-type-blog .artical-rightmain .view-content a {
+      color: #1c57a7;
+      font-size: 14px;
+      line-height: 25px; }
+  /* line 453, ../sass/components/_blogs.scss */
+  .node-type-blog .artical-rightmain .views-row-odd {
+    background: #f9f9f9 none repeat scroll 0 0;
+    padding: 6px 5px;
+    border-bottom: 1px solid #e1e1e1;
+    border-top: 1px solid #e1e1e1; }
+  /* line 459, ../sass/components/_blogs.scss */
+  .node-type-blog .artical-rightmain .views-row-even {
+    padding: 6px 5px; }
+/* line 463, ../sass/components/_blogs.scss */
 .node-type-blog .comment-form {
   clear: both;
   padding-top: 20px; }
