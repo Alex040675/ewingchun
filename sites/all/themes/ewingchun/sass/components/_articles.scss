@@ -179,6 +179,11 @@
     }
     .views-row{
       background: #F8F8F8;
+      .full{
+        .history-left{
+          width: 100% !important;
+        }
+      }
     }
     .main-history {
       border-radius: 5px;
@@ -275,6 +280,9 @@
               list-style: none;
             }
           }
+        }
+        .empty{
+          display: none;
         }
       }
     }
