@@ -83,3 +83,8 @@ function system_perm_menu_alter(&$items) {
     $items["admin/build/themes/settings/{$theme->name}"]['title'] = 'Configure ' .$theme->info['name'];
   }
 }
+
+function system_perm_admin_paths_alter(&$paths) {
+  // Treat all user pages as not administrative.
+  $paths['user/*'] = FALSE;
+}
