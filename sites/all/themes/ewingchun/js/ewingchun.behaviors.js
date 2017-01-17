@@ -58,8 +58,8 @@
             $('.l-region--navigation').toggleClass('active_menu');
         });
 
-        if($('.posted-mid').html() == null){
-            $('this').parent().parent().addClass('empty');
+        if($('div.posted-mid:empty')){
+            $('history-right').css({'display':'none'}),$('history-left').css({'width':'100%'});
         };
 
             $('.front .view-videos .views-row').each(function (i) {
