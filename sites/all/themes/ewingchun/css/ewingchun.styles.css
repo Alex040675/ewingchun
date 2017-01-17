@@ -4748,16 +4748,16 @@ html.js .form-autocomplete {
     /* line 238, ../sass/components/_videos.scss */
     .node-type-video .recentvideos-right .recentvideos .more-link {
       display: none; }
-/* line 244, ../sass/components/_videos.scss */
+/* line 245, ../sass/components/_videos.scss */
 .node-type-video .description .content {
   color: #666;
   font-family: Arial;
   font-size: 14px;
   line-height: 25px; }
-/* line 251, ../sass/components/_videos.scss */
+/* line 252, ../sass/components/_videos.scss */
 .node-type-video .tags {
   margin: 15px 0 0; }
-  /* line 253, ../sass/components/_videos.scss */
+  /* line 254, ../sass/components/_videos.scss */
   .node-type-video .tags .tagleft {
     color: #1c57a7;
     float: left;
@@ -4765,21 +4765,32 @@ html.js .form-autocomplete {
     font-size: 17px;
     text-transform: uppercase;
     width: 56px; }
-  /* line 261, ../sass/components/_videos.scss */
+  /* line 262, ../sass/components/_videos.scss */
   .node-type-video .tags .tagright {
     color: #1c57a7;
     float: right;
     font-size: 12px;
     width: 317px; }
-    /* line 266, ../sass/components/_videos.scss */
+    /* line 267, ../sass/components/_videos.scss */
     .node-type-video .tags .tagright p {
       margin: 0; }
 /* line 273, ../sass/components/_videos.scss */
-.node-type-video .recentvideos .views-field-title a::before {
-  color: #1c57a7;
-  content: "- "; }
+.node-type-video .recentvideos .views-field-title {
+  /* a::before{
+     color: #1c57a7;
+     content: "- ";
+   }*/ }
+/* line 279, ../sass/components/_videos.scss */
+.node-type-video .recentvideos .views-row-odd {
+  background: #f9f9f9 none repeat scroll 0 0;
+  padding: 6px 5px;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1; }
+/* line 285, ../sass/components/_videos.scss */
+.node-type-video .recentvideos .views-row-even {
+  padding: 6px 5px; }
 
-/* line 280, ../sass/components/_videos.scss */
+/* line 290, ../sass/components/_videos.scss */
 .comment-border {
   border-top: 5px solid #f8f8f8;
   clear: both;
