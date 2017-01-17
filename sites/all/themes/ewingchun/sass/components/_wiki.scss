@@ -6,13 +6,13 @@
 .section-wiki{
   .l-region--sidebar-first{
     #block-views-wiki-categories-block{
+      background-position: right -10px;
       li{
         /*a::before{
           color: #1c57a7;
           content: "- ";
         }*/
           background: #f9f9f9 none repeat scroll 0 0;
-          padding: 6px 5px;
           border-bottom: 1px solid #e1e1e1;
           border-top: 1px solid #e1e1e1;
       }
