@@ -2168,6 +2168,10 @@ footer {
   .page-search .l-content article .search-result__snippet {
     padding-left: 0; }
 
+/* line 1208, ../sass/components/_main.scss */
+.pre-line {
+  white-space: pre-line; }
+
 @media screen and (max-width: 320px) {
   /* line 4, ../sass/components/_mobile.scss */
   .node-type-video .l-main .field--name-field-emvideo {

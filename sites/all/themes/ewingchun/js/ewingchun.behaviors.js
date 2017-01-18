@@ -61,6 +61,11 @@
         $(".posted-mid:not(:has(img))").addClass('empty');
         $(".posted-mid:not(:has(img))").parent().parent().addClass('full');
 
+        $(".node-type-sifu .bottom-biography .content:not(:has(p))").addClass('pre-line');
+        $(".section-school .school-moreinfo .content:not(:has(p))").addClass('pre-line');
+        $(".node-type-article .middle-center:not(:has(p))").addClass('pre-line');
+        $(".middle-center:not(:has(p))").addClass('pre-line');
+
             $('.front .view-videos .views-row').each(function (i) {
                 if (i % 4 == 0) {
                     $(this).nextAll().andSelf().slice(0, 4).wrapAll('<div class="wrap"></div>');
