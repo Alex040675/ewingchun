@@ -152,13 +152,13 @@ print $abc; ?>
 <p class="contr-title">contribute.<span> Add A :</span></p>
 <div class="contri">
 <ul>
-<li><a href="/node/add/sifu">Sifu</a></li>
-<li><a href="/node/add/resource">School</a></li>
-<li><a href="/node/add/article">Article</a></li>
-<li><a href="/node/add/wiki">Encyclopedia Entry</a></li>
-<li><a href="/node/add/video">Video</a></li>
-<li><a href="/node/add/blog">Blog Entry</a></li>
-<li><a href="/add-your-stuff">Add your stuff</a></li>
+<li class="even"><a href="/node/add/sifu">Sifu</a></li>
+<li class="odd"><a href="/node/add/resource">School</a></li>
+<li class="even"><a href="/node/add/article">Article</a></li>
+<li class="odd"><a href="/node/add/wiki">Encyclopedia Entry</a></li>
+<li class="even"><a href="/node/add/video">Video</a></li>
+<li class="odd"><a href="/node/add/blog">Blog Entry</a></li>
+<li class="even"><a href="/add-your-stuff">Add your stuff</a></li>
 </ul>
 </div>
 </div>
