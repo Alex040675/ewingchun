@@ -64,6 +64,15 @@
       overflow: hidden;
       margin: 27px 0 19px;
       padding: 0 0 30px;
+      .views-row-odd {
+        background: #f9f9f9 none repeat scroll 0 0;
+        border-bottom: 1px solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
+        padding: 6px 5px;
+      }
+      .views-row-even {
+        padding: 6px 5px;
+      }
       a{
         font-size: 14px;
       }
@@ -119,6 +128,9 @@
       padding: 20px 0 0 21px;
       li{
         list-style: none;
+        background: #f9f9f9 none repeat scroll 0 0;
+        border-bottom: 1px solid #e1e1e1;
+        border-top: 1px solid #e1e1e1;
         a{
           color: #1c57a7;
           font-family: Arial;
@@ -126,11 +138,14 @@
           font-weight: 400;
           line-height: 24px;
         }
-          a::before{
+          /*a::before{
             color: #1c57a7;
             content: "- ";
-          }
+          }*/
 
+      }
+      li:nth-child(2n){
+        background: none;
       }
     }
 
@@ -143,15 +158,6 @@
       color: #1c57a7;
       content: "- ";
     }*/
-    .views-row-odd {
-      background: #f9f9f9 none repeat scroll 0 0;
-      border-bottom: 1px solid #e1e1e1;
-      border-top: 1px solid #e1e1e1;
-      padding: 6px 5px;
-    }
-    .views-row-even {
-      padding: 6px 5px;
-    }
   }
   .wc_blocks-friend_images{
     ul{
