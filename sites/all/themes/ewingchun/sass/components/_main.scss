@@ -1189,6 +1189,7 @@ footer{
       min-height: 133px;
       padding: 20px 10px 10px 10px;
       margin-bottom: 20px;
+      overflow: hidden;
       h3{
         a{
           text-decoration: none;
@@ -1196,6 +1197,9 @@ footer{
           font-size: 16px;
           font-weight: 700;
         }
+      }
+      .search-result__snippet{
+        padding-left: 0;
       }
     }
   }
