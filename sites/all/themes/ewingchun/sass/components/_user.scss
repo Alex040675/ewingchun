@@ -238,11 +238,12 @@
   }
 }
 
-.page-user-edit{
-  label{
+.page-user-edit {
+  label {
     font-size: 14px;
     font-weight: 400;
   }
+  .l-content{
   .form-text {
     background: #fff none repeat scroll 0 0;
     border: 1px solid #bfbfbf;
@@ -276,16 +277,17 @@
     background: #fff;
     max-width: 500px;
   }
-  .grippie{
+  .grippie {
     display: none;
   }
-  .form-type-password-confirm{
+  .form-type-password-confirm {
     width: 90%;
     max-width: 560px;
   }
-  fieldset{
+  fieldset {
     margin-bottom: 20px;
   }
+}
   table{
     th,tr,td{
       background-color: #fff;

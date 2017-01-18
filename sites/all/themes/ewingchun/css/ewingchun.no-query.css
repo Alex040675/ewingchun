@@ -4470,8 +4470,8 @@ html.js .form-autocomplete {
 .page-user-edit label {
   font-size: 14px;
   font-weight: 400; }
-/* line 246, ../sass/components/_user.scss */
-.page-user-edit .form-text {
+/* line 247, ../sass/components/_user.scss */
+.page-user-edit .l-content .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
   border-radius: 2px;
@@ -4481,8 +4481,8 @@ html.js .form-autocomplete {
   max-width: 280px !important;
   padding: 5px;
   width: 90% !important; }
-/* line 257, ../sass/components/_user.scss */
-.page-user-edit .form-select {
+/* line 258, ../sass/components/_user.scss */
+.page-user-edit .l-content .form-select {
   -moz-appearance: none;
   background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
   border: medium none;
@@ -4496,27 +4496,27 @@ html.js .form-autocomplete {
   text-indent: 0.01px;
   width: 90%;
   max-width: 245px; }
-/* line 272, ../sass/components/_user.scss */
-.page-user-edit textarea {
+/* line 273, ../sass/components/_user.scss */
+.page-user-edit .l-content textarea {
   border: 1px solid #bfbfbf;
   border-radius: 2px;
   width: 96%;
   background: #fff;
   max-width: 500px; }
-/* line 279, ../sass/components/_user.scss */
-.page-user-edit .grippie {
+/* line 280, ../sass/components/_user.scss */
+.page-user-edit .l-content .grippie {
   display: none; }
-/* line 282, ../sass/components/_user.scss */
-.page-user-edit .form-type-password-confirm {
+/* line 283, ../sass/components/_user.scss */
+.page-user-edit .l-content .form-type-password-confirm {
   width: 90%;
   max-width: 560px; }
-/* line 286, ../sass/components/_user.scss */
-.page-user-edit fieldset {
+/* line 287, ../sass/components/_user.scss */
+.page-user-edit .l-content fieldset {
   margin-bottom: 20px; }
-/* line 290, ../sass/components/_user.scss */
+/* line 292, ../sass/components/_user.scss */
 .page-user-edit table th, .page-user-edit table tr, .page-user-edit table td {
   background-color: #fff; }
-/* line 294, ../sass/components/_user.scss */
+/* line 296, ../sass/components/_user.scss */
 .page-user-edit .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
