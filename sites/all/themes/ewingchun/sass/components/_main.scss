@@ -1179,5 +1179,21 @@ footer{
         font-weight: 400;
       }
     }
+    footer{
+      background: none;
+    }
+    article{
+      background: #f8f8f8 none repeat scroll 0 0;
+      min-height: 133px;
+      padding: 20px 10px 10px 10px;
+      h3{
+        a{
+          text-decoration: none;
+          color: #17335b;
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+    }
   }
 }
