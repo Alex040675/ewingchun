@@ -4513,11 +4513,8 @@ html.js .form-autocomplete {
 /* line 287, ../sass/components/_user.scss */
 .page-user-edit .l-content fieldset {
   margin-bottom: 20px; }
-/* line 292, ../sass/components/_user.scss */
-.page-user-edit table th, .page-user-edit table tr, .page-user-edit table td {
-  background-color: #fff; }
-/* line 296, ../sass/components/_user.scss */
-.page-user-edit .form-submit {
+/* line 290, ../sass/components/_user.scss */
+.page-user-edit .l-content .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
   border-radius: 4px;
@@ -4529,6 +4526,9 @@ html.js .form-autocomplete {
   margin-top: 0;
   padding: 10px 40px;
   text-decoration: none !important; }
+/* line 305, ../sass/components/_user.scss */
+.page-user-edit table th, .page-user-edit table tr, .page-user-edit table td {
+  background-color: #fff; }
 
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
