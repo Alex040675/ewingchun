@@ -2145,13 +2145,16 @@ footer {
   font-weight: 400; }
 /* line 1182, ../sass/components/_main.scss */
 .page-search .l-content footer {
-  background: none; }
-/* line 1185, ../sass/components/_main.scss */
+  background: none;
+  height: auto;
+  color: inherit; }
+/* line 1187, ../sass/components/_main.scss */
 .page-search .l-content article {
   background: #f8f8f8 none repeat scroll 0 0;
   min-height: 133px;
-  padding: 20px 10px 10px 10px; }
-  /* line 1190, ../sass/components/_main.scss */
+  padding: 20px 10px 10px 10px;
+  margin-bottom: 20px; }
+  /* line 1193, ../sass/components/_main.scss */
   .page-search .l-content article h3 a {
     text-decoration: none;
     color: #17335b;
