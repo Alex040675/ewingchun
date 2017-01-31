@@ -100,4 +100,10 @@ function ewingchun_preprocess_page(&$variables) {
   if (($user->uid !== '0') and $variables['logged_in']) {
     $variables['logout_block']['#markup'] = "<div class='logout_block'>" . t('Welcome, ') . "<a href=/user/" . $user->uid . ">" . $user->name . "</a>" . " | " . "<a href='/user/logout'>Logout</a></div>";
   }
+//  Tabs only for admin
+  if (!$variables['is_admin']) {
+    if ($variables['tabs']) {
+      $variables['tabs'] = [];
+    }
+  }
 }
