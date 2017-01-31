@@ -1121,7 +1121,24 @@ footer{
     background: #1266D6;
   }
 }
-
+.form-select{
+  -webkit-appearance: none;
+  appearance: none;
+}
+.section-node-edit{
+  #edit-field-school-lineage-und,#edit-field-instructors-und{
+    -moz-appearance: none;
+    background: transparent url("../images/select-left.png") no-repeat scroll left center;
+    background-size: 100% 100%;
+    border: medium none;
+    font-size: 11px;
+    height: 21px !important;
+    line-height: 11px;
+    width: 100%;
+    max-width: 293px;
+  }
+}
+#edit-field-school-lineage-und,#edit-field-instructors-und
 .l-main{
   .l-content {
     .tabs--primary {
