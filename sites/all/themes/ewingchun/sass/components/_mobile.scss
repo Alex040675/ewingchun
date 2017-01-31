@@ -55,6 +55,11 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .page-blog .l-page .l-main .l-content .view-Blogs .view-header .sifuheaderright {
+    margin-top: -530px;
+  }
+}
 @media screen and (max-width: 385px) {
   .page-sifus {
   .l-page .view-header .sifuheaderright {
