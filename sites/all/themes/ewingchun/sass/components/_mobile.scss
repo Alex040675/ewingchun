@@ -712,13 +712,14 @@
       #block-views-exp-blogs-page-1{
         margin-top: 150px;
         .views-exposed-widgets{
-          top:0 !important;
+          /*top:0 !important;*/
         }
       }
       .view-Blogs{
         .view-header{
           overflow: visible;
-          min-height: 130px;
+          /*min-height: 130px;*/
+          min-height: 245px;
           margin-top: 0;
           .sifuheaderleft {
             clear: both;
@@ -726,7 +727,8 @@
             margin-top: 0;
           }
           .sifuheaderright {
-            margin-top: -420px;
+            /*margin-top: -420px;*/
+            margin-top: -495px;
           }
         }
       }
