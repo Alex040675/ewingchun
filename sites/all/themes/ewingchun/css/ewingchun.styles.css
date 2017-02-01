@@ -3169,93 +3169,94 @@ footer {
     float: none;
     border: none; }
   /* line 1234, ../sass/components/_mobile.scss */
-  .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr {
+  .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td {
     display: block;
-    width: 100%; }
-    /* line 1237, ../sass/components/_mobile.scss */
-    .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr .form-submit {
+    width: 100%;
+    height: auto !important; }
+    /* line 1238, ../sass/components/_mobile.scss */
+    .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td .form-submit {
       position: relative;
       left: 0;
       bottom: 0;
       margin-top: 0; } }
 @media screen and (max-width: 980px) {
-  /* line 1255, ../sass/components/_mobile.scss */
+  /* line 1256, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-preview, .page-node-add-sifu .l-page #edit-field-img-certification .image-preview {
     float: none;
     width: auto; }
-  /* line 1259, ../sass/components/_mobile.scss */
+  /* line 1260, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-widget-data, .page-node-add-sifu .l-page #edit-field-img-certification .image-widget-data {
     float: none;
     width: auto; }
-  /* line 1263, ../sass/components/_mobile.scss */
+  /* line 1264, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .form-submit, .page-node-add-sifu .l-page #edit-field-img-certification .form-submit {
     margin-left: 0 !important; }
-  /* line 1269, ../sass/components/_mobile.scss */
+  /* line 1270, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-wrapper {
     float: none;
     margin-right: 0; }
-  /* line 1273, ../sass/components/_mobile.scss */
+  /* line 1274, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .field-type-list-boolean {
     margin-top: 15px; }
-  /* line 1276, ../sass/components/_mobile.scss */
+  /* line 1277, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;
     clear: both; }
 
-  /* line 1283, ../sass/components/_mobile.scss */
+  /* line 1284, ../sass/components/_mobile.scss */
   .page-user-edit .password-strength {
     float: none;
     margin-bottom: 20px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 1290, ../sass/components/_mobile.scss */
+  /* line 1291, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 1294, ../sass/components/_mobile.scss */
+  /* line 1295, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 1300, ../sass/components/_mobile.scss */
+  /* line 1301, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 1307, ../sass/components/_mobile.scss */
+  /* line 1308, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 1310, ../sass/components/_mobile.scss */
+    /* line 1311, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 1321, ../sass/components/_mobile.scss */
+  /* line 1322, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 1331, ../sass/components/_mobile.scss */
+  /* line 1332, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 1341, ../sass/components/_mobile.scss */
+  /* line 1342, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 1347, ../sass/components/_mobile.scss */
+  /* line 1348, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 1351, ../sass/components/_mobile.scss */
+  /* line 1352, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 1357, ../sass/components/_mobile.scss */
+  /* line 1358, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }

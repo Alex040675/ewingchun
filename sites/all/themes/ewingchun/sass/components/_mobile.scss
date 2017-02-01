@@ -1231,9 +1231,10 @@
             float: none;
             border: none;
           }
-          tr{
+          tr,th,td{
             display: block;
             width: 100%;
+            height: auto !important;
             .form-submit{
               position: relative;
               left: 0;
