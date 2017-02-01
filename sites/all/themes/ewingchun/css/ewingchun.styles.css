@@ -1036,7 +1036,7 @@ img, media {
 
 /* line 16, ../sass/components/_main.scss */
 .form-select {
-  text-indent: 3px; }
+  text-indent: 3px !important; }
 
 /* line 19, ../sass/components/_main.scss */
 body {
