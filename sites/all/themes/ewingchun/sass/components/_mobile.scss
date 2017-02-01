@@ -30,7 +30,8 @@
    .l-page{
      .view-header{
        .sifuheaderright {
-         margin-top: -300px;
+         /*margin-top: -300px;*/
+         margin-top: -430px;
        }
      }
      .view-article .view-filters {
@@ -59,7 +60,21 @@
   .page-blog .l-page .l-main .l-content .view-Blogs .view-header .sifuheaderright {
     margin-top: -530px;
   }
+  .section-articles{
+    .l-page .view-header{
+      .sifuheaderright {
+        margin-top: -400px;
+      }
+      .sifuheaderleft {
+        margin-top: 230px;
+      }
+    }
+    .l-page .view-article .view-filters {
+      margin-top: 120px;
+    }
+  }
 }
+
 @media screen and (max-width: 385px) {
   .page-sifus {
   .l-page .view-header .sifuheaderright {
@@ -674,10 +689,15 @@
 
   .page-articles {
     .l-page {
+        .view-header .sifuheaderright{
+          margin-top: -375px;
+        }
+
       .view-article{
         margin-top: -20px;
         .view-filters {
-          margin-top: 20px;
+          /*margin-top: 20px;*/
+          margin-top: 70px;
           .views-exposed-widget{
             margin-top: 10px;
           }
