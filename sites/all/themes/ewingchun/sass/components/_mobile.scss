@@ -439,6 +439,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #block-system-main-menu {
+    display: none;
+  }
   body {
     .l-page {
       width: 100%;
@@ -1141,9 +1144,6 @@
 
 
 @media screen and (max-width:960px) {
-  #block-system-main-menu {
-    display: none;
-  }
   .breadcrumb {
     clear: both;
   }
