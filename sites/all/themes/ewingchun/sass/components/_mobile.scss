@@ -1137,20 +1137,6 @@
     width: 85% !important;
     left: 2% !important;
   }
-  .section-node-edit {
-    .l-page {
-      .l-main {
-        .form-text,.form-select{
-          max-width: 300px;
-        }
-        #field-lineage-information-values{
-          .field-type-list-boolean,.field-type-node-reference{
-            float: none;
-          }
-        }
-      }
-    }
-  }
 }
 
 
@@ -1276,6 +1262,14 @@
             }
           }
         }
+          .form-text,.form-select{
+            max-width: 300px;
+          }
+          #field-lineage-information-values{
+            .field-type-list-boolean,.field-type-node-reference{
+              float: none;
+            }
+          }
       }
     }
 
