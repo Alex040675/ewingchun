@@ -2202,7 +2202,7 @@ footer {
   /* line 32, ../sass/components/_mobile.scss */
   .page-articles .l-page .view-header .sifuheaderright {
     /*margin-top: -300px;*/
-    margin-top: -430px; }
+    margin-top: -430px !important; }
   /* line 37, ../sass/components/_mobile.scss */
   .page-articles .l-page .view-article .view-filters {
     margin-top: 40px; }
