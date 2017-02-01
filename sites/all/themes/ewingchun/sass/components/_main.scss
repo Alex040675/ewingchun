@@ -1127,20 +1127,12 @@ footer{
 .form-select{
   -webkit-appearance: none;
   appearance: none;
-  -moz-appearance: none;
-  background: transparent url(../images/select-left.png) no-repeat scroll left center;
-  background-size: 100% 100%;
-  border: medium none;
-  font-size: 11px;
-  height: 21px !important;
-  line-height: 11px;
-  max-width: 293px;
 }
-select.wysiwyg{
-  -webkit-appearance: menulist;
-  appearance: menulist;
-  background: none;
-  border: 1px solid #bfbfbf;
+.page-node-add,.page-node-edit{
+  .form-select{
+    -webkit-appearance: menulist;
+    appearance: menulist;
+  }
 }
 .section-node-edit{
   #edit-field-school-lineage-und,#edit-field-instructors-und{
