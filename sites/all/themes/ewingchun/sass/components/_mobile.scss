@@ -415,9 +415,29 @@
       display: none;
     }
   }
+  .section-node-edit{
+    .l-page .l-main .l-content{
+      #edit-field-profile-img-und-table{
+        tr{
+          width: 260px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }
 
-
+@media screen and (max-width: 570px){
+  .section-node-edit{
+    .l-page .l-main{
+      #edit-field-profile-img-und-table{
+        tr{
+          width: 400px;
+        }
+      }
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     .l-page {
@@ -1117,6 +1137,20 @@
     width: 85% !important;
     left: 2% !important;
   }
+  .section-node-edit {
+    .l-page {
+      .l-main {
+        .form-text,.form-select{
+          max-width: 300px;
+        }
+        #field-lineage-information-values{
+          .field-type-list-boolean,.field-type-node-reference{
+            float: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -1233,7 +1267,6 @@
           }
           tr,th,td{
             display: block;
-            width: 100%;
             height: auto !important;
             .form-submit{
               position: relative;
