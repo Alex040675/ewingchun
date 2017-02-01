@@ -1216,6 +1216,36 @@
       }
     }
   }
+  .section-node-edit{
+      .l-page {
+        .l-main{
+        #edit-field-profile-img-und-table{
+          .image-preview {
+            float: none;
+            padding: 10px 10px 10px 0;
+            text-align: left;
+            width: 90%;
+          }
+          .image-widget-data{
+            width: 90%;
+            float: none;
+            border: none;
+          }
+          tr{
+            display: block;
+            width: 100%;
+            .form-submit{
+              position: relative;
+              left: 0;
+              bottom: 0;
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+
+  }
 }
 
 @media screen and (max-width:980px){
