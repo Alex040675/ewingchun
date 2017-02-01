@@ -2220,13 +2220,13 @@ footer {
     margin-top: -530px; }
 
   /* line 65, ../sass/components/_mobile.scss */
-  .section-articles .l-page .view-header .sifuheaderright {
+  .section-articles .l-page .l-main .view-header .sifuheaderright {
     margin-top: -400px; }
   /* line 68, ../sass/components/_mobile.scss */
-  .section-articles .l-page .view-header .sifuheaderleft {
+  .section-articles .l-page .l-main .view-header .sifuheaderleft {
     margin-top: 230px; }
   /* line 72, ../sass/components/_mobile.scss */
-  .section-articles .l-page .view-article .view-filters {
+  .section-articles .l-page .l-main .view-article .view-filters {
     margin-top: 120px; } }
 @media screen and (max-width: 385px) {
   /* line 80, ../sass/components/_mobile.scss */
