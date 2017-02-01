@@ -2099,6 +2099,7 @@ footer {
 .form-select {
   -webkit-appearance: none;
   appearance: none;
+  -moz-appearance: none;
   background: transparent url(../images/select-left.png) no-repeat scroll left center;
   background-size: 100% 100%;
   border: medium none;
@@ -2107,42 +2108,42 @@ footer {
   line-height: 11px;
   max-width: 293px; }
 
-/* line 1138, ../sass/components/_main.scss */
+/* line 1139, ../sass/components/_main.scss */
 select.wysiwyg {
   -webkit-appearance: menulist;
   appearance: menulist;
   background: none;
   border: 1px solid #bfbfbf; }
 
-/* line 1145, ../sass/components/_main.scss */
+/* line 1146, ../sass/components/_main.scss */
 .section-node-edit #edit-field-school-lineage-und, .section-node-edit #edit-field-instructors-und {
   -webkit-appearance: menulist;
   appearance: menulist; }
 
-/* line 1153, ../sass/components/_main.scss */
+/* line 1154, ../sass/components/_main.scss */
 #edit-field-school-lineage-und .l-content .tabs--primary, #edit-field-instructors-und
 .l-main .l-content .tabs--primary {
   width: 100%; }
-  /* line 1155, ../sass/components/_main.scss */
+  /* line 1156, ../sass/components/_main.scss */
   #edit-field-school-lineage-und .l-content .tabs--primary li, #edit-field-instructors-und
   .l-main .l-content .tabs--primary li {
     width: 16%;
     padding: 0;
     margin: 0 2px 10px 2px !important;
     background-size: 100% 100%; }
-    /* line 1160, ../sass/components/_main.scss */
+    /* line 1161, ../sass/components/_main.scss */
     #edit-field-school-lineage-und .l-content .tabs--primary li a, #edit-field-instructors-und
     .l-main .l-content .tabs--primary li a {
       background-size: 100% 100%;
       width: 100%;
       padding: 0; }
-  /* line 1166, ../sass/components/_main.scss */
+  /* line 1167, ../sass/components/_main.scss */
   #edit-field-school-lineage-und .l-content .tabs--primary li.active a, #edit-field-instructors-und
   .l-main .l-content .tabs--primary li.active a {
     background-size: 100% 100% !important;
     width: 100%; }
 
-/* line 1176, ../sass/components/_main.scss */
+/* line 1177, ../sass/components/_main.scss */
 .page-search .l-content .search-form .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
@@ -2153,7 +2154,7 @@ select.wysiwyg {
   max-width: 280px !important;
   padding: 5px;
   width: 90% !important; }
-/* line 1187, ../sass/components/_main.scss */
+/* line 1188, ../sass/components/_main.scss */
 .page-search .l-content .search-form .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
@@ -2166,36 +2167,36 @@ select.wysiwyg {
   margin-top: 0;
   padding: 10px 40px;
   text-decoration: none !important; }
-/* line 1200, ../sass/components/_main.scss */
+/* line 1201, ../sass/components/_main.scss */
 .page-search .l-content .search-form label {
   font-size: 14px;
   font-weight: 400; }
-/* line 1205, ../sass/components/_main.scss */
+/* line 1206, ../sass/components/_main.scss */
 .page-search .l-content footer {
   background: none;
   height: auto;
   color: inherit; }
-/* line 1210, ../sass/components/_main.scss */
+/* line 1211, ../sass/components/_main.scss */
 .page-search .l-content article {
   background: #f8f8f8 none repeat scroll 0 0;
   min-height: 133px;
   padding: 20px 10px 10px 10px;
   margin-bottom: 20px;
   overflow: hidden; }
-  /* line 1216, ../sass/components/_main.scss */
+  /* line 1217, ../sass/components/_main.scss */
   .page-search .l-content article h3 {
     margin-top: 0; }
-    /* line 1218, ../sass/components/_main.scss */
+    /* line 1219, ../sass/components/_main.scss */
     .page-search .l-content article h3 a {
       text-decoration: none;
       color: #17335b;
       font-size: 16px;
       font-weight: 700; }
-  /* line 1225, ../sass/components/_main.scss */
+  /* line 1226, ../sass/components/_main.scss */
   .page-search .l-content article .search-result__snippet {
     padding-left: 0; }
 
-/* line 1231, ../sass/components/_main.scss */
+/* line 1232, ../sass/components/_main.scss */
 .pre-line {
   white-space: pre-line; }
 
