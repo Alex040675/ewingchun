@@ -1127,6 +1127,12 @@ footer{
 .form-select{
   -webkit-appearance: none;
   appearance: none;
+  background: transparent url(../images/select-left.png) no-repeat scroll left center;
+  background-size: 100% auto;
+  border: medium none;
+  font-size: 11px;
+  height: 21px !important;
+  line-height: 11px;
 }
 .section-node-edit{
   #edit-field-school-lineage-und,#edit-field-instructors-und{
