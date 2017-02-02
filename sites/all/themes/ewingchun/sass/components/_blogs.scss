@@ -2,7 +2,7 @@
   .action-links{
     display: none;
   }
-  .pager:first-child{
+  .pager{
     margin-top: 125px;
     position: relative;
   }
@@ -19,6 +19,9 @@
     }
     .views-field-edit-node{
       display: none;
+    }
+    .view-content {
+      margin-bottom: -125px;
     }
     .views-row{
       .views-field-view-node{
