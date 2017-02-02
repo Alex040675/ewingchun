@@ -438,7 +438,7 @@
     .l-page .l-main{
       #edit-field-profile-img-und-table{
         tr{
-          width: 400px;
+          width: 100%;
         }
       }
     }
@@ -1188,6 +1188,9 @@
         td,.form-item {
           white-space: normal;
           word-wrap: break-word;
+          .form-submit{
+            margin: 10px 0 20px 10px !important;
+          }
         }
       }
     }

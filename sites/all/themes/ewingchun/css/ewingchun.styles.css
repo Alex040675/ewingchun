@@ -2532,7 +2532,7 @@ footer {
 @media screen and (max-width: 570px) {
   /* line 440, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr {
-    width: 400px; }
+    width: 100%; }
 
   /* line 446, ../sass/components/_mobile.scss */
   .cke_button {
@@ -3163,180 +3163,183 @@ footer {
   /* line 1188, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main .l-content #edit-field-profile-img-und-table td, .section-node-edit .l-page .l-main .l-content #edit-field-profile-img-und-table .form-item {
     white-space: normal;
-    word-wrap: break-word; } }
+    word-wrap: break-word; }
+    /* line 1191, ../sass/components/_mobile.scss */
+    .section-node-edit .l-page .l-main .l-content #edit-field-profile-img-und-table td .form-submit, .section-node-edit .l-page .l-main .l-content #edit-field-profile-img-und-table .form-item .form-submit {
+      margin: 10px 0 20px 10px !important; } }
 @media screen and (max-width: 960px) {
-  /* line 1199, ../sass/components/_mobile.scss */
+  /* line 1202, ../sass/components/_mobile.scss */
   .breadcrumb {
     clear: both; }
 
-  /* line 1203, ../sass/components/_mobile.scss */
+  /* line 1206, ../sass/components/_mobile.scss */
   html body {
     background: #fff !important; }
-    /* line 1207, ../sass/components/_mobile.scss */
+    /* line 1210, ../sass/components/_mobile.scss */
     html body .l-page .l-header .active_menu #block-system-main-menu {
       display: block;
       width: 100%; }
-      /* line 1210, ../sass/components/_mobile.scss */
+      /* line 1213, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu ul {
         width: 100%; }
-      /* line 1213, ../sass/components/_mobile.scss */
+      /* line 1216, ../sass/components/_mobile.scss */
       html body .l-page .l-header .active_menu #block-system-main-menu li {
         float: none;
         width: 100%;
         margin: 0 !important; }
-        /* line 1217, ../sass/components/_mobile.scss */
+        /* line 1220, ../sass/components/_mobile.scss */
         html body .l-page .l-header .active_menu #block-system-main-menu li a {
           padding: 0 !important;
           text-indent: 20px;
           font-size: 20px; }
 
-  /* line 1229, ../sass/components/_mobile.scss */
+  /* line 1232, ../sass/components/_mobile.scss */
   body .l-page {
     width: 100% !important;
     border: none; }
-    /* line 1232, ../sass/components/_mobile.scss */
+    /* line 1235, ../sass/components/_mobile.scss */
     body .l-page .form-text {
       background: #fff !important;
       max-width: 100%;
       border: solid 1px #BFBFBF;
       height: 26px;
       border-radius: 2px; }
-    /* line 1239, ../sass/components/_mobile.scss */
+    /* line 1242, ../sass/components/_mobile.scss */
     body .l-page .l-main {
       width: 96%; }
-    /* line 1243, ../sass/components/_mobile.scss */
+    /* line 1246, ../sass/components/_mobile.scss */
     body .l-page .l-region--sidebar-second #block-quicktabs-the-latest li a {
       font-size: 11px !important; }
 
-  /* line 1250, ../sass/components/_mobile.scss */
+  /* line 1253, ../sass/components/_mobile.scss */
   body.not-front .l-page .l-main {
     background: #FFFFFF; }
 
-  /* line 1254, ../sass/components/_mobile.scss */
+  /* line 1257, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top > div {
     box-sizing: border-box;
     width: 49%; }
-  /* line 1258, ../sass/components/_mobile.scss */
+  /* line 1261, ../sass/components/_mobile.scss */
   #block-block-10 .register-link {
     margin: 15px 0 0 10px; }
-  /* line 1261, ../sass/components/_mobile.scss */
+  /* line 1264, ../sass/components/_mobile.scss */
   #block-block-10 .banner-top-right {
     padding: 15px 10px; }
 
-  /* line 1268, ../sass/components/_mobile.scss */
+  /* line 1271, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table th, .page-schools-list .l-main table th a {
     font-size: 12px; }
-  /* line 1271, ../sass/components/_mobile.scss */
+  /* line 1274, ../sass/components/_mobile.scss */
   .page-schools-list .l-main table td, .page-schools-list .l-main table td a {
     font-size: 11px; }
 
-  /* line 1281, ../sass/components/_mobile.scss */
+  /* line 1284, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table .image-preview {
     float: none;
     padding: 10px 10px 10px 0;
     text-align: left;
     width: 90%; }
-  /* line 1287, ../sass/components/_mobile.scss */
+  /* line 1290, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table .image-widget-data {
     width: 90%;
     float: none;
     border: none; }
-  /* line 1292, ../sass/components/_mobile.scss */
+  /* line 1295, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td {
     display: block;
     height: auto !important;
     white-space: normal;
     word-wrap: break-word; }
-    /* line 1297, ../sass/components/_mobile.scss */
+    /* line 1300, ../sass/components/_mobile.scss */
     .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td .form-submit {
       position: relative;
       left: 0;
       bottom: 0;
       margin-top: 0; }
-  /* line 1305, ../sass/components/_mobile.scss */
+  /* line 1308, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main .form-text, .section-node-edit .l-page .l-main .form-select {
     max-width: 300px; }
-  /* line 1309, ../sass/components/_mobile.scss */
+  /* line 1312, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #field-lineage-information-values .field-type-list-boolean, .section-node-edit .l-page .l-main #field-lineage-information-values .field-type-node-reference {
     float: none; } }
 @media screen and (max-width: 980px) {
-  /* line 1323, ../sass/components/_mobile.scss */
+  /* line 1326, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-preview, .page-node-add-sifu .l-page #edit-field-img-certification .image-preview {
     float: none;
     width: auto; }
-  /* line 1327, ../sass/components/_mobile.scss */
+  /* line 1330, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-widget-data, .page-node-add-sifu .l-page #edit-field-img-certification .image-widget-data {
     float: none;
     width: auto; }
-  /* line 1331, ../sass/components/_mobile.scss */
+  /* line 1334, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .form-submit, .page-node-add-sifu .l-page #edit-field-img-certification .form-submit {
     margin-left: 0 !important; }
-  /* line 1337, ../sass/components/_mobile.scss */
+  /* line 1340, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-wrapper {
     float: none;
     margin-right: 0; }
-  /* line 1341, ../sass/components/_mobile.scss */
+  /* line 1344, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .field-type-list-boolean {
     margin-top: 15px; }
-  /* line 1344, ../sass/components/_mobile.scss */
+  /* line 1347, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;
     clear: both; }
 
-  /* line 1351, ../sass/components/_mobile.scss */
+  /* line 1354, ../sass/components/_mobile.scss */
   .page-user-edit .password-strength {
     float: none;
     margin-bottom: 20px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 1358, ../sass/components/_mobile.scss */
+  /* line 1361, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 1362, ../sass/components/_mobile.scss */
+  /* line 1365, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 1368, ../sass/components/_mobile.scss */
+  /* line 1371, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 1375, ../sass/components/_mobile.scss */
+  /* line 1378, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 1378, ../sass/components/_mobile.scss */
+    /* line 1381, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 1389, ../sass/components/_mobile.scss */
+  /* line 1392, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 1399, ../sass/components/_mobile.scss */
+  /* line 1402, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 1409, ../sass/components/_mobile.scss */
+  /* line 1412, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 1415, ../sass/components/_mobile.scss */
+  /* line 1418, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 1419, ../sass/components/_mobile.scss */
+  /* line 1422, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 1425, ../sass/components/_mobile.scss */
+  /* line 1428, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }
