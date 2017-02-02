@@ -1,5 +1,9 @@
-.page-user .wc_blocks-friend_images .user-profile-item__label {
-  display: none !important; }
+.page-user .wc_blocks-friend_images,
+.page-user .block--user-relationship-blocks-my-1 {
+  clear: both; }
+  .page-user .wc_blocks-friend_images .user-profile-item__label,
+  .page-user .block--user-relationship-blocks-my-1 .user-profile-item__label {
+    display: none !important; }
 
 .page-wiki .l-content,
 .node-type-wiki .l-content {

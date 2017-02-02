@@ -46,7 +46,7 @@
  *
  * @see template_preprocess()
  * @see template_preprocess_node()
- *
+ * @see hook_form_alter()
  * Custom variable:
  * - $classes: Adds additional node classes for advanced styling
  *
