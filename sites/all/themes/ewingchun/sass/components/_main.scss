@@ -1140,8 +1140,8 @@ footer{
     -webkit-appearance: menulist;
   }
 }
-.page-node-add-sifu{
-  #edit-field-system-und,#edit-taxonomy-vocabulary-9-und{
+.page-node-add-sifu,.page-node-add-article{
+  #edit-field-system-und,#edit-taxonomy-vocabulary-9-und,.wysiwyg{
     -webkit-appearance: none;
   }
 }
@@ -1150,6 +1150,12 @@ footer{
     -webkit-appearance: none !important;
   }
 }
+.node-type-article{
+  #edit-field-sifu-und{
+    -webkit-appearance: menulist;
+  }
+}
+
 #edit-field-school-lineage-und,#edit-field-instructors-und
 .l-main{
   .l-content {
