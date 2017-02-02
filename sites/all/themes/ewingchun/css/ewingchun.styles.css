@@ -544,7 +544,7 @@ img, media {
 .page-blog .action-links {
   display: none; }
 /* line 5, ../sass/components/_blogs.scss */
-.page-blog .pager {
+.page-blog .pager:first-child {
   margin-top: 125px;
   position: relative; }
 /* line 9, ../sass/components/_blogs.scss */
