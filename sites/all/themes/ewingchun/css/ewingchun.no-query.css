@@ -2524,7 +2524,7 @@ footer {
 
   /* line 424, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main .l-content #edit-field-profile-img-und-table tr {
-    width: 260px;
+    width: 100%;
     overflow: hidden; } }
 @media screen and (max-width: 570px) {
   /* line 437, ../sass/components/_mobile.scss */
@@ -3236,97 +3236,99 @@ footer {
   /* line 1279, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td {
     display: block;
-    height: auto !important; }
-    /* line 1282, ../sass/components/_mobile.scss */
+    height: auto !important;
+    white-space: normal;
+    word-wrap: break-word; }
+    /* line 1284, ../sass/components/_mobile.scss */
     .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table th .form-submit, .section-node-edit .l-page .l-main #edit-field-profile-img-und-table td .form-submit {
       position: relative;
       left: 0;
       bottom: 0;
       margin-top: 0; }
-  /* line 1290, ../sass/components/_mobile.scss */
+  /* line 1292, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main .form-text, .section-node-edit .l-page .l-main .form-select {
     max-width: 300px; }
-  /* line 1294, ../sass/components/_mobile.scss */
+  /* line 1296, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #field-lineage-information-values .field-type-list-boolean, .section-node-edit .l-page .l-main #field-lineage-information-values .field-type-node-reference {
     float: none; } }
 @media screen and (max-width: 980px) {
-  /* line 1308, ../sass/components/_mobile.scss */
+  /* line 1310, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-preview, .page-node-add-sifu .l-page #edit-field-img-certification .image-preview {
     float: none;
     width: auto; }
-  /* line 1312, ../sass/components/_mobile.scss */
+  /* line 1314, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .image-widget-data, .page-node-add-sifu .l-page #edit-field-img-certification .image-widget-data {
     float: none;
     width: auto; }
-  /* line 1316, ../sass/components/_mobile.scss */
+  /* line 1318, ../sass/components/_mobile.scss */
   .page-node-add-sifu .l-page #edit-field-profile-img .form-submit, .page-node-add-sifu .l-page #edit-field-img-certification .form-submit {
     margin-left: 0 !important; }
-  /* line 1322, ../sass/components/_mobile.scss */
+  /* line 1324, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-wrapper {
     float: none;
     margin-right: 0; }
-  /* line 1326, ../sass/components/_mobile.scss */
+  /* line 1328, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .field-type-list-boolean {
     margin-top: 15px; }
-  /* line 1329, ../sass/components/_mobile.scss */
+  /* line 1331, ../sass/components/_mobile.scss */
   .page-node-add-sifu #field-lineage-information-values .form-submit {
     float: left;
     clear: both; }
 
-  /* line 1336, ../sass/components/_mobile.scss */
+  /* line 1338, ../sass/components/_mobile.scss */
   .page-user-edit .password-strength {
     float: none;
     margin-bottom: 20px; } }
 @media screen and (min-width: 769px) and (max-width: 1180px) {
-  /* line 1343, ../sass/components/_mobile.scss */
+  /* line 1345, ../sass/components/_mobile.scss */
   body {
     background-size: 50% auto; }
 
-  /* line 1347, ../sass/components/_mobile.scss */
+  /* line 1349, ../sass/components/_mobile.scss */
   .top_header #block-block-13 {
     margin: 0;
     width: 80%; }
 
-  /* line 1353, ../sass/components/_mobile.scss */
+  /* line 1355, ../sass/components/_mobile.scss */
   header .l-branding {
     float: none;
     width: 205px;
     margin: 0 auto 20px;
     overflow: hidden;
     clear: both; }
-  /* line 1360, ../sass/components/_mobile.scss */
+  /* line 1362, ../sass/components/_mobile.scss */
   header .l-region--header {
     float: none;
     width: 100%; }
-    /* line 1363, ../sass/components/_mobile.scss */
+    /* line 1365, ../sass/components/_mobile.scss */
     header .l-region--header #block-search-form {
       margin-top: 35px;
       margin-right: 20px;
       max-width: 255px;
       min-width: 255px; }
 
-  /* line 1374, ../sass/components/_mobile.scss */
+  /* line 1376, ../sass/components/_mobile.scss */
   #block-system-main-menu ul li a {
     font-size: 12px; }
 
-  /* line 1384, ../sass/components/_mobile.scss */
+  /* line 1386, ../sass/components/_mobile.scss */
   .node-type-article .l-page .articletitle-leftp .articalmain .left, .node-type-article .l-page .articletitle-leftp .articalmain .center, .node-type-article .l-page .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; } }
 @media screen and (max-width: 1180px) {
-  /* line 1394, ../sass/components/_mobile.scss */
+  /* line 1396, ../sass/components/_mobile.scss */
   body .l-page {
     width: 90%; }
 
-  /* line 1400, ../sass/components/_mobile.scss */
+  /* line 1402, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .center, .node-type-blog .articletitle-leftp .articalmain .center {
     margin: 10px 0;
     float: none; }
-  /* line 1404, ../sass/components/_mobile.scss */
+  /* line 1406, ../sass/components/_mobile.scss */
   .node-type-article .articletitle-leftp .articalmain .left, .node-type-article .articletitle-leftp .articalmain .right, .node-type-blog .articletitle-leftp .articalmain .left, .node-type-blog .articletitle-leftp .articalmain .right {
     float: none;
     width: 200px; }
-  /* line 1410, ../sass/components/_mobile.scss */
+  /* line 1412, ../sass/components/_mobile.scss */
   .node-type-article .middleleftimg, .node-type-article .middleleftimg1, .node-type-blog .middleleftimg, .node-type-blog .middleleftimg1 {
     min-width: 200px;
     clear: both; } }

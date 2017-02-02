@@ -422,7 +422,7 @@
     .l-page .l-main .l-content{
       #edit-field-profile-img-und-table{
         tr{
-          width: 260px;
+          width: 100%;
           overflow: hidden;
         }
       }
@@ -1279,6 +1279,8 @@
           tr,th,td{
             display: block;
             height: auto !important;
+            white-space: normal;
+            word-wrap: break-word;
             .form-submit{
               position: relative;
               left: 0;
