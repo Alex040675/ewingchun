@@ -166,8 +166,14 @@ print $abc; ?>
 <div class="wc_blocks-friend_images">
   <h3 class="block-title">my friends</h3>
   <?php
-  $block = block_load("user_relationship_blocks", "user");
-  print render(_block_get_renderable_array( _block_render_blocks(array($block))));
+    $block = block_load("user_relationship_blocks", "user");
+    print render(_block_get_renderable_array( _block_render_blocks(array($block))));
+    $current_relationships = user_relationships_load(array('between' => array($user->uid, $account->uid)), array('sort' => 'rtid'));
+    if (count($current_relationships) < 1) {
+      if ($variables['user_profile']['user_relationships_ui']['actions']['#markup']) {
+        print $variables['user_profile']['user_relationships_ui']['actions']['#markup'];
+      }
+    }
   ?>
 </div>
 

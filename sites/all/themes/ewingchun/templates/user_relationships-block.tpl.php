@@ -18,37 +18,33 @@ if ($relationships) {
       $rtype_heading = t("@rel_plural_name", user_relationships_type_translations($relationship));
       $relatee = $relationship->requester;
     }
-
     $title = $rtype_heading;
     $rows[$title][] = $relatee;
   }
 
   $output = "<ul class='friends'>";
-  foreach ($rows as $title => $users) {
-    if ($users[0]->picture > 0) {
-      $file = file_load($users[0]->picture);
-      $output .=  "<li><img src='" . image_style_url('user_comment', $file->uri) . "' /> " . l($users[0]->name, 'user/' . $users[0]->uid) . "</li>";
+  foreach ($rows[$title] as $key => $users) {
+    if ($users->picture > 0) {
+      $file = file_load($users->picture);
+      $output .=  "<li><img src='" . image_style_url('user_comment', $file->uri) . "' /> " . l($users->name, 'user/' . $users->uid) . "</li>";
     } else {
-      $output .=  "<li><img src='/" .variable_get('user_picture_default') . "'/>" . l($users[0]->name, 'user/' . $users[0]->uid) . "</li>";
+      $output .=  "<li><img src='/" .variable_get('user_picture_default') . "'/>" . l($users->name, 'user/' . $users->uid) . "</li>";
     }
   }
-
-
   print $output;
-
 }
-$current_relationships = user_relationships_load(array('between' => array($user->uid, $account->uid)), array('sort' => 'rtid'));
-if (count($current_relationships) < 1) {
-  print "</ul><ul class='add_friend'>" . l(
-    t("Become %name's friend", array('%name' => format_username($account))),
-    "relationship/{$account->uid}/request/{$rtype->rtid}",
-    array(
-      'query' => drupal_get_destination(),
-      'html'  => TRUE,
-      'attributes' => array('class' => array('user_relationships_popup_link')),
-    )
-  ) ;
-}
+//$current_relationships = user_relationships_load(array('between' => array($user->uid, $account->uid)), array('sort' => 'rtid'));
+//if (count($current_relationships) < 1) {
+//  print "</ul><ul class='add_friend'>" . l(
+//    t("Become %name's friend", array('%name' => format_username($account))),
+//    "relationship/{$account->uid}/request/{$rtype->rtid}",
+//    array(
+//      'query' => drupal_get_destination(),
+//      'html'  => TRUE,
+//      'attributes' => array('class' => array('user_relationships_popup_link')),
+//    )
+//  ) ;
+//}
 
 /* removing printing out empty placeholder so the block is hidden when no data
 // No relationships so figure out how we present that
