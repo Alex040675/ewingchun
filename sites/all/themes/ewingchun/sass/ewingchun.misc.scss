@@ -1,5 +1,7 @@
 .page-user {
-  .wc_blocks-friend_images {
+  .wc_blocks-friend_images,
+  .block--user-relationship-blocks-my-1 {
+    clear: both;
     .user-profile-item__label {
     display: none!important;
     }

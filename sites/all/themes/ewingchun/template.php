@@ -473,3 +473,14 @@ function _wc_lineage_get_primary($node, $nid, $affilated) {
 
   return $output;
 }
+/**
+ * Implements hook_form_FORM_ID_alter()
+ * @see hook_form_FORM_ID_alter()
+ *
+ */
+function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) {
+//  Removed some form fields
+  $form['wysiwyg'] = [];
+  $form['locations'] = [];
+  $form['user_relationship_node_access'] = [];
+}
