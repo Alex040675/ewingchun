@@ -503,7 +503,7 @@
         li {
           width: 49%;
         }
-        li.first,li.second{
+        li.first, li.second {
           border-bottom: none !important;
           border-radius: 0 !important;
         }
@@ -652,10 +652,10 @@
       .view-sifu .view-filters {
         margin-top: 20px;
         top: 0 !important;
-        .views-submit-button{
+        .views-submit-button {
           clear: both;
         }
-        label{
+        label {
           float: none;
         }
       }
@@ -691,7 +691,7 @@
     }
   }
   .page-videos {
-    .l-page .view-header{
+    .l-page .view-header {
       height: 320px;
       .sifuheaderright {
         margin-top: -320px;
@@ -723,7 +723,7 @@
         width: 40% !important;
         max-width: 210px;
         background-position: 0 0 !important;
-        .addavideo{
+        .addavideo {
           margin-top: 25px;
         }
       }
@@ -738,16 +738,16 @@
 
   .page-articles {
     .l-page {
-        .view-header .sifuheaderright{
-          margin-top: -375px;
-        }
+      .view-header .sifuheaderright {
+        margin-top: -375px;
+      }
 
-      .view-article{
+      .view-article {
         margin-top: -20px;
         .view-filters {
           /*margin-top: 20px;*/
           margin-top: 70px;
-          .views-exposed-widget{
+          .views-exposed-widget {
             margin-top: 10px;
           }
         }
@@ -775,24 +775,24 @@
             overflow: hidden;
             padding-bottom: 20px;
           }
-          .history-right .posted-mid{
-            text-align: center!important;
+          .history-right .posted-mid {
+            text-align: center !important;
             padding-left: 0;
           }
         }
       }
     }
   }
-  .page-blog{
-    .l-page{
-      #block-views-exp-blogs-page-1{
+  .page-blog {
+    .l-page {
+      #block-views-exp-blogs-page-1 {
         margin-top: 150px;
-        .views-exposed-widgets{
+        .views-exposed-widgets {
           /*top:0 !important;*/
         }
       }
-      .view-Blogs{
-        .view-header{
+      .view-Blogs {
+        .view-header {
           overflow: visible;
           /*min-height: 130px;*/
           min-height: 245px;
@@ -808,7 +808,7 @@
           }
         }
       }
-      .pager{
+      .pager {
         margin-top: 0;
       }
     }
@@ -839,7 +839,7 @@
     padding-bottom: 20px;
   }
   .page-schools-list {
-     .views-field-field-profile-img, .views-field-changed {
+    .views-field-field-profile-img, .views-field-changed {
       display: none;
     }
     .l-page .view-header .sifuheaderleft {
@@ -852,7 +852,7 @@
 
   .node-type-sifu {
     .l-page {
-      .bottom-border{
+      .bottom-border {
         margin-top: 0;
       }
       .commonname {
@@ -860,21 +860,21 @@
           width: 100%;
           float: none;
           margin: 0 0 20px 0;
-          img{
+          img {
             width: auto !important;
           }
         }
-        .common-midle{
+        .common-midle {
           margin-bottom: 0 !important;
         }
-        .common-right .common-right-2{
+        .common-right .common-right-2 {
           float: left;
         }
         .common-right .common-right-lft, .common-right .common-right-2 {
           width: auto;
           margin-right: 5px;
         }
-        .comon-btom{
+        .comon-btom {
           clear: both;
           width: 100%;
         }
@@ -892,7 +892,7 @@
           max-width: 280px;
         }
       }
-      .primary-partright{
+      .primary-partright {
         margin-left: 0;
         width: 232px;
         margin-top: 20px;
@@ -996,7 +996,7 @@
       float: left;
       clear: both;
     }
-    .review-content .review-left{
+    .review-content .review-left {
       margin-top: 30px;
     }
   }
@@ -1047,7 +1047,7 @@
       float: left;
       clear: both;
     }
-    .review-content .review-left{
+    .review-content .review-left {
       margin-top: 30px;
     }
   }
@@ -1057,95 +1057,95 @@
       width: 100% !important;
     }
   }
-  .page-schools-list .l-main{
-  .view-local-resources .views-widget-filter-country {
-    clear: both;
-  }
-  .view-local-resources .views-widget-filter-province {
-    clear: both;
-  }
-  .view-local-resources .view-filters #edit-keys-wrapper,
-  .view-local-resources .views-widget-filter-country,
-  .view-local-resources .views-widget-filter-province {
-    width: 100%;
-  }
-    #edit-field-school-lineage-tid-wrapper{
+  .page-schools-list .l-main {
+    .view-local-resources .views-widget-filter-country {
+      clear: both;
+    }
+    .view-local-resources .views-widget-filter-province {
+      clear: both;
+    }
+    .view-local-resources .view-filters #edit-keys-wrapper,
+    .view-local-resources .views-widget-filter-country,
+    .view-local-resources .views-widget-filter-province {
+      width: 100%;
+    }
+    #edit-field-school-lineage-tid-wrapper {
       float: none !important;
       width: 100% !important;
     }
-    #edit-keys-wrapper{
+    #edit-keys-wrapper {
       margin-top: 20px;
     }
-}
+  }
   .page-node-add {
-    .vertical-tabs{
+    .vertical-tabs {
       margin-left: 0;
-    ul.vertical-tabs-list {
-      float: right;
-      width: 100%;
-      margin-right: 0;
-      text-align: center;
-    }
-      .vertical-tabs-panes{
+      ul.vertical-tabs-list {
+        float: right;
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+      }
+      .vertical-tabs-panes {
         clear: both;
         padding-top: 20px;
       }
-   }
-    #edit-actions{
+    }
+    #edit-actions {
       margin-top: 10px;
     }
-    .field-multiple-drag{
+    .field-multiple-drag {
       display: none;
     }
-    .form-select{
+    .form-select {
       max-width: 70%;
       overflow: hidden;
     }
 
     .link-field-column {
-      float:none;
+      float: none;
       width: 100%;
     }
-    .description{
+    .description {
       max-width: 70%;
     }
   }
-  .l-page{
-    .view-header .sifuheaderleft{
+  .l-page {
+    .view-header .sifuheaderleft {
       margin-top: 200px;
     }
-    .view-header .sifuheaderright{
+    .view-header .sifuheaderright {
       margin-top: -300px;
     }
   }
   .node-type-video {
-    .l-page{
-    .videotitleinner {
-      float: none;
-      width: 100%;
-    }
-    .recentvideos-right {
-      float: none;
-      width: 100%;
-      max-width: 235px;
-      clear: both;
-    }
+    .l-page {
+      .videotitleinner {
+        float: none;
+        width: 100%;
+      }
+      .recentvideos-right {
+        float: none;
+        width: 100%;
+        max-width: 235px;
+        clear: both;
+      }
       .tags .tagright {
         width: 100%;
         float: left;
       }
-      .tags .tagleft{
+      .tags .tagleft {
         float: none;
       }
+    }
   }
-  }
-  .page-user{
-    .l-page{
+  .page-user {
+    .l-page {
       .user-left {
         float: none;
         width: 100%;
       }
-      .user-right{
+      .user-right {
         float: none;
         width: 100%;
         clear: both;
@@ -1162,9 +1162,15 @@
       width: 100%;
     }
   }
-  #user_relationships_popup_form{
+  #user_relationships_popup_form {
     width: 85% !important;
     left: 2% !important;
+  }
+  .section-wiki-categories{
+    .encyclopediacategories-right {
+     float: none;
+     width: 100%;
+    }
   }
 }
 
