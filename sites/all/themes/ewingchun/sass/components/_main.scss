@@ -1129,8 +1129,9 @@ footer{
   appearance: none;
 }
 .page-node-add,.page-node-edit{
-  .form-select{
+  .wysiwyg{
     -webkit-appearance: menulist;
+    background: none;
   }
 }
 #edit-field-school-lineage-und,#edit-field-instructors-und
