@@ -1131,8 +1131,22 @@ footer{
 .page-node-add,.page-node-edit{
   .wysiwyg{
     -webkit-appearance: menulist;
-    background: #ebebeb;
-    border: solid 1px #ccc;
+    background: #ebebeb !important;
+    border: solid 1px #ccc !important;
+  }
+  .form-text{
+    border: solid 1px #BFBFBF;;
+  }
+  /*#edit-field-sifu-und,#edit-field-instructors-und,#edit-field-school-lineage-und,#edit-field-system-und,
+  #edit-taxonomy-vocabulary-9-und,#edit-field-lineage-information-und-0-field-noderef-instructor-und*/
+  .form-select {
+    background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
+    border: medium none;
+    font-size: 11px;
+    height: 21px !important;
+    line-height: 11px;
+    max-width: 293px !important;
+    width: 90%;
   }
 }
 #edit-field-school-lineage-und,#edit-field-instructors-und
