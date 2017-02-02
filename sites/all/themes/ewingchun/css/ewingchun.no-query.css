@@ -2529,8 +2529,8 @@ footer {
     white-space: normal !important; } }
 @media screen and (min-width: 768px) {
   /* line 449, ../sass/components/_mobile.scss */
-  .view-content {
-    margin-bottom: -125px; } }
+  .page-blog .view-Blogs .view-header {
+    margin-bottom: 140px !important; } }
 @media screen and (max-width: 768px) {
   /* line 454, ../sass/components/_mobile.scss */
   #block-system-main-menu {
