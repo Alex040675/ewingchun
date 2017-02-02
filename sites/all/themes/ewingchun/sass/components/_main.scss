@@ -1139,9 +1139,6 @@ footer{
   #edit-field-school-lineage-und{
     -webkit-appearance: menulist;
   }
-  #edit-field-instructors-und,#edit-field-school-lineage-und{
-    -webkit-appearance: none;
-  }
 }
 .page-node-add-sifu{
   #edit-field-system-und,#edit-taxonomy-vocabulary-9-und{
@@ -1150,7 +1147,7 @@ footer{
 }
 .page-node-add-resource{
   #edit-field-instructors-und,#edit-field-school-lineage-und{
-    -webkit-appearance: none;
+    -webkit-appearance: none !important;
   }
 }
 #edit-field-school-lineage-und,#edit-field-instructors-und
