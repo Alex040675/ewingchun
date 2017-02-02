@@ -1133,15 +1133,23 @@ footer{
     -webkit-appearance: menulist;
   }
   .form-text{
-    border: solid 1px #BFBFBF;;
+    border: solid 1px #BFBFBF;
   }
   #edit-field-system-und,#edit-taxonomy-vocabulary-9-und,#edit-field-instructors-und,
   #edit-field-school-lineage-und{
     -webkit-appearance: menulist;
   }
+  #edit-field-instructors-und,#edit-field-school-lineage-und{
+    -webkit-appearance: none;
+  }
 }
 .page-node-add-sifu{
   #edit-field-system-und,#edit-taxonomy-vocabulary-9-und{
+    -webkit-appearance: none;
+  }
+}
+.page-node-add-resource{
+  #edit-field-instructors-und,#edit-field-school-lineage-und{
     -webkit-appearance: none;
   }
 }
