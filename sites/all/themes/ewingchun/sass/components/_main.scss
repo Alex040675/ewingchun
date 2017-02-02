@@ -1127,11 +1127,13 @@ footer{
 .form-select{
   -webkit-appearance: none;
   appearance: none;
+  -moz-appearance: normal;
 }
 .page-node-add,.page-node-edit{
   .wysiwyg,#field-lineage-information-values .form-select{
     -webkit-appearance: menulist;
     background: #ebebeb !important;
+    -moz-appearance: normal;
     border: solid 1px #ccc !important;
   }
   .form-text{

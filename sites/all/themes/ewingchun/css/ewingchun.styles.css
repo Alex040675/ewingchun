@@ -2098,26 +2098,28 @@ footer {
 /* line 1127, ../sass/components/_main.scss */
 .form-select {
   -webkit-appearance: none;
-  appearance: none; }
+  appearance: none;
+  -moz-appearance: normal; }
 
-/* line 1131, ../sass/components/_main.scss */
+/* line 1132, ../sass/components/_main.scss */
 .page-node-add, .page-node-edit {
   /*#edit-field-sifu-und,#edit-field-instructors-und,#edit-field-school-lineage-und,#edit-field-system-und,
   #edit-taxonomy-vocabulary-9-und,#edit-field-lineage-information-und-0-field-noderef-instructor-und*/ }
-  /* line 1132, ../sass/components/_main.scss */
+  /* line 1133, ../sass/components/_main.scss */
   .page-node-add .wysiwyg, .page-node-add #field-lineage-information-values .form-select, .page-node-edit .wysiwyg, .page-node-edit #field-lineage-information-values .form-select {
     -webkit-appearance: menulist;
     background: #ebebeb !important;
+    -moz-appearance: normal;
     border: solid 1px #ccc !important; }
-  /* line 1137, ../sass/components/_main.scss */
+  /* line 1139, ../sass/components/_main.scss */
   .page-node-add .form-text, .page-node-edit .form-text {
     border: solid 1px #BFBFBF; }
-  /* line 1140, ../sass/components/_main.scss */
+  /* line 1142, ../sass/components/_main.scss */
   .page-node-add #edit-taxonomy-vocabulary-7-und, .page-node-edit #edit-taxonomy-vocabulary-7-und {
     background: none;
     height: auto !important;
     border: solid 1px #ccc !important; }
-  /* line 1147, ../sass/components/_main.scss */
+  /* line 1149, ../sass/components/_main.scss */
   .page-node-add .form-select, .page-node-edit .form-select {
     background: transparent url("../images/select-left.png") no-repeat scroll 100% 0;
     border: medium none;
@@ -2127,30 +2129,30 @@ footer {
     max-width: 293px !important;
     width: 90%; }
 
-/* line 1160, ../sass/components/_main.scss */
+/* line 1162, ../sass/components/_main.scss */
 #edit-field-school-lineage-und .l-content .tabs--primary, #edit-field-instructors-und
 .l-main .l-content .tabs--primary {
   width: 100%; }
-  /* line 1162, ../sass/components/_main.scss */
+  /* line 1164, ../sass/components/_main.scss */
   #edit-field-school-lineage-und .l-content .tabs--primary li, #edit-field-instructors-und
   .l-main .l-content .tabs--primary li {
     width: 16%;
     padding: 0;
     margin: 0 2px 10px 2px !important;
     background-size: 100% 100%; }
-    /* line 1167, ../sass/components/_main.scss */
+    /* line 1169, ../sass/components/_main.scss */
     #edit-field-school-lineage-und .l-content .tabs--primary li a, #edit-field-instructors-und
     .l-main .l-content .tabs--primary li a {
       background-size: 100% 100%;
       width: 100%;
       padding: 0; }
-  /* line 1173, ../sass/components/_main.scss */
+  /* line 1175, ../sass/components/_main.scss */
   #edit-field-school-lineage-und .l-content .tabs--primary li.active a, #edit-field-instructors-und
   .l-main .l-content .tabs--primary li.active a {
     background-size: 100% 100% !important;
     width: 100%; }
 
-/* line 1183, ../sass/components/_main.scss */
+/* line 1185, ../sass/components/_main.scss */
 .page-search .l-content .search-form .form-text {
   background: #fff none repeat scroll 0 0;
   border: 1px solid #bfbfbf;
@@ -2161,7 +2163,7 @@ footer {
   max-width: 280px !important;
   padding: 5px;
   width: 90% !important; }
-/* line 1194, ../sass/components/_main.scss */
+/* line 1196, ../sass/components/_main.scss */
 .page-search .l-content .search-form .form-submit {
   background: #1d58a8 none repeat scroll 0 0;
   border: medium none;
@@ -2174,36 +2176,36 @@ footer {
   margin-top: 0;
   padding: 10px 40px;
   text-decoration: none !important; }
-/* line 1207, ../sass/components/_main.scss */
+/* line 1209, ../sass/components/_main.scss */
 .page-search .l-content .search-form label {
   font-size: 14px;
   font-weight: 400; }
-/* line 1212, ../sass/components/_main.scss */
+/* line 1214, ../sass/components/_main.scss */
 .page-search .l-content footer {
   background: none;
   height: auto;
   color: inherit; }
-/* line 1217, ../sass/components/_main.scss */
+/* line 1219, ../sass/components/_main.scss */
 .page-search .l-content article {
   background: #f8f8f8 none repeat scroll 0 0;
   min-height: 133px;
   padding: 20px 10px 10px 10px;
   margin-bottom: 20px;
   overflow: hidden; }
-  /* line 1223, ../sass/components/_main.scss */
+  /* line 1225, ../sass/components/_main.scss */
   .page-search .l-content article h3 {
     margin-top: 0; }
-    /* line 1225, ../sass/components/_main.scss */
+    /* line 1227, ../sass/components/_main.scss */
     .page-search .l-content article h3 a {
       text-decoration: none;
       color: #17335b;
       font-size: 16px;
       font-weight: 700; }
-  /* line 1232, ../sass/components/_main.scss */
+  /* line 1234, ../sass/components/_main.scss */
   .page-search .l-content article .search-result__snippet {
     padding-left: 0; }
 
-/* line 1238, ../sass/components/_main.scss */
+/* line 1240, ../sass/components/_main.scss */
 .pre-line {
   white-space: pre-line; }
 
