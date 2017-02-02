@@ -2105,7 +2105,7 @@ footer {
   /*#edit-field-sifu-und,#edit-field-instructors-und,#edit-field-school-lineage-und,#edit-field-system-und,
   #edit-taxonomy-vocabulary-9-und,#edit-field-lineage-information-und-0-field-noderef-instructor-und*/ }
   /* line 1132, ../sass/components/_main.scss */
-  .page-node-add .wysiwyg, .page-node-edit .wysiwyg {
+  .page-node-add .wysiwyg, .page-node-add #field-lineage-information-values .form-select, .page-node-edit .wysiwyg, .page-node-edit #field-lineage-information-values .form-select {
     -webkit-appearance: menulist;
     background: #ebebeb !important;
     border: solid 1px #ccc !important; }

@@ -1129,7 +1129,7 @@ footer{
   appearance: none;
 }
 .page-node-add,.page-node-edit{
-  .wysiwyg{
+  .wysiwyg,#field-lineage-information-values .form-select{
     -webkit-appearance: menulist;
     background: #ebebeb !important;
     border: solid 1px #ccc !important;
