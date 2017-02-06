@@ -3,6 +3,7 @@
     .l-content{
       width: 100%;
       .view-taxonomy-term {
+        .views-row{
         h3 {
           color: #1c57a7;
           font-family: Trajan Pro Bold;
@@ -10,6 +11,7 @@
           text-transform: uppercase;
           margin-bottom: 0;
         }
+      }
       }
       .schoolname-r{
         p{

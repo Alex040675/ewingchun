@@ -1024,14 +1024,14 @@ img, media {
 /* line 3, ../sass/components/_lineage.scss */
 .section-lineage .l-main .l-content {
   width: 100%; }
-  /* line 6, ../sass/components/_lineage.scss */
-  .section-lineage .l-main .l-content .view-taxonomy-term h3 {
+  /* line 7, ../sass/components/_lineage.scss */
+  .section-lineage .l-main .l-content .view-taxonomy-term .views-row h3 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 0; }
-  /* line 17, ../sass/components/_lineage.scss */
+  /* line 19, ../sass/components/_lineage.scss */
   .section-lineage .l-main .l-content .schoolname-r p span a {
     color: #1c57a7; }
 
