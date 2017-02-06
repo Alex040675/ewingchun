@@ -1,0 +1,35 @@
+.section-lineage{
+  .l-main{
+    .l-content{
+      width: 100%;
+      h1{
+        background: none !important;
+        padding-bottom: 0 !important;
+        margin: 0!important;
+      }
+      .view-taxonomy-term {
+        .views-row {
+          .content,.bottom-biography{
+          h3 {
+            color: #1c57a7;
+            font-family: Trajan Pro Bold;
+            font-size: 17px !important;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+          }
+        }
+      }
+      }
+      .schoolname-r{
+        p{
+          span{
+            a{
+              color: #1c57a7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

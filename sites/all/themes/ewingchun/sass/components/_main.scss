@@ -1140,14 +1140,29 @@ footer{
     -webkit-appearance: menulist;
   }
 }
-.page-node-add-sifu{
-  #edit-field-system-und,#edit-taxonomy-vocabulary-9-und{
+.page-node-add-sifu,.page-node-add-article{
+  #edit-field-system-und,#edit-taxonomy-vocabulary-9-und,.wysiwyg{
     -webkit-appearance: none;
   }
 }
 .page-node-add-resource{
-  #edit-field-instructors-und,#edit-field-school-lineage-und{
+  #edit-field-instructors-und,#edit-field-school-lineage-und,.wysiwyg{
     -webkit-appearance: none !important;
+  }
+}
+.node-type-article{
+  #edit-field-sifu-und{
+    -webkit-appearance: menulist;
+  }
+}
+.node-type-video,.page-node-add-video{
+  #edit-field-sifu-und{
+    -webkit-appearance: menulist;
+  }
+}
+.page-node-add-wiki,.page-wiki{
+  #edit-field-category-und{
+    -webkit-appearance: menulist;
   }
 }
 #edit-field-school-lineage-und,#edit-field-instructors-und
@@ -1233,4 +1248,7 @@ footer{
 }
 .pre-line{
   white-space: pre-line;
+}
+.captcha{
+  margin-bottom: 20px;
 }

@@ -173,6 +173,12 @@
         }
       }
     }
+    .friends{
+      li{
+        margin-right: 10px;
+        float: left;
+      }
+    }
     .add_friend{
       float: left;
       clear: both;
@@ -311,5 +317,10 @@
     th,tr,td{
       background-color: #fff;
     }
+  }
+}
+.section-relationships{
+  th,td{
+    padding: 5px;
   }
 }

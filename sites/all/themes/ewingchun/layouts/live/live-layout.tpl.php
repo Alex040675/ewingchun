@@ -35,6 +35,7 @@
 
 
       <div class="above_content"><?php print render($page['above_content']); ?></div>
+    <?php print render($page['sidebar_first']); ?>
     <div class="l-content" role="main">
       <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
@@ -65,7 +66,7 @@
       <?php print $feed_icons; ?>
     </div>
 
-    <?php print render($page['sidebar_first']); ?>
+
     <?php print render($page['sidebar_second']); ?>
   </div>
 
