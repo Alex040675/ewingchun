@@ -1035,7 +1035,7 @@ img, media {
     font-family: Trajan Pro Bold;
     font-size: 17px !important;
     text-transform: uppercase;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: 700; }
   /* line 27, ../sass/components/_lineage.scss */
   .section-lineage .l-main .l-content .schoolname-r p span a {
