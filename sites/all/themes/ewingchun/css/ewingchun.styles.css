@@ -2248,6 +2248,10 @@ footer {
 .pre-line {
   white-space: pre-line; }
 
+/* line 1252, ../sass/components/_main.scss */
+.captcha {
+  margin-bottom: 20px; }
+
 @media screen and (max-width: 320px) {
   /* line 4, ../sass/components/_mobile.scss */
   .node-type-video .l-main .field--name-field-emvideo {
