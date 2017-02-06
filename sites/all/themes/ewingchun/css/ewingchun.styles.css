@@ -1025,13 +1025,14 @@ img, media {
 .section-lineage .l-main .l-content {
   width: 100%; }
   /* line 7, ../sass/components/_lineage.scss */
-  .section-lineage .l-main .l-content .view-taxonomy-term .views-row h3 {
+  .section-lineage .l-main .l-content .view-taxonomy-term .views-row .content, .section-lineage .l-main .l-content .view-taxonomy-term .views-row .bottom-biography
+  h3 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 0; }
-  /* line 19, ../sass/components/_lineage.scss */
+  /* line 20, ../sass/components/_lineage.scss */
   .section-lineage .l-main .l-content .schoolname-r p span a {
     color: #1c57a7; }
 
@@ -2224,14 +2225,6 @@ footer {
 /* line 1249, ../sass/components/_main.scss */
 .pre-line {
   white-space: pre-line; }
-
-/* line 1253, ../sass/components/_main.scss */
-.view-empty p {
-  color: #1c57a7;
-  font-family: Trajan Pro Bold;
-  font-size: 23px;
-  text-transform: uppercase;
-  font-weight: normal; }
 
 @media screen and (max-width: 320px) {
   /* line 4, ../sass/components/_mobile.scss */
