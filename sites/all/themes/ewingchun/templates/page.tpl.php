@@ -123,7 +123,6 @@
       <?php print $feed_icons; ?>
     </div>
 
-    
     <?php print render($page['sidebar_second']); ?>
   </div>
 
