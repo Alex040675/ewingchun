@@ -2372,21 +2372,21 @@ footer {
     max-width: 80%; }
 
   /* line 211, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .primary-part .primary-top {
+  .node-type-sifu .l-page .primary-part .primary-top, .section-lineage .l-page .primary-part .primary-top {
     font-size: 12px;
     background-size: 100% 100%;
     height: 20px; }
   /* line 219, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-left, .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-midle, .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-rgt {
+  .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-left, .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-midle, .node-type-sifu .l-page .primary-part .primary-center .primary01 .mprimary .primary01-rgt, .section-lineage .l-page .primary-part .primary-center .primary01 .mprimary .primary01-left, .section-lineage .l-page .primary-part .primary-center .primary01 .mprimary .primary01-midle, .section-lineage .l-page .primary-part .primary-center .primary01 .mprimary .primary01-rgt {
     font-size: 12px; }
   /* line 223, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .primary-part .primary-center .primary01 .lineage-text {
+  .node-type-sifu .l-page .primary-part .primary-center .primary01 .lineage-text, .section-lineage .l-page .primary-part .primary-center .primary01 .lineage-text {
     font-size: 12px; }
   /* line 231, ../sass/components/_mobile.scss */
-  .node-type-sifu .certification-left h3 {
+  .node-type-sifu .certification-left h3, .section-lineage .certification-left h3 {
     font-size: 12px; }
   /* line 235, ../sass/components/_mobile.scss */
-  .node-type-sifu .review-headingbg .review-hcenterbg {
+  .node-type-sifu .review-headingbg .review-hcenterbg, .section-lineage .review-headingbg .review-hcenterbg {
     width: 100%; }
 
   /* line 244, ../sass/components/_mobile.scss */
@@ -2898,41 +2898,41 @@ footer {
     margin-top: -350px; }
 
   /* line 858, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .bottom-border {
+  .node-type-sifu .l-page .bottom-border, .section-lineage .l-page .bottom-border {
     margin-top: 0; }
   /* line 862, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .commonname .common-left, .node-type-sifu .l-page .commonname .common-midle, .node-type-sifu .l-page .commonname .common-right {
+  .node-type-sifu .l-page .commonname .common-left, .node-type-sifu .l-page .commonname .common-midle, .node-type-sifu .l-page .commonname .common-right, .section-lineage .l-page .commonname .common-left, .section-lineage .l-page .commonname .common-midle, .section-lineage .l-page .commonname .common-right {
     width: 100%;
     float: none;
     margin: 0 0 20px 0; }
     /* line 866, ../sass/components/_mobile.scss */
-    .node-type-sifu .l-page .commonname .common-left img, .node-type-sifu .l-page .commonname .common-midle img, .node-type-sifu .l-page .commonname .common-right img {
+    .node-type-sifu .l-page .commonname .common-left img, .node-type-sifu .l-page .commonname .common-midle img, .node-type-sifu .l-page .commonname .common-right img, .section-lineage .l-page .commonname .common-left img, .section-lineage .l-page .commonname .common-midle img, .section-lineage .l-page .commonname .common-right img {
       width: auto !important; }
   /* line 870, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .commonname .common-midle {
+  .node-type-sifu .l-page .commonname .common-midle, .section-lineage .l-page .commonname .common-midle {
     margin-bottom: 0 !important; }
   /* line 873, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .commonname .common-right .common-right-2 {
+  .node-type-sifu .l-page .commonname .common-right .common-right-2, .section-lineage .l-page .commonname .common-right .common-right-2 {
     float: left; }
   /* line 876, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .commonname .common-right .common-right-lft, .node-type-sifu .l-page .commonname .common-right .common-right-2 {
+  .node-type-sifu .l-page .commonname .common-right .common-right-lft, .node-type-sifu .l-page .commonname .common-right .common-right-2, .section-lineage .l-page .commonname .common-right .common-right-lft, .section-lineage .l-page .commonname .common-right .common-right-2 {
     width: auto;
     margin-right: 5px; }
   /* line 880, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .commonname .comon-btom {
+  .node-type-sifu .l-page .commonname .comon-btom, .section-lineage .l-page .commonname .comon-btom {
     clear: both;
     width: 100%; }
   /* line 886, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .primary-part .primary-partleft {
+  .node-type-sifu .l-page .primary-part .primary-partleft, .section-lineage .l-page .primary-part .primary-partleft {
     width: 100%; }
   /* line 891, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .student-sifus .student-left, .node-type-sifu .l-page .student-sifus .student-midle, .node-type-sifu .l-page .student-sifus .student-right {
+  .node-type-sifu .l-page .student-sifus .student-left, .node-type-sifu .l-page .student-sifus .student-midle, .node-type-sifu .l-page .student-sifus .student-right, .section-lineage .l-page .student-sifus .student-left, .section-lineage .l-page .student-sifus .student-midle, .section-lineage .l-page .student-sifus .student-right {
     float: none;
     width: 100%;
     margin: 0 0 20px 0;
     max-width: 280px; }
   /* line 898, ../sass/components/_mobile.scss */
-  .node-type-sifu .l-page .primary-partright {
+  .node-type-sifu .l-page .primary-partright, .section-lineage .l-page .primary-partright {
     margin-left: 0;
     width: 232px;
     margin-top: 20px; }
