@@ -1030,8 +1030,9 @@ img, media {
     font-family: Trajan Pro Bold;
     font-size: 17px !important;
     text-transform: uppercase;
-    margin-bottom: 0; }
-  /* line 21, ../sass/components/_lineage.scss */
+    margin-bottom: 0;
+    font-weight: 700; }
+  /* line 22, ../sass/components/_lineage.scss */
   .section-lineage .l-main .l-content .schoolname-r p span a {
     color: #1c57a7; }
 
