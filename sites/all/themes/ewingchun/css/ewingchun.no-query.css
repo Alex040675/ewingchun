@@ -3574,76 +3574,76 @@ html.js .form-autocomplete {
     text-decoration: underline; }
 
 /* line 256, ../sass/components/_schools.scss */
-.section-school .schoolname-left {
+.section-school .schoolname-left, .section-lineage .schoolname-left {
   float: left; }
 /* line 259, ../sass/components/_schools.scss */
-.section-school .productname-left {
+.section-school .productname-left, .section-lineage .productname-left {
   float: left;
   height: auto;
   margin: 0 2% 0 0;
   padding: 20px 0 0;
   max-width: 50%; }
   /* line 268, ../sass/components/_schools.scss */
-  .section-school .productname-left .blogfpo {
+  .section-school .productname-left .blogfpo, .section-lineage .productname-left .blogfpo {
     float: left;
     height: auto;
     margin: 20px 0 0;
     width: 100%; }
     /* line 273, ../sass/components/_schools.scss */
-    .section-school .productname-left .blogfpo ul {
+    .section-school .productname-left .blogfpo ul, .section-lineage .productname-left .blogfpo ul {
       padding: 0; }
       /* line 275, ../sass/components/_schools.scss */
-      .section-school .productname-left .blogfpo ul li {
+      .section-school .productname-left .blogfpo ul li, .section-lineage .productname-left .blogfpo ul li {
         list-style: none;
         float: left;
         margin-right: 20px; }
 /* line 283, ../sass/components/_schools.scss */
-.section-school .schoolname-r {
+.section-school .schoolname-r, .section-lineage .schoolname-r {
   float: left;
   height: auto;
   max-width: 48%; }
   /* line 287, ../sass/components/_schools.scss */
-  .section-school .schoolname-r p {
+  .section-school .schoolname-r p, .section-lineage .schoolname-r p {
     color: #000;
     font-size: 14px;
     line-height: 15px !important;
     margin: 0; }
     /* line 292, ../sass/components/_schools.scss */
-    .section-school .schoolname-r p span {
+    .section-school .schoolname-r p span, .section-lineage .schoolname-r p span {
       color: #666;
       font-size: 14px; }
 /* line 298, ../sass/components/_schools.scss */
-.section-school .reviews-rightp {
+.section-school .reviews-rightp, .section-lineage .reviews-rightp {
   float: right;
   height: auto;
   margin: 25px 2% 20px 0;
   overflow: hidden;
   width: 28%; }
 /* line 305, ../sass/components/_schools.scss */
-.section-school .school-moreinfo {
+.section-school .school-moreinfo, .section-lineage .school-moreinfo {
   clear: both;
   margin-bottom: 30px;
   padding-top: 20px; }
   /* line 309, ../sass/components/_schools.scss */
-  .section-school .school-moreinfo h5 {
+  .section-school .school-moreinfo h5, .section-lineage .school-moreinfo h5 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 0; }
   /* line 316, ../sass/components/_schools.scss */
-  .section-school .school-moreinfo p {
+  .section-school .school-moreinfo p, .section-lineage .school-moreinfo p {
     margin: 0; }
 /* line 320, ../sass/components/_schools.scss */
-.section-school .comment-wrapper {
+.section-school .comment-wrapper, .section-lineage .comment-wrapper {
   clear: both;
   padding-top: 20px;
   border-top: 5px solid #f8f8f8; }
   /* line 324, ../sass/components/_schools.scss */
-  .section-school .comment-wrapper h2 {
+  .section-school .comment-wrapper h2, .section-lineage .comment-wrapper h2 {
     font-size: 17px !important; }
   /* line 328, ../sass/components/_schools.scss */
-  .section-school .comment-wrapper .form-type-item label {
+  .section-school .comment-wrapper .form-type-item label, .section-lineage .comment-wrapper .form-type-item label {
     float: left;
     margin-right: 10px; }
 
