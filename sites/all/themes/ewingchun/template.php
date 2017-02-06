@@ -479,8 +479,50 @@ function _wc_lineage_get_primary($node, $nid, $affilated) {
  *
  */
 function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) {
-//  Removed some form fields
+//  Removed and changes some form fields
   $form['wysiwyg'] = [];
   $form['locations'] = [];
   $form['user_relationship_node_access'] = [];
+  $form['field_are_you_a_sifu_']['#weight'] = '11';
+  $form['#submit'][] = 'ewch_submit';
+//  $form['field_my_sifu']['#type'] =  'select';
+//  $form['field_my_sifu']['#options'] = list_node_type();
+//  $form['field_my_sifu']['#default_value'] = variable_get('field_my_sifu', 1);
+
+}
+
+/**
+ *
+ */
+function ewch_submit(&$form) {
+  drupal_set_message(t('Alex Alex Alex Alex Alex Alex Alex '));
+}
+/**
+ * Get categories listing
+ * @param $vid
+ * @return array
+ */
+function list_node_type($tid) {
+  $options = array();
+  $options[] = '-None-';
+//  foreach ($terms as $key => $value) {
+//    $options[$value -> name] = $value -> name;
+//  }
+  $options[] = 'Alex';
+  return $options;
+}
+/**
+ * Implements hook_form_FORM_ID_alter()
+ * @see hook_form_FORM_ID_alter()
+ *
+ */
+function ewingchun_form_resource_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['phone'] = array(
+    '#title' => t('Phone number'),
+    '#type' => 'textfield',
+    '#weight' => '4',
+    '#size' => 15,
+    '#maxlength' => 15,
+    '#default_value' => $form['#node']->location['phone'],
+  );
 }

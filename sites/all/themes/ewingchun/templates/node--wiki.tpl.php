@@ -24,6 +24,16 @@
         <?php print render($content['field_category']); ?>
       </ul>
     </div><!-- .blogfpo -->
-    <div class="middleleftimg1"><?php print $node->field_emvideo[0]['view'] ?></div>
+    <?php if ($node->field_embeded_video['und'][0]['video_url']) : ?>
+    <div class="middleleftimg1"><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>" rel="lightvideo[|width:400px; height:300px;]" class="lightvideo emvideo-thumbnail-replacement" ><span></span><img src="<?php print file_create_url($node->field_embeded_video['und'][0]['thumbnail_path']) ?>" /></a>
+<!--      --><?php //print $node->field_emvideo[0]['view'] ?>
+      <?php
+      $videoid = $node->field_embeded_video['und'][0]['video_url'];
+      $content = file_get_contents($node->field_embeded_video['und'][0]['video_url']);
+      parse_str($content, $ytarr);
+      ?>
+      <p><a href="<?php echo $node->field_embeded_video['und'][0]['video_url']?>"><?php echo $ytarr['title']; ?></a></p>
+    </div>
+    <?php endif; ?>
   </div><!-- .productname-left -->
 </div>

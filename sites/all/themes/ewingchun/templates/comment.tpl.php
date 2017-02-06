@@ -91,7 +91,7 @@ $user = user_load($comment->uid);
 
     }
     else {
-      echo  print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
+      print '<img class="cert" src="/sites/default/files/default_user.jpg" alt="' . $user->name . '" />';
     }
     ?> </div>
   <div class="review-right">

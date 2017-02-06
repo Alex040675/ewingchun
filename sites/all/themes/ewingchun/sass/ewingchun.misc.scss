@@ -7,17 +7,35 @@
     }
   }
 }
+.middleleftimg1 {
+    clear: both;
+    position: relative;
+    span {
+      background: transparent url(../images/emvideo-play.png) no-repeat scroll 0 0;
+      display: block;
+      height: 50%;
+      left: 35%;
+      position: absolute;
+      bottom: 33%;
+      width: 33%;
+    }
+  }
 .page-wiki,
 .node-type-wiki {
   .l-content {
     width: 72%;
     float: right;
+    .middleleftimg1 {
+      span {
+        background-size: 205%;
+      }
+    }
   }
 }
 .page-taxonomy-term {
   .l-content {
     float: none;
-    width: 72%;
+    width: 100%;
     overflow: hidden;
   }
 }
@@ -30,10 +48,9 @@
     text-align: left;
     .l-content {
       h1 {
-        margin: 30px 0;
         background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
         background-size: 100% 10%;
-        padding-bottom: 35px;
+        padding-bottom: 10px;
       }
       p {
         line-height: 22px;
@@ -504,6 +521,16 @@ p,
     float: none!important;
     margin: 10px auto!important;
     width: 150px!important;
+  }
+  .page-taxonomy-term-84 {
+    .middleleftimg1 {
+      span {
+        background-size: 130%;
+        background-position: -150% 70%;
+        left: 30%;
+        bottom: 40%;
+      }
+    }
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
