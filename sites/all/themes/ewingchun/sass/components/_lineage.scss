@@ -2,12 +2,14 @@
   .l-main{
     .l-content{
       width: 100%;
-      h3{
-        color: #1c57a7;
-        font-family: Trajan Pro Bold;
-        font-size: 17px;
-        text-transform: uppercase;
-        margin-bottom: 0;
+      .view-taxonomy-term {
+        h3 {
+          color: #1c57a7;
+          font-family: Trajan Pro Bold;
+          font-size: 17px;
+          text-transform: uppercase;
+          margin-bottom: 0;
+        }
       }
       .schoolname-r{
         p{
