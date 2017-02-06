@@ -2,6 +2,11 @@
   .l-main{
     .l-content{
       width: 100%;
+      h1{
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
       .view-taxonomy-term {
         .views-row {
           .content,.bottom-biography{
