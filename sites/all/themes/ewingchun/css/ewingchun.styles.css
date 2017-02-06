@@ -1024,15 +1024,14 @@ img, media {
 /* line 3, ../sass/components/_lineage.scss */
 .section-lineage .l-main .l-content {
   width: 100%; }
-  /* line 7, ../sass/components/_lineage.scss */
-  .section-lineage .l-main .l-content .view-taxonomy-term .views-row .content, .section-lineage .l-main .l-content .view-taxonomy-term .views-row .bottom-biography
-  h3 {
+  /* line 8, ../sass/components/_lineage.scss */
+  .section-lineage .l-main .l-content .view-taxonomy-term .views-row .content h3, .section-lineage .l-main .l-content .view-taxonomy-term .views-row .bottom-biography h3 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
     font-size: 17px;
     text-transform: uppercase;
     margin-bottom: 0; }
-  /* line 20, ../sass/components/_lineage.scss */
+  /* line 21, ../sass/components/_lineage.scss */
   .section-lineage .l-main .l-content .schoolname-r p span a {
     color: #1c57a7; }
 
