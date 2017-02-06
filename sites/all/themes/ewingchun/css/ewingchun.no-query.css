@@ -1028,7 +1028,7 @@ img, media {
   .section-lineage .l-main .l-content .view-taxonomy-term .views-row .content h3, .section-lineage .l-main .l-content .view-taxonomy-term .views-row .bottom-biography h3 {
     color: #1c57a7;
     font-family: Trajan Pro Bold;
-    font-size: 17px;
+    font-size: 17px !important;
     text-transform: uppercase;
     margin-bottom: 0; }
   /* line 21, ../sass/components/_lineage.scss */
