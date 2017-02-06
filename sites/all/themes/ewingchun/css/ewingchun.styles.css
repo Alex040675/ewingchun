@@ -3888,49 +3888,49 @@ html.js .form-autocomplete {
     text-decoration: underline; }
 
 /* line 236, ../sass/components/_sifus.scss */
-.node-type-sifu .clear {
+.node-type-sifu .clear, .section-lineage .clear {
   clear: both; }
 /* line 239, ../sass/components/_sifus.scss */
-.node-type-sifu .common-namelist {
+.node-type-sifu .common-namelist, .section-lineage .common-namelist {
   clear: both; }
   /* line 241, ../sass/components/_sifus.scss */
-  .node-type-sifu .common-namelist ul {
+  .node-type-sifu .common-namelist ul, .section-lineage .common-namelist ul {
     padding: 0; }
     /* line 243, ../sass/components/_sifus.scss */
-    .node-type-sifu .common-namelist ul li {
+    .node-type-sifu .common-namelist ul li, .section-lineage .common-namelist ul li {
       list-style: none;
       display: inline;
       margin-right: 20px; }
 /* line 250, ../sass/components/_sifus.scss */
-.node-type-sifu .bottom-border {
+.node-type-sifu .bottom-border, .section-lineage .bottom-border {
   border: 5px solid #f8f8f8;
   float: left;
   margin: 29px 0 17px;
   width: 100%; }
 /* line 256, ../sass/components/_sifus.scss */
-.node-type-sifu .commonname {
+.node-type-sifu .commonname, .section-lineage .commonname {
   float: left;
   padding: 10px 0;
   width: 100%; }
   /* line 260, ../sass/components/_sifus.scss */
-  .node-type-sifu .commonname .common-left {
+  .node-type-sifu .commonname .common-left, .section-lineage .commonname .common-left {
     float: left;
     width: 35%;
     margin-right: 2%; }
     /* line 264, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .common-left img {
+    .node-type-sifu .commonname .common-left img, .section-lineage .commonname .common-left img {
       width: 100%;
       height: auto; }
   /* line 269, ../sass/components/_sifus.scss */
-  .node-type-sifu .commonname .common-midle {
+  .node-type-sifu .commonname .common-midle, .section-lineage .commonname .common-midle {
     float: left;
     width: 63%; }
     /* line 272, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .common-midle ul {
+    .node-type-sifu .commonname .common-midle ul, .section-lineage .commonname .common-midle ul {
       margin: 0;
       padding: 0; }
       /* line 275, ../sass/components/_sifus.scss */
-      .node-type-sifu .commonname .common-midle ul li {
+      .node-type-sifu .commonname .common-midle ul li, .section-lineage .commonname .common-midle ul li {
         color: #666;
         font-family: Arial;
         font-size: 14px;
@@ -3938,18 +3938,18 @@ html.js .form-autocomplete {
         list-style: none;
         margin-bottom: 8px; }
         /* line 282, ../sass/components/_sifus.scss */
-        .node-type-sifu .commonname .common-midle ul li span {
+        .node-type-sifu .commonname .common-midle ul li span, .section-lineage .commonname .common-midle ul li span {
           color: #000;
           font-family: Arial;
           font-size: 14px;
           font-weight: 700;
           padding: 0 0 15px; }
   /* line 292, ../sass/components/_sifus.scss */
-  .node-type-sifu .commonname .common-right {
+  .node-type-sifu .commonname .common-right, .section-lineage .commonname .common-right {
     float: left;
     width: 63%; }
     /* line 295, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .common-right .common-right-lft {
+    .node-type-sifu .commonname .common-right .common-right-lft, .section-lineage .commonname .common-right .common-right-lft {
       color: #000;
       float: left;
       font-family: Arial;
@@ -3957,128 +3957,128 @@ html.js .form-autocomplete {
       font-weight: 700;
       text-decoration: none; }
     /* line 303, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .common-right .common-right-2 {
+    .node-type-sifu .commonname .common-right .common-right-2, .section-lineage .commonname .common-right .common-right-2 {
       color: #666;
       font-family: Arial;
       font-size: 14px;
       font-weight: 400;
       text-decoration: none; }
   /* line 311, ../sass/components/_sifus.scss */
-  .node-type-sifu .commonname .comon-btom {
+  .node-type-sifu .commonname .comon-btom, .section-lineage .commonname .comon-btom {
     float: left;
     width: 63%;
     margin-top: 8px; }
     /* line 315, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .comon-btom p {
+    .node-type-sifu .commonname .comon-btom p, .section-lineage .commonname .comon-btom p {
       color: #000000;
       margin-top: 0;
       margin-bottom: 8px; }
     /* line 320, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .comon-btom a {
+    .node-type-sifu .commonname .comon-btom a, .section-lineage .commonname .comon-btom a {
       color: #666;
       font-size: 14px; }
     /* line 324, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .comon-btom span {
+    .node-type-sifu .commonname .comon-btom span, .section-lineage .commonname .comon-btom span {
       color: #000;
       font-family: Arial;
       font-size: 14px;
       font-weight: 700;
       padding: 0 0 15px; }
     /* line 331, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .comon-btom .dob-left {
+    .node-type-sifu .commonname .comon-btom .dob-left, .section-lineage .commonname .comon-btom .dob-left {
       float: left;
       margin-right: 30px; }
     /* line 335, ../sass/components/_sifus.scss */
-    .node-type-sifu .commonname .comon-btom .dob-right {
+    .node-type-sifu .commonname .comon-btom .dob-right, .section-lineage .commonname .comon-btom .dob-right {
       float: left; }
 /* line 340, ../sass/components/_sifus.scss */
-.node-type-sifu h3 {
+.node-type-sifu h3, .section-lineage h3 {
   text-transform: uppercase; }
 /* line 343, ../sass/components/_sifus.scss */
-.node-type-sifu .content {
+.node-type-sifu .content, .section-lineage .content {
   text-align: left; }
   /* line 345, ../sass/components/_sifus.scss */
-  .node-type-sifu .content .more-link {
+  .node-type-sifu .content .more-link, .section-lineage .content .more-link {
     font-size: 14px;
     text-align: left; }
 /* line 350, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-part {
+.node-type-sifu .primary-part, .section-lineage .primary-part {
   float: left;
   padding: 15px 0 0;
   width: 100%; }
   /* line 354, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-part .review-headingbg {
+  .node-type-sifu .primary-part .review-headingbg, .section-lineage .primary-part .review-headingbg {
     width: 100%; }
   /* line 357, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-part #more {
+  .node-type-sifu .primary-part #more, .section-lineage .primary-part #more {
     clear: both;
     padding: 0 2%; }
     /* line 361, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-part #more .bottom-biography h3 {
+    .node-type-sifu .primary-part #more .bottom-biography h3, .section-lineage .primary-part #more .bottom-biography h3 {
       margin-bottom: 0; }
     /* line 364, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-part #more .bottom-biography p {
+    .node-type-sifu .primary-part #more .bottom-biography p, .section-lineage .primary-part #more .bottom-biography p {
       margin-top: 0; }
     /* line 367, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-part #more .bottom-biography p.summary {
+    .node-type-sifu .primary-part #more .bottom-biography p.summary, .section-lineage .primary-part #more .bottom-biography p.summary {
       display: none; }
   /* line 372, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-part .drupal-links {
+  .node-type-sifu .primary-part .drupal-links, .section-lineage .primary-part .drupal-links {
     padding: 0 2%; }
     /* line 374, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-part .drupal-links a {
+    .node-type-sifu .primary-part .drupal-links a, .section-lineage .primary-part .drupal-links a {
       color: #1c57a7;
       font-family: Arial;
       font-size: 14px;
       font-weight: 400; }
   /* line 381, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-part #comment-form {
+  .node-type-sifu .primary-part #comment-form, .section-lineage .primary-part #comment-form {
     padding: 50px 2% 0 2%; }
     /* line 383, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-part #comment-form #edit-author--2 {
+    .node-type-sifu .primary-part #comment-form #edit-author--2, .section-lineage .primary-part #comment-form #edit-author--2 {
       clear: both;
       overflow: hidden; }
       /* line 386, ../sass/components/_sifus.scss */
-      .node-type-sifu .primary-part #comment-form #edit-author--2 label {
+      .node-type-sifu .primary-part #comment-form #edit-author--2 label, .section-lineage .primary-part #comment-form #edit-author--2 label {
         float: left;
         margin-right: 5px; }
       /* line 390, ../sass/components/_sifus.scss */
-      .node-type-sifu .primary-part #comment-form #edit-author--2 .username {
+      .node-type-sifu .primary-part #comment-form #edit-author--2 .username, .section-lineage .primary-part #comment-form #edit-author--2 .username {
         float: left; }
 /* line 396, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-center > .primary01 {
+.node-type-sifu .primary-center > .primary01, .section-lineage .primary-center > .primary01 {
   width: 70%; }
 /* line 399, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-part .primary-center .primary01 {
+.node-type-sifu .primary-part .primary-center .primary01, .section-lineage .primary-part .primary-center .primary01 {
   width: 100%; }
 /* line 402, ../sass/components/_sifus.scss */
-.node-type-sifu .primary01 {
+.node-type-sifu .primary01, .section-lineage .primary01 {
   background: #f8f8f8 none repeat scroll 0 0;
   overflow: hidden;
   height: auto;
   clear: both;
   padding: 0; }
   /* line 408, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary01 .lineage-text {
+  .node-type-sifu .primary01 .lineage-text, .section-lineage .primary01 .lineage-text {
     color: #666;
     font-family: Arial;
     font-size: 14px;
     margin-top: 10px;
     padding: 15px 10px; }
     /* line 414, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary01 .lineage-text a {
+    .node-type-sifu .primary01 .lineage-text a, .section-lineage .primary01 .lineage-text a {
       color: #666;
       font-family: Arial;
       font-size: 13px;
       text-decoration: none; }
   /* line 421, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary01 .mprimary {
+  .node-type-sifu .primary01 .mprimary, .section-lineage .primary01 .mprimary {
     float: left;
     line-height: 20px;
     padding-top: 10px;
     width: 100%; }
     /* line 426, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary01 .mprimary .primary01-left {
+    .node-type-sifu .primary01 .mprimary .primary01-left, .section-lineage .primary01 .mprimary .primary01-left {
       color: #17335b;
       float: left;
       font-family: Arial;
@@ -4087,7 +4087,7 @@ html.js .form-autocomplete {
       padding: 0 0 0 2%;
       width: 28%; }
     /* line 435, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary01 .mprimary .primary01-midle {
+    .node-type-sifu .primary01 .mprimary .primary01-midle, .section-lineage .primary01 .mprimary .primary01-midle {
       color: #17335b;
       float: left;
       font-family: Arial;
@@ -4096,7 +4096,7 @@ html.js .form-autocomplete {
       padding: 0;
       width: 50%; }
     /* line 444, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary01 .mprimary .primary01-rgt {
+    .node-type-sifu .primary01 .mprimary .primary01-rgt, .section-lineage .primary01 .mprimary .primary01-rgt {
       color: #17335b;
       float: right;
       font-family: Arial;
@@ -4105,10 +4105,10 @@ html.js .form-autocomplete {
       padding: 0;
       width: 20%; }
 /* line 455, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-center {
+.node-type-sifu .primary-center, .section-lineage .primary-center {
   clear: both; }
 /* line 458, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-top {
+.node-type-sifu .primary-top, .section-lineage .primary-top {
   background: transparent url("../images/primary-top.jpg") no-repeat scroll left top;
   background-size: 100% 100%;
   color: #1c57a7;
@@ -4121,14 +4121,14 @@ html.js .form-autocomplete {
   padding: 5px 0 0 2%;
   width: 68%; }
 /* line 471, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-partright {
+.node-type-sifu .primary-partright, .section-lineage .primary-partright {
   float: left;
   width: 26%;
   margin-left: 2%;
   background: transparent url("../images/lineage-bg.jpg") no-repeat scroll left top;
   height: 309px; }
   /* line 477, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-partright .contr-title {
+  .node-type-sifu .primary-partright .contr-title, .section-lineage .primary-partright .contr-title {
     color: #116201;
     font-family: TrajanProBold;
     font-size: 16px;
@@ -4137,7 +4137,7 @@ html.js .form-autocomplete {
     text-transform: uppercase;
     margin-top: 0; }
   /* line 486, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-partright .lineage1 {
+  .node-type-sifu .primary-partright .lineage1, .section-lineage .primary-partright .lineage1 {
     font-family: Arial;
     font-size: 12px;
     height: 230px;
@@ -4148,33 +4148,33 @@ html.js .form-autocomplete {
     width: 70%;
     background: url("../images/lineage-scroller-base.jpg") no-repeat scroll 102% top; }
 /* line 498, ../sass/components/_sifus.scss */
-.node-type-sifu .certification {
+.node-type-sifu .certification, .section-lineage .certification {
   clear: both;
   overflow: hidden;
   margin-bottom: 10px; }
   /* line 502, ../sass/components/_sifus.scss */
-  .node-type-sifu .certification .certification-left {
+  .node-type-sifu .certification .certification-left, .section-lineage .certification .certification-left {
     float: left;
     padding-top: 14px;
     width: 45%; }
   /* line 507, ../sass/components/_sifus.scss */
-  .node-type-sifu .certification .certification-right {
+  .node-type-sifu .certification .certification-right, .section-lineage .certification .certification-right {
     float: left;
     width: 55%; }
     /* line 510, ../sass/components/_sifus.scss */
-    .node-type-sifu .certification .certification-right ul {
+    .node-type-sifu .certification .certification-right ul, .section-lineage .certification .certification-right ul {
       padding: 0; }
       /* line 512, ../sass/components/_sifus.scss */
-      .node-type-sifu .certification .certification-right ul li {
+      .node-type-sifu .certification .certification-right ul li, .section-lineage .certification .certification-right ul li {
         float: left;
         margin-left: 3%;
         list-style: none; }
 /* line 520, ../sass/components/_sifus.scss */
-.node-type-sifu .primary-partleft {
+.node-type-sifu .primary-partleft, .section-lineage .primary-partleft {
   width: 70%;
   float: left; }
   /* line 523, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-partleft .primary-center {
+  .node-type-sifu .primary-partleft .primary-center, .section-lineage .primary-partleft .primary-center {
     background: #ededed none repeat scroll 0 0;
     float: left;
     height: auto;
@@ -4182,13 +4182,13 @@ html.js .form-autocomplete {
     overflow: hidden;
     width: 100%; }
     /* line 530, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-partleft .primary-center .primary02 {
+    .node-type-sifu .primary-partleft .primary-center .primary02, .section-lineage .primary-partleft .primary-center .primary02 {
       background: #ededed none repeat scroll 0 0;
       float: left;
       height: auto;
       width: 100%; }
       /* line 535, ../sass/components/_sifus.scss */
-      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-left {
+      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-left, .section-lineage .primary-partleft .primary-center .primary02 .primary02-left {
         color: #1c57a7;
         float: left;
         font-family: Arial;
@@ -4197,7 +4197,7 @@ html.js .form-autocomplete {
         padding: 7px 0 0 2%;
         width: 28%; }
       /* line 544, ../sass/components/_sifus.scss */
-      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-midle {
+      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-midle, .section-lineage .primary-partleft .primary-center .primary02 .primary02-midle {
         color: #666;
         float: left;
         font-family: Arial;
@@ -4207,7 +4207,7 @@ html.js .form-autocomplete {
         padding: 7px 0 0;
         width: 50%; }
       /* line 554, ../sass/components/_sifus.scss */
-      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-rgt {
+      .node-type-sifu .primary-partleft .primary-center .primary02 .primary02-rgt, .section-lineage .primary-partleft .primary-center .primary02 .primary02-rgt {
         color: #666;
         float: right;
         font-family: Arial;
@@ -4217,102 +4217,102 @@ html.js .form-autocomplete {
         padding: 7px 0 0;
         width: 20%; }
     /* line 565, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-partleft .primary-center .primary-bottom {
+    .node-type-sifu .primary-partleft .primary-center .primary-bottom, .section-lineage .primary-partleft .primary-center .primary-bottom {
       background: #F8F8F8;
       float: left;
       height: 7px;
       width: 100%; }
     /* line 571, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-partleft .primary-center .drupal-links {
+    .node-type-sifu .primary-partleft .primary-center .drupal-links, .section-lineage .primary-partleft .primary-center .drupal-links {
       margin: 20px 0 0 2%; }
     /* line 574, ../sass/components/_sifus.scss */
-    .node-type-sifu .primary-partleft .primary-center .comment-form {
+    .node-type-sifu .primary-partleft .primary-center .comment-form, .section-lineage .primary-partleft .primary-center .comment-form {
       padding: 2%; }
   /* line 578, ../sass/components/_sifus.scss */
-  .node-type-sifu .primary-partleft .primary-top {
+  .node-type-sifu .primary-partleft .primary-top, .section-lineage .primary-partleft .primary-top {
     width: 98%; }
 /* line 582, ../sass/components/_sifus.scss */
-.node-type-sifu .student-sifus {
+.node-type-sifu .student-sifus, .section-lineage .student-sifus {
   float: left;
   padding: 45px 0 0 2%;
   width: 98%; }
   /* line 586, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus h3 {
+  .node-type-sifu .student-sifus h3, .section-lineage .student-sifus h3 {
     margin: 0; }
   /* line 589, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .views-row {
+  .node-type-sifu .student-sifus .views-row, .section-lineage .student-sifus .views-row {
     clear: both; }
   /* line 592, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .views-row-odd {
+  .node-type-sifu .student-sifus .views-row-odd, .section-lineage .student-sifus .views-row-odd {
     background: #f9f9f9 none repeat scroll 0 0;
     padding: 6px 5px;
     border-bottom: 1px solid #e1e1e1;
     border-top: 1px solid #e1e1e1; }
   /* line 598, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .views-row-even {
+  .node-type-sifu .student-sifus .views-row-even, .section-lineage .student-sifus .views-row-even {
     padding: 6px 5px; }
   /* line 601, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .student-titleleft {
+  .node-type-sifu .student-sifus .student-titleleft, .section-lineage .student-sifus .student-titleleft {
     float: left; }
   /* line 604, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .student-titleright {
+  .node-type-sifu .student-sifus .student-titleright, .section-lineage .student-sifus .student-titleright {
     float: right; }
   /* line 607, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .student-left {
+  .node-type-sifu .student-sifus .student-left, .section-lineage .student-sifus .student-left {
     float: left;
     width: 31%;
     margin-right: 2%; }
     /* line 611, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-left .views-field-title {
+    .node-type-sifu .student-sifus .student-left .views-field-title, .section-lineage .student-sifus .student-left .views-field-title {
       /*a::before{
         color: #1c57a7;
         content: "- ";
       }*/ }
     /* line 617, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-left .student-title {
+    .node-type-sifu .student-sifus .student-left .student-title, .section-lineage .student-sifus .student-left .student-title {
       border-bottom: 1px solid #ededed;
       float: left;
       margin-right: 2%;
       width: 98%; }
   /* line 624, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .student-midle {
+  .node-type-sifu .student-sifus .student-midle, .section-lineage .student-sifus .student-midle {
     float: left;
     width: 31%;
     margin-right: 2%; }
     /* line 629, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-midle .views-field-title a::before {
+    .node-type-sifu .student-sifus .student-midle .views-field-title a::before, .section-lineage .student-sifus .student-midle .views-field-title a::before {
       color: #1c57a7;
       content: "- "; }
     /* line 634, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-midle .student-midle-title {
+    .node-type-sifu .student-sifus .student-midle .student-midle-title, .section-lineage .student-sifus .student-midle .student-midle-title {
       border-bottom: 1px solid #ededed;
       overflow: hidden; }
     /* line 638, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-midle .student-midle-titleleft {
+    .node-type-sifu .student-sifus .student-midle .student-midle-titleleft, .section-lineage .student-sifus .student-midle .student-midle-titleleft {
       float: left; }
     /* line 641, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-midle .student-midle-titleright {
+    .node-type-sifu .student-sifus .student-midle .student-midle-titleright, .section-lineage .student-sifus .student-midle .student-midle-titleright {
       float: right; }
   /* line 645, ../sass/components/_sifus.scss */
-  .node-type-sifu .student-sifus .student-right {
+  .node-type-sifu .student-sifus .student-right, .section-lineage .student-sifus .student-right {
     float: left;
     width: 33%; }
     /* line 649, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-right .views-field-title a::before {
+    .node-type-sifu .student-sifus .student-right .views-field-title a::before, .section-lineage .student-sifus .student-right .views-field-title a::before {
       color: #1c57a7;
       content: "- "; }
     /* line 654, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-right .student-right-title {
+    .node-type-sifu .student-sifus .student-right .student-right-title, .section-lineage .student-sifus .student-right .student-right-title {
       border-bottom: 1px solid #ededed;
       overflow: hidden; }
       /* line 657, ../sass/components/_sifus.scss */
-      .node-type-sifu .student-sifus .student-right .student-right-title .student-right-titleleft {
+      .node-type-sifu .student-sifus .student-right .student-right-title .student-right-titleleft, .section-lineage .student-sifus .student-right .student-right-title .student-right-titleleft {
         float: left; }
     /* line 661, ../sass/components/_sifus.scss */
-    .node-type-sifu .student-sifus .student-right .student-midle-titleright {
+    .node-type-sifu .student-sifus .student-right .student-midle-titleright, .section-lineage .student-sifus .student-right .student-midle-titleright {
       float: right; }
 /* line 666, ../sass/components/_sifus.scss */
-.node-type-sifu .add {
+.node-type-sifu .add, .section-lineage .add {
   background: #AFAFAF;
   border: 0 none;
   color: #fff !important;
@@ -4327,10 +4327,10 @@ html.js .form-autocomplete {
   width: 62px;
   border-radius: 4px; }
 /* line 681, ../sass/components/_sifus.scss */
-.node-type-sifu .add:hover {
+.node-type-sifu .add:hover, .section-lineage .add:hover {
   background: #404040; }
 /* line 684, ../sass/components/_sifus.scss */
-.node-type-sifu .primary02-left {
+.node-type-sifu .primary02-left, .section-lineage .primary02-left {
   color: #1c57a7;
   float: left;
   font-family: Arial;
@@ -4339,7 +4339,7 @@ html.js .form-autocomplete {
   padding: 7px 0 0 2%;
   width: 28%; }
 /* line 693, ../sass/components/_sifus.scss */
-.node-type-sifu .primary02-midle {
+.node-type-sifu .primary02-midle, .section-lineage .primary02-midle {
   color: #666;
   float: left;
   font-family: Arial;
@@ -4349,7 +4349,7 @@ html.js .form-autocomplete {
   padding: 7px 0 0;
   width: 50%; }
 /* line 703, ../sass/components/_sifus.scss */
-.node-type-sifu .primary02-rgt {
+.node-type-sifu .primary02-rgt, .section-lineage .primary02-rgt {
   color: #666;
   float: right;
   font-family: Arial;
@@ -4359,40 +4359,40 @@ html.js .form-autocomplete {
   padding: 7px 0 0;
   width: 20%; }
 /* line 713, ../sass/components/_sifus.scss */
-.node-type-sifu .comments {
+.node-type-sifu .comments, .section-lineage .comments {
   padding: 0 2%; }
   /* line 715, ../sass/components/_sifus.scss */
-  .node-type-sifu .comments .centerleft {
+  .node-type-sifu .comments .centerleft, .section-lineage .comments .centerleft {
     margin-left: 1%; }
   /* line 718, ../sass/components/_sifus.scss */
-  .node-type-sifu .comments .review-left {
+  .node-type-sifu .comments .review-left, .section-lineage .comments .review-left {
     width: 9%;
     margin-left: 1%; }
 /* line 724, ../sass/components/_sifus.scss */
-.node-type-sifu #edit-field-profile-img-und-table th {
+.node-type-sifu #edit-field-profile-img-und-table th, .section-lineage #edit-field-profile-img-und-table th {
   padding: 10px; }
 /* line 727, ../sass/components/_sifus.scss */
-.node-type-sifu #edit-field-profile-img-und-table .image-preview {
+.node-type-sifu #edit-field-profile-img-und-table .image-preview, .section-lineage #edit-field-profile-img-und-table .image-preview {
   float: left;
   padding: 10px 10px 10px 0;
   text-align: center;
   width: 20%; }
 /* line 733, ../sass/components/_sifus.scss */
-.node-type-sifu #edit-field-profile-img-und-table .image-widget-data {
+.node-type-sifu #edit-field-profile-img-und-table .image-widget-data, .section-lineage #edit-field-profile-img-und-table .image-widget-data {
   float: left;
   width: 70%;
   padding-left: 2%;
   border-left: 1px solid #666;
   margin-top: 10px; }
   /* line 739, ../sass/components/_sifus.scss */
-  .node-type-sifu #edit-field-profile-img-und-table .image-widget-data .form-text {
+  .node-type-sifu #edit-field-profile-img-und-table .image-widget-data .form-text, .section-lineage #edit-field-profile-img-und-table .image-widget-data .form-text {
     width: 95%; }
 /* line 743, ../sass/components/_sifus.scss */
-.node-type-sifu #edit-field-profile-img-und-table tr {
+.node-type-sifu #edit-field-profile-img-und-table tr, .section-lineage #edit-field-profile-img-und-table tr {
   position: relative;
   height: 170px; }
   /* line 746, ../sass/components/_sifus.scss */
-  .node-type-sifu #edit-field-profile-img-und-table tr .form-submit {
+  .node-type-sifu #edit-field-profile-img-und-table tr .form-submit, .section-lineage #edit-field-profile-img-und-table tr .form-submit {
     /*position: absolute;
     left: 25%;*/
     background: #1D58A8;
@@ -4402,23 +4402,23 @@ html.js .form-autocomplete {
     padding: 3px 7px;
     border-radius: 4px; }
 /* line 758, ../sass/components/_sifus.scss */
-.node-type-sifu #field-lineage-information-values {
+.node-type-sifu #field-lineage-information-values, .section-lineage #field-lineage-information-values {
   width: 100%; }
   /* line 760, ../sass/components/_sifus.scss */
-  .node-type-sifu #field-lineage-information-values .field-type-node-reference {
+  .node-type-sifu #field-lineage-information-values .field-type-node-reference, .section-lineage #field-lineage-information-values .field-type-node-reference {
     float: left;
     margin-right: 20px;
     margin-top: 10px; }
   /* line 765, ../sass/components/_sifus.scss */
-  .node-type-sifu #field-lineage-information-values .field-type-taxonomy-term-reference {
+  .node-type-sifu #field-lineage-information-values .field-type-taxonomy-term-reference, .section-lineage #field-lineage-information-values .field-type-taxonomy-term-reference {
     margin-top: 10px; }
   /* line 768, ../sass/components/_sifus.scss */
-  .node-type-sifu #field-lineage-information-values .field-type-list-boolean {
+  .node-type-sifu #field-lineage-information-values .field-type-list-boolean, .section-lineage #field-lineage-information-values .field-type-list-boolean {
     float: left;
     clear: both;
     margin-top: 10px; }
   /* line 773, ../sass/components/_sifus.scss */
-  .node-type-sifu #field-lineage-information-values .form-submit {
+  .node-type-sifu #field-lineage-information-values .form-submit, .section-lineage #field-lineage-information-values .form-submit {
     float: left;
     clear: both;
     margin: 10px 0; }
