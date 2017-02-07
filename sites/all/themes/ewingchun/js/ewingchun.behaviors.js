@@ -73,12 +73,6 @@
             });
         $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
-        if($(".view-Blogs:contains(.view-empty)")){
-            $(".l-content").addClass("empty");
-        }
-         else{
-            $(".l-content").removeClass("empty");
-        };
 
     }
   };
