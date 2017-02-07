@@ -1001,7 +1001,7 @@ img, media {
   padding-top: 20px; }
 
 /* line 469, ../sass/components/_blogs.scss */
-.page-blog .empty .block-views-exp-blogs-page-1 {
+.page-blog .empty #block-views-exp-blogs-page-1 {
   margin-top: 20px; }
 
 /* line 2, ../sass/components/_forum.scss */
