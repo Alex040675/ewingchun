@@ -397,6 +397,68 @@ p,
     }
   }
 }
+.page-node-166 {
+  .banner-top > div {
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 49%;
+  }
+  .banner-top {
+    margin-bottom: 20px;
+  }
+  .banner-top-left {
+    color: #8d8d8d;
+    float: left;
+    font-size: 15px;
+    font-weight: 700;
+    height: auto;
+    line-height: 25px;
+    padding: 15px 0 0;
+    text-align: left;
+  }
+  .banner-top-right {
+    background: transparent url(../images/bg01.jpg) repeat-x scroll left center;
+    color: #052756;
+    float: right;
+    margin: 10px 0 0;
+    padding: 15px 2%;
+    .tocontribute {
+      border-right: 1px solid #c4c4c4;
+      color: #17335b;
+      float: left;
+      font-weight: 700;
+      line-height: 20px;
+      padding: 12px 0;
+      width: 40%;
+    }
+    .loginbtn {
+      background: #aeaeae none repeat scroll 0 0;
+      border-radius: 3px;
+      color: white;
+      float: right;
+      line-height: 37px;
+      margin: 15px 1%;
+      padding: 0 6%;
+      text-decoration: none;
+    }
+    .register-link {
+      background: #1C57A7;
+      border: medium none;
+      border-radius: 5px;
+      color: #fff !important;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+      float: left;
+      font-size: 14px !important;
+      height: 37px;
+      line-height: 37px;
+      margin: 15px 0 0 6%;
+      text-align: center;
+      width: 23%;
+    }
+  }
+}
 @media screen and (max-width: 320px) {
   .page-wiki,
   .node-type-wiki {
@@ -496,6 +558,14 @@ p,
       }
     }
   }
+  .page-node-166 {
+    .register-link {
+      width: 22%!important;
+    }
+    .loginbtn {
+
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .page-wiki,
@@ -532,6 +602,12 @@ p,
       }
     }
   }
+  .page-node-166 {
+    .banner-top > div {
+      width: 100%!important;
+      float: none;
+    }
+  }
 }
 @media (min-width: 481px) and (max-width: 768px) {
   .page-wiki,
@@ -547,6 +623,11 @@ p,
     }
     .views-widget-filter-keys {
       width: 64% !important;
+    }
+  }
+  .page-node-166 {
+    .register-link {
+      width: 18%!important;
     }
   }
 }

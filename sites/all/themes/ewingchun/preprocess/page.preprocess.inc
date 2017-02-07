@@ -12,7 +12,6 @@ function ewingchun_preprocess_page(&$variables) {
     global $user;
     // Move some variables to the top level for themer convenience and template cleanliness.
     $variables['show_messages'] = $variables['page']['#show_messages'];
-
     foreach (system_region_list($GLOBALS['theme'], REGIONS_ALL, FALSE) as $region_key) {
       if (!isset($variables['page'][$region_key])) {
         $variables['page'][$region_key] = array();
@@ -53,10 +52,10 @@ function ewingchun_preprocess_page(&$variables) {
       $variables['theme_hook_suggestions'] = $suggestions;
     }
 //  Added login form for anonym if add node
-    global $user;
-    if (($variables['node']->nid) and ($variables['node']->nid == '166') and ($variables['user']->uid) == '0') {
-      $variables['page']['content']['system_main'][] = drupal_get_form('user_login');
-    }
+//    global $user;
+//    if (($variables['node']->nid) and ($variables['node']->nid == '166') and ($variables['user']->uid) == '0') {
+//      $variables['page']['content']['system_main'][] = drupal_get_form('user_login');
+//    }
 //  Changes ../user/..
   if ((arg(0) == 'user') and ($variables['page']['content']['system_main']['user_relationships_ui'])) {
     $variables['page']['content']['system_main']['user_relationships_ui']['#title'] = '';

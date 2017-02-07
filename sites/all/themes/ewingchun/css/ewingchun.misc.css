@@ -483,6 +483,60 @@ p,
   .section-add-your-stuff .node--page--full p a {
     margin-left: -30px; }
 
+.page-node-166 .banner-top > div {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 49%; }
+.page-node-166 .banner-top {
+  margin-bottom: 20px; }
+.page-node-166 .banner-top-left {
+  color: #8d8d8d;
+  float: left;
+  font-size: 15px;
+  font-weight: 700;
+  height: auto;
+  line-height: 25px;
+  padding: 15px 0 0;
+  text-align: left; }
+.page-node-166 .banner-top-right {
+  background: transparent url(../images/bg01.jpg) repeat-x scroll left center;
+  color: #052756;
+  float: right;
+  margin: 10px 0 0;
+  padding: 15px 2%; }
+  .page-node-166 .banner-top-right .tocontribute {
+    border-right: 1px solid #c4c4c4;
+    color: #17335b;
+    float: left;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 12px 0;
+    width: 40%; }
+  .page-node-166 .banner-top-right .loginbtn {
+    background: #aeaeae none repeat scroll 0 0;
+    border-radius: 3px;
+    color: white;
+    float: right;
+    line-height: 37px;
+    margin: 15px 1%;
+    padding: 0 6%;
+    text-decoration: none; }
+  .page-node-166 .banner-top-right .register-link {
+    background: #1C57A7;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff !important;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    float: left;
+    font-size: 14px !important;
+    height: 37px;
+    line-height: 37px;
+    margin: 15px 0 0 6%;
+    text-align: center;
+    width: 23%; }
+
 @media screen and (max-width: 320px) {
   .page-wiki .form-type-textfield,
   .node-type-wiki .form-type-textfield {
@@ -572,7 +626,10 @@ p,
       line-height: 15px; }
     .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right div, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right p, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right ul, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right li, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right a {
       font-size: 11px !important;
-      line-height: 15px; } }
+      line-height: 15px; }
+
+  .page-node-166 .register-link {
+    width: 22% !important; } }
 @media screen and (max-width: 768px) {
   .page-wiki .block--views-wiki-categories-block h2,
   .page-wiki .block--menu-menu-encyclopedia-categories h2,
@@ -608,7 +665,11 @@ p,
     background-size: 130%;
     background-position: -150% 70%;
     left: 30%;
-    bottom: 40%; } }
+    bottom: 40%; }
+
+  .page-node-166 .banner-top > div {
+    width: 100% !important;
+    float: none; } }
 @media (min-width: 481px) and (max-width: 768px) {
   .page-wiki .l-content,
   .node-type-wiki .l-content {
@@ -621,6 +682,9 @@ p,
     font-size: 11px !important; }
   .page-wiki .views-widget-filter-keys,
   .node-type-wiki .views-widget-filter-keys {
-    width: 64% !important; } }
+    width: 64% !important; }
+
+  .page-node-166 .register-link {
+    width: 18% !important; } }
 
 /*# sourceMappingURL=ewingchun.misc.css.map */

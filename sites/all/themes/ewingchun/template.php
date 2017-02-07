@@ -484,19 +484,18 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['locations'] = [];
   $form['user_relationship_node_access'] = [];
   $form['field_are_you_a_sifu_']['#weight'] = '11';
-  $form['#submit'][] = 'ewch_submit';
+//  $form['#submit'][] = 'ewch_submit';
 //  $form['field_my_sifu']['#type'] =  'select';
 //  $form['field_my_sifu']['#options'] = list_node_type();
 //  $form['field_my_sifu']['#default_value'] = variable_get('field_my_sifu', 1);
-
 }
 
 /**
  *
  */
-function ewch_submit(&$form) {
-  drupal_set_message(t('Alex Alex Alex Alex Alex Alex Alex '));
-}
+//function ewch_submit(&$form) {
+//  drupal_set_message(t('Alex Alex Alex Alex Alex Alex Alex '));
+//}
 /**
  * Get categories listing
  * @param $vid
