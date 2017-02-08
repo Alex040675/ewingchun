@@ -96,7 +96,12 @@
 <?php if ($node->location['country']) : ?>
 <p>Country: <span><?php print strtoupper ($node->location['country']); ?></span></p>
 <?php endif; ?>
-<p>Directions: <span>Try to</span> <?php print l('Map it', 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . $node->location['latitude'] . '+' . $node->location['longitude']); ?></p>
+<?php if ($node->location['latitude'] > '0' or $node->location['longitude'] > '0') : ?>
+  <p>Directions: <span>Try to</span> <?php print l('Map it', 'http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=' . $node->location['latitude'] . '+' . $node->location['longitude']); ?></p>
+<?php else : ?>
+  <p>Directions: <span>Try to</span><span> Map it</span></p>
+  <div class="description-map-it"><p>To view map please enter the latitude and longitude of your school on the page content editing.</p></div>
+<?php endif; ?>
 <!--<span><p>Average Rating:
     <?php
   /* print render($content['field_rating']); */
