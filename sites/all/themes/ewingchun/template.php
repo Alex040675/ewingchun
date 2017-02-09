@@ -484,31 +484,7 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['locations'] = [];
   $form['user_relationship_node_access'] = [];
   $form['field_are_you_a_sifu_']['#weight'] = '11';
-//  $form['#submit'][] = 'ewch_submit';
-//  $form['field_my_sifu']['#type'] =  'select';
-//  $form['field_my_sifu']['#options'] = list_node_type();
-//  $form['field_my_sifu']['#default_value'] = variable_get('field_my_sifu', 1);
-}
-
-/**
- *
- */
-//function ewch_submit(&$form) {
-//  drupal_set_message(t('Alex Alex Alex Alex Alex Alex Alex '));
-//}
-/**
- * Get categories listing
- * @param $vid
- * @return array
- */
-function list_node_type($tid) {
-  $options = array();
-  $options[] = '-None-';
-//  foreach ($terms as $key => $value) {
-//    $options[$value -> name] = $value -> name;
-//  }
-  $options[] = 'Alex';
-  return $options;
+  $form['field_years_in_wing_chun'] = [];
 }
 /**
  * Implements hook_form_FORM_ID_alter()

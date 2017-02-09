@@ -82,12 +82,13 @@ if ($variables['user_profile']['field_my_sifu']['#items'][0]['nid']) {
 <a href = "../<?php print $sifu_path; ?>"><?php print $sifu_title; ?></a>
 </li>
 <li><span>My School:</span> 
-<?php 
-if ($variables['field_my_school'][0]['value']) {
-  $school_title = $variables['user_profile']['field_my_school']['#items'][0]['value'];
-  print $school_title;
-}
+<?php
+  if ($variables['user_profile']['field_my_school']['#items'][0]['nid']) {
+    $schol_title = $variables['user_profile']['field_my_school'][0]['#title'];
+    $schol_path = $variables['user_profile']['field_my_school'][0]['#href'];
+  }
 ?>
+  <a href = "../<?php print $schol_path; ?>"><?php print $schol_title; ?></a>
 </li>
 </ul>
 </div>
