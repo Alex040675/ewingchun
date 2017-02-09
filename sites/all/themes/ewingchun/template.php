@@ -486,18 +486,3 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['field_are_you_a_sifu_']['#weight'] = '11';
   $form['field_years_in_wing_chun'] = [];
 }
-/**
- * Implements hook_form_FORM_ID_alter()
- * @see hook_form_FORM_ID_alter()
- *
- */
-function ewingchun_form_resource_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['phone'] = array(
-    '#title' => t('Phone number'),
-    '#type' => 'textfield',
-    '#weight' => '4',
-    '#size' => 15,
-    '#maxlength' => 15,
-    '#default_value' => $form['#node']->location['phone'],
-  );
-}
