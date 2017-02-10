@@ -5141,14 +5141,14 @@ html.js .form-autocomplete {
   background: url("../images/leftleave.jpg") no-repeat scroll left top, url("../images/rightleave.jpg") no-repeat right top;
   background-color: #EBE9E1; }
 
-/* line 29, ../sass/ewingchun.styles.scss */
-body .l-content a {
+/* line 28, ../sass/ewingchun.styles.scss */
+body a {
   color: #1c57a7;
   font-family: Arial;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400; }
 
-/* line 37, ../sass/ewingchun.styles.scss */
+/* line 35, ../sass/ewingchun.styles.scss */
 h1 {
   color: #1c57a7;
   font-family: Trajan Pro Bold;
@@ -5156,7 +5156,7 @@ h1 {
   margin-bottom: 0;
   font-weight: normal; }
 
-/* line 44, ../sass/ewingchun.styles.scss */
+/* line 42, ../sass/ewingchun.styles.scss */
 h2 {
   color: #1c57a7;
   font-family: Trajan Pro Bold;
@@ -5164,7 +5164,7 @@ h2 {
   font-weight: normal;
   line-height: 22px; }
 
-/* line 51, ../sass/ewingchun.styles.scss */
+/* line 49, ../sass/ewingchun.styles.scss */
 h3 {
   color: #1c57a7;
   font-family: Trajan Pro Bold;
