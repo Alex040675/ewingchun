@@ -1,13 +1,17 @@
+/* line 2, ../sass/ewingchun.misc.scss */
 .page-user .wc_blocks-friend_images,
 .page-user .block--user-relationship-blocks-my-1 {
   clear: both; }
+  /* line 5, ../sass/ewingchun.misc.scss */
   .page-user .wc_blocks-friend_images .user-profile-item__label,
   .page-user .block--user-relationship-blocks-my-1 .user-profile-item__label {
     display: none !important; }
 
+/* line 10, ../sass/ewingchun.misc.scss */
 .middleleftimg1 {
   clear: both;
   position: relative; }
+  /* line 13, ../sass/ewingchun.misc.scss */
   .middleleftimg1 span {
     background: transparent url(../images/emvideo-play.png) no-repeat scroll 0 0;
     display: block;
@@ -17,39 +21,47 @@
     bottom: 33%;
     width: 33%; }
 
+/* line 25, ../sass/ewingchun.misc.scss */
 .page-wiki .l-content,
 .node-type-wiki .l-content {
   width: 72%;
   float: right; }
+  /* line 29, ../sass/ewingchun.misc.scss */
   .page-wiki .l-content .middleleftimg1 span,
   .node-type-wiki .l-content .middleleftimg1 span {
     background-size: 205%; }
 
+/* line 36, ../sass/ewingchun.misc.scss */
 .page-taxonomy-term .l-content {
   float: none;
   width: 100%;
   overflow: hidden; }
 
+/* line 45, ../sass/ewingchun.misc.scss */
 .page-wiki .l-main,
 .node-type-wiki .l-main,
 .page-taxonomy-term .l-main {
   width: 94%;
   margin: 0 auto;
   text-align: left; }
+  /* line 50, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content h1,
   .node-type-wiki .l-main .l-content h1,
   .page-taxonomy-term .l-main .l-content h1 {
     background: url(../images/encyclopedia-right.jpg) no-repeat center bottom;
     background-size: 100% 10%;
     padding-bottom: 10px; }
+  /* line 55, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content p,
   .node-type-wiki .l-main .l-content p,
   .page-taxonomy-term .l-main .l-content p {
     line-height: 22px; }
+  /* line 58, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content h1:first-letter,
   .node-type-wiki .l-main .l-content h1:first-letter,
   .page-taxonomy-term .l-main .l-content h1:first-letter {
     font-size: 28px; }
+  /* line 61, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .encyclopedia-text,
   .node-type-wiki .l-main .l-content .encyclopedia-text,
   .page-taxonomy-term .l-main .l-content .encyclopedia-text {
@@ -58,16 +70,19 @@
     color: #8d8d8d;
     font-weight: 700;
     line-height: 28px; }
+  /* line 68, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .encyclopediacategories-center,
   .node-type-wiki .l-main .l-content .encyclopediacategories-center,
   .page-taxonomy-term .l-main .l-content .encyclopediacategories-center {
     width: 70%;
     float: left; }
+  /* line 72, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .encyclopediacategories-right,
   .node-type-wiki .l-main .l-content .encyclopediacategories-right,
   .page-taxonomy-term .l-main .l-content .encyclopediacategories-right {
     width: 28%;
     float: right; }
+    /* line 75, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1,
     .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
     ,
@@ -82,6 +97,7 @@
       color: #000;
       padding: 5px 0 0;
       border-top: solid 1px #FFF; }
+      /* line 83, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 p,
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 .field,
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
@@ -103,6 +119,7 @@
         font-size: 12px;
         padding: 0 3% 7px;
         margin: 0; }
+      /* line 89, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul,
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
       ul,
@@ -115,6 +132,7 @@
         margin: 10px 0;
         list-style: disc;
         padding: 0 5px 0 12%; }
+        /* line 93, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
         .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
         ul li,
@@ -125,14 +143,17 @@
         .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
         ul li {
           padding-bottom: 5px; }
+    /* line 98, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
     .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
     .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left {
       border-top: solid 1px #FFF; }
+      /* line 100, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left ul {
         padding-left: 3%; }
+      /* line 103, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo {
@@ -141,23 +162,28 @@
         color: #000;
         padding: 5px 0 0;
         border-top: solid 1px #FFF; }
+  /* line 113, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .view-wiki .view-filters,
   .node-type-wiki .l-main .l-content .view-wiki .view-filters,
   .page-taxonomy-term .l-main .l-content .view-wiki .view-filters {
     margin: 30px 0; }
+    /* line 115, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys,
     .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys,
     .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys {
       width: 50%;
       padding: 0; }
+      /* line 118, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label,
       .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label,
       .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys label {
         float: none; }
+      /* line 121, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget,
       .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget,
       .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget {
         margin: 1% 1% 1% 0; }
+        /* line 123, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item,
         .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item,
         .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item {
@@ -165,6 +191,7 @@
           background: url(../images/keyword-txtbox.jpg) no-repeat left;
           padding: 5px;
           background-size: 100% 100%; }
+          /* line 128, ../sass/ewingchun.misc.scss */
           .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input,
           .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input,
           .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .views-widget .form-item input {
@@ -175,23 +202,28 @@
             width: 96%;
             padding: 0;
             margin: 0; }
+      /* line 139, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield,
       .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield,
       .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-widget-filter-keys .form-type-textfield {
         display: table;
         width: auto; }
+    /* line 144, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button,
     .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button,
     .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-submit-button {
       padding-top: 23px; }
+      /* line 146, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit,
       .node-type-wiki .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit,
       .page-taxonomy-term .l-main .l-content .view-wiki .view-filters .views-submit-button .form-submit {
         margin: 0; }
+  /* line 151, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .view-wiki .view-content,
   .node-type-wiki .l-main .l-content .view-wiki .view-content,
   .page-taxonomy-term .l-main .l-content .view-wiki .view-content {
     margin-top: 20px; }
+    /* line 153, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-wiki .view-content h3,
     .node-type-wiki .l-main .l-content .view-wiki .view-content h3,
     .page-taxonomy-term .l-main .l-content .view-wiki .view-content h3 {
@@ -201,20 +233,24 @@
       font-size: 17px;
       font-weight: normal;
       line-height: 22px; }
+    /* line 161, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-wiki .view-content h3:first-letter,
     .node-type-wiki .l-main .l-content .view-wiki .view-content h3:first-letter,
     .page-taxonomy-term .l-main .l-content .view-wiki .view-content h3:first-letter {
       font-size: 20px; }
+    /* line 164, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-wiki .view-content ul,
     .node-type-wiki .l-main .l-content .view-wiki .view-content ul,
     .page-taxonomy-term .l-main .l-content .view-wiki .view-content ul {
       margin: 0;
       padding-left: 3%; }
+      /* line 167, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .view-wiki .view-content ul li,
       .node-type-wiki .l-main .l-content .view-wiki .view-content ul li,
       .page-taxonomy-term .l-main .l-content .view-wiki .view-content ul li {
         list-style: none;
         line-height: 25px; }
+  /* line 174, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-content .view-taxonomy-term,
   .node-type-wiki .l-main .l-content .view-taxonomy-term,
   .page-taxonomy-term .l-main .l-content .view-taxonomy-term {
@@ -223,21 +259,25 @@
     height: auto;
     margin: 10px 0 0;
     padding: 15px 0 0; }
+    /* line 180, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-taxonomy-term .field__label,
     .node-type-wiki .l-main .l-content .view-taxonomy-term .field__label,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term .field__label {
       font-weight: normal;
       display: none; }
+    /* line 184, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-taxonomy-term ul,
     .node-type-wiki .l-main .l-content .view-taxonomy-term ul,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term ul {
       padding-left: 0; }
+    /* line 187, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-taxonomy-term .views-row,
     .node-type-wiki .l-main .l-content .view-taxonomy-term .views-row,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term .views-row {
       list-style-type: none;
       overflow: hidden;
       margin-bottom: 20px; }
+    /* line 192, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-taxonomy-term h3,
     .node-type-wiki .l-main .l-content .view-taxonomy-term h3,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term h3 {
@@ -245,16 +285,19 @@
       font-family: Arial;
       text-transform: capitalize;
       color: #666; }
+    /* line 199, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .view-taxonomy-term .encyclopediacategories-center p,
     .node-type-wiki .l-main .l-content .view-taxonomy-term .encyclopediacategories-center p,
     .page-taxonomy-term .l-main .l-content .view-taxonomy-term .encyclopediacategories-center p {
       margin: 3px 0 !important; }
+  /* line 205, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main .l-region--sidebar-first,
   .node-type-wiki .l-main .l-region--sidebar-first,
   .page-taxonomy-term .l-main .l-region--sidebar-first {
     width: 25%;
     float: left;
     border-right: solid 1px #ededed; }
+    /* line 209, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
     .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories,
     .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block,
@@ -264,6 +307,7 @@
       margin: 25px 0 0;
       background: url(../images/encyclopediacategories-headingbg.png) no-repeat right top;
       background-size: 100% 10%; }
+      /* line 211, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block li,
       .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories li,
       .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block li,
@@ -271,6 +315,7 @@
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block li,
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories li {
         color: #1c57a7; }
+      /* line 214, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
       .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row,
       .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
@@ -278,6 +323,7 @@
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block .views-row,
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .views-row {
         overflow: hidden; }
+      /* line 220, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
       .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories h2,
       .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block h2,
@@ -290,6 +336,7 @@
         letter-spacing: -1px;
         padding-left: 10%;
         font-size: 15px; }
+      /* line 228, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
       .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories,
       .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
@@ -297,6 +344,7 @@
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories,
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories {
         padding-top: 2px; }
+        /* line 230, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
         .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content,
         .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
@@ -304,6 +352,7 @@
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content,
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content {
           padding-left: 5%; }
+          /* line 232, ../sass/ewingchun.misc.scss */
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary,
           .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary,
           .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary,
@@ -314,6 +363,7 @@
             line-height: 26px;
             list-style: none;
             padding-left: 5%; }
+            /* line 237, ../sass/ewingchun.misc.scss */
             .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-name,
             .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-name,
             .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-name,
@@ -322,6 +372,7 @@
             .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-name {
               float: left;
               margin-right: 10px; }
+            /* line 241, ../sass/ewingchun.misc.scss */
             .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-nid,
             .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-nid,
             .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-nid,
@@ -329,6 +380,7 @@
             .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block .view-wiki-categories .view-content .views-summary .views-field-nid,
             .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories .view-wiki-categories .view-content .views-summary .views-field-nid {
               color: #1C57A7; }
+      /* line 247, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
       .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu,
       .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
@@ -336,6 +388,7 @@
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu,
       .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu {
         padding: 4% 0 0 7%; }
+        /* line 250, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
         .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu,
         .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
@@ -343,6 +396,7 @@
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded .menu,
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded .menu {
           padding: 3% 0 3% 1%; }
+        /* line 254, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
         .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li,
         .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li,
@@ -353,6 +407,7 @@
           padding-left: 10px;
           line-height: 25px;
           margin: 0; }
+          /* line 259, ../sass/ewingchun.misc.scss */
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
           .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a,
           .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
@@ -360,6 +415,7 @@
           .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu li a,
           .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu li a {
             font-size: 15px; }
+        /* line 263, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
         .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded,
         .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
@@ -367,6 +423,7 @@
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded,
         .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded {
           list-style-image: url(../images/menu-arrow.png) !important; }
+          /* line 265, ../sass/ewingchun.misc.scss */
           .page-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded a,
           .page-wiki .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a,
           .node-type-wiki .l-main .l-region--sidebar-first .block--views-wiki-categories-block ul.menu .expanded a,
@@ -375,6 +432,7 @@
           .page-taxonomy-term .l-main .l-region--sidebar-first .block--menu-menu-encyclopedia-categories ul.menu .expanded a {
             font-size: 14px; }
 
+/* line 274, ../sass/ewingchun.misc.scss */
 .about-revision,
 .article_messages {
   color: red;
@@ -382,15 +440,18 @@
   font-weight: 700;
   margin-top: 20px; }
 
+/* line 281, ../sass/ewingchun.misc.scss */
 .outline_node_messages,
 .revision_node_messages {
   margin-top: 20px; }
 
+/* line 285, ../sass/ewingchun.misc.scss */
 p,
 .content {
   padding-bottom: 7px;
   line-height: 22px; }
 
+/* line 290, ../sass/ewingchun.misc.scss */
 .tabs--primary,
 .tabs--secondary {
   border: medium none;
@@ -398,6 +459,7 @@ p,
   padding: 0;
   display: inline-block;
   margin-bottom: 10px; }
+  /* line 297, ../sass/ewingchun.misc.scss */
   .tabs--primary li,
   .tabs--secondary li {
     float: left;
@@ -408,6 +470,7 @@ p,
     border: medium none;
     padding: 8px 10px 14px 0;
     margin: 0 !important; }
+    /* line 306, ../sass/ewingchun.misc.scss */
     .tabs--primary li a,
     .tabs--secondary li a {
       font-size: 13px;
@@ -422,6 +485,7 @@ p,
       width: 124px;
       padding: 0;
       display: block; }
+    /* line 320, ../sass/ewingchun.misc.scss */
     .tabs--primary li a:hover,
     .tabs--secondary li a:hover {
       font-size: 13px;
@@ -435,6 +499,7 @@ p,
       line-height: 45px;
       width: 124px;
       padding: 0; }
+  /* line 335, ../sass/ewingchun.misc.scss */
   .tabs--primary li.active a,
   .tabs--secondary li.active a {
     font-size: 13px;
@@ -450,10 +515,12 @@ p,
     line-height: 45px;
     width: 124px; }
 
+/* line 352, ../sass/ewingchun.misc.scss */
 .schoolname-r p {
   font-size: 14px;
   color: #000;
   line-height: 31px; }
+/* line 357, ../sass/ewingchun.misc.scss */
 .schoolname-r .description-map-it > p {
   font-size: 12px;
   color: darkgray;
@@ -461,40 +528,51 @@ p,
   margin: -5px 0 0 20px;
   font-style: normal; }
 
+/* line 368, ../sass/ewingchun.misc.scss */
 .node-type-article .articletitle-leftp .articalfpo ul {
   overflow: hidden; }
+  /* line 370, ../sass/ewingchun.misc.scss */
   .node-type-article .articletitle-leftp .articalfpo ul li {
     list-style-type: none;
     float: left; }
 
+/* line 378, ../sass/ewingchun.misc.scss */
 .logout_block {
   float: right;
   width: 20%;
   margin-top: -23px;
   color: #052756;
   font-size: 12px; }
+  /* line 384, ../sass/ewingchun.misc.scss */
   .logout_block a {
     text-decoration: none;
     color: #052756; }
 
+/* line 389, ../sass/ewingchun.misc.scss */
 .top_header,
 .l-region--top-header {
   overflow: hidden; }
 
+/* line 394, ../sass/ewingchun.misc.scss */
 .section-add-your-stuff h1 {
   margin-bottom: 20px !important; }
+/* line 398, ../sass/ewingchun.misc.scss */
 .section-add-your-stuff .node--page--full p {
   margin: 0 30px;
   padding: 0; }
+  /* line 401, ../sass/ewingchun.misc.scss */
   .section-add-your-stuff .node--page--full p a {
     margin-left: -30px; }
 
+/* line 408, ../sass/ewingchun.misc.scss */
 .page-node-166 .banner-top > div {
   overflow: hidden;
   box-sizing: border-box;
   width: 49%; }
+/* line 413, ../sass/ewingchun.misc.scss */
 .page-node-166 .banner-top {
   margin-bottom: 20px; }
+/* line 416, ../sass/ewingchun.misc.scss */
 .page-node-166 .banner-top-left {
   color: #8d8d8d;
   float: left;
@@ -504,12 +582,14 @@ p,
   line-height: 25px;
   padding: 15px 0 0;
   text-align: left; }
+/* line 426, ../sass/ewingchun.misc.scss */
 .page-node-166 .banner-top-right {
   background: transparent url(../images/bg01.jpg) repeat-x scroll left center;
   color: #052756;
   float: right;
   margin: 10px 0 0;
   padding: 15px 2%; }
+  /* line 432, ../sass/ewingchun.misc.scss */
   .page-node-166 .banner-top-right .tocontribute {
     border-right: 1px solid #c4c4c4;
     color: #17335b;
@@ -518,6 +598,7 @@ p,
     line-height: 20px;
     padding: 12px 0;
     width: 40%; }
+  /* line 441, ../sass/ewingchun.misc.scss */
   .page-node-166 .banner-top-right .loginbtn {
     background: #aeaeae none repeat scroll 0 0;
     border-radius: 3px;
@@ -527,6 +608,7 @@ p,
     margin: 15px 1%;
     padding: 0 6%;
     text-decoration: none; }
+  /* line 451, ../sass/ewingchun.misc.scss */
   .page-node-166 .banner-top-right .register-link {
     background: #1C57A7;
     border: medium none;
@@ -544,46 +626,59 @@ p,
     width: 23%; }
 
 @media screen and (max-width: 320px) {
+  /* line 472, ../sass/ewingchun.misc.scss */
   .page-wiki .form-type-textfield,
   .node-type-wiki .form-type-textfield {
     width: 90% !important; }
+  /* line 475, ../sass/ewingchun.misc.scss */
   .page-wiki .views-widget-filter-keys,
   .node-type-wiki .views-widget-filter-keys {
     width: 100% !important; }
+    /* line 477, ../sass/ewingchun.misc.scss */
     .page-wiki .views-widget-filter-keys .form-type-textfield,
     .node-type-wiki .views-widget-filter-keys .form-type-textfield {
       width: 90% !important; }
+  /* line 481, ../sass/ewingchun.misc.scss */
   .page-wiki .views-submit-button,
   .node-type-wiki .views-submit-button {
     padding-top: 5px !important; }
+    /* line 483, ../sass/ewingchun.misc.scss */
     .page-wiki .views-submit-button .form-submit,
     .node-type-wiki .views-submit-button .form-submit {
       height: 36px !important; }
 
+  /* line 490, ../sass/ewingchun.misc.scss */
   .page-taxonomy-term .view-taxonomy-term .encyclopediacategories-center,
   .page-taxonomy-term .view-taxonomy-term .encyclopediacategories-right {
     width: 100% !important;
     float: none !important; }
+  /* line 496, ../sass/ewingchun.misc.scss */
   .page-taxonomy-term .pager {
     overflow: hidden;
     float: none; }
+    /* line 499, ../sass/ewingchun.misc.scss */
     .page-taxonomy-term .pager .pager__item {
       display: table;
       float: left; } }
 @media screen and (max-width: 480px) {
+  /* line 509, ../sass/ewingchun.misc.scss */
   .page-wiki .l-main,
   .node-type-wiki .l-main {
     padding: 20px 2% !important; }
+    /* line 513, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .view-filters .form-type-textfield input,
     .node-type-wiki .l-main .view-filters .form-type-textfield input {
       font-size: 11px !important;
       height: 20px !important; }
+    /* line 518, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .view-filters .views-widget-filter-keys,
     .node-type-wiki .l-main .view-filters .views-widget-filter-keys {
       width: 70% !important; }
+    /* line 521, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .view-filters .form-submit,
     .node-type-wiki .l-main .view-filters .form-submit {
       height: 33px !important; }
+  /* line 526, ../sass/ewingchun.misc.scss */
   .page-wiki .l-content,
   .page-wiki .l-region--sidebar-first,
   .node-type-wiki .l-content,
@@ -591,21 +686,25 @@ p,
     float: none !important;
     width: 98% !important;
     margin: 0 auto !important; }
+    /* line 531, ../sass/ewingchun.misc.scss */
     .page-wiki .l-content h1,
     .page-wiki .l-region--sidebar-first h1,
     .node-type-wiki .l-content h1,
     .node-type-wiki .l-region--sidebar-first h1 {
       font-size: 16px !important; }
+      /* line 533, ../sass/ewingchun.misc.scss */
       .page-wiki .l-content h1 a,
       .page-wiki .l-region--sidebar-first h1 a,
       .node-type-wiki .l-content h1 a,
       .node-type-wiki .l-region--sidebar-first h1 a {
         font-size: 10px; }
+    /* line 537, ../sass/ewingchun.misc.scss */
     .page-wiki .l-content h3,
     .page-wiki .l-region--sidebar-first h3,
     .node-type-wiki .l-content h3,
     .node-type-wiki .l-region--sidebar-first h3 {
       font-size: 14px !important; }
+    /* line 540, ../sass/ewingchun.misc.scss */
     .page-wiki .l-content .block--views-wiki-categories-block,
     .page-wiki .l-content .block--menu-menu-encyclopedia-categories,
     .page-wiki .l-region--sidebar-first .block--views-wiki-categories-block,
@@ -615,6 +714,7 @@ p,
     .node-type-wiki .l-region--sidebar-first .block--views-wiki-categories-block,
     .node-type-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories {
       background-size: 100% 10% !important; }
+      /* line 543, ../sass/ewingchun.misc.scss */
       .page-wiki .l-content .block--views-wiki-categories-block a,
       .page-wiki .l-content .block--menu-menu-encyclopedia-categories a,
       .page-wiki .l-region--sidebar-first .block--views-wiki-categories-block a,
@@ -625,23 +725,29 @@ p,
       .node-type-wiki .l-region--sidebar-first .block--menu-menu-encyclopedia-categories a {
         font-size: 14px !important; }
 
+  /* line 550, ../sass/ewingchun.misc.scss */
   .page-taxonomy-term .l-content {
     width: 100%; }
+    /* line 554, ../sass/ewingchun.misc.scss */
     .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-center div, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-center p, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-center ul, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-center li, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-center a {
       font-size: 12px;
       line-height: 15px; }
+    /* line 560, ../sass/ewingchun.misc.scss */
     .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right div, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right p, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right ul, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right li, .page-taxonomy-term .l-content .view-taxonomy-term .encyclopediacategories-right a {
       font-size: 11px !important;
       line-height: 15px; }
 
+  /* line 569, ../sass/ewingchun.misc.scss */
   .page-node-166 .register-link {
     width: 22% !important; } }
 @media screen and (max-width: 768px) {
+  /* line 582, ../sass/ewingchun.misc.scss */
   .page-wiki .block--views-wiki-categories-block h2,
   .page-wiki .block--menu-menu-encyclopedia-categories h2,
   .node-type-wiki .block--views-wiki-categories-block h2,
   .node-type-wiki .block--menu-menu-encyclopedia-categories h2 {
     font-size: 13px !important; }
+  /* line 585, ../sass/ewingchun.misc.scss */
   .page-wiki .block--views-wiki-categories-block .views-row,
   .page-wiki .block--views-wiki-categories-block .menu li,
   .page-wiki .block--views-wiki-categories-block .expanded li,
@@ -655,6 +761,7 @@ p,
   .node-type-wiki .block--menu-menu-encyclopedia-categories .menu li,
   .node-type-wiki .block--menu-menu-encyclopedia-categories .expanded li {
     line-height: 22px !important; }
+  /* line 591, ../sass/ewingchun.misc.scss */
   .page-wiki .encyclopediacategories-center,
   .page-wiki .encyclopediacategories-right,
   .node-type-wiki .encyclopediacategories-center,
@@ -662,34 +769,42 @@ p,
     float: none !important;
     width: 98% !important; }
 
+  /* line 597, ../sass/ewingchun.misc.scss */
   .logout_block {
     float: none !important;
     margin: 10px auto !important;
     width: 150px !important; }
 
+  /* line 604, ../sass/ewingchun.misc.scss */
   .page-taxonomy-term-84 .middleleftimg1 span {
     background-size: 130%;
     background-position: -150% 70%;
     left: 30%;
     bottom: 40%; }
 
+  /* line 613, ../sass/ewingchun.misc.scss */
   .page-node-166 .banner-top > div {
     width: 100% !important;
     float: none; } }
 @media (min-width: 481px) and (max-width: 768px) {
+  /* line 622, ../sass/ewingchun.misc.scss */
   .page-wiki .l-content,
   .node-type-wiki .l-content {
     width: 69% !important; }
+  /* line 625, ../sass/ewingchun.misc.scss */
   .page-wiki .l-region--sidebar-first,
   .node-type-wiki .l-region--sidebar-first {
     width: 29% !important; }
+  /* line 628, ../sass/ewingchun.misc.scss */
   .page-wiki a,
   .node-type-wiki a {
     font-size: 11px !important; }
+  /* line 631, ../sass/ewingchun.misc.scss */
   .page-wiki .views-widget-filter-keys,
   .node-type-wiki .views-widget-filter-keys {
     width: 64% !important; }
 
+  /* line 636, ../sass/ewingchun.misc.scss */
   .page-node-166 .register-link {
     width: 18% !important; } }
 
