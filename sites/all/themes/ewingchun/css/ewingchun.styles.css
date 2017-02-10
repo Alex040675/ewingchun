@@ -1000,10 +1000,6 @@ img, media {
   clear: both;
   padding-top: 20px; }
 
-/* line 468, ../sass/components/_blogs.scss */
-.page-blog .view-empty {
-  margin-top: -270px; }
-
 /* line 2, ../sass/components/_forum.scss */
 #forum .forum-collapsible {
   display: none; }
