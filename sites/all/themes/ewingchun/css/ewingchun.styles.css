@@ -3738,10 +3738,10 @@ html.js .form-autocomplete {
 .page-node-edit #edit-field-instructors-und, .page-node-edit #edit-field-instructors-und {
   width: 300px; }
 /* line 359, ../sass/components/_schools.scss */
-.page-node-edit .location .form-item-locations-0-locpick-user-latitude {
+.page-node-edit .location .form-item-locations-0-locpick-user-latitude, .page-node-edit .location .form-item-locations-0-locpick-user-longitude {
   margin-top: 20px; }
   /* line 361, ../sass/components/_schools.scss */
-  .page-node-edit .location .form-item-locations-0-locpick-user-latitude label {
+  .page-node-edit .location .form-item-locations-0-locpick-user-latitude label, .page-node-edit .location .form-item-locations-0-locpick-user-longitude label {
     margin-top: 0; }
 
 /* line 3, ../sass/components/_sifus.scss */
