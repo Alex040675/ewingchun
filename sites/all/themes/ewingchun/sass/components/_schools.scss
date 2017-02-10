@@ -355,4 +355,12 @@ html.js .form-autocomplete{
   #edit-field-instructors-und,#edit-field-instructors-und{
     width: 300px;
   }
+  .location{
+    .form-item-locations-0-locpick-user-latitude{
+      margin-top: 20px;
+      label{
+        margin-top: 0;
+      }
+    }
+  }
 }

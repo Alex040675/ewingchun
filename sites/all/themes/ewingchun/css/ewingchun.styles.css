@@ -3737,6 +3737,12 @@ html.js .form-autocomplete {
 /* line 355, ../sass/components/_schools.scss */
 .page-node-edit #edit-field-instructors-und, .page-node-edit #edit-field-instructors-und {
   width: 300px; }
+/* line 359, ../sass/components/_schools.scss */
+.page-node-edit .location .form-item-locations-0-locpick-user-latitude {
+  margin-top: 20px; }
+  /* line 361, ../sass/components/_schools.scss */
+  .page-node-edit .location .form-item-locations-0-locpick-user-latitude label {
+    margin-top: 0; }
 
 /* line 3, ../sass/components/_sifus.scss */
 .page-sifus .view-sifu .view-header {
