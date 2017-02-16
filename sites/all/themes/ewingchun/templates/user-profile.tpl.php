@@ -57,7 +57,9 @@
 <h1></h1>
 <div class="user-detail">
 <div class="user-detail-left">
-<?php print theme('user_picture', array('account' => $variables['user_profile']['user_picture']['#markup'])); ?>
+<?php //print theme('user_picture', array('account' => $variables['user_profile']['user_picture']['#markup']));
+print render($variables['user_profile']['user_picture']['#markup']);
+?>
 </div>
 <div class="user-detail-midle">
 <h3><?php
