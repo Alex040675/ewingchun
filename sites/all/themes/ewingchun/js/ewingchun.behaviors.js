@@ -73,6 +73,10 @@
             });
         $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
+        if($('.page-blog .view-Blogs:has(.view-empty)')){
+            $('#block-views-exp-blogs-page-1').css({"margin-top":"0"})
+        };
+
 
     }
   };

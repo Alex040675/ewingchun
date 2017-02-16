@@ -467,6 +467,9 @@
   #block-system-main-menu {
     display: none;
   }
+  .top_header .logout_block{
+    width: 160px !important;
+  }
   header {
     #block-block-11 {
       float: right;
@@ -867,6 +870,9 @@
     .l-page {
       .bottom-border {
         margin-top: 0;
+      }
+      .clear{
+        padding-top: 0 !important;
       }
       .content{
         padding-top: 0 !important;
