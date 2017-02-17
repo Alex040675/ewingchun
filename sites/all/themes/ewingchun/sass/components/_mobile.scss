@@ -432,10 +432,14 @@
     }
     .location-wrapper{
       .form-text{
-        max-width: 90%;
+        max-width: 90% !important;
       }
       label{
         float: none !important;
+      }
+      .link-field-column{
+        float: none;
+        width: 90%;
       }
     }
   }
