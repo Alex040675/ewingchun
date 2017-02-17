@@ -166,6 +166,11 @@ print render($aaa); ?>
 </div>
 </div>
 </div>
+  <div class="recent-wiki">
+    <h3>My Wiki Articles</h3>
+    <?php $abc = views_embed_view('wiki', 'block_17');
+    print $abc; ?>
+  </div>
 <div class="wc_blocks-friend_images">
   <h3 class="block-title">my friends</h3>
   <?php
@@ -180,11 +185,6 @@ print render($aaa); ?>
   ?>
 </div>
 
-  <div class="recent-wiki">
-    <h3>My Wiki Articles</h3>
-    <?php $abc = views_embed_view('wiki', 'block_17');
-    print $abc; ?>
-  </div>
 <?php
 /* Another Method to add user relationship links
 //add link

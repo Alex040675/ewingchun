@@ -4,10 +4,11 @@
   .page-user .wc_blocks-friend_images .user-profile-item__label,
   .page-user .block--user-relationship-blocks-my-1 .user-profile-item__label {
     display: none !important; }
-.page-user .wc_blocks-friend_images {
+.page-user .wc_blocks-friend_images,
+.page-user .main-user {
   overflow: hidden; }
 .page-user .recent-wiki {
-  margin: 50px 26% 0 0; }
+  margin: 20px 26% 50px 0; }
 .page-user .recent-wiki .views-row-odd {
   background: #f9f9f9 none repeat scroll 0 0;
   border-bottom: 1px solid #e1e1e1;
