@@ -6,6 +6,23 @@
     display: none!important;
     }
   }
+  .wc_blocks-friend_images {
+    overflow: hidden;
+  }
+  .recent-wiki {
+    margin: 50px 26% 0 0;
+  }
+  .recent-wiki {
+    .views-row-odd {
+      background: #f9f9f9 none repeat scroll 0 0;
+      border-bottom: 1px solid #e1e1e1;
+      border-top: 1px solid #e1e1e1;
+      padding: 6px 5px;
+    }
+    .views-row-even {
+      padding: 6px 5px;
+    }
+  }
 }
 .middleleftimg1 {
     clear: both;

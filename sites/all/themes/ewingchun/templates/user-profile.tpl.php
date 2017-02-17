@@ -135,7 +135,7 @@ if ($variables['user_profile']['summary']['member_for']['#markup']) {
 <div class="blog-part">
 <div class="blog-part-left">
 <h3>My Articles</h3>
-<?php $abc = views_embed_view('Blogs', 'block_3', $uid);
+<?php $abc = views_embed_view('Blogs', 'block_3');
 print $abc; ?>
 </div>
 <div class="blog-part-right">
@@ -146,8 +146,8 @@ print $abc; ?>
 <div class="blog-topright">
   <a href="/node/add/blog" class="blue-link">add a post</a></div>
 </div>
-<?php $abc = views_embed_view('Blogs', 'block_2', $arg);
-print $abc; ?>
+<?php $aaa = views_embed_view('Blogs', 'block_7');
+print render($aaa); ?>
 </div>
 </div>
 </div>
@@ -180,7 +180,11 @@ print $abc; ?>
   ?>
 </div>
 
-
+  <div class="recent-wiki">
+    <h3>My Wiki Articles</h3>
+    <?php $abc = views_embed_view('wiki', 'block_17');
+    print $abc; ?>
+  </div>
 <?php
 /* Another Method to add user relationship links
 //add link

@@ -302,8 +302,10 @@ function ewingchun_preprocess_node(&$variables) {
     $recentarticles = views_embed_view('article', 'block_5', $variables['node']->field_sifu['und'][0]['nid']);
     $variables['recent_articles'] = $recentarticles;
 
-    $recentwiki = views_embed_view('wiki', 'block_4', $variables['node']->field_sifu['und'][0]['nid']);
-    $variables['recent_wiki'] = $recentwiki;
+//    if ($variables['user_profile']['field_my_sifu']['#items'][0]['nid']) {
+//      $recentwiki = views_embed_view('wiki', 'block_17', $variables['user_profile']['field_my_sifu']['#items'][0]['nid']);
+//      $variables['recent_wiki'] = $recentwiki;
+//    }
 
     if ($variables['node']->field_emvideo['0']['embed'] != NULL) {
       foreach ($variables['node']->field_emvideo AS $key => $video) {
