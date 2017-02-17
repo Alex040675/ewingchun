@@ -4836,6 +4836,18 @@ html.js .form-autocomplete {
 .section-relationships th, .section-relationships td {
   padding: 5px; }
 
+/* line 329, ../sass/components/_user.scss */
+.page-user-register .form-select {
+  background: transparent url("../images/select-left.png") no-repeat scroll left center/100% 100%;
+  border: medium none;
+  font-size: 11px;
+  height: 21px !important;
+  line-height: 11px;
+  opacity: 1 !important;
+  position: relative;
+  width: 90%;
+  max-width: 245px; }
+
 /* line 1, ../sass/components/_videos.scss */
 html.js .form-autocomplete {
   background: none !important; }
