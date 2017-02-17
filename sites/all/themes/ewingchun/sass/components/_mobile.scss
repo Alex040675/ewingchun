@@ -430,6 +430,14 @@
         }
       }
     }
+    .location-wrapper{
+      .form-text{
+        max-width: 90%;
+      }
+      label{
+        float: none !important;
+      }
+    }
   }
   .comment{
     .usearname-title{
