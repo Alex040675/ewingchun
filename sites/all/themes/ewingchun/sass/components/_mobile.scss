@@ -430,6 +430,23 @@
         }
       }
     }
+    .location-wrapper{
+      .form-text{
+        max-width: 55% !important;
+      }
+      label{
+        float: none !important;
+      }
+    }
+    .link-field-column{
+      float: none;
+      width: 90%;
+    }
+    .field-name-field-profile-img{
+      .form-submit{
+        margin-top: 20px;
+      }
+    }
   }
   .comment{
     .usearname-title{
