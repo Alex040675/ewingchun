@@ -74,7 +74,10 @@
         $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
         if($('.page-blog .view-Blogs:not(:has(.views-row))')){
-            $('#block-views-exp-blogs-page-1').css({"margin-top":"0"})
+            $('#block-views-exp-blogs-page-1').css({"margin-top":"0"}),
+                else{
+                $('#block-views-exp-blogs-page-1').css({"margin-top":"200"})
+            }
         };
 
 
