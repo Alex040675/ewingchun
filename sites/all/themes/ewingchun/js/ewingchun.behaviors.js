@@ -74,7 +74,7 @@
         $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
        if($('.page-blog:has(.view-empty)')){
-            $(this).addClass("empty")
+            $('this').addClass("empty")
 
         }
 
