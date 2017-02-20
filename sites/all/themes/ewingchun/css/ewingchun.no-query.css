@@ -1002,7 +1002,7 @@ img, media {
 
 /* line 468, ../sass/components/_blogs.scss */
 .empty #block-views-exp-blogs-page-1 {
-  margin-top: 0; }
+  margin-top: 0 !important; }
 
 /* line 2, ../sass/components/_forum.scss */
 #forum .forum-collapsible {
