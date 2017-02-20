@@ -73,8 +73,8 @@
             });
         $('.page-wiki .view-wiki .views-submit-button input').val("Go");
 
-       if($('.page-blog:not(:has(.views-row))')){
-            $(this).addClass("empty")
+       if($(".page-blog:not(:has(.views-row))")){
+            $(this).addClass('empty')
        };
 
 
