@@ -486,5 +486,7 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['locations'] = [];
   $form['user_relationship_node_access'] = [];
   $form['field_are_you_a_sifu_']['#weight'] = '11';
-  $form['field_years_in_wing_chun'] = [];
+  $form['timezone'] = [];
+  $form['contact'] = [];
+
 }
