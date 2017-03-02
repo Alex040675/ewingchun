@@ -492,5 +492,4 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['comment_notify_settings'] = [];
   $form['user_relationships_ui_settings'] = [];
 
-
 }
