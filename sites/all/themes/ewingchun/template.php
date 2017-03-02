@@ -488,5 +488,8 @@ function ewingchun_form_user_profile_form_alter(&$form, &$form_state, $form_id) 
   $form['field_are_you_a_sifu_']['#weight'] = '11';
   $form['timezone'] = [];
   $form['contact'] = [];
+  $form['node_notify'] = [];
+  $form['comment_notify'] = [];
+  $form['user_relationships_ui_auto_approve[1]'] = [];
 
 }
