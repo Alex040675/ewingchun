@@ -80,6 +80,8 @@
             $(this).toggleClass('active_item');
         });
 
+        $(".view-wiki .item-list:has(.active_item)").addClass('show');
+
 
 
     }

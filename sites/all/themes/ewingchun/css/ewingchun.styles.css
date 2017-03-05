@@ -2595,7 +2595,7 @@ footer {
     display: none; }
 
   /* line 466, ../sass/components/_mobile.scss */
-  .view-wiki .active_item ul {
+  .view-wiki .show ul {
     display: block !important; }
   /* line 471, ../sass/components/_mobile.scss */
   .view-wiki .item-list ul {
