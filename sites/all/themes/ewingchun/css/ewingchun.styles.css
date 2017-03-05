@@ -3266,7 +3266,7 @@ footer {
 
   /* line 1268, ../sass/components/_mobile.scss */
   .encyclopediacategories-right-mobile {
-    display: block; }
+    display: block !important; }
 
   /* line 1271, ../sass/components/_mobile.scss */
   .encyclopediacategories-right {
