@@ -4047,27 +4047,27 @@ html.js .form-autocomplete {
       font-family: Arial;
       font-size: 14px;
       font-weight: 700;
-      text-decoration: none; }
-    /* line 303, ../sass/components/_sifus.scss */
+      text-decoration: none;
+      margin-right: 4px; }
+    /* line 304, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .common-right .common-right-2, .section-lineage .commonname .common-right .common-right-2 {
       color: #666;
       font-family: Arial;
       font-size: 14px;
       font-weight: 400;
       text-decoration: none; }
-  /* line 311, ../sass/components/_sifus.scss */
+  /* line 312, ../sass/components/_sifus.scss */
   .node-type-sifu .commonname .comon-btom, .section-lineage .commonname .comon-btom {
     float: left;
     width: 63%;
     margin-top: 8px; }
-    /* line 315, ../sass/components/_sifus.scss */
+    /* line 316, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .comon-btom p, .section-lineage .commonname .comon-btom p {
       color: #000000;
       margin-top: 0;
       margin-bottom: 8px; }
-    /* line 320, ../sass/components/_sifus.scss */
+    /* line 321, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .comon-btom a, .section-lineage .commonname .comon-btom a {
-      color: #666;
       font-size: 14px; }
     /* line 324, ../sass/components/_sifus.scss */
     .node-type-sifu .commonname .comon-btom span, .section-lineage .commonname .comon-btom span {
