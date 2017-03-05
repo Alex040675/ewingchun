@@ -80,7 +80,7 @@
             $(this).toggleClass('active_item');
         });
 
-        $(".item-list:contains('.active_item')").addClass('show');
+        $(".item-list:not(:has(.active_item))").addClass('hide');
 
 
 

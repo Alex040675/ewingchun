@@ -462,14 +462,14 @@
     display: none;
   }
   .view-wiki{
-    .show{
+    .hide{
       ul{
-        display: block !important;
+        display: none;
       }
     }
     .item-list{
       ul{
-        display: none;
+        display: block;
       }
     }
   }
