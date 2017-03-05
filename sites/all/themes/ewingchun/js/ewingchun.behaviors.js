@@ -77,7 +77,7 @@
 
 
         $('.view-wiki .item-list h3').click(function() {
-            $('.item-list').toggleClass('active_item');
+            $('this').parent() .toggleClass('active_item');
         });
 
 

@@ -461,6 +461,18 @@
   #block-menu-menu-encyclopedia-categories{
     display: none;
   }
+  .view-wiki{
+    .active_item{
+      ul{
+        display: block !important;
+      }
+    }
+    .item-list{
+      ul{
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 570px){
