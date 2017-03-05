@@ -93,20 +93,30 @@
     width: 70%;
     float: left; }
   /* line 90, ../sass/ewingchun.misc.scss */
-  .page-wiki .l-main .l-content .encyclopediacategories-right,
+  .page-wiki .l-main .l-content .encyclopediacategories-right, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile,
   .node-type-wiki .l-main .l-content .encyclopediacategories-right,
-  .page-taxonomy-term .l-main .l-content .encyclopediacategories-right {
+  .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile,
+  .page-taxonomy-term .l-main .l-content .encyclopediacategories-right,
+  .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile {
     width: 28%;
     float: right; }
     /* line 93, ../sass/ewingchun.misc.scss */
     .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1,
     .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
+    , .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1,
+    .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
     ,
     .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1,
     .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
     ,
+    .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1,
+    .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+    ,
     .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecr1,
     .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
+    ,
+    .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecr1,
+    .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
      {
       background: #ededed;
       font-size: 12px;
@@ -119,6 +129,11 @@
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
       p,
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
+      .field, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 p,
+      .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 .field,
+      .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+      p,
+      .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
       .field,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 p,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 .field,
@@ -126,11 +141,23 @@
       p,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
       .field,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 p,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 .field,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+      p,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+      .field,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecr1 p,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecr1 .field,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
       p,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
+      .field,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecr1 p,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecr1 .field,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+      p,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
       .field {
         font-size: 12px;
         padding: 0 3% 7px;
@@ -138,12 +165,20 @@
       /* line 107, ../sass/ewingchun.misc.scss */
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul,
       .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
+      ul, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul,
+      .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
       ul,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
       ul,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul,
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+      ul,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecr1 ul,
       .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
+      ul,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
       ul {
         margin: 10px 0;
         list-style: disc;
@@ -151,28 +186,42 @@
         /* line 111, ../sass/ewingchun.misc.scss */
         .page-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
         .page-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
+        ul li, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul li,
+        .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
         ul li,
         .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
         .node-type-wiki .l-main .l-content .encyclopediacategories-right .ecrl-sources
         ul li,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul li,
+        .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
+        ul li,
         .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecr1 ul li,
         .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .ecrl-sources
+        ul li,
+        .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecr1 ul li,
+        .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .ecrl-sources
         ul li {
           padding-bottom: 5px; }
     /* line 116, ../sass/ewingchun.misc.scss */
-    .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
+    .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left,
     .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left,
-    .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left {
+    .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left,
+    .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left,
+    .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .productname-left {
       border-top: solid 1px #FFF; }
       /* line 118, ../sass/ewingchun.misc.scss */
-      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
+      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left ul,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left ul,
-      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left ul {
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left ul,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left ul,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .productname-left ul {
         padding-left: 3%; }
       /* line 121, ../sass/ewingchun.misc.scss */
-      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo,
+      .page-wiki .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo, .page-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left .blogfpo,
       .node-type-wiki .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo,
-      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo {
+      .node-type-wiki .l-main .l-content .encyclopediacategories-right-mobile .productname-left .blogfpo,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right .productname-left .blogfpo,
+      .page-taxonomy-term .l-main .l-content .encyclopediacategories-right-mobile .productname-left .blogfpo {
         background: #ededed;
         font-size: 12px;
         color: #000;

@@ -1227,7 +1227,7 @@
     .l-page{
       .l-main{
         .l-content{
-          .encyclopediacategories-right {
+          .encyclopediacategories-right,.encyclopediacategories-right-mobile {
             float: none;
             width: 100%;
             clear: both;
@@ -1264,6 +1264,12 @@
       width: 100% !important;
       float: none !important;
     }
+  }
+  .encyclopediacategories-right-mobile{
+    display: block;
+  }
+  .encyclopediacategories-right{
+    display: none;
   }
 }
 
