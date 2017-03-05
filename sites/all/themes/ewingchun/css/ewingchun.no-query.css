@@ -2595,11 +2595,11 @@ footer {
     display: none; }
 
   /* line 466, ../sass/components/_mobile.scss */
-  .view-wiki .hide ul {
-    display: none; }
+  .view-wiki .show ul {
+    display: block !important; }
   /* line 471, ../sass/components/_mobile.scss */
   .view-wiki .item-list ul {
-    display: block; } }
+    display: none; } }
 @media screen and (max-width: 570px) {
   /* line 482, ../sass/components/_mobile.scss */
   .section-node-edit .l-page .l-main #edit-field-profile-img-und-table tr {
