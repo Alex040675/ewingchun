@@ -80,7 +80,7 @@
             $(this).toggleClass('active_item');
         });
 
-        $(".active_item").parent().addClass('show');
+        $(".active_item").parent().toggleClass('show');
 
 
 
