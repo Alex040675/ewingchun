@@ -75,12 +75,12 @@
 
        $(".page-blog:not(:has(.views-row))").addClass('empty');
 
-        $(".active_item").parent().addClass('show');
 
         $('.view-wiki .item-list h3').click(function() {
             $(this).toggleClass('active_item');
         });
-        
+
+        $(".item-list:contains('active_item')").addClass('show');
 
 
 
