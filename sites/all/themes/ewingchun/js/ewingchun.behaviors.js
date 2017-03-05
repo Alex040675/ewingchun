@@ -76,6 +76,11 @@
        $(".page-blog:not(:has(.views-row))").addClass('empty');
 
 
+        $('.view-wiki .item-list h3').click(function() {
+            $('.item-list').toggleClass('active_item');
+        });
+
+
 
     }
   };
